@@ -72,7 +72,7 @@ node benchmarks/v2/run.mjs --provider both --compiler worker
 
 The [v2 protocol](../benchmarks/v2/README.md) documents the frozen 24-problem
 holdout and provider-availability checks. The [v1 benchmark](../benchmarks/README.md)
-is retained unchanged; new runs of its harness create diagnostic reports only.
+has one canonical report; other runs of its harness create diagnostic reports only.
 
 ### Input format
 
@@ -292,7 +292,7 @@ standalone source with its dependency audit.
 
 The trusted base includes the pinned Lean installation, the pinned library
 artifacts, this bridge and verifier, and any explicitly selected local proposer
-command. Process-group timeout cleanup is exercised on Linux. This is not an
+command. Process-group timeout cleanup is exercised on Linux and macOS. This is not an
 operating-system sandbox for hostile Lean metaprograms, compromised imported
 libraries, or an untrusted external executable. Other platforms require their
 own process-cleanup validation before equivalent containment claims are made.

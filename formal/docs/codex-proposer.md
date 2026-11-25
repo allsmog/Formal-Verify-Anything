@@ -101,18 +101,22 @@ scoped prompts, command isolation, malformed JSON, tool events, actual/unknown
 usage, prelaunch failures, process timeout and cleanup retry. They do not prove
 live-provider compatibility or model accuracy.
 
-In the build environment, `codex-cli 0.167.0-alpha.4` reports an authenticated
-ChatGPT session, but `codex exec` exits during startup with a read-only filesystem
-error before producing a completion. Redirecting writable SQLite/log state did
-not fix startup. OpenAI documents that Codex also requires writable runtime state
-under its home directory. The configured home in this environment is read-only.
-No credentials or managed-home settings were moved to bypass that restriction.
+## Live validation
 
-The v2 harness performs one non-holdout preflight. An unavailable provider is
-recorded as `BLOCKED`, with zero model theorem attempts and no model pass rate.
-The deterministic holdout can still finish. The paired model comparison must be
-run from a supported writable authenticated environment before a model result is
-claimed.
+The [v2 holdout run](../../benchmarks/v2/results.md) of 25 November 2026 used
+`codex-cli 0.171.0` with API-key authentication in a dedicated `CODEX_HOME`. That
+home's `config.toml` set `model = "gpt-6.2-sol"` and `model_reasoning_effort =
+"high"`; the CLI did not report a resolved model, so records show
+`codex-configured-default`. The preflight returned a valid proposal, and all 24
+holdout invocations ran: 17 were solved, four ended in provider timeouts that
+reported no usage, and three exceeded the 50,000-token admission allowance.
+Reported usage was 471,764 tokens. A single proposal call carried about 16,000
+input tokens of fixed prompt and CLI context, so that allowance admits about three
+calls per theorem.
+
+The v2 harness performs one non-holdout preflight before any holdout call. An
+unavailable provider is recorded as `BLOCKED`, with zero model theorem attempts
+and no model pass rate, and the deterministic holdout still finishes.
 
 Primary references:
 

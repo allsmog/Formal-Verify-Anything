@@ -99,9 +99,11 @@ sandbox.
 Timeout, crash, malformed JSON or UTF-8, an incorrect request identifier,
 inconsistent diagnostics and exit status, unexpected stderr, and excess output
 all fail the current request. The adapter does not silently retry a failed
-candidate. A subsequent request starts a new process. Linux termination targets
-the owned process group while its leader is still live; a reaped PID is never
-used to identify a process group. Cleanup waits up to two seconds for process
+candidate. A subsequent request starts a new process. On Linux and macOS,
+termination targets the owned process group while its leader is still unreaped;
+a reaped PID is never used to identify a process group. macOS reports `EPERM`
+when every member of the group has exited but the leader is not yet reaped, and
+that case counts as already terminated. Cleanup waits up to two seconds for process
 and stdio closure and reports failure if ownership cannot yet be released.
 
 The worker consumes source already admitted by the immutable scaffold and
@@ -121,7 +123,7 @@ FVA_INTEGRATION=1 node --test formal/test/lean-session.test.mjs
 The subprocess fixtures exercise timeouts, late handshakes, crashes, malformed
 frames, inconsistent exit status, output limits, concurrent request ordering,
 configuration invalidation, suspension/resumption, closing pending work, and
-Linux descendant termination. The actual Lean test compares Mathlib goals and
+descendant termination on Linux and macOS. The actual Lean test compares Mathlib goals and
 native diagnostics with a fresh CLI process, then verifies that declarations,
 failed tactics, namespaces and previously imported tactic syntax do not leak
 into later requests.

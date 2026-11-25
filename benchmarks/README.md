@@ -1,9 +1,9 @@
 # Proof benchmark protocol
 
-This page describes the immutable v1 experiment. Current evaluation is documented
-in [v2/README.md](v2/README.md). New invocations of `benchmarks/run.mjs`, including
-the full 17-problem suite, write diagnostic reports and cannot replace the
-published `benchmarks/results.md` or `results.json`.
+This page describes the v1 experiment. The provider comparison is documented in
+[v2/README.md](v2/README.md). The published `benchmarks/results.md` and
+`results.json` come from one canonical run; every other invocation of
+`benchmarks/run.mjs` writes a diagnostic report and cannot replace them.
 
 This suite measures one bounded invocation of the formal proof search engine on
 each of 17 statements. Only a standalone Lean file accepted by the engine's
@@ -14,8 +14,8 @@ be marked `SOLVED`.
 
 ### Import configuration
 
-The complete `Mathlib` import exceeded a 60-second import-only preflight in this
-environment. Before the canonical run, imports were restricted to fixed
+The complete `Mathlib` import is too slow to load once per compiler call within
+the 30-second call limit, so imports are restricted to fixed
 declaration-required modules plus `Mathlib.Tactic.NormNum`,
 `Mathlib.Tactic.Linarith.Frontend`, and `Mathlib.Tactic.Ring`.
 Ordinary algebra uses `Mathlib.Data.Real.Basic`;
@@ -25,11 +25,9 @@ floor statement uses `Mathlib.Data.Real.Archimedean`, and Tier 1 uses
 unchanged. The original blanket import and unused namespace openings are recorded
 under `provenance.originalImports` and `provenance.originalOpens`.
 
-Import-only checks for the restricted configurations compiled successfully. The
-30-second per-compiler timeout and 300-second per-theorem budget were fixed after
-that setup check and before the canonical run. The earlier failed setup run is
-retained as a diagnostic, separate from the canonical benchmark results. No
-miniF2F problem was evaluated to choose the import policy or search budget.
+The import policy, the 30-second per-compiler timeout, and the 300-second
+per-theorem budget were fixed before the canonical run. No miniF2F problem was
+evaluated to choose them.
 
 `tier1.json` contains five constructed sanity checks: natural-number addition
 commutativity, generic list reversal involution, De Morgan's not-or equivalence,
@@ -63,6 +61,10 @@ lake build
 node benchmarks/run.mjs --tier all
 ```
 
+`--canonical` runs the complete suite and writes `benchmarks/results.json` and
+`results.md`. It refuses to run if `results.json` already exists, so a published
+canonical report is never replaced.
+
 `fetch-minif2f.mjs` downloads source bytes from the pinned commit, checks the
 locked hashes, extracts the declarations, and validates both license texts. It
 keeps upstream proof bodies only transiently in memory and never writes them
@@ -73,8 +75,7 @@ license bytes are then checked against the pinned local hashes.
 Each new run writes `results.md` and `results.json` inside a timestamped directory
 in `runs/`. Each theorem directory contains engine artifacts and a `result.json`
 with its proof tree, attempts, diagnostics, status, and metrics. A running
-experiment checkpoints `progress.json` after every theorem. The original
-canonical report is retained unchanged, including its original warning policy.
+experiment checkpoints `progress.json` after every theorem.
 
 ```sh
 node benchmarks/run.mjs --tier 1
@@ -103,20 +104,16 @@ benchmark or about arbitrary software verification. The deterministic baseline
 does not measure LLM performance. CPU time, peak process-family memory, and cache
 warmth effects are not measured.
 
-## Recorded baseline and later integrity checks
+## Canonical result
 
-The first complete canonical run accepted 5/5 Tier 1 and 7/12 Tier 2 problems:
-12/17 overall, with 377 compiler calls and no model tokens. The generated
-[results report](results.md) includes every theorem and a post-run review of
-the five failures. In particular, `_125` was rejected for an unused-hypothesis
-warning after a successful Lean compile; it is not a type-checking failure.
-
-After this fixed run, hash-alias admission and canonical-report completeness
-checks were tightened without changing the search policy or dataset. All twelve
-accepted files were independently recompiled under the stricter checks. The
-original source snapshot, later validation changes, and additional compile
-transcript are retained in that run directory. Additional validation calls do
-not change the original search metrics.
+The canonical run of 25 November 2026 started from a clean tree at commit
+`beacb4a` and accepted 5/5 Tier 1 and 8/12 Tier 2 problems: **13/17 overall
+(76.5%)**, with 414 compiler calls, maximum recursion depth 8, and no model
+tokens. All four failures exhausted the compiler-call budget. The final
+validation policy permits only the exact unused-variable linter warning, which
+remains visible in the receipt; `mathd_algebra_125` is accepted with that
+warning. The [results report](results.md) lists every theorem with links to its
+proof tree, attempts, and diagnostics.
 
 `node formal/scripts/recheck.mjs` requires the canonical report and exactly all
 seventeen manifest IDs, then validates and compiles every recorded successful

@@ -7,13 +7,12 @@ two fresh compilations and a kernel dependency audit.
 **The default solver is a deterministic tactic-search baseline.** It makes no
 model calls. An explicit Codex CLI adapter or a trusted local command can supply
 model-generated proposals with scoped goal context and compiler feedback; those
-proposals receive the same validation. The live Codex comparison is blocked in
-the build environment by its read-only runtime directory. Deterministic scores
-and fixture tests are never presented as measured model performance.
+proposals receive the same validation. Deterministic scores and fixture tests
+are never presented as measured model performance.
 
 Version 0.2 adds final-verification-aware repair, an optional persistent Lean
 exploration worker, a frozen 24-problem holdout, and an audited atomic-token
-security model. The original v1 benchmark remains unchanged.
+security model.
 
 ## Run it
 
@@ -83,12 +82,27 @@ every generated proof and attempt. The twelve miniF2F test statements were
 selected by filename before any solver runs. Every selected failure remains in
 the denominator. See [benchmark provenance](benchmarks/README.md).
 
-<!-- v1 summary -->
+The canonical **v1** baseline accepted **5/5 foundational theorems and 8/12 miniF2F
+problems: 13/17 overall (76.5%)**. It made **414 compiler calls**, reached recursion
+depth **8**, and used **0 model tokens**. All four failures exhausted the
+compiler-call budget.
 
 The [v2 evaluation](benchmarks/v2/README.md) uses eight algebra, eight number-theory
 and eight induction statements, disjoint from those twelve miniF2F items. Its
-selection and exact declarations were frozen before any v2 search. A blocked
-provider preflight is reported separately and never converted into a model score.
+selection and exact declarations were frozen before any v2 search. In the paired
+run, each method got one bounded invocation per theorem under the same limits:
+
+| Method | Solved (pass@1) | Compiler calls | Model tokens |
+| --- | ---: | ---: | ---: |
+| Codex CLI proposer | **17/24** (70.8%) | 97 | 471,764 reported |
+| Deterministic policy | **11/24** (45.8%) | 979 | 0 |
+
+Codex solved every theorem the deterministic policy solved, plus six more. Four
+Codex invocations ended in provider timeouts that reported no token usage, so
+the token total is a lower bound. The [v2 report](benchmarks/v2/results.md) breaks
+results down by algebra, number theory, and induction, and links every proof and
+trace. A blocked provider preflight would be reported separately and never
+converted into a model score.
 
 Here `pass@1` means one invocation of the **whole bounded search policy** per
 theorem. It includes that invocation's internal backtracking. First-candidate
@@ -105,7 +119,7 @@ node formal/scripts/recheck.mjs
 ## Select a proposer or compiler
 
 ```sh
-# Existing Codex authentication and a writable runtime directory are required
+# Existing Codex authentication (ChatGPT login or API key) is required
 node formal/src/cli.mjs doctor --proposer codex
 node formal/src/cli.mjs solve benchmarks/tier1.json \
   --id conjunction_commutation --proposer codex --compiler worker \
@@ -152,8 +166,8 @@ premises are dispensable.
 Lean, pinned Mathlib artifacts, the observation bridge, and the configured local
 proposer command belong to the trusted computing environment. Tactic admission
 and kernel checks are not an operating-system sandbox for hostile Lean plugins
-or hostile local commands. Process-group timeout handling is verified on Linux;
-Windows process-family cleanup has not been validated.
+or hostile local commands. Process-group timeout handling is tested on Linux and
+macOS; Windows process-family cleanup has not been validated.
 
 ## Layout and licenses
 
