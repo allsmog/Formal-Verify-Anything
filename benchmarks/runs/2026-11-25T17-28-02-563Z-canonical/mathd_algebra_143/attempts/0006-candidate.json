@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\nf g : ℝ → ℝ\\nh₀ : ∀ (x : ℝ), f x = x + 1\\nh₁ : ∀ (x : ℝ), g x = x ^ 2 + 3\\n⊢ 2 ^ 2 + 3 + 1 = 8\",\"endPos\":{\"column\":14,\"line\":16},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_143/attempts/0006-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":16},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2853,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\nf g : ℝ → ℝ\nh₀ : ∀ (x : ℝ), f x = x + 1\nh₁ : ∀ (x : ℝ), g x = x ^ 2 + 3\n⊢ 2 ^ 2 + 3 + 1 = 8",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_143/attempts/0006-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 16
+      },
+      "end": {
+        "column": 14,
+        "line": 16
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 6,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_143/attempts/0006-candidate.lean",
+  "sourceHash": "fd2a55bb09f766a56a18bb6cab106639882fbae2484c3cf9687d4ed7098044d1",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_9d665f5afed91f94405c1d3a527547a7852f7af300e4acd035bf664807641879"
+}

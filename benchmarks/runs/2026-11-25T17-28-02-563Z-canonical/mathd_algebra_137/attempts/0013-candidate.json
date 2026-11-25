@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  x\\nis not definitionally equal to the right-hand side\\n  575\\n\\nx : ℕ\\nh₀ : ↑x + 25⁻¹ * ↑x = 598\\n⊢ x = 575\",\"endPos\":{\"column\":9,\"line\":17},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0013-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":17},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2805,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  x\nis not definitionally equal to the right-hand side\n  575\n\nx : ℕ\nh₀ : ↑x + 25⁻¹ * ↑x = 598\n⊢ x = 575",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0013-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 17
+      },
+      "end": {
+        "column": 9,
+        "line": 17
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 13,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0013-candidate.lean",
+  "sourceHash": "6a378448bf9dc44f74c3ef739a88ed3a39769cfabda3789e6e4b3728b81e7148",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_5f598c43428b24816c6aac31a1bad018ee31ddcd3172e40a423f9ac7d69c4108"
+}

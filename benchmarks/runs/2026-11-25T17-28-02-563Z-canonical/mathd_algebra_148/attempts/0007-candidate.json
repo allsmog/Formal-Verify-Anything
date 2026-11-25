@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  c\\nis not definitionally equal to the right-hand side\\n  3\\n\\nc : ℝ\\nf : ℝ → ℝ\\nh₀ : ∀ (x : ℝ), f x = c * x ^ 3 - 9 * x + 3\\nh₁ : c * 2 ^ 3 - 9 * 2 + 3 = 9\\n⊢ c = 3\",\"endPos\":{\"column\":7,\"line\":17},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_148/attempts/0007-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":17},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2709,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  c\nis not definitionally equal to the right-hand side\n  3\n\nc : ℝ\nf : ℝ → ℝ\nh₀ : ∀ (x : ℝ), f x = c * x ^ 3 - 9 * x + 3\nh₁ : c * 2 ^ 3 - 9 * 2 + 3 = 9\n⊢ c = 3",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_148/attempts/0007-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 17
+      },
+      "end": {
+        "column": 7,
+        "line": 17
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 7,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_148/attempts/0007-candidate.lean",
+  "sourceHash": "e68a1dec579d51c9fc305cf5b8476260f88bca4fd7828e74630a5c6666d7f5f1",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_d87d0a6146b44356c59f7c2a769475cabb255c49898dff55e7f1c18ac5c278cf"
+}

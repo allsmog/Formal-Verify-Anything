@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\nc : ℝ\\nf : ℝ → ℝ\\nh₀ : ∀ (x : ℝ), f x = c * x ^ 3 - 9 * x + 3\\nh₁ : c * 8 - 18 + 3 = 9\\n⊢ c = 3\",\"endPos\":{\"column\":16,\"line\":19},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_148/attempts/0012-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":19},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3070,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\nc : ℝ\nf : ℝ → ℝ\nh₀ : ∀ (x : ℝ), f x = c * x ^ 3 - 9 * x + 3\nh₁ : c * 8 - 18 + 3 = 9\n⊢ c = 3",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_148/attempts/0012-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 19
+      },
+      "end": {
+        "column": 16,
+        "line": 19
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 12,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_148/attempts/0012-candidate.lean",
+  "sourceHash": "5225f74d214888e7aa485e69c2d71b7388bd5be5aa7c7891f3e74c19121649c0",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_edf96cc6d0c2bea461eea0057fdad1df23ebea2978c68a70a109f9d9b2a66088"
+}

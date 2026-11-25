@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"simp_all made no progress\",\"endPos\":{\"column\":16,\"line\":19},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0028-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":19},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2645,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "simp_all made no progress",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0028-candidate.lean",
+      "start": {
+        "column": 8,
+        "line": 19
+      },
+      "end": {
+        "column": 16,
+        "line": 19
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 28,
+  "kind": "candidate",
+  "nodeId": "n4",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0028-candidate.lean",
+  "sourceHash": "8b50f9243501c4c289ac1e23e41664898902da85975c699329b611daab26134e",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_9a3f841439501e05068dcf368ee112dd7ed4365226f6f10eea8a03863b4740b6"
+}

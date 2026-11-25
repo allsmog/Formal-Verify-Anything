@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"omega could not prove the goal:\\nNo usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.\",\"endPos\":{\"column\":13,\"line\":20},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/attempts/0019-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":20},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 4102,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "omega could not prove the goal:\nNo usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/attempts/0019-candidate.lean",
+      "start": {
+        "column": 8,
+        "line": 20
+      },
+      "end": {
+        "column": 13,
+        "line": 20
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 19,
+  "kind": "candidate",
+  "nodeId": "n3",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/attempts/0019-candidate.lean",
+  "sourceHash": "71e65bba7b9b88141eb158375f9fd40f67802cef558d88cc8c7eebaf9590978e",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_3305fbed504bbb9d6427beba682aa48a1fe8868aeee3258da4014a2291405b03"
+}

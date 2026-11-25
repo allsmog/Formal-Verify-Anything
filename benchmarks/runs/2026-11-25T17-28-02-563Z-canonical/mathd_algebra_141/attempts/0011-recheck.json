@@ -1,0 +1,52 @@
+{
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_141\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (a b : Real),\\\\n  Eq.{1} (HMul.hMul.{0, 0, 0} a b) 180 →\\\\n    Eq.{1} (HMul.hMul.{0, 0, 0} 2 (HAdd.hAdd.{0, 0, 0} a b)) 54 →\\\\n      Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 2)) 369\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":16},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_141/attempts/0011-recheck.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":16},\"severity\":\"information\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3308,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_141\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (a b : Real),\\n  Eq.{1} (HMul.hMul.{0, 0, 0} a b) 180 →\\n    Eq.{1} (HMul.hMul.{0, 0, 0} 2 (HAdd.hAdd.{0, 0, 0} a b)) 54 →\\n      Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 2)) 369\",\"universe_parameters\":[],\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_141/attempts/0011-recheck.lean",
+      "start": {
+        "column": 0,
+        "line": 16
+      },
+      "end": {
+        "column": 28,
+        "line": 16
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "mathd_algebra_141",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (a b : Real),\n  Eq.{1} (HMul.hMul.{0, 0, 0} a b) 180 →\n    Eq.{1} (HMul.hMul.{0, 0, 0} 2 (HAdd.hAdd.{0, 0, 0} a b)) 54 →\n      Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 2)) 369",
+      "universe_parameters": [],
+      "version": 1
+    }
+  ],
+  "unparsed": [],
+  "sequence": 11,
+  "kind": "recheck",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_141/attempts/0011-recheck.lean",
+  "sourceHash": "477d61c78982d3ee76bb07cfd488c98b8dcb239c19b24bc83e500e547e2d602e",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_17b482548a5b771773161b634c85c18c9b44a985e48aa6a31fe4b25168f8e42d"
+}

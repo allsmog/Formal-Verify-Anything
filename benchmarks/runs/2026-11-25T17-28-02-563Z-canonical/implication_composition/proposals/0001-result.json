@@ -1,0 +1,59 @@
+{
+  "id": "p0",
+  "nodeId": "n0",
+  "stateHash": "7b96bfd85d47d9615c18500a15957f869f7b5ba4eb30849971d2d6647f05917a",
+  "round": 0,
+  "requestDigest": "311d582cd3b18e7fd5c0f14d98a31ca50e468bdcec598ee747d7ca0e8111989d",
+  "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/implication_composition/proposals/0001-context.json",
+  "modelTokens": 0,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "deterministic-v2",
+  "proposals": [
+    {
+      "tactic": "intro"
+    },
+    {
+      "tactic": "assumption"
+    },
+    {
+      "tactic": "rfl"
+    },
+    {
+      "tactic": "simp_all"
+    },
+    {
+      "tactic": "omega"
+    },
+    {
+      "tactic": "norm_num at *"
+    },
+    {
+      "tactic": "ring"
+    },
+    {
+      "tactic": "linarith"
+    },
+    {
+      "tactic": "nlinarith"
+    },
+    {
+      "tactic": "positivity"
+    },
+    {
+      "tactic": "norm_cast at *"
+    },
+    {
+      "tactic": "field_simp at *"
+    },
+    {
+      "tactic": "ring_nf at *"
+    },
+    {
+      "tactic": "aesop"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 0,
+  "evidenceId": "ev_e998a0e692e597ab659cbfdf841c5e92110844212133fd319e6a6b2970e897e0"
+}

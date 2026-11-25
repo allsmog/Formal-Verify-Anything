@@ -1,0 +1,56 @@
+{
+  "id": "p1",
+  "nodeId": "n1",
+  "stateHash": "1928347913f960dfc6a76cd7df99cd50385d6b1350da7cf3e22c85be5dedffb7",
+  "round": 0,
+  "requestDigest": "2dc3fef239f8c989a33b5a6658f88aa511e6fb5609e6e27cd1217023aa473ce6",
+  "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/proposals/0002-context.json",
+  "modelTokens": 0,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "deterministic-v2",
+  "proposals": [
+    {
+      "tactic": "assumption"
+    },
+    {
+      "tactic": "rfl"
+    },
+    {
+      "tactic": "simp_all"
+    },
+    {
+      "tactic": "omega"
+    },
+    {
+      "tactic": "norm_num at *"
+    },
+    {
+      "tactic": "ring"
+    },
+    {
+      "tactic": "linarith"
+    },
+    {
+      "tactic": "nlinarith"
+    },
+    {
+      "tactic": "positivity"
+    },
+    {
+      "tactic": "norm_cast at *"
+    },
+    {
+      "tactic": "field_simp at *"
+    },
+    {
+      "tactic": "ring_nf at *"
+    },
+    {
+      "tactic": "aesop"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 0,
+  "evidenceId": "ev_15cf80b09fe3743eb8913e5a43ac469654cc12c5f2a56cc505a82d86adc4d10e"
+}

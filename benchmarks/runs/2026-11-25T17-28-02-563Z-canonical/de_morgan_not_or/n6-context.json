@@ -1,0 +1,69 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.8",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "P",
+        "type": "Prop",
+        "typeHead": "sort",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.9",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "Q",
+        "type": "Prop",
+        "typeHead": "sort",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.8",
+          "_uniq.9"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.78",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "a._@._internal.0.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.de_morgan_not_or.attempts.0017-state.2353430241._hygCtx._hyg.55",
+        "type": "And (Not P) (Not Q)",
+        "typeHead": "And",
+        "value": null
+      }
+    ],
+    "id": "_uniq.79",
+    "omitted_implementation_details": 1,
+    "pretty": "case mpr\nP Q : Prop\na✝ : And (Not P) (Not Q)\n⊢ Not (Or P Q)",
+    "target": "Not (Or P Q)",
+    "targetArgs": [
+      "Or P Q"
+    ],
+    "targetHead": "Not",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Data.List.Basic"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 45,
+    "maxDepth": 8,
+    "depth": 2,
+    "modelTokensRemaining": 0,
+    "remainingMs": 238160
+  }
+}

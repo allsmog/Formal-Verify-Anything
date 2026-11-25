@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"linarith failed to find a contradiction\\ncase h1.h\\na b : ℝ\\nh₁ : a * b = 180\\nh₂ : 2 * (a + b) = 54\\na✝ : a ^ 2 + b ^ 2 < 369\\n⊢ False\\nfailed\",\"endPos\":{\"column\":10,\"line\":14},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_141/attempts/0008-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":14},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3192,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "linarith failed to find a contradiction\ncase h1.h\na b : ℝ\nh₁ : a * b = 180\nh₂ : 2 * (a + b) = 54\na✝ : a ^ 2 + b ^ 2 < 369\n⊢ False\nfailed",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_141/attempts/0008-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 14
+      },
+      "end": {
+        "column": 10,
+        "line": 14
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 8,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_141/attempts/0008-candidate.lean",
+  "sourceHash": "f4db32a2df565ef495356ecd76244b87085cb7227f7d2b5e1f3c09a09c601115",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_333b11dae1ff9fbf27e779cbe49afa469d77e18cd271af2ccd24dd91decc3ecf"
+}

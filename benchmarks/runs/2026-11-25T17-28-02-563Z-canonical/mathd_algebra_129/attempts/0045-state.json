@@ -1,0 +1,128 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":18,\"line\":26},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/attempts/0045-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":14,\"line\":26},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.476\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.476\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.2153\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"Not (Eq.{1} a 0)\\\",\\\"typeHead\\\":\\\"Not\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.476\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.2892\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₁\\\",\\\"type\\\":\\\"Eq.{1} (HSub.hSub.{0, 0, 0} (1 / 2) (Inv.inv.{0} a)) 1\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.3488\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"a : Real\\\\nh₀ : Not (Eq.{1} a 0)\\\\nh₁ : Eq.{1} (HSub.hSub.{0, 0, 0} (1 / 2) (Inv.inv.{0} a)) 1\\\\n⊢ Eq.{1} a (-2)\\\",\\\"target\\\":\\\"Eq.{1} a (-2)\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"a\\\",\\\"-2\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n9\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":30,\"line\":28},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/attempts/0045-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":16,\"line\":28},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n9\",\"endPos\":{\"column\":30,\"line\":28},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/attempts/0045-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":16,\"line\":28},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2710,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/attempts/0045-state.lean",
+      "start": {
+        "column": 14,
+        "line": 26
+      },
+      "end": {
+        "column": 18,
+        "line": 26
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.476\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"a\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.476\"],\"has_metavariables\":false,\"id\":\"_uniq.2153\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"Not (Eq.{1} a 0)\",\"typeHead\":\"Not\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.476\"],\"has_metavariables\":false,\"id\":\"_uniq.2892\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₁\",\"type\":\"Eq.{1} (HSub.hSub.{0, 0, 0} (1 / 2) (Inv.inv.{0} a)) 1\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.3488\",\"omitted_implementation_details\":1,\"pretty\":\"a : Real\\nh₀ : Not (Eq.{1} a 0)\\nh₁ : Eq.{1} (HSub.hSub.{0, 0, 0} (1 / 2) (Inv.inv.{0} a)) 1\\n⊢ Eq.{1} a (-2)\",\"target\":\"Eq.{1} a (-2)\",\"targetArgs\":[\"Real\",\"a\",\"-2\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n9\",\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/attempts/0045-state.lean",
+      "start": {
+        "column": 16,
+        "line": 28
+      },
+      "end": {
+        "column": 30,
+        "line": 28
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n9",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/attempts/0045-state.lean",
+      "start": {
+        "column": 16,
+        "line": 28
+      },
+      "end": {
+        "column": 30,
+        "line": 28
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.476",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "a",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.476"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.2153",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "Not (Eq.{1} a 0)",
+              "typeHead": "Not",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.476"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.2892",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₁",
+              "type": "Eq.{1} (HSub.hSub.{0, 0, 0} (1 / 2) (Inv.inv.{0} a)) 1",
+              "typeHead": "Eq",
+              "value": null
+            }
+          ],
+          "id": "_uniq.3488",
+          "omitted_implementation_details": 1,
+          "pretty": "a : Real\nh₀ : Not (Eq.{1} a 0)\nh₁ : Eq.{1} (HSub.hSub.{0, 0, 0} (1 / 2) (Inv.inv.{0} a)) 1\n⊢ Eq.{1} a (-2)",
+          "target": "Eq.{1} a (-2)",
+          "targetArgs": [
+            "Real",
+            "a",
+            "-2"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n9",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 45,
+  "kind": "state",
+  "nodeId": "n9",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/attempts/0045-state.lean",
+  "sourceHash": "13387bac6c14068752d8944e6142236fc35e1d5ad2e871eea94eae535841b4a2",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_961c5f285f41d6558b63cbcaf3a79920bcb34bd76363237d04b01443a6a5ea6f"
+}

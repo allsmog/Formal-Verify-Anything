@@ -1,0 +1,52 @@
+{
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_143\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (f g : Real → Real),\\\\n  (∀ (x : Real), Eq.{1} (f x) (HAdd.hAdd.{0, 0, 0} x 1)) →\\\\n    (∀ (x : Real), Eq.{1} (g x) (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) 3)) → Eq.{1} (f (g 2)) 8\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":18},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_143/attempts/0012-recheck.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":18},\"severity\":\"information\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2882,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_143\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (f g : Real → Real),\\n  (∀ (x : Real), Eq.{1} (f x) (HAdd.hAdd.{0, 0, 0} x 1)) →\\n    (∀ (x : Real), Eq.{1} (g x) (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) 3)) → Eq.{1} (f (g 2)) 8\",\"universe_parameters\":[],\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_143/attempts/0012-recheck.lean",
+      "start": {
+        "column": 0,
+        "line": 18
+      },
+      "end": {
+        "column": 28,
+        "line": 18
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "mathd_algebra_143",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (f g : Real → Real),\n  (∀ (x : Real), Eq.{1} (f x) (HAdd.hAdd.{0, 0, 0} x 1)) →\n    (∀ (x : Real), Eq.{1} (g x) (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) 3)) → Eq.{1} (f (g 2)) 8",
+      "universe_parameters": [],
+      "version": 1
+    }
+  ],
+  "unparsed": [],
+  "sequence": 12,
+  "kind": "recheck",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_143/attempts/0012-recheck.lean",
+  "sourceHash": "f58b52eabecd7b4e43201454a0108ca3d7adaa54626269a484ab9180810bff78",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_f9d11dfe5f44addfa48939f4a8a226ee42c3011ec1f65944b6b8720de09e3573"
+}

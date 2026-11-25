@@ -1,0 +1,58 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "implicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.19",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "α",
+        "type": "Type",
+        "typeHead": "sort",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.19"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.20",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "xs",
+        "type": "List.{0} α",
+        "typeHead": "List",
+        "value": null
+      }
+    ],
+    "id": "_uniq.21",
+    "omitted_implementation_details": 1,
+    "pretty": "α : Type\nxs : List.{0} α\n⊢ Eq.{1} (List.reverse.{0} (List.reverse.{0} xs)) xs",
+    "target": "Eq.{1} (List.reverse.{0} (List.reverse.{0} xs)) xs",
+    "targetArgs": [
+      "List.{0} α",
+      "List.reverse.{0} (List.reverse.{0} xs)",
+      "xs"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Data.List.Basic"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 61,
+    "maxDepth": 8,
+    "depth": 0,
+    "modelTokensRemaining": 0,
+    "remainingMs": 297581
+  }
+}

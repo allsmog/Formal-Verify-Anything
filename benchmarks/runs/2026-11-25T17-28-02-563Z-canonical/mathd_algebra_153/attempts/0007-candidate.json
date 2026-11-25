@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  ⌊10 * 3⁻¹⌋ + ⌊100 * 3⁻¹⌋ + ⌊1000 * 3⁻¹⌋ + ⌊10000 * 3⁻¹⌋\\nis not definitionally equal to the right-hand side\\n  3702\\n\\nn : ℝ\\nh₀ : n = 3⁻¹\\n⊢ ⌊10 * 3⁻¹⌋ + ⌊100 * 3⁻¹⌋ + ⌊1000 * 3⁻¹⌋ + ⌊10000 * 3⁻¹⌋ = 3702\",\"endPos\":{\"column\":7,\"line\":15},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0007-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":15},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 4644,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  ⌊10 * 3⁻¹⌋ + ⌊100 * 3⁻¹⌋ + ⌊1000 * 3⁻¹⌋ + ⌊10000 * 3⁻¹⌋\nis not definitionally equal to the right-hand side\n  3702\n\nn : ℝ\nh₀ : n = 3⁻¹\n⊢ ⌊10 * 3⁻¹⌋ + ⌊100 * 3⁻¹⌋ + ⌊1000 * 3⁻¹⌋ + ⌊10000 * 3⁻¹⌋ = 3702",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0007-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 15
+      },
+      "end": {
+        "column": 7,
+        "line": 15
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 7,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0007-candidate.lean",
+  "sourceHash": "66f86931e0c3a2a1aab1b166b673f938fd7a61ee9a6c7b8631e0ea1fe3f3d7b8",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_dcc143024a83df3fa5eef0c7bf02f13edb490390cee350766b4de0d7a4235fc0"
+}

@@ -1,0 +1,100 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"implicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.19\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"α\\\",\\\"type\\\":\\\"Type\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.19\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.20\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"xs\\\",\\\"type\\\":\\\"List.{0} α\\\",\\\"typeHead\\\":\\\"List\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.21\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"α : Type\\\\nxs : List.{0} α\\\\n⊢ Eq.{1} (List.reverse.{0} (List.reverse.{0} xs)) xs\\\",\\\"target\\\":\\\"Eq.{1} (List.reverse.{0} (List.reverse.{0} xs)) xs\\\",\\\"targetArgs\\\":[\\\"List.{0} α\\\",\\\"List.reverse.{0} (List.reverse.{0} xs)\\\",\\\"xs\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":10},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":10},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":16,\"line\":10},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":10},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2416,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"implicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.19\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"α\",\"type\":\"Type\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.19\"],\"has_metavariables\":false,\"id\":\"_uniq.20\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"xs\",\"type\":\"List.{0} α\",\"typeHead\":\"List\",\"value\":null}],\"id\":\"_uniq.21\",\"omitted_implementation_details\":1,\"pretty\":\"α : Type\\nxs : List.{0} α\\n⊢ Eq.{1} (List.reverse.{0} (List.reverse.{0} xs)) xs\",\"target\":\"Eq.{1} (List.reverse.{0} (List.reverse.{0} xs)) xs\",\"targetArgs\":[\"List.{0} α\",\"List.reverse.{0} (List.reverse.{0} xs)\",\"xs\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/attempts/0001-state.lean",
+      "start": {
+        "column": 2,
+        "line": 10
+      },
+      "end": {
+        "column": 16,
+        "line": 10
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n0",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/attempts/0001-state.lean",
+      "start": {
+        "column": 2,
+        "line": 10
+      },
+      "end": {
+        "column": 16,
+        "line": 10
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "implicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.19",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "α",
+              "type": "Type",
+              "typeHead": "sort",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.19"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.20",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "xs",
+              "type": "List.{0} α",
+              "typeHead": "List",
+              "value": null
+            }
+          ],
+          "id": "_uniq.21",
+          "omitted_implementation_details": 1,
+          "pretty": "α : Type\nxs : List.{0} α\n⊢ Eq.{1} (List.reverse.{0} (List.reverse.{0} xs)) xs",
+          "target": "Eq.{1} (List.reverse.{0} (List.reverse.{0} xs)) xs",
+          "targetArgs": [
+            "List.{0} α",
+            "List.reverse.{0} (List.reverse.{0} xs)",
+            "xs"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n0",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 1,
+  "kind": "state",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/attempts/0001-state.lean",
+  "sourceHash": "232f240b9feed40db9c9d0286681f5bbafac07b2d2dfd9ee9783bc3b937324f4",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_22c8cdd3048fe112d12110a96ba312a6818838d374f006a172ac41f72a38a4f0"
+}

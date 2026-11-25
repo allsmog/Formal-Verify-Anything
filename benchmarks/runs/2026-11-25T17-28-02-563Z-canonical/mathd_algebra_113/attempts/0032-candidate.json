@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"linarith failed to find a contradiction\\ncase h\\nx : ℝ\\na✝ : x ^ 2 - 14 * x + 98 < 49\\n⊢ False\\nfailed\",\"endPos\":{\"column\":14,\"line\":16},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0032-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":16},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2848,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "linarith failed to find a contradiction\ncase h\nx : ℝ\na✝ : x ^ 2 - 14 * x + 98 < 49\n⊢ False\nfailed",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0032-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 16
+      },
+      "end": {
+        "column": 14,
+        "line": 16
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 32,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0032-candidate.lean",
+  "sourceHash": "2178b3473544fc10b1b1f7b3d3dfb5b16ce173f4c4a3fc2f544a3890a31718b9",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_c625de4052775a0f32f64122906e82af1e5cdec49c7ca0f6e4f1b4be39bbf6b5"
+}

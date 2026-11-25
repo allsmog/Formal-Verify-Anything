@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\ns : ℝ → ℝ → ℝ\\nh₀ : ∀ (x y : ℝ), ¬x = 0 → ¬y = 0 → s x y = (y⁻¹ - x⁻¹) / (x - y)\\n⊢ (11⁻¹ - 3⁻¹) / (3 - 11) = 33⁻¹\",\"endPos\":{\"column\":14,\"line\":15},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_139/attempts/0006-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":15},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3034,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\ns : ℝ → ℝ → ℝ\nh₀ : ∀ (x y : ℝ), ¬x = 0 → ¬y = 0 → s x y = (y⁻¹ - x⁻¹) / (x - y)\n⊢ (11⁻¹ - 3⁻¹) / (3 - 11) = 33⁻¹",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_139/attempts/0006-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 15
+      },
+      "end": {
+        "column": 14,
+        "line": 15
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 6,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_139/attempts/0006-candidate.lean",
+  "sourceHash": "9ab699d3b33f116c313cf37169bf95316f076a482d720130bee5d4d069985937",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_a1f5ed4f37981007e97c6721d2b723b9feac16dfde48721183dc062d23f45372"
+}

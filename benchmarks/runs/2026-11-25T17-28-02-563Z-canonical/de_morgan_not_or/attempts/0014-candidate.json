@@ -1,0 +1,145 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[],\\\"node_id\\\":\\\"n5\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":21,\"line\":19},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/attempts/0014-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":19},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_CLOSED:{\\\"node_id\\\":\\\"n5\\\"}\",\"endPos\":{\"column\":21,\"line\":19},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/attempts/0014-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":19},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n5\",\"endPos\":{\"column\":21,\"line\":19},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/attempts/0014-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":19},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.8\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"P\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.9\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"Q\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.18\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case mpr\\\\nP Q : Prop\\\\n⊢ And (Not P) (Not Q) → Not (Or P Q)\\\",\\\"target\\\":\\\"And (Not P) (Not Q) → Not (Or P Q)\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"forall\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":18,\"line\":21},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/attempts/0014-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":21},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n2\",\"endPos\":{\"column\":18,\"line\":21},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/attempts/0014-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":21},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2762,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[],\"node_id\":\"n5\",\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/attempts/0014-candidate.lean",
+      "start": {
+        "column": 8,
+        "line": 19
+      },
+      "end": {
+        "column": 21,
+        "line": 19
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_CLOSED:{\"node_id\":\"n5\"}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/attempts/0014-candidate.lean",
+      "start": {
+        "column": 8,
+        "line": 19
+      },
+      "end": {
+        "column": 21,
+        "line": 19
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n5",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/attempts/0014-candidate.lean",
+      "start": {
+        "column": 8,
+        "line": 19
+      },
+      "end": {
+        "column": 21,
+        "line": 19
+      },
+      "category": "probe_stop"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.8\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"P\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.9\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"Q\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null}],\"id\":\"_uniq.18\",\"omitted_implementation_details\":1,\"pretty\":\"case mpr\\nP Q : Prop\\n⊢ And (Not P) (Not Q) → Not (Or P Q)\",\"target\":\"And (Not P) (Not Q) → Not (Or P Q)\",\"targetArgs\":[],\"targetHead\":\"forall\",\"universe_parameters\":[]}],\"node_id\":\"n2\",\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/attempts/0014-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 21
+      },
+      "end": {
+        "column": 18,
+        "line": 21
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n2",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/attempts/0014-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 21
+      },
+      "end": {
+        "column": 18,
+        "line": 21
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [],
+      "node_id": "n5",
+      "version": 1
+    },
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.8",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "P",
+              "type": "Prop",
+              "typeHead": "sort",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.9",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "Q",
+              "type": "Prop",
+              "typeHead": "sort",
+              "value": null
+            }
+          ],
+          "id": "_uniq.18",
+          "omitted_implementation_details": 1,
+          "pretty": "case mpr\nP Q : Prop\n⊢ And (Not P) (Not Q) → Not (Or P Q)",
+          "target": "And (Not P) (Not Q) → Not (Or P Q)",
+          "targetArgs": [],
+          "targetHead": "forall",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n2",
+      "version": 1
+    }
+  ],
+  "closed": [
+    {
+      "node_id": "n5"
+    }
+  ],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 14,
+  "kind": "candidate",
+  "nodeId": "n5",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/attempts/0014-candidate.lean",
+  "sourceHash": "11bf2dc782d9ef4595f2e9ccb5e32144ac7b65d2408b9e244721f76632210b0d",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_bf899beb1b8e796a82c4af4e30989877cf990345ee9279c6fb817d4fe3e05275"
+}

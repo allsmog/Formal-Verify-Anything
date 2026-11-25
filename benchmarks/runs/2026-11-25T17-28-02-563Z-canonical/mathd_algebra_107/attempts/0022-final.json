@@ -1,0 +1,66 @@
+{
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":8,\"line\":15},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_107/attempts/0022-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":15},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_107\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (x y : Real),\\\\n  Eq.{1}\\\\n      (HSub.hSub.{0, 0, 0}\\\\n        (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HMul.hMul.{0, 0, 0} 8 x))\\\\n          (HPow.hPow.{0, 0, 0} y 2))\\\\n        (HMul.hMul.{0, 0, 0} 6 y))\\\\n      0 →\\\\n    Eq.{1}\\\\n      (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 4) 2)\\\\n        (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} y 3) 2))\\\\n      (HPow.hPow.{0, 0, 0} 5 2)\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":19},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_107/attempts/0022-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":19},\"severity\":\"information\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3439,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_107/attempts/0022-final.lean",
+      "start": {
+        "column": 4,
+        "line": 15
+      },
+      "end": {
+        "column": 8,
+        "line": 15
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_107\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (x y : Real),\\n  Eq.{1}\\n      (HSub.hSub.{0, 0, 0}\\n        (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HMul.hMul.{0, 0, 0} 8 x))\\n          (HPow.hPow.{0, 0, 0} y 2))\\n        (HMul.hMul.{0, 0, 0} 6 y))\\n      0 →\\n    Eq.{1}\\n      (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 4) 2)\\n        (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} y 3) 2))\\n      (HPow.hPow.{0, 0, 0} 5 2)\",\"universe_parameters\":[],\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_107/attempts/0022-final.lean",
+      "start": {
+        "column": 0,
+        "line": 19
+      },
+      "end": {
+        "column": 28,
+        "line": 19
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "mathd_algebra_107",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (x y : Real),\n  Eq.{1}\n      (HSub.hSub.{0, 0, 0}\n        (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HMul.hMul.{0, 0, 0} 8 x))\n          (HPow.hPow.{0, 0, 0} y 2))\n        (HMul.hMul.{0, 0, 0} 6 y))\n      0 →\n    Eq.{1}\n      (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 4) 2)\n        (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} y 3) 2))\n      (HPow.hPow.{0, 0, 0} 5 2)",
+      "universe_parameters": [],
+      "version": 1
+    }
+  ],
+  "unparsed": [],
+  "sequence": 22,
+  "kind": "final",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_107/attempts/0022-final.lean",
+  "sourceHash": "6e6a2b9a36dee7bf1d6b8077fe1ee3bf85d7e1fe7df85b84be0c9e74b8bc8a62",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_90e87720c1b47c7c0f38408f752b859815628310159aeaac5e9281bf4d4274c9"
+}

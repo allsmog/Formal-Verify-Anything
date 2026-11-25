@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  f (g 2)\\nis not definitionally equal to the right-hand side\\n  8\\n\\nf g : ℝ → ℝ\\nh₀ : ∀ (x : ℝ), f x = x + 1\\nh₁ : ∀ (x : ℝ), g x = x ^ 2 + 3\\n⊢ f (g 2) = 8\",\"endPos\":{\"column\":5,\"line\":14},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_143/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":14},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3128,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  f (g 2)\nis not definitionally equal to the right-hand side\n  8\n\nf g : ℝ → ℝ\nh₀ : ∀ (x : ℝ), f x = x + 1\nh₁ : ∀ (x : ℝ), g x = x ^ 2 + 3\n⊢ f (g 2) = 8",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_143/attempts/0003-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 14
+      },
+      "end": {
+        "column": 5,
+        "line": 14
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 3,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_143/attempts/0003-candidate.lean",
+  "sourceHash": "fd2c19764a7d1b1fb0c0601a288673363c19c3c7a0be3db8087cd09219d2f8af",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_7f0df0f52c28174500adf3a0db7eff10a13ebf714498434da922846dbbe13768"
+}

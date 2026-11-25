@@ -1,0 +1,87 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.1207\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"x\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.1208\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"x : Real\\\\n⊢ GE.ge.{0} (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HMul.hMul.{0, 0, 0} 14 x)) 3)\\\\n    (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 7 2) (HMul.hMul.{0, 0, 0} 14 7)) 3)\\\",\\\"target\\\":\\\"GE.ge.{0} (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HMul.hMul.{0, 0, 0} 14 x)) 3)\\\\n  (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 7 2) (HMul.hMul.{0, 0, 0} 14 7)) 3)\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"Real.instLE\\\",\\\"HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HMul.hMul.{0, 0, 0} 14 x)) 3\\\",\\\"HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 7 2) (HMul.hMul.{0, 0, 0} 14 7)) 3\\\"],\\\"targetHead\\\":\\\"GE.ge\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":12},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":12},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":16,\"line\":12},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":12},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2918,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.1207\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"x\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null}],\"id\":\"_uniq.1208\",\"omitted_implementation_details\":1,\"pretty\":\"x : Real\\n⊢ GE.ge.{0} (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HMul.hMul.{0, 0, 0} 14 x)) 3)\\n    (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 7 2) (HMul.hMul.{0, 0, 0} 14 7)) 3)\",\"target\":\"GE.ge.{0} (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HMul.hMul.{0, 0, 0} 14 x)) 3)\\n  (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 7 2) (HMul.hMul.{0, 0, 0} 14 7)) 3)\",\"targetArgs\":[\"Real\",\"Real.instLE\",\"HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HMul.hMul.{0, 0, 0} 14 x)) 3\",\"HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 7 2) (HMul.hMul.{0, 0, 0} 14 7)) 3\"],\"targetHead\":\"GE.ge\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0001-state.lean",
+      "start": {
+        "column": 2,
+        "line": 12
+      },
+      "end": {
+        "column": 16,
+        "line": 12
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n0",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0001-state.lean",
+      "start": {
+        "column": 2,
+        "line": 12
+      },
+      "end": {
+        "column": 16,
+        "line": 12
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.1207",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "x",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            }
+          ],
+          "id": "_uniq.1208",
+          "omitted_implementation_details": 1,
+          "pretty": "x : Real\n⊢ GE.ge.{0} (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HMul.hMul.{0, 0, 0} 14 x)) 3)\n    (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 7 2) (HMul.hMul.{0, 0, 0} 14 7)) 3)",
+          "target": "GE.ge.{0} (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HMul.hMul.{0, 0, 0} 14 x)) 3)\n  (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 7 2) (HMul.hMul.{0, 0, 0} 14 7)) 3)",
+          "targetArgs": [
+            "Real",
+            "Real.instLE",
+            "HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HMul.hMul.{0, 0, 0} 14 x)) 3",
+            "HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 7 2) (HMul.hMul.{0, 0, 0} 14 7)) 3"
+          ],
+          "targetHead": "GE.ge",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n0",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 1,
+  "kind": "state",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0001-state.lean",
+  "sourceHash": "0f6feeb7522576bc668b4675366fee9ea5d4719e84b411e7cf4cfd39a06fe9ec",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_c5189b79fce3557a5ac54857f8b8b6ce4a7ee163953675d9561235af73257089"
+}

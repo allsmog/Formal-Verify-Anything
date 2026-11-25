@@ -1,0 +1,50 @@
+{
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\"],\\\"declaration\\\":\\\"implication_composition\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (P Q R : Prop), (P → Q) → (Q → R) → P → R\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":34,\"line\":14},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/implication_composition/attempts/0008-recheck.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":14},\"severity\":\"information\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3315,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_AUDIT:{\"axioms\":[\"propext\"],\"declaration\":\"implication_composition\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (P Q R : Prop), (P → Q) → (Q → R) → P → R\",\"universe_parameters\":[],\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/implication_composition/attempts/0008-recheck.lean",
+      "start": {
+        "column": 0,
+        "line": 14
+      },
+      "end": {
+        "column": 34,
+        "line": 14
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "implication_composition",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (P Q R : Prop), (P → Q) → (Q → R) → P → R",
+      "universe_parameters": [],
+      "version": 1
+    }
+  ],
+  "unparsed": [],
+  "sequence": 8,
+  "kind": "recheck",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/implication_composition/attempts/0008-recheck.lean",
+  "sourceHash": "3463901956c0aa4a9f322b54d2bd2e566f1c0b623eb3bc6890e91af97b149f4c",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_c1f84252e6f0e438b7e1b23eac031e47409922e95747dda5b302fa2eb0088f0b"
+}

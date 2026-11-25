@@ -1,0 +1,101 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.412",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "x",
+        "type": "Nat",
+        "typeHead": "Nat",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.413",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "y",
+        "type": "Nat",
+        "typeHead": "Nat",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.412",
+          "_uniq.413"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.414",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "And (LT.lt.{0} 0 x) (LT.lt.{0} 0 y)",
+        "typeHead": "And",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.412",
+          "_uniq.413"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.415",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₁",
+        "type": "Eq.{1} (HMul.hMul.{0, 0, 0} 5 x) y",
+        "typeHead": "Eq",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.412",
+          "_uniq.413"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.416",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₂",
+        "type": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (↑x) 3) (HSub.hSub.{0, 0, 0} (↑y) 3)) 30",
+        "typeHead": "Eq",
+        "value": null
+      }
+    ],
+    "id": "_uniq.417",
+    "omitted_implementation_details": 1,
+    "pretty": "x y : Nat\nh₀ : And (LT.lt.{0} 0 x) (LT.lt.{0} 0 y)\nh₁ : Eq.{1} (HMul.hMul.{0, 0, 0} 5 x) y\nh₂ : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (↑x) 3) (HSub.hSub.{0, 0, 0} (↑y) 3)) 30\n⊢ Eq.{1} x 6",
+    "target": "Eq.{1} x 6",
+    "targetArgs": [
+      "Nat",
+      "x",
+      "6"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Data.Real.Basic"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 61,
+    "maxDepth": 8,
+    "depth": 0,
+    "modelTokensRemaining": 0,
+    "remainingMs": 297288
+  }
+}

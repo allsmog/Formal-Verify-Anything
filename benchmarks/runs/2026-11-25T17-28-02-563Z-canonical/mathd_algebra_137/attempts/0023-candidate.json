@@ -1,0 +1,48 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"unknown tactic\",\"endPos\":null,\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0023-candidate.lean\",\"isSilent\":false,\"keepFullRange\":true,\"kind\":\"[anonymous]\",\"pos\":{\"column\":7,\"line\":17},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"unsolved goals\\nx : ℕ\\nh₀ : ↑x + 25⁻¹ * ↑x = 598\\n⊢ x = 575\",\"endPos\":{\"column\":16,\"line\":17},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0023-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"Tactic.unsolvedGoals\",\"pos\":{\"column\":4,\"line\":16},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2767,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "unknown tactic",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0023-candidate.lean",
+      "start": {
+        "column": 7,
+        "line": 17
+      },
+      "end": null,
+      "category": "unknown_tactic_or_identifier"
+    },
+    {
+      "severity": "error",
+      "message": "unsolved goals\nx : ℕ\nh₀ : ↑x + 25⁻¹ * ↑x = 598\n⊢ x = 575",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0023-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 16
+      },
+      "end": {
+        "column": 16,
+        "line": 17
+      },
+      "category": "unsolved_goals"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 23,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0023-candidate.lean",
+  "sourceHash": "6ce26d8deef924e6f73b864cc4260fcae03bec34fd9f4ade6cf09dbd18b4ae54",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_5b14e8fdf8755763a0a6e15767d99ad9af0c9134d545c2f78cad21f67481d5c3"
+}

@@ -1,0 +1,176 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.3004\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"Eq.{1} (HMul.hMul.{0, 0, 0} (↑0) (HDiv.hDiv.{0, 0, 0} 26 25)) 598\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.3007\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case zero\\\\nh₀ : Eq.{1} (HMul.hMul.{0, 0, 0} (↑0) (HDiv.hDiv.{0, 0, 0} 26 25)) 598\\\\n⊢ Eq.{1} 0 575\\\",\\\"target\\\":\\\"Eq.{1} 0 575\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"0\\\",\\\"575\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n8\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":26,\"line\":23},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0053-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":12,\"line\":23},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n8\",\"endPos\":{\"column\":26,\"line\":23},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0053-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":12,\"line\":23},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.3008\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.mathd_algebra_137.attempts.0053-state.3783915034._hygCtx._hyg.96\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.3008\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.3009\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a._@._internal.0.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.mathd_algebra_137.attempts.0053-state.3783915034._hygCtx._hyg.97\\\",\\\"type\\\":\\\"Eq.{1} (HMul.hMul.{0, 0, 0} (↑n✝) (HDiv.hDiv.{0, 0, 0} 26 25)) 598 → Eq.{1} n✝ 575\\\",\\\"typeHead\\\":\\\"forall\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.3008\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.3013\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"Eq.{1} (HMul.hMul.{0, 0, 0} (↑(HAdd.hAdd.{0, 0, 0} n✝ 1)) (HDiv.hDiv.{0, 0, 0} 26 25)) 598\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.3016\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case succ\\\\nn✝ : Nat\\\\na✝ : Eq.{1} (HMul.hMul.{0, 0, 0} (↑n✝) (HDiv.hDiv.{0, 0, 0} 26 25)) 598 → Eq.{1} n✝ 575\\\\nh₀ : Eq.{1} (HMul.hMul.{0, 0, 0} (↑(HAdd.hAdd.{0, 0, 0} n✝ 1)) (HDiv.hDiv.{0, 0, 0} 26 25)) 598\\\\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} n✝ 1) 575\\\",\\\"target\\\":\\\"Eq.{1} (HAdd.hAdd.{0, 0, 0} n✝ 1) 575\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"HAdd.hAdd.{0, 0, 0} n✝ 1\\\",\\\"575\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n9\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":26,\"line\":25},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0053-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":12,\"line\":25},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n9\",\"endPos\":{\"column\":26,\"line\":25},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0053-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":12,\"line\":25},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2873,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.3004\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"Eq.{1} (HMul.hMul.{0, 0, 0} (↑0) (HDiv.hDiv.{0, 0, 0} 26 25)) 598\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.3007\",\"omitted_implementation_details\":1,\"pretty\":\"case zero\\nh₀ : Eq.{1} (HMul.hMul.{0, 0, 0} (↑0) (HDiv.hDiv.{0, 0, 0} 26 25)) 598\\n⊢ Eq.{1} 0 575\",\"target\":\"Eq.{1} 0 575\",\"targetArgs\":[\"Nat\",\"0\",\"575\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n8\",\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0053-state.lean",
+      "start": {
+        "column": 12,
+        "line": 23
+      },
+      "end": {
+        "column": 26,
+        "line": 23
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n8",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0053-state.lean",
+      "start": {
+        "column": 12,
+        "line": 23
+      },
+      "end": {
+        "column": 26,
+        "line": 23
+      },
+      "category": "probe_stop"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.3008\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.mathd_algebra_137.attempts.0053-state.3783915034._hygCtx._hyg.96\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.3008\"],\"has_metavariables\":false,\"id\":\"_uniq.3009\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"a._@._internal.0.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.mathd_algebra_137.attempts.0053-state.3783915034._hygCtx._hyg.97\",\"type\":\"Eq.{1} (HMul.hMul.{0, 0, 0} (↑n✝) (HDiv.hDiv.{0, 0, 0} 26 25)) 598 → Eq.{1} n✝ 575\",\"typeHead\":\"forall\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.3008\"],\"has_metavariables\":false,\"id\":\"_uniq.3013\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"Eq.{1} (HMul.hMul.{0, 0, 0} (↑(HAdd.hAdd.{0, 0, 0} n✝ 1)) (HDiv.hDiv.{0, 0, 0} 26 25)) 598\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.3016\",\"omitted_implementation_details\":1,\"pretty\":\"case succ\\nn✝ : Nat\\na✝ : Eq.{1} (HMul.hMul.{0, 0, 0} (↑n✝) (HDiv.hDiv.{0, 0, 0} 26 25)) 598 → Eq.{1} n✝ 575\\nh₀ : Eq.{1} (HMul.hMul.{0, 0, 0} (↑(HAdd.hAdd.{0, 0, 0} n✝ 1)) (HDiv.hDiv.{0, 0, 0} 26 25)) 598\\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} n✝ 1) 575\",\"target\":\"Eq.{1} (HAdd.hAdd.{0, 0, 0} n✝ 1) 575\",\"targetArgs\":[\"Nat\",\"HAdd.hAdd.{0, 0, 0} n✝ 1\",\"575\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n9\",\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0053-state.lean",
+      "start": {
+        "column": 12,
+        "line": 25
+      },
+      "end": {
+        "column": 26,
+        "line": 25
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n9",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0053-state.lean",
+      "start": {
+        "column": 12,
+        "line": 25
+      },
+      "end": {
+        "column": 26,
+        "line": 25
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.3004",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "Eq.{1} (HMul.hMul.{0, 0, 0} (↑0) (HDiv.hDiv.{0, 0, 0} 26 25)) 598",
+              "typeHead": "Eq",
+              "value": null
+            }
+          ],
+          "id": "_uniq.3007",
+          "omitted_implementation_details": 1,
+          "pretty": "case zero\nh₀ : Eq.{1} (HMul.hMul.{0, 0, 0} (↑0) (HDiv.hDiv.{0, 0, 0} 26 25)) 598\n⊢ Eq.{1} 0 575",
+          "target": "Eq.{1} 0 575",
+          "targetArgs": [
+            "Nat",
+            "0",
+            "575"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n8",
+      "version": 1
+    },
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.3008",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.mathd_algebra_137.attempts.0053-state.3783915034._hygCtx._hyg.96",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.3008"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.3009",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "a._@._internal.0.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.mathd_algebra_137.attempts.0053-state.3783915034._hygCtx._hyg.97",
+              "type": "Eq.{1} (HMul.hMul.{0, 0, 0} (↑n✝) (HDiv.hDiv.{0, 0, 0} 26 25)) 598 → Eq.{1} n✝ 575",
+              "typeHead": "forall",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.3008"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.3013",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "Eq.{1} (HMul.hMul.{0, 0, 0} (↑(HAdd.hAdd.{0, 0, 0} n✝ 1)) (HDiv.hDiv.{0, 0, 0} 26 25)) 598",
+              "typeHead": "Eq",
+              "value": null
+            }
+          ],
+          "id": "_uniq.3016",
+          "omitted_implementation_details": 1,
+          "pretty": "case succ\nn✝ : Nat\na✝ : Eq.{1} (HMul.hMul.{0, 0, 0} (↑n✝) (HDiv.hDiv.{0, 0, 0} 26 25)) 598 → Eq.{1} n✝ 575\nh₀ : Eq.{1} (HMul.hMul.{0, 0, 0} (↑(HAdd.hAdd.{0, 0, 0} n✝ 1)) (HDiv.hDiv.{0, 0, 0} 26 25)) 598\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} n✝ 1) 575",
+          "target": "Eq.{1} (HAdd.hAdd.{0, 0, 0} n✝ 1) 575",
+          "targetArgs": [
+            "Nat",
+            "HAdd.hAdd.{0, 0, 0} n✝ 1",
+            "575"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n9",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 53,
+  "kind": "state",
+  "nodeId": "n8",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0053-state.lean",
+  "sourceHash": "71cb3f93c43dd8bc720da8b2eee304e8e3fbda195b810e7d845a463b776d5994",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_9257978eebf700916598586210163b6b76d6dda68981af8dc9fbaa54b4393e82"
+}

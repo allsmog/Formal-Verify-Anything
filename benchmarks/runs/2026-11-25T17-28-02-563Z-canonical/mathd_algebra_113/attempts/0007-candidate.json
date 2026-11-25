@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  7 ^ 2\\nis not definitionally equal to the right-hand side\\n  x ^ 2 - 14 * x + 14 * 7\\n\\nx : ℝ\\n⊢ 7 ^ 2 ≤ x ^ 2 - 14 * x + 14 * 7\",\"endPos\":{\"column\":7,\"line\":14},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0007-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":14},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3128,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  7 ^ 2\nis not definitionally equal to the right-hand side\n  x ^ 2 - 14 * x + 14 * 7\n\nx : ℝ\n⊢ 7 ^ 2 ≤ x ^ 2 - 14 * x + 14 * 7",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0007-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 14
+      },
+      "end": {
+        "column": 7,
+        "line": 14
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 7,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0007-candidate.lean",
+  "sourceHash": "531aa3d5ae5941853a15a81731668baaa43cbaadf8d870d01ca9d22314e873cc",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_2c3a934521eb4d1437be77f4c6e4a8b26d33d149459ac3ef79dda6a22e6e7961"
+}

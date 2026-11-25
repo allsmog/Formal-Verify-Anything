@@ -1,0 +1,126 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.482\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"f\\\",\\\"type\\\":\\\"Real → Real\\\",\\\"typeHead\\\":\\\"forall\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.483\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"g\\\",\\\"type\\\":\\\"Real → Real\\\",\\\"typeHead\\\":\\\"forall\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.482\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.484\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"∀ (x : Real), Eq.{1} (f x) (HAdd.hAdd.{0, 0, 0} x 1)\\\",\\\"typeHead\\\":\\\"forall\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.483\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.485\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₁\\\",\\\"type\\\":\\\"∀ (x : Real), Eq.{1} (g x) (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) 3)\\\",\\\"typeHead\\\":\\\"forall\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.486\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"f g : Real → Real\\\\nh₀ : ∀ (x : Real), Eq.{1} (f x) (HAdd.hAdd.{0, 0, 0} x 1)\\\\nh₁ : ∀ (x : Real), Eq.{1} (g x) (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) 3)\\\\n⊢ Eq.{1} (f (g 2)) 8\\\",\\\"target\\\":\\\"Eq.{1} (f (g 2)) 8\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"f (g 2)\\\",\\\"8\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":14},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_143/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":14},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":16,\"line\":14},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_143/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":14},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2901,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.482\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"f\",\"type\":\"Real → Real\",\"typeHead\":\"forall\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.483\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"g\",\"type\":\"Real → Real\",\"typeHead\":\"forall\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.482\"],\"has_metavariables\":false,\"id\":\"_uniq.484\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"∀ (x : Real), Eq.{1} (f x) (HAdd.hAdd.{0, 0, 0} x 1)\",\"typeHead\":\"forall\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.483\"],\"has_metavariables\":false,\"id\":\"_uniq.485\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₁\",\"type\":\"∀ (x : Real), Eq.{1} (g x) (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) 3)\",\"typeHead\":\"forall\",\"value\":null}],\"id\":\"_uniq.486\",\"omitted_implementation_details\":1,\"pretty\":\"f g : Real → Real\\nh₀ : ∀ (x : Real), Eq.{1} (f x) (HAdd.hAdd.{0, 0, 0} x 1)\\nh₁ : ∀ (x : Real), Eq.{1} (g x) (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) 3)\\n⊢ Eq.{1} (f (g 2)) 8\",\"target\":\"Eq.{1} (f (g 2)) 8\",\"targetArgs\":[\"Real\",\"f (g 2)\",\"8\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_143/attempts/0001-state.lean",
+      "start": {
+        "column": 2,
+        "line": 14
+      },
+      "end": {
+        "column": 16,
+        "line": 14
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n0",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_143/attempts/0001-state.lean",
+      "start": {
+        "column": 2,
+        "line": 14
+      },
+      "end": {
+        "column": 16,
+        "line": 14
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.482",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "f",
+              "type": "Real → Real",
+              "typeHead": "forall",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.483",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "g",
+              "type": "Real → Real",
+              "typeHead": "forall",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.482"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.484",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "∀ (x : Real), Eq.{1} (f x) (HAdd.hAdd.{0, 0, 0} x 1)",
+              "typeHead": "forall",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.483"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.485",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₁",
+              "type": "∀ (x : Real), Eq.{1} (g x) (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) 3)",
+              "typeHead": "forall",
+              "value": null
+            }
+          ],
+          "id": "_uniq.486",
+          "omitted_implementation_details": 1,
+          "pretty": "f g : Real → Real\nh₀ : ∀ (x : Real), Eq.{1} (f x) (HAdd.hAdd.{0, 0, 0} x 1)\nh₁ : ∀ (x : Real), Eq.{1} (g x) (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) 3)\n⊢ Eq.{1} (f (g 2)) 8",
+          "target": "Eq.{1} (f (g 2)) 8",
+          "targetArgs": [
+            "Real",
+            "f (g 2)",
+            "8"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n0",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 1,
+  "kind": "state",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_143/attempts/0001-state.lean",
+  "sourceHash": "6e8732c91c3a56ecbdde3b36ee9fa269a168ddbcafee5fc2ac77c2de43097078",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_186bd86347b2b1d1b91405bc970fb91c72a8074e5f4ae964351b493a1d72d532"
+}

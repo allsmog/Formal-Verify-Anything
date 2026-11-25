@@ -1,0 +1,114 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.476\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.476\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.2153\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"Not (Eq.{1} a 0)\\\",\\\"typeHead\\\":\\\"Not\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.476\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.3801\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₁\\\",\\\"type\\\":\\\"Eq.{1} (HSub.hSub.{0, 0, 0} (Inv.inv.{0} 2) (Inv.inv.{0} a)) 1\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.3804\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"a : Real\\\\nh₀ : Not (Eq.{1} a 0)\\\\nh₁ : Eq.{1} (HSub.hSub.{0, 0, 0} (Inv.inv.{0} 2) (Inv.inv.{0} a)) 1\\\\n⊢ Eq.{1} a (Neg.neg.{0} 2)\\\",\\\"target\\\":\\\"Eq.{1} a (Neg.neg.{0} 2)\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"a\\\",\\\"Neg.neg.{0} 2\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n11\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":30},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/attempts/0054-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":18,\"line\":30},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n11\",\"endPos\":{\"column\":33,\"line\":30},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/attempts/0054-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":18,\"line\":30},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2534,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.476\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"a\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.476\"],\"has_metavariables\":false,\"id\":\"_uniq.2153\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"Not (Eq.{1} a 0)\",\"typeHead\":\"Not\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.476\"],\"has_metavariables\":false,\"id\":\"_uniq.3801\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₁\",\"type\":\"Eq.{1} (HSub.hSub.{0, 0, 0} (Inv.inv.{0} 2) (Inv.inv.{0} a)) 1\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.3804\",\"omitted_implementation_details\":1,\"pretty\":\"a : Real\\nh₀ : Not (Eq.{1} a 0)\\nh₁ : Eq.{1} (HSub.hSub.{0, 0, 0} (Inv.inv.{0} 2) (Inv.inv.{0} a)) 1\\n⊢ Eq.{1} a (Neg.neg.{0} 2)\",\"target\":\"Eq.{1} a (Neg.neg.{0} 2)\",\"targetArgs\":[\"Real\",\"a\",\"Neg.neg.{0} 2\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n11\",\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/attempts/0054-state.lean",
+      "start": {
+        "column": 18,
+        "line": 30
+      },
+      "end": {
+        "column": 33,
+        "line": 30
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n11",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/attempts/0054-state.lean",
+      "start": {
+        "column": 18,
+        "line": 30
+      },
+      "end": {
+        "column": 33,
+        "line": 30
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.476",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "a",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.476"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.2153",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "Not (Eq.{1} a 0)",
+              "typeHead": "Not",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.476"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.3801",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₁",
+              "type": "Eq.{1} (HSub.hSub.{0, 0, 0} (Inv.inv.{0} 2) (Inv.inv.{0} a)) 1",
+              "typeHead": "Eq",
+              "value": null
+            }
+          ],
+          "id": "_uniq.3804",
+          "omitted_implementation_details": 1,
+          "pretty": "a : Real\nh₀ : Not (Eq.{1} a 0)\nh₁ : Eq.{1} (HSub.hSub.{0, 0, 0} (Inv.inv.{0} 2) (Inv.inv.{0} a)) 1\n⊢ Eq.{1} a (Neg.neg.{0} 2)",
+          "target": "Eq.{1} a (Neg.neg.{0} 2)",
+          "targetArgs": [
+            "Real",
+            "a",
+            "Neg.neg.{0} 2"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n11",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 54,
+  "kind": "state",
+  "nodeId": "n11",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/attempts/0054-state.lean",
+  "sourceHash": "6321488ea3d12e9d9ff877ee5e6459155dd3d7868a1e550dba7da81e84c2b1dc",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_1d71dcc33db42453351f817347811d89b156d217840095dd7d0b96abcc96e1d3"
+}

@@ -1,0 +1,94 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.20",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "P",
+        "type": "Prop",
+        "typeHead": "sort",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.21",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "Q",
+        "type": "Prop",
+        "typeHead": "sort",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.22",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "R",
+        "type": "Prop",
+        "typeHead": "sort",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.20",
+          "_uniq.21"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.23",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "hPQ",
+        "type": "P → Q",
+        "typeHead": "forall",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.21",
+          "_uniq.22"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.24",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "hQR",
+        "type": "Q → R",
+        "typeHead": "forall",
+        "value": null
+      }
+    ],
+    "id": "_uniq.25",
+    "omitted_implementation_details": 1,
+    "pretty": "P Q R : Prop\nhPQ : P → Q\nhQR : Q → R\n⊢ P → R",
+    "target": "P → R",
+    "targetArgs": [],
+    "targetHead": "forall",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Data.List.Basic"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 61,
+    "maxDepth": 8,
+    "depth": 0,
+    "modelTokensRemaining": 0,
+    "remainingMs": 296690
+  }
+}

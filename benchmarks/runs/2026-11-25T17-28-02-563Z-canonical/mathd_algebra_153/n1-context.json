@@ -1,0 +1,58 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.556",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "n",
+        "type": "Real",
+        "typeHead": "Real",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.556"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.2064",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "Eq.{1} n (Inv.inv.{0} 3)",
+        "typeHead": "Eq",
+        "value": null
+      }
+    ],
+    "id": "_uniq.2067",
+    "omitted_implementation_details": 1,
+    "pretty": "n : Real\nh₀ : Eq.{1} n (Inv.inv.{0} 3)\n⊢ Eq.{1}\n    (HAdd.hAdd.{0, 0, 0}\n      (HAdd.hAdd.{0, 0, 0}\n        (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\n          (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3))))\n    3702",
+    "target": "Eq.{1}\n  (HAdd.hAdd.{0, 0, 0}\n    (HAdd.hAdd.{0, 0, 0}\n      (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3))))\n  3702",
+    "targetArgs": [
+      "Int",
+      "HAdd.hAdd.{0, 0, 0}\n  (HAdd.hAdd.{0, 0, 0}\n    (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\n  (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3)))",
+      "3702"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Data.Real.Archimedean"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 57,
+    "maxDepth": 8,
+    "depth": 1,
+    "modelTokensRemaining": 0,
+    "remainingMs": 284893
+  }
+}

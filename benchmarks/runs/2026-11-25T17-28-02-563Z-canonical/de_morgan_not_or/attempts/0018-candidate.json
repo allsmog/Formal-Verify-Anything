@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\ncase mpr\\nP Q : Prop\\na✝ : ¬P ∧ ¬Q\\n⊢ ¬(P ∨ Q)\",\"endPos\":{\"column\":16,\"line\":22},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/attempts/0018-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":22},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2826,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\ncase mpr\nP Q : Prop\na✝ : ¬P ∧ ¬Q\n⊢ ¬(P ∨ Q)",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/attempts/0018-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 22
+      },
+      "end": {
+        "column": 16,
+        "line": 22
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 18,
+  "kind": "candidate",
+  "nodeId": "n6",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/attempts/0018-candidate.lean",
+  "sourceHash": "58f283af3c80ed250345c252bb7c0b0ef2f08a4986761421151221ae7e9a0e04",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_d745d19f961f1c997b2fb8bc06f41844a129f8b271995b52ee173923d19d6e55"
+}

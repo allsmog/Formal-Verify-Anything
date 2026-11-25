@@ -1,0 +1,59 @@
+{
+  "id": "p0",
+  "nodeId": "n0",
+  "stateHash": "1b9355fe161608279743f308aa7e81dd9fb2eae77bb84ecf39657e4acdc35887",
+  "round": 0,
+  "requestDigest": "f9237e0eb45159546c5e00f2acc7484c6cac3e77eb516b5e489b82d71b0a1eb0",
+  "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/proposals/0001-context.json",
+  "modelTokens": 0,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "deterministic-v2",
+  "proposals": [
+    {
+      "tactic": "assumption"
+    },
+    {
+      "tactic": "rfl"
+    },
+    {
+      "tactic": "simp_all"
+    },
+    {
+      "tactic": "omega"
+    },
+    {
+      "tactic": "norm_num at *"
+    },
+    {
+      "tactic": "ring"
+    },
+    {
+      "tactic": "linarith"
+    },
+    {
+      "tactic": "nlinarith"
+    },
+    {
+      "tactic": "positivity"
+    },
+    {
+      "tactic": "norm_cast at *"
+    },
+    {
+      "tactic": "field_simp at *"
+    },
+    {
+      "tactic": "ring_nf at *"
+    },
+    {
+      "tactic": "aesop"
+    },
+    {
+      "tactic": "induction xs"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 0,
+  "evidenceId": "ev_929cc27b457bb6a246d6c11871714f9a8fd027dcf869c7c0c057143bad742544"
+}

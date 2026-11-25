@@ -1,0 +1,101 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":8,\"line\":14},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0053-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":14},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.1207\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"x\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.4236\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"x : Real\\\\n⊢ LE.le.{0} 49 (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} 98 (HMul.hMul.{0, 0, 0} x 14)) (HPow.hPow.{0, 0, 0} x 2))\\\",\\\"target\\\":\\\"LE.le.{0} 49 (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} 98 (HMul.hMul.{0, 0, 0} x 14)) (HPow.hPow.{0, 0, 0} x 2))\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"Real.instLE\\\",\\\"49\\\",\\\"HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} 98 (HMul.hMul.{0, 0, 0} x 14)) (HPow.hPow.{0, 0, 0} x 2)\\\"],\\\"targetHead\\\":\\\"LE.le\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n1\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":17,\"line\":15},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0053-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":15},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n1\",\"endPos\":{\"column\":17,\"line\":15},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0053-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":15},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2787,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0053-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 14
+      },
+      "end": {
+        "column": 8,
+        "line": 14
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.1207\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"x\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null}],\"id\":\"_uniq.4236\",\"omitted_implementation_details\":1,\"pretty\":\"x : Real\\n⊢ LE.le.{0} 49 (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} 98 (HMul.hMul.{0, 0, 0} x 14)) (HPow.hPow.{0, 0, 0} x 2))\",\"target\":\"LE.le.{0} 49 (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} 98 (HMul.hMul.{0, 0, 0} x 14)) (HPow.hPow.{0, 0, 0} x 2))\",\"targetArgs\":[\"Real\",\"Real.instLE\",\"49\",\"HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} 98 (HMul.hMul.{0, 0, 0} x 14)) (HPow.hPow.{0, 0, 0} x 2)\"],\"targetHead\":\"LE.le\",\"universe_parameters\":[]}],\"node_id\":\"n1\",\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0053-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 15
+      },
+      "end": {
+        "column": 17,
+        "line": 15
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n1",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0053-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 15
+      },
+      "end": {
+        "column": 17,
+        "line": 15
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.1207",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "x",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            }
+          ],
+          "id": "_uniq.4236",
+          "omitted_implementation_details": 1,
+          "pretty": "x : Real\n⊢ LE.le.{0} 49 (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} 98 (HMul.hMul.{0, 0, 0} x 14)) (HPow.hPow.{0, 0, 0} x 2))",
+          "target": "LE.le.{0} 49 (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} 98 (HMul.hMul.{0, 0, 0} x 14)) (HPow.hPow.{0, 0, 0} x 2))",
+          "targetArgs": [
+            "Real",
+            "Real.instLE",
+            "49",
+            "HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} 98 (HMul.hMul.{0, 0, 0} x 14)) (HPow.hPow.{0, 0, 0} x 2)"
+          ],
+          "targetHead": "LE.le",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n1",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 53,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0053-candidate.lean",
+  "sourceHash": "bc27db998dfb947581a8c90bd38d16558198a69235493ae8eefc274296e7494d",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_c1c00413f79eae2d810b2dd409789c894a4c11b510722340ab9be052d5411b9d"
+}

@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"simp_all made no progress\",\"endPos\":{\"column\":10,\"line\":10},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/nat_add_comm/attempts/0004-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":10},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2568,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "simp_all made no progress",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/nat_add_comm/attempts/0004-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 10
+      },
+      "end": {
+        "column": 10,
+        "line": 10
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 4,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/nat_add_comm/attempts/0004-candidate.lean",
+  "sourceHash": "7b35816f21c30adb02e4c0393780a9d47233cc0b5738da57ca475f1c147699ed",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_bc5d82f02385fa070f4a1733400cdfdd5205d946082588c79ca04895210d7a73"
+}

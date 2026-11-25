@@ -1,0 +1,52 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.8",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "P",
+        "type": "Prop",
+        "typeHead": "sort",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.9",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "Q",
+        "type": "Prop",
+        "typeHead": "sort",
+        "value": null
+      }
+    ],
+    "id": "_uniq.17",
+    "omitted_implementation_details": 1,
+    "pretty": "case mp\nP Q : Prop\n⊢ Not (Or P Q) → And (Not P) (Not Q)",
+    "target": "Not (Or P Q) → And (Not P) (Not Q)",
+    "targetArgs": [],
+    "targetHead": "forall",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Data.List.Basic"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 59,
+    "maxDepth": 8,
+    "depth": 1,
+    "modelTokensRemaining": 0,
+    "remainingMs": 289906
+  }
+}

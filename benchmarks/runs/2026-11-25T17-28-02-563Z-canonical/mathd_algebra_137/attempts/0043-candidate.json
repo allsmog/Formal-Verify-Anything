@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"ring_nf made no progress on goal\",\"endPos\":{\"column\":14,\"line\":21},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0043-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":10,\"line\":21},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2847,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "ring_nf made no progress on goal",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0043-candidate.lean",
+      "start": {
+        "column": 10,
+        "line": 21
+      },
+      "end": {
+        "column": 14,
+        "line": 21
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 43,
+  "kind": "candidate",
+  "nodeId": "n5",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0043-candidate.lean",
+  "sourceHash": "ac9e2d1532220dee52cf9ecae9462f1f1e8fba551f2ec3332131fcdaaf7f1156",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_04b25df09f80c1e8dcffc39bec9371af34a0b1fd9138ddafcadeebd52cfe8390"
+}

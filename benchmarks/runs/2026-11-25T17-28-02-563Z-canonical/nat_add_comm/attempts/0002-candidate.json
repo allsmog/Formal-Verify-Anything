@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\nm n : ℕ\\n⊢ m + n = n + m\",\"endPos\":{\"column\":12,\"line\":10},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/nat_add_comm/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":10},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 4929,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\nm n : ℕ\n⊢ m + n = n + m",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/nat_add_comm/attempts/0002-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 10
+      },
+      "end": {
+        "column": 12,
+        "line": 10
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 2,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/nat_add_comm/attempts/0002-candidate.lean",
+  "sourceHash": "37c7780cf4c99e1ce1f2f47d9889c7ab28fd8365b1f75554e021b1b6ce177ccc",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_cb5b6d205831b0ce67793ebf6e08e8786f3f7edb61ad72182b76fac1bf24678d"
+}

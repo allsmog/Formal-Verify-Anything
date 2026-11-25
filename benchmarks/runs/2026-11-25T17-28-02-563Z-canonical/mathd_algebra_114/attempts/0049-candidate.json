@@ -1,0 +1,65 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":12,\"line\":19},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_114/attempts/0049-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":19},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"aesop: failed to prove the goal after exhaustive search.\",\"endPos\":{\"column\":17,\"line\":23},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_114/attempts/0049-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":12,\"line\":23},\"severity\":\"warning\"}\n{\"caption\":\"\",\"data\":\"omega could not prove the goal:\\nNo usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.\",\"endPos\":{\"column\":19,\"line\":25},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_114/attempts/0049-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":14,\"line\":25},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3655,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_114/attempts/0049-candidate.lean",
+      "start": {
+        "column": 8,
+        "line": 19
+      },
+      "end": {
+        "column": 12,
+        "line": 19
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "warning",
+      "message": "aesop: failed to prove the goal after exhaustive search.",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_114/attempts/0049-candidate.lean",
+      "start": {
+        "column": 12,
+        "line": 23
+      },
+      "end": {
+        "column": 17,
+        "line": 23
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "omega could not prove the goal:\nNo usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_114/attempts/0049-candidate.lean",
+      "start": {
+        "column": 14,
+        "line": 25
+      },
+      "end": {
+        "column": 19,
+        "line": 25
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 49,
+  "kind": "candidate",
+  "nodeId": "n11",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_114/attempts/0049-candidate.lean",
+  "sourceHash": "1f56a915fe5e509efae9717af028cf80bef6c9f35e919d6027bf649ea7124d14",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_8c636572ef3fe695d46cbd87481754009c48a036eb3de31b1270caa6ea7e8328"
+}

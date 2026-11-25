@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\na : ℝ\\nh₀ : ¬a = 0\\nh₁ : 2⁻¹ - a⁻¹ = 1\\n⊢ a = -2\",\"endPos\":{\"column\":22,\"line\":24},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/attempts/0032-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":12,\"line\":24},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3163,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\na : ℝ\nh₀ : ¬a = 0\nh₁ : 2⁻¹ - a⁻¹ = 1\n⊢ a = -2",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/attempts/0032-candidate.lean",
+      "start": {
+        "column": 12,
+        "line": 24
+      },
+      "end": {
+        "column": 22,
+        "line": 24
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 32,
+  "kind": "candidate",
+  "nodeId": "n6",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/attempts/0032-candidate.lean",
+  "sourceHash": "60d7babda4de09baf63b3d5b4b1489ae9fc7db4fe2f696338bbfa029c93152f8",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_b1897187ba6551d2a3fea4e629d19cc79afd5471d3e0e6045e536e2ab7be22db"
+}

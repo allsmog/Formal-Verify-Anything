@@ -1,0 +1,75 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":15,\"line\":11},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/attempts/0004-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":11},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_CLOSED:{\\\"node_id\\\":\\\"n0\\\"}\",\"endPos\":{\"column\":15,\"line\":11},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/attempts/0004-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":11},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":15,\"line\":11},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/attempts/0004-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":11},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2236,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[],\"node_id\":\"n0\",\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/attempts/0004-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 11
+      },
+      "end": {
+        "column": 15,
+        "line": 11
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_CLOSED:{\"node_id\":\"n0\"}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/attempts/0004-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 11
+      },
+      "end": {
+        "column": 15,
+        "line": 11
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n0",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/attempts/0004-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 11
+      },
+      "end": {
+        "column": 15,
+        "line": 11
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [],
+      "node_id": "n0",
+      "version": 1
+    }
+  ],
+  "closed": [
+    {
+      "node_id": "n0"
+    }
+  ],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 4,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/attempts/0004-candidate.lean",
+  "sourceHash": "b6cb505efaef5f62c8218bf27b0e3d59d4aa83d3a68463205e06102deef2afaa",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_0033fd1b8fa98978d6439160944849231c180488101062c01e60985898c4852b"
+}

@@ -1,0 +1,50 @@
+{
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\"],\\\"declaration\\\":\\\"list_reverse_involution\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ {α : Type} (xs : List.{0} α), Eq.{1} (List.reverse.{0} (List.reverse.{0} xs)) xs\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":34,\"line\":12},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/attempts/0006-recheck.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":12},\"severity\":\"information\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2456,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_AUDIT:{\"axioms\":[\"propext\"],\"declaration\":\"list_reverse_involution\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ {α : Type} (xs : List.{0} α), Eq.{1} (List.reverse.{0} (List.reverse.{0} xs)) xs\",\"universe_parameters\":[],\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/attempts/0006-recheck.lean",
+      "start": {
+        "column": 0,
+        "line": 12
+      },
+      "end": {
+        "column": 34,
+        "line": 12
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "list_reverse_involution",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ {α : Type} (xs : List.{0} α), Eq.{1} (List.reverse.{0} (List.reverse.{0} xs)) xs",
+      "universe_parameters": [],
+      "version": 1
+    }
+  ],
+  "unparsed": [],
+  "sequence": 6,
+  "kind": "recheck",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/attempts/0006-recheck.lean",
+  "sourceHash": "38ac6990e2f427befe41df78c77ed71b26b1a8dc77f44f01f9ed017fa251949c",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_a22a0319fa925c5893126f529237038fc8f1b2f2383c4c959c9a7acb9f04a2d5"
+}

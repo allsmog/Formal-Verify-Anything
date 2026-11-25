@@ -1,0 +1,122 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.10\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"P\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.11\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"Q\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.10\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.84\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"left._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0009-state.1909278726._hygCtx._hyg.37\\\",\\\"type\\\":\\\"P\\\",\\\"typeHead\\\":\\\"fvar\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.11\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.85\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"right._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0009-state.1909278726._hygCtx._hyg.38\\\",\\\"type\\\":\\\"Q\\\",\\\"typeHead\\\":\\\"fvar\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.97\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case right.intro\\\\nP Q : Prop\\\\nleft✝ : P\\\\nright✝ : Q\\\\n⊢ P\\\",\\\"target\\\":\\\"P\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"fvar\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n4\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":20,\"line\":18},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0009-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":18},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n4\",\"endPos\":{\"column\":20,\"line\":18},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0009-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":18},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3265,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.10\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"P\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.11\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"Q\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.10\"],\"has_metavariables\":false,\"id\":\"_uniq.84\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"left._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0009-state.1909278726._hygCtx._hyg.37\",\"type\":\"P\",\"typeHead\":\"fvar\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.11\"],\"has_metavariables\":false,\"id\":\"_uniq.85\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"right._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0009-state.1909278726._hygCtx._hyg.38\",\"type\":\"Q\",\"typeHead\":\"fvar\",\"value\":null}],\"id\":\"_uniq.97\",\"omitted_implementation_details\":1,\"pretty\":\"case right.intro\\nP Q : Prop\\nleft✝ : P\\nright✝ : Q\\n⊢ P\",\"target\":\"P\",\"targetArgs\":[],\"targetHead\":\"fvar\",\"universe_parameters\":[]}],\"node_id\":\"n4\",\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0009-state.lean",
+      "start": {
+        "column": 6,
+        "line": 18
+      },
+      "end": {
+        "column": 20,
+        "line": 18
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n4",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0009-state.lean",
+      "start": {
+        "column": 6,
+        "line": 18
+      },
+      "end": {
+        "column": 20,
+        "line": 18
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.10",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "P",
+              "type": "Prop",
+              "typeHead": "sort",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.11",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "Q",
+              "type": "Prop",
+              "typeHead": "sort",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.10"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.84",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "left._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0009-state.1909278726._hygCtx._hyg.37",
+              "type": "P",
+              "typeHead": "fvar",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.11"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.85",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "right._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0009-state.1909278726._hygCtx._hyg.38",
+              "type": "Q",
+              "typeHead": "fvar",
+              "value": null
+            }
+          ],
+          "id": "_uniq.97",
+          "omitted_implementation_details": 1,
+          "pretty": "case right.intro\nP Q : Prop\nleft✝ : P\nright✝ : Q\n⊢ P",
+          "target": "P",
+          "targetArgs": [],
+          "targetHead": "fvar",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n4",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 9,
+  "kind": "state",
+  "nodeId": "n4",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0009-state.lean",
+  "sourceHash": "da875499df08d546509d721683ef63616af11cc0273f93c6316ce2158bfa4b97",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_d7d8b678400daedbc75db3573aadbd43e71f77ff9e107ed02cad6a9a36d0191d"
+}

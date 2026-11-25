@@ -1,0 +1,46 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.1207",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "x",
+        "type": "Real",
+        "typeHead": "Real",
+        "value": null
+      }
+    ],
+    "id": "_uniq.3065",
+    "omitted_implementation_details": 1,
+    "pretty": "x : Real\n⊢ LE.le.{0} (HPow.hPow.{0, 0, 0} 7 2)\n    (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HMul.hMul.{0, 0, 0} 14 x))\n      (HMul.hMul.{0, 0, 0} 14 7))",
+    "target": "LE.le.{0} (HPow.hPow.{0, 0, 0} 7 2)\n  (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HMul.hMul.{0, 0, 0} 14 x))\n    (HMul.hMul.{0, 0, 0} 14 7))",
+    "targetArgs": [
+      "Real",
+      "Real.instLE",
+      "HPow.hPow.{0, 0, 0} 7 2",
+      "HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HMul.hMul.{0, 0, 0} 14 x))\n  (HMul.hMul.{0, 0, 0} 14 7)"
+    ],
+    "targetHead": "LE.le",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Data.Real.Basic"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 57,
+    "maxDepth": 8,
+    "depth": 1,
+    "modelTokensRemaining": 0,
+    "remainingMs": 285277
+  },
+  "feedback": []
+}

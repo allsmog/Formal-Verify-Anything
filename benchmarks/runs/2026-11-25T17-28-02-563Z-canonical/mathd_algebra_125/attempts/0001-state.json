@@ -1,0 +1,143 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.412\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"x\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.413\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"y\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.412\\\",\\\"_uniq.413\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.414\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"And (LT.lt.{0} 0 x) (LT.lt.{0} 0 y)\\\",\\\"typeHead\\\":\\\"And\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.412\\\",\\\"_uniq.413\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.415\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₁\\\",\\\"type\\\":\\\"Eq.{1} (HMul.hMul.{0, 0, 0} 5 x) y\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.412\\\",\\\"_uniq.413\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.416\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₂\\\",\\\"type\\\":\\\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (↑x) 3) (HSub.hSub.{0, 0, 0} (↑y) 3)) 30\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.417\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"x y : Nat\\\\nh₀ : And (LT.lt.{0} 0 x) (LT.lt.{0} 0 y)\\\\nh₁ : Eq.{1} (HMul.hMul.{0, 0, 0} 5 x) y\\\\nh₂ : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (↑x) 3) (HSub.hSub.{0, 0, 0} (↑y) 3)) 30\\\\n⊢ Eq.{1} x 6\\\",\\\"target\\\":\\\"Eq.{1} x 6\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"x\\\",\\\"6\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":15},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_125/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":15},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":16,\"line\":15},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_125/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":15},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2709,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.412\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"x\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.413\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"y\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.412\",\"_uniq.413\"],\"has_metavariables\":false,\"id\":\"_uniq.414\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"And (LT.lt.{0} 0 x) (LT.lt.{0} 0 y)\",\"typeHead\":\"And\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.412\",\"_uniq.413\"],\"has_metavariables\":false,\"id\":\"_uniq.415\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₁\",\"type\":\"Eq.{1} (HMul.hMul.{0, 0, 0} 5 x) y\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.412\",\"_uniq.413\"],\"has_metavariables\":false,\"id\":\"_uniq.416\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₂\",\"type\":\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (↑x) 3) (HSub.hSub.{0, 0, 0} (↑y) 3)) 30\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.417\",\"omitted_implementation_details\":1,\"pretty\":\"x y : Nat\\nh₀ : And (LT.lt.{0} 0 x) (LT.lt.{0} 0 y)\\nh₁ : Eq.{1} (HMul.hMul.{0, 0, 0} 5 x) y\\nh₂ : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (↑x) 3) (HSub.hSub.{0, 0, 0} (↑y) 3)) 30\\n⊢ Eq.{1} x 6\",\"target\":\"Eq.{1} x 6\",\"targetArgs\":[\"Nat\",\"x\",\"6\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_125/attempts/0001-state.lean",
+      "start": {
+        "column": 2,
+        "line": 15
+      },
+      "end": {
+        "column": 16,
+        "line": 15
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n0",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_125/attempts/0001-state.lean",
+      "start": {
+        "column": 2,
+        "line": 15
+      },
+      "end": {
+        "column": 16,
+        "line": 15
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.412",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "x",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.413",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "y",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.412",
+                "_uniq.413"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.414",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "And (LT.lt.{0} 0 x) (LT.lt.{0} 0 y)",
+              "typeHead": "And",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.412",
+                "_uniq.413"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.415",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₁",
+              "type": "Eq.{1} (HMul.hMul.{0, 0, 0} 5 x) y",
+              "typeHead": "Eq",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.412",
+                "_uniq.413"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.416",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₂",
+              "type": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (↑x) 3) (HSub.hSub.{0, 0, 0} (↑y) 3)) 30",
+              "typeHead": "Eq",
+              "value": null
+            }
+          ],
+          "id": "_uniq.417",
+          "omitted_implementation_details": 1,
+          "pretty": "x y : Nat\nh₀ : And (LT.lt.{0} 0 x) (LT.lt.{0} 0 y)\nh₁ : Eq.{1} (HMul.hMul.{0, 0, 0} 5 x) y\nh₂ : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (↑x) 3) (HSub.hSub.{0, 0, 0} (↑y) 3)) 30\n⊢ Eq.{1} x 6",
+          "target": "Eq.{1} x 6",
+          "targetArgs": [
+            "Nat",
+            "x",
+            "6"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n0",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 1,
+  "kind": "state",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_125/attempts/0001-state.lean",
+  "sourceHash": "8bb622227b764108f4d05f6fc65100c9417f912b57e8797ce440202ac191dd31",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_767d2052867b0c2330261df43c328a823a75f13442715c04c4b29f1418c6dc36"
+}

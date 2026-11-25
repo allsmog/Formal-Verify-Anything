@@ -1,0 +1,100 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.260\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"x\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.260\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.2738\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"Eq.{1} (HMul.hMul.{0, 0, 0} (↑x) (26 / 25)) 598\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.3746\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"x : Nat\\\\nh₀ : Eq.{1} (HMul.hMul.{0, 0, 0} (↑x) (26 / 25)) 598\\\\n⊢ Eq.{1} x 575\\\",\\\"target\\\":\\\"Eq.{1} x 575\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"x\\\",\\\"575\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n7\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":26,\"line\":23},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0050-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":12,\"line\":23},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n7\",\"endPos\":{\"column\":26,\"line\":23},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0050-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":12,\"line\":23},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2870,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.260\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"x\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.260\"],\"has_metavariables\":false,\"id\":\"_uniq.2738\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"Eq.{1} (HMul.hMul.{0, 0, 0} (↑x) (26 / 25)) 598\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.3746\",\"omitted_implementation_details\":1,\"pretty\":\"x : Nat\\nh₀ : Eq.{1} (HMul.hMul.{0, 0, 0} (↑x) (26 / 25)) 598\\n⊢ Eq.{1} x 575\",\"target\":\"Eq.{1} x 575\",\"targetArgs\":[\"Nat\",\"x\",\"575\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n7\",\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0050-state.lean",
+      "start": {
+        "column": 12,
+        "line": 23
+      },
+      "end": {
+        "column": 26,
+        "line": 23
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n7",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0050-state.lean",
+      "start": {
+        "column": 12,
+        "line": 23
+      },
+      "end": {
+        "column": 26,
+        "line": 23
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.260",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "x",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.260"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.2738",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "Eq.{1} (HMul.hMul.{0, 0, 0} (↑x) (26 / 25)) 598",
+              "typeHead": "Eq",
+              "value": null
+            }
+          ],
+          "id": "_uniq.3746",
+          "omitted_implementation_details": 1,
+          "pretty": "x : Nat\nh₀ : Eq.{1} (HMul.hMul.{0, 0, 0} (↑x) (26 / 25)) 598\n⊢ Eq.{1} x 575",
+          "target": "Eq.{1} x 575",
+          "targetArgs": [
+            "Nat",
+            "x",
+            "575"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n7",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 50,
+  "kind": "state",
+  "nodeId": "n7",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0050-state.lean",
+  "sourceHash": "be0fa26d1b31f63b1a3d6a131e6418a3bf3f0cf27c3d17011255fed9603872fd",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_606ed95e628966adda826e100c7de9fceb4c88d6a775564d48bd43932a288451"
+}

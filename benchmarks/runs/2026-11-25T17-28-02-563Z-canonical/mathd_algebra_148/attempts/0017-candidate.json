@@ -1,0 +1,141 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":10,\"line\":19},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_148/attempts/0017-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":19},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.659\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"c\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.660\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"f\\\",\\\"type\\\":\\\"Real → Real\\\",\\\"typeHead\\\":\\\"forall\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.660\\\",\\\"_uniq.659\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.661\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"∀ (x : Real),\\\\n  Eq.{1} (f x)\\\\n    (HAdd.hAdd.{0, 0, 0}\\\\n      (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} c (HPow.hPow.{0, 0, 0} x 3)) (HMul.hMul.{0, 0, 0} 9 x)) 3)\\\",\\\"typeHead\\\":\\\"forall\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.659\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.2322\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₁\\\",\\\"type\\\":\\\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} c 8) 18) 3) 9\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.2898\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"c : Real\\\\nf : Real → Real\\\\nh₀ :\\\\n  ∀ (x : Real),\\\\n    Eq.{1} (f x)\\\\n      (HAdd.hAdd.{0, 0, 0}\\\\n        (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} c (HPow.hPow.{0, 0, 0} x 3)) (HMul.hMul.{0, 0, 0} 9 x)) 3)\\\\nh₁ : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} c 8) 18) 3) 9\\\\n⊢ Eq.{1} c 3\\\",\\\"target\\\":\\\"Eq.{1} c 3\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"c\\\",\\\"3\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":19,\"line\":20},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_148/attempts/0017-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":20},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n2\",\"endPos\":{\"column\":19,\"line\":20},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_148/attempts/0017-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":20},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2793,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_148/attempts/0017-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 19
+      },
+      "end": {
+        "column": 10,
+        "line": 19
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.659\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"c\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.660\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"f\",\"type\":\"Real → Real\",\"typeHead\":\"forall\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.660\",\"_uniq.659\"],\"has_metavariables\":false,\"id\":\"_uniq.661\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"∀ (x : Real),\\n  Eq.{1} (f x)\\n    (HAdd.hAdd.{0, 0, 0}\\n      (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} c (HPow.hPow.{0, 0, 0} x 3)) (HMul.hMul.{0, 0, 0} 9 x)) 3)\",\"typeHead\":\"forall\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.659\"],\"has_metavariables\":false,\"id\":\"_uniq.2322\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₁\",\"type\":\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} c 8) 18) 3) 9\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.2898\",\"omitted_implementation_details\":1,\"pretty\":\"c : Real\\nf : Real → Real\\nh₀ :\\n  ∀ (x : Real),\\n    Eq.{1} (f x)\\n      (HAdd.hAdd.{0, 0, 0}\\n        (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} c (HPow.hPow.{0, 0, 0} x 3)) (HMul.hMul.{0, 0, 0} 9 x)) 3)\\nh₁ : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} c 8) 18) 3) 9\\n⊢ Eq.{1} c 3\",\"target\":\"Eq.{1} c 3\",\"targetArgs\":[\"Real\",\"c\",\"3\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n2\",\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_148/attempts/0017-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 20
+      },
+      "end": {
+        "column": 19,
+        "line": 20
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n2",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_148/attempts/0017-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 20
+      },
+      "end": {
+        "column": 19,
+        "line": 20
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.659",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "c",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.660",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "f",
+              "type": "Real → Real",
+              "typeHead": "forall",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.660",
+                "_uniq.659"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.661",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "∀ (x : Real),\n  Eq.{1} (f x)\n    (HAdd.hAdd.{0, 0, 0}\n      (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} c (HPow.hPow.{0, 0, 0} x 3)) (HMul.hMul.{0, 0, 0} 9 x)) 3)",
+              "typeHead": "forall",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.659"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.2322",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₁",
+              "type": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} c 8) 18) 3) 9",
+              "typeHead": "Eq",
+              "value": null
+            }
+          ],
+          "id": "_uniq.2898",
+          "omitted_implementation_details": 1,
+          "pretty": "c : Real\nf : Real → Real\nh₀ :\n  ∀ (x : Real),\n    Eq.{1} (f x)\n      (HAdd.hAdd.{0, 0, 0}\n        (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} c (HPow.hPow.{0, 0, 0} x 3)) (HMul.hMul.{0, 0, 0} 9 x)) 3)\nh₁ : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} c 8) 18) 3) 9\n⊢ Eq.{1} c 3",
+          "target": "Eq.{1} c 3",
+          "targetArgs": [
+            "Real",
+            "c",
+            "3"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n2",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 17,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_148/attempts/0017-candidate.lean",
+  "sourceHash": "fd33bbc3d738986412c2e35f3b9b9fe305c34c829594c0b58fdd43320729b67d",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_1385367d7529d120ea9bfcc7d716437cb85c463a0e78f657dabf229cf97d7633"
+}

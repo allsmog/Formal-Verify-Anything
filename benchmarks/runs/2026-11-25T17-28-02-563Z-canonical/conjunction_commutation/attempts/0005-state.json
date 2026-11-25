@@ -1,0 +1,207 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.10\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"P\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.11\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"Q\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.10\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.46\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"left._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0005-state.1909278726._hygCtx._hyg.24\\\",\\\"type\\\":\\\"P\\\",\\\"typeHead\\\":\\\"fvar\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.11\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.47\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"right._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0005-state.1909278726._hygCtx._hyg.25\\\",\\\"type\\\":\\\"Q\\\",\\\"typeHead\\\":\\\"fvar\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.59\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case left.intro\\\\nP Q : Prop\\\\nleft✝ : P\\\\nright✝ : Q\\\\n⊢ Q\\\",\\\"target\\\":\\\"Q\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"fvar\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n3\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":20,\"line\":14},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0005-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":14},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n3\",\"endPos\":{\"column\":20,\"line\":14},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0005-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":14},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.10\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"P\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.11\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"Q\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.10\\\",\\\"_uniq.11\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.12\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h\\\",\\\"type\\\":\\\"And P Q\\\",\\\"typeHead\\\":\\\"And\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.21\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case right\\\\nP Q : Prop\\\\nh : And P Q\\\\n⊢ P\\\",\\\"target\\\":\\\"P\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"fvar\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":18,\"line\":16},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0005-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":16},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n2\",\"endPos\":{\"column\":18,\"line\":16},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0005-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":16},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3071,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.10\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"P\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.11\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"Q\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.10\"],\"has_metavariables\":false,\"id\":\"_uniq.46\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"left._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0005-state.1909278726._hygCtx._hyg.24\",\"type\":\"P\",\"typeHead\":\"fvar\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.11\"],\"has_metavariables\":false,\"id\":\"_uniq.47\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"right._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0005-state.1909278726._hygCtx._hyg.25\",\"type\":\"Q\",\"typeHead\":\"fvar\",\"value\":null}],\"id\":\"_uniq.59\",\"omitted_implementation_details\":1,\"pretty\":\"case left.intro\\nP Q : Prop\\nleft✝ : P\\nright✝ : Q\\n⊢ Q\",\"target\":\"Q\",\"targetArgs\":[],\"targetHead\":\"fvar\",\"universe_parameters\":[]}],\"node_id\":\"n3\",\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0005-state.lean",
+      "start": {
+        "column": 6,
+        "line": 14
+      },
+      "end": {
+        "column": 20,
+        "line": 14
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n3",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0005-state.lean",
+      "start": {
+        "column": 6,
+        "line": 14
+      },
+      "end": {
+        "column": 20,
+        "line": 14
+      },
+      "category": "probe_stop"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.10\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"P\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.11\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"Q\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.10\",\"_uniq.11\"],\"has_metavariables\":false,\"id\":\"_uniq.12\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h\",\"type\":\"And P Q\",\"typeHead\":\"And\",\"value\":null}],\"id\":\"_uniq.21\",\"omitted_implementation_details\":1,\"pretty\":\"case right\\nP Q : Prop\\nh : And P Q\\n⊢ P\",\"target\":\"P\",\"targetArgs\":[],\"targetHead\":\"fvar\",\"universe_parameters\":[]}],\"node_id\":\"n2\",\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0005-state.lean",
+      "start": {
+        "column": 4,
+        "line": 16
+      },
+      "end": {
+        "column": 18,
+        "line": 16
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n2",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0005-state.lean",
+      "start": {
+        "column": 4,
+        "line": 16
+      },
+      "end": {
+        "column": 18,
+        "line": 16
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.10",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "P",
+              "type": "Prop",
+              "typeHead": "sort",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.11",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "Q",
+              "type": "Prop",
+              "typeHead": "sort",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.10"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.46",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "left._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0005-state.1909278726._hygCtx._hyg.24",
+              "type": "P",
+              "typeHead": "fvar",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.11"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.47",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "right._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0005-state.1909278726._hygCtx._hyg.25",
+              "type": "Q",
+              "typeHead": "fvar",
+              "value": null
+            }
+          ],
+          "id": "_uniq.59",
+          "omitted_implementation_details": 1,
+          "pretty": "case left.intro\nP Q : Prop\nleft✝ : P\nright✝ : Q\n⊢ Q",
+          "target": "Q",
+          "targetArgs": [],
+          "targetHead": "fvar",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n3",
+      "version": 1
+    },
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.10",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "P",
+              "type": "Prop",
+              "typeHead": "sort",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.11",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "Q",
+              "type": "Prop",
+              "typeHead": "sort",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.10",
+                "_uniq.11"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.12",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h",
+              "type": "And P Q",
+              "typeHead": "And",
+              "value": null
+            }
+          ],
+          "id": "_uniq.21",
+          "omitted_implementation_details": 1,
+          "pretty": "case right\nP Q : Prop\nh : And P Q\n⊢ P",
+          "target": "P",
+          "targetArgs": [],
+          "targetHead": "fvar",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n2",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 5,
+  "kind": "state",
+  "nodeId": "n3",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0005-state.lean",
+  "sourceHash": "36fa1e7257e2076f37af7c55ca5c51c5ff34863afd62ed356f16226b44e89c54",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_fb9c0e62fc87a15dbd29a69b5e70702de45ee0a5ebc9dd712707894a33e041ee"
+}

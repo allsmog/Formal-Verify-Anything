@@ -1,0 +1,52 @@
+{
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_148\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (c : Real) (f : Real → Real),\\\\n  (∀ (x : Real),\\\\n      Eq.{1} (f x)\\\\n        (HAdd.hAdd.{0, 0, 0}\\\\n          (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} c (HPow.hPow.{0, 0, 0} x 3)) (HMul.hMul.{0, 0, 0} 9 x)) 3)) →\\\\n    Eq.{1} (f 2) 9 → Eq.{1} c 3\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":21},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_148/attempts/0020-recheck.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":21},\"severity\":\"information\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3012,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_148\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (c : Real) (f : Real → Real),\\n  (∀ (x : Real),\\n      Eq.{1} (f x)\\n        (HAdd.hAdd.{0, 0, 0}\\n          (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} c (HPow.hPow.{0, 0, 0} x 3)) (HMul.hMul.{0, 0, 0} 9 x)) 3)) →\\n    Eq.{1} (f 2) 9 → Eq.{1} c 3\",\"universe_parameters\":[],\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_148/attempts/0020-recheck.lean",
+      "start": {
+        "column": 0,
+        "line": 21
+      },
+      "end": {
+        "column": 28,
+        "line": 21
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "mathd_algebra_148",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (c : Real) (f : Real → Real),\n  (∀ (x : Real),\n      Eq.{1} (f x)\n        (HAdd.hAdd.{0, 0, 0}\n          (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} c (HPow.hPow.{0, 0, 0} x 3)) (HMul.hMul.{0, 0, 0} 9 x)) 3)) →\n    Eq.{1} (f 2) 9 → Eq.{1} c 3",
+      "universe_parameters": [],
+      "version": 1
+    }
+  ],
+  "unparsed": [],
+  "sequence": 20,
+  "kind": "recheck",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_148/attempts/0020-recheck.lean",
+  "sourceHash": "d62089c76d1b075d1701b421c592575ced47efb15d8470792c320b92bff440c9",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_c116f6900803c518a0318d7435af6160f8e45f3835f2d11eeab671e4185d231e"
+}

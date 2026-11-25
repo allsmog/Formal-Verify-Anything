@@ -1,0 +1,59 @@
+{
+  "id": "p0",
+  "nodeId": "n0",
+  "stateHash": "ce572728073488d3c7ff9da927cb4c8929f19326e459f40e85de143961f5ef25",
+  "round": 0,
+  "requestDigest": "516d667ba947e3386a76f56e2ec13ffc73fdbc3eae9738d0f7cec206351e6243",
+  "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/proposals/0001-context.json",
+  "modelTokens": 0,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "deterministic-v2",
+  "proposals": [
+    {
+      "tactic": "constructor"
+    },
+    {
+      "tactic": "assumption"
+    },
+    {
+      "tactic": "rfl"
+    },
+    {
+      "tactic": "simp_all"
+    },
+    {
+      "tactic": "omega"
+    },
+    {
+      "tactic": "norm_num at *"
+    },
+    {
+      "tactic": "ring"
+    },
+    {
+      "tactic": "linarith"
+    },
+    {
+      "tactic": "nlinarith"
+    },
+    {
+      "tactic": "positivity"
+    },
+    {
+      "tactic": "norm_cast at *"
+    },
+    {
+      "tactic": "field_simp at *"
+    },
+    {
+      "tactic": "ring_nf at *"
+    },
+    {
+      "tactic": "aesop"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 0,
+  "evidenceId": "ev_d12e2cf576d2cbcf507c33029bb6e1e2ccf6394861e0d8d78c202310ccb3e6b1"
+}

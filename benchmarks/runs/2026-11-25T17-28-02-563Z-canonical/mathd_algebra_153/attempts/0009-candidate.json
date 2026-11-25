@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"omega could not prove the goal:\\na possible counterexample may satisfy the constraints\\n  a + b + c + d ≤ 3701\\nwhere\\n a := ⌊10 * 3⁻¹⌋\\n b := ⌊100 * 3⁻¹⌋\\n c := ⌊1000 * 3⁻¹⌋\\n d := ⌊10000 * 3⁻¹⌋\",\"endPos\":{\"column\":9,\"line\":15},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0009-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":15},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2664,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  a + b + c + d ≤ 3701\nwhere\n a := ⌊10 * 3⁻¹⌋\n b := ⌊100 * 3⁻¹⌋\n c := ⌊1000 * 3⁻¹⌋\n d := ⌊10000 * 3⁻¹⌋",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0009-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 15
+      },
+      "end": {
+        "column": 9,
+        "line": 15
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 9,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0009-candidate.lean",
+  "sourceHash": "3343abbf8f05c02f71a19e8a9991ae54200f150122e4b253f94bbc6a1a11e175",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_7d8af7eae3dd65f1834b0825e335d7e0fe96510286ab263ce54ba4b95a1a3512"
+}

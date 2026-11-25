@@ -1,0 +1,150 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.20\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"P\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.21\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"Q\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.22\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"R\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.20\\\",\\\"_uniq.21\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.23\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"hPQ\\\",\\\"type\\\":\\\"P → Q\\\",\\\"typeHead\\\":\\\"forall\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.21\\\",\\\"_uniq.22\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.24\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"hQR\\\",\\\"type\\\":\\\"Q → R\\\",\\\"typeHead\\\":\\\"forall\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.20\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.26\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a._@._internal.0.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.implication_composition.attempts.0003-state.2551898477._hygCtx._hyg.18\\\",\\\"type\\\":\\\"P\\\",\\\"typeHead\\\":\\\"fvar\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.27\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"P Q R : Prop\\\\nhPQ : P → Q\\\\nhQR : Q → R\\\\na✝ : P\\\\n⊢ R\\\",\\\"target\\\":\\\"R\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"fvar\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n1\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":18,\"line\":12},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/implication_composition/attempts/0003-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":12},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n1\",\"endPos\":{\"column\":18,\"line\":12},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/implication_composition/attempts/0003-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":12},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2700,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.20\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"P\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.21\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"Q\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.22\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"R\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.20\",\"_uniq.21\"],\"has_metavariables\":false,\"id\":\"_uniq.23\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"hPQ\",\"type\":\"P → Q\",\"typeHead\":\"forall\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.21\",\"_uniq.22\"],\"has_metavariables\":false,\"id\":\"_uniq.24\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"hQR\",\"type\":\"Q → R\",\"typeHead\":\"forall\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.20\"],\"has_metavariables\":false,\"id\":\"_uniq.26\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"a._@._internal.0.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.implication_composition.attempts.0003-state.2551898477._hygCtx._hyg.18\",\"type\":\"P\",\"typeHead\":\"fvar\",\"value\":null}],\"id\":\"_uniq.27\",\"omitted_implementation_details\":1,\"pretty\":\"P Q R : Prop\\nhPQ : P → Q\\nhQR : Q → R\\na✝ : P\\n⊢ R\",\"target\":\"R\",\"targetArgs\":[],\"targetHead\":\"fvar\",\"universe_parameters\":[]}],\"node_id\":\"n1\",\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/implication_composition/attempts/0003-state.lean",
+      "start": {
+        "column": 4,
+        "line": 12
+      },
+      "end": {
+        "column": 18,
+        "line": 12
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n1",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/implication_composition/attempts/0003-state.lean",
+      "start": {
+        "column": 4,
+        "line": 12
+      },
+      "end": {
+        "column": 18,
+        "line": 12
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.20",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "P",
+              "type": "Prop",
+              "typeHead": "sort",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.21",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "Q",
+              "type": "Prop",
+              "typeHead": "sort",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.22",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "R",
+              "type": "Prop",
+              "typeHead": "sort",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.20",
+                "_uniq.21"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.23",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "hPQ",
+              "type": "P → Q",
+              "typeHead": "forall",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.21",
+                "_uniq.22"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.24",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "hQR",
+              "type": "Q → R",
+              "typeHead": "forall",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.20"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.26",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "a._@._internal.0.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.implication_composition.attempts.0003-state.2551898477._hygCtx._hyg.18",
+              "type": "P",
+              "typeHead": "fvar",
+              "value": null
+            }
+          ],
+          "id": "_uniq.27",
+          "omitted_implementation_details": 1,
+          "pretty": "P Q R : Prop\nhPQ : P → Q\nhQR : Q → R\na✝ : P\n⊢ R",
+          "target": "R",
+          "targetArgs": [],
+          "targetHead": "fvar",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n1",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 3,
+  "kind": "state",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/implication_composition/attempts/0003-state.lean",
+  "sourceHash": "59238e44ab03dcf5f8f281c872905934395a74266aa963d527f05982046b0d44",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_01bbef27b1acd97d841176628d41cba0af35267c4e4db5475279f4dc143d7f61"
+}

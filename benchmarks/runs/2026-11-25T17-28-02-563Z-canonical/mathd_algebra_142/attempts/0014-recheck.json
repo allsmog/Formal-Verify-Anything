@@ -1,0 +1,52 @@
+{
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_142\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (m b : Real),\\\\n  Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} m 7) b) (-1) →\\\\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} m (-1)) b) 7 → Eq.{1} (HAdd.hAdd.{0, 0, 0} m b) 5\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":18},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_142/attempts/0014-recheck.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":18},\"severity\":\"information\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3208,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_142\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (m b : Real),\\n  Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} m 7) b) (-1) →\\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} m (-1)) b) 7 → Eq.{1} (HAdd.hAdd.{0, 0, 0} m b) 5\",\"universe_parameters\":[],\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_142/attempts/0014-recheck.lean",
+      "start": {
+        "column": 0,
+        "line": 18
+      },
+      "end": {
+        "column": 28,
+        "line": 18
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "mathd_algebra_142",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (m b : Real),\n  Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} m 7) b) (-1) →\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} m (-1)) b) 7 → Eq.{1} (HAdd.hAdd.{0, 0, 0} m b) 5",
+      "universe_parameters": [],
+      "version": 1
+    }
+  ],
+  "unparsed": [],
+  "sequence": 14,
+  "kind": "recheck",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_142/attempts/0014-recheck.lean",
+  "sourceHash": "c1e6182fa33404c87f27ad14c03a44800a44c5455c4a9b605e367a251246be51",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_2a16657faa97e85a634bc8e5f9d520387f76262c95f977eb37cd0b3b6a6bd6a9"
+}

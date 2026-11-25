@@ -1,0 +1,85 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.659",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "c",
+        "type": "Real",
+        "typeHead": "Real",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.660",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "f",
+        "type": "Real → Real",
+        "typeHead": "forall",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.660",
+          "_uniq.659"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.661",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "∀ (x : Real),\n  Eq.{1} (f x)\n    (HAdd.hAdd.{0, 0, 0}\n      (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} c (HPow.hPow.{0, 0, 0} x 3)) (HMul.hMul.{0, 0, 0} 9 x)) 3)",
+        "typeHead": "forall",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.659"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.1701",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₁",
+        "type": "Eq.{1}\n  (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} c (HPow.hPow.{0, 0, 0} 2 3)) (HMul.hMul.{0, 0, 0} 9 2))\n    3)\n  9",
+        "typeHead": "Eq",
+        "value": null
+      }
+    ],
+    "id": "_uniq.1704",
+    "omitted_implementation_details": 1,
+    "pretty": "c : Real\nf : Real → Real\nh₀ :\n  ∀ (x : Real),\n    Eq.{1} (f x)\n      (HAdd.hAdd.{0, 0, 0}\n        (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} c (HPow.hPow.{0, 0, 0} x 3)) (HMul.hMul.{0, 0, 0} 9 x)) 3)\nh₁ :\n  Eq.{1}\n    (HAdd.hAdd.{0, 0, 0}\n      (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} c (HPow.hPow.{0, 0, 0} 2 3)) (HMul.hMul.{0, 0, 0} 9 2)) 3)\n    9\n⊢ Eq.{1} c 3",
+    "target": "Eq.{1} c 3",
+    "targetArgs": [
+      "Real",
+      "c",
+      "3"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Data.Real.Basic"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 57,
+    "maxDepth": 8,
+    "depth": 1,
+    "modelTokensRemaining": 0,
+    "remainingMs": 286214
+  }
+}

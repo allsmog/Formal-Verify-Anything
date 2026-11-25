@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\nn : ℝ\\nh₀ : n = 1 / 3\\n⊢ ⌊10 * n⌋ + ⌊100 * n⌋ + ⌊1000 * n⌋ + ⌊10000 * n⌋ = 3702\",\"endPos\":{\"column\":12,\"line\":13},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":13},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2725,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\nn : ℝ\nh₀ : n = 1 / 3\n⊢ ⌊10 * n⌋ + ⌊100 * n⌋ + ⌊1000 * n⌋ + ⌊10000 * n⌋ = 3702",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0002-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 13
+      },
+      "end": {
+        "column": 12,
+        "line": 13
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 2,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0002-candidate.lean",
+  "sourceHash": "c769323572c44bcf9c0d5ad58f743aa7a4b32bb0692aeb56521b05bd7eda010b",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_ca22a3d8c9ac31c1fc26b90cd113415e13af4d366494f6746f1331c2afde0dac"
+}

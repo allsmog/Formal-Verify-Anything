@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  49\\nis not definitionally equal to the right-hand side\\n  x ^ 2 - 14 * x + 98\\n\\nx : ℝ\\n⊢ 49 ≤ x ^ 2 - 14 * x + 98\",\"endPos\":{\"column\":9,\"line\":16},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0013-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":16},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2126,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  49\nis not definitionally equal to the right-hand side\n  x ^ 2 - 14 * x + 98\n\nx : ℝ\n⊢ 49 ≤ x ^ 2 - 14 * x + 98",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0013-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 16
+      },
+      "end": {
+        "column": 9,
+        "line": 16
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 13,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0013-candidate.lean",
+  "sourceHash": "3a35df4616de22c45a818f20424dfc8a4d2588cedb8f03f05d524342b5ea8ff1",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_93a0e1cbd24cc12c8c1c58a20d6aba75d51ca8bbb859c3fbc1cd6103c9535ca3"
+}

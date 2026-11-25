@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\nx y : ℝ\\nh₀ : x ^ 2 + 8 * x + y ^ 2 - 6 * y = 0\\n⊢ (x + 4) ^ 2 + (y - 3) ^ 2 = 25\",\"endPos\":{\"column\":14,\"line\":15},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_107/attempts/0008-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":15},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2763,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\nx y : ℝ\nh₀ : x ^ 2 + 8 * x + y ^ 2 - 6 * y = 0\n⊢ (x + 4) ^ 2 + (y - 3) ^ 2 = 25",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_107/attempts/0008-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 15
+      },
+      "end": {
+        "column": 14,
+        "line": 15
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 8,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_107/attempts/0008-candidate.lean",
+  "sourceHash": "caca3daf999953ac73c0079112529d7c03f84e2661b42375d4d9c9ca08651858",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_b322be2037b1bd2865d64e9c5ed3b4088c1a4f2d80d0a4ec57c31db0f9fd9cc8"
+}

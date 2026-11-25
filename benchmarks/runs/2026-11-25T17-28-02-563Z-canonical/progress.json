@@ -1,0 +1,5796 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-11-25T17-28-02-563Z-canonical",
+  "canonical": true,
+  "startedAt": "2026-11-25T17:28:02.563Z",
+  "finishedAt": null,
+  "budget": {
+    "maxCompilerCalls": 64,
+    "maxSteps": 64,
+    "maxProposalRounds": 3,
+    "maxDepth": 8,
+    "callTimeoutMs": 30000,
+    "theoremTimeoutMs": 300000,
+    "heartbeats": 200000,
+    "maxModelTokens": 0
+  },
+  "datasets": [
+    {
+      "file": "benchmarks/tier1.json",
+      "sha256": "3f8043fd754f303bbe9df5e5711241bc930efb82d19f8e66b4863662231614fc",
+      "selectionRule": "Five fixed foundational statements established before the benchmark run.",
+      "importPolicy": "Fixed declaration-required Mathlib modules and common generic tactics; original declaration text is unchanged. Original broad imports and unused namespace opens are retained as provenance.",
+      "sourceRepository": null,
+      "sourceCommit": null
+    },
+    {
+      "file": "benchmarks/minif2f.json",
+      "sha256": "3b86a7e7c0835c7fead0b02bcbfd0c519bc7c3bb32310ac19143717701edc9f4",
+      "selectionRule": "First 12 files lexicographically from MiniF2F/Test/mathd_algebra_*.lean at the pinned commit, before any solver runs.",
+      "importPolicy": "Fixed declaration-required Mathlib modules and common generic tactics; original declaration text is unchanged. Original broad imports and unused namespace opens are retained as provenance.",
+      "sourceRepository": "https://github.com/yangky11/miniF2F-lean4",
+      "sourceCommit": "5746b7d6c47855ce1294bed87329618ff7f1bc31"
+    }
+  ],
+  "selectedIds": [
+    "nat_add_comm",
+    "list_reverse_involution",
+    "de_morgan_not_or",
+    "conjunction_commutation",
+    "implication_composition",
+    "mathd_algebra_107",
+    "mathd_algebra_113",
+    "mathd_algebra_114",
+    "mathd_algebra_125",
+    "mathd_algebra_129",
+    "mathd_algebra_137",
+    "mathd_algebra_139",
+    "mathd_algebra_141",
+    "mathd_algebra_142",
+    "mathd_algebra_143",
+    "mathd_algebra_148",
+    "mathd_algebra_153"
+  ],
+  "environment": {
+    "leanToolchain": "leanprover/lean4:v4.24.0",
+    "node": "v26.3.0",
+    "platform": "darwin/arm64",
+    "gitCommit": "beacb4a83b286bed58c0b14ae8a49073a62c2d84",
+    "gitDirty": false,
+    "sourceHashes": {
+      "formal/src/engine.mjs": "80dc47e71f48dc40230dd7edc5d5332acc220acaa4ac30194196ebdcb3eaf2cb",
+      "formal/src/compiler.mjs": "e29119889f06fcb23567662b3c8ecb84b166657fb4f69e0861bfb1c211a3d5c7",
+      "formal/src/guard.mjs": "1a2f823374defa836c8259359e01c6c4819f250cbae3fa74f2d2c1acf4c6feb3",
+      "formal/src/proposers.mjs": "5f24afd71634780178d07ece9d7d594d6ea37a07b6140a4cc037bbef608922b4",
+      "formal/src/support.mjs": "9ca6b8cb507404b4d7a244a5204e1472d434a2d706870c617ea2a772995b2db7",
+      "FormalVerify/Bridge.lean": "cfaab974a2739bbe0c0f3d37f3fba25e30a543aaaecdd5cb808691dc7e2345a0",
+      "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+      "lake-manifest.json": "7f7c30da83bb8dbbd9915a1c1952c55efdc2326bfd77432a2fa29470c51f7e85",
+      "benchmarks/run.mjs": "c9ef5672bddbed7ce241a81a2bc5259340bb52558f46144b203c0fc177c6b10f"
+    }
+  },
+  "results": [
+    {
+      "id": "nat_add_comm",
+      "tier": 1,
+      "status": "SOLVED",
+      "proofFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/nat_add_comm/nat_add_comm.lean",
+      "engineVersion": "fva-search-v2",
+      "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+      "statementHash": "1c711e825b8e1a97cd9a28fd7d5eda2e96e81f5befbcffdfa08e5b2a8277fae7",
+      "provenance": {
+        "dataset": "Foundational sanity suite",
+        "origin": "Constructed for this project from standard logic, natural-number, and list identities.",
+        "statementSha256": "1c711e825b8e1a97cd9a28fd7d5eda2e96e81f5befbcffdfa08e5b2a8277fae7",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": []
+      },
+      "metrics": {
+        "compilerCalls": 7,
+        "steps": 4,
+        "maxDepth": 0,
+        "elapsedMs": 29322,
+        "firstCandidateSolved": false,
+        "modelTokens": 0,
+        "modelTokensKnown": 0,
+        "modelUsageComplete": true,
+        "proposerCalls": 1,
+        "finalCandidates": 1
+      },
+      "budget": {
+        "maxCompilerCalls": 64,
+        "maxSteps": 64,
+        "maxProposalRounds": 3,
+        "maxDepth": 8,
+        "callTimeoutMs": 30000,
+        "theoremTimeoutMs": 300000,
+        "heartbeats": 200000,
+        "maxModelTokens": 0
+      },
+      "policy": "deterministic-v2",
+      "failure": null,
+      "exploration": {
+        "backend": "fresh-lean-cli",
+        "cleanup": {
+          "ownership": "none",
+          "status": "not_applicable"
+        }
+      },
+      "verification": {
+        "statementHash": "1c711e825b8e1a97cd9a28fd7d5eda2e96e81f5befbcffdfa08e5b2a8277fae7",
+        "sourceHash": "696f45fa58417bb481e05389c05c65558234237fb7b2fa9d3e858739a778ef08",
+        "zeroPlaceholders": true,
+        "exitCode": 0,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "declaration": "nat_add_comm",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (m n : Nat), Eq.{1} (HAdd.hAdd.{0, 0, 0} m n) (HAdd.hAdd.{0, 0, 0} n m)",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "compileEvidence": [
+          "ev_c8d8e32e4b0e437f905b0b3ef9fb4354cf42d43e4beb36aa90b44a3581259298",
+          "ev_772963e96b795bfc14e4bfd65a099e0d868840ff79c615997f18eea22ebf4e81"
+        ],
+        "standaloneRecheck": true,
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "warnings": []
+      },
+      "finalCandidates": [
+        {
+          "id": "c0",
+          "planHash": "7e8ffccb65d0f1352058501e6c10226dac67ccfcb2345c7ea5c5d778770efa21",
+          "status": "ACCEPTED",
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "evidenceIds": [
+            "ev_c8d8e32e4b0e437f905b0b3ef9fb4354cf42d43e4beb36aa90b44a3581259298",
+            "ev_772963e96b795bfc14e4bfd65a099e0d868840ff79c615997f18eea22ebf4e81"
+          ],
+          "sourceHash": "696f45fa58417bb481e05389c05c65558234237fb7b2fa9d3e858739a778ef08",
+          "checks": [
+            {
+              "kind": "final",
+              "evidenceId": "ev_c8d8e32e4b0e437f905b0b3ef9fb4354cf42d43e4beb36aa90b44a3581259298",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext",
+                  "Quot.sound"
+                ],
+                "declaration": "nat_add_comm",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (m n : Nat), Eq.{1} (HAdd.hAdd.{0, 0, 0} m n) (HAdd.hAdd.{0, 0, 0} n m)",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            },
+            {
+              "kind": "recheck",
+              "evidenceId": "ev_772963e96b795bfc14e4bfd65a099e0d868840ff79c615997f18eea22ebf4e81",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext",
+                  "Quot.sound"
+                ],
+                "declaration": "nat_add_comm",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (m n : Nat), Eq.{1} (HAdd.hAdd.{0, 0, 0} m n) (HAdd.hAdd.{0, 0, 0} n m)",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            }
+          ],
+          "reason": null
+        }
+      ],
+      "proposerCalls": [
+        {
+          "id": "p0",
+          "nodeId": "n0",
+          "stateHash": "df35acf6395860e214891479bd95afb4fc57dde9da67a5b535ee5facb08b1ab7",
+          "round": 0,
+          "requestDigest": "f0c8e6468ac75b35b6c572a3f3e3bb6cfd5b1ec172da4b67a1309d566fe3dd7f",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/nat_add_comm/proposals/0001-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            },
+            {
+              "tactic": "induction m"
+            },
+            {
+              "tactic": "induction n"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_8d09caf6737700bca87919a1c7d78f7e9de24a284ef99ce01cc942c19e6d252a"
+        }
+      ],
+      "artifactDir": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/nat_add_comm",
+      "detailsFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/nat_add_comm/result.json",
+      "attemptCount": 7,
+      "prunedBranches": 3
+    },
+    {
+      "id": "list_reverse_involution",
+      "tier": 1,
+      "status": "SOLVED",
+      "proofFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/list_reverse_involution.lean",
+      "engineVersion": "fva-search-v2",
+      "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+      "statementHash": "5126f2527f88413187d22ba0421605c6389517b3b6aa2bec0b3da1c7ad2f2908",
+      "provenance": {
+        "dataset": "Foundational sanity suite",
+        "origin": "Constructed for this project from standard logic, natural-number, and list identities.",
+        "statementSha256": "5126f2527f88413187d22ba0421605c6389517b3b6aa2bec0b3da1c7ad2f2908",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": []
+      },
+      "metrics": {
+        "compilerCalls": 6,
+        "steps": 3,
+        "maxDepth": 0,
+        "elapsedMs": 14491,
+        "firstCandidateSolved": false,
+        "modelTokens": 0,
+        "modelTokensKnown": 0,
+        "modelUsageComplete": true,
+        "proposerCalls": 1,
+        "finalCandidates": 1
+      },
+      "budget": {
+        "maxCompilerCalls": 64,
+        "maxSteps": 64,
+        "maxProposalRounds": 3,
+        "maxDepth": 8,
+        "callTimeoutMs": 30000,
+        "theoremTimeoutMs": 300000,
+        "heartbeats": 200000,
+        "maxModelTokens": 0
+      },
+      "policy": "deterministic-v2",
+      "failure": null,
+      "exploration": {
+        "backend": "fresh-lean-cli",
+        "cleanup": {
+          "ownership": "none",
+          "status": "not_applicable"
+        }
+      },
+      "verification": {
+        "statementHash": "5126f2527f88413187d22ba0421605c6389517b3b6aa2bec0b3da1c7ad2f2908",
+        "sourceHash": "cd2cc3f104b12dbda64e7e1ada5ee607b3625278d4ffd9bdef4eacf967e6b4f2",
+        "zeroPlaceholders": true,
+        "exitCode": 0,
+        "audit": {
+          "axioms": [
+            "propext"
+          ],
+          "declaration": "list_reverse_involution",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ {α : Type} (xs : List.{0} α), Eq.{1} (List.reverse.{0} (List.reverse.{0} xs)) xs",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "compileEvidence": [
+          "ev_d2fdd7d88f17bcaba1b979b1bc1d57fd1badb453bfdf33a31d06372adc752e79",
+          "ev_a22a0319fa925c5893126f529237038fc8f1b2f2383c4c959c9a7acb9f04a2d5"
+        ],
+        "standaloneRecheck": true,
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "warnings": []
+      },
+      "finalCandidates": [
+        {
+          "id": "c0",
+          "planHash": "b42115b8eb34a99520d3d1eeb97814872188bdf3eca4949aa2c271785ab9002c",
+          "status": "ACCEPTED",
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "evidenceIds": [
+            "ev_d2fdd7d88f17bcaba1b979b1bc1d57fd1badb453bfdf33a31d06372adc752e79",
+            "ev_a22a0319fa925c5893126f529237038fc8f1b2f2383c4c959c9a7acb9f04a2d5"
+          ],
+          "sourceHash": "cd2cc3f104b12dbda64e7e1ada5ee607b3625278d4ffd9bdef4eacf967e6b4f2",
+          "checks": [
+            {
+              "kind": "final",
+              "evidenceId": "ev_d2fdd7d88f17bcaba1b979b1bc1d57fd1badb453bfdf33a31d06372adc752e79",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext"
+                ],
+                "declaration": "list_reverse_involution",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ {α : Type} (xs : List.{0} α), Eq.{1} (List.reverse.{0} (List.reverse.{0} xs)) xs",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            },
+            {
+              "kind": "recheck",
+              "evidenceId": "ev_a22a0319fa925c5893126f529237038fc8f1b2f2383c4c959c9a7acb9f04a2d5",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext"
+                ],
+                "declaration": "list_reverse_involution",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ {α : Type} (xs : List.{0} α), Eq.{1} (List.reverse.{0} (List.reverse.{0} xs)) xs",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            }
+          ],
+          "reason": null
+        }
+      ],
+      "proposerCalls": [
+        {
+          "id": "p0",
+          "nodeId": "n0",
+          "stateHash": "1b9355fe161608279743f308aa7e81dd9fb2eae77bb84ecf39657e4acdc35887",
+          "round": 0,
+          "requestDigest": "f9237e0eb45159546c5e00f2acc7484c6cac3e77eb516b5e489b82d71b0a1eb0",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/proposals/0001-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            },
+            {
+              "tactic": "induction xs"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_929cc27b457bb6a246d6c11871714f9a8fd027dcf869c7c0c057143bad742544"
+        }
+      ],
+      "artifactDir": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution",
+      "detailsFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/result.json",
+      "attemptCount": 6,
+      "prunedBranches": 2
+    },
+    {
+      "id": "de_morgan_not_or",
+      "tier": 1,
+      "status": "SOLVED",
+      "proofFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/de_morgan_not_or.lean",
+      "engineVersion": "fva-search-v2",
+      "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+      "statementHash": "bf5ca2a1cded4bbe01f9c63a18c15fe8a3d1ddded06a0ae9d9fea32d14835870",
+      "provenance": {
+        "dataset": "Foundational sanity suite",
+        "origin": "Constructed for this project from standard logic, natural-number, and list identities.",
+        "statementSha256": "bf5ca2a1cded4bbe01f9c63a18c15fe8a3d1ddded06a0ae9d9fea32d14835870",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": []
+      },
+      "metrics": {
+        "compilerCalls": 22,
+        "steps": 13,
+        "maxDepth": 3,
+        "elapsedMs": 76706,
+        "firstCandidateSolved": false,
+        "modelTokens": 0,
+        "modelTokensKnown": 0,
+        "modelUsageComplete": true,
+        "proposerCalls": 7,
+        "finalCandidates": 1
+      },
+      "budget": {
+        "maxCompilerCalls": 64,
+        "maxSteps": 64,
+        "maxProposalRounds": 3,
+        "maxDepth": 8,
+        "callTimeoutMs": 30000,
+        "theoremTimeoutMs": 300000,
+        "heartbeats": 200000,
+        "maxModelTokens": 0
+      },
+      "policy": "deterministic-v2",
+      "failure": null,
+      "exploration": {
+        "backend": "fresh-lean-cli",
+        "cleanup": {
+          "ownership": "none",
+          "status": "not_applicable"
+        }
+      },
+      "verification": {
+        "statementHash": "bf5ca2a1cded4bbe01f9c63a18c15fe8a3d1ddded06a0ae9d9fea32d14835870",
+        "sourceHash": "90ce49e9fa8889343a8c3d86d9a060130614ecbe878266e26923cd4cbb88a904",
+        "zeroPlaceholders": true,
+        "exitCode": 0,
+        "audit": {
+          "axioms": [
+            "propext"
+          ],
+          "declaration": "de_morgan_not_or",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (P Q : Prop), Iff (Not (Or P Q)) (And (Not P) (Not Q))",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "compileEvidence": [
+          "ev_86a4344f8ca6240317137eb140d13ab17779488591dc890a9b965c2a3108b93c",
+          "ev_07cfec820567f3fa5b0c6aabd48e983d3b4e12aaa436c1c600a1874c0d768244"
+        ],
+        "standaloneRecheck": true,
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "warnings": []
+      },
+      "finalCandidates": [
+        {
+          "id": "c0",
+          "planHash": "c8339c245959db8615cb8dff5a47a03c8894f44b0dd6da070cc3ad0a498b0904",
+          "status": "ACCEPTED",
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "evidenceIds": [
+            "ev_86a4344f8ca6240317137eb140d13ab17779488591dc890a9b965c2a3108b93c",
+            "ev_07cfec820567f3fa5b0c6aabd48e983d3b4e12aaa436c1c600a1874c0d768244"
+          ],
+          "sourceHash": "90ce49e9fa8889343a8c3d86d9a060130614ecbe878266e26923cd4cbb88a904",
+          "checks": [
+            {
+              "kind": "final",
+              "evidenceId": "ev_86a4344f8ca6240317137eb140d13ab17779488591dc890a9b965c2a3108b93c",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext"
+                ],
+                "declaration": "de_morgan_not_or",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (P Q : Prop), Iff (Not (Or P Q)) (And (Not P) (Not Q))",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            },
+            {
+              "kind": "recheck",
+              "evidenceId": "ev_07cfec820567f3fa5b0c6aabd48e983d3b4e12aaa436c1c600a1874c0d768244",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext"
+                ],
+                "declaration": "de_morgan_not_or",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (P Q : Prop), Iff (Not (Or P Q)) (And (Not P) (Not Q))",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            }
+          ],
+          "reason": null
+        }
+      ],
+      "proposerCalls": [
+        {
+          "id": "p0",
+          "nodeId": "n0",
+          "stateHash": "ce572728073488d3c7ff9da927cb4c8929f19326e459f40e85de143961f5ef25",
+          "round": 0,
+          "requestDigest": "516d667ba947e3386a76f56e2ec13ffc73fdbc3eae9738d0f7cec206351e6243",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/proposals/0001-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "constructor"
+            },
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_d12e2cf576d2cbcf507c33029bb6e1e2ccf6394861e0d8d78c202310ccb3e6b1"
+        },
+        {
+          "id": "p1",
+          "nodeId": "n1",
+          "stateHash": "dce93f7065e704da5d8b8c3449f5f8d12b576a651f5b0f410246a8549d06644f",
+          "round": 0,
+          "requestDigest": "dfe0af2aa063db04d29291439340a60898b920df28f14035796821e62987e69d",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/proposals/0002-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "intro"
+            },
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_749acbad90294c0df7712afb592a57627abea8cc53f24917b03db9803d18ae39"
+        },
+        {
+          "id": "p2",
+          "nodeId": "n3",
+          "stateHash": "d599bdddbc77afb9d2381ed922e64e663c41f9660f68bceb662e233bf2d60f4d",
+          "round": 0,
+          "requestDigest": "c508b2ed02081d54890b0a5816bc3729c23f4773ce1d96fe960861bc499e05ec",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/proposals/0003-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "constructor"
+            },
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_466bc100d1ac3355efc0c7cc5f38eb5db1b0173088d5f95f36116d03a4d8b965"
+        },
+        {
+          "id": "p3",
+          "nodeId": "n4",
+          "stateHash": "b4ce3ef6b6c8b5e0dba90a1dbeb8f5ba7973d44be41c3821fd227e752aa6db0a",
+          "round": 0,
+          "requestDigest": "08937db906fb42209d330d73f50fa8b0ea4b4568ae0890e87f4181dff783ed6b",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/proposals/0004-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_adcf2230b6fa058b1e66fb6ae50c1a55f733ad46ab2575d3431141ea9c2468d1"
+        },
+        {
+          "id": "p4",
+          "nodeId": "n5",
+          "stateHash": "2c54f1467477ec34ca36565d04c69471d8c52d8d38eec3a120c8dfe6f31fcd03",
+          "round": 0,
+          "requestDigest": "cb0deca38041d59b7483f666b29daae34c48d48d9ecd0070ec388cd8d4dc7d09",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/proposals/0005-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_edfa915b42a0511597e7355c26fcff2148ea56f45c8e824e2746c1fba01d50e6"
+        },
+        {
+          "id": "p5",
+          "nodeId": "n2",
+          "stateHash": "219fcad5305687092dfdc9657903b23affc2e92fdb8c23b3a6e8b04b2c06370e",
+          "round": 0,
+          "requestDigest": "2b371bd39b2719acbac014ceffdbc15735cc651f53b77744e3c6cd0d31be76b5",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/proposals/0006-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "intro"
+            },
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_3306098ed6d5fbb263aadca603c28db99959698c22114579784c9641ea274155"
+        },
+        {
+          "id": "p6",
+          "nodeId": "n6",
+          "stateHash": "fe743e81a644881e4603df794de63b6dc83a20c2ddb890902e5532c6d7e48d6e",
+          "round": 0,
+          "requestDigest": "0999cb38e659a985ea08d6eb2447a7bd4754a075b0481b64400f71afd31fefb2",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/proposals/0007-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_84da5e92b40a6e2b8a089fdf5050616837e88acab3beaba54bc9dd116f30722b"
+        }
+      ],
+      "artifactDir": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or",
+      "detailsFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/result.json",
+      "attemptCount": 22,
+      "prunedBranches": 6
+    },
+    {
+      "id": "conjunction_commutation",
+      "tier": 1,
+      "status": "SOLVED",
+      "proofFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/conjunction_commutation.lean",
+      "engineVersion": "fva-search-v2",
+      "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+      "statementHash": "4f53b2ed9d85a29cdc88b17e958e23913f0e81c5ef78431e9c3cbbbf1649ee99",
+      "provenance": {
+        "dataset": "Foundational sanity suite",
+        "origin": "Constructed for this project from standard logic, natural-number, and list identities.",
+        "statementSha256": "4f53b2ed9d85a29cdc88b17e958e23913f0e81c5ef78431e9c3cbbbf1649ee99",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": []
+      },
+      "metrics": {
+        "compilerCalls": 12,
+        "steps": 5,
+        "maxDepth": 2,
+        "elapsedMs": 36739,
+        "firstCandidateSolved": false,
+        "modelTokens": 0,
+        "modelTokensKnown": 0,
+        "modelUsageComplete": true,
+        "proposerCalls": 5,
+        "finalCandidates": 1
+      },
+      "budget": {
+        "maxCompilerCalls": 64,
+        "maxSteps": 64,
+        "maxProposalRounds": 3,
+        "maxDepth": 8,
+        "callTimeoutMs": 30000,
+        "theoremTimeoutMs": 300000,
+        "heartbeats": 200000,
+        "maxModelTokens": 0
+      },
+      "policy": "deterministic-v2",
+      "failure": null,
+      "exploration": {
+        "backend": "fresh-lean-cli",
+        "cleanup": {
+          "ownership": "none",
+          "status": "not_applicable"
+        }
+      },
+      "verification": {
+        "statementHash": "4f53b2ed9d85a29cdc88b17e958e23913f0e81c5ef78431e9c3cbbbf1649ee99",
+        "sourceHash": "d88e39351540f4950e107a59e1cc98183f67d9df1f897f4645da22ef15ff2818",
+        "zeroPlaceholders": true,
+        "exitCode": 0,
+        "audit": {
+          "axioms": [],
+          "declaration": "conjunction_commutation",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (P Q : Prop), And P Q → And Q P",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "compileEvidence": [
+          "ev_3b3bd2e9738873146f2511ebde739d9fbfbd0e0b795ab3429039a92ad3947c28",
+          "ev_f650fcc1d183f485f48f3bb00eb37bf87ecc60535a68b7e45e9d674b7b841b55"
+        ],
+        "standaloneRecheck": true,
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "warnings": []
+      },
+      "finalCandidates": [
+        {
+          "id": "c0",
+          "planHash": "08b9b8fcdb5cfcd5dc2feff05a7377c483ddccb687cf83ba6c77b1f1c164ef15",
+          "status": "ACCEPTED",
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "evidenceIds": [
+            "ev_3b3bd2e9738873146f2511ebde739d9fbfbd0e0b795ab3429039a92ad3947c28",
+            "ev_f650fcc1d183f485f48f3bb00eb37bf87ecc60535a68b7e45e9d674b7b841b55"
+          ],
+          "sourceHash": "d88e39351540f4950e107a59e1cc98183f67d9df1f897f4645da22ef15ff2818",
+          "checks": [
+            {
+              "kind": "final",
+              "evidenceId": "ev_3b3bd2e9738873146f2511ebde739d9fbfbd0e0b795ab3429039a92ad3947c28",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [],
+                "declaration": "conjunction_commutation",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (P Q : Prop), And P Q → And Q P",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            },
+            {
+              "kind": "recheck",
+              "evidenceId": "ev_f650fcc1d183f485f48f3bb00eb37bf87ecc60535a68b7e45e9d674b7b841b55",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [],
+                "declaration": "conjunction_commutation",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (P Q : Prop), And P Q → And Q P",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            }
+          ],
+          "reason": null
+        }
+      ],
+      "proposerCalls": [
+        {
+          "id": "p0",
+          "nodeId": "n0",
+          "stateHash": "9f0bbccf998ec7f83067c3c35fae587526ff7e213e9b9bc44579908818f968e7",
+          "round": 0,
+          "requestDigest": "4849cef972a7416fc48dda457617d3f4aaf42aa0a8d6ff026a9553629f76e26f",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/proposals/0001-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "constructor"
+            },
+            {
+              "tactic": "cases h"
+            },
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_61cab113d57ba749a4b124f0d4cc89786f95f177f242596d8088184dd4de1f20"
+        },
+        {
+          "id": "p1",
+          "nodeId": "n1",
+          "stateHash": "bd3ebc87d5d007e7ab30a42d4342cf9db72147aef7049b718d9f47c371ed58f0",
+          "round": 0,
+          "requestDigest": "6bd70323837f3e28c54df790ee6e7679e0150c3282b755c26b56c513e2739abb",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/proposals/0002-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "cases h"
+            },
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_cec44ea8b8273bc20c596470e918d362ab04e2ea2166da842673997122519a1f"
+        },
+        {
+          "id": "p2",
+          "nodeId": "n3",
+          "stateHash": "0154139e21dc324d7496caecb5420f3f5fb2c8fcb3cec5a55783dd481e50d2c1",
+          "round": 0,
+          "requestDigest": "42aa530b2c1cb514b9afdb8b2c71800fffb5b6984f68c0df4349c97f3269bf4d",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/proposals/0003-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_7ba48b2d72d244ce18b2849f34d50808de42571f82c6a8bbabd4b46fd4d75760"
+        },
+        {
+          "id": "p3",
+          "nodeId": "n2",
+          "stateHash": "b51308076dc01c4da517e38c9c57005d8fe64f4eb2db1077ce3c75bf92b3b3bf",
+          "round": 0,
+          "requestDigest": "65f3816b827a0ab37ca34d344e4a75e77af947755703a675e5bb66f5d9436144",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/proposals/0004-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "cases h"
+            },
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_07c7702a211f70fc066050be13ea05219494add98eb622f8ee77e74588569b23"
+        },
+        {
+          "id": "p4",
+          "nodeId": "n4",
+          "stateHash": "d6ba300853e6b570d70196470d364f5ff566bc99b33151a32005bd657aeae90f",
+          "round": 0,
+          "requestDigest": "060d6f71820d51a9fea941be4a2ee1ccf18d18c78dbf82b853d1ec28ef64c6c0",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/proposals/0005-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_fda24b373f54a765924cab968b2944d8b89614b51d6e1b6c73e99189d7c61bb6"
+        }
+      ],
+      "artifactDir": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation",
+      "detailsFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/result.json",
+      "attemptCount": 12,
+      "prunedBranches": 0
+    },
+    {
+      "id": "implication_composition",
+      "tier": 1,
+      "status": "SOLVED",
+      "proofFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/implication_composition/implication_composition.lean",
+      "engineVersion": "fva-search-v2",
+      "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+      "statementHash": "ba3a5d2b4335d916f8682c09ba45cae44ec8a0201e88cf320b36363e0939b335",
+      "provenance": {
+        "dataset": "Foundational sanity suite",
+        "origin": "Constructed for this project from standard logic, natural-number, and list identities.",
+        "statementSha256": "ba3a5d2b4335d916f8682c09ba45cae44ec8a0201e88cf320b36363e0939b335",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": []
+      },
+      "metrics": {
+        "compilerCalls": 8,
+        "steps": 4,
+        "maxDepth": 1,
+        "elapsedMs": 24314,
+        "firstCandidateSolved": false,
+        "modelTokens": 0,
+        "modelTokensKnown": 0,
+        "modelUsageComplete": true,
+        "proposerCalls": 2,
+        "finalCandidates": 1
+      },
+      "budget": {
+        "maxCompilerCalls": 64,
+        "maxSteps": 64,
+        "maxProposalRounds": 3,
+        "maxDepth": 8,
+        "callTimeoutMs": 30000,
+        "theoremTimeoutMs": 300000,
+        "heartbeats": 200000,
+        "maxModelTokens": 0
+      },
+      "policy": "deterministic-v2",
+      "failure": null,
+      "exploration": {
+        "backend": "fresh-lean-cli",
+        "cleanup": {
+          "ownership": "none",
+          "status": "not_applicable"
+        }
+      },
+      "verification": {
+        "statementHash": "ba3a5d2b4335d916f8682c09ba45cae44ec8a0201e88cf320b36363e0939b335",
+        "sourceHash": "511bcd44fda58550fb6506be78112acccbd5d960fafa0a610d32ba50b2a8e46d",
+        "zeroPlaceholders": true,
+        "exitCode": 0,
+        "audit": {
+          "axioms": [
+            "propext"
+          ],
+          "declaration": "implication_composition",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (P Q R : Prop), (P → Q) → (Q → R) → P → R",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "compileEvidence": [
+          "ev_52b7f6379c1e477c10fdf95852d77ffe967abae132e920d79f14e2e837a60b3e",
+          "ev_c1f84252e6f0e438b7e1b23eac031e47409922e95747dda5b302fa2eb0088f0b"
+        ],
+        "standaloneRecheck": true,
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "warnings": []
+      },
+      "finalCandidates": [
+        {
+          "id": "c0",
+          "planHash": "c4745b386460e672f32b851a1eb81b06488bbdb6df8add7b8078ca305298c6bd",
+          "status": "ACCEPTED",
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "evidenceIds": [
+            "ev_52b7f6379c1e477c10fdf95852d77ffe967abae132e920d79f14e2e837a60b3e",
+            "ev_c1f84252e6f0e438b7e1b23eac031e47409922e95747dda5b302fa2eb0088f0b"
+          ],
+          "sourceHash": "511bcd44fda58550fb6506be78112acccbd5d960fafa0a610d32ba50b2a8e46d",
+          "checks": [
+            {
+              "kind": "final",
+              "evidenceId": "ev_52b7f6379c1e477c10fdf95852d77ffe967abae132e920d79f14e2e837a60b3e",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext"
+                ],
+                "declaration": "implication_composition",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (P Q R : Prop), (P → Q) → (Q → R) → P → R",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            },
+            {
+              "kind": "recheck",
+              "evidenceId": "ev_c1f84252e6f0e438b7e1b23eac031e47409922e95747dda5b302fa2eb0088f0b",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext"
+                ],
+                "declaration": "implication_composition",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (P Q R : Prop), (P → Q) → (Q → R) → P → R",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            }
+          ],
+          "reason": null
+        }
+      ],
+      "proposerCalls": [
+        {
+          "id": "p0",
+          "nodeId": "n0",
+          "stateHash": "7b96bfd85d47d9615c18500a15957f869f7b5ba4eb30849971d2d6647f05917a",
+          "round": 0,
+          "requestDigest": "311d582cd3b18e7fd5c0f14d98a31ca50e468bdcec598ee747d7ca0e8111989d",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/implication_composition/proposals/0001-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "intro"
+            },
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_e998a0e692e597ab659cbfdf841c5e92110844212133fd319e6a6b2970e897e0"
+        },
+        {
+          "id": "p1",
+          "nodeId": "n1",
+          "stateHash": "409fdf4cc497a09d7557025870fabeb6c79ab0f721d53f53d0d9f6d7a2739926",
+          "round": 0,
+          "requestDigest": "aa8ccdb3fc0ef587bc9d5e8168cca823a6b5935effd4125f4288eb9826bc87a2",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/implication_composition/proposals/0002-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_20b0640608e34ef000a7c940eb017be404aff925e11466e0e9be36f26cc64a23"
+        }
+      ],
+      "artifactDir": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/implication_composition",
+      "detailsFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/implication_composition/result.json",
+      "attemptCount": 8,
+      "prunedBranches": 2
+    },
+    {
+      "id": "mathd_algebra_107",
+      "tier": 2,
+      "status": "SOLVED",
+      "proofFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_107/mathd_algebra_107.lean",
+      "engineVersion": "fva-search-v2",
+      "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+      "statementHash": "b095b464d3ed4e68dd26a96fd8690d0b0a13ff31b13c9e922bbee77c4bd6d260",
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_107.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_107.lean",
+        "sourceFileSha256": "8b266897a9476b9c5c61aa61803e27b6d52a63b1188d88e685c6cb0b41cf48f4",
+        "statementSha256": "b095b464d3ed4e68dd26a96fd8690d0b0a13ff31b13c9e922bbee77c4bd6d260",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      },
+      "metrics": {
+        "compilerCalls": 23,
+        "steps": 18,
+        "maxDepth": 2,
+        "elapsedMs": 69638,
+        "firstCandidateSolved": false,
+        "modelTokens": 0,
+        "modelTokensKnown": 0,
+        "modelUsageComplete": true,
+        "proposerCalls": 3,
+        "finalCandidates": 1
+      },
+      "budget": {
+        "maxCompilerCalls": 64,
+        "maxSteps": 64,
+        "maxProposalRounds": 3,
+        "maxDepth": 8,
+        "callTimeoutMs": 30000,
+        "theoremTimeoutMs": 300000,
+        "heartbeats": 200000,
+        "maxModelTokens": 0
+      },
+      "policy": "deterministic-v2",
+      "failure": null,
+      "exploration": {
+        "backend": "fresh-lean-cli",
+        "cleanup": {
+          "ownership": "none",
+          "status": "not_applicable"
+        }
+      },
+      "verification": {
+        "statementHash": "b095b464d3ed4e68dd26a96fd8690d0b0a13ff31b13c9e922bbee77c4bd6d260",
+        "sourceHash": "bda2f31233a02e5c83c7bc8745349a73be79f4281eccc88305444e9dceb64a68",
+        "zeroPlaceholders": true,
+        "exitCode": 0,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_107",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (x y : Real),\n  Eq.{1}\n      (HSub.hSub.{0, 0, 0}\n        (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HMul.hMul.{0, 0, 0} 8 x))\n          (HPow.hPow.{0, 0, 0} y 2))\n        (HMul.hMul.{0, 0, 0} 6 y))\n      0 →\n    Eq.{1}\n      (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 4) 2)\n        (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} y 3) 2))\n      (HPow.hPow.{0, 0, 0} 5 2)",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "compileEvidence": [
+          "ev_90e87720c1b47c7c0f38408f752b859815628310159aeaac5e9281bf4d4274c9",
+          "ev_bba71fa4ce4bb2f32dc3e610872d91f3f38bb6fdfa21f39fe419abe4c3e3b84b"
+        ],
+        "standaloneRecheck": true,
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "warnings": []
+      },
+      "finalCandidates": [
+        {
+          "id": "c0",
+          "planHash": "e8d799e6db88b5618d0aa54440257312a04a25c0df7afbfdf49fd9f7bf8d7d39",
+          "status": "ACCEPTED",
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "evidenceIds": [
+            "ev_90e87720c1b47c7c0f38408f752b859815628310159aeaac5e9281bf4d4274c9",
+            "ev_bba71fa4ce4bb2f32dc3e610872d91f3f38bb6fdfa21f39fe419abe4c3e3b84b"
+          ],
+          "sourceHash": "bda2f31233a02e5c83c7bc8745349a73be79f4281eccc88305444e9dceb64a68",
+          "checks": [
+            {
+              "kind": "final",
+              "evidenceId": "ev_90e87720c1b47c7c0f38408f752b859815628310159aeaac5e9281bf4d4274c9",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext",
+                  "Classical.choice",
+                  "Quot.sound"
+                ],
+                "declaration": "mathd_algebra_107",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (x y : Real),\n  Eq.{1}\n      (HSub.hSub.{0, 0, 0}\n        (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HMul.hMul.{0, 0, 0} 8 x))\n          (HPow.hPow.{0, 0, 0} y 2))\n        (HMul.hMul.{0, 0, 0} 6 y))\n      0 →\n    Eq.{1}\n      (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 4) 2)\n        (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} y 3) 2))\n      (HPow.hPow.{0, 0, 0} 5 2)",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            },
+            {
+              "kind": "recheck",
+              "evidenceId": "ev_bba71fa4ce4bb2f32dc3e610872d91f3f38bb6fdfa21f39fe419abe4c3e3b84b",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext",
+                  "Classical.choice",
+                  "Quot.sound"
+                ],
+                "declaration": "mathd_algebra_107",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (x y : Real),\n  Eq.{1}\n      (HSub.hSub.{0, 0, 0}\n        (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HMul.hMul.{0, 0, 0} 8 x))\n          (HPow.hPow.{0, 0, 0} y 2))\n        (HMul.hMul.{0, 0, 0} 6 y))\n      0 →\n    Eq.{1}\n      (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 4) 2)\n        (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} y 3) 2))\n      (HPow.hPow.{0, 0, 0} 5 2)",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            }
+          ],
+          "reason": null
+        }
+      ],
+      "proposerCalls": [
+        {
+          "id": "p0",
+          "nodeId": "n0",
+          "stateHash": "8f940f7d50aee6429af22627fe7460cce839cf3a288ed39a569af6108992bcf4",
+          "round": 0,
+          "requestDigest": "4e922951ef387bc66de3958f5389864fcdf1123226087b8741a8656556328d28",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_107/proposals/0001-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_f2b1607115a396b58fcc3102838377d47a3f75a02420e1c6ee8f5e6f8c7c010f"
+        },
+        {
+          "id": "p1",
+          "nodeId": "n1",
+          "stateHash": "71ed1112a2edd31de7a9373ec3599dadea958b7345d6c561dd759af4f470ad48",
+          "round": 0,
+          "requestDigest": "03e3c8871346fab70cbad9dbdc6f8f6ed9fb29ca9c5de3d2430888d774833b9f",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_107/proposals/0002-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_43a5dfdec941d08dc49ab8f3db8e183479c49123965fab47379ac947ebb0a366"
+        },
+        {
+          "id": "p2",
+          "nodeId": "n2",
+          "stateHash": "e2909c337db828577aadd3363c17e9f70619589396881335b1e95174e6cce170",
+          "round": 0,
+          "requestDigest": "1106f046b74422540c29b277628432bb936c041b1ea4d9181b91ae7dd93dc02e",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_107/proposals/0003-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_a542fe7e4bf4a44129f3d34dc4cbe721c229264d096c15b793044e9de3546430"
+        }
+      ],
+      "artifactDir": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_107",
+      "detailsFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_107/result.json",
+      "attemptCount": 23,
+      "prunedBranches": 15
+    },
+    {
+      "id": "mathd_algebra_113",
+      "tier": 2,
+      "status": "FAILED",
+      "proofFile": null,
+      "engineVersion": "fva-search-v2",
+      "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+      "statementHash": "fb28389dd3013f69e0afc151dd98822f9fc97ea4d10e3322f058e295f9e56631",
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_113.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_113.lean",
+        "sourceFileSha256": "bce0050ae5a9dea02bee97512c6c91625339f2aa7f0f1d15048dde85771b3a34",
+        "statementSha256": "fb28389dd3013f69e0afc151dd98822f9fc97ea4d10e3322f058e295f9e56631",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      },
+      "metrics": {
+        "compilerCalls": 62,
+        "steps": 56,
+        "maxDepth": 3,
+        "elapsedMs": 189044,
+        "firstCandidateSolved": false,
+        "modelTokens": 0,
+        "modelTokensKnown": 0,
+        "modelUsageComplete": true,
+        "proposerCalls": 6,
+        "finalCandidates": 0
+      },
+      "budget": {
+        "maxCompilerCalls": 64,
+        "maxSteps": 64,
+        "maxProposalRounds": 3,
+        "maxDepth": 8,
+        "callTimeoutMs": 30000,
+        "theoremTimeoutMs": 300000,
+        "heartbeats": 200000,
+        "maxModelTokens": 0
+      },
+      "policy": "deterministic-v2",
+      "failure": "compiler_budget",
+      "exploration": {
+        "backend": "fresh-lean-cli",
+        "cleanup": {
+          "ownership": "none",
+          "status": "not_applicable"
+        }
+      },
+      "verification": null,
+      "finalCandidates": [],
+      "proposerCalls": [
+        {
+          "id": "p0",
+          "nodeId": "n0",
+          "stateHash": "e075a6ab0e3542482273d3c3b889120158309b9710a47c8cf024344f7b14f933",
+          "round": 0,
+          "requestDigest": "8b470f8494345df1d4f753b7672fb0abaa597727627ae0e00b1e21212e8ca9bf",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/proposals/0001-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_8a36889160cf8f4b264cd2470aacd3901772c2b1878f9982df5b8fa940f1593a"
+        },
+        {
+          "id": "p1",
+          "nodeId": "n1",
+          "stateHash": "f3e0c201a94be47423a967135994f1a7feeab97a884c22257354fd842e6404a7",
+          "round": 0,
+          "requestDigest": "29bd375e8b3c30757e5096f45e63896a4f68f8972b2a45e1c908d825f9e8b39c",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/proposals/0002-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_9485d083f61661a240133f79920963210c8d6b3a71be1b9aac04fea07c639365"
+        },
+        {
+          "id": "p2",
+          "nodeId": "n2",
+          "stateHash": "3e1bb5095abde9ab2a622b78da85df957f22ab44cb9d92e57277bf6b0a67c06e",
+          "round": 0,
+          "requestDigest": "3df6bb698c5c93a543ba1f1eb5a8d7e988ff9ed43612c4d101bdae3a47b270ca",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/proposals/0003-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_810490f52f0ac0044cd86d03cc3851a2d39b800f12d49bdb61e98b2d803a6930"
+        },
+        {
+          "id": "p3",
+          "nodeId": "n3",
+          "stateHash": "c6898dfa38ee697d1f7a22dcb608a31cc0f10202616a06013de726aec8d50465",
+          "round": 0,
+          "requestDigest": "fd7d3c5db1c09417460b0839065be8a8a9162099326ecf55d3df4f86b014c788",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/proposals/0004-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_6ff9f1516f9a4424f555711838bddc82785e86677b4f92b8ae02085d483b0810"
+        },
+        {
+          "id": "p4",
+          "nodeId": "n4",
+          "stateHash": "c6898dfa38ee697d1f7a22dcb608a31cc0f10202616a06013de726aec8d50465",
+          "round": 0,
+          "requestDigest": "76927ff0a851de4f9ab437a806786171159eb6237d76c9c88646c2b93b6145dd",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/proposals/0005-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_af269ef239f3f2fea90379aa1e488d1f8ef30665f8d3a96274648b9696d95b75"
+        },
+        {
+          "id": "p5",
+          "nodeId": "n5",
+          "stateHash": "c6898dfa38ee697d1f7a22dcb608a31cc0f10202616a06013de726aec8d50465",
+          "round": 0,
+          "requestDigest": "e1b8fc74f930c0ee4d1076be1cdc02cd7294c4a19363242ef4db15afe70a5046",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/proposals/0006-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_bfee36ba06d411229f825dc16bd2fd84db0d21ff616a13b2c56c2907f7fbcc9b"
+        }
+      ],
+      "artifactDir": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113",
+      "detailsFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/result.json",
+      "attemptCount": 62,
+      "prunedBranches": 56
+    },
+    {
+      "id": "mathd_algebra_114",
+      "tier": 2,
+      "status": "FAILED",
+      "proofFile": null,
+      "engineVersion": "fva-search-v2",
+      "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+      "statementHash": "8beede22e1e26e959117cc39e02ecf3cb474bb0ad9a9d5731b05023971d800cf",
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_114.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_114.lean",
+        "sourceFileSha256": "3d148034f4d77eec569a493f11ce3def0aa0b40dcc4862066ebc07aa47c27941",
+        "statementSha256": "8beede22e1e26e959117cc39e02ecf3cb474bb0ad9a9d5731b05023971d800cf",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      },
+      "metrics": {
+        "compilerCalls": 62,
+        "steps": 48,
+        "maxDepth": 8,
+        "elapsedMs": 255995,
+        "firstCandidateSolved": false,
+        "modelTokens": 0,
+        "modelTokensKnown": 0,
+        "modelUsageComplete": true,
+        "proposerCalls": 8,
+        "finalCandidates": 0
+      },
+      "budget": {
+        "maxCompilerCalls": 64,
+        "maxSteps": 64,
+        "maxProposalRounds": 3,
+        "maxDepth": 8,
+        "callTimeoutMs": 30000,
+        "theoremTimeoutMs": 300000,
+        "heartbeats": 200000,
+        "maxModelTokens": 0
+      },
+      "policy": "deterministic-v2",
+      "failure": "compiler_budget",
+      "exploration": {
+        "backend": "fresh-lean-cli",
+        "cleanup": {
+          "ownership": "none",
+          "status": "not_applicable"
+        }
+      },
+      "verification": null,
+      "finalCandidates": [],
+      "proposerCalls": [
+        {
+          "id": "p0",
+          "nodeId": "n0",
+          "stateHash": "27c87a66db66bf88d60dfecb09da1f3ee91b4c48fd2738e56ec4a90b74a8bf83",
+          "round": 0,
+          "requestDigest": "4df126df6d53624b34030241d7ce6573d95c9a87a8c8ddcc3941fd336e196854",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_114/proposals/0001-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_d189002c769dbfff0e183cf413c89d90a024a17aa45292654b252d832574a46c"
+        },
+        {
+          "id": "p1",
+          "nodeId": "n1",
+          "stateHash": "83c85d1fab4b379f8fead74a5275a903f2ff0ef6acde06e28255dd961e99810d",
+          "round": 0,
+          "requestDigest": "aa84d154f20a63072949fb2e850199c139772db0321d4c5aeb04b3bd9747a288",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_114/proposals/0002-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_266f96e4ecece8bbb55c406daccf1c8f481e9ac7599720767a432dfc2dec3860"
+        },
+        {
+          "id": "p2",
+          "nodeId": "n2",
+          "stateHash": "ab551f81eaa597d36f15936639a8f24ec35515e4e9cb721fae68e36dc5c35ad9",
+          "round": 0,
+          "requestDigest": "2dff2a047f2962d1c5e7043be81714422af23442a364fe50b7a4a068ea11dde3",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_114/proposals/0003-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_f430a53f541a74e7926f482ed15b06e9d5d1992629f5b36d718726a0b326231c"
+        },
+        {
+          "id": "p3",
+          "nodeId": "n3",
+          "stateHash": "d6481f0a6a186de7e1054fefb5aff7147a5b8f0346a7d13a62cc5bbea190bb25",
+          "round": 0,
+          "requestDigest": "e68b2c0697351573cfa4a1a8322ba2df30f0b5bd453e824bd292e089c12b4a4d",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_114/proposals/0004-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_cc04316b01c7c5d8ae24dd2913d690a13a016094858ad90f191f7536f8fb3767"
+        },
+        {
+          "id": "p4",
+          "nodeId": "n5",
+          "stateHash": "7d46e3279ea7fef1e2cc4ca49301464a432a741349fc1cd1921beeb333ac14fb",
+          "round": 0,
+          "requestDigest": "fe4d21518ff58439987b82594a930eb9df6da8d8a78442dc0d21aa879c263887",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_114/proposals/0005-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_aea4476d212e137d91bd0c19d742a2d069bb981c490cf674ce1f34d5279298d3"
+        },
+        {
+          "id": "p5",
+          "nodeId": "n6",
+          "stateHash": "244dc6a2c231a8eab102a224687ed0348d81b9f8b5e5b6dc50fa784b15d70f6b",
+          "round": 0,
+          "requestDigest": "93773edda15b3807ea78d73716409f90c4569ccd4bf21735fd9086443a28cdab",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_114/proposals/0006-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_e0dba80085c2aeb86847cda91fd6ccfd13eb53598cbeb98d7fcb2b1fdcc823ec"
+        },
+        {
+          "id": "p6",
+          "nodeId": "n11",
+          "stateHash": "b09fb238482923dd257fc49fa70b379ba53499c1c4eaf8fa6dc307b1ab80e8a3",
+          "round": 0,
+          "requestDigest": "f96a445135904688e874840166dd04ce93840cb6c6e07a297f900495bc76b561",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_114/proposals/0007-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_fe1c60b88eecccceabedab02cccf5c621668f99ec463bc8b3c8322071ca5511e"
+        },
+        {
+          "id": "p7",
+          "nodeId": "n12",
+          "stateHash": "366dd21942305cb73b79de89b7838a2eebb18004a1ff3ad818a6c7b1d978eaa0",
+          "round": 0,
+          "requestDigest": "2ac999e86d45f66bb30f743cf4e6faa58354e75ca581c69dc62088c3cbf889d6",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_114/proposals/0008-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_1d14313caba83612f2434c635e833a5e1add8adeb5fdae9de2a452ce62ee1bbe"
+        }
+      ],
+      "artifactDir": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_114",
+      "detailsFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_114/result.json",
+      "attemptCount": 62,
+      "prunedBranches": 48
+    },
+    {
+      "id": "mathd_algebra_125",
+      "tier": 2,
+      "status": "SOLVED",
+      "proofFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_125/mathd_algebra_125.lean",
+      "engineVersion": "fva-search-v2",
+      "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+      "statementHash": "9880850330e4b8181567048132727d376c429230484343ee9af2bfbca92da43f",
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_125.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_125.lean",
+        "sourceFileSha256": "c30b17372dcfd776da9d98ebf899ace1b081b4d5a09abc148f462b246a469c42",
+        "statementSha256": "9880850330e4b8181567048132727d376c429230484343ee9af2bfbca92da43f",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      },
+      "metrics": {
+        "compilerCalls": 7,
+        "steps": 4,
+        "maxDepth": 0,
+        "elapsedMs": 18852,
+        "firstCandidateSolved": false,
+        "modelTokens": 0,
+        "modelTokensKnown": 0,
+        "modelUsageComplete": true,
+        "proposerCalls": 1,
+        "finalCandidates": 1
+      },
+      "budget": {
+        "maxCompilerCalls": 64,
+        "maxSteps": 64,
+        "maxProposalRounds": 3,
+        "maxDepth": 8,
+        "callTimeoutMs": 30000,
+        "theoremTimeoutMs": 300000,
+        "heartbeats": 200000,
+        "maxModelTokens": 0
+      },
+      "policy": "deterministic-v2",
+      "failure": null,
+      "exploration": {
+        "backend": "fresh-lean-cli",
+        "cleanup": {
+          "ownership": "none",
+          "status": "not_applicable"
+        }
+      },
+      "verification": {
+        "statementHash": "9880850330e4b8181567048132727d376c429230484343ee9af2bfbca92da43f",
+        "sourceHash": "ebc5756946f9a1ced4ef0d2658a26b0215e45f7ed544fd0f3aa23f9fe35f37a1",
+        "zeroPlaceholders": true,
+        "exitCode": 0,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_125",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (x y : Nat),\n  And (LT.lt.{0} 0 x) (LT.lt.{0} 0 y) →\n    Eq.{1} (HMul.hMul.{0, 0, 0} 5 x) y →\n      Eq.{1} (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (↑x) 3) (HSub.hSub.{0, 0, 0} (↑y) 3)) 30 → Eq.{1} x 6",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "compileEvidence": [
+          "ev_50454b84fdaee647265eace04b6e974f279a1ba74f5905716cc9882117227cfb",
+          "ev_242f8fd2ff5a1edd9e976886552e8d82dfac829a73ffde57e30b9a1241b1543b"
+        ],
+        "standaloneRecheck": true,
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "warnings": [
+          {
+            "severity": "warning",
+            "message": "unused variable `h₀`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+            "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_125/attempts/0007-recheck.lean",
+            "start": {
+              "column": 3,
+              "line": 11
+            },
+            "end": {
+              "column": 5,
+              "line": 11
+            },
+            "category": "compiler_error"
+          }
+        ]
+      },
+      "finalCandidates": [
+        {
+          "id": "c0",
+          "planHash": "7e8ffccb65d0f1352058501e6c10226dac67ccfcb2345c7ea5c5d778770efa21",
+          "status": "ACCEPTED",
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "evidenceIds": [
+            "ev_50454b84fdaee647265eace04b6e974f279a1ba74f5905716cc9882117227cfb",
+            "ev_242f8fd2ff5a1edd9e976886552e8d82dfac829a73ffde57e30b9a1241b1543b"
+          ],
+          "sourceHash": "ebc5756946f9a1ced4ef0d2658a26b0215e45f7ed544fd0f3aa23f9fe35f37a1",
+          "checks": [
+            {
+              "kind": "final",
+              "evidenceId": "ev_50454b84fdaee647265eace04b6e974f279a1ba74f5905716cc9882117227cfb",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext",
+                  "Quot.sound"
+                ],
+                "declaration": "mathd_algebra_125",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (x y : Nat),\n  And (LT.lt.{0} 0 x) (LT.lt.{0} 0 y) →\n    Eq.{1} (HMul.hMul.{0, 0, 0} 5 x) y →\n      Eq.{1} (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (↑x) 3) (HSub.hSub.{0, 0, 0} (↑y) 3)) 30 → Eq.{1} x 6",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [
+                {
+                  "severity": "warning",
+                  "message": "unused variable `h₀`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+                  "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_125/attempts/0006-final.lean",
+                  "start": {
+                    "column": 3,
+                    "line": 11
+                  },
+                  "end": {
+                    "column": 5,
+                    "line": 11
+                  },
+                  "category": "compiler_error"
+                }
+              ],
+              "rejectedWarnings": []
+            },
+            {
+              "kind": "recheck",
+              "evidenceId": "ev_242f8fd2ff5a1edd9e976886552e8d82dfac829a73ffde57e30b9a1241b1543b",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext",
+                  "Quot.sound"
+                ],
+                "declaration": "mathd_algebra_125",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (x y : Nat),\n  And (LT.lt.{0} 0 x) (LT.lt.{0} 0 y) →\n    Eq.{1} (HMul.hMul.{0, 0, 0} 5 x) y →\n      Eq.{1} (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (↑x) 3) (HSub.hSub.{0, 0, 0} (↑y) 3)) 30 → Eq.{1} x 6",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [
+                {
+                  "severity": "warning",
+                  "message": "unused variable `h₀`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+                  "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_125/attempts/0007-recheck.lean",
+                  "start": {
+                    "column": 3,
+                    "line": 11
+                  },
+                  "end": {
+                    "column": 5,
+                    "line": 11
+                  },
+                  "category": "compiler_error"
+                }
+              ],
+              "rejectedWarnings": []
+            }
+          ],
+          "reason": null
+        }
+      ],
+      "proposerCalls": [
+        {
+          "id": "p0",
+          "nodeId": "n0",
+          "stateHash": "159827981c89fc3a1f47081d1fb9b2956a772af1d574ea12e1181e63861884c6",
+          "round": 0,
+          "requestDigest": "fff66bbf47dce952e97ec1b57a23ca4b53f744a3535c058c05851c001820fe63",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_125/proposals/0001-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            },
+            {
+              "tactic": "induction x"
+            },
+            {
+              "tactic": "induction y"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_a817c7b5a731585838ab58ca13564a7bb6e15aaecb7a47b9dbb33eab3558c7a5"
+        }
+      ],
+      "artifactDir": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_125",
+      "detailsFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_125/result.json",
+      "attemptCount": 7,
+      "prunedBranches": 3
+    },
+    {
+      "id": "mathd_algebra_129",
+      "tier": 2,
+      "status": "FAILED",
+      "proofFile": null,
+      "engineVersion": "fva-search-v2",
+      "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+      "statementHash": "39c4244c8114a2d85092a90fa201854d17b026fa04063637ab523f62b2aaed00",
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_129.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_129.lean",
+        "sourceFileSha256": "b9e894fd782035498c9ca93c66f0d663818deac20f2e41f46084a7327b6c6062",
+        "statementSha256": "39c4244c8114a2d85092a90fa201854d17b026fa04063637ab523f62b2aaed00",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      },
+      "metrics": {
+        "compilerCalls": 62,
+        "steps": 49,
+        "maxDepth": 8,
+        "elapsedMs": 214531,
+        "firstCandidateSolved": false,
+        "modelTokens": 0,
+        "modelTokensKnown": 0,
+        "modelUsageComplete": true,
+        "proposerCalls": 8,
+        "finalCandidates": 0
+      },
+      "budget": {
+        "maxCompilerCalls": 64,
+        "maxSteps": 64,
+        "maxProposalRounds": 3,
+        "maxDepth": 8,
+        "callTimeoutMs": 30000,
+        "theoremTimeoutMs": 300000,
+        "heartbeats": 200000,
+        "maxModelTokens": 0
+      },
+      "policy": "deterministic-v2",
+      "failure": "compiler_budget",
+      "exploration": {
+        "backend": "fresh-lean-cli",
+        "cleanup": {
+          "ownership": "none",
+          "status": "not_applicable"
+        }
+      },
+      "verification": null,
+      "finalCandidates": [],
+      "proposerCalls": [
+        {
+          "id": "p0",
+          "nodeId": "n0",
+          "stateHash": "eccaae22ef2119fac7d9477a1f9d6ac4a1f3d2f6be2e485158d64e52e9273b26",
+          "round": 0,
+          "requestDigest": "8ddd55c55fac71b18988fa3515ec52c7edea0c6f0c223071dbfe145876878ab3",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/proposals/0001-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_74767ba12d7657aa210bda20f27b845012e826d38b465d1573c99c3a2ec7f0b4"
+        },
+        {
+          "id": "p1",
+          "nodeId": "n1",
+          "stateHash": "1928347913f960dfc6a76cd7df99cd50385d6b1350da7cf3e22c85be5dedffb7",
+          "round": 0,
+          "requestDigest": "2dc3fef239f8c989a33b5a6658f88aa511e6fb5609e6e27cd1217023aa473ce6",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/proposals/0002-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_15cf80b09fe3743eb8913e5a43ac469654cc12c5f2a56cc505a82d86adc4d10e"
+        },
+        {
+          "id": "p2",
+          "nodeId": "n2",
+          "stateHash": "e51520346f47c80a6ceaa1a6821c921663be6b0c0c0ec28ae3c9cda74df62c16",
+          "round": 0,
+          "requestDigest": "ad2a61e2ebc9090e0716c089d27f906f3ac7f6332dae405ab17ce57eb8ea4252",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/proposals/0003-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_1e8dbc8db920c1d25f72b50d5c7e240f63dd6c70f3f1430d4269401cadd8daed"
+        },
+        {
+          "id": "p3",
+          "nodeId": "n3",
+          "stateHash": "f9d76b4037b6ce88bb68778eabfa8676f63ee0e69b19e4d898bcf12b58361c2b",
+          "round": 0,
+          "requestDigest": "52d4714a00aec9a1f4a1143f92cda6b6e389ad707a931166f3b02ec79aafb839",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/proposals/0004-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_5f3f42e2aec6c72ad5c5bfafc046196b9a5d4f75abbb30fb6dc9af049d596581"
+        },
+        {
+          "id": "p4",
+          "nodeId": "n5",
+          "stateHash": "92767ff4f3f13436980cd33dbecd4c9a61bd80a2efd043f10a24bbf451a70f3f",
+          "round": 0,
+          "requestDigest": "4c03782ede6b385306b4946696046bc4409fa5bf066b2ec784da222eb4975e05",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/proposals/0005-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_0cbbebe9a64a01c262e09b82c8a0609009ce9835566acc126dc1ee4a2e77e839"
+        },
+        {
+          "id": "p5",
+          "nodeId": "n6",
+          "stateHash": "ef09f6da49dcfcb91d89835d4edc719931d5ba25cd9be8f9ed3a377e0dd0875f",
+          "round": 0,
+          "requestDigest": "02dc1f38659ef9988c8583d20e942f5314fb68e0d4d4ac31bd0eaff642a346a6",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/proposals/0006-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_aa6e4622cfd1b1c8d912ff6aaaf14121117f0258c181d066769092db91d6b6a6"
+        },
+        {
+          "id": "p6",
+          "nodeId": "n7",
+          "stateHash": "daea9fece822fa39ec20e2839b1d9b0da46bb57717ebde46a74ad807a2bb14f5",
+          "round": 0,
+          "requestDigest": "e7c0b70468b06b50f79f2b884555319e13c847b6cd459e09429b09f8dccb9ca2",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/proposals/0007-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_72787dc3aab0010170a91294157d2dc203ed89161c18dbde285ef20afaba617e"
+        },
+        {
+          "id": "p7",
+          "nodeId": "n10",
+          "stateHash": "54da3b05b09571d8f07e3b08e602b9088cb2f2602e84f50bb586045337d80275",
+          "round": 0,
+          "requestDigest": "c0130d3d7f5b78f02feb2aa8d9ccbc07e8c2a0d9afb58e70689e15ba13a2b497",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/proposals/0008-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_66b898134b01c353e5d86705e9ab09e517de022968a84c82841d6f2dc3ae10e9"
+        }
+      ],
+      "artifactDir": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129",
+      "detailsFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/result.json",
+      "attemptCount": 62,
+      "prunedBranches": 49
+    },
+    {
+      "id": "mathd_algebra_137",
+      "tier": 2,
+      "status": "FAILED",
+      "proofFile": null,
+      "engineVersion": "fva-search-v2",
+      "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+      "statementHash": "a2935cf941c27d2b9f5e154e438d8d1b67b444595ae8b93b3fdd7a77e22a4c56",
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_137.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_137.lean",
+        "sourceFileSha256": "99507efb011e11f9557554516dab770e96d60a5b4c24e0b2d20bca84aef0e60d",
+        "statementSha256": "a2935cf941c27d2b9f5e154e438d8d1b67b444595ae8b93b3fdd7a77e22a4c56",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      },
+      "metrics": {
+        "compilerCalls": 62,
+        "steps": 51,
+        "maxDepth": 6,
+        "elapsedMs": 179323,
+        "firstCandidateSolved": false,
+        "modelTokens": 0,
+        "modelTokensKnown": 0,
+        "modelUsageComplete": true,
+        "proposerCalls": 8,
+        "finalCandidates": 0
+      },
+      "budget": {
+        "maxCompilerCalls": 64,
+        "maxSteps": 64,
+        "maxProposalRounds": 3,
+        "maxDepth": 8,
+        "callTimeoutMs": 30000,
+        "theoremTimeoutMs": 300000,
+        "heartbeats": 200000,
+        "maxModelTokens": 0
+      },
+      "policy": "deterministic-v2",
+      "failure": "compiler_budget",
+      "exploration": {
+        "backend": "fresh-lean-cli",
+        "cleanup": {
+          "ownership": "none",
+          "status": "not_applicable"
+        }
+      },
+      "verification": null,
+      "finalCandidates": [],
+      "proposerCalls": [
+        {
+          "id": "p0",
+          "nodeId": "n0",
+          "stateHash": "ffef8e36ed6d1996363f4dc307748457ecb5bf66efe3587bb2660ee987bd2e0a",
+          "round": 0,
+          "requestDigest": "684d188c934a5f3ade7b80bda6b3baa24c9d923d8cdf4e2fce42ef64696a8b02",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/proposals/0001-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            },
+            {
+              "tactic": "induction x"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_6f20a1bf8acdb8b8e4c34461f67ef177e18983e50f14a961eb1d3f668c356d03"
+        },
+        {
+          "id": "p1",
+          "nodeId": "n1",
+          "stateHash": "752b3e9605ee32ea16738ea6900c94b8e4566a41d4c7bb31e9eca2128bd9385d",
+          "round": 0,
+          "requestDigest": "f103cab2796033a281d399bd0901c0031b5b6b538aab29f34c5585c3649ff854",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/proposals/0002-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            },
+            {
+              "tactic": "induction x"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_2eaed358e9ce1bfcdd4aeadbd4c85e1b3f0c308ec68424e54db4d6ac1c09e534"
+        },
+        {
+          "id": "p2",
+          "nodeId": "n2",
+          "stateHash": "aaceda7e3bde43bc47c9d87accd0235bc5eb5ebda44a6d2d88ca95e9fcc40a52",
+          "round": 0,
+          "requestDigest": "22ed59ce11abf5909f921172c83877435362e9b364ce262190122f458dbc256e",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/proposals/0003-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            },
+            {
+              "tactic": "induction x"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_66218e8092c6bee3c6a97b7dd7ce70fe8ea63b5f77af68ff2c11f6389e8ef8f0"
+        },
+        {
+          "id": "p3",
+          "nodeId": "n4",
+          "stateHash": "32563f0cb54503e5c52182c48f38ae989a80fa08b94cacfc24c91b20fd71ae53",
+          "round": 0,
+          "requestDigest": "2062aa4a2962b426f9c836a6bf08506105f308775a590a553c62f3d2fd4b6dd0",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/proposals/0004-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            },
+            {
+              "tactic": "induction x"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_2bd1d1bb00da6254ed60745cecd15b19e4d1fac3a51c5399845628dcfc56fb34"
+        },
+        {
+          "id": "p4",
+          "nodeId": "n5",
+          "stateHash": "a1d5d8e79f55fad1a5095fc0556a56330eba0656a7224bd93cd70e81cce57471",
+          "round": 0,
+          "requestDigest": "c82c7bdf40419ed2277d3bc679166ad87194d8b3794c7ddbb6aa8f53f7ef8749",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/proposals/0005-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            },
+            {
+              "tactic": "induction x"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_f71474abfaaf38c74d95e07b338b05fa57e5d3b4b62eb00988162bdef8ecec75"
+        },
+        {
+          "id": "p5",
+          "nodeId": "n8",
+          "stateHash": "8735a81343025751ea0fa90179498c56ea6aa21db92a23e1457b186d07ad8cc7",
+          "round": 0,
+          "requestDigest": "3822f5adc67bbb2757f6f106adbb2cf0f8e69dfd979b23ad5537156008cb75d3",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/proposals/0006-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_d2b5c0579c92ca1066a3e27c89e96bdb4bb03c1197148e56f2c7b045cb293618"
+        },
+        {
+          "id": "p6",
+          "nodeId": "n9",
+          "stateHash": "b5548cec406d51bf5ba66be1ed405cfb75973856474508201220e189c51da0bf",
+          "round": 0,
+          "requestDigest": "a538c8094587358dcb2eacda1f7873dda998f62075dae5aaabc7a75be5baf5f4",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/proposals/0007-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_82751d003e04309eff9b11b296a9a58513c940fa3d538df57db3186b192f5289"
+        },
+        {
+          "id": "p7",
+          "nodeId": "n10",
+          "stateHash": "56af324be9d42f9267c574e650216b27359b0a775c71bad08e7b7d77cd6fd647",
+          "round": 0,
+          "requestDigest": "470a0d76bf586677cdd230484a2d6b3d96a46e5888044af9eeff20e7b4dfb401",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/proposals/0008-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_afe59f1f12fc3ee860b48bfe9b133ee3de324ee4341c017f8593db61d5a26894"
+        }
+      ],
+      "artifactDir": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137",
+      "detailsFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/result.json",
+      "attemptCount": 62,
+      "prunedBranches": 51
+    },
+    {
+      "id": "mathd_algebra_139",
+      "tier": 2,
+      "status": "SOLVED",
+      "proofFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_139/mathd_algebra_139.lean",
+      "engineVersion": "fva-search-v2",
+      "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+      "statementHash": "377488e20914d6e917cbab50acc2de40b4bff68794af9f261cbc931b3cd6f519",
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_139.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_139.lean",
+        "sourceFileSha256": "2cfb978731518d82733cf8cca819a3b8be2e27c33ff03ddbfd0b036bb4f0a888",
+        "statementSha256": "377488e20914d6e917cbab50acc2de40b4bff68794af9f261cbc931b3cd6f519",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      },
+      "metrics": {
+        "compilerCalls": 12,
+        "steps": 8,
+        "maxDepth": 1,
+        "elapsedMs": 36464,
+        "firstCandidateSolved": false,
+        "modelTokens": 0,
+        "modelTokensKnown": 0,
+        "modelUsageComplete": true,
+        "proposerCalls": 2,
+        "finalCandidates": 1
+      },
+      "budget": {
+        "maxCompilerCalls": 64,
+        "maxSteps": 64,
+        "maxProposalRounds": 3,
+        "maxDepth": 8,
+        "callTimeoutMs": 30000,
+        "theoremTimeoutMs": 300000,
+        "heartbeats": 200000,
+        "maxModelTokens": 0
+      },
+      "policy": "deterministic-v2",
+      "failure": null,
+      "exploration": {
+        "backend": "fresh-lean-cli",
+        "cleanup": {
+          "ownership": "none",
+          "status": "not_applicable"
+        }
+      },
+      "verification": {
+        "statementHash": "377488e20914d6e917cbab50acc2de40b4bff68794af9f261cbc931b3cd6f519",
+        "sourceHash": "43c8cec5de0ec5d989fd50fbf5aa59acd18fcea9dfc241b94193ff130a7dd04d",
+        "zeroPlaceholders": true,
+        "exitCode": 0,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_139",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (s : Real → Real → Real),\n  (∀ (x y : Real),\n      Ne.{1} x 0 →\n        Ne.{1} y 0 →\n          Eq.{1} (s x y)\n            (HDiv.hDiv.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HDiv.hDiv.{0, 0, 0} 1 y) (HDiv.hDiv.{0, 0, 0} 1 x))\n              (HSub.hSub.{0, 0, 0} x y))) →\n    Eq.{1} (s 3 11) (1 / 33)",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "compileEvidence": [
+          "ev_ca5391fd55b5d5020f9c943d30329ddb7555a5d9b007942ad0c9160a370e45a9",
+          "ev_6aec9d3e8b229bce3a82f1fee8b2dde0d6793ed9e00ec51b2561ddb16ae84c8d"
+        ],
+        "standaloneRecheck": true,
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "warnings": []
+      },
+      "finalCandidates": [
+        {
+          "id": "c0",
+          "planHash": "a624fc9c5b25c242bec1ade9224feee98e2cfef9e7e4425d9b85f5fee7cb0707",
+          "status": "ACCEPTED",
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "evidenceIds": [
+            "ev_ca5391fd55b5d5020f9c943d30329ddb7555a5d9b007942ad0c9160a370e45a9",
+            "ev_6aec9d3e8b229bce3a82f1fee8b2dde0d6793ed9e00ec51b2561ddb16ae84c8d"
+          ],
+          "sourceHash": "43c8cec5de0ec5d989fd50fbf5aa59acd18fcea9dfc241b94193ff130a7dd04d",
+          "checks": [
+            {
+              "kind": "final",
+              "evidenceId": "ev_ca5391fd55b5d5020f9c943d30329ddb7555a5d9b007942ad0c9160a370e45a9",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext",
+                  "Classical.choice",
+                  "Quot.sound"
+                ],
+                "declaration": "mathd_algebra_139",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (s : Real → Real → Real),\n  (∀ (x y : Real),\n      Ne.{1} x 0 →\n        Ne.{1} y 0 →\n          Eq.{1} (s x y)\n            (HDiv.hDiv.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HDiv.hDiv.{0, 0, 0} 1 y) (HDiv.hDiv.{0, 0, 0} 1 x))\n              (HSub.hSub.{0, 0, 0} x y))) →\n    Eq.{1} (s 3 11) (1 / 33)",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            },
+            {
+              "kind": "recheck",
+              "evidenceId": "ev_6aec9d3e8b229bce3a82f1fee8b2dde0d6793ed9e00ec51b2561ddb16ae84c8d",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext",
+                  "Classical.choice",
+                  "Quot.sound"
+                ],
+                "declaration": "mathd_algebra_139",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (s : Real → Real → Real),\n  (∀ (x y : Real),\n      Ne.{1} x 0 →\n        Ne.{1} y 0 →\n          Eq.{1} (s x y)\n            (HDiv.hDiv.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HDiv.hDiv.{0, 0, 0} 1 y) (HDiv.hDiv.{0, 0, 0} 1 x))\n              (HSub.hSub.{0, 0, 0} x y))) →\n    Eq.{1} (s 3 11) (1 / 33)",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            }
+          ],
+          "reason": null
+        }
+      ],
+      "proposerCalls": [
+        {
+          "id": "p0",
+          "nodeId": "n0",
+          "stateHash": "8566393c2942cfcdeabf564bf7c8589f877268560eee5b66b907d09cd464aba0",
+          "round": 0,
+          "requestDigest": "f28e2e76ad0939e681236dce0a58aebcb9a2e56d9693339be2dedf7994304d3b",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_139/proposals/0001-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_0daaba01b144bacea4915c003b9b922011790949df741c7a48ae1907a504e51c"
+        },
+        {
+          "id": "p1",
+          "nodeId": "n1",
+          "stateHash": "0dbe040dda6150e0c7ef44e79096fff80bda9d9c987216e37ae975aac1bb6934",
+          "round": 0,
+          "requestDigest": "f911bc27ecb0323a3a9ab83110bc16e456bb814dbd797b09e0f55057f49551d8",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_139/proposals/0002-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_dec439881ebb008a7bf8042d122b83e4db5d08be756c594da8f2a8d0a75644ad"
+        }
+      ],
+      "artifactDir": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_139",
+      "detailsFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_139/result.json",
+      "attemptCount": 12,
+      "prunedBranches": 6
+    },
+    {
+      "id": "mathd_algebra_141",
+      "tier": 2,
+      "status": "SOLVED",
+      "proofFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_141/mathd_algebra_141.lean",
+      "engineVersion": "fva-search-v2",
+      "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+      "statementHash": "f57aa42acc81c3a8429f071d27639a5412ecd6d9e74715ad571f4199c2e110a5",
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_141.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_141.lean",
+        "sourceFileSha256": "5daabc8fa40bfa9c877a876419392ab639db953ec177f1b3d5d97b8267e6723c",
+        "statementSha256": "f57aa42acc81c3a8429f071d27639a5412ecd6d9e74715ad571f4199c2e110a5",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      },
+      "metrics": {
+        "compilerCalls": 11,
+        "steps": 8,
+        "maxDepth": 0,
+        "elapsedMs": 33273,
+        "firstCandidateSolved": false,
+        "modelTokens": 0,
+        "modelTokensKnown": 0,
+        "modelUsageComplete": true,
+        "proposerCalls": 1,
+        "finalCandidates": 1
+      },
+      "budget": {
+        "maxCompilerCalls": 64,
+        "maxSteps": 64,
+        "maxProposalRounds": 3,
+        "maxDepth": 8,
+        "callTimeoutMs": 30000,
+        "theoremTimeoutMs": 300000,
+        "heartbeats": 200000,
+        "maxModelTokens": 0
+      },
+      "policy": "deterministic-v2",
+      "failure": null,
+      "exploration": {
+        "backend": "fresh-lean-cli",
+        "cleanup": {
+          "ownership": "none",
+          "status": "not_applicable"
+        }
+      },
+      "verification": {
+        "statementHash": "f57aa42acc81c3a8429f071d27639a5412ecd6d9e74715ad571f4199c2e110a5",
+        "sourceHash": "7ac9bcd2bb6ab41a91c29a7c3fb671cf3114a384b8d5847a53ce7d040aa8ad28",
+        "zeroPlaceholders": true,
+        "exitCode": 0,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_141",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (a b : Real),\n  Eq.{1} (HMul.hMul.{0, 0, 0} a b) 180 →\n    Eq.{1} (HMul.hMul.{0, 0, 0} 2 (HAdd.hAdd.{0, 0, 0} a b)) 54 →\n      Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 2)) 369",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "compileEvidence": [
+          "ev_42908716b872d68b3f490419e3b7ff76be2783d4ff21157fcd9117157f07c8f5",
+          "ev_17b482548a5b771773161b634c85c18c9b44a985e48aa6a31fe4b25168f8e42d"
+        ],
+        "standaloneRecheck": true,
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "warnings": []
+      },
+      "finalCandidates": [
+        {
+          "id": "c0",
+          "planHash": "e9b38fe08f3b6f5730f9e32b9dbd404d4b04d452d484b64eb3778af5fb28cac6",
+          "status": "ACCEPTED",
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "evidenceIds": [
+            "ev_42908716b872d68b3f490419e3b7ff76be2783d4ff21157fcd9117157f07c8f5",
+            "ev_17b482548a5b771773161b634c85c18c9b44a985e48aa6a31fe4b25168f8e42d"
+          ],
+          "sourceHash": "7ac9bcd2bb6ab41a91c29a7c3fb671cf3114a384b8d5847a53ce7d040aa8ad28",
+          "checks": [
+            {
+              "kind": "final",
+              "evidenceId": "ev_42908716b872d68b3f490419e3b7ff76be2783d4ff21157fcd9117157f07c8f5",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext",
+                  "Classical.choice",
+                  "Quot.sound"
+                ],
+                "declaration": "mathd_algebra_141",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (a b : Real),\n  Eq.{1} (HMul.hMul.{0, 0, 0} a b) 180 →\n    Eq.{1} (HMul.hMul.{0, 0, 0} 2 (HAdd.hAdd.{0, 0, 0} a b)) 54 →\n      Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 2)) 369",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            },
+            {
+              "kind": "recheck",
+              "evidenceId": "ev_17b482548a5b771773161b634c85c18c9b44a985e48aa6a31fe4b25168f8e42d",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext",
+                  "Classical.choice",
+                  "Quot.sound"
+                ],
+                "declaration": "mathd_algebra_141",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (a b : Real),\n  Eq.{1} (HMul.hMul.{0, 0, 0} a b) 180 →\n    Eq.{1} (HMul.hMul.{0, 0, 0} 2 (HAdd.hAdd.{0, 0, 0} a b)) 54 →\n      Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 2)) 369",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            }
+          ],
+          "reason": null
+        }
+      ],
+      "proposerCalls": [
+        {
+          "id": "p0",
+          "nodeId": "n0",
+          "stateHash": "8fc3892c04a06e19f9911da914a0440c971e702c07a1107cf30424dd5ab5a153",
+          "round": 0,
+          "requestDigest": "29ffca678c3f60db2dd21808bc455354567f956906741df45a1edbbfbc523c5e",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_141/proposals/0001-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_479074b67ec7f2bcecd32023eff345aeb1848606f17a1a1a4d2780d2d7b5449a"
+        }
+      ],
+      "artifactDir": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_141",
+      "detailsFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_141/result.json",
+      "attemptCount": 11,
+      "prunedBranches": 7
+    },
+    {
+      "id": "mathd_algebra_142",
+      "tier": 2,
+      "status": "SOLVED",
+      "proofFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_142/mathd_algebra_142.lean",
+      "engineVersion": "fva-search-v2",
+      "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+      "statementHash": "dcf6b12bd90982881696cf9e19804c0ed643c8a4d98d98172d5ac7ebc6e0f66c",
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_142.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_142.lean",
+        "sourceFileSha256": "ce6eedb7375284404a0528056d86dc575946f3211577407bd42138be4b1a6e84",
+        "statementSha256": "dcf6b12bd90982881696cf9e19804c0ed643c8a4d98d98172d5ac7ebc6e0f66c",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      },
+      "metrics": {
+        "compilerCalls": 14,
+        "steps": 10,
+        "maxDepth": 1,
+        "elapsedMs": 41551,
+        "firstCandidateSolved": false,
+        "modelTokens": 0,
+        "modelTokensKnown": 0,
+        "modelUsageComplete": true,
+        "proposerCalls": 2,
+        "finalCandidates": 1
+      },
+      "budget": {
+        "maxCompilerCalls": 64,
+        "maxSteps": 64,
+        "maxProposalRounds": 3,
+        "maxDepth": 8,
+        "callTimeoutMs": 30000,
+        "theoremTimeoutMs": 300000,
+        "heartbeats": 200000,
+        "maxModelTokens": 0
+      },
+      "policy": "deterministic-v2",
+      "failure": null,
+      "exploration": {
+        "backend": "fresh-lean-cli",
+        "cleanup": {
+          "ownership": "none",
+          "status": "not_applicable"
+        }
+      },
+      "verification": {
+        "statementHash": "dcf6b12bd90982881696cf9e19804c0ed643c8a4d98d98172d5ac7ebc6e0f66c",
+        "sourceHash": "62e248f069fb1c856f08f1f01966e5756e5e6dc944b1a7bd52085706f67fa044",
+        "zeroPlaceholders": true,
+        "exitCode": 0,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_142",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (m b : Real),\n  Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} m 7) b) (-1) →\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} m (-1)) b) 7 → Eq.{1} (HAdd.hAdd.{0, 0, 0} m b) 5",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "compileEvidence": [
+          "ev_f852062578bcc53b288de61c6d9e5fc7884c102bf5e5c9645a0f89a6fd8a38d1",
+          "ev_2a16657faa97e85a634bc8e5f9d520387f76262c95f977eb37cd0b3b6a6bd6a9"
+        ],
+        "standaloneRecheck": true,
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "warnings": []
+      },
+      "finalCandidates": [
+        {
+          "id": "c0",
+          "planHash": "93c0dd8cce6c9f0fc9dce4ac19e99dcbe80de8ab8863a4cfcd9d6e96e8bdc812",
+          "status": "ACCEPTED",
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "evidenceIds": [
+            "ev_f852062578bcc53b288de61c6d9e5fc7884c102bf5e5c9645a0f89a6fd8a38d1",
+            "ev_2a16657faa97e85a634bc8e5f9d520387f76262c95f977eb37cd0b3b6a6bd6a9"
+          ],
+          "sourceHash": "62e248f069fb1c856f08f1f01966e5756e5e6dc944b1a7bd52085706f67fa044",
+          "checks": [
+            {
+              "kind": "final",
+              "evidenceId": "ev_f852062578bcc53b288de61c6d9e5fc7884c102bf5e5c9645a0f89a6fd8a38d1",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext",
+                  "Classical.choice",
+                  "Quot.sound"
+                ],
+                "declaration": "mathd_algebra_142",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (m b : Real),\n  Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} m 7) b) (-1) →\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} m (-1)) b) 7 → Eq.{1} (HAdd.hAdd.{0, 0, 0} m b) 5",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            },
+            {
+              "kind": "recheck",
+              "evidenceId": "ev_2a16657faa97e85a634bc8e5f9d520387f76262c95f977eb37cd0b3b6a6bd6a9",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext",
+                  "Classical.choice",
+                  "Quot.sound"
+                ],
+                "declaration": "mathd_algebra_142",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (m b : Real),\n  Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} m 7) b) (-1) →\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} m (-1)) b) 7 → Eq.{1} (HAdd.hAdd.{0, 0, 0} m b) 5",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            }
+          ],
+          "reason": null
+        }
+      ],
+      "proposerCalls": [
+        {
+          "id": "p0",
+          "nodeId": "n0",
+          "stateHash": "b09c9e7d55d24046c7d1b0538e9fa72bf9cdfd117ed61cfc2a32e19fdbe7390d",
+          "round": 0,
+          "requestDigest": "0abe70d7b6f1f811e0f66004e3bced8f24c04da7668ae897e32856452bd69d37",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_142/proposals/0001-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_27318d8acff9585c5f54e5c2f5e47ea0b8ddaabebaa249c9a69296df099b88c5"
+        },
+        {
+          "id": "p1",
+          "nodeId": "n1",
+          "stateHash": "311f74715bd2335664780605df680e8a121f14dc01b0d5c5abf7311ec85a789e",
+          "round": 0,
+          "requestDigest": "08a22d66e222bca0f02badbc979fafbdfde1e2df23918bfa3f18f094cbe7ada0",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_142/proposals/0002-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_7b14adc09cbf8fb9a0fb66575d95eb92faee29cbdcadec85354a84bca264dd49"
+        }
+      ],
+      "artifactDir": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_142",
+      "detailsFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_142/result.json",
+      "attemptCount": 14,
+      "prunedBranches": 8
+    },
+    {
+      "id": "mathd_algebra_143",
+      "tier": 2,
+      "status": "SOLVED",
+      "proofFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_143/mathd_algebra_143.lean",
+      "engineVersion": "fva-search-v2",
+      "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+      "statementHash": "0305a0c0644670ca0e0a070aba28568891b38599aa5e5f55dd20cce76209fe6c",
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_143.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_143.lean",
+        "sourceFileSha256": "b6c39306f4ebb0e2fc2301a5581f34522b64ead899a3d633bdd5ca59f08a137f",
+        "statementSha256": "0305a0c0644670ca0e0a070aba28568891b38599aa5e5f55dd20cce76209fe6c",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      },
+      "metrics": {
+        "compilerCalls": 12,
+        "steps": 8,
+        "maxDepth": 1,
+        "elapsedMs": 33990,
+        "firstCandidateSolved": false,
+        "modelTokens": 0,
+        "modelTokensKnown": 0,
+        "modelUsageComplete": true,
+        "proposerCalls": 2,
+        "finalCandidates": 1
+      },
+      "budget": {
+        "maxCompilerCalls": 64,
+        "maxSteps": 64,
+        "maxProposalRounds": 3,
+        "maxDepth": 8,
+        "callTimeoutMs": 30000,
+        "theoremTimeoutMs": 300000,
+        "heartbeats": 200000,
+        "maxModelTokens": 0
+      },
+      "policy": "deterministic-v2",
+      "failure": null,
+      "exploration": {
+        "backend": "fresh-lean-cli",
+        "cleanup": {
+          "ownership": "none",
+          "status": "not_applicable"
+        }
+      },
+      "verification": {
+        "statementHash": "0305a0c0644670ca0e0a070aba28568891b38599aa5e5f55dd20cce76209fe6c",
+        "sourceHash": "5a20f85ee5affc92b360f2cc2f7e2dc05a60e25e303c160a5cd2abd15ab85360",
+        "zeroPlaceholders": true,
+        "exitCode": 0,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_143",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (f g : Real → Real),\n  (∀ (x : Real), Eq.{1} (f x) (HAdd.hAdd.{0, 0, 0} x 1)) →\n    (∀ (x : Real), Eq.{1} (g x) (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) 3)) → Eq.{1} (f (g 2)) 8",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "compileEvidence": [
+          "ev_a21ac5d6d902f1f3c06d42714b22b03e543c2485e1e0b6273833135a6f4af0e7",
+          "ev_f9d11dfe5f44addfa48939f4a8a226ee42c3011ec1f65944b6b8720de09e3573"
+        ],
+        "standaloneRecheck": true,
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "warnings": []
+      },
+      "finalCandidates": [
+        {
+          "id": "c0",
+          "planHash": "a624fc9c5b25c242bec1ade9224feee98e2cfef9e7e4425d9b85f5fee7cb0707",
+          "status": "ACCEPTED",
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "evidenceIds": [
+            "ev_a21ac5d6d902f1f3c06d42714b22b03e543c2485e1e0b6273833135a6f4af0e7",
+            "ev_f9d11dfe5f44addfa48939f4a8a226ee42c3011ec1f65944b6b8720de09e3573"
+          ],
+          "sourceHash": "5a20f85ee5affc92b360f2cc2f7e2dc05a60e25e303c160a5cd2abd15ab85360",
+          "checks": [
+            {
+              "kind": "final",
+              "evidenceId": "ev_a21ac5d6d902f1f3c06d42714b22b03e543c2485e1e0b6273833135a6f4af0e7",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext",
+                  "Classical.choice",
+                  "Quot.sound"
+                ],
+                "declaration": "mathd_algebra_143",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (f g : Real → Real),\n  (∀ (x : Real), Eq.{1} (f x) (HAdd.hAdd.{0, 0, 0} x 1)) →\n    (∀ (x : Real), Eq.{1} (g x) (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) 3)) → Eq.{1} (f (g 2)) 8",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            },
+            {
+              "kind": "recheck",
+              "evidenceId": "ev_f9d11dfe5f44addfa48939f4a8a226ee42c3011ec1f65944b6b8720de09e3573",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext",
+                  "Classical.choice",
+                  "Quot.sound"
+                ],
+                "declaration": "mathd_algebra_143",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (f g : Real → Real),\n  (∀ (x : Real), Eq.{1} (f x) (HAdd.hAdd.{0, 0, 0} x 1)) →\n    (∀ (x : Real), Eq.{1} (g x) (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) 3)) → Eq.{1} (f (g 2)) 8",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            }
+          ],
+          "reason": null
+        }
+      ],
+      "proposerCalls": [
+        {
+          "id": "p0",
+          "nodeId": "n0",
+          "stateHash": "ea83100a402956f7b576fde7f95d756e58e195a527f5bc473faa6be07395dbf1",
+          "round": 0,
+          "requestDigest": "2283789fbe9b328ce5efeec2699190457200bdd4a8b28d2adf5832f662da6ea1",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_143/proposals/0001-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_2898259d7117e27cdce2f54748f80821644ee6da02031f83b48423c4de7c6e81"
+        },
+        {
+          "id": "p1",
+          "nodeId": "n1",
+          "stateHash": "891bf4e71ecf6ddf665c20e2b2bc86611f212f377254d5cca5c1c46d0b8decf2",
+          "round": 0,
+          "requestDigest": "60e62ea502a56d112eeeec90cd2138600c66f79a7e8301e561fbcf69dd55bf15",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_143/proposals/0002-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_5df0c3e21de67babb9b2c49609e4367c87ce35da28e4b31265735763ee66472b"
+        }
+      ],
+      "artifactDir": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_143",
+      "detailsFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_143/result.json",
+      "attemptCount": 12,
+      "prunedBranches": 6
+    },
+    {
+      "id": "mathd_algebra_148",
+      "tier": 2,
+      "status": "SOLVED",
+      "proofFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_148/mathd_algebra_148.lean",
+      "engineVersion": "fva-search-v2",
+      "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+      "statementHash": "2f9b4f1414b2c2561ca41df0b5fb1a7af33431aacd18f57335a0a06b4af29ef5",
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_148.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_148.lean",
+        "sourceFileSha256": "d52f28e688baa3b425ea7f4c543d2a2dfb3a47b158bce53970b476bde19edc9a",
+        "statementSha256": "2f9b4f1414b2c2561ca41df0b5fb1a7af33431aacd18f57335a0a06b4af29ef5",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      },
+      "metrics": {
+        "compilerCalls": 20,
+        "steps": 15,
+        "maxDepth": 2,
+        "elapsedMs": 56331,
+        "firstCandidateSolved": false,
+        "modelTokens": 0,
+        "modelTokensKnown": 0,
+        "modelUsageComplete": true,
+        "proposerCalls": 3,
+        "finalCandidates": 1
+      },
+      "budget": {
+        "maxCompilerCalls": 64,
+        "maxSteps": 64,
+        "maxProposalRounds": 3,
+        "maxDepth": 8,
+        "callTimeoutMs": 30000,
+        "theoremTimeoutMs": 300000,
+        "heartbeats": 200000,
+        "maxModelTokens": 0
+      },
+      "policy": "deterministic-v2",
+      "failure": null,
+      "exploration": {
+        "backend": "fresh-lean-cli",
+        "cleanup": {
+          "ownership": "none",
+          "status": "not_applicable"
+        }
+      },
+      "verification": {
+        "statementHash": "2f9b4f1414b2c2561ca41df0b5fb1a7af33431aacd18f57335a0a06b4af29ef5",
+        "sourceHash": "f5878ba48f77f23213712bc499dae04958e01a6352f48a2d8cc9464304248ff6",
+        "zeroPlaceholders": true,
+        "exitCode": 0,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_148",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (c : Real) (f : Real → Real),\n  (∀ (x : Real),\n      Eq.{1} (f x)\n        (HAdd.hAdd.{0, 0, 0}\n          (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} c (HPow.hPow.{0, 0, 0} x 3)) (HMul.hMul.{0, 0, 0} 9 x)) 3)) →\n    Eq.{1} (f 2) 9 → Eq.{1} c 3",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "compileEvidence": [
+          "ev_76c22a0461ded179ef7ee2422e5f3fae836d5cf12d1eb8075f29e872ddb5c81e",
+          "ev_c116f6900803c518a0318d7435af6160f8e45f3835f2d11eeab671e4185d231e"
+        ],
+        "standaloneRecheck": true,
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "warnings": []
+      },
+      "finalCandidates": [
+        {
+          "id": "c0",
+          "planHash": "0d086ed261a5c7876a5a5b98e0e7fa1946f95e85d32b0e5757f8d57337c11143",
+          "status": "ACCEPTED",
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "evidenceIds": [
+            "ev_76c22a0461ded179ef7ee2422e5f3fae836d5cf12d1eb8075f29e872ddb5c81e",
+            "ev_c116f6900803c518a0318d7435af6160f8e45f3835f2d11eeab671e4185d231e"
+          ],
+          "sourceHash": "f5878ba48f77f23213712bc499dae04958e01a6352f48a2d8cc9464304248ff6",
+          "checks": [
+            {
+              "kind": "final",
+              "evidenceId": "ev_76c22a0461ded179ef7ee2422e5f3fae836d5cf12d1eb8075f29e872ddb5c81e",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext",
+                  "Classical.choice",
+                  "Quot.sound"
+                ],
+                "declaration": "mathd_algebra_148",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (c : Real) (f : Real → Real),\n  (∀ (x : Real),\n      Eq.{1} (f x)\n        (HAdd.hAdd.{0, 0, 0}\n          (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} c (HPow.hPow.{0, 0, 0} x 3)) (HMul.hMul.{0, 0, 0} 9 x)) 3)) →\n    Eq.{1} (f 2) 9 → Eq.{1} c 3",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            },
+            {
+              "kind": "recheck",
+              "evidenceId": "ev_c116f6900803c518a0318d7435af6160f8e45f3835f2d11eeab671e4185d231e",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext",
+                  "Classical.choice",
+                  "Quot.sound"
+                ],
+                "declaration": "mathd_algebra_148",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (c : Real) (f : Real → Real),\n  (∀ (x : Real),\n      Eq.{1} (f x)\n        (HAdd.hAdd.{0, 0, 0}\n          (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} c (HPow.hPow.{0, 0, 0} x 3)) (HMul.hMul.{0, 0, 0} 9 x)) 3)) →\n    Eq.{1} (f 2) 9 → Eq.{1} c 3",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            }
+          ],
+          "reason": null
+        }
+      ],
+      "proposerCalls": [
+        {
+          "id": "p0",
+          "nodeId": "n0",
+          "stateHash": "3ff602049c3e23fde7d1727e23e5ca1c8bcdcd576251f0314d8591380ef2d35b",
+          "round": 0,
+          "requestDigest": "ecca6ed995875af82554495017600dba34535b62b7d842df899a0fa54c050f1c",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_148/proposals/0001-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_1ddc593847df19a866e181b0ae5363c5d9817300f8de71c0e240b7c21e20287b"
+        },
+        {
+          "id": "p1",
+          "nodeId": "n1",
+          "stateHash": "44968ae268c94cfd9b0e2368b4e29f9ee663d34974408bf9ed90c75cdb7e149c",
+          "round": 0,
+          "requestDigest": "dc9ab5c96e873c2cb53a4cdd4eca17a5fed3afd39a9d8ba539d7d74fa75d78d3",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_148/proposals/0002-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_fd8df5dce1c46bc97f14835d548b54531d52fc4855417c5f3dfe8a796a2cb051"
+        },
+        {
+          "id": "p2",
+          "nodeId": "n2",
+          "stateHash": "3abf627bd79235df19f54d790ec7da15b174a53984488903913ba9d64dd95fe3",
+          "round": 0,
+          "requestDigest": "21cd1278bf50f8c239ab79b2dcba5f6390bdb34f2120692439b479667edba8be",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_148/proposals/0003-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_80d12bf0732c9b805920f83a60cdaabb5626d1b8e19b33497d554795c2d4414a"
+        }
+      ],
+      "artifactDir": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_148",
+      "detailsFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_148/result.json",
+      "attemptCount": 20,
+      "prunedBranches": 12
+    },
+    {
+      "id": "mathd_algebra_153",
+      "tier": 2,
+      "status": "SOLVED",
+      "proofFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/mathd_algebra_153.lean",
+      "engineVersion": "fva-search-v2",
+      "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+      "statementHash": "742119115717e348c2f5198e3f9bddf7b62d461d9ebe0c688c3a0d69635e6dbc",
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_153.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_153.lean",
+        "sourceFileSha256": "f0b6ff6576308520bba933b43a4b4025f719732ba5b1d9f99932ce0b6344ce6c",
+        "statementSha256": "742119115717e348c2f5198e3f9bddf7b62d461d9ebe0c688c3a0d69635e6dbc",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      },
+      "metrics": {
+        "compilerCalls": 12,
+        "steps": 8,
+        "maxDepth": 1,
+        "elapsedMs": 43524,
+        "firstCandidateSolved": false,
+        "modelTokens": 0,
+        "modelTokensKnown": 0,
+        "modelUsageComplete": true,
+        "proposerCalls": 2,
+        "finalCandidates": 1
+      },
+      "budget": {
+        "maxCompilerCalls": 64,
+        "maxSteps": 64,
+        "maxProposalRounds": 3,
+        "maxDepth": 8,
+        "callTimeoutMs": 30000,
+        "theoremTimeoutMs": 300000,
+        "heartbeats": 200000,
+        "maxModelTokens": 0
+      },
+      "policy": "deterministic-v2",
+      "failure": null,
+      "exploration": {
+        "backend": "fresh-lean-cli",
+        "cleanup": {
+          "ownership": "none",
+          "status": "not_applicable"
+        }
+      },
+      "verification": {
+        "statementHash": "742119115717e348c2f5198e3f9bddf7b62d461d9ebe0c688c3a0d69635e6dbc",
+        "sourceHash": "145e0dcc8b77b616ec49845bf68c503aa23b045cd330fc82aeb527ea7f1d18ec",
+        "zeroPlaceholders": true,
+        "exitCode": 0,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_153",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (n : Real),\n  Eq.{1} n (1 / 3) →\n    Eq.{1}\n      (HAdd.hAdd.{0, 0, 0}\n        (HAdd.hAdd.{0, 0, 0}\n          (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\n          (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n)))\n      3702",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "compileEvidence": [
+          "ev_cfce4e8ea3f12af839689624f057a7d3861d31abec069c298b6feff7a711fce0",
+          "ev_6e35b50198165a7f1f72f079cdede0218562b977135a2ee366377634341e991d"
+        ],
+        "standaloneRecheck": true,
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "warnings": []
+      },
+      "finalCandidates": [
+        {
+          "id": "c0",
+          "planHash": "a624fc9c5b25c242bec1ade9224feee98e2cfef9e7e4425d9b85f5fee7cb0707",
+          "status": "ACCEPTED",
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "evidenceIds": [
+            "ev_cfce4e8ea3f12af839689624f057a7d3861d31abec069c298b6feff7a711fce0",
+            "ev_6e35b50198165a7f1f72f079cdede0218562b977135a2ee366377634341e991d"
+          ],
+          "sourceHash": "145e0dcc8b77b616ec49845bf68c503aa23b045cd330fc82aeb527ea7f1d18ec",
+          "checks": [
+            {
+              "kind": "final",
+              "evidenceId": "ev_cfce4e8ea3f12af839689624f057a7d3861d31abec069c298b6feff7a711fce0",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext",
+                  "Classical.choice",
+                  "Quot.sound"
+                ],
+                "declaration": "mathd_algebra_153",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (n : Real),\n  Eq.{1} n (1 / 3) →\n    Eq.{1}\n      (HAdd.hAdd.{0, 0, 0}\n        (HAdd.hAdd.{0, 0, 0}\n          (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\n          (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n)))\n      3702",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            },
+            {
+              "kind": "recheck",
+              "evidenceId": "ev_6e35b50198165a7f1f72f079cdede0218562b977135a2ee366377634341e991d",
+              "accepted": true,
+              "reason": null,
+              "audit": {
+                "axioms": [
+                  "propext",
+                  "Classical.choice",
+                  "Quot.sound"
+                ],
+                "declaration": "mathd_algebra_153",
+                "kernel_checked": true,
+                "kind": "theorem",
+                "passed": true,
+                "type": "∀ (n : Real),\n  Eq.{1} n (1 / 3) →\n    Eq.{1}\n      (HAdd.hAdd.{0, 0, 0}\n        (HAdd.hAdd.{0, 0, 0}\n          (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\n          (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n)))\n      3702",
+                "universe_parameters": [],
+                "version": 1
+              },
+              "policy": "lean-kernel-v2-unused-variable-lint",
+              "permittedWarnings": [],
+              "rejectedWarnings": []
+            }
+          ],
+          "reason": null
+        }
+      ],
+      "proposerCalls": [
+        {
+          "id": "p0",
+          "nodeId": "n0",
+          "stateHash": "58fef2b83be528f209b54e604e360ad3439e176c49ab2df0903a77be61830838",
+          "round": 0,
+          "requestDigest": "4f8a005308f1b81ea27a9216510831057c1573b293d20cc57bce4e4f8acb5d14",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/proposals/0001-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_c283989174aa0fbfba0db439498fcb39385cc2cb0e46bc06df826c977b9ccdff"
+        },
+        {
+          "id": "p1",
+          "nodeId": "n1",
+          "stateHash": "9c1f2512dc2c8dac047f90dfdccb209749a6091f80a165d3541d50913ebeff3a",
+          "round": 0,
+          "requestDigest": "c9239307ce44800ac15e91837c693de9ac6697f08a980fb7ee8978312c2d153a",
+          "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/proposals/0002-context.json",
+          "modelTokens": 0,
+          "usageKnown": true,
+          "tokenBudgetExceeded": false,
+          "policy": "deterministic-v2",
+          "proposals": [
+            {
+              "tactic": "assumption"
+            },
+            {
+              "tactic": "rfl"
+            },
+            {
+              "tactic": "simp_all"
+            },
+            {
+              "tactic": "omega"
+            },
+            {
+              "tactic": "norm_num at *"
+            },
+            {
+              "tactic": "ring"
+            },
+            {
+              "tactic": "linarith"
+            },
+            {
+              "tactic": "nlinarith"
+            },
+            {
+              "tactic": "positivity"
+            },
+            {
+              "tactic": "norm_cast at *"
+            },
+            {
+              "tactic": "field_simp at *"
+            },
+            {
+              "tactic": "ring_nf at *"
+            },
+            {
+              "tactic": "aesop"
+            }
+          ],
+          "status": "RETURNED",
+          "elapsedMs": 0,
+          "evidenceId": "ev_f12d98b0112834c3b978fd9c1d49284a5667dff999c301620c259e3f3b68c573"
+        }
+      ],
+      "artifactDir": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153",
+      "detailsFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/result.json",
+      "attemptCount": 12,
+      "prunedBranches": 6
+    }
+  ]
+}

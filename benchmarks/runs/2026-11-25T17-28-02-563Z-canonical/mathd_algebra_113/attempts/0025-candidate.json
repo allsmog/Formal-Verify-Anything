@@ -1,0 +1,51 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":10,\"line\":16},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0025-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":16},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"linarith failed to find a contradiction\\ncase h\\nx : ℝ\\na✝ : 98 - x * 14 + x ^ 2 < 49\\n⊢ False\\nfailed\",\"endPos\":{\"column\":16,\"line\":18},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0025-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":18},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2845,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0025-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 16
+      },
+      "end": {
+        "column": 10,
+        "line": 16
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "linarith failed to find a contradiction\ncase h\nx : ℝ\na✝ : 98 - x * 14 + x ^ 2 < 49\n⊢ False\nfailed",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0025-candidate.lean",
+      "start": {
+        "column": 8,
+        "line": 18
+      },
+      "end": {
+        "column": 16,
+        "line": 18
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 25,
+  "kind": "candidate",
+  "nodeId": "n3",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0025-candidate.lean",
+  "sourceHash": "2fd7c53d30c00b6b28cabca5b25f2c361952b380b7f93d105c1d69901d4f55e9",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_1c78adea07e6c663d09092ef5d5a3eecbe548ad0c576f1283786f540121ca56b"
+}

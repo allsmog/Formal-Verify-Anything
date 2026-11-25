@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  a ^ 2 + b ^ 2\\nis not definitionally equal to the right-hand side\\n  369\\n\\na b : ℝ\\nh₁ : a * b = 180\\nh₂ : 2 * (a + b) = 54\\n⊢ a ^ 2 + b ^ 2 = 369\",\"endPos\":{\"column\":5,\"line\":14},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_141/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":14},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2725,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  a ^ 2 + b ^ 2\nis not definitionally equal to the right-hand side\n  369\n\na b : ℝ\nh₁ : a * b = 180\nh₂ : 2 * (a + b) = 54\n⊢ a ^ 2 + b ^ 2 = 369",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_141/attempts/0003-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 14
+      },
+      "end": {
+        "column": 5,
+        "line": 14
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 3,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_141/attempts/0003-candidate.lean",
+  "sourceHash": "ca5f2a3ffbad9fef378fa384756d7951c09c5376927c41d4a92642aa25fa1250",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_d6ac990fc482aadaa130b022e822733a36bd403565426830d942b8487be08ef3"
+}

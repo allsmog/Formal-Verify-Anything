@@ -1,0 +1,58 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.461",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "s",
+        "type": "Real → Real → Real",
+        "typeHead": "forall",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.461"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.462",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "∀ (x y : Real),\n  Ne.{1} x 0 →\n    Ne.{1} y 0 →\n      Eq.{1} (s x y)\n        (HDiv.hDiv.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HDiv.hDiv.{0, 0, 0} 1 y) (HDiv.hDiv.{0, 0, 0} 1 x))\n          (HSub.hSub.{0, 0, 0} x y))",
+        "typeHead": "forall",
+        "value": null
+      }
+    ],
+    "id": "_uniq.463",
+    "omitted_implementation_details": 1,
+    "pretty": "s : Real → Real → Real\nh₀ :\n  ∀ (x y : Real),\n    Ne.{1} x 0 →\n      Ne.{1} y 0 →\n        Eq.{1} (s x y)\n          (HDiv.hDiv.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HDiv.hDiv.{0, 0, 0} 1 y) (HDiv.hDiv.{0, 0, 0} 1 x))\n            (HSub.hSub.{0, 0, 0} x y))\n⊢ Eq.{1} (s 3 11) (1 / 33)",
+    "target": "Eq.{1} (s 3 11) (1 / 33)",
+    "targetArgs": [
+      "Real",
+      "s 3 11",
+      "1 / 33"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Data.Real.Basic"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 61,
+    "maxDepth": 8,
+    "depth": 0,
+    "modelTokensRemaining": 0,
+    "remainingMs": 296764
+  }
+}

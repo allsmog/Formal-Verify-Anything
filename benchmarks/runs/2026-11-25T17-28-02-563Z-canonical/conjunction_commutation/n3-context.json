@@ -1,0 +1,80 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.10",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "P",
+        "type": "Prop",
+        "typeHead": "sort",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.11",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "Q",
+        "type": "Prop",
+        "typeHead": "sort",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.10"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.46",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "left._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0005-state.1909278726._hygCtx._hyg.24",
+        "type": "P",
+        "typeHead": "fvar",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.11"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.47",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "right._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0005-state.1909278726._hygCtx._hyg.25",
+        "type": "Q",
+        "typeHead": "fvar",
+        "value": null
+      }
+    ],
+    "id": "_uniq.59",
+    "omitted_implementation_details": 1,
+    "pretty": "case left.intro\nP Q : Prop\nleft✝ : P\nright✝ : Q\n⊢ Q",
+    "target": "Q",
+    "targetArgs": [],
+    "targetHead": "fvar",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Data.List.Basic"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 57,
+    "maxDepth": 8,
+    "depth": 2,
+    "modelTokensRemaining": 0,
+    "remainingMs": 284782
+  }
+}

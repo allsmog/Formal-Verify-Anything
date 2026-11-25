@@ -1,0 +1,73 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.476",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "a",
+        "type": "Real",
+        "typeHead": "Real",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.476"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.2153",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "Not (Eq.{1} a 0)",
+        "typeHead": "Not",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.476"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.2892",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₁",
+        "type": "Eq.{1} (HSub.hSub.{0, 0, 0} (1 / 2) (Inv.inv.{0} a)) 1",
+        "typeHead": "Eq",
+        "value": null
+      }
+    ],
+    "id": "_uniq.2893",
+    "omitted_implementation_details": 1,
+    "pretty": "a : Real\nh₀ : Not (Eq.{1} a 0)\nh₁ : Eq.{1} (HSub.hSub.{0, 0, 0} (1 / 2) (Inv.inv.{0} a)) 1\n⊢ Eq.{1} a (Neg.neg.{0} 2)",
+    "target": "Eq.{1} a (Neg.neg.{0} 2)",
+    "targetArgs": [
+      "Real",
+      "a",
+      "Neg.neg.{0} 2"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Data.Real.Basic"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 25,
+    "maxDepth": 8,
+    "depth": 6,
+    "modelTokensRemaining": 0,
+    "remainingMs": 175718
+  },
+  "feedback": []
+}

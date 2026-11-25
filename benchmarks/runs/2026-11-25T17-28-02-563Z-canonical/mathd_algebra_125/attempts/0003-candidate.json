@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  x\\nis not definitionally equal to the right-hand side\\n  6\\n\\nx y : ℕ\\nh₀ : 0 < x ∧ 0 < y\\nh₁ : 5 * x = y\\nh₂ : ↑x - 3 + (↑y - 3) = 30\\n⊢ x = 6\",\"endPos\":{\"column\":5,\"line\":15},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_125/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":15},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2681,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  x\nis not definitionally equal to the right-hand side\n  6\n\nx y : ℕ\nh₀ : 0 < x ∧ 0 < y\nh₁ : 5 * x = y\nh₂ : ↑x - 3 + (↑y - 3) = 30\n⊢ x = 6",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_125/attempts/0003-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 15
+      },
+      "end": {
+        "column": 5,
+        "line": 15
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 3,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_125/attempts/0003-candidate.lean",
+  "sourceHash": "71b2889f9e9e9b112676f39da6395d3d89ff4669996df606fe96a86a4b440902",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_1615e6bf5693fb17808250a561aa191a73703a86aff401860a8b75c253db36e7"
+}

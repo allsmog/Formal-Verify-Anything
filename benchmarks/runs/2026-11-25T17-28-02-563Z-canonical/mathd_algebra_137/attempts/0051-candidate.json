@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"tactic 'aesop' failed, made no progress\\nInitial goal:\\n  x : ℕ\\n  h₀ : ↑x * (26 / 25) = 598\\n  ⊢ x = 575\",\"endPos\":{\"column\":15,\"line\":21},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0051-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":10,\"line\":21},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3221,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "tactic 'aesop' failed, made no progress\nInitial goal:\n  x : ℕ\n  h₀ : ↑x * (26 / 25) = 598\n  ⊢ x = 575",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0051-candidate.lean",
+      "start": {
+        "column": 10,
+        "line": 21
+      },
+      "end": {
+        "column": 15,
+        "line": 21
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 51,
+  "kind": "candidate",
+  "nodeId": "n5",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0051-candidate.lean",
+  "sourceHash": "32d11a2067f6402791975beff7e9ac4513d2036beeb52bff877d65e1cda1b298",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_5274fc2dcb0f563141aa9d59f497b9cacd2067c2f3526518a4b371dca9ead5e1"
+}

@@ -1,0 +1,72 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.3008",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "n._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.mathd_algebra_137.attempts.0061-state.3783915034._hygCtx._hyg.96",
+        "type": "Nat",
+        "typeHead": "Nat",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.3008"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.3009",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "a._@._internal.0.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.mathd_algebra_137.attempts.0061-state.3783915034._hygCtx._hyg.97",
+        "type": "Eq.{1} (HMul.hMul.{0, 0, 0} (↑n✝) (HDiv.hDiv.{0, 0, 0} 26 25)) 598 → Eq.{1} n✝ 575",
+        "typeHead": "forall",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.3008"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.6142",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑n✝) 1) (HDiv.hDiv.{0, 0, 0} 26 25)) 598",
+        "typeHead": "Eq",
+        "value": null
+      }
+    ],
+    "id": "_uniq.6145",
+    "omitted_implementation_details": 1,
+    "pretty": "case succ\nn✝ : Nat\na✝ : Eq.{1} (HMul.hMul.{0, 0, 0} (↑n✝) (HDiv.hDiv.{0, 0, 0} 26 25)) 598 → Eq.{1} n✝ 575\nh₀ : Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑n✝) 1) (HDiv.hDiv.{0, 0, 0} 26 25)) 598\n⊢ Eq.{1} n✝ 574",
+    "target": "Eq.{1} n✝ 574",
+    "targetArgs": [
+      "Nat",
+      "n✝",
+      "574"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Data.Real.Basic"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 1,
+    "maxDepth": 8,
+    "depth": 6,
+    "modelTokensRemaining": 0,
+    "remainingMs": 124059
+  }
+}

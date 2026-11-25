@@ -1,0 +1,46 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.1207",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "x",
+        "type": "Real",
+        "typeHead": "Real",
+        "value": null
+      }
+    ],
+    "id": "_uniq.5227",
+    "omitted_implementation_details": 1,
+    "pretty": "x : Real\n⊢ LE.le.{0} 49 (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} 98 (HMul.hMul.{0, 0, 0} x 14)) (HPow.hPow.{0, 0, 0} x 2))",
+    "target": "LE.le.{0} 49 (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} 98 (HMul.hMul.{0, 0, 0} x 14)) (HPow.hPow.{0, 0, 0} x 2))",
+    "targetArgs": [
+      "Real",
+      "Real.instLE",
+      "49",
+      "HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} 98 (HMul.hMul.{0, 0, 0} x 14)) (HPow.hPow.{0, 0, 0} x 2)"
+    ],
+    "targetHead": "LE.le",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Data.Real.Basic"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 24,
+    "maxDepth": 8,
+    "depth": 3,
+    "modelTokensRemaining": 0,
+    "remainingMs": 184711
+  },
+  "feedback": []
+}

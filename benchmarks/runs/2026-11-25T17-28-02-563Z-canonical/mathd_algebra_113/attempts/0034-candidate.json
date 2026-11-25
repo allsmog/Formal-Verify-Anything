@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"not a positivity goal\",\"endPos\":{\"column\":16,\"line\":16},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0034-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":16},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2741,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "not a positivity goal",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0034-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 16
+      },
+      "end": {
+        "column": 16,
+        "line": 16
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 34,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0034-candidate.lean",
+  "sourceHash": "dde856fbd26a7b566909f5e168e593b4a102c5e4e957487474fafccf8d3b9460",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_acb6768f80da495a1bff9de5d4b85956601c7adadb11d8922026111e80e381d0"
+}

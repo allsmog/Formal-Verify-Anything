@@ -1,0 +1,1194 @@
+{
+  "id": "mathd_algebra_153",
+  "tier": 2,
+  "status": "SOLVED",
+  "proofFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/mathd_algebra_153.lean",
+  "engineVersion": "fva-search-v2",
+  "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+  "statementHash": "742119115717e348c2f5198e3f9bddf7b62d461d9ebe0c688c3a0d69635e6dbc",
+  "provenance": {
+    "dataset": "miniF2F Lean 4",
+    "split": "test",
+    "repository": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+    "path": "MiniF2F/Test/mathd_algebra_153.lean",
+    "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_153.lean",
+    "sourceFileSha256": "f0b6ff6576308520bba933b43a4b4025f719732ba5b1d9f99932ce0b6344ce6c",
+    "statementSha256": "742119115717e348c2f5198e3f9bddf7b62d461d9ebe0c688c3a0d69635e6dbc",
+    "originalImports": [
+      "Mathlib"
+    ],
+    "originalOpens": [
+      "BigOperators Real Nat Topology Rat"
+    ]
+  },
+  "metrics": {
+    "compilerCalls": 12,
+    "steps": 8,
+    "maxDepth": 1,
+    "elapsedMs": 43524,
+    "firstCandidateSolved": false,
+    "modelTokens": 0,
+    "modelTokensKnown": 0,
+    "modelUsageComplete": true,
+    "proposerCalls": 2,
+    "finalCandidates": 1
+  },
+  "budget": {
+    "maxCompilerCalls": 64,
+    "maxSteps": 64,
+    "maxProposalRounds": 3,
+    "maxDepth": 8,
+    "callTimeoutMs": 30000,
+    "theoremTimeoutMs": 300000,
+    "heartbeats": 200000,
+    "maxModelTokens": 0
+  },
+  "policy": "deterministic-v2",
+  "failure": null,
+  "exploration": {
+    "backend": "fresh-lean-cli",
+    "cleanup": {
+      "ownership": "none",
+      "status": "not_applicable"
+    }
+  },
+  "verification": {
+    "statementHash": "742119115717e348c2f5198e3f9bddf7b62d461d9ebe0c688c3a0d69635e6dbc",
+    "sourceHash": "145e0dcc8b77b616ec49845bf68c503aa23b045cd330fc82aeb527ea7f1d18ec",
+    "zeroPlaceholders": true,
+    "exitCode": 0,
+    "audit": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "mathd_algebra_153",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (n : Real),\n  Eq.{1} n (1 / 3) →\n    Eq.{1}\n      (HAdd.hAdd.{0, 0, 0}\n        (HAdd.hAdd.{0, 0, 0}\n          (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\n          (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n)))\n      3702",
+      "universe_parameters": [],
+      "version": 1
+    },
+    "compileEvidence": [
+      "ev_cfce4e8ea3f12af839689624f057a7d3861d31abec069c298b6feff7a711fce0",
+      "ev_6e35b50198165a7f1f72f079cdede0218562b977135a2ee366377634341e991d"
+    ],
+    "standaloneRecheck": true,
+    "policy": "lean-kernel-v2-unused-variable-lint",
+    "warnings": []
+  },
+  "tree": {
+    "finalPlan": {
+      "id": "n0",
+      "depth": 0,
+      "kind": "tactic",
+      "children": [
+        {
+          "id": "n1",
+          "depth": 1,
+          "kind": "tactic",
+          "children": [],
+          "tactic": "norm_num at *"
+        }
+      ],
+      "tactic": "simp_all"
+    },
+    "nodes": [
+      {
+        "id": "n0",
+        "visit": 0,
+        "depth": 0,
+        "stateHash": "58fef2b83be528f209b54e604e360ad3439e176c49ab2df0903a77be61830838",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.556",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.556"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.557",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "Eq.{1} n (1 / 3)",
+              "typeHead": "Eq",
+              "value": null
+            }
+          ],
+          "id": "_uniq.558",
+          "omitted_implementation_details": 1,
+          "pretty": "n : Real\nh₀ : Eq.{1} n (1 / 3)\n⊢ Eq.{1}\n    (HAdd.hAdd.{0, 0, 0}\n      (HAdd.hAdd.{0, 0, 0}\n        (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n)))\n    3702",
+          "target": "Eq.{1}\n  (HAdd.hAdd.{0, 0, 0}\n    (HAdd.hAdd.{0, 0, 0}\n      (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n)))\n  3702",
+          "targetArgs": [
+            "Int",
+            "HAdd.hAdd.{0, 0, 0}\n  (HAdd.hAdd.{0, 0, 0}\n    (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\n  (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n))",
+            "3702"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        },
+        "status": "VERIFIED_IN_FINAL_PROOF",
+        "evidenceId": "ev_76d30255418f648037f76c45cb406749e0e6a49604c9b7385af7272305183b05"
+      },
+      {
+        "id": "n1",
+        "visit": 1,
+        "depth": 1,
+        "stateHash": "9c1f2512dc2c8dac047f90dfdccb209749a6091f80a165d3541d50913ebeff3a",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.556",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.556"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.2064",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "Eq.{1} n (Inv.inv.{0} 3)",
+              "typeHead": "Eq",
+              "value": null
+            }
+          ],
+          "id": "_uniq.2067",
+          "omitted_implementation_details": 1,
+          "pretty": "n : Real\nh₀ : Eq.{1} n (Inv.inv.{0} 3)\n⊢ Eq.{1}\n    (HAdd.hAdd.{0, 0, 0}\n      (HAdd.hAdd.{0, 0, 0}\n        (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\n          (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3))))\n    3702",
+          "target": "Eq.{1}\n  (HAdd.hAdd.{0, 0, 0}\n    (HAdd.hAdd.{0, 0, 0}\n      (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3))))\n  3702",
+          "targetArgs": [
+            "Int",
+            "HAdd.hAdd.{0, 0, 0}\n  (HAdd.hAdd.{0, 0, 0}\n    (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\n  (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3)))",
+            "3702"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        },
+        "status": "VERIFIED_IN_FINAL_PROOF",
+        "evidenceId": "ev_51034b7a2c6f72737d2d7ff5119d3c9c82358db9347c0eb11a60c0233463275a"
+      }
+    ],
+    "branches": [
+      {
+        "parent": "n0",
+        "visit": 0,
+        "stateHash": "58fef2b83be528f209b54e604e360ad3439e176c49ab2df0903a77be61830838",
+        "proposal": {
+          "tactic": "assumption"
+        },
+        "beforeHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a",
+        "status": "PRUNED",
+        "children": [],
+        "evidenceId": "ev_ca22a3d8c9ac31c1fc26b90cd113415e13af4d366494f6746f1331c2afde0dac",
+        "failure": "missing_hypothesis_or_instance",
+        "restoredHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a"
+      },
+      {
+        "parent": "n0",
+        "visit": 0,
+        "stateHash": "58fef2b83be528f209b54e604e360ad3439e176c49ab2df0903a77be61830838",
+        "proposal": {
+          "tactic": "rfl"
+        },
+        "beforeHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a",
+        "status": "PRUNED",
+        "children": [],
+        "evidenceId": "ev_fb7dc19a321f41bc5dd24f4ff0575feb195428431401cd14d8fd5fc4b2723603",
+        "failure": "compiler_error",
+        "restoredHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a"
+      },
+      {
+        "parent": "n0",
+        "visit": 0,
+        "stateHash": "58fef2b83be528f209b54e604e360ad3439e176c49ab2df0903a77be61830838",
+        "proposal": {
+          "tactic": "simp_all"
+        },
+        "beforeHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a",
+        "status": "RETAINED",
+        "children": [
+          "n1"
+        ],
+        "evidenceId": "ev_b23a607869a9f929abb750550b42c95a4de6bfbfe2442779f560089517fc66e4"
+      },
+      {
+        "parent": "n1",
+        "visit": 1,
+        "stateHash": "9c1f2512dc2c8dac047f90dfdccb209749a6091f80a165d3541d50913ebeff3a",
+        "proposal": {
+          "tactic": "assumption"
+        },
+        "beforeHash": "c07fdc96f8e0e69dca795d78524797fdc5deccdcbe8399fb62c73689c931453e",
+        "status": "PRUNED",
+        "children": [],
+        "evidenceId": "ev_b68f5a4c3b44288e566ef3aade94e67cd8befa4483210524b4892a8fcdaf4e0e",
+        "failure": "missing_hypothesis_or_instance",
+        "restoredHash": "c07fdc96f8e0e69dca795d78524797fdc5deccdcbe8399fb62c73689c931453e"
+      },
+      {
+        "parent": "n1",
+        "visit": 1,
+        "stateHash": "9c1f2512dc2c8dac047f90dfdccb209749a6091f80a165d3541d50913ebeff3a",
+        "proposal": {
+          "tactic": "rfl"
+        },
+        "beforeHash": "c07fdc96f8e0e69dca795d78524797fdc5deccdcbe8399fb62c73689c931453e",
+        "status": "PRUNED",
+        "children": [],
+        "evidenceId": "ev_dcc143024a83df3fa5eef0c7bf02f13edb490390cee350766b4de0d7a4235fc0",
+        "failure": "compiler_error",
+        "restoredHash": "c07fdc96f8e0e69dca795d78524797fdc5deccdcbe8399fb62c73689c931453e"
+      },
+      {
+        "parent": "n1",
+        "visit": 1,
+        "stateHash": "9c1f2512dc2c8dac047f90dfdccb209749a6091f80a165d3541d50913ebeff3a",
+        "proposal": {
+          "tactic": "simp_all"
+        },
+        "beforeHash": "c07fdc96f8e0e69dca795d78524797fdc5deccdcbe8399fb62c73689c931453e",
+        "status": "PRUNED",
+        "children": [],
+        "evidenceId": "ev_27712db4883e0e921f7ddc6f249d1e6f8aff3b9161b2776bb2529da6417b0406",
+        "failure": "compiler_error",
+        "restoredHash": "c07fdc96f8e0e69dca795d78524797fdc5deccdcbe8399fb62c73689c931453e"
+      },
+      {
+        "parent": "n1",
+        "visit": 1,
+        "stateHash": "9c1f2512dc2c8dac047f90dfdccb209749a6091f80a165d3541d50913ebeff3a",
+        "proposal": {
+          "tactic": "omega"
+        },
+        "beforeHash": "c07fdc96f8e0e69dca795d78524797fdc5deccdcbe8399fb62c73689c931453e",
+        "status": "PRUNED",
+        "children": [],
+        "evidenceId": "ev_7d8af7eae3dd65f1834b0825e335d7e0fe96510286ab263ce54ba4b95a1a3512",
+        "failure": "compiler_error",
+        "restoredHash": "c07fdc96f8e0e69dca795d78524797fdc5deccdcbe8399fb62c73689c931453e"
+      },
+      {
+        "parent": "n1",
+        "visit": 1,
+        "stateHash": "9c1f2512dc2c8dac047f90dfdccb209749a6091f80a165d3541d50913ebeff3a",
+        "proposal": {
+          "tactic": "norm_num at *"
+        },
+        "beforeHash": "c07fdc96f8e0e69dca795d78524797fdc5deccdcbe8399fb62c73689c931453e",
+        "status": "RETAINED",
+        "children": [],
+        "evidenceId": "ev_d5a96a7558d0f68bbb8bb2f4f15618cefd3a9adab154cffc9c2dcf4ea9a95558"
+      }
+    ]
+  },
+  "finalCandidates": [
+    {
+      "id": "c0",
+      "planHash": "a624fc9c5b25c242bec1ade9224feee98e2cfef9e7e4425d9b85f5fee7cb0707",
+      "status": "ACCEPTED",
+      "policy": "lean-kernel-v2-unused-variable-lint",
+      "evidenceIds": [
+        "ev_cfce4e8ea3f12af839689624f057a7d3861d31abec069c298b6feff7a711fce0",
+        "ev_6e35b50198165a7f1f72f079cdede0218562b977135a2ee366377634341e991d"
+      ],
+      "sourceHash": "145e0dcc8b77b616ec49845bf68c503aa23b045cd330fc82aeb527ea7f1d18ec",
+      "checks": [
+        {
+          "kind": "final",
+          "evidenceId": "ev_cfce4e8ea3f12af839689624f057a7d3861d31abec069c298b6feff7a711fce0",
+          "accepted": true,
+          "reason": null,
+          "audit": {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_algebra_153",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (n : Real),\n  Eq.{1} n (1 / 3) →\n    Eq.{1}\n      (HAdd.hAdd.{0, 0, 0}\n        (HAdd.hAdd.{0, 0, 0}\n          (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\n          (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n)))\n      3702",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": []
+        },
+        {
+          "kind": "recheck",
+          "evidenceId": "ev_6e35b50198165a7f1f72f079cdede0218562b977135a2ee366377634341e991d",
+          "accepted": true,
+          "reason": null,
+          "audit": {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_algebra_153",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (n : Real),\n  Eq.{1} n (1 / 3) →\n    Eq.{1}\n      (HAdd.hAdd.{0, 0, 0}\n        (HAdd.hAdd.{0, 0, 0}\n          (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\n          (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n)))\n      3702",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": []
+        }
+      ],
+      "reason": null
+    }
+  ],
+  "proposerCalls": [
+    {
+      "id": "p0",
+      "nodeId": "n0",
+      "stateHash": "58fef2b83be528f209b54e604e360ad3439e176c49ab2df0903a77be61830838",
+      "round": 0,
+      "requestDigest": "4f8a005308f1b81ea27a9216510831057c1573b293d20cc57bce4e4f8acb5d14",
+      "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/proposals/0001-context.json",
+      "modelTokens": 0,
+      "usageKnown": true,
+      "tokenBudgetExceeded": false,
+      "policy": "deterministic-v2",
+      "proposals": [
+        {
+          "tactic": "assumption"
+        },
+        {
+          "tactic": "rfl"
+        },
+        {
+          "tactic": "simp_all"
+        },
+        {
+          "tactic": "omega"
+        },
+        {
+          "tactic": "norm_num at *"
+        },
+        {
+          "tactic": "ring"
+        },
+        {
+          "tactic": "linarith"
+        },
+        {
+          "tactic": "nlinarith"
+        },
+        {
+          "tactic": "positivity"
+        },
+        {
+          "tactic": "norm_cast at *"
+        },
+        {
+          "tactic": "field_simp at *"
+        },
+        {
+          "tactic": "ring_nf at *"
+        },
+        {
+          "tactic": "aesop"
+        }
+      ],
+      "status": "RETURNED",
+      "elapsedMs": 0,
+      "evidenceId": "ev_c283989174aa0fbfba0db439498fcb39385cc2cb0e46bc06df826c977b9ccdff"
+    },
+    {
+      "id": "p1",
+      "nodeId": "n1",
+      "stateHash": "9c1f2512dc2c8dac047f90dfdccb209749a6091f80a165d3541d50913ebeff3a",
+      "round": 0,
+      "requestDigest": "c9239307ce44800ac15e91837c693de9ac6697f08a980fb7ee8978312c2d153a",
+      "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/proposals/0002-context.json",
+      "modelTokens": 0,
+      "usageKnown": true,
+      "tokenBudgetExceeded": false,
+      "policy": "deterministic-v2",
+      "proposals": [
+        {
+          "tactic": "assumption"
+        },
+        {
+          "tactic": "rfl"
+        },
+        {
+          "tactic": "simp_all"
+        },
+        {
+          "tactic": "omega"
+        },
+        {
+          "tactic": "norm_num at *"
+        },
+        {
+          "tactic": "ring"
+        },
+        {
+          "tactic": "linarith"
+        },
+        {
+          "tactic": "nlinarith"
+        },
+        {
+          "tactic": "positivity"
+        },
+        {
+          "tactic": "norm_cast at *"
+        },
+        {
+          "tactic": "field_simp at *"
+        },
+        {
+          "tactic": "ring_nf at *"
+        },
+        {
+          "tactic": "aesop"
+        }
+      ],
+      "status": "RETURNED",
+      "elapsedMs": 0,
+      "evidenceId": "ev_f12d98b0112834c3b978fd9c1d49284a5667dff999c301620c259e3f3b68c573"
+    }
+  ],
+  "attempts": [
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.556\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.556\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.557\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"Eq.{1} n (1 / 3)\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.558\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"n : Real\\\\nh₀ : Eq.{1} n (1 / 3)\\\\n⊢ Eq.{1}\\\\n    (HAdd.hAdd.{0, 0, 0}\\\\n      (HAdd.hAdd.{0, 0, 0}\\\\n        (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\\\\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\\\\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n)))\\\\n    3702\\\",\\\"target\\\":\\\"Eq.{1}\\\\n  (HAdd.hAdd.{0, 0, 0}\\\\n    (HAdd.hAdd.{0, 0, 0}\\\\n      (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\\\\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\\\\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n)))\\\\n  3702\\\",\\\"targetArgs\\\":[\\\"Int\\\",\\\"HAdd.hAdd.{0, 0, 0}\\\\n  (HAdd.hAdd.{0, 0, 0}\\\\n    (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\\\\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\\\\n  (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n))\\\",\\\"3702\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":13},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":13},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":16,\"line\":13},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":13},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 2712,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.556\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.556\"],\"has_metavariables\":false,\"id\":\"_uniq.557\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"Eq.{1} n (1 / 3)\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.558\",\"omitted_implementation_details\":1,\"pretty\":\"n : Real\\nh₀ : Eq.{1} n (1 / 3)\\n⊢ Eq.{1}\\n    (HAdd.hAdd.{0, 0, 0}\\n      (HAdd.hAdd.{0, 0, 0}\\n        (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n)))\\n    3702\",\"target\":\"Eq.{1}\\n  (HAdd.hAdd.{0, 0, 0}\\n    (HAdd.hAdd.{0, 0, 0}\\n      (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n)))\\n  3702\",\"targetArgs\":[\"Int\",\"HAdd.hAdd.{0, 0, 0}\\n  (HAdd.hAdd.{0, 0, 0}\\n    (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\\n  (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n))\",\"3702\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 13
+          },
+          "end": {
+            "column": 16,
+            "line": 13
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 13
+          },
+          "end": {
+            "column": 16,
+            "line": 13
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.556",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "n",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.556"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.557",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h₀",
+                  "type": "Eq.{1} n (1 / 3)",
+                  "typeHead": "Eq",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.558",
+              "omitted_implementation_details": 1,
+              "pretty": "n : Real\nh₀ : Eq.{1} n (1 / 3)\n⊢ Eq.{1}\n    (HAdd.hAdd.{0, 0, 0}\n      (HAdd.hAdd.{0, 0, 0}\n        (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n)))\n    3702",
+              "target": "Eq.{1}\n  (HAdd.hAdd.{0, 0, 0}\n    (HAdd.hAdd.{0, 0, 0}\n      (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n)))\n  3702",
+              "targetArgs": [
+                "Int",
+                "HAdd.hAdd.{0, 0, 0}\n  (HAdd.hAdd.{0, 0, 0}\n    (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\n  (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n))",
+                "3702"
+              ],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "sequence": 1,
+      "kind": "state",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0001-state.lean",
+      "sourceHash": "f38bb154f4771ed5f3af9b20cf8001c9623b2526118682319e7b3c81dffeecab",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_76d30255418f648037f76c45cb406749e0e6a49604c9b7385af7272305183b05"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\nn : ℝ\\nh₀ : n = 1 / 3\\n⊢ ⌊10 * n⌋ + ⌊100 * n⌋ + ⌊1000 * n⌋ + ⌊10000 * n⌋ = 3702\",\"endPos\":{\"column\":12,\"line\":13},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":13},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 2725,
+      "diagnostics": [
+        {
+          "severity": "error",
+          "message": "Tactic `assumption` failed\n\nn : ℝ\nh₀ : n = 1 / 3\n⊢ ⌊10 * n⌋ + ⌊100 * n⌋ + ⌊1000 * n⌋ + ⌊10000 * n⌋ = 3702",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0002-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 13
+          },
+          "end": {
+            "column": 12,
+            "line": 13
+          },
+          "category": "missing_hypothesis_or_instance"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "sequence": 2,
+      "kind": "candidate",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0002-candidate.lean",
+      "sourceHash": "c769323572c44bcf9c0d5ad58f743aa7a4b32bb0692aeb56521b05bd7eda010b",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_ca22a3d8c9ac31c1fc26b90cd113415e13af4d366494f6746f1331c2afde0dac"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  ⌊10 * n⌋ + ⌊100 * n⌋ + ⌊1000 * n⌋ + ⌊10000 * n⌋\\nis not definitionally equal to the right-hand side\\n  3702\\n\\nn : ℝ\\nh₀ : n = 1 / 3\\n⊢ ⌊10 * n⌋ + ⌊100 * n⌋ + ⌊1000 * n⌋ + ⌊10000 * n⌋ = 3702\",\"endPos\":{\"column\":5,\"line\":13},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":13},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 2963,
+      "diagnostics": [
+        {
+          "severity": "error",
+          "message": "Tactic `rfl` failed: The left-hand side\n  ⌊10 * n⌋ + ⌊100 * n⌋ + ⌊1000 * n⌋ + ⌊10000 * n⌋\nis not definitionally equal to the right-hand side\n  3702\n\nn : ℝ\nh₀ : n = 1 / 3\n⊢ ⌊10 * n⌋ + ⌊100 * n⌋ + ⌊1000 * n⌋ + ⌊10000 * n⌋ = 3702",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0003-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 13
+          },
+          "end": {
+            "column": 5,
+            "line": 13
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "sequence": 3,
+      "kind": "candidate",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0003-candidate.lean",
+      "sourceHash": "9f4a5a0119d49f201662696e180916bf07c08bc7c7b65476d2f06a5c46661b5d",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_fb7dc19a321f41bc5dd24f4ff0575feb195428431401cd14d8fd5fc4b2723603"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.556\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.556\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.2064\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"Eq.{1} n (Inv.inv.{0} 3)\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.2067\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"n : Real\\\\nh₀ : Eq.{1} n (Inv.inv.{0} 3)\\\\n⊢ Eq.{1}\\\\n    (HAdd.hAdd.{0, 0, 0}\\\\n      (HAdd.hAdd.{0, 0, 0}\\\\n        (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\\\\n          (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\\\\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\\\\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3))))\\\\n    3702\\\",\\\"target\\\":\\\"Eq.{1}\\\\n  (HAdd.hAdd.{0, 0, 0}\\\\n    (HAdd.hAdd.{0, 0, 0}\\\\n      (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\\\\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\\\\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\\\\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3))))\\\\n  3702\\\",\\\"targetArgs\\\":[\\\"Int\\\",\\\"HAdd.hAdd.{0, 0, 0}\\\\n  (HAdd.hAdd.{0, 0, 0}\\\\n    (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\\\\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\\\\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\\\\n  (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3)))\\\",\\\"3702\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":15,\"line\":14},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0004-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":14},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":15,\"line\":14},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0004-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":14},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 2686,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.556\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.556\"],\"has_metavariables\":false,\"id\":\"_uniq.2064\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"Eq.{1} n (Inv.inv.{0} 3)\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.2067\",\"omitted_implementation_details\":1,\"pretty\":\"n : Real\\nh₀ : Eq.{1} n (Inv.inv.{0} 3)\\n⊢ Eq.{1}\\n    (HAdd.hAdd.{0, 0, 0}\\n      (HAdd.hAdd.{0, 0, 0}\\n        (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\\n          (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3))))\\n    3702\",\"target\":\"Eq.{1}\\n  (HAdd.hAdd.{0, 0, 0}\\n    (HAdd.hAdd.{0, 0, 0}\\n      (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3))))\\n  3702\",\"targetArgs\":[\"Int\",\"HAdd.hAdd.{0, 0, 0}\\n  (HAdd.hAdd.{0, 0, 0}\\n    (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\\n  (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3)))\",\"3702\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0004-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 14
+          },
+          "end": {
+            "column": 15,
+            "line": 14
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0004-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 14
+          },
+          "end": {
+            "column": 15,
+            "line": 14
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.556",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "n",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.556"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.2064",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h₀",
+                  "type": "Eq.{1} n (Inv.inv.{0} 3)",
+                  "typeHead": "Eq",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.2067",
+              "omitted_implementation_details": 1,
+              "pretty": "n : Real\nh₀ : Eq.{1} n (Inv.inv.{0} 3)\n⊢ Eq.{1}\n    (HAdd.hAdd.{0, 0, 0}\n      (HAdd.hAdd.{0, 0, 0}\n        (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\n          (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3))))\n    3702",
+              "target": "Eq.{1}\n  (HAdd.hAdd.{0, 0, 0}\n    (HAdd.hAdd.{0, 0, 0}\n      (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3))))\n  3702",
+              "targetArgs": [
+                "Int",
+                "HAdd.hAdd.{0, 0, 0}\n  (HAdd.hAdd.{0, 0, 0}\n    (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\n  (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3)))",
+                "3702"
+              ],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "sequence": 4,
+      "kind": "candidate",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0004-candidate.lean",
+      "sourceHash": "6160917f0796401c6af96d055131ce338b52ca0a50ee9a4d5935327d2b528be5",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_b23a607869a9f929abb750550b42c95a4de6bfbfe2442779f560089517fc66e4"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.556\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.556\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.2064\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"Eq.{1} n (Inv.inv.{0} 3)\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.2067\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"n : Real\\\\nh₀ : Eq.{1} n (Inv.inv.{0} 3)\\\\n⊢ Eq.{1}\\\\n    (HAdd.hAdd.{0, 0, 0}\\\\n      (HAdd.hAdd.{0, 0, 0}\\\\n        (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\\\\n          (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\\\\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\\\\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3))))\\\\n    3702\\\",\\\"target\\\":\\\"Eq.{1}\\\\n  (HAdd.hAdd.{0, 0, 0}\\\\n    (HAdd.hAdd.{0, 0, 0}\\\\n      (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\\\\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\\\\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\\\\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3))))\\\\n  3702\\\",\\\"targetArgs\\\":[\\\"Int\\\",\\\"HAdd.hAdd.{0, 0, 0}\\\\n  (HAdd.hAdd.{0, 0, 0}\\\\n    (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\\\\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\\\\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\\\\n  (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3)))\\\",\\\"3702\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n1\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":18,\"line\":15},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0005-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":15},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n1\",\"endPos\":{\"column\":18,\"line\":15},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0005-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":15},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 4012,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.556\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.556\"],\"has_metavariables\":false,\"id\":\"_uniq.2064\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"Eq.{1} n (Inv.inv.{0} 3)\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.2067\",\"omitted_implementation_details\":1,\"pretty\":\"n : Real\\nh₀ : Eq.{1} n (Inv.inv.{0} 3)\\n⊢ Eq.{1}\\n    (HAdd.hAdd.{0, 0, 0}\\n      (HAdd.hAdd.{0, 0, 0}\\n        (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\\n          (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3))))\\n    3702\",\"target\":\"Eq.{1}\\n  (HAdd.hAdd.{0, 0, 0}\\n    (HAdd.hAdd.{0, 0, 0}\\n      (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3))))\\n  3702\",\"targetArgs\":[\"Int\",\"HAdd.hAdd.{0, 0, 0}\\n  (HAdd.hAdd.{0, 0, 0}\\n    (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\\n  (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3)))\",\"3702\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n1\",\"version\":1}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0005-state.lean",
+          "start": {
+            "column": 4,
+            "line": 15
+          },
+          "end": {
+            "column": 18,
+            "line": 15
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n1",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0005-state.lean",
+          "start": {
+            "column": 4,
+            "line": 15
+          },
+          "end": {
+            "column": 18,
+            "line": 15
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.556",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "n",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.556"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.2064",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h₀",
+                  "type": "Eq.{1} n (Inv.inv.{0} 3)",
+                  "typeHead": "Eq",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.2067",
+              "omitted_implementation_details": 1,
+              "pretty": "n : Real\nh₀ : Eq.{1} n (Inv.inv.{0} 3)\n⊢ Eq.{1}\n    (HAdd.hAdd.{0, 0, 0}\n      (HAdd.hAdd.{0, 0, 0}\n        (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\n          (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3))))\n    3702",
+              "target": "Eq.{1}\n  (HAdd.hAdd.{0, 0, 0}\n    (HAdd.hAdd.{0, 0, 0}\n      (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3))))\n  3702",
+              "targetArgs": [
+                "Int",
+                "HAdd.hAdd.{0, 0, 0}\n  (HAdd.hAdd.{0, 0, 0}\n    (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 (Inv.inv.{0} 3)))\n      (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 (Inv.inv.{0} 3))))\n    (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 (Inv.inv.{0} 3))))\n  (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 (Inv.inv.{0} 3)))",
+                "3702"
+              ],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n1",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "sequence": 5,
+      "kind": "state",
+      "nodeId": "n1",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0005-state.lean",
+      "sourceHash": "2a2003f0527ee32c26a2461989e41fc578ea03cc19dfbaa715fd8f60478feb67",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_51034b7a2c6f72737d2d7ff5119d3c9c82358db9347c0eb11a60c0233463275a"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\nn : ℝ\\nh₀ : n = 3⁻¹\\n⊢ ⌊10 * 3⁻¹⌋ + ⌊100 * 3⁻¹⌋ + ⌊1000 * 3⁻¹⌋ + ⌊10000 * 3⁻¹⌋ = 3702\",\"endPos\":{\"column\":14,\"line\":15},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0006-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":15},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 9760,
+      "diagnostics": [
+        {
+          "severity": "error",
+          "message": "Tactic `assumption` failed\n\nn : ℝ\nh₀ : n = 3⁻¹\n⊢ ⌊10 * 3⁻¹⌋ + ⌊100 * 3⁻¹⌋ + ⌊1000 * 3⁻¹⌋ + ⌊10000 * 3⁻¹⌋ = 3702",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0006-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 15
+          },
+          "end": {
+            "column": 14,
+            "line": 15
+          },
+          "category": "missing_hypothesis_or_instance"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "sequence": 6,
+      "kind": "candidate",
+      "nodeId": "n1",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0006-candidate.lean",
+      "sourceHash": "9e232ce2e3082ebd3f47d79992dbdfe744256e7317a294c0e54984459d8513d1",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_b68f5a4c3b44288e566ef3aade94e67cd8befa4483210524b4892a8fcdaf4e0e"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  ⌊10 * 3⁻¹⌋ + ⌊100 * 3⁻¹⌋ + ⌊1000 * 3⁻¹⌋ + ⌊10000 * 3⁻¹⌋\\nis not definitionally equal to the right-hand side\\n  3702\\n\\nn : ℝ\\nh₀ : n = 3⁻¹\\n⊢ ⌊10 * 3⁻¹⌋ + ⌊100 * 3⁻¹⌋ + ⌊1000 * 3⁻¹⌋ + ⌊10000 * 3⁻¹⌋ = 3702\",\"endPos\":{\"column\":7,\"line\":15},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0007-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":15},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 4644,
+      "diagnostics": [
+        {
+          "severity": "error",
+          "message": "Tactic `rfl` failed: The left-hand side\n  ⌊10 * 3⁻¹⌋ + ⌊100 * 3⁻¹⌋ + ⌊1000 * 3⁻¹⌋ + ⌊10000 * 3⁻¹⌋\nis not definitionally equal to the right-hand side\n  3702\n\nn : ℝ\nh₀ : n = 3⁻¹\n⊢ ⌊10 * 3⁻¹⌋ + ⌊100 * 3⁻¹⌋ + ⌊1000 * 3⁻¹⌋ + ⌊10000 * 3⁻¹⌋ = 3702",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0007-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 15
+          },
+          "end": {
+            "column": 7,
+            "line": 15
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "sequence": 7,
+      "kind": "candidate",
+      "nodeId": "n1",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0007-candidate.lean",
+      "sourceHash": "66f86931e0c3a2a1aab1b166b673f938fd7a61ee9a6c7b8631e0ea1fe3f3d7b8",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_dcc143024a83df3fa5eef0c7bf02f13edb490390cee350766b4de0d7a4235fc0"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"simp_all made no progress\",\"endPos\":{\"column\":12,\"line\":15},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0008-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":15},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 2805,
+      "diagnostics": [
+        {
+          "severity": "error",
+          "message": "simp_all made no progress",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0008-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 15
+          },
+          "end": {
+            "column": 12,
+            "line": 15
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "sequence": 8,
+      "kind": "candidate",
+      "nodeId": "n1",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0008-candidate.lean",
+      "sourceHash": "49a10477954f53785f5b47e9565bf453be706933b91e4bcf7bd3d9547787bb73",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_27712db4883e0e921f7ddc6f249d1e6f8aff3b9161b2776bb2529da6417b0406"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"omega could not prove the goal:\\na possible counterexample may satisfy the constraints\\n  a + b + c + d ≤ 3701\\nwhere\\n a := ⌊10 * 3⁻¹⌋\\n b := ⌊100 * 3⁻¹⌋\\n c := ⌊1000 * 3⁻¹⌋\\n d := ⌊10000 * 3⁻¹⌋\",\"endPos\":{\"column\":9,\"line\":15},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0009-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":15},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 2664,
+      "diagnostics": [
+        {
+          "severity": "error",
+          "message": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  a + b + c + d ≤ 3701\nwhere\n a := ⌊10 * 3⁻¹⌋\n b := ⌊100 * 3⁻¹⌋\n c := ⌊1000 * 3⁻¹⌋\n d := ⌊10000 * 3⁻¹⌋",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0009-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 15
+          },
+          "end": {
+            "column": 9,
+            "line": 15
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "sequence": 9,
+      "kind": "candidate",
+      "nodeId": "n1",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0009-candidate.lean",
+      "sourceHash": "3343abbf8f05c02f71a19e8a9991ae54200f150122e4b253f94bbc6a1a11e175",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_7d8af7eae3dd65f1834b0825e335d7e0fe96510286ab263ce54ba4b95a1a3512"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[],\\\"node_id\\\":\\\"n1\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":17,\"line\":16},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0010-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":16},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_CLOSED:{\\\"node_id\\\":\\\"n1\\\"}\",\"endPos\":{\"column\":17,\"line\":16},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0010-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":16},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n1\",\"endPos\":{\"column\":17,\"line\":16},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0010-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":16},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 2842,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[],\"node_id\":\"n1\",\"version\":1}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0010-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 16
+          },
+          "end": {
+            "column": 17,
+            "line": 16
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_CLOSED:{\"node_id\":\"n1\"}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0010-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 16
+          },
+          "end": {
+            "column": 17,
+            "line": 16
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n1",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0010-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 16
+          },
+          "end": {
+            "column": 17,
+            "line": 16
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [],
+          "node_id": "n1",
+          "version": 1
+        }
+      ],
+      "closed": [
+        {
+          "node_id": "n1"
+        }
+      ],
+      "audits": [],
+      "unparsed": [],
+      "sequence": 10,
+      "kind": "candidate",
+      "nodeId": "n1",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0010-candidate.lean",
+      "sourceHash": "1d29c45255a266bf37000cefb9e9b95408c84d5425bd3be9d6511bfa7154f672",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_d5a96a7558d0f68bbb8bb2f4f15618cefd3a9adab154cffc9c2dcf4ea9a95558"
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_153\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (n : Real),\\\\n  Eq.{1} n (1 / 3) →\\\\n    Eq.{1}\\\\n      (HAdd.hAdd.{0, 0, 0}\\\\n        (HAdd.hAdd.{0, 0, 0}\\\\n          (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\\\\n          (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\\\\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n)))\\\\n      3702\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":17},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0011-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":17},\"severity\":\"information\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 2739,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_153\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (n : Real),\\n  Eq.{1} n (1 / 3) →\\n    Eq.{1}\\n      (HAdd.hAdd.{0, 0, 0}\\n        (HAdd.hAdd.{0, 0, 0}\\n          (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\\n          (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n)))\\n      3702\",\"universe_parameters\":[],\"version\":1}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0011-final.lean",
+          "start": {
+            "column": 0,
+            "line": 17
+          },
+          "end": {
+            "column": 28,
+            "line": 17
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_153",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (n : Real),\n  Eq.{1} n (1 / 3) →\n    Eq.{1}\n      (HAdd.hAdd.{0, 0, 0}\n        (HAdd.hAdd.{0, 0, 0}\n          (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\n          (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n)))\n      3702",
+          "universe_parameters": [],
+          "version": 1
+        }
+      ],
+      "unparsed": [],
+      "sequence": 11,
+      "kind": "final",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0011-final.lean",
+      "sourceHash": "48d443f773cdf7f2ace8b22a72369e4842ef7527e0d5187e0ab476610ff13eb4",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_cfce4e8ea3f12af839689624f057a7d3861d31abec069c298b6feff7a711fce0"
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_153\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (n : Real),\\\\n  Eq.{1} n (1 / 3) →\\\\n    Eq.{1}\\\\n      (HAdd.hAdd.{0, 0, 0}\\\\n        (HAdd.hAdd.{0, 0, 0}\\\\n          (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\\\\n          (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\\\\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n)))\\\\n      3702\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":17},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0012-recheck.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":17},\"severity\":\"information\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 2952,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_153\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (n : Real),\\n  Eq.{1} n (1 / 3) →\\n    Eq.{1}\\n      (HAdd.hAdd.{0, 0, 0}\\n        (HAdd.hAdd.{0, 0, 0}\\n          (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\\n          (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n)))\\n      3702\",\"universe_parameters\":[],\"version\":1}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0012-recheck.lean",
+          "start": {
+            "column": 0,
+            "line": 17
+          },
+          "end": {
+            "column": 28,
+            "line": 17
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_153",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (n : Real),\n  Eq.{1} n (1 / 3) →\n    Eq.{1}\n      (HAdd.hAdd.{0, 0, 0}\n        (HAdd.hAdd.{0, 0, 0}\n          (HAdd.hAdd.{0, 0, 0} (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10 n)) (Int.floor.{0} (HMul.hMul.{0, 0, 0} 100 n)))\n          (Int.floor.{0} (HMul.hMul.{0, 0, 0} 1000 n)))\n        (Int.floor.{0} (HMul.hMul.{0, 0, 0} 10000 n)))\n      3702",
+          "universe_parameters": [],
+          "version": 1
+        }
+      ],
+      "unparsed": [],
+      "sequence": 12,
+      "kind": "recheck",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0012-recheck.lean",
+      "sourceHash": "48d443f773cdf7f2ace8b22a72369e4842ef7527e0d5187e0ab476610ff13eb4",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_6e35b50198165a7f1f72f079cdede0218562b977135a2ee366377634341e991d"
+    }
+  ],
+  "artifactDir": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153"
+}

@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"omega could not prove the goal:\\na possible counterexample may satisfy the constraints\\n  0 ≤ a ≤ 574\\nwhere\\n a := ↑x\",\"endPos\":{\"column\":15,\"line\":21},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0040-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":10,\"line\":21},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2792,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  0 ≤ a ≤ 574\nwhere\n a := ↑x",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0040-candidate.lean",
+      "start": {
+        "column": 10,
+        "line": 21
+      },
+      "end": {
+        "column": 15,
+        "line": 21
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 40,
+  "kind": "candidate",
+  "nodeId": "n5",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0040-candidate.lean",
+  "sourceHash": "5d41467fd533a2ffa35a720b1cdfc1ed1d1e5d6618af04294d5b6bbfe29160d6",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_6b7a2b330bb1d6c63e66ca5e686e50a32b8a362e0e356d53ff776a08873ff9da"
+}

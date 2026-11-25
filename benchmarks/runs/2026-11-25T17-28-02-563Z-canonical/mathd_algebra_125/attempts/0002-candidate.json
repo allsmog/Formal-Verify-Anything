@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\nx y : ℕ\\nh₀ : 0 < x ∧ 0 < y\\nh₁ : 5 * x = y\\nh₂ : ↑x - 3 + (↑y - 3) = 30\\n⊢ x = 6\",\"endPos\":{\"column\":12,\"line\":15},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_125/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":15},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2770,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\nx y : ℕ\nh₀ : 0 < x ∧ 0 < y\nh₁ : 5 * x = y\nh₂ : ↑x - 3 + (↑y - 3) = 30\n⊢ x = 6",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_125/attempts/0002-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 15
+      },
+      "end": {
+        "column": 12,
+        "line": 15
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 2,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_125/attempts/0002-candidate.lean",
+  "sourceHash": "38f9c752c6685d6890a8c88cd5a385a4845db105624808aeb94dc27d8bd5cb7c",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_2a31269bfb1b50640a91e40c0c8a1377c306ba44b406b259703f3add96726a47"
+}

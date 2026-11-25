@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  m + b\\nis not definitionally equal to the right-hand side\\n  5\\n\\nm b : ℝ\\nh₀ : m * 7 + b = -1\\nh₁ : m * -1 + b = 7\\n⊢ m + b = 5\",\"endPos\":{\"column\":5,\"line\":14},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_142/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":14},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2805,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  m + b\nis not definitionally equal to the right-hand side\n  5\n\nm b : ℝ\nh₀ : m * 7 + b = -1\nh₁ : m * -1 + b = 7\n⊢ m + b = 5",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_142/attempts/0003-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 14
+      },
+      "end": {
+        "column": 5,
+        "line": 14
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 3,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_142/attempts/0003-candidate.lean",
+  "sourceHash": "84e87b1dded03cf1588d2b906b73e1e34e5e8f1695db73fb51715059268a746d",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_392b90ef33de1c89fb128dd433baca2a5088a99b2d394fc43be24ae272348a6f"
+}

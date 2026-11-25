@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: Expected the goal to be a binary relation\\n\\nHint: Reflexivity tactics can only be used on goals of the form `x ~ x` or `R x x`\\n\\ncase mpr\\nP Q : Prop\\na✝ : ¬P ∧ ¬Q\\n⊢ ¬(P ∨ Q)\",\"endPos\":{\"column\":9,\"line\":22},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/attempts/0019-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":22},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2735,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: Expected the goal to be a binary relation\n\nHint: Reflexivity tactics can only be used on goals of the form `x ~ x` or `R x x`\n\ncase mpr\nP Q : Prop\na✝ : ¬P ∧ ¬Q\n⊢ ¬(P ∨ Q)",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/attempts/0019-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 22
+      },
+      "end": {
+        "column": 9,
+        "line": 22
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 19,
+  "kind": "candidate",
+  "nodeId": "n6",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/de_morgan_not_or/attempts/0019-candidate.lean",
+  "sourceHash": "1c0c2fb5b9272dca60a88327930d2bb586550fbc76eb0bcd8ccbc1a04b555f56",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_2922580470bdd3e1f0ae870b41ed1dba88c5e89eb6878c714873c2f9e9a496aa"
+}

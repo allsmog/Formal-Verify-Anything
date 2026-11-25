@@ -1,0 +1,128 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.862\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.863\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"b\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.862\\\",\\\"_uniq.863\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.864\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₁\\\",\\\"type\\\":\\\"Eq.{1} (HMul.hMul.{0, 0, 0} a b) 180\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.862\\\",\\\"_uniq.863\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.865\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₂\\\",\\\"type\\\":\\\"Eq.{1} (HMul.hMul.{0, 0, 0} 2 (HAdd.hAdd.{0, 0, 0} a b)) 54\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.866\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"a b : Real\\\\nh₁ : Eq.{1} (HMul.hMul.{0, 0, 0} a b) 180\\\\nh₂ : Eq.{1} (HMul.hMul.{0, 0, 0} 2 (HAdd.hAdd.{0, 0, 0} a b)) 54\\\\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 2)) 369\\\",\\\"target\\\":\\\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 2)) 369\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 2)\\\",\\\"369\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":14},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_141/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":14},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":16,\"line\":14},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_141/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":14},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3070,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.862\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"a\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.863\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"b\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.862\",\"_uniq.863\"],\"has_metavariables\":false,\"id\":\"_uniq.864\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₁\",\"type\":\"Eq.{1} (HMul.hMul.{0, 0, 0} a b) 180\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.862\",\"_uniq.863\"],\"has_metavariables\":false,\"id\":\"_uniq.865\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₂\",\"type\":\"Eq.{1} (HMul.hMul.{0, 0, 0} 2 (HAdd.hAdd.{0, 0, 0} a b)) 54\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.866\",\"omitted_implementation_details\":1,\"pretty\":\"a b : Real\\nh₁ : Eq.{1} (HMul.hMul.{0, 0, 0} a b) 180\\nh₂ : Eq.{1} (HMul.hMul.{0, 0, 0} 2 (HAdd.hAdd.{0, 0, 0} a b)) 54\\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 2)) 369\",\"target\":\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 2)) 369\",\"targetArgs\":[\"Real\",\"HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 2)\",\"369\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_141/attempts/0001-state.lean",
+      "start": {
+        "column": 2,
+        "line": 14
+      },
+      "end": {
+        "column": 16,
+        "line": 14
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n0",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_141/attempts/0001-state.lean",
+      "start": {
+        "column": 2,
+        "line": 14
+      },
+      "end": {
+        "column": 16,
+        "line": 14
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.862",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "a",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.863",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "b",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.862",
+                "_uniq.863"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.864",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₁",
+              "type": "Eq.{1} (HMul.hMul.{0, 0, 0} a b) 180",
+              "typeHead": "Eq",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.862",
+                "_uniq.863"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.865",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₂",
+              "type": "Eq.{1} (HMul.hMul.{0, 0, 0} 2 (HAdd.hAdd.{0, 0, 0} a b)) 54",
+              "typeHead": "Eq",
+              "value": null
+            }
+          ],
+          "id": "_uniq.866",
+          "omitted_implementation_details": 1,
+          "pretty": "a b : Real\nh₁ : Eq.{1} (HMul.hMul.{0, 0, 0} a b) 180\nh₂ : Eq.{1} (HMul.hMul.{0, 0, 0} 2 (HAdd.hAdd.{0, 0, 0} a b)) 54\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 2)) 369",
+          "target": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 2)) 369",
+          "targetArgs": [
+            "Real",
+            "HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 2)",
+            "369"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n0",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 1,
+  "kind": "state",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_141/attempts/0001-state.lean",
+  "sourceHash": "f9be125b05428828f93fc071f37b7d9e43d36876253adb8ebb4cac69d9956328",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_1da77f43d9873ac094ed4523cabd69e39fd21069c7fae0c75e88d08967bfeb10"
+}

@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  ⌊10 * n⌋ + ⌊100 * n⌋ + ⌊1000 * n⌋ + ⌊10000 * n⌋\\nis not definitionally equal to the right-hand side\\n  3702\\n\\nn : ℝ\\nh₀ : n = 1 / 3\\n⊢ ⌊10 * n⌋ + ⌊100 * n⌋ + ⌊1000 * n⌋ + ⌊10000 * n⌋ = 3702\",\"endPos\":{\"column\":5,\"line\":13},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":13},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2963,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  ⌊10 * n⌋ + ⌊100 * n⌋ + ⌊1000 * n⌋ + ⌊10000 * n⌋\nis not definitionally equal to the right-hand side\n  3702\n\nn : ℝ\nh₀ : n = 1 / 3\n⊢ ⌊10 * n⌋ + ⌊100 * n⌋ + ⌊1000 * n⌋ + ⌊10000 * n⌋ = 3702",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0003-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 13
+      },
+      "end": {
+        "column": 5,
+        "line": 13
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 3,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_153/attempts/0003-candidate.lean",
+  "sourceHash": "9f4a5a0119d49f201662696e180916bf07c08bc7c7b65476d2f06a5c46661b5d",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_fb7dc19a321f41bc5dd24f4ff0575feb195428431401cd14d8fd5fc4b2723603"
+}

@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\nα : Type\\nxs : List α\\n⊢ xs.reverse.reverse = xs\",\"endPos\":{\"column\":12,\"line\":10},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":10},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2808,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\nα : Type\nxs : List α\n⊢ xs.reverse.reverse = xs",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/attempts/0002-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 10
+      },
+      "end": {
+        "column": 12,
+        "line": 10
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 2,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/attempts/0002-candidate.lean",
+  "sourceHash": "58ff1d3701c0dd57253559b61abf5945a4b2717a90211021a95a3974597ff6a6",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_dd39071ff4d75a4efaee3f60c92a23c2bf94d0ec198e376594ad808b7a911565"
+}

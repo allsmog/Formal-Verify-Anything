@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\nP Q R : Prop\\nhPQ : P → Q\\nhQR : Q → R\\na✝ : P\\n⊢ R\",\"endPos\":{\"column\":14,\"line\":12},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/implication_composition/attempts/0004-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":12},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2715,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\nP Q R : Prop\nhPQ : P → Q\nhQR : Q → R\na✝ : P\n⊢ R",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/implication_composition/attempts/0004-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 12
+      },
+      "end": {
+        "column": 14,
+        "line": 12
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 4,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/implication_composition/attempts/0004-candidate.lean",
+  "sourceHash": "e7508cc48eecaf3c43653f4999411c25cf8307720f74c62755b5d7c84518133a",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_1f73aa58d5659fb663182008cb5466dd56bed4b047717fcdced32b4599296aa4"
+}

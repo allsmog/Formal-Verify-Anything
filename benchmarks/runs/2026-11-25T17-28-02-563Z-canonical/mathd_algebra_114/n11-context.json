@@ -1,0 +1,31 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [],
+    "id": "_uniq.3908",
+    "omitted_implementation_details": 1,
+    "pretty": "⊢ Eq.{1} (HPow.hPow.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 64 (Inv.inv.{0} 3)) 16) (Inv.inv.{0} 3)) 4",
+    "target": "Eq.{1} (HPow.hPow.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 64 (Inv.inv.{0} 3)) 16) (Inv.inv.{0} 3)) 4",
+    "targetArgs": [
+      "Real",
+      "HPow.hPow.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 64 (Inv.inv.{0} 3)) 16) (Inv.inv.{0} 3)",
+      "4"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Analysis.SpecialFunctions.Pow.Real"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 17,
+    "maxDepth": 8,
+    "depth": 6,
+    "modelTokensRemaining": 0,
+    "remainingMs": 107041
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.260",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "x",
+        "type": "Nat",
+        "typeHead": "Nat",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.260"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.742",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (↑x) (HMul.hMul.{0, 0, 0} (1 / 25) ↑x)) 598",
+        "typeHead": "Eq",
+        "value": null
+      }
+    ],
+    "id": "_uniq.743",
+    "omitted_implementation_details": 1,
+    "pretty": "x : Nat\nh₀ : Eq.{1} (HAdd.hAdd.{0, 0, 0} (↑x) (HMul.hMul.{0, 0, 0} (1 / 25) ↑x)) 598\n⊢ Eq.{1} x 575",
+    "target": "Eq.{1} x 575",
+    "targetArgs": [
+      "Nat",
+      "x",
+      "575"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Data.Real.Basic"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 55,
+    "maxDepth": 8,
+    "depth": 1,
+    "modelTokensRemaining": 0,
+    "remainingMs": 280297
+  }
+}

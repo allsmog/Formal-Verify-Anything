@@ -1,0 +1,52 @@
+{
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_139\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (s : Real → Real → Real),\\\\n  (∀ (x y : Real),\\\\n      Ne.{1} x 0 →\\\\n        Ne.{1} y 0 →\\\\n          Eq.{1} (s x y)\\\\n            (HDiv.hDiv.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HDiv.hDiv.{0, 0, 0} 1 y) (HDiv.hDiv.{0, 0, 0} 1 x))\\\\n              (HSub.hSub.{0, 0, 0} x y))) →\\\\n    Eq.{1} (s 3 11) (1 / 33)\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":17},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_139/attempts/0012-recheck.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":17},\"severity\":\"information\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3247,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_139\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (s : Real → Real → Real),\\n  (∀ (x y : Real),\\n      Ne.{1} x 0 →\\n        Ne.{1} y 0 →\\n          Eq.{1} (s x y)\\n            (HDiv.hDiv.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HDiv.hDiv.{0, 0, 0} 1 y) (HDiv.hDiv.{0, 0, 0} 1 x))\\n              (HSub.hSub.{0, 0, 0} x y))) →\\n    Eq.{1} (s 3 11) (1 / 33)\",\"universe_parameters\":[],\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_139/attempts/0012-recheck.lean",
+      "start": {
+        "column": 0,
+        "line": 17
+      },
+      "end": {
+        "column": 28,
+        "line": 17
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "mathd_algebra_139",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (s : Real → Real → Real),\n  (∀ (x y : Real),\n      Ne.{1} x 0 →\n        Ne.{1} y 0 →\n          Eq.{1} (s x y)\n            (HDiv.hDiv.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HDiv.hDiv.{0, 0, 0} 1 y) (HDiv.hDiv.{0, 0, 0} 1 x))\n              (HSub.hSub.{0, 0, 0} x y))) →\n    Eq.{1} (s 3 11) (1 / 33)",
+      "universe_parameters": [],
+      "version": 1
+    }
+  ],
+  "unparsed": [],
+  "sequence": 12,
+  "kind": "recheck",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_139/attempts/0012-recheck.lean",
+  "sourceHash": "c2735aa91cc4f67a729fee37bcc59398764787ab492dcee3888a13bf1eb7cf77",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_6aec9d3e8b229bce3a82f1fee8b2dde0d6793ed9e00ec51b2561ddb16ae84c8d"
+}

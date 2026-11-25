@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  (16 * 64 ^ 3⁻¹) ^ 3⁻¹\\nis not definitionally equal to the right-hand side\\n  4\\n\\na : ℝ\\nh₀ : a = 8\\n⊢ (16 * 64 ^ 3⁻¹) ^ 3⁻¹ = 4\",\"endPos\":{\"column\":11,\"line\":19},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_114/attempts/0017-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":19},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3566,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  (16 * 64 ^ 3⁻¹) ^ 3⁻¹\nis not definitionally equal to the right-hand side\n  4\n\na : ℝ\nh₀ : a = 8\n⊢ (16 * 64 ^ 3⁻¹) ^ 3⁻¹ = 4",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_114/attempts/0017-candidate.lean",
+      "start": {
+        "column": 8,
+        "line": 19
+      },
+      "end": {
+        "column": 11,
+        "line": 19
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 17,
+  "kind": "candidate",
+  "nodeId": "n3",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_114/attempts/0017-candidate.lean",
+  "sourceHash": "3edd538f00f4d15b9b15ffbb19405ec5a2f8b33ac5221864e5aad4e8ac31d19f",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_7d85fac5f53cf6e700c770186bb5c788926ed9798fe70ecbd3b68f547052633a"
+}

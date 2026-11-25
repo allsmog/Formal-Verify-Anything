@@ -1,0 +1,48 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"unknown tactic\",\"endPos\":null,\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0036-candidate.lean\",\"isSilent\":false,\"keepFullRange\":true,\"kind\":\"[anonymous]\",\"pos\":{\"column\":7,\"line\":16},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"unsolved goals\\nx : ℝ\\n⊢ 49 ≤ x ^ 2 - 14 * x + 98\",\"endPos\":{\"column\":16,\"line\":16},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0036-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"Tactic.unsolvedGoals\",\"pos\":{\"column\":4,\"line\":15},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2805,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "unknown tactic",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0036-candidate.lean",
+      "start": {
+        "column": 7,
+        "line": 16
+      },
+      "end": null,
+      "category": "unknown_tactic_or_identifier"
+    },
+    {
+      "severity": "error",
+      "message": "unsolved goals\nx : ℝ\n⊢ 49 ≤ x ^ 2 - 14 * x + 98",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0036-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 15
+      },
+      "end": {
+        "column": 16,
+        "line": 16
+      },
+      "category": "unsolved_goals"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 36,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0036-candidate.lean",
+  "sourceHash": "9ece200fc054e5c3cf20a9e4a259280b8c76a9abd9b6a34023eb82633a89930a",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_a48b219d0ac5f8576f220ba526227642b0a51efd9992a4c5a3f0ee2f0660736d"
+}

@@ -1,0 +1,2422 @@
+{
+  "id": "conjunction_commutation",
+  "tier": 1,
+  "status": "SOLVED",
+  "proofFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/conjunction_commutation.lean",
+  "engineVersion": "fva-search-v2",
+  "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+  "statementHash": "4f53b2ed9d85a29cdc88b17e958e23913f0e81c5ef78431e9c3cbbbf1649ee99",
+  "provenance": {
+    "dataset": "Foundational sanity suite",
+    "origin": "Constructed for this project from standard logic, natural-number, and list identities.",
+    "statementSha256": "4f53b2ed9d85a29cdc88b17e958e23913f0e81c5ef78431e9c3cbbbf1649ee99",
+    "originalImports": [
+      "Mathlib"
+    ],
+    "originalOpens": []
+  },
+  "metrics": {
+    "compilerCalls": 12,
+    "steps": 5,
+    "maxDepth": 2,
+    "elapsedMs": 36739,
+    "firstCandidateSolved": false,
+    "modelTokens": 0,
+    "modelTokensKnown": 0,
+    "modelUsageComplete": true,
+    "proposerCalls": 5,
+    "finalCandidates": 1
+  },
+  "budget": {
+    "maxCompilerCalls": 64,
+    "maxSteps": 64,
+    "maxProposalRounds": 3,
+    "maxDepth": 8,
+    "callTimeoutMs": 30000,
+    "theoremTimeoutMs": 300000,
+    "heartbeats": 200000,
+    "maxModelTokens": 0
+  },
+  "policy": "deterministic-v2",
+  "failure": null,
+  "exploration": {
+    "backend": "fresh-lean-cli",
+    "cleanup": {
+      "ownership": "none",
+      "status": "not_applicable"
+    }
+  },
+  "verification": {
+    "statementHash": "4f53b2ed9d85a29cdc88b17e958e23913f0e81c5ef78431e9c3cbbbf1649ee99",
+    "sourceHash": "d88e39351540f4950e107a59e1cc98183f67d9df1f897f4645da22ef15ff2818",
+    "zeroPlaceholders": true,
+    "exitCode": 0,
+    "audit": {
+      "axioms": [],
+      "declaration": "conjunction_commutation",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (P Q : Prop), And P Q → And Q P",
+      "universe_parameters": [],
+      "version": 1
+    },
+    "compileEvidence": [
+      "ev_3b3bd2e9738873146f2511ebde739d9fbfbd0e0b795ab3429039a92ad3947c28",
+      "ev_f650fcc1d183f485f48f3bb00eb37bf87ecc60535a68b7e45e9d674b7b841b55"
+    ],
+    "standaloneRecheck": true,
+    "policy": "lean-kernel-v2-unused-variable-lint",
+    "warnings": []
+  },
+  "tree": {
+    "finalPlan": {
+      "id": "n0",
+      "depth": 0,
+      "kind": "tactic",
+      "children": [
+        {
+          "id": "n1",
+          "depth": 1,
+          "kind": "tactic",
+          "children": [
+            {
+              "id": "n3",
+              "depth": 2,
+              "kind": "tactic",
+              "children": [],
+              "tactic": "assumption"
+            }
+          ],
+          "tactic": "cases h"
+        },
+        {
+          "id": "n2",
+          "depth": 1,
+          "kind": "tactic",
+          "children": [
+            {
+              "id": "n4",
+              "depth": 2,
+              "kind": "tactic",
+              "children": [],
+              "tactic": "assumption"
+            }
+          ],
+          "tactic": "cases h"
+        }
+      ],
+      "tactic": "constructor"
+    },
+    "nodes": [
+      {
+        "id": "n0",
+        "visit": 0,
+        "depth": 0,
+        "stateHash": "9f0bbccf998ec7f83067c3c35fae587526ff7e213e9b9bc44579908818f968e7",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.10",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "P",
+              "type": "Prop",
+              "typeHead": "sort",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.11",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "Q",
+              "type": "Prop",
+              "typeHead": "sort",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.10",
+                "_uniq.11"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.12",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h",
+              "type": "And P Q",
+              "typeHead": "And",
+              "value": null
+            }
+          ],
+          "id": "_uniq.13",
+          "omitted_implementation_details": 1,
+          "pretty": "P Q : Prop\nh : And P Q\n⊢ And Q P",
+          "target": "And Q P",
+          "targetArgs": [
+            "Q",
+            "P"
+          ],
+          "targetHead": "And",
+          "universe_parameters": []
+        },
+        "status": "VERIFIED_IN_FINAL_PROOF",
+        "evidenceId": "ev_d6196c52b4ca04dc118557b354297d5abaaada0220322182796aa319f9d74e92"
+      },
+      {
+        "id": "n1",
+        "visit": 1,
+        "depth": 1,
+        "stateHash": "bd3ebc87d5d007e7ab30a42d4342cf9db72147aef7049b718d9f47c371ed58f0",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.10",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "P",
+              "type": "Prop",
+              "typeHead": "sort",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.11",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "Q",
+              "type": "Prop",
+              "typeHead": "sort",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.10",
+                "_uniq.11"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.12",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h",
+              "type": "And P Q",
+              "typeHead": "And",
+              "value": null
+            }
+          ],
+          "id": "_uniq.20",
+          "omitted_implementation_details": 1,
+          "pretty": "case left\nP Q : Prop\nh : And P Q\n⊢ Q",
+          "target": "Q",
+          "targetArgs": [],
+          "targetHead": "fvar",
+          "universe_parameters": []
+        },
+        "status": "VERIFIED_IN_FINAL_PROOF",
+        "evidenceId": "ev_27f402f0038d0faa633644ea3bebf2c8f0e425b7565e34f100133c51518c63b6"
+      },
+      {
+        "id": "n3",
+        "visit": 2,
+        "depth": 2,
+        "stateHash": "0154139e21dc324d7496caecb5420f3f5fb2c8fcb3cec5a55783dd481e50d2c1",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.10",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "P",
+              "type": "Prop",
+              "typeHead": "sort",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.11",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "Q",
+              "type": "Prop",
+              "typeHead": "sort",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.10"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.46",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "left._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0005-state.1909278726._hygCtx._hyg.24",
+              "type": "P",
+              "typeHead": "fvar",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.11"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.47",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "right._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0005-state.1909278726._hygCtx._hyg.25",
+              "type": "Q",
+              "typeHead": "fvar",
+              "value": null
+            }
+          ],
+          "id": "_uniq.59",
+          "omitted_implementation_details": 1,
+          "pretty": "case left.intro\nP Q : Prop\nleft✝ : P\nright✝ : Q\n⊢ Q",
+          "target": "Q",
+          "targetArgs": [],
+          "targetHead": "fvar",
+          "universe_parameters": []
+        },
+        "status": "VERIFIED_IN_FINAL_PROOF",
+        "evidenceId": "ev_fb9c0e62fc87a15dbd29a69b5e70702de45ee0a5ebc9dd712707894a33e041ee"
+      },
+      {
+        "id": "n2",
+        "visit": 3,
+        "depth": 1,
+        "stateHash": "b51308076dc01c4da517e38c9c57005d8fe64f4eb2db1077ce3c75bf92b3b3bf",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.10",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "P",
+              "type": "Prop",
+              "typeHead": "sort",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.11",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "Q",
+              "type": "Prop",
+              "typeHead": "sort",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.10",
+                "_uniq.11"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.12",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h",
+              "type": "And P Q",
+              "typeHead": "And",
+              "value": null
+            }
+          ],
+          "id": "_uniq.21",
+          "omitted_implementation_details": 1,
+          "pretty": "case right\nP Q : Prop\nh : And P Q\n⊢ P",
+          "target": "P",
+          "targetArgs": [],
+          "targetHead": "fvar",
+          "universe_parameters": []
+        },
+        "status": "VERIFIED_IN_FINAL_PROOF",
+        "evidenceId": "ev_8983d0fb2d606b3d0eeaf163a800ee2cda53c0e267d15f83907f82e11d89c6db"
+      },
+      {
+        "id": "n4",
+        "visit": 4,
+        "depth": 2,
+        "stateHash": "d6ba300853e6b570d70196470d364f5ff566bc99b33151a32005bd657aeae90f",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.10",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "P",
+              "type": "Prop",
+              "typeHead": "sort",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.11",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "Q",
+              "type": "Prop",
+              "typeHead": "sort",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.10"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.84",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "left._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0009-state.1909278726._hygCtx._hyg.37",
+              "type": "P",
+              "typeHead": "fvar",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.11"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.85",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "right._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0009-state.1909278726._hygCtx._hyg.38",
+              "type": "Q",
+              "typeHead": "fvar",
+              "value": null
+            }
+          ],
+          "id": "_uniq.97",
+          "omitted_implementation_details": 1,
+          "pretty": "case right.intro\nP Q : Prop\nleft✝ : P\nright✝ : Q\n⊢ P",
+          "target": "P",
+          "targetArgs": [],
+          "targetHead": "fvar",
+          "universe_parameters": []
+        },
+        "status": "VERIFIED_IN_FINAL_PROOF",
+        "evidenceId": "ev_d7d8b678400daedbc75db3573aadbd43e71f77ff9e107ed02cad6a9a36d0191d"
+      }
+    ],
+    "branches": [
+      {
+        "parent": "n0",
+        "visit": 0,
+        "stateHash": "9f0bbccf998ec7f83067c3c35fae587526ff7e213e9b9bc44579908818f968e7",
+        "proposal": {
+          "tactic": "constructor"
+        },
+        "beforeHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a",
+        "status": "RETAINED",
+        "children": [
+          "n1",
+          "n2"
+        ],
+        "evidenceId": "ev_3c12483d77f9efd3583df970615e263107b9ef96e5ea3b5009476f8baed07056"
+      },
+      {
+        "parent": "n1",
+        "visit": 1,
+        "stateHash": "bd3ebc87d5d007e7ab30a42d4342cf9db72147aef7049b718d9f47c371ed58f0",
+        "proposal": {
+          "tactic": "cases h"
+        },
+        "beforeHash": "13993114ab4aeb08d2a3712140fe2cddaabca6d5cdefb64bd0d8b4fb649ea365",
+        "status": "RETAINED",
+        "children": [
+          "n3"
+        ],
+        "evidenceId": "ev_bdad1dacfc69cbc2e7007b03e2e251d0ff00afe07c8d5cc1de81a4311e5a10c7"
+      },
+      {
+        "parent": "n3",
+        "visit": 2,
+        "stateHash": "0154139e21dc324d7496caecb5420f3f5fb2c8fcb3cec5a55783dd481e50d2c1",
+        "proposal": {
+          "tactic": "assumption"
+        },
+        "beforeHash": "84157710fb9895325362ac0850019091f75fdb5aefec7da9f08e9fd7cccb8346",
+        "status": "RETAINED",
+        "children": [],
+        "evidenceId": "ev_005d3782c73a535fbcd47d83e9cfc2a3efdb5d8dddbd3ba1000d714df801b177"
+      },
+      {
+        "parent": "n2",
+        "visit": 3,
+        "stateHash": "b51308076dc01c4da517e38c9c57005d8fe64f4eb2db1077ce3c75bf92b3b3bf",
+        "proposal": {
+          "tactic": "cases h"
+        },
+        "beforeHash": "57bb8bb423ccda821810c89332d85c932bfa3b90104fc7303a5d108d71919126",
+        "status": "RETAINED",
+        "children": [
+          "n4"
+        ],
+        "evidenceId": "ev_72dd3815b3ebd8dbb4a0511c7d6ebc1a1e13354a010786ee36ee27f97230884c"
+      },
+      {
+        "parent": "n4",
+        "visit": 4,
+        "stateHash": "d6ba300853e6b570d70196470d364f5ff566bc99b33151a32005bd657aeae90f",
+        "proposal": {
+          "tactic": "assumption"
+        },
+        "beforeHash": "a75652e57e3623490c743c4ad2b784d1cebe698d8c4b9024093bb3aec62e7c84",
+        "status": "RETAINED",
+        "children": [],
+        "evidenceId": "ev_3b68132ff13ec3c3a8e6cd58f341cc83418172d10098d21be1bd81607cb7b7ea"
+      }
+    ]
+  },
+  "finalCandidates": [
+    {
+      "id": "c0",
+      "planHash": "08b9b8fcdb5cfcd5dc2feff05a7377c483ddccb687cf83ba6c77b1f1c164ef15",
+      "status": "ACCEPTED",
+      "policy": "lean-kernel-v2-unused-variable-lint",
+      "evidenceIds": [
+        "ev_3b3bd2e9738873146f2511ebde739d9fbfbd0e0b795ab3429039a92ad3947c28",
+        "ev_f650fcc1d183f485f48f3bb00eb37bf87ecc60535a68b7e45e9d674b7b841b55"
+      ],
+      "sourceHash": "d88e39351540f4950e107a59e1cc98183f67d9df1f897f4645da22ef15ff2818",
+      "checks": [
+        {
+          "kind": "final",
+          "evidenceId": "ev_3b3bd2e9738873146f2511ebde739d9fbfbd0e0b795ab3429039a92ad3947c28",
+          "accepted": true,
+          "reason": null,
+          "audit": {
+            "axioms": [],
+            "declaration": "conjunction_commutation",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (P Q : Prop), And P Q → And Q P",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": []
+        },
+        {
+          "kind": "recheck",
+          "evidenceId": "ev_f650fcc1d183f485f48f3bb00eb37bf87ecc60535a68b7e45e9d674b7b841b55",
+          "accepted": true,
+          "reason": null,
+          "audit": {
+            "axioms": [],
+            "declaration": "conjunction_commutation",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (P Q : Prop), And P Q → And Q P",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": []
+        }
+      ],
+      "reason": null
+    }
+  ],
+  "proposerCalls": [
+    {
+      "id": "p0",
+      "nodeId": "n0",
+      "stateHash": "9f0bbccf998ec7f83067c3c35fae587526ff7e213e9b9bc44579908818f968e7",
+      "round": 0,
+      "requestDigest": "4849cef972a7416fc48dda457617d3f4aaf42aa0a8d6ff026a9553629f76e26f",
+      "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/proposals/0001-context.json",
+      "modelTokens": 0,
+      "usageKnown": true,
+      "tokenBudgetExceeded": false,
+      "policy": "deterministic-v2",
+      "proposals": [
+        {
+          "tactic": "constructor"
+        },
+        {
+          "tactic": "cases h"
+        },
+        {
+          "tactic": "assumption"
+        },
+        {
+          "tactic": "rfl"
+        },
+        {
+          "tactic": "simp_all"
+        },
+        {
+          "tactic": "omega"
+        },
+        {
+          "tactic": "norm_num at *"
+        },
+        {
+          "tactic": "ring"
+        },
+        {
+          "tactic": "linarith"
+        },
+        {
+          "tactic": "nlinarith"
+        },
+        {
+          "tactic": "positivity"
+        },
+        {
+          "tactic": "norm_cast at *"
+        },
+        {
+          "tactic": "field_simp at *"
+        },
+        {
+          "tactic": "ring_nf at *"
+        },
+        {
+          "tactic": "aesop"
+        }
+      ],
+      "status": "RETURNED",
+      "elapsedMs": 0,
+      "evidenceId": "ev_61cab113d57ba749a4b124f0d4cc89786f95f177f242596d8088184dd4de1f20"
+    },
+    {
+      "id": "p1",
+      "nodeId": "n1",
+      "stateHash": "bd3ebc87d5d007e7ab30a42d4342cf9db72147aef7049b718d9f47c371ed58f0",
+      "round": 0,
+      "requestDigest": "6bd70323837f3e28c54df790ee6e7679e0150c3282b755c26b56c513e2739abb",
+      "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/proposals/0002-context.json",
+      "modelTokens": 0,
+      "usageKnown": true,
+      "tokenBudgetExceeded": false,
+      "policy": "deterministic-v2",
+      "proposals": [
+        {
+          "tactic": "cases h"
+        },
+        {
+          "tactic": "assumption"
+        },
+        {
+          "tactic": "rfl"
+        },
+        {
+          "tactic": "simp_all"
+        },
+        {
+          "tactic": "omega"
+        },
+        {
+          "tactic": "norm_num at *"
+        },
+        {
+          "tactic": "ring"
+        },
+        {
+          "tactic": "linarith"
+        },
+        {
+          "tactic": "nlinarith"
+        },
+        {
+          "tactic": "positivity"
+        },
+        {
+          "tactic": "norm_cast at *"
+        },
+        {
+          "tactic": "field_simp at *"
+        },
+        {
+          "tactic": "ring_nf at *"
+        },
+        {
+          "tactic": "aesop"
+        }
+      ],
+      "status": "RETURNED",
+      "elapsedMs": 0,
+      "evidenceId": "ev_cec44ea8b8273bc20c596470e918d362ab04e2ea2166da842673997122519a1f"
+    },
+    {
+      "id": "p2",
+      "nodeId": "n3",
+      "stateHash": "0154139e21dc324d7496caecb5420f3f5fb2c8fcb3cec5a55783dd481e50d2c1",
+      "round": 0,
+      "requestDigest": "42aa530b2c1cb514b9afdb8b2c71800fffb5b6984f68c0df4349c97f3269bf4d",
+      "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/proposals/0003-context.json",
+      "modelTokens": 0,
+      "usageKnown": true,
+      "tokenBudgetExceeded": false,
+      "policy": "deterministic-v2",
+      "proposals": [
+        {
+          "tactic": "assumption"
+        },
+        {
+          "tactic": "rfl"
+        },
+        {
+          "tactic": "simp_all"
+        },
+        {
+          "tactic": "omega"
+        },
+        {
+          "tactic": "norm_num at *"
+        },
+        {
+          "tactic": "ring"
+        },
+        {
+          "tactic": "linarith"
+        },
+        {
+          "tactic": "nlinarith"
+        },
+        {
+          "tactic": "positivity"
+        },
+        {
+          "tactic": "norm_cast at *"
+        },
+        {
+          "tactic": "field_simp at *"
+        },
+        {
+          "tactic": "ring_nf at *"
+        },
+        {
+          "tactic": "aesop"
+        }
+      ],
+      "status": "RETURNED",
+      "elapsedMs": 0,
+      "evidenceId": "ev_7ba48b2d72d244ce18b2849f34d50808de42571f82c6a8bbabd4b46fd4d75760"
+    },
+    {
+      "id": "p3",
+      "nodeId": "n2",
+      "stateHash": "b51308076dc01c4da517e38c9c57005d8fe64f4eb2db1077ce3c75bf92b3b3bf",
+      "round": 0,
+      "requestDigest": "65f3816b827a0ab37ca34d344e4a75e77af947755703a675e5bb66f5d9436144",
+      "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/proposals/0004-context.json",
+      "modelTokens": 0,
+      "usageKnown": true,
+      "tokenBudgetExceeded": false,
+      "policy": "deterministic-v2",
+      "proposals": [
+        {
+          "tactic": "cases h"
+        },
+        {
+          "tactic": "assumption"
+        },
+        {
+          "tactic": "rfl"
+        },
+        {
+          "tactic": "simp_all"
+        },
+        {
+          "tactic": "omega"
+        },
+        {
+          "tactic": "norm_num at *"
+        },
+        {
+          "tactic": "ring"
+        },
+        {
+          "tactic": "linarith"
+        },
+        {
+          "tactic": "nlinarith"
+        },
+        {
+          "tactic": "positivity"
+        },
+        {
+          "tactic": "norm_cast at *"
+        },
+        {
+          "tactic": "field_simp at *"
+        },
+        {
+          "tactic": "ring_nf at *"
+        },
+        {
+          "tactic": "aesop"
+        }
+      ],
+      "status": "RETURNED",
+      "elapsedMs": 0,
+      "evidenceId": "ev_07c7702a211f70fc066050be13ea05219494add98eb622f8ee77e74588569b23"
+    },
+    {
+      "id": "p4",
+      "nodeId": "n4",
+      "stateHash": "d6ba300853e6b570d70196470d364f5ff566bc99b33151a32005bd657aeae90f",
+      "round": 0,
+      "requestDigest": "060d6f71820d51a9fea941be4a2ee1ccf18d18c78dbf82b853d1ec28ef64c6c0",
+      "contextFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/proposals/0005-context.json",
+      "modelTokens": 0,
+      "usageKnown": true,
+      "tokenBudgetExceeded": false,
+      "policy": "deterministic-v2",
+      "proposals": [
+        {
+          "tactic": "assumption"
+        },
+        {
+          "tactic": "rfl"
+        },
+        {
+          "tactic": "simp_all"
+        },
+        {
+          "tactic": "omega"
+        },
+        {
+          "tactic": "norm_num at *"
+        },
+        {
+          "tactic": "ring"
+        },
+        {
+          "tactic": "linarith"
+        },
+        {
+          "tactic": "nlinarith"
+        },
+        {
+          "tactic": "positivity"
+        },
+        {
+          "tactic": "norm_cast at *"
+        },
+        {
+          "tactic": "field_simp at *"
+        },
+        {
+          "tactic": "ring_nf at *"
+        },
+        {
+          "tactic": "aesop"
+        }
+      ],
+      "status": "RETURNED",
+      "elapsedMs": 0,
+      "evidenceId": "ev_fda24b373f54a765924cab968b2944d8b89614b51d6e1b6c73e99189d7c61bb6"
+    }
+  ],
+  "attempts": [
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.10\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"P\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.11\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"Q\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.10\\\",\\\"_uniq.11\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.12\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h\\\",\\\"type\\\":\\\"And P Q\\\",\\\"typeHead\\\":\\\"And\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.13\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"P Q : Prop\\\\nh : And P Q\\\\n⊢ And Q P\\\",\\\"target\\\":\\\"And Q P\\\",\\\"targetArgs\\\":[\\\"Q\\\",\\\"P\\\"],\\\"targetHead\\\":\\\"And\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":10},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":10},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":16,\"line\":10},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":10},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 3269,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.10\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"P\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.11\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"Q\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.10\",\"_uniq.11\"],\"has_metavariables\":false,\"id\":\"_uniq.12\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h\",\"type\":\"And P Q\",\"typeHead\":\"And\",\"value\":null}],\"id\":\"_uniq.13\",\"omitted_implementation_details\":1,\"pretty\":\"P Q : Prop\\nh : And P Q\\n⊢ And Q P\",\"target\":\"And Q P\",\"targetArgs\":[\"Q\",\"P\"],\"targetHead\":\"And\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 10
+          },
+          "end": {
+            "column": 16,
+            "line": 10
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 10
+          },
+          "end": {
+            "column": 16,
+            "line": 10
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.10",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "P",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.11",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "Q",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.10",
+                    "_uniq.11"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.12",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h",
+                  "type": "And P Q",
+                  "typeHead": "And",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.13",
+              "omitted_implementation_details": 1,
+              "pretty": "P Q : Prop\nh : And P Q\n⊢ And Q P",
+              "target": "And Q P",
+              "targetArgs": [
+                "Q",
+                "P"
+              ],
+              "targetHead": "And",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "sequence": 1,
+      "kind": "state",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0001-state.lean",
+      "sourceHash": "1a32c104ffe00a3313a1c3c775711652ec0433de031b3e44fdabb8ec9dc8715a",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_d6196c52b4ca04dc118557b354297d5abaaada0220322182796aa319f9d74e92"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.10\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"P\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.11\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"Q\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.10\\\",\\\"_uniq.11\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.12\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h\\\",\\\"type\\\":\\\"And P Q\\\",\\\"typeHead\\\":\\\"And\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.20\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case left\\\\nP Q : Prop\\\\nh : And P Q\\\\n⊢ Q\\\",\\\"target\\\":\\\"Q\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"fvar\\\",\\\"universe_parameters\\\":[]},{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.10\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"P\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.11\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"Q\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.10\\\",\\\"_uniq.11\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.12\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h\\\",\\\"type\\\":\\\"And P Q\\\",\\\"typeHead\\\":\\\"And\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.21\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case right\\\\nP Q : Prop\\\\nh : And P Q\\\\n⊢ P\\\",\\\"target\\\":\\\"P\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"fvar\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":15,\"line\":11},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":11},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":15,\"line\":11},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":11},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 2892,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.10\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"P\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.11\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"Q\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.10\",\"_uniq.11\"],\"has_metavariables\":false,\"id\":\"_uniq.12\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h\",\"type\":\"And P Q\",\"typeHead\":\"And\",\"value\":null}],\"id\":\"_uniq.20\",\"omitted_implementation_details\":1,\"pretty\":\"case left\\nP Q : Prop\\nh : And P Q\\n⊢ Q\",\"target\":\"Q\",\"targetArgs\":[],\"targetHead\":\"fvar\",\"universe_parameters\":[]},{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.10\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"P\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.11\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"Q\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.10\",\"_uniq.11\"],\"has_metavariables\":false,\"id\":\"_uniq.12\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h\",\"type\":\"And P Q\",\"typeHead\":\"And\",\"value\":null}],\"id\":\"_uniq.21\",\"omitted_implementation_details\":1,\"pretty\":\"case right\\nP Q : Prop\\nh : And P Q\\n⊢ P\",\"target\":\"P\",\"targetArgs\":[],\"targetHead\":\"fvar\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0002-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 11
+          },
+          "end": {
+            "column": 15,
+            "line": 11
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0002-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 11
+          },
+          "end": {
+            "column": 15,
+            "line": 11
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.10",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "P",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.11",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "Q",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.10",
+                    "_uniq.11"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.12",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h",
+                  "type": "And P Q",
+                  "typeHead": "And",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.20",
+              "omitted_implementation_details": 1,
+              "pretty": "case left\nP Q : Prop\nh : And P Q\n⊢ Q",
+              "target": "Q",
+              "targetArgs": [],
+              "targetHead": "fvar",
+              "universe_parameters": []
+            },
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.10",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "P",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.11",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "Q",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.10",
+                    "_uniq.11"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.12",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h",
+                  "type": "And P Q",
+                  "typeHead": "And",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.21",
+              "omitted_implementation_details": 1,
+              "pretty": "case right\nP Q : Prop\nh : And P Q\n⊢ P",
+              "target": "P",
+              "targetArgs": [],
+              "targetHead": "fvar",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "sequence": 2,
+      "kind": "candidate",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0002-candidate.lean",
+      "sourceHash": "a8ce59d2f31ff1aba3f3375e4160bd0781d0983cee650892b7cd4d921cbf6e0d",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_3c12483d77f9efd3583df970615e263107b9ef96e5ea3b5009476f8baed07056"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.10\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"P\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.11\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"Q\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.10\\\",\\\"_uniq.11\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.12\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h\\\",\\\"type\\\":\\\"And P Q\\\",\\\"typeHead\\\":\\\"And\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.20\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case left\\\\nP Q : Prop\\\\nh : And P Q\\\\n⊢ Q\\\",\\\"target\\\":\\\"Q\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"fvar\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n1\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":18,\"line\":12},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0003-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":12},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n1\",\"endPos\":{\"column\":18,\"line\":12},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0003-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":12},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.10\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"P\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.11\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"Q\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.10\\\",\\\"_uniq.11\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.12\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h\\\",\\\"type\\\":\\\"And P Q\\\",\\\"typeHead\\\":\\\"And\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.21\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case right\\\\nP Q : Prop\\\\nh : And P Q\\\\n⊢ P\\\",\\\"target\\\":\\\"P\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"fvar\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":18,\"line\":14},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0003-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":14},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n2\",\"endPos\":{\"column\":18,\"line\":14},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0003-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":14},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 2629,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.10\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"P\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.11\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"Q\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.10\",\"_uniq.11\"],\"has_metavariables\":false,\"id\":\"_uniq.12\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h\",\"type\":\"And P Q\",\"typeHead\":\"And\",\"value\":null}],\"id\":\"_uniq.20\",\"omitted_implementation_details\":1,\"pretty\":\"case left\\nP Q : Prop\\nh : And P Q\\n⊢ Q\",\"target\":\"Q\",\"targetArgs\":[],\"targetHead\":\"fvar\",\"universe_parameters\":[]}],\"node_id\":\"n1\",\"version\":1}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0003-state.lean",
+          "start": {
+            "column": 4,
+            "line": 12
+          },
+          "end": {
+            "column": 18,
+            "line": 12
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n1",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0003-state.lean",
+          "start": {
+            "column": 4,
+            "line": 12
+          },
+          "end": {
+            "column": 18,
+            "line": 12
+          },
+          "category": "probe_stop"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.10\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"P\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.11\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"Q\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.10\",\"_uniq.11\"],\"has_metavariables\":false,\"id\":\"_uniq.12\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h\",\"type\":\"And P Q\",\"typeHead\":\"And\",\"value\":null}],\"id\":\"_uniq.21\",\"omitted_implementation_details\":1,\"pretty\":\"case right\\nP Q : Prop\\nh : And P Q\\n⊢ P\",\"target\":\"P\",\"targetArgs\":[],\"targetHead\":\"fvar\",\"universe_parameters\":[]}],\"node_id\":\"n2\",\"version\":1}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0003-state.lean",
+          "start": {
+            "column": 4,
+            "line": 14
+          },
+          "end": {
+            "column": 18,
+            "line": 14
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n2",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0003-state.lean",
+          "start": {
+            "column": 4,
+            "line": 14
+          },
+          "end": {
+            "column": 18,
+            "line": 14
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.10",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "P",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.11",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "Q",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.10",
+                    "_uniq.11"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.12",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h",
+                  "type": "And P Q",
+                  "typeHead": "And",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.20",
+              "omitted_implementation_details": 1,
+              "pretty": "case left\nP Q : Prop\nh : And P Q\n⊢ Q",
+              "target": "Q",
+              "targetArgs": [],
+              "targetHead": "fvar",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n1",
+          "version": 1
+        },
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.10",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "P",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.11",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "Q",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.10",
+                    "_uniq.11"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.12",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h",
+                  "type": "And P Q",
+                  "typeHead": "And",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.21",
+              "omitted_implementation_details": 1,
+              "pretty": "case right\nP Q : Prop\nh : And P Q\n⊢ P",
+              "target": "P",
+              "targetArgs": [],
+              "targetHead": "fvar",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n2",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "sequence": 3,
+      "kind": "state",
+      "nodeId": "n1",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0003-state.lean",
+      "sourceHash": "65968fdc17c9225e6f699949eb4ec765f4be3b14b83ee6be38d2fd53b747d01b",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_27f402f0038d0faa633644ea3bebf2c8f0e425b7565e34f100133c51518c63b6"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.10\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"P\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.11\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"Q\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.10\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.46\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"left._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0004-candidate.1909278726._hygCtx._hyg.24\\\",\\\"type\\\":\\\"P\\\",\\\"typeHead\\\":\\\"fvar\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.11\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.47\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"right._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0004-candidate.1909278726._hygCtx._hyg.25\\\",\\\"type\\\":\\\"Q\\\",\\\"typeHead\\\":\\\"fvar\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.59\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case left.intro\\\\nP Q : Prop\\\\nleft✝ : P\\\\nright✝ : Q\\\\n⊢ Q\\\",\\\"target\\\":\\\"Q\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"fvar\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n1\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":17,\"line\":13},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0004-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":13},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n1\",\"endPos\":{\"column\":17,\"line\":13},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0004-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":13},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.10\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"P\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.11\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"Q\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.10\\\",\\\"_uniq.11\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.12\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h\\\",\\\"type\\\":\\\"And P Q\\\",\\\"typeHead\\\":\\\"And\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.21\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case right\\\\nP Q : Prop\\\\nh : And P Q\\\\n⊢ P\\\",\\\"target\\\":\\\"P\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"fvar\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":18,\"line\":15},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0004-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":15},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n2\",\"endPos\":{\"column\":18,\"line\":15},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0004-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":15},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 3338,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.10\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"P\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.11\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"Q\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.10\"],\"has_metavariables\":false,\"id\":\"_uniq.46\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"left._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0004-candidate.1909278726._hygCtx._hyg.24\",\"type\":\"P\",\"typeHead\":\"fvar\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.11\"],\"has_metavariables\":false,\"id\":\"_uniq.47\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"right._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0004-candidate.1909278726._hygCtx._hyg.25\",\"type\":\"Q\",\"typeHead\":\"fvar\",\"value\":null}],\"id\":\"_uniq.59\",\"omitted_implementation_details\":1,\"pretty\":\"case left.intro\\nP Q : Prop\\nleft✝ : P\\nright✝ : Q\\n⊢ Q\",\"target\":\"Q\",\"targetArgs\":[],\"targetHead\":\"fvar\",\"universe_parameters\":[]}],\"node_id\":\"n1\",\"version\":1}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0004-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 13
+          },
+          "end": {
+            "column": 17,
+            "line": 13
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n1",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0004-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 13
+          },
+          "end": {
+            "column": 17,
+            "line": 13
+          },
+          "category": "probe_stop"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.10\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"P\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.11\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"Q\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.10\",\"_uniq.11\"],\"has_metavariables\":false,\"id\":\"_uniq.12\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h\",\"type\":\"And P Q\",\"typeHead\":\"And\",\"value\":null}],\"id\":\"_uniq.21\",\"omitted_implementation_details\":1,\"pretty\":\"case right\\nP Q : Prop\\nh : And P Q\\n⊢ P\",\"target\":\"P\",\"targetArgs\":[],\"targetHead\":\"fvar\",\"universe_parameters\":[]}],\"node_id\":\"n2\",\"version\":1}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0004-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 15
+          },
+          "end": {
+            "column": 18,
+            "line": 15
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n2",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0004-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 15
+          },
+          "end": {
+            "column": 18,
+            "line": 15
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.10",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "P",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.11",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "Q",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.10"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.46",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "left._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0004-candidate.1909278726._hygCtx._hyg.24",
+                  "type": "P",
+                  "typeHead": "fvar",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.11"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.47",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "right._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0004-candidate.1909278726._hygCtx._hyg.25",
+                  "type": "Q",
+                  "typeHead": "fvar",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.59",
+              "omitted_implementation_details": 1,
+              "pretty": "case left.intro\nP Q : Prop\nleft✝ : P\nright✝ : Q\n⊢ Q",
+              "target": "Q",
+              "targetArgs": [],
+              "targetHead": "fvar",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n1",
+          "version": 1
+        },
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.10",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "P",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.11",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "Q",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.10",
+                    "_uniq.11"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.12",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h",
+                  "type": "And P Q",
+                  "typeHead": "And",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.21",
+              "omitted_implementation_details": 1,
+              "pretty": "case right\nP Q : Prop\nh : And P Q\n⊢ P",
+              "target": "P",
+              "targetArgs": [],
+              "targetHead": "fvar",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n2",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "sequence": 4,
+      "kind": "candidate",
+      "nodeId": "n1",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0004-candidate.lean",
+      "sourceHash": "2d6c83b62536939d4a13502caf4d06fe92ad9208dcdb474828bc52a89cea4884",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_bdad1dacfc69cbc2e7007b03e2e251d0ff00afe07c8d5cc1de81a4311e5a10c7"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.10\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"P\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.11\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"Q\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.10\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.46\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"left._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0005-state.1909278726._hygCtx._hyg.24\\\",\\\"type\\\":\\\"P\\\",\\\"typeHead\\\":\\\"fvar\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.11\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.47\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"right._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0005-state.1909278726._hygCtx._hyg.25\\\",\\\"type\\\":\\\"Q\\\",\\\"typeHead\\\":\\\"fvar\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.59\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case left.intro\\\\nP Q : Prop\\\\nleft✝ : P\\\\nright✝ : Q\\\\n⊢ Q\\\",\\\"target\\\":\\\"Q\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"fvar\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n3\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":20,\"line\":14},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0005-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":14},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n3\",\"endPos\":{\"column\":20,\"line\":14},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0005-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":14},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.10\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"P\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.11\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"Q\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.10\\\",\\\"_uniq.11\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.12\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h\\\",\\\"type\\\":\\\"And P Q\\\",\\\"typeHead\\\":\\\"And\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.21\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case right\\\\nP Q : Prop\\\\nh : And P Q\\\\n⊢ P\\\",\\\"target\\\":\\\"P\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"fvar\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":18,\"line\":16},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0005-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":16},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n2\",\"endPos\":{\"column\":18,\"line\":16},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0005-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":16},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 3071,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.10\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"P\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.11\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"Q\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.10\"],\"has_metavariables\":false,\"id\":\"_uniq.46\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"left._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0005-state.1909278726._hygCtx._hyg.24\",\"type\":\"P\",\"typeHead\":\"fvar\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.11\"],\"has_metavariables\":false,\"id\":\"_uniq.47\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"right._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0005-state.1909278726._hygCtx._hyg.25\",\"type\":\"Q\",\"typeHead\":\"fvar\",\"value\":null}],\"id\":\"_uniq.59\",\"omitted_implementation_details\":1,\"pretty\":\"case left.intro\\nP Q : Prop\\nleft✝ : P\\nright✝ : Q\\n⊢ Q\",\"target\":\"Q\",\"targetArgs\":[],\"targetHead\":\"fvar\",\"universe_parameters\":[]}],\"node_id\":\"n3\",\"version\":1}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0005-state.lean",
+          "start": {
+            "column": 6,
+            "line": 14
+          },
+          "end": {
+            "column": 20,
+            "line": 14
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n3",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0005-state.lean",
+          "start": {
+            "column": 6,
+            "line": 14
+          },
+          "end": {
+            "column": 20,
+            "line": 14
+          },
+          "category": "probe_stop"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.10\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"P\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.11\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"Q\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.10\",\"_uniq.11\"],\"has_metavariables\":false,\"id\":\"_uniq.12\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h\",\"type\":\"And P Q\",\"typeHead\":\"And\",\"value\":null}],\"id\":\"_uniq.21\",\"omitted_implementation_details\":1,\"pretty\":\"case right\\nP Q : Prop\\nh : And P Q\\n⊢ P\",\"target\":\"P\",\"targetArgs\":[],\"targetHead\":\"fvar\",\"universe_parameters\":[]}],\"node_id\":\"n2\",\"version\":1}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0005-state.lean",
+          "start": {
+            "column": 4,
+            "line": 16
+          },
+          "end": {
+            "column": 18,
+            "line": 16
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n2",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0005-state.lean",
+          "start": {
+            "column": 4,
+            "line": 16
+          },
+          "end": {
+            "column": 18,
+            "line": 16
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.10",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "P",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.11",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "Q",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.10"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.46",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "left._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0005-state.1909278726._hygCtx._hyg.24",
+                  "type": "P",
+                  "typeHead": "fvar",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.11"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.47",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "right._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0005-state.1909278726._hygCtx._hyg.25",
+                  "type": "Q",
+                  "typeHead": "fvar",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.59",
+              "omitted_implementation_details": 1,
+              "pretty": "case left.intro\nP Q : Prop\nleft✝ : P\nright✝ : Q\n⊢ Q",
+              "target": "Q",
+              "targetArgs": [],
+              "targetHead": "fvar",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n3",
+          "version": 1
+        },
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.10",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "P",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.11",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "Q",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.10",
+                    "_uniq.11"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.12",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h",
+                  "type": "And P Q",
+                  "typeHead": "And",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.21",
+              "omitted_implementation_details": 1,
+              "pretty": "case right\nP Q : Prop\nh : And P Q\n⊢ P",
+              "target": "P",
+              "targetArgs": [],
+              "targetHead": "fvar",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n2",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "sequence": 5,
+      "kind": "state",
+      "nodeId": "n3",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0005-state.lean",
+      "sourceHash": "36fa1e7257e2076f37af7c55ca5c51c5ff34863afd62ed356f16226b44e89c54",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_fb9c0e62fc87a15dbd29a69b5e70702de45ee0a5ebc9dd712707894a33e041ee"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[],\\\"node_id\\\":\\\"n3\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":19,\"line\":15},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0006-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":15},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_CLOSED:{\\\"node_id\\\":\\\"n3\\\"}\",\"endPos\":{\"column\":19,\"line\":15},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0006-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":15},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n3\",\"endPos\":{\"column\":19,\"line\":15},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0006-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":15},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.10\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"P\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.11\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"Q\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.10\\\",\\\"_uniq.11\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.12\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h\\\",\\\"type\\\":\\\"And P Q\\\",\\\"typeHead\\\":\\\"And\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.21\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case right\\\\nP Q : Prop\\\\nh : And P Q\\\\n⊢ P\\\",\\\"target\\\":\\\"P\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"fvar\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":18,\"line\":17},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0006-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":17},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n2\",\"endPos\":{\"column\":18,\"line\":17},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0006-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":17},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 2894,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[],\"node_id\":\"n3\",\"version\":1}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0006-candidate.lean",
+          "start": {
+            "column": 6,
+            "line": 15
+          },
+          "end": {
+            "column": 19,
+            "line": 15
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_CLOSED:{\"node_id\":\"n3\"}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0006-candidate.lean",
+          "start": {
+            "column": 6,
+            "line": 15
+          },
+          "end": {
+            "column": 19,
+            "line": 15
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n3",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0006-candidate.lean",
+          "start": {
+            "column": 6,
+            "line": 15
+          },
+          "end": {
+            "column": 19,
+            "line": 15
+          },
+          "category": "probe_stop"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.10\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"P\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.11\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"Q\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.10\",\"_uniq.11\"],\"has_metavariables\":false,\"id\":\"_uniq.12\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h\",\"type\":\"And P Q\",\"typeHead\":\"And\",\"value\":null}],\"id\":\"_uniq.21\",\"omitted_implementation_details\":1,\"pretty\":\"case right\\nP Q : Prop\\nh : And P Q\\n⊢ P\",\"target\":\"P\",\"targetArgs\":[],\"targetHead\":\"fvar\",\"universe_parameters\":[]}],\"node_id\":\"n2\",\"version\":1}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0006-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 17
+          },
+          "end": {
+            "column": 18,
+            "line": 17
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n2",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0006-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 17
+          },
+          "end": {
+            "column": 18,
+            "line": 17
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [],
+          "node_id": "n3",
+          "version": 1
+        },
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.10",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "P",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.11",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "Q",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.10",
+                    "_uniq.11"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.12",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h",
+                  "type": "And P Q",
+                  "typeHead": "And",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.21",
+              "omitted_implementation_details": 1,
+              "pretty": "case right\nP Q : Prop\nh : And P Q\n⊢ P",
+              "target": "P",
+              "targetArgs": [],
+              "targetHead": "fvar",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n2",
+          "version": 1
+        }
+      ],
+      "closed": [
+        {
+          "node_id": "n3"
+        }
+      ],
+      "audits": [],
+      "unparsed": [],
+      "sequence": 6,
+      "kind": "candidate",
+      "nodeId": "n3",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0006-candidate.lean",
+      "sourceHash": "9652566533bf903071f232a1d0265b3ab4930c3888b4690a9192b83ce3a2fd7c",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_005d3782c73a535fbcd47d83e9cfc2a3efdb5d8dddbd3ba1000d714df801b177"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.10\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"P\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.11\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"Q\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.10\\\",\\\"_uniq.11\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.12\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h\\\",\\\"type\\\":\\\"And P Q\\\",\\\"typeHead\\\":\\\"And\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.21\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case right\\\\nP Q : Prop\\\\nh : And P Q\\\\n⊢ P\\\",\\\"target\\\":\\\"P\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"fvar\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":18,\"line\":16},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0007-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":16},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n2\",\"endPos\":{\"column\":18,\"line\":16},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0007-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":16},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 2909,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.10\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"P\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.11\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"Q\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.10\",\"_uniq.11\"],\"has_metavariables\":false,\"id\":\"_uniq.12\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h\",\"type\":\"And P Q\",\"typeHead\":\"And\",\"value\":null}],\"id\":\"_uniq.21\",\"omitted_implementation_details\":1,\"pretty\":\"case right\\nP Q : Prop\\nh : And P Q\\n⊢ P\",\"target\":\"P\",\"targetArgs\":[],\"targetHead\":\"fvar\",\"universe_parameters\":[]}],\"node_id\":\"n2\",\"version\":1}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0007-state.lean",
+          "start": {
+            "column": 4,
+            "line": 16
+          },
+          "end": {
+            "column": 18,
+            "line": 16
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n2",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0007-state.lean",
+          "start": {
+            "column": 4,
+            "line": 16
+          },
+          "end": {
+            "column": 18,
+            "line": 16
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.10",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "P",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.11",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "Q",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.10",
+                    "_uniq.11"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.12",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h",
+                  "type": "And P Q",
+                  "typeHead": "And",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.21",
+              "omitted_implementation_details": 1,
+              "pretty": "case right\nP Q : Prop\nh : And P Q\n⊢ P",
+              "target": "P",
+              "targetArgs": [],
+              "targetHead": "fvar",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n2",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "sequence": 7,
+      "kind": "state",
+      "nodeId": "n2",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0007-state.lean",
+      "sourceHash": "18bb5e6543be8b486886a91f162605b5b2f14750e18fdbf8c998beec9d9f093e",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_8983d0fb2d606b3d0eeaf163a800ee2cda53c0e267d15f83907f82e11d89c6db"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.10\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"P\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.11\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"Q\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.10\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.84\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"left._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0008-candidate.1909278726._hygCtx._hyg.37\\\",\\\"type\\\":\\\"P\\\",\\\"typeHead\\\":\\\"fvar\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.11\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.85\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"right._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0008-candidate.1909278726._hygCtx._hyg.38\\\",\\\"type\\\":\\\"Q\\\",\\\"typeHead\\\":\\\"fvar\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.97\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case right.intro\\\\nP Q : Prop\\\\nleft✝ : P\\\\nright✝ : Q\\\\n⊢ P\\\",\\\"target\\\":\\\"P\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"fvar\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":17,\"line\":17},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0008-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":17},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n2\",\"endPos\":{\"column\":17,\"line\":17},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0008-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":17},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 3836,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.10\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"P\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.11\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"Q\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.10\"],\"has_metavariables\":false,\"id\":\"_uniq.84\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"left._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0008-candidate.1909278726._hygCtx._hyg.37\",\"type\":\"P\",\"typeHead\":\"fvar\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.11\"],\"has_metavariables\":false,\"id\":\"_uniq.85\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"right._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0008-candidate.1909278726._hygCtx._hyg.38\",\"type\":\"Q\",\"typeHead\":\"fvar\",\"value\":null}],\"id\":\"_uniq.97\",\"omitted_implementation_details\":1,\"pretty\":\"case right.intro\\nP Q : Prop\\nleft✝ : P\\nright✝ : Q\\n⊢ P\",\"target\":\"P\",\"targetArgs\":[],\"targetHead\":\"fvar\",\"universe_parameters\":[]}],\"node_id\":\"n2\",\"version\":1}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0008-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 17
+          },
+          "end": {
+            "column": 17,
+            "line": 17
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n2",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0008-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 17
+          },
+          "end": {
+            "column": 17,
+            "line": 17
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.10",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "P",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.11",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "Q",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.10"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.84",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "left._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0008-candidate.1909278726._hygCtx._hyg.37",
+                  "type": "P",
+                  "typeHead": "fvar",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.11"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.85",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "right._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0008-candidate.1909278726._hygCtx._hyg.38",
+                  "type": "Q",
+                  "typeHead": "fvar",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.97",
+              "omitted_implementation_details": 1,
+              "pretty": "case right.intro\nP Q : Prop\nleft✝ : P\nright✝ : Q\n⊢ P",
+              "target": "P",
+              "targetArgs": [],
+              "targetHead": "fvar",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n2",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "sequence": 8,
+      "kind": "candidate",
+      "nodeId": "n2",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0008-candidate.lean",
+      "sourceHash": "2f1957261dddc57d89377f1d7d5075a6a7dda7e20513e62f6262b8b2a03d0f7b",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_72dd3815b3ebd8dbb4a0511c7d6ebc1a1e13354a010786ee36ee27f97230884c"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.10\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"P\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.11\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"Q\\\",\\\"type\\\":\\\"Prop\\\",\\\"typeHead\\\":\\\"sort\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.10\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.84\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"left._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0009-state.1909278726._hygCtx._hyg.37\\\",\\\"type\\\":\\\"P\\\",\\\"typeHead\\\":\\\"fvar\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.11\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.85\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"right._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0009-state.1909278726._hygCtx._hyg.38\\\",\\\"type\\\":\\\"Q\\\",\\\"typeHead\\\":\\\"fvar\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.97\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case right.intro\\\\nP Q : Prop\\\\nleft✝ : P\\\\nright✝ : Q\\\\n⊢ P\\\",\\\"target\\\":\\\"P\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"fvar\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n4\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":20,\"line\":18},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0009-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":18},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n4\",\"endPos\":{\"column\":20,\"line\":18},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0009-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":18},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 3265,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.10\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"P\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.11\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"Q\",\"type\":\"Prop\",\"typeHead\":\"sort\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.10\"],\"has_metavariables\":false,\"id\":\"_uniq.84\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"left._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0009-state.1909278726._hygCtx._hyg.37\",\"type\":\"P\",\"typeHead\":\"fvar\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.11\"],\"has_metavariables\":false,\"id\":\"_uniq.85\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"right._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0009-state.1909278726._hygCtx._hyg.38\",\"type\":\"Q\",\"typeHead\":\"fvar\",\"value\":null}],\"id\":\"_uniq.97\",\"omitted_implementation_details\":1,\"pretty\":\"case right.intro\\nP Q : Prop\\nleft✝ : P\\nright✝ : Q\\n⊢ P\",\"target\":\"P\",\"targetArgs\":[],\"targetHead\":\"fvar\",\"universe_parameters\":[]}],\"node_id\":\"n4\",\"version\":1}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0009-state.lean",
+          "start": {
+            "column": 6,
+            "line": 18
+          },
+          "end": {
+            "column": 20,
+            "line": 18
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n4",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0009-state.lean",
+          "start": {
+            "column": 6,
+            "line": 18
+          },
+          "end": {
+            "column": 20,
+            "line": 18
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.10",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "P",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.11",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "Q",
+                  "type": "Prop",
+                  "typeHead": "sort",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.10"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.84",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "left._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0009-state.1909278726._hygCtx._hyg.37",
+                  "type": "P",
+                  "typeHead": "fvar",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.11"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.85",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "right._@.benchmarks.runs.2026-11-25T17-28-02-563Z-canonical.conjunction_commutation.attempts.0009-state.1909278726._hygCtx._hyg.38",
+                  "type": "Q",
+                  "typeHead": "fvar",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.97",
+              "omitted_implementation_details": 1,
+              "pretty": "case right.intro\nP Q : Prop\nleft✝ : P\nright✝ : Q\n⊢ P",
+              "target": "P",
+              "targetArgs": [],
+              "targetHead": "fvar",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n4",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "sequence": 9,
+      "kind": "state",
+      "nodeId": "n4",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0009-state.lean",
+      "sourceHash": "da875499df08d546509d721683ef63616af11cc0273f93c6316ce2158bfa4b97",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_d7d8b678400daedbc75db3573aadbd43e71f77ff9e107ed02cad6a9a36d0191d"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[],\\\"node_id\\\":\\\"n4\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":19,\"line\":19},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0010-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":19},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_CLOSED:{\\\"node_id\\\":\\\"n4\\\"}\",\"endPos\":{\"column\":19,\"line\":19},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0010-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":19},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n4\",\"endPos\":{\"column\":19,\"line\":19},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0010-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":19},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 2691,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[],\"node_id\":\"n4\",\"version\":1}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0010-candidate.lean",
+          "start": {
+            "column": 6,
+            "line": 19
+          },
+          "end": {
+            "column": 19,
+            "line": 19
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_CLOSED:{\"node_id\":\"n4\"}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0010-candidate.lean",
+          "start": {
+            "column": 6,
+            "line": 19
+          },
+          "end": {
+            "column": 19,
+            "line": 19
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n4",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0010-candidate.lean",
+          "start": {
+            "column": 6,
+            "line": 19
+          },
+          "end": {
+            "column": 19,
+            "line": 19
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [],
+          "node_id": "n4",
+          "version": 1
+        }
+      ],
+      "closed": [
+        {
+          "node_id": "n4"
+        }
+      ],
+      "audits": [],
+      "unparsed": [],
+      "sequence": 10,
+      "kind": "candidate",
+      "nodeId": "n4",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0010-candidate.lean",
+      "sourceHash": "2b55185b08ee8fe977a4039a38a626eaed75eaff0b6aaf5bba1a67a7438cd709",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_3b68132ff13ec3c3a8e6cd58f341cc83418172d10098d21be1bd81607cb7b7ea"
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[],\\\"declaration\\\":\\\"conjunction_commutation\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (P Q : Prop), And P Q → And Q P\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":34,\"line\":20},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0011-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":20},\"severity\":\"information\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 2859,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_AUDIT:{\"axioms\":[],\"declaration\":\"conjunction_commutation\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (P Q : Prop), And P Q → And Q P\",\"universe_parameters\":[],\"version\":1}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0011-final.lean",
+          "start": {
+            "column": 0,
+            "line": 20
+          },
+          "end": {
+            "column": 34,
+            "line": 20
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [
+        {
+          "axioms": [],
+          "declaration": "conjunction_commutation",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (P Q : Prop), And P Q → And Q P",
+          "universe_parameters": [],
+          "version": 1
+        }
+      ],
+      "unparsed": [],
+      "sequence": 11,
+      "kind": "final",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0011-final.lean",
+      "sourceHash": "e34bea2653fb11cbb4648614ede4c44e9d20a6d74dfb4a685f835f40153d2627",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_3b3bd2e9738873146f2511ebde739d9fbfbd0e0b795ab3429039a92ad3947c28"
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[],\\\"declaration\\\":\\\"conjunction_commutation\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (P Q : Prop), And P Q → And Q P\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":34,\"line\":20},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0012-recheck.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":20},\"severity\":\"information\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 3049,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_AUDIT:{\"axioms\":[],\"declaration\":\"conjunction_commutation\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (P Q : Prop), And P Q → And Q P\",\"universe_parameters\":[],\"version\":1}",
+          "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0012-recheck.lean",
+          "start": {
+            "column": 0,
+            "line": 20
+          },
+          "end": {
+            "column": 34,
+            "line": 20
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [
+        {
+          "axioms": [],
+          "declaration": "conjunction_commutation",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (P Q : Prop), And P Q → And Q P",
+          "universe_parameters": [],
+          "version": 1
+        }
+      ],
+      "unparsed": [],
+      "sequence": 12,
+      "kind": "recheck",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation/attempts/0012-recheck.lean",
+      "sourceHash": "e34bea2653fb11cbb4648614ede4c44e9d20a6d74dfb4a685f835f40153d2627",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_f650fcc1d183f485f48f3bb00eb37bf87ecc60535a68b7e45e9d674b7b841b55"
+    }
+  ],
+  "artifactDir": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/conjunction_commutation"
+}

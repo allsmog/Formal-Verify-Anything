@@ -1,0 +1,68 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.10",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "P",
+        "type": "Prop",
+        "typeHead": "sort",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.11",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "Q",
+        "type": "Prop",
+        "typeHead": "sort",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.10",
+          "_uniq.11"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.12",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h",
+        "type": "And P Q",
+        "typeHead": "And",
+        "value": null
+      }
+    ],
+    "id": "_uniq.20",
+    "omitted_implementation_details": 1,
+    "pretty": "case left\nP Q : Prop\nh : And P Q\n⊢ Q",
+    "target": "Q",
+    "targetArgs": [],
+    "targetHead": "fvar",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Data.List.Basic"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 59,
+    "maxDepth": 8,
+    "depth": 1,
+    "modelTokensRemaining": 0,
+    "remainingMs": 291196
+  },
+  "feedback": []
+}

@@ -1,0 +1,48 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"unknown tactic\",\"endPos\":null,\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0049-candidate.lean\",\"isSilent\":false,\"keepFullRange\":true,\"kind\":\"[anonymous]\",\"pos\":{\"column\":9,\"line\":18},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"unsolved goals\\nx : ℝ\\n⊢ 49 ≤ 98 - x * 14 + x ^ 2\",\"endPos\":{\"column\":18,\"line\":18},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0049-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"Tactic.unsolvedGoals\",\"pos\":{\"column\":6,\"line\":17},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2909,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "unknown tactic",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0049-candidate.lean",
+      "start": {
+        "column": 9,
+        "line": 18
+      },
+      "end": null,
+      "category": "unknown_tactic_or_identifier"
+    },
+    {
+      "severity": "error",
+      "message": "unsolved goals\nx : ℝ\n⊢ 49 ≤ 98 - x * 14 + x ^ 2",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0049-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 17
+      },
+      "end": {
+        "column": 18,
+        "line": 18
+      },
+      "category": "unsolved_goals"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 49,
+  "kind": "candidate",
+  "nodeId": "n4",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0049-candidate.lean",
+  "sourceHash": "71b8d94da72d5acd59f3a2ffe53647466f520643fad6896a00ac8c295ce43579",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_6a538f11a1e105da75702d4d01ab9b07dd5d1d5896357826a879a02e051c5969"
+}

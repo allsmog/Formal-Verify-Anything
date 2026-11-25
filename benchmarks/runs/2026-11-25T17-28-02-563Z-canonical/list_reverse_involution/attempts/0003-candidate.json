@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  xs.reverse.reverse\\nis not definitionally equal to the right-hand side\\n  xs\\n\\nα : Type\\nxs : List α\\n⊢ xs.reverse.reverse = xs\",\"endPos\":{\"column\":5,\"line\":10},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":10},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2380,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  xs.reverse.reverse\nis not definitionally equal to the right-hand side\n  xs\n\nα : Type\nxs : List α\n⊢ xs.reverse.reverse = xs",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/attempts/0003-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 10
+      },
+      "end": {
+        "column": 5,
+        "line": 10
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 3,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/list_reverse_involution/attempts/0003-candidate.lean",
+  "sourceHash": "43e81151d37a4ecf9181859472a893ba34ff38ed732fb636f816c1fcca0b2ff4",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_36a6104810cb21a43a92d8905bd272a40a089debfc3f38c1deeb79f22ffb61c0"
+}

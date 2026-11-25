@@ -1,0 +1,51 @@
+{
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"nat_add_comm\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (m n : Nat), Eq.{1} (HAdd.hAdd.{0, 0, 0} m n) (HAdd.hAdd.{0, 0, 0} n m)\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":23,\"line\":12},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/nat_add_comm/attempts/0007-recheck.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":12},\"severity\":\"information\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2200,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Quot.sound\"],\"declaration\":\"nat_add_comm\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (m n : Nat), Eq.{1} (HAdd.hAdd.{0, 0, 0} m n) (HAdd.hAdd.{0, 0, 0} n m)\",\"universe_parameters\":[],\"version\":1}",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/nat_add_comm/attempts/0007-recheck.lean",
+      "start": {
+        "column": 0,
+        "line": 12
+      },
+      "end": {
+        "column": 23,
+        "line": 12
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "nat_add_comm",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (m n : Nat), Eq.{1} (HAdd.hAdd.{0, 0, 0} m n) (HAdd.hAdd.{0, 0, 0} n m)",
+      "universe_parameters": [],
+      "version": 1
+    }
+  ],
+  "unparsed": [],
+  "sequence": 7,
+  "kind": "recheck",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/nat_add_comm/attempts/0007-recheck.lean",
+  "sourceHash": "87094d9075993ae58981a0eddafd15d8f6950d464f32875e45a2a9ac392d1a69",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_772963e96b795bfc14e4bfd65a099e0d868840ff79c615997f18eea22ebf4e81"
+}

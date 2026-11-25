@@ -1,0 +1,84 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.482",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "f",
+        "type": "Real → Real",
+        "typeHead": "forall",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.483",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "g",
+        "type": "Real → Real",
+        "typeHead": "forall",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.482"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.484",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "∀ (x : Real), Eq.{1} (f x) (HAdd.hAdd.{0, 0, 0} x 1)",
+        "typeHead": "forall",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.483"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.485",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₁",
+        "type": "∀ (x : Real), Eq.{1} (g x) (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) 3)",
+        "typeHead": "forall",
+        "value": null
+      }
+    ],
+    "id": "_uniq.920",
+    "omitted_implementation_details": 1,
+    "pretty": "f g : Real → Real\nh₀ : ∀ (x : Real), Eq.{1} (f x) (HAdd.hAdd.{0, 0, 0} x 1)\nh₁ : ∀ (x : Real), Eq.{1} (g x) (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) 3)\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 2 2) 3) 1) 8",
+    "target": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 2 2) 3) 1) 8",
+    "targetArgs": [
+      "Real",
+      "HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 2 2) 3) 1",
+      "8"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Data.Real.Basic"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 57,
+    "maxDepth": 8,
+    "depth": 1,
+    "modelTokensRemaining": 0,
+    "remainingMs": 285547
+  }
+}

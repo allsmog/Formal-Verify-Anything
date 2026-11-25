@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"tactic 'aesop' failed, made no progress\\nInitial goal:\\n  x : ℝ\\n  ⊢ 49 ≤ x ^ 2 - 14 * x + 98\",\"endPos\":{\"column\":11,\"line\":16},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0052-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":16},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2844,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "tactic 'aesop' failed, made no progress\nInitial goal:\n  x : ℝ\n  ⊢ 49 ≤ x ^ 2 - 14 * x + 98",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0052-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 16
+      },
+      "end": {
+        "column": 11,
+        "line": 16
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 52,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_113/attempts/0052-candidate.lean",
+  "sourceHash": "1002c0dc17d878fc73f2f2e1d89056726a066b02a92e5cae860d957975aa25a6",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_f9f3e200f7742f3aceb4f9980f8081745bc1489da0af082923b149dabe180bbe"
+}

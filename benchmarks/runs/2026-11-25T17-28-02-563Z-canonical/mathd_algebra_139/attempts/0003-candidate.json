@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  s 3 11\\nis not definitionally equal to the right-hand side\\n  1 / 33\\n\\ns : ℝ → ℝ → ℝ\\nh₀ : ∀ (x y : ℝ), x ≠ 0 → y ≠ 0 → s x y = (1 / y - 1 / x) / (x - y)\\n⊢ s 3 11 = 1 / 33\",\"endPos\":{\"column\":5,\"line\":13},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_139/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":13},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2818,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  s 3 11\nis not definitionally equal to the right-hand side\n  1 / 33\n\ns : ℝ → ℝ → ℝ\nh₀ : ∀ (x y : ℝ), x ≠ 0 → y ≠ 0 → s x y = (1 / y - 1 / x) / (x - y)\n⊢ s 3 11 = 1 / 33",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_139/attempts/0003-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 13
+      },
+      "end": {
+        "column": 5,
+        "line": 13
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 3,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_139/attempts/0003-candidate.lean",
+  "sourceHash": "fd3e38993a8c0b601f529e105f62d0689309254bda5cc2a419f8412511817e91",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_646b0e8df15e3548c787fd7ed46e780b0c066ee23a771efc3310f70ec5a23965"
+}

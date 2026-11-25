@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  a\\nis not definitionally equal to the right-hand side\\n  ↑(Int.negSucc 1)\\n\\na : ℝ\\nh₀ : ¬a = 0\\nh₁ : 2⁻¹ - a⁻¹ = 1\\n⊢ a = ↑(Int.negSucc 1)\",\"endPos\":{\"column\":13,\"line\":22},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/attempts/0029-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":10,\"line\":22},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2793,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  a\nis not definitionally equal to the right-hand side\n  ↑(Int.negSucc 1)\n\na : ℝ\nh₀ : ¬a = 0\nh₁ : 2⁻¹ - a⁻¹ = 1\n⊢ a = ↑(Int.negSucc 1)",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/attempts/0029-candidate.lean",
+      "start": {
+        "column": 10,
+        "line": 22
+      },
+      "end": {
+        "column": 13,
+        "line": 22
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 29,
+  "kind": "candidate",
+  "nodeId": "n5",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_129/attempts/0029-candidate.lean",
+  "sourceHash": "d0b685458c15573bb73207016f9e8d104ed9845f4a1d47ec73220008a42bc19f",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_988711920e8bd5f8d8cdcdaf4ed5134395fa98b22c98b0a961e75cba54fe7d33"
+}

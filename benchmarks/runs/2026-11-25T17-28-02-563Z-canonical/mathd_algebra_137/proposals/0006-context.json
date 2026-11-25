@@ -1,0 +1,45 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.3004",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "Eq.{1} (HMul.hMul.{0, 0, 0} (↑0) (HDiv.hDiv.{0, 0, 0} 26 25)) 598",
+        "typeHead": "Eq",
+        "value": null
+      }
+    ],
+    "id": "_uniq.3007",
+    "omitted_implementation_details": 1,
+    "pretty": "case zero\nh₀ : Eq.{1} (HMul.hMul.{0, 0, 0} (↑0) (HDiv.hDiv.{0, 0, 0} 26 25)) 598\n⊢ Eq.{1} 0 575",
+    "target": "Eq.{1} 0 575",
+    "targetArgs": [
+      "Nat",
+      "0",
+      "575"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Data.Real.Basic"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 9,
+    "maxDepth": 8,
+    "depth": 5,
+    "modelTokensRemaining": 0,
+    "remainingMs": 147865
+  },
+  "feedback": []
+}

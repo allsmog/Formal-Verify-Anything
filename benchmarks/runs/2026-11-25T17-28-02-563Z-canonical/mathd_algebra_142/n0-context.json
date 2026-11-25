@@ -1,0 +1,86 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.355",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "m",
+        "type": "Real",
+        "typeHead": "Real",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.356",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "b",
+        "type": "Real",
+        "typeHead": "Real",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.355",
+          "_uniq.356"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.357",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} m 7) b) (-1)",
+        "typeHead": "Eq",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.355",
+          "_uniq.356"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.358",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₁",
+        "type": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} m (-1)) b) 7",
+        "typeHead": "Eq",
+        "value": null
+      }
+    ],
+    "id": "_uniq.359",
+    "omitted_implementation_details": 1,
+    "pretty": "m b : Real\nh₀ : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} m 7) b) (-1)\nh₁ : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} m (-1)) b) 7\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} m b) 5",
+    "target": "Eq.{1} (HAdd.hAdd.{0, 0, 0} m b) 5",
+    "targetArgs": [
+      "Real",
+      "HAdd.hAdd.{0, 0, 0} m b",
+      "5"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Data.Real.Basic"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 61,
+    "maxDepth": 8,
+    "depth": 0,
+    "modelTokensRemaining": 0,
+    "remainingMs": 297138
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  (x + 4) ^ 2 + (y - 3) ^ 2\\nis not definitionally equal to the right-hand side\\n  5 ^ 2\\n\\nx y : ℝ\\nh₀ : x ^ 2 + 8 * x + y ^ 2 - 6 * y = 0\\n⊢ (x + 4) ^ 2 + (y - 3) ^ 2 = 5 ^ 2\",\"endPos\":{\"column\":5,\"line\":13},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_107/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":13},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3174,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  (x + 4) ^ 2 + (y - 3) ^ 2\nis not definitionally equal to the right-hand side\n  5 ^ 2\n\nx y : ℝ\nh₀ : x ^ 2 + 8 * x + y ^ 2 - 6 * y = 0\n⊢ (x + 4) ^ 2 + (y - 3) ^ 2 = 5 ^ 2",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_107/attempts/0003-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 13
+      },
+      "end": {
+        "column": 5,
+        "line": 13
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 3,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_107/attempts/0003-candidate.lean",
+  "sourceHash": "ab3f001197fb1dad6f6cae8ef84a8465d1227c527c23f2b4b9d6f7308bc381ec",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_ea74ca2fe27abdc5230efd9db5df5fbce7402684a172c467bdef96c4bdfa599c"
+}

@@ -1,0 +1,58 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.1077",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "a",
+        "type": "Real",
+        "typeHead": "Real",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.1077"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.1078",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "Eq.{1} a 8",
+        "typeHead": "Eq",
+        "value": null
+      }
+    ],
+    "id": "_uniq.1244",
+    "omitted_implementation_details": 1,
+    "pretty": "a : Real\nh₀ : Eq.{1} a 8\n⊢ Eq.{1}\n    (HPow.hPow.{0, 0, 0} (HMul.hMul.{0, 0, 0} 16 (HPow.hPow.{0, 0, 0} (HPow.hPow.{0, 0, 0} 8 2) (Inv.inv.{0} 3)))\n      (Inv.inv.{0} 3))\n    4",
+    "target": "Eq.{1}\n  (HPow.hPow.{0, 0, 0} (HMul.hMul.{0, 0, 0} 16 (HPow.hPow.{0, 0, 0} (HPow.hPow.{0, 0, 0} 8 2) (Inv.inv.{0} 3)))\n    (Inv.inv.{0} 3))\n  4",
+    "targetArgs": [
+      "Real",
+      "HPow.hPow.{0, 0, 0} (HMul.hMul.{0, 0, 0} 16 (HPow.hPow.{0, 0, 0} (HPow.hPow.{0, 0, 0} 8 2) (Inv.inv.{0} 3)))\n  (Inv.inv.{0} 3)",
+      "4"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Analysis.SpecialFunctions.Pow.Real"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 57,
+    "maxDepth": 8,
+    "depth": 1,
+    "modelTokensRemaining": 0,
+    "remainingMs": 278873
+  }
+}

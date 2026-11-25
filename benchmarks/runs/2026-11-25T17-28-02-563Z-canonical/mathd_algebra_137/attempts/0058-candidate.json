@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\ncase succ\\nn✝ : ℕ\\na✝ : ↑n✝ * (26 / 25) = 598 → n✝ = 575\\nh₀ : ↑(n✝ + 1) * (26 / 25) = 598\\n⊢ n✝ + 1 = 575\",\"endPos\":{\"column\":22,\"line\":25},\"fileName\":\"benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0058-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":12,\"line\":25},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2843,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\ncase succ\nn✝ : ℕ\na✝ : ↑n✝ * (26 / 25) = 598 → n✝ = 575\nh₀ : ↑(n✝ + 1) * (26 / 25) = 598\n⊢ n✝ + 1 = 575",
+      "file": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0058-candidate.lean",
+      "start": {
+        "column": 12,
+        "line": 25
+      },
+      "end": {
+        "column": 22,
+        "line": 25
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 58,
+  "kind": "candidate",
+  "nodeId": "n9",
+  "sourceFile": "benchmarks/runs/2026-11-25T17-28-02-563Z-canonical/mathd_algebra_137/attempts/0058-candidate.lean",
+  "sourceHash": "7a2fee6bfe9a8dd86e31d5deaa2588d75ffaecbb4e4e168e5de560bd203e7c1f",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_1b0d962831a4b42af33ad8829e50ea21630eaba10d7349b3da72f19258e29c35"
+}
