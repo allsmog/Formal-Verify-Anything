@@ -1,0 +1,26 @@
+# Lean and Lake build products
+/.lake/
+
+# Proof-search scratch runs (published runs live under benchmarks/ and examples/)
+/.fva/
+
+# Node
+node_modules/
+
+# Python measurement helpers
+__pycache__/
+*.py[cod]
+
+# Secrets and local environment
+.env
+.env.*
+*.pem
+*.key
+
+# Editors and OS
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db

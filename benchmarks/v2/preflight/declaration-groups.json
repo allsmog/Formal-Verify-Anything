@@ -1,0 +1,102 @@
+{
+  "purpose": "Environment-only statement elaboration probes. No proof search, accepted proof, or model invocation.",
+  "groups": [
+    {
+      "sourceFile": "benchmarks/v2/preflight/declarations-01.lean",
+      "theoremIds": [
+        "mathd_algebra_293",
+        "mathd_algebra_320",
+        "mathd_algebra_332",
+        "mathd_algebra_288"
+      ],
+      "expectedProbeIds": [
+        "declaration_mathd_algebra_293",
+        "declaration_mathd_algebra_320",
+        "declaration_mathd_algebra_332",
+        "declaration_mathd_algebra_288"
+      ]
+    },
+    {
+      "sourceFile": "benchmarks/v2/preflight/declarations-02.lean",
+      "theoremIds": [
+        "mathd_algebra_176",
+        "mathd_algebra_362",
+        "mathd_algebra_440",
+        "mathd_algebra_432",
+        "mathd_numbertheory_293",
+        "mathd_numbertheory_247",
+        "mathd_numbertheory_582",
+        "mathd_numbertheory_229",
+        "mathd_numbertheory_212",
+        "induction_1pxpownlt1pnx",
+        "induction_12dvd4expnp1p20",
+        "induction_11div10tonmn1ton"
+      ],
+      "expectedProbeIds": [
+        "declaration_mathd_algebra_176",
+        "declaration_mathd_algebra_362",
+        "declaration_mathd_algebra_440",
+        "declaration_mathd_algebra_432",
+        "declaration_mathd_numbertheory_293",
+        "declaration_mathd_numbertheory_247",
+        "declaration_mathd_numbertheory_582",
+        "declaration_mathd_numbertheory_229",
+        "declaration_mathd_numbertheory_212",
+        "declaration_induction_1pxpownlt1pnx",
+        "declaration_induction_12dvd4expnp1p20",
+        "declaration_induction_11div10tonmn1ton"
+      ]
+    },
+    {
+      "sourceFile": "benchmarks/v2/preflight/declarations-03.lean",
+      "theoremIds": [
+        "mathd_numbertheory_435"
+      ],
+      "expectedProbeIds": [
+        "declaration_mathd_numbertheory_435"
+      ]
+    },
+    {
+      "sourceFile": "benchmarks/v2/preflight/declarations-04.lean",
+      "theoremIds": [
+        "mathd_numbertheory_447",
+        "induction_sumkexp3eqsumksq",
+        "induction_prod1p1onk3le3m1onn",
+        "induction_pord1p1on2powklt5on2"
+      ],
+      "expectedProbeIds": [
+        "declaration_mathd_numbertheory_447",
+        "declaration_induction_sumkexp3eqsumksq",
+        "declaration_induction_prod1p1onk3le3m1onn",
+        "declaration_induction_pord1p1on2powklt5on2"
+      ]
+    },
+    {
+      "sourceFile": "benchmarks/v2/preflight/declarations-05.lean",
+      "theoremIds": [
+        "mathd_numbertheory_521"
+      ],
+      "expectedProbeIds": [
+        "declaration_mathd_numbertheory_521"
+      ]
+    },
+    {
+      "sourceFile": "benchmarks/v2/preflight/declarations-06.lean",
+      "theoremIds": [
+        "induction_pprime_pdvdapowpma"
+      ],
+      "expectedProbeIds": [
+        "declaration_induction_pprime_pdvdapowpma"
+      ]
+    },
+    {
+      "sourceFile": "benchmarks/v2/preflight/declarations-07.lean",
+      "theoremIds": [
+        "induction_nfactltnexpnm1ngt3"
+      ],
+      "expectedProbeIds": [
+        "declaration_induction_nfactltnexpnm1ngt3"
+      ]
+    }
+  ]
+}

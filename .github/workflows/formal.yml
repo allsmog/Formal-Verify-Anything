@@ -1,0 +1,64 @@
+name: Lean proof integrity
+on:
+  push:
+    paths:
+      - 'formal/**'
+      - 'FormalVerify*'
+      - 'FormalVerify/**'
+      - 'benchmarks/**'
+      - 'examples/security/**'
+      - 'lean-toolchain'
+      - 'lake*'
+      - '.github/workflows/formal.yml'
+  pull_request:
+    paths:
+      - 'formal/**'
+      - 'FormalVerify*'
+      - 'FormalVerify/**'
+      - 'benchmarks/**'
+      - 'examples/security/**'
+      - 'lean-toolchain'
+      - 'lake*'
+      - '.github/workflows/formal.yml'
+permissions:
+  contents: read
+concurrency:
+  group: formal-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        with:
+          node-version: '24'
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: |
+            ~/.elan
+            ~/.cache/mathlib
+            .lake
+          key: lean-${{ runner.os }}-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}
+      - name: Install pinned prover toolchain
+        shell: bash
+        run: |
+          if [ ! -x "$HOME/.elan/bin/elan" ]; then
+            curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o /tmp/elan-init.sh
+            sh /tmp/elan-init.sh -y --default-toolchain none
+          fi
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Build the Lean bridge
+        run: |
+          npm ci --prefix formal
+          lake exe cache get
+          lake build
+      - name: Check admission, rollback, and actual kernel rejection
+        run: FVA_INTEGRATION=1 npm test --prefix formal
+      - name: Check frozen evaluation accounting and cleanup
+        run: node --test benchmarks/v2/integrity.test.mjs
+      - name: Recompile every recorded successful proof
+        run: node formal/scripts/recheck.mjs
+      - name: Recheck the abstract security-model proofs
+        run: node formal/scripts/check-security.mjs

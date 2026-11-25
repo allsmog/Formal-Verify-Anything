@@ -1,0 +1,298 @@
+{
+  "sourceFile": "benchmarks/v2/preflight/declarations-04.lean",
+  "theoremIds": [
+    "mathd_numbertheory_447",
+    "induction_sumkexp3eqsumksq",
+    "induction_prod1p1onk3le3m1onn",
+    "induction_pord1p1on2powklt5on2"
+  ],
+  "expectedProbeIds": [
+    "declaration_mathd_numbertheory_447",
+    "declaration_induction_sumkexp3eqsumksq",
+    "declaration_induction_prod1p1onk3le3m1onn",
+    "declaration_induction_pord1p1on2powklt5on2"
+  ],
+  "checkedAtUtc": "2026-11-20T07:22:02.998Z",
+  "status": "DECLARATION_ELABORATED",
+  "sourceSha256": "37c1b496b397d1dcaa630c05b6d364d12e303fb81f0ddd5956d06ee7ee1bd38c",
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[],\\\"id\\\":\\\"_uniq.1260\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"⊢ Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\\\",\\\"target\\\":\\\"Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10\\\",\\\"78\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"declaration_mathd_numbertheory_447\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":48,\"line\":18},\"fileName\":\"benchmarks/v2/preflight/declarations-04.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:declaration_mathd_numbertheory_447\",\"endPos\":{\"column\":48,\"line\":18},\"fileName\":\"benchmarks/v2/preflight/declarations-04.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.1851\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.1852\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"n : Nat\\\\n⊢ Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)\\\",\\\"target\\\":\\\"Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3\\\",\\\"HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"declaration_induction_sumkexp3eqsumksq\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":52,\"line\":23},\"fileName\":\"benchmarks/v2/preflight/declarations-04.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":23},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:declaration_induction_sumkexp3eqsumksq\",\"endPos\":{\"column\":52,\"line\":23},\"fileName\":\"benchmarks/v2/preflight/declarations-04.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":23},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.2856\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.2856\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.2857\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"LT.lt.{0} 0 n\\\",\\\"typeHead\\\":\\\"LT.lt\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.2858\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"n : Nat\\\\nh₀ : LT.lt.{0} 0 n\\\\n⊢ LE.le.{0} (∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} (↑k) 3)))\\\\n    (HSub.hSub.{0, 0, 0} 3 (HDiv.hDiv.{0, 0, 0} 1 ↑n))\\\",\\\"target\\\":\\\"LE.le.{0} (∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} (↑k) 3)))\\\\n  (HSub.hSub.{0, 0, 0} 3 (HDiv.hDiv.{0, 0, 0} 1 ↑n))\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"Real.instLE\\\",\\\"∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} (↑k) 3))\\\",\\\"HSub.hSub.{0, 0, 0} 3 (HDiv.hDiv.{0, 0, 0} 1 ↑n)\\\"],\\\"targetHead\\\":\\\"LE.le\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"declaration_induction_prod1p1onk3le3m1onn\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":55,\"line\":29},\"fileName\":\"benchmarks/v2/preflight/declarations-04.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":29},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:declaration_induction_prod1p1onk3le3m1onn\",\"endPos\":{\"column\":55,\"line\":29},\"fileName\":\"benchmarks/v2/preflight/declarations-04.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":29},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.3299\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.3299\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.3300\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"LT.lt.{0} 0 n\\\",\\\"typeHead\\\":\\\"LT.lt\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.3301\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"n : Nat\\\\nh₀ : LT.lt.{0} 0 n\\\\n⊢ LT.lt.{0} (∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} 2 k))) (5 / 2)\\\",\\\"target\\\":\\\"LT.lt.{0} (∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} 2 k))) (5 / 2)\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"Real.instLT\\\",\\\"∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} 2 k))\\\",\\\"5 / 2\\\"],\\\"targetHead\\\":\\\"LT.lt\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"declaration_induction_pord1p1on2powklt5on2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":56,\"line\":35},\"fileName\":\"benchmarks/v2/preflight/declarations-04.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":35},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:declaration_induction_pord1p1on2powklt5on2\",\"endPos\":{\"column\":56,\"line\":35},\"fileName\":\"benchmarks/v2/preflight/declarations-04.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":35},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2301,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[],\"id\":\"_uniq.1260\",\"omitted_implementation_details\":1,\"pretty\":\"⊢ Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\",\"target\":\"Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\",\"targetArgs\":[\"Nat\",\"∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10\",\"78\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"declaration_mathd_numbertheory_447\",\"version\":1}",
+      "file": "benchmarks/v2/preflight/declarations-04.lean",
+      "start": {
+        "column": 2,
+        "line": 18
+      },
+      "end": {
+        "column": 48,
+        "line": 18
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:declaration_mathd_numbertheory_447",
+      "file": "benchmarks/v2/preflight/declarations-04.lean",
+      "start": {
+        "column": 2,
+        "line": 18
+      },
+      "end": {
+        "column": 48,
+        "line": 18
+      },
+      "category": "probe_stop"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.1851\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null}],\"id\":\"_uniq.1852\",\"omitted_implementation_details\":1,\"pretty\":\"n : Nat\\n⊢ Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)\",\"target\":\"Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)\",\"targetArgs\":[\"Nat\",\"∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3\",\"HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"declaration_induction_sumkexp3eqsumksq\",\"version\":1}",
+      "file": "benchmarks/v2/preflight/declarations-04.lean",
+      "start": {
+        "column": 2,
+        "line": 23
+      },
+      "end": {
+        "column": 52,
+        "line": 23
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:declaration_induction_sumkexp3eqsumksq",
+      "file": "benchmarks/v2/preflight/declarations-04.lean",
+      "start": {
+        "column": 2,
+        "line": 23
+      },
+      "end": {
+        "column": 52,
+        "line": 23
+      },
+      "category": "probe_stop"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.2856\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.2856\"],\"has_metavariables\":false,\"id\":\"_uniq.2857\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"LT.lt.{0} 0 n\",\"typeHead\":\"LT.lt\",\"value\":null}],\"id\":\"_uniq.2858\",\"omitted_implementation_details\":1,\"pretty\":\"n : Nat\\nh₀ : LT.lt.{0} 0 n\\n⊢ LE.le.{0} (∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} (↑k) 3)))\\n    (HSub.hSub.{0, 0, 0} 3 (HDiv.hDiv.{0, 0, 0} 1 ↑n))\",\"target\":\"LE.le.{0} (∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} (↑k) 3)))\\n  (HSub.hSub.{0, 0, 0} 3 (HDiv.hDiv.{0, 0, 0} 1 ↑n))\",\"targetArgs\":[\"Real\",\"Real.instLE\",\"∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} (↑k) 3))\",\"HSub.hSub.{0, 0, 0} 3 (HDiv.hDiv.{0, 0, 0} 1 ↑n)\"],\"targetHead\":\"LE.le\",\"universe_parameters\":[]}],\"node_id\":\"declaration_induction_prod1p1onk3le3m1onn\",\"version\":1}",
+      "file": "benchmarks/v2/preflight/declarations-04.lean",
+      "start": {
+        "column": 2,
+        "line": 29
+      },
+      "end": {
+        "column": 55,
+        "line": 29
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:declaration_induction_prod1p1onk3le3m1onn",
+      "file": "benchmarks/v2/preflight/declarations-04.lean",
+      "start": {
+        "column": 2,
+        "line": 29
+      },
+      "end": {
+        "column": 55,
+        "line": 29
+      },
+      "category": "probe_stop"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.3299\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.3299\"],\"has_metavariables\":false,\"id\":\"_uniq.3300\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"LT.lt.{0} 0 n\",\"typeHead\":\"LT.lt\",\"value\":null}],\"id\":\"_uniq.3301\",\"omitted_implementation_details\":1,\"pretty\":\"n : Nat\\nh₀ : LT.lt.{0} 0 n\\n⊢ LT.lt.{0} (∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} 2 k))) (5 / 2)\",\"target\":\"LT.lt.{0} (∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} 2 k))) (5 / 2)\",\"targetArgs\":[\"Real\",\"Real.instLT\",\"∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} 2 k))\",\"5 / 2\"],\"targetHead\":\"LT.lt\",\"universe_parameters\":[]}],\"node_id\":\"declaration_induction_pord1p1on2powklt5on2\",\"version\":1}",
+      "file": "benchmarks/v2/preflight/declarations-04.lean",
+      "start": {
+        "column": 2,
+        "line": 35
+      },
+      "end": {
+        "column": 56,
+        "line": 35
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:declaration_induction_pord1p1on2powklt5on2",
+      "file": "benchmarks/v2/preflight/declarations-04.lean",
+      "start": {
+        "column": 2,
+        "line": 35
+      },
+      "end": {
+        "column": 56,
+        "line": 35
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [],
+          "id": "_uniq.1260",
+          "omitted_implementation_details": 1,
+          "pretty": "⊢ Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+          "target": "Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+          "targetArgs": [
+            "Nat",
+            "∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10",
+            "78"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "declaration_mathd_numbertheory_447",
+      "version": 1
+    },
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.1851",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            }
+          ],
+          "id": "_uniq.1852",
+          "omitted_implementation_details": 1,
+          "pretty": "n : Nat\n⊢ Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)",
+          "target": "Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)",
+          "targetArgs": [
+            "Nat",
+            "∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3",
+            "HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "declaration_induction_sumkexp3eqsumksq",
+      "version": 1
+    },
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.2856",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.2856"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.2857",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "LT.lt.{0} 0 n",
+              "typeHead": "LT.lt",
+              "value": null
+            }
+          ],
+          "id": "_uniq.2858",
+          "omitted_implementation_details": 1,
+          "pretty": "n : Nat\nh₀ : LT.lt.{0} 0 n\n⊢ LE.le.{0} (∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} (↑k) 3)))\n    (HSub.hSub.{0, 0, 0} 3 (HDiv.hDiv.{0, 0, 0} 1 ↑n))",
+          "target": "LE.le.{0} (∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} (↑k) 3)))\n  (HSub.hSub.{0, 0, 0} 3 (HDiv.hDiv.{0, 0, 0} 1 ↑n))",
+          "targetArgs": [
+            "Real",
+            "Real.instLE",
+            "∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} (↑k) 3))",
+            "HSub.hSub.{0, 0, 0} 3 (HDiv.hDiv.{0, 0, 0} 1 ↑n)"
+          ],
+          "targetHead": "LE.le",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "declaration_induction_prod1p1onk3le3m1onn",
+      "version": 1
+    },
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.3299",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.3299"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.3300",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "LT.lt.{0} 0 n",
+              "typeHead": "LT.lt",
+              "value": null
+            }
+          ],
+          "id": "_uniq.3301",
+          "omitted_implementation_details": 1,
+          "pretty": "n : Nat\nh₀ : LT.lt.{0} 0 n\n⊢ LT.lt.{0} (∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} 2 k))) (5 / 2)",
+          "target": "LT.lt.{0} (∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} 2 k))) (5 / 2)",
+          "targetArgs": [
+            "Real",
+            "Real.instLT",
+            "∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} 2 k))",
+            "5 / 2"
+          ],
+          "targetHead": "LT.lt",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "declaration_induction_pord1p1on2powklt5on2",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": []
+}

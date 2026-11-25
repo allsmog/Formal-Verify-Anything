@@ -1,0 +1,732 @@
+{
+  "schemaVersion": 2,
+  "suiteId": "minif2f-v2-disjoint-24",
+  "sourceRepository": "https://github.com/yangky11/miniF2F-lean4",
+  "sourceCommit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+  "leanToolchain": "leanprover/lean4:v4.24.0",
+  "mathlibCommit": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "selectionRule": "Eight problems per stratum (algebra, number theory, induction) from MiniF2F/Test, ranked ascending by SHA-256(UTF-8(seed + newline + source path)), excluding all twelve v1 miniF2F IDs. Tie-break by source path. All eight Test induction problems are selected because the stratum has exactly eight eligible files.",
+  "selectionSeed": "Formal-Verify-Anything-v2-stratified-holdout-v1",
+  "problems": [
+    {
+      "id": "mathd_algebra_293",
+      "tier": 2,
+      "category": "algebra",
+      "statement": "theorem mathd_algebra_293\n  (x : NNReal) :\n  Real.sqrt (60 * x) * Real.sqrt (12 * x) * Real.sqrt (63 * x) = 36 * x * Real.sqrt (35 * x) ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_293.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_293.lean",
+        "sourceFileSha256": "f56ca667f0f0cff071e27c242e82f5566459b1bf0d70d4968fa8b1de9d908456",
+        "statementSha256": "70c0fb9acf0ef73e21fb2bf4092e076db7df6f1583ab59552f95602f51bd8d49",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 1,
+        "selectionKeySha256": "00a65b371e11297c34af9afc736768889be3f5e1f9675d2eac07ada277dc115a"
+      }
+    },
+    {
+      "id": "mathd_algebra_320",
+      "tier": 2,
+      "category": "algebra",
+      "statement": "theorem mathd_algebra_320\n  (x : ℝ)\n  (a b c : ℕ)\n  (h₀ : 0 < a ∧ 0 < b ∧ 0 < c ∧ 0 ≤ x)\n  (h₁ : 2 * x^2 = 4 * x + 9)\n  (h₂ : x = (a + Real.sqrt b) / c)\n  (h₃ : c = 2) :\n  a + b + c = 26 ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_320.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_320.lean",
+        "sourceFileSha256": "ce5d5910b6dd5ac98f7266c8f4bf4763427c915890a021f3564591e12c9965e1",
+        "statementSha256": "dc60472abf82da6b6a3362c7652de1e609ddbe629a85087c7d5a84dbb7b60790",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 2,
+        "selectionKeySha256": "02ea6977c2f21a848c9642c8343bb42cd451975b0604326c24b25840db211bad"
+      }
+    },
+    {
+      "id": "mathd_algebra_332",
+      "tier": 2,
+      "category": "algebra",
+      "statement": "theorem mathd_algebra_332\n  (x y : ℝ)\n  (h₀ : (x + y) / 2 = 7)\n  (h₁ : Real.sqrt (x * y) = Real.sqrt 19) :\n  x^2 + y^2 = 158 ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_332.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_332.lean",
+        "sourceFileSha256": "f2fdbda303b209f55a3f151224e5caf830dde5d94124307fe3cbb4174e4e576b",
+        "statementSha256": "3aeb13b77023210c23a33d104e9e8af54e7dfb1ef71627560ce5f82b44721bf5",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 3,
+        "selectionKeySha256": "05db2a64a51a5437b324c9d6382ca7335c3f83488f39122113237095e3715c5a"
+      }
+    },
+    {
+      "id": "mathd_algebra_176",
+      "tier": 2,
+      "category": "algebra",
+      "statement": "theorem mathd_algebra_176\n  (x : ℝ) :\n  (x + 1)^2 * x = x^3 + 2 * x^2 + x ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_176.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_176.lean",
+        "sourceFileSha256": "be6f5b1da94347ac7291a9a7a77049852c182d4245be76220e27642aa23bf5d0",
+        "statementSha256": "c31cb060ba4b963977cf54de1aaaec07da794bdc5eb6b26d43087cfa18a8dcc7",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 4,
+        "selectionKeySha256": "060c466780ba5d0a9abea75c92b7e83db2902441449c2e7abc577b72315be4a0"
+      }
+    },
+    {
+      "id": "mathd_algebra_362",
+      "tier": 2,
+      "category": "algebra",
+      "statement": "theorem mathd_algebra_362\n  (a b : ℝ)\n  (h₀ : a^2 * b^3 = 32 / 27)\n  (h₁ : a / b^3 = 27 / 4) :\n  a + b = 8 / 3 ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_362.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_362.lean",
+        "sourceFileSha256": "efe3b61b48ddb28c606b569cf001e8eba7ba14c129e8227df83c34816b94ef07",
+        "statementSha256": "ffaebcc2b473c95c35696b6f02305969429409abef90bf822bef36ceea77f86f",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 5,
+        "selectionKeySha256": "09cb57c9829d6ad6f6f5e2abba4198f33e941b6828dc5b9a1c07063611c10fd4"
+      }
+    },
+    {
+      "id": "mathd_algebra_440",
+      "tier": 2,
+      "category": "algebra",
+      "statement": "theorem mathd_algebra_440\n  (x : ℝ)\n  (h₀ : 3 / 2 / 3 = x / 10) :\n  x = 5 ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_440.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_440.lean",
+        "sourceFileSha256": "79e4ad99489e277d2fe9091ca8bf8dd9cdce422d92979ed99daf8437c21590ea",
+        "statementSha256": "f552e35b4d709227034752041d8ad5326edca651a46bc2ff25cc2bc3424464c8",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 6,
+        "selectionKeySha256": "0b75722810bf52c44aba189ad2ca00109da4749ddb475513eef9aa24d4990bca"
+      }
+    },
+    {
+      "id": "mathd_algebra_432",
+      "tier": 2,
+      "category": "algebra",
+      "statement": "theorem mathd_algebra_432\n  (x : ℝ) :\n  (x + 3) * (2 * x - 6) = 2 * x^2 - 18 ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_432.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_432.lean",
+        "sourceFileSha256": "a2498ec8137b692a212deb33bdef2c0ee6c00c6d454fed8323c05ff3c06be7df",
+        "statementSha256": "42596a59d67be86018acaa2b74d5fde7b35c2d6df77275c20ac0dce8e22287cc",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 7,
+        "selectionKeySha256": "12b47aec1aea7bfa44874fd1d699a9528e0ab453467f40207d53ad520c6f22ee"
+      }
+    },
+    {
+      "id": "mathd_algebra_288",
+      "tier": 2,
+      "category": "algebra",
+      "statement": "theorem mathd_algebra_288\n  (x y : ℝ)\n  (n : NNReal)\n  (h₀ : x < 0 ∧ y < 0)\n  (h₁ : abs y = 6)\n  (h₂ : Real.sqrt ((x - 8)^2 + (y - 3)^2) = 15)\n  (h₃ : Real.sqrt (x^2 + y^2) = Real.sqrt n) :\n  n = 52 ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_288.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_288.lean",
+        "sourceFileSha256": "e3ab023c0c2ca44081a981deb1627c9cc98ef56dfe2511711c4e3d61a6aeb302",
+        "statementSha256": "9b09ed492f0853c45514d3bbf45a99558c919e419a779b9be7aa5a7c7da2f4fc",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 8,
+        "selectionKeySha256": "14ac3bec449f443a579888b3c4004256fb4d0c4a888f591c9aa56adea7d65606"
+      }
+    },
+    {
+      "id": "mathd_numbertheory_435",
+      "tier": 2,
+      "category": "number_theory",
+      "statement": "theorem mathd_numbertheory_435\n  (k : ℕ)\n  (h₀ : 0 < k)\n  (h₁ : ∀ n, Nat.gcd (6 * n + k) (6 * n + 3) = 1)\n  (h₂ : ∀ n, Nat.gcd (6 * n + k) (6 * n + 2) = 1)\n  (h₃ : ∀ n, Nat.gcd (6 * n + k) (6 * n + 1) = 1) :\n  5 ≤ k ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_numbertheory_435.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_numbertheory_435.lean",
+        "sourceFileSha256": "3c2ac6a52c52da3350cf2c4d6d0067bda0317df34e666aaea8511d7b5d51e2a1",
+        "statementSha256": "3c6eebed1dea091b88a6a29916a3344564c439ac339e16b0de554c4f7fd63304",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 1,
+        "selectionKeySha256": "005cd821dc0fd18db6194d3bf66e9cba639e2b74a94dba6ee723c18f5819470f"
+      }
+    },
+    {
+      "id": "mathd_numbertheory_293",
+      "tier": 2,
+      "category": "number_theory",
+      "statement": "theorem mathd_numbertheory_293\n  (n : ℕ)\n  (h₀ : n ≤ 9)\n  (h₁ : 11∣20 * 100 + 10 * n + 7) :\n  n = 5 ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_numbertheory_293.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_numbertheory_293.lean",
+        "sourceFileSha256": "6cf55039b23d3340a412d957fb25e3399fb71e05bc14b1878849b5fe11cc823b",
+        "statementSha256": "2dd4b7d91927d5c02ea8291eaa4c2abba4d9c4a869e4672ed051b7a6ae3ce71b",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 2,
+        "selectionKeySha256": "0c6d7292920c81f8913b9ce584bd19a2a02c7b4b82944d8121af5e589ba37b71"
+      }
+    },
+    {
+      "id": "mathd_numbertheory_447",
+      "tier": 2,
+      "category": "number_theory",
+      "statement": "theorem mathd_numbertheory_447 :\n  ∑ k ∈ Finset.filter (λ x => 3∣x) (Finset.Icc 1 49), (k % 10) = 78 ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_numbertheory_447.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_numbertheory_447.lean",
+        "sourceFileSha256": "e076866dfbe04384528a5db0157dc818c605053c902234a538769dace2942dca",
+        "statementSha256": "9b1c13e3cf10814840e14584ae94bd3ea75a07dd4820631e14857548d50704eb",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 3,
+        "selectionKeySha256": "171b815ac7b22149c8fcb62ee81184b04c0e2566c96684ca7029e89773abf86a"
+      }
+    },
+    {
+      "id": "mathd_numbertheory_247",
+      "tier": 2,
+      "category": "number_theory",
+      "statement": "theorem mathd_numbertheory_247\n  (n : ℕ)\n  (h₀ : (3 * n) % 11 = 2) :\n  n % 11 = 8 ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_numbertheory_247.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_numbertheory_247.lean",
+        "sourceFileSha256": "0d3b702bfb0577887be8783fc626f05c3a2fad2dfee0557d7f10f971cc0fb876",
+        "statementSha256": "6ec427c8953c0f89a5254cbe6a5bd428aaea2226797390e30890b7ca01c9ba5c",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 4,
+        "selectionKeySha256": "1b0a8e2637312ef0c758778a90e05e533375b08ec68f5b95a84189a59ae016bb"
+      }
+    },
+    {
+      "id": "mathd_numbertheory_582",
+      "tier": 2,
+      "category": "number_theory",
+      "statement": "theorem mathd_numbertheory_582\n  (n : ℕ)\n  (h₀ : 0 < n)\n  (h₁ : 3∣n) :\n  ((n + 4) + (n + 6) + (n + 8)) % 9 = 0 ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_numbertheory_582.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_numbertheory_582.lean",
+        "sourceFileSha256": "52f2391b9da425c7871db42e606172d187a3754bfd9a015886391e93cd47b506",
+        "statementSha256": "4e86813c3a35e315777ed76ae641148ef2979772c78c87e88ca20d9335199130",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 5,
+        "selectionKeySha256": "21e3ec03e0879f8ec766444f8747f6180d55887dcfbb6c46f2437d68728c774a"
+      }
+    },
+    {
+      "id": "mathd_numbertheory_229",
+      "tier": 2,
+      "category": "number_theory",
+      "statement": "theorem mathd_numbertheory_229 :\n  (5^30) % 7 = 1 ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_numbertheory_229.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_numbertheory_229.lean",
+        "sourceFileSha256": "0735c0cd7272115f60a6d760efa2c3ebd3925624cf07ed77c97336f527cb87ee",
+        "statementSha256": "e65b1b2e78ea0c55713b61c4585006966c4ef12a82ae2207a9de89c1e0a24aaa",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 6,
+        "selectionKeySha256": "2388b8a6c50b6661ce244d8df3cfd00f47686cd8068acc654238d5eb0f9905a5"
+      }
+    },
+    {
+      "id": "mathd_numbertheory_212",
+      "tier": 2,
+      "category": "number_theory",
+      "statement": "theorem mathd_numbertheory_212 :\n  (16^17 * 17^18 * 18^19) % 10 = 8 ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_numbertheory_212.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_numbertheory_212.lean",
+        "sourceFileSha256": "3708d0669e331c1e2315b94fc38d4c7f7b2418684e452641abb757ffc21ec9d7",
+        "statementSha256": "86416300c5c7532c9fbbd9eb67704eb072dee3e7c667b8ee7a89698f70e62167",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 7,
+        "selectionKeySha256": "24512f590435347935c547b566442d3ef1e1a51a42d886436cdb546bc28a95a3"
+      }
+    },
+    {
+      "id": "mathd_numbertheory_521",
+      "tier": 2,
+      "category": "number_theory",
+      "statement": "theorem mathd_numbertheory_521\n  (m n : ℕ)\n  (h₀ : Even m)\n  (h₁ : Even n)\n  (h₂ : m - n = 2)\n  (h₃ : m * n = 288) :\n  m = 18 ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_numbertheory_521.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_numbertheory_521.lean",
+        "sourceFileSha256": "0c535645d14e39aab540d10c5bcb97cc3ee43a6192df465c855ffb0a846d0c21",
+        "statementSha256": "c4ddd5c788d9e1fbf7f890fb7f156434cc9d5e5eefdcd4f306bd4cf28789fc1b",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 8,
+        "selectionKeySha256": "27335ab9c01d7843827e3d94fec0c155b1d23acc80cba5e18c92b8c0010a4a40"
+      }
+    },
+    {
+      "id": "induction_pprime_pdvdapowpma",
+      "tier": 2,
+      "category": "induction",
+      "statement": "theorem induction_pprime_pdvdapowpma\n  (p a : ℕ)\n  (h₀ : 0 < a)\n  (h₁ : Nat.Prime p) :\n  p ∣ (a^p - a) ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/induction_pprime_pdvdapowpma.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/induction_pprime_pdvdapowpma.lean",
+        "sourceFileSha256": "8d3da29556a6c79205b68540ee08f4792710065e922c46af543877e48f434c98",
+        "statementSha256": "a1c324f7cf6b2d5d1d6fb3deb787005784d0d9f1b8b1145e7b0307291758e342",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 1,
+        "selectionKeySha256": "08597f0e832331c792be8a7339a2e15dfdb7127e39d8d46be726639bf93eeba0"
+      }
+    },
+    {
+      "id": "induction_1pxpownlt1pnx",
+      "tier": 2,
+      "category": "induction",
+      "statement": "theorem induction_1pxpownlt1pnx\n  (x : ℝ)\n  (n : ℕ)\n  (h₀ : -1 < x)\n  (h₁ : 0 < n) :\n  (1 + ↑n*x) ≤ (1 + x)^(n:ℕ) ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/induction_1pxpownlt1pnx.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/induction_1pxpownlt1pnx.lean",
+        "sourceFileSha256": "aa01e47bbef4526acc3b08466d77313115ab9d932c9602fffeacb02d77458e3a",
+        "statementSha256": "b11adcd9b7722ad60515f6259d3aec22ebede2952086b52ed1c597bc1e3a4aa0",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 2,
+        "selectionKeySha256": "0d36a2d121506d7d9505f06bbd9cab9ee1205f3beab6e144a65b009889f5a0c6"
+      }
+    },
+    {
+      "id": "induction_sumkexp3eqsumksq",
+      "tier": 2,
+      "category": "induction",
+      "statement": "theorem induction_sumkexp3eqsumksq\n  (n : ℕ) :\n  ∑ k ∈ Finset.range n, k^3 = (∑ k ∈ Finset.range n, k)^2 ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/induction_sumkexp3eqsumksq.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/induction_sumkexp3eqsumksq.lean",
+        "sourceFileSha256": "d5d2869282c2d4cf0452e68d1630244d822f81434d2858dfb432a3472301d712",
+        "statementSha256": "8c66b1e79dde1026d0f5fb1cf1e47f5f0e792f1607ae914ff39c4a9ae65ef825",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 3,
+        "selectionKeySha256": "27d2e8f337e12286009ca055625430cb0c59f49f18ba5f9eb20c45802c0f2a6b"
+      }
+    },
+    {
+      "id": "induction_nfactltnexpnm1ngt3",
+      "tier": 2,
+      "category": "induction",
+      "statement": "theorem induction_nfactltnexpnm1ngt3\n  (n : ℕ)\n  (h₀ : 3 ≤ n) :\n  (n)! < n^(n - 1) ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/induction_nfactltnexpnm1ngt3.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/induction_nfactltnexpnm1ngt3.lean",
+        "sourceFileSha256": "a38a9443cdb4e006e78ce4f617da9967871e456ef43e3d2beab2ffacaa006d49",
+        "statementSha256": "c5967bb0e572f638808fcd6a3ae710e1fc87fd82ca20c8558d13fb10ad33909a",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 4,
+        "selectionKeySha256": "3b4000372786c867b4a74382024538da8d8cfdac08fb049296fd54ea3122a1fc"
+      }
+    },
+    {
+      "id": "induction_prod1p1onk3le3m1onn",
+      "tier": 2,
+      "category": "induction",
+      "statement": "theorem induction_prod1p1onk3le3m1onn\n  (n : ℕ)\n  (h₀ : 0 < n) :\n  ∏ k ∈ Finset.Icc 1 n, (1 + (1:ℝ) / k^3) ≤ (3:ℝ) - 1 / ↑n ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/induction_prod1p1onk3le3m1onn.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/induction_prod1p1onk3le3m1onn.lean",
+        "sourceFileSha256": "1bf2916a8c61fa9bd7203bdcd9f942189b328b99b8d38e4dbf7a691175814c78",
+        "statementSha256": "b8ba901992721a601f3a9e3b9a19e1eca7aebd5bc2724ca3bf225e87a98e87fe",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 5,
+        "selectionKeySha256": "6605fbd6c8dc5fbbb65deaa7ff7ab6f5106f8cc0f5b14c9a04bf4d823a2b2901"
+      }
+    },
+    {
+      "id": "induction_12dvd4expnp1p20",
+      "tier": 2,
+      "category": "induction",
+      "statement": "theorem induction_12dvd4expnp1p20\n  (n : ℕ) :\n  12 ∣ 4^(n+1) + 20 ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/induction_12dvd4expnp1p20.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/induction_12dvd4expnp1p20.lean",
+        "sourceFileSha256": "8f998077a8e2020ef9e3c28e0b40a7cb8a7cdb86101034c48baf4d5aad5e6394",
+        "statementSha256": "22f695628ea61707de275e862f712170ee3a766bf28fa38dfcb6a1ad74f03dee",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 6,
+        "selectionKeySha256": "8500f74e475a683a989b4af41217cebbebd8595d6a1b5a73c06f59960bb87b31"
+      }
+    },
+    {
+      "id": "induction_pord1p1on2powklt5on2",
+      "tier": 2,
+      "category": "induction",
+      "statement": "theorem induction_pord1p1on2powklt5on2\n  (n : ℕ)\n  (h₀ : 0 < n) :\n  ∏ k ∈ Finset.Icc 1 n, (1 + (1:ℝ) / 2^k) < 5 / 2 ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/induction_pord1p1on2powklt5on2.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/induction_pord1p1on2powklt5on2.lean",
+        "sourceFileSha256": "7e30f7d628764314ef356afc9e9bb0c5edd1bfdfc127d93f5eaec79d8424f63a",
+        "statementSha256": "58f5efe729a4fd59755ea0e4434b403e7781e14107b58f0b54a214623a8dfce6",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 7,
+        "selectionKeySha256": "a845a1657f64df887446c0694c3c10e1bba752d2e0d70fa11a6375bec005f395"
+      }
+    },
+    {
+      "id": "induction_11div10tonmn1ton",
+      "tier": 2,
+      "category": "induction",
+      "statement": "theorem induction_11div10tonmn1ton\n  (n : ℕ) :\n  11 ∣ (10^n - (-1 : ℤ)^n) ",
+      "imports": [
+        "Mathlib"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "provenance": {
+        "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/induction_11div10tonmn1ton.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/induction_11div10tonmn1ton.lean",
+        "sourceFileSha256": "a2b2a7cb72154fa297bb224d8e54a81a157579834dda9838dac8d2d4f5c79f59",
+        "statementSha256": "0acf47acc53d68423cae774f58e03263b982baf3afa7e7eef50c182854542b51",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ],
+        "selectionRankWithinStratum": 8,
+        "selectionKeySha256": "dd12de365c59b9a54b5e39736587bc02f0ee969adf1c0bc18b9fe05336df8a34"
+      }
+    }
+  ]
+}

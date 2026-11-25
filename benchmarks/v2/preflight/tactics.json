@@ -1,0 +1,19 @@
+{
+  "purpose": "Generic non-holdout tactic availability checks; no model or benchmark solve invocation.",
+  "checkedAtUtc": "2026-11-20T07:23:49.169Z",
+  "status": "TACTICS_AVAILABLE",
+  "sourceSha256": "a0ef9a4754273d7c05c713b625068f371372e2011b65881a83fa4252f386d507",
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 6808,
+  "diagnostics": [],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": []
+}

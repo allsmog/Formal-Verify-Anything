@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "selectionRule": "Five fixed foundational statements established before the benchmark run.",
+  "problems": [
+    {
+      "id": "nat_add_comm",
+      "tier": 1,
+      "statement": "theorem nat_add_comm (m n : Nat) : m + n = n + m",
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Data.List.Basic"
+      ],
+      "opens": [],
+      "provenance": {
+        "dataset": "Foundational sanity suite",
+        "origin": "Constructed for this project from standard logic, natural-number, and list identities.",
+        "statementSha256": "1c711e825b8e1a97cd9a28fd7d5eda2e96e81f5befbcffdfa08e5b2a8277fae7",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": []
+      }
+    },
+    {
+      "id": "list_reverse_involution",
+      "tier": 1,
+      "statement": "theorem list_reverse_involution {α : Type} (xs : List α) : xs.reverse.reverse = xs",
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Data.List.Basic"
+      ],
+      "opens": [],
+      "provenance": {
+        "dataset": "Foundational sanity suite",
+        "origin": "Constructed for this project from standard logic, natural-number, and list identities.",
+        "statementSha256": "5126f2527f88413187d22ba0421605c6389517b3b6aa2bec0b3da1c7ad2f2908",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": []
+      }
+    },
+    {
+      "id": "de_morgan_not_or",
+      "tier": 1,
+      "statement": "theorem de_morgan_not_or (P Q : Prop) : ¬ (P ∨ Q) ↔ (¬ P ∧ ¬ Q)",
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Data.List.Basic"
+      ],
+      "opens": [],
+      "provenance": {
+        "dataset": "Foundational sanity suite",
+        "origin": "Constructed for this project from standard logic, natural-number, and list identities.",
+        "statementSha256": "bf5ca2a1cded4bbe01f9c63a18c15fe8a3d1ddded06a0ae9d9fea32d14835870",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": []
+      }
+    },
+    {
+      "id": "conjunction_commutation",
+      "tier": 1,
+      "statement": "theorem conjunction_commutation (P Q : Prop) (h : P ∧ Q) : Q ∧ P",
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Data.List.Basic"
+      ],
+      "opens": [],
+      "provenance": {
+        "dataset": "Foundational sanity suite",
+        "origin": "Constructed for this project from standard logic, natural-number, and list identities.",
+        "statementSha256": "4f53b2ed9d85a29cdc88b17e958e23913f0e81c5ef78431e9c3cbbbf1649ee99",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": []
+      }
+    },
+    {
+      "id": "implication_composition",
+      "tier": 1,
+      "statement": "theorem implication_composition (P Q R : Prop) (hPQ : P → Q) (hQR : Q → R) : P → R",
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Data.List.Basic"
+      ],
+      "opens": [],
+      "provenance": {
+        "dataset": "Foundational sanity suite",
+        "origin": "Constructed for this project from standard logic, natural-number, and list identities.",
+        "statementSha256": "ba3a5d2b4335d916f8682c09ba45cae44ec8a0201e88cf320b36363e0939b335",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": []
+      }
+    }
+  ],
+  "importPolicy": "Fixed declaration-required Mathlib modules and common generic tactics; original declaration text is unchanged. Original broad imports and unused namespace opens are retained as provenance."
+}

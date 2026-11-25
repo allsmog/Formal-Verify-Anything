@@ -1,0 +1,488 @@
+{
+  "schemaVersion": 1,
+  "suiteId": "minif2f-v2-disjoint-24",
+  "policy": "Both providers use identical fixed imports for each theorem. Original namespace openings are preserved verbatim. Common tactics and namespace definitions are fixed across all problems; additional modules are selected from syntax/types in the original declaration, never from solver outcomes. Import lists are captured by hash before each run and are never changed during a run.",
+  "commonImports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+  ],
+  "builtinTactics": "norm_cast, exact_mod_cast, simp_all and omega are built into the pinned Lean toolchain and available through FormalVerify.Bridge. Mathlib.Tactic.NormCast does not exist in this pinned mathlib revision.",
+  "namespacePreservation": "Mathlib.Topology.Defs.Induced defines namespace Topology; Real.Basic and BigOperators.Group.Finset.Defs preserve the other original opened namespaces.",
+  "profiles": {
+    "mathd_algebra_293": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+        "Mathlib.Data.Real.Sqrt"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [
+        "Mathlib.Data.Real.Sqrt"
+      ],
+      "reason": "Real.sqrt and the NNReal coercion used in the original declaration"
+    },
+    "mathd_algebra_320": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+        "Mathlib.Data.Real.Sqrt"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [
+        "Mathlib.Data.Real.Sqrt"
+      ],
+      "reason": "Real.sqrt and the NNReal coercion used in the original declaration"
+    },
+    "mathd_algebra_332": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+        "Mathlib.Data.Real.Sqrt"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [
+        "Mathlib.Data.Real.Sqrt"
+      ],
+      "reason": "Real.sqrt and the NNReal coercion used in the original declaration"
+    },
+    "mathd_algebra_176": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [],
+      "reason": "Common arithmetic definitions suffice for the original declaration."
+    },
+    "mathd_algebra_362": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [],
+      "reason": "Common arithmetic definitions suffice for the original declaration."
+    },
+    "mathd_algebra_440": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [],
+      "reason": "Common arithmetic definitions suffice for the original declaration."
+    },
+    "mathd_algebra_432": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [],
+      "reason": "Common arithmetic definitions suffice for the original declaration."
+    },
+    "mathd_algebra_288": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+        "Mathlib.Data.Real.Sqrt"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [
+        "Mathlib.Data.Real.Sqrt"
+      ],
+      "reason": "Real.sqrt and the NNReal coercion used in the original declaration"
+    },
+    "mathd_numbertheory_435": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+        "Mathlib.Data.Nat.GCD.Basic"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [
+        "Mathlib.Data.Nat.GCD.Basic"
+      ],
+      "reason": "natural-number gcd"
+    },
+    "mathd_numbertheory_293": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [],
+      "reason": "Common arithmetic definitions suffice for the original declaration."
+    },
+    "mathd_numbertheory_447": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+        "Mathlib.Algebra.BigOperators.Intervals"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [
+        "Mathlib.Algebra.BigOperators.Intervals"
+      ],
+      "reason": "finite sums/products and the original range or Icc notation"
+    },
+    "mathd_numbertheory_247": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [],
+      "reason": "Common arithmetic definitions suffice for the original declaration."
+    },
+    "mathd_numbertheory_582": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [],
+      "reason": "Common arithmetic definitions suffice for the original declaration."
+    },
+    "mathd_numbertheory_229": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [],
+      "reason": "Common arithmetic definitions suffice for the original declaration."
+    },
+    "mathd_numbertheory_212": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [],
+      "reason": "Common arithmetic definitions suffice for the original declaration."
+    },
+    "mathd_numbertheory_521": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+        "Mathlib.Algebra.Ring.Parity"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [
+        "Mathlib.Algebra.Ring.Parity"
+      ],
+      "reason": "the Even predicate on natural numbers"
+    },
+    "induction_pprime_pdvdapowpma": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+        "Mathlib.Data.Nat.Prime.Basic"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [
+        "Mathlib.Data.Nat.Prime.Basic"
+      ],
+      "reason": "natural-number primality"
+    },
+    "induction_1pxpownlt1pnx": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [],
+      "reason": "Common arithmetic definitions suffice for the original declaration."
+    },
+    "induction_sumkexp3eqsumksq": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+        "Mathlib.Algebra.BigOperators.Intervals"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [
+        "Mathlib.Algebra.BigOperators.Intervals"
+      ],
+      "reason": "finite sums/products and the original range or Icc notation"
+    },
+    "induction_nfactltnexpnm1ngt3": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+        "Mathlib.Data.Nat.Factorial.Basic"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [
+        "Mathlib.Data.Nat.Factorial.Basic"
+      ],
+      "reason": "the original scoped factorial notation"
+    },
+    "induction_prod1p1onk3le3m1onn": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+        "Mathlib.Algebra.BigOperators.Intervals"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [
+        "Mathlib.Algebra.BigOperators.Intervals"
+      ],
+      "reason": "finite sums/products and the original range or Icc notation"
+    },
+    "induction_12dvd4expnp1p20": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [],
+      "reason": "Common arithmetic definitions suffice for the original declaration."
+    },
+    "induction_pord1p1on2powklt5on2": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+        "Mathlib.Algebra.BigOperators.Intervals"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [
+        "Mathlib.Algebra.BigOperators.Intervals"
+      ],
+      "reason": "finite sums/products and the original range or Icc notation"
+    },
+    "induction_11div10tonmn1ton": {
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Topology.Defs.Induced",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+      ],
+      "opens": [
+        "BigOperators Real Nat Topology Rat"
+      ],
+      "declarationModules": [],
+      "reason": "Common arithmetic definitions suffice for the original declaration."
+    }
+  }
+}

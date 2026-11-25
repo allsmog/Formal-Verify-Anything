@@ -1,0 +1,87 @@
+{
+  "purpose": "Statement/import elaboration only; no proof search or model invocation. These are not SOLVED benchmark results.",
+  "checkedAtUtc": "2026-11-20T07:22:10.242Z",
+  "allDeclarationsElaborated": true,
+  "results": [
+    {
+      "sourceFile": "benchmarks/v2/preflight/declarations-01.lean",
+      "status": "DECLARATION_ELABORATED",
+      "theoremIds": [
+        "mathd_algebra_293",
+        "mathd_algebra_320",
+        "mathd_algebra_332",
+        "mathd_algebra_288"
+      ],
+      "exitCode": 1,
+      "elapsedMs": 6651
+    },
+    {
+      "sourceFile": "benchmarks/v2/preflight/declarations-02.lean",
+      "status": "DECLARATION_ELABORATED",
+      "theoremIds": [
+        "mathd_algebra_176",
+        "mathd_algebra_362",
+        "mathd_algebra_440",
+        "mathd_algebra_432",
+        "mathd_numbertheory_293",
+        "mathd_numbertheory_247",
+        "mathd_numbertheory_582",
+        "mathd_numbertheory_229",
+        "mathd_numbertheory_212",
+        "induction_1pxpownlt1pnx",
+        "induction_12dvd4expnp1p20",
+        "induction_11div10tonmn1ton"
+      ],
+      "exitCode": 1,
+      "elapsedMs": 2329
+    },
+    {
+      "sourceFile": "benchmarks/v2/preflight/declarations-03.lean",
+      "status": "DECLARATION_ELABORATED",
+      "theoremIds": [
+        "mathd_numbertheory_435"
+      ],
+      "exitCode": 1,
+      "elapsedMs": 2328
+    },
+    {
+      "sourceFile": "benchmarks/v2/preflight/declarations-04.lean",
+      "status": "DECLARATION_ELABORATED",
+      "theoremIds": [
+        "mathd_numbertheory_447",
+        "induction_sumkexp3eqsumksq",
+        "induction_prod1p1onk3le3m1onn",
+        "induction_pord1p1on2powklt5on2"
+      ],
+      "exitCode": 1,
+      "elapsedMs": 2301
+    },
+    {
+      "sourceFile": "benchmarks/v2/preflight/declarations-05.lean",
+      "status": "DECLARATION_ELABORATED",
+      "theoremIds": [
+        "mathd_numbertheory_521"
+      ],
+      "exitCode": 1,
+      "elapsedMs": 2214
+    },
+    {
+      "sourceFile": "benchmarks/v2/preflight/declarations-06.lean",
+      "status": "DECLARATION_ELABORATED",
+      "theoremIds": [
+        "induction_pprime_pdvdapowpma"
+      ],
+      "exitCode": 1,
+      "elapsedMs": 2442
+    },
+    {
+      "sourceFile": "benchmarks/v2/preflight/declarations-07.lean",
+      "status": "DECLARATION_ELABORATED",
+      "theoremIds": [
+        "induction_nfactltnexpnm1ngt3"
+      ],
+      "exitCode": 1,
+      "elapsedMs": 2578
+    }
+  ]
+}

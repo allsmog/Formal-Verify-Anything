@@ -1,0 +1,20 @@
+{
+  "id": "token_authorization_at_most_once",
+  "tier": 0,
+  "category": "security_model",
+  "statement": "theorem token_authorization_at_most_once\n    (outcomes : List Outcome) (final : TokenState)\n    (execution : Trace .fresh outcomes final) :\n    successes outcomes ≤ 1 ",
+  "imports": [
+    "FormalVerify.Examples.TokenModel",
+    "Mathlib.Tactic.NormNum"
+  ],
+  "opens": [
+    "FormalVerify.Examples.AtomicToken"
+  ],
+  "provenance": {
+    "origin": "Constructed abstract atomic state-machine example; not a public benchmark item or an implementation verification claim.",
+    "statementSha256": "169a3e651c9570282e977cb93ee19dcd5475a2bb3ac105d7a3183cbb8431c1ef",
+    "trustedModelPath": "FormalVerify/Examples/TokenModel.lean",
+    "trustedModelSha256": "1a22846d6ac7d6e57a3b4f9b43f146821a70d8d4c9f3a0623db1df3f8b18017e",
+    "proofFileIsNotImported": "examples/security/AtomicToken.lean"
+  }
+}

@@ -1,0 +1,359 @@
+{
+  "schemaVersion": 1,
+  "selectionRule": "First 12 files lexicographically from MiniF2F/Test/mathd_algebra_*.lean at the pinned commit, before any solver runs.",
+  "leanToolchain": "leanprover/lean4:v4.24.0",
+  "mathlibCommit": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "sourceRepository": "https://github.com/yangky11/miniF2F-lean4",
+  "sourceCommit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+  "licenses": [
+    {
+      "path": "licenses/MiniF2F-MIT.txt",
+      "url": "https://raw.githubusercontent.com/yangky11/miniF2F-lean4/5746b7d6c47855ce1294bed87329618ff7f1bc31/LICENSE",
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/MiniF2F-Apache-2.0.txt",
+      "url": "https://raw.githubusercontent.com/openai/miniF2F/4e433ff5cadff23f9911a2bb5bbab2d351ce5554/lean/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    }
+  ],
+  "problems": [
+    {
+      "id": "mathd_algebra_107",
+      "tier": 2,
+      "statement": "theorem mathd_algebra_107\n  (x y : ℝ)\n  (h₀ : x^2 + 8 * x + y^2 - 6 * y = 0) :\n  (x + 4)^2 + (y-3)^2 = 5^2 ",
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Data.Real.Basic"
+      ],
+      "opens": [],
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_107.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_107.lean",
+        "sourceFileSha256": "8b266897a9476b9c5c61aa61803e27b6d52a63b1188d88e685c6cb0b41cf48f4",
+        "statementSha256": "b095b464d3ed4e68dd26a96fd8690d0b0a13ff31b13c9e922bbee77c4bd6d260",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      }
+    },
+    {
+      "id": "mathd_algebra_113",
+      "tier": 2,
+      "statement": "theorem mathd_algebra_113\n  (x : ℝ) :\n  x^2 - 14 * x + 3 ≥ 7^2 - 14 * 7 + 3 ",
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Data.Real.Basic"
+      ],
+      "opens": [],
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_113.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_113.lean",
+        "sourceFileSha256": "bce0050ae5a9dea02bee97512c6c91625339f2aa7f0f1d15048dde85771b3a34",
+        "statementSha256": "fb28389dd3013f69e0afc151dd98822f9fc97ea4d10e3322f058e295f9e56631",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      }
+    },
+    {
+      "id": "mathd_algebra_114",
+      "tier": 2,
+      "statement": "theorem mathd_algebra_114\n  (a : ℝ)\n  (h₀ : a = 8) :\n  (16 * (a^2) ^ (1 / 3 : ℝ)) ^ (1 / 3 : ℝ) = 4 ",
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real"
+      ],
+      "opens": [],
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_114.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_114.lean",
+        "sourceFileSha256": "3d148034f4d77eec569a493f11ce3def0aa0b40dcc4862066ebc07aa47c27941",
+        "statementSha256": "8beede22e1e26e959117cc39e02ecf3cb474bb0ad9a9d5731b05023971d800cf",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      }
+    },
+    {
+      "id": "mathd_algebra_125",
+      "tier": 2,
+      "statement": "theorem mathd_algebra_125\n  (x y : ℕ)\n  (h₀ : 0 < x ∧ 0 < y)\n  (h₁ : 5 * x = y)\n  (h₂ : (↑x - (3:ℤ)) + (y - (3:ℤ)) = 30) :\n  x = 6 ",
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Data.Real.Basic"
+      ],
+      "opens": [],
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_125.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_125.lean",
+        "sourceFileSha256": "c30b17372dcfd776da9d98ebf899ace1b081b4d5a09abc148f462b246a469c42",
+        "statementSha256": "9880850330e4b8181567048132727d376c429230484343ee9af2bfbca92da43f",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      }
+    },
+    {
+      "id": "mathd_algebra_129",
+      "tier": 2,
+      "statement": "theorem mathd_algebra_129\n  (a : ℝ)\n  (h₀ : a ≠ 0)\n  (h₁ : 8⁻¹ / 4⁻¹ - a⁻¹ = 1) :\n  a = -2 ",
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Data.Real.Basic"
+      ],
+      "opens": [],
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_129.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_129.lean",
+        "sourceFileSha256": "b9e894fd782035498c9ca93c66f0d663818deac20f2e41f46084a7327b6c6062",
+        "statementSha256": "39c4244c8114a2d85092a90fa201854d17b026fa04063637ab523f62b2aaed00",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      }
+    },
+    {
+      "id": "mathd_algebra_137",
+      "tier": 2,
+      "statement": "theorem mathd_algebra_137\n  (x : ℕ)\n  (h₀ : ↑x + (4:ℝ) / (100:ℝ) * ↑x = 598) :\n  x = 575 ",
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Data.Real.Basic"
+      ],
+      "opens": [],
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_137.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_137.lean",
+        "sourceFileSha256": "99507efb011e11f9557554516dab770e96d60a5b4c24e0b2d20bca84aef0e60d",
+        "statementSha256": "a2935cf941c27d2b9f5e154e438d8d1b67b444595ae8b93b3fdd7a77e22a4c56",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      }
+    },
+    {
+      "id": "mathd_algebra_139",
+      "tier": 2,
+      "statement": "theorem mathd_algebra_139\n  (s : ℝ → ℝ → ℝ)\n  (h₀ : ∀ x, ∀ y, x≠0 -> y≠0 -> s x y = (1/y - 1/x) / (x-y)) :\n  s 3 11 = 1/33 ",
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Data.Real.Basic"
+      ],
+      "opens": [],
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_139.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_139.lean",
+        "sourceFileSha256": "2cfb978731518d82733cf8cca819a3b8be2e27c33ff03ddbfd0b036bb4f0a888",
+        "statementSha256": "377488e20914d6e917cbab50acc2de40b4bff68794af9f261cbc931b3cd6f519",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      }
+    },
+    {
+      "id": "mathd_algebra_141",
+      "tier": 2,
+      "statement": "theorem mathd_algebra_141\n  (a b : ℝ)\n  (h₁ : (a * b)=180)\n  (h₂ : 2 * (a + b)=54) :\n  (a^2 + b^2) = 369 ",
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Data.Real.Basic"
+      ],
+      "opens": [],
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_141.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_141.lean",
+        "sourceFileSha256": "5daabc8fa40bfa9c877a876419392ab639db953ec177f1b3d5d97b8267e6723c",
+        "statementSha256": "f57aa42acc81c3a8429f071d27639a5412ecd6d9e74715ad571f4199c2e110a5",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      }
+    },
+    {
+      "id": "mathd_algebra_142",
+      "tier": 2,
+      "statement": "theorem mathd_algebra_142\n  (m b : ℝ)\n  (h₀ : m * 7 + b = -1)\n  (h₁ : m * (-1) + b = 7) :\n  m + b = 5 ",
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Data.Real.Basic"
+      ],
+      "opens": [],
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_142.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_142.lean",
+        "sourceFileSha256": "ce6eedb7375284404a0528056d86dc575946f3211577407bd42138be4b1a6e84",
+        "statementSha256": "dcf6b12bd90982881696cf9e19804c0ed643c8a4d98d98172d5ac7ebc6e0f66c",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      }
+    },
+    {
+      "id": "mathd_algebra_143",
+      "tier": 2,
+      "statement": "theorem mathd_algebra_143\n  (f g : ℝ → ℝ)\n  (h₀ : ∀ x, f x = x + 1)\n  (h₁ : ∀ x, g x = x^2 + 3) :\n  f (g 2) = 8 ",
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Data.Real.Basic"
+      ],
+      "opens": [],
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_143.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_143.lean",
+        "sourceFileSha256": "b6c39306f4ebb0e2fc2301a5581f34522b64ead899a3d633bdd5ca59f08a137f",
+        "statementSha256": "0305a0c0644670ca0e0a070aba28568891b38599aa5e5f55dd20cce76209fe6c",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      }
+    },
+    {
+      "id": "mathd_algebra_148",
+      "tier": 2,
+      "statement": "theorem mathd_algebra_148\n  (c : ℝ)\n  (f : ℝ → ℝ)\n  (h₀ : ∀ x, f x = c * x^3 - 9 * x + 3)\n  (h₁ : f 2 = 9) :\n  c = 3 ",
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Data.Real.Basic"
+      ],
+      "opens": [],
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_148.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_148.lean",
+        "sourceFileSha256": "d52f28e688baa3b425ea7f4c543d2a2dfb3a47b158bce53970b476bde19edc9a",
+        "statementSha256": "2f9b4f1414b2c2561ca41df0b5fb1a7af33431aacd18f57335a0a06b4af29ef5",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      }
+    },
+    {
+      "id": "mathd_algebra_153",
+      "tier": 2,
+      "statement": "theorem mathd_algebra_153\n  (n : ℝ)\n  (h₀ : n = 1 / 3) :\n  Int.floor (10 * n) + Int.floor (100 * n) + Int.floor (1000 * n) + Int.floor (10000 * n) = 3702 ",
+      "imports": [
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith.Frontend",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Data.Real.Archimedean"
+      ],
+      "opens": [],
+      "provenance": {
+        "dataset": "miniF2F Lean 4",
+        "split": "test",
+        "repository": "https://github.com/yangky11/miniF2F-lean4",
+        "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+        "path": "MiniF2F/Test/mathd_algebra_153.lean",
+        "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_153.lean",
+        "sourceFileSha256": "f0b6ff6576308520bba933b43a4b4025f719732ba5b1d9f99932ce0b6344ce6c",
+        "statementSha256": "742119115717e348c2f5198e3f9bddf7b62d461d9ebe0c688c3a0d69635e6dbc",
+        "originalImports": [
+          "Mathlib"
+        ],
+        "originalOpens": [
+          "BigOperators Real Nat Topology Rat"
+        ]
+      }
+    }
+  ],
+  "importPolicy": "Fixed declaration-required Mathlib modules and common generic tactics; original declaration text is unchanged. Original broad imports and unused namespace opens are retained as provenance."
+}

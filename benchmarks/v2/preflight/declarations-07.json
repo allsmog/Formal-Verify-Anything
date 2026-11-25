@@ -1,0 +1,104 @@
+{
+  "sourceFile": "benchmarks/v2/preflight/declarations-07.lean",
+  "theoremIds": [
+    "induction_nfactltnexpnm1ngt3"
+  ],
+  "expectedProbeIds": [
+    "declaration_induction_nfactltnexpnm1ngt3"
+  ],
+  "checkedAtUtc": "2026-11-20T07:22:10.238Z",
+  "status": "DECLARATION_ELABORATED",
+  "sourceSha256": "e10fa4c3bfcf9303515d258751edd863a2d132e993609f2fd651eed1f7740e91",
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.148\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.148\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.149\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"LE.le.{0} 3 n\\\",\\\"typeHead\\\":\\\"LE.le\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.150\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"n : Nat\\\\nh₀ : LE.le.{0} 3 n\\\\n⊢ LT.lt.{0} (Nat.factorial n) (HPow.hPow.{0, 0, 0} n (HSub.hSub.{0, 0, 0} n 1))\\\",\\\"target\\\":\\\"LT.lt.{0} (Nat.factorial n) (HPow.hPow.{0, 0, 0} n (HSub.hSub.{0, 0, 0} n 1))\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"instLTNat\\\",\\\"Nat.factorial n\\\",\\\"HPow.hPow.{0, 0, 0} n (HSub.hSub.{0, 0, 0} n 1)\\\"],\\\"targetHead\\\":\\\"LT.lt\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"declaration_induction_nfactltnexpnm1ngt3\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":54,\"line\":20},\"fileName\":\"benchmarks/v2/preflight/declarations-07.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":20},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:declaration_induction_nfactltnexpnm1ngt3\",\"endPos\":{\"column\":54,\"line\":20},\"fileName\":\"benchmarks/v2/preflight/declarations-07.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":20},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2578,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.148\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.148\"],\"has_metavariables\":false,\"id\":\"_uniq.149\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"LE.le.{0} 3 n\",\"typeHead\":\"LE.le\",\"value\":null}],\"id\":\"_uniq.150\",\"omitted_implementation_details\":1,\"pretty\":\"n : Nat\\nh₀ : LE.le.{0} 3 n\\n⊢ LT.lt.{0} (Nat.factorial n) (HPow.hPow.{0, 0, 0} n (HSub.hSub.{0, 0, 0} n 1))\",\"target\":\"LT.lt.{0} (Nat.factorial n) (HPow.hPow.{0, 0, 0} n (HSub.hSub.{0, 0, 0} n 1))\",\"targetArgs\":[\"Nat\",\"instLTNat\",\"Nat.factorial n\",\"HPow.hPow.{0, 0, 0} n (HSub.hSub.{0, 0, 0} n 1)\"],\"targetHead\":\"LT.lt\",\"universe_parameters\":[]}],\"node_id\":\"declaration_induction_nfactltnexpnm1ngt3\",\"version\":1}",
+      "file": "benchmarks/v2/preflight/declarations-07.lean",
+      "start": {
+        "column": 2,
+        "line": 20
+      },
+      "end": {
+        "column": 54,
+        "line": 20
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:declaration_induction_nfactltnexpnm1ngt3",
+      "file": "benchmarks/v2/preflight/declarations-07.lean",
+      "start": {
+        "column": 2,
+        "line": 20
+      },
+      "end": {
+        "column": 54,
+        "line": 20
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.148",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.148"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.149",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "LE.le.{0} 3 n",
+              "typeHead": "LE.le",
+              "value": null
+            }
+          ],
+          "id": "_uniq.150",
+          "omitted_implementation_details": 1,
+          "pretty": "n : Nat\nh₀ : LE.le.{0} 3 n\n⊢ LT.lt.{0} (Nat.factorial n) (HPow.hPow.{0, 0, 0} n (HSub.hSub.{0, 0, 0} n 1))",
+          "target": "LT.lt.{0} (Nat.factorial n) (HPow.hPow.{0, 0, 0} n (HSub.hSub.{0, 0, 0} n 1))",
+          "targetArgs": [
+            "Nat",
+            "instLTNat",
+            "Nat.factorial n",
+            "HPow.hPow.{0, 0, 0} n (HSub.hSub.{0, 0, 0} n 1)"
+          ],
+          "targetHead": "LT.lt",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "declaration_induction_nfactltnexpnm1ngt3",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": []
+}

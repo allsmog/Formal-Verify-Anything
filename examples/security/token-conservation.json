@@ -1,0 +1,20 @@
+{
+  "id": "token_trace_conservation",
+  "tier": 0,
+  "category": "security_model",
+  "statement": "theorem token_trace_conservation\n    {initial final : TokenState} {outcomes : List Outcome}\n    (execution : Trace initial outcomes final) :\n    successes outcomes + remaining final = remaining initial ",
+  "imports": [
+    "FormalVerify.Examples.TokenModel",
+    "Mathlib.Tactic.NormNum"
+  ],
+  "opens": [
+    "FormalVerify.Examples.AtomicToken"
+  ],
+  "provenance": {
+    "origin": "Constructed abstract atomic state-machine example; not a public benchmark item or an implementation verification claim.",
+    "statementSha256": "260442f7fcb095c5aeddf57636e1604cf2e6189a12da0f87f611b4cfceb9cb6a",
+    "trustedModelPath": "FormalVerify/Examples/TokenModel.lean",
+    "trustedModelSha256": "1a22846d6ac7d6e57a3b4f9b43f146821a70d8d4c9f3a0623db1df3f8b18017e",
+    "proofFileIsNotImported": "examples/security/AtomicToken.lean"
+  }
+}
