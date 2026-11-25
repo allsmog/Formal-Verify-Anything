@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\ncase right\\na b : ℝ\\nha : 2 * a + 3 = 7\\nhb : 3 * b - 1 = 8\\n⊢ b = 3\",\"endPos\":{\"column\":14,\"line\":13},\"fileName\":\"formal/performance/worker-2026-11-25/process/attempts/0008-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":13},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3022,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\ncase right\na b : ℝ\nha : 2 * a + 3 = 7\nhb : 3 * b - 1 = 8\n⊢ b = 3",
+      "file": "formal/performance/worker-2026-11-25/process/attempts/0008-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 13
+      },
+      "end": {
+        "column": 14,
+        "line": 13
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 8,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "formal/performance/worker-2026-11-25/process/attempts/0008-candidate.lean",
+  "sourceHash": "4cb815bd6de5d02a6b176030fbd4fadf6293a5018538e2d91eec57ef9fcb18ac",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_6273a5c20aeefa7b88c379f0c95f5339a095ed63ed7f93efd1ec56b7df5cd3c0"
+}

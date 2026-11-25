@@ -1,0 +1,194 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.431\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.432\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"b\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.431\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.433\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"ha\\\",\\\"type\\\":\\\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.432\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.434\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"hb\\\",\\\"type\\\":\\\"Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.442\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case left\\\\na b : Real\\\\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\\\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\\\n⊢ Eq.{1} a 2\\\",\\\"target\\\":\\\"Eq.{1} a 2\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"a\\\",\\\"2\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]},{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.431\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.432\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"b\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.431\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.433\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"ha\\\",\\\"type\\\":\\\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.432\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.434\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"hb\\\",\\\"type\\\":\\\"Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.443\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case right\\\\na b : Real\\\\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\\\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\\\n⊢ Eq.{1} b 3\\\",\\\"target\\\":\\\"Eq.{1} b 3\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"b\\\",\\\"3\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":15,\"line\":10},\"fileName\":\"formal/performance/worker-2026-11-25/process/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":10},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":15,\"line\":10},\"fileName\":\"formal/performance/worker-2026-11-25/process/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":10},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3476,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.431\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"a\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.432\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"b\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.431\"],\"has_metavariables\":false,\"id\":\"_uniq.433\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"ha\",\"type\":\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.432\"],\"has_metavariables\":false,\"id\":\"_uniq.434\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"hb\",\"type\":\"Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.442\",\"omitted_implementation_details\":1,\"pretty\":\"case left\\na b : Real\\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\n⊢ Eq.{1} a 2\",\"target\":\"Eq.{1} a 2\",\"targetArgs\":[\"Real\",\"a\",\"2\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]},{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.431\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"a\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.432\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"b\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.431\"],\"has_metavariables\":false,\"id\":\"_uniq.433\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"ha\",\"type\":\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.432\"],\"has_metavariables\":false,\"id\":\"_uniq.434\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"hb\",\"type\":\"Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.443\",\"omitted_implementation_details\":1,\"pretty\":\"case right\\na b : Real\\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\n⊢ Eq.{1} b 3\",\"target\":\"Eq.{1} b 3\",\"targetArgs\":[\"Real\",\"b\",\"3\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+      "file": "formal/performance/worker-2026-11-25/process/attempts/0002-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 10
+      },
+      "end": {
+        "column": 15,
+        "line": 10
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n0",
+      "file": "formal/performance/worker-2026-11-25/process/attempts/0002-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 10
+      },
+      "end": {
+        "column": 15,
+        "line": 10
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.431",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "a",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.432",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "b",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.431"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.433",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "ha",
+              "type": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7",
+              "typeHead": "Eq",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.432"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.434",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "hb",
+              "type": "Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8",
+              "typeHead": "Eq",
+              "value": null
+            }
+          ],
+          "id": "_uniq.442",
+          "omitted_implementation_details": 1,
+          "pretty": "case left\na b : Real\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\n⊢ Eq.{1} a 2",
+          "target": "Eq.{1} a 2",
+          "targetArgs": [
+            "Real",
+            "a",
+            "2"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        },
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.431",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "a",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.432",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "b",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.431"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.433",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "ha",
+              "type": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7",
+              "typeHead": "Eq",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.432"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.434",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "hb",
+              "type": "Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8",
+              "typeHead": "Eq",
+              "value": null
+            }
+          ],
+          "id": "_uniq.443",
+          "omitted_implementation_details": 1,
+          "pretty": "case right\na b : Real\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\n⊢ Eq.{1} b 3",
+          "target": "Eq.{1} b 3",
+          "targetArgs": [
+            "Real",
+            "b",
+            "3"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n0",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 2,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "formal/performance/worker-2026-11-25/process/attempts/0002-candidate.lean",
+  "sourceHash": "d29333cb47a714017cb57e0b435754662e08cf36171973ea8c00f641951ff4e2",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_b708227c48e805c2f1199c6b29f77185d345ca3f04a0f9f12e49dfb0535f1c96"
+}

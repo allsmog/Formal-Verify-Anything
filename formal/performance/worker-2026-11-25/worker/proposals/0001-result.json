@@ -1,0 +1,19 @@
+{
+  "id": "p0",
+  "nodeId": "n0",
+  "stateHash": "1c0dedb8dc258a224d0721792b8a5263cd8f6b07563818a7bfa16826a9d4619b",
+  "round": 0,
+  "requestDigest": "afc51a228c9e7d1c1246cabd6ddee6a87caaa3aef9ef3b6a00d84db3509e2aa0",
+  "contextFile": "formal/performance/worker-2026-11-25/worker/proposals/0001-context.json",
+  "modelTokens": 0,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "proposals": [
+    {
+      "tactic": "constructor"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 0,
+  "evidenceId": "ev_37a9a7cd452176c7db4e94c469a5241c3a2de1e4c82e8c9f106df90b659b9f0e"
+}

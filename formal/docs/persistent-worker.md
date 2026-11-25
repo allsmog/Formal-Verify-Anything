@@ -137,7 +137,7 @@ node formal/scripts/measure-worker.mjs process /tmp/fva-process-measurement
 node formal/scripts/measure-worker.mjs worker /tmp/fva-worker-measurement
 ```
 
-On Linux, the standard-library Python wrapper runs both modes sequentially and
+The standard-library Python wrapper runs both modes sequentially and
 also records waited-child CPU counters and a 20 ms sampled sum of live
 process-family resident memory:
 
@@ -160,23 +160,23 @@ be considered together with complete-task time. Resident worker imports also
 compete with final compiler processes for resources; this is why the engine
 suspends exploration before final validation.
 
-### Recorded experiment, 20 November 2026
+### Recorded experiment, 25 November 2026
 
-Both measured pairs completed the same 12-call, seven-step, depth-one search
-with zero model tokens and byte-identical final proofs. Each run passed both
-fresh final checks. The complete records and limitations are in
-[the performance report](../performance/worker-2026-11-20/README.md).
+Both modes completed the same 12-call, seven-step, depth-one search with zero
+model tokens and byte-identical final proofs. Each run passed both fresh final
+checks. The host was an Apple M4 with 16 GB of memory on macOS 26.6. The
+complete records and limitations are in
+[the performance report](../performance/worker-2026-11-25/README.md).
 
 | Complete workflow | Fresh process backend | Persistent exploration |
 | --- | ---: | ---: |
-| Initial pair, elapsed | 30.709 s | 28.658 s |
-| Corrected memory-sampler pair, elapsed | 39.435 s | 25.831 s |
-| Corrected pair, sampled family RSS | 2.18 GiB | 3.19 GiB |
+| Elapsed | 41.8 s | 17.0 s |
+| Sampled family RSS | 1.90 GB | 2.59 GB |
 | Total process-family CPU | Not established by this instrument | Not established by this instrument |
 
-Observed elapsed-time reductions were 6.7% and 34.5%; these are two measurements
-of one fixed workflow, not a guaranteed speedup. Cold worker calls took about
-16.4 seconds, whereas its nine subsequent cached observations had medians of
-153 and 176 milliseconds. The worker's sampled resident memory was about 46%
-higher in the corrected measurement. That startup and memory cost can outweigh
+Elapsed time fell by 59% in this one measurement of one fixed workflow; that is
+not a guaranteed speedup. The worker's cold first call took 9.0 seconds, and its
+nine later exploration calls had a median of 80 milliseconds, against a median
+of 3.0 seconds for the matching fresh-process calls. The worker's sampled
+resident memory was about 36% higher. That startup and memory cost can outweigh
 the benefit for short searches. Total worker-family CPU remains unmeasured.

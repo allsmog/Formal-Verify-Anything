@@ -1,0 +1,136 @@
+{
+  "mode": "process",
+  "status": "SOLVED",
+  "failure": null,
+  "elapsedMs": 41684,
+  "metrics": {
+    "compilerCalls": 12,
+    "steps": 7,
+    "maxDepth": 1,
+    "elapsedMs": 41682,
+    "firstCandidateSolved": false,
+    "modelTokens": 0,
+    "modelTokensKnown": 0,
+    "modelUsageComplete": true,
+    "proposerCalls": 3,
+    "finalCandidates": 1
+  },
+  "proofFile": "formal/performance/worker-2026-11-25/process/worker_measurement.lean",
+  "verification": {
+    "statementHash": "73de7c9cb75334f06832af498489a9ffd1930a2b4fdf863eb0159143bd7a5d5e",
+    "sourceHash": "9da8d38ffcc4078f4211f470d023b3de213451148a07a5c3ab38e8848eba137c",
+    "zeroPlaceholders": true,
+    "exitCode": 0,
+    "audit": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "worker_measurement",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (a b : Real),\n  Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7 →\n    Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8 → And (Eq.{1} a 2) (Eq.{1} b 3)",
+      "universe_parameters": [],
+      "version": 1
+    },
+    "compileEvidence": [
+      "ev_7f92c3fa5b6871cc319d1bb2516ae626857358a86369da9a88aebe10021e1b07",
+      "ev_0f1c68a43b6baaa25181f2a0aea6b0376985ea1472178cc0a6dc5436af38b060"
+    ],
+    "standaloneRecheck": true,
+    "policy": "lean-kernel-v2-unused-variable-lint",
+    "warnings": []
+  },
+  "cleanup": {
+    "ownership": "none",
+    "status": "not_applicable"
+  },
+  "attempts": [
+    {
+      "kind": "state",
+      "backend": "fresh-lean-cli",
+      "elapsedMs": 8221,
+      "exitCode": 1,
+      "timedOut": false
+    },
+    {
+      "kind": "candidate",
+      "backend": "fresh-lean-cli",
+      "elapsedMs": 3476,
+      "exitCode": 1,
+      "timedOut": false
+    },
+    {
+      "kind": "state",
+      "backend": "fresh-lean-cli",
+      "elapsedMs": 2898,
+      "exitCode": 1,
+      "timedOut": false
+    },
+    {
+      "kind": "candidate",
+      "backend": "fresh-lean-cli",
+      "elapsedMs": 2774,
+      "exitCode": 1,
+      "timedOut": false
+    },
+    {
+      "kind": "candidate",
+      "backend": "fresh-lean-cli",
+      "elapsedMs": 3008,
+      "exitCode": 1,
+      "timedOut": false
+    },
+    {
+      "kind": "candidate",
+      "backend": "fresh-lean-cli",
+      "elapsedMs": 3008,
+      "exitCode": 1,
+      "timedOut": false
+    },
+    {
+      "kind": "state",
+      "backend": "fresh-lean-cli",
+      "elapsedMs": 2913,
+      "exitCode": 1,
+      "timedOut": false
+    },
+    {
+      "kind": "candidate",
+      "backend": "fresh-lean-cli",
+      "elapsedMs": 3022,
+      "exitCode": 1,
+      "timedOut": false
+    },
+    {
+      "kind": "candidate",
+      "backend": "fresh-lean-cli",
+      "elapsedMs": 2838,
+      "exitCode": 1,
+      "timedOut": false
+    },
+    {
+      "kind": "candidate",
+      "backend": "fresh-lean-cli",
+      "elapsedMs": 3126,
+      "exitCode": 1,
+      "timedOut": false
+    },
+    {
+      "kind": "final",
+      "backend": "fresh-lean-cli",
+      "elapsedMs": 3218,
+      "exitCode": 0,
+      "timedOut": false
+    },
+    {
+      "kind": "recheck",
+      "backend": "fresh-lean-cli",
+      "elapsedMs": 3139,
+      "exitCode": 0,
+      "timedOut": false
+    }
+  ]
+}

@@ -1,0 +1,445 @@
+{
+  "schemaVersion": 1,
+  "method": "sequential complete workflows; incomplete waited-descendant CPU counters; 20ms sampled sum of process-family RSS",
+  "osFileCache": "uncontrolled, previously used by setup and tests",
+  "sourceSha256": {
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "lakefile.toml": "2c0891f0bd9da270904ea8340f3035e796cf01b252e0179bca979ff4a63ac77c",
+    "lake-manifest.json": "7f7c30da83bb8dbbd9915a1c1952c55efdc2326bfd77432a2fa29470c51f7e85",
+    "FormalVerify/Bridge.lean": "cfaab974a2739bbe0c0f3d37f3fba25e30a543aaaecdd5cb808691dc7e2345a0",
+    "FormalVerify/Worker.lean": "3a9a9afc3fa3b1cc6054e8f771e0a19220f6c3cda4a0f9ebe7f73e5c76a9fd43",
+    "formal/src/engine.mjs": "80dc47e71f48dc40230dd7edc5d5332acc220acaa4ac30194196ebdcb3eaf2cb",
+    "formal/src/compiler.mjs": "e29119889f06fcb23567662b3c8ecb84b166657fb4f69e0861bfb1c211a3d5c7",
+    "formal/src/guard.mjs": "1a2f823374defa836c8259359e01c6c4819f250cbae3fa74f2d2c1acf4c6feb3",
+    "formal/src/lean-session.mjs": "a13bf85467cf058d2e36309e7889b6025dd2e7bc0e037eab1c3440f1dc2d8df8",
+    "formal/src/support.mjs": "9ca6b8cb507404b4d7a244a5204e1472d434a2d706870c617ea2a772995b2db7",
+    "formal/scripts/measure-worker.mjs": "71e1021fce2567df79e69cb714456dd78731de12fd1e6cd4c670d601024c67fb",
+    "formal/scripts/measure-worker-resources.py": "24d663c8c9eb0dbdd492edb65b5750057a47b4ac9025d4559b6b9e900f876547"
+  },
+  "runs": [
+    {
+      "mode": "process",
+      "exitCode": 0,
+      "timedOut": false,
+      "wallMs": 41827,
+      "waitedUserCpuMs": 12670,
+      "waitedSystemCpuMs": 12599,
+      "cpuMeasurementComplete": false,
+      "cpuComparableAcrossModes": false,
+      "cpuMeasurementScope": "wait4 on Node and its reaped descendants; process-group termination can omit Lean worker CPU",
+      "sampledPeakFamilyRssBytes": 1903542272,
+      "familyMemoryObserved": true,
+      "samplingIntervalMs": 20,
+      "samples": 831,
+      "maxLiveProcesses": 3,
+      "solve": {
+        "mode": "process",
+        "status": "SOLVED",
+        "failure": null,
+        "elapsedMs": 41684,
+        "metrics": {
+          "compilerCalls": 12,
+          "steps": 7,
+          "maxDepth": 1,
+          "elapsedMs": 41682,
+          "firstCandidateSolved": false,
+          "modelTokens": 0,
+          "modelTokensKnown": 0,
+          "modelUsageComplete": true,
+          "proposerCalls": 3,
+          "finalCandidates": 1
+        },
+        "proofFile": "formal/performance/worker-2026-11-25/process/worker_measurement.lean",
+        "verification": {
+          "statementHash": "73de7c9cb75334f06832af498489a9ffd1930a2b4fdf863eb0159143bd7a5d5e",
+          "sourceHash": "9da8d38ffcc4078f4211f470d023b3de213451148a07a5c3ab38e8848eba137c",
+          "zeroPlaceholders": true,
+          "exitCode": 0,
+          "audit": {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "worker_measurement",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "\u2200 (a b : Real),\n  Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7 \u2192\n    Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8 \u2192 And (Eq.{1} a 2) (Eq.{1} b 3)",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "compileEvidence": [
+            "ev_7f92c3fa5b6871cc319d1bb2516ae626857358a86369da9a88aebe10021e1b07",
+            "ev_0f1c68a43b6baaa25181f2a0aea6b0376985ea1472178cc0a6dc5436af38b060"
+          ],
+          "standaloneRecheck": true,
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "warnings": []
+        },
+        "cleanup": {
+          "ownership": "none",
+          "status": "not_applicable"
+        },
+        "attempts": [
+          {
+            "kind": "state",
+            "backend": "fresh-lean-cli",
+            "elapsedMs": 8221,
+            "exitCode": 1,
+            "timedOut": false
+          },
+          {
+            "kind": "candidate",
+            "backend": "fresh-lean-cli",
+            "elapsedMs": 3476,
+            "exitCode": 1,
+            "timedOut": false
+          },
+          {
+            "kind": "state",
+            "backend": "fresh-lean-cli",
+            "elapsedMs": 2898,
+            "exitCode": 1,
+            "timedOut": false
+          },
+          {
+            "kind": "candidate",
+            "backend": "fresh-lean-cli",
+            "elapsedMs": 2774,
+            "exitCode": 1,
+            "timedOut": false
+          },
+          {
+            "kind": "candidate",
+            "backend": "fresh-lean-cli",
+            "elapsedMs": 3008,
+            "exitCode": 1,
+            "timedOut": false
+          },
+          {
+            "kind": "candidate",
+            "backend": "fresh-lean-cli",
+            "elapsedMs": 3008,
+            "exitCode": 1,
+            "timedOut": false
+          },
+          {
+            "kind": "state",
+            "backend": "fresh-lean-cli",
+            "elapsedMs": 2913,
+            "exitCode": 1,
+            "timedOut": false
+          },
+          {
+            "kind": "candidate",
+            "backend": "fresh-lean-cli",
+            "elapsedMs": 3022,
+            "exitCode": 1,
+            "timedOut": false
+          },
+          {
+            "kind": "candidate",
+            "backend": "fresh-lean-cli",
+            "elapsedMs": 2838,
+            "exitCode": 1,
+            "timedOut": false
+          },
+          {
+            "kind": "candidate",
+            "backend": "fresh-lean-cli",
+            "elapsedMs": 3126,
+            "exitCode": 1,
+            "timedOut": false
+          },
+          {
+            "kind": "final",
+            "backend": "fresh-lean-cli",
+            "elapsedMs": 3218,
+            "exitCode": 0,
+            "timedOut": false
+          },
+          {
+            "kind": "recheck",
+            "backend": "fresh-lean-cli",
+            "elapsedMs": 3139,
+            "exitCode": 0,
+            "timedOut": false
+          }
+        ]
+      }
+    },
+    {
+      "mode": "worker",
+      "exitCode": 0,
+      "timedOut": false,
+      "wallMs": 16987,
+      "waitedUserCpuMs": 2782,
+      "waitedSystemCpuMs": 2635,
+      "cpuMeasurementComplete": false,
+      "cpuComparableAcrossModes": false,
+      "cpuMeasurementScope": "wait4 on Node and its reaped descendants; process-group termination can omit Lean worker CPU",
+      "sampledPeakFamilyRssBytes": 2586705920,
+      "familyMemoryObserved": true,
+      "samplingIntervalMs": 20,
+      "samples": 342,
+      "maxLiveProcesses": 3,
+      "solve": {
+        "mode": "worker",
+        "status": "SOLVED",
+        "failure": null,
+        "elapsedMs": 16883,
+        "metrics": {
+          "compilerCalls": 12,
+          "steps": 7,
+          "maxDepth": 1,
+          "elapsedMs": 16882,
+          "firstCandidateSolved": false,
+          "modelTokens": 0,
+          "modelTokensKnown": 0,
+          "modelUsageComplete": true,
+          "proposerCalls": 3,
+          "finalCandidates": 1
+        },
+        "proofFile": "formal/performance/worker-2026-11-25/worker/worker_measurement.lean",
+        "verification": {
+          "statementHash": "73de7c9cb75334f06832af498489a9ffd1930a2b4fdf863eb0159143bd7a5d5e",
+          "sourceHash": "9da8d38ffcc4078f4211f470d023b3de213451148a07a5c3ab38e8848eba137c",
+          "zeroPlaceholders": true,
+          "exitCode": 0,
+          "audit": {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "worker_measurement",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "\u2200 (a b : Real),\n  Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7 \u2192\n    Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8 \u2192 And (Eq.{1} a 2) (Eq.{1} b 3)",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "compileEvidence": [
+            "ev_375e4089d3110ab416597c4b9332afe5e48468755d5e8754e07052bdc5aef4e3",
+            "ev_656e2f612d64d2e4407ee378309593bec0893d0c44fee322f51d41fcb429f743"
+          ],
+          "standaloneRecheck": true,
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "warnings": []
+        },
+        "cleanup": {
+          "ownership": "engine",
+          "status": "closed"
+        },
+        "attempts": [
+          {
+            "kind": "state",
+            "backend": "lean-persistent-v1",
+            "backendMetadata": {
+              "requestId": 1,
+              "generation": 1,
+              "restarts": 0,
+              "sourceSha256": "76c25a937117e3f8dc428849515da4c9f066aa3a3668d8d9230d10df7d7f2295",
+              "leanVersion": "4.24.0",
+              "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+              "cacheHit": false,
+              "importMs": 6158,
+              "elaborationMs": 69,
+              "artifactCount": 9532
+            },
+            "elapsedMs": 8959,
+            "exitCode": 1,
+            "timedOut": false
+          },
+          {
+            "kind": "candidate",
+            "backend": "lean-persistent-v1",
+            "backendMetadata": {
+              "requestId": 2,
+              "generation": 1,
+              "restarts": 0,
+              "sourceSha256": "617a1f1573f9e80e6a3a2fe49025dec65f226391f38f05f0a2bac04d47064ae8",
+              "leanVersion": "4.24.0",
+              "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+              "cacheHit": true,
+              "importMs": 38,
+              "elaborationMs": 18,
+              "artifactCount": 9532
+            },
+            "elapsedMs": 58,
+            "exitCode": 1,
+            "timedOut": false
+          },
+          {
+            "kind": "state",
+            "backend": "lean-persistent-v1",
+            "backendMetadata": {
+              "requestId": 3,
+              "generation": 1,
+              "restarts": 0,
+              "sourceSha256": "789a111fe8422fb15a100e533cb5a7a361caf88c475697b9eddcdd52330a4a62",
+              "leanVersion": "4.24.0",
+              "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+              "cacheHit": true,
+              "importMs": 52,
+              "elaborationMs": 13,
+              "artifactCount": 9532
+            },
+            "elapsedMs": 66,
+            "exitCode": 1,
+            "timedOut": false
+          },
+          {
+            "kind": "candidate",
+            "backend": "lean-persistent-v1",
+            "backendMetadata": {
+              "requestId": 4,
+              "generation": 1,
+              "restarts": 0,
+              "sourceSha256": "a130defd2207a88823c8a10a7b16a0ed5b0f4ee32e407996aeb34e550f2b87d7",
+              "leanVersion": "4.24.0",
+              "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+              "cacheHit": true,
+              "importMs": 75,
+              "elaborationMs": 9,
+              "artifactCount": 9532
+            },
+            "elapsedMs": 86,
+            "exitCode": 1,
+            "timedOut": false
+          },
+          {
+            "kind": "candidate",
+            "backend": "lean-persistent-v1",
+            "backendMetadata": {
+              "requestId": 5,
+              "generation": 1,
+              "restarts": 0,
+              "sourceSha256": "4c303f998313f29e4c00c562807bb0b3f9f8ef3f4eb8e48443e48c34aa42a430",
+              "leanVersion": "4.24.0",
+              "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+              "cacheHit": true,
+              "importMs": 59,
+              "elaborationMs": 16,
+              "artifactCount": 9532
+            },
+            "elapsedMs": 77,
+            "exitCode": 1,
+            "timedOut": false
+          },
+          {
+            "kind": "candidate",
+            "backend": "lean-persistent-v1",
+            "backendMetadata": {
+              "requestId": 6,
+              "generation": 1,
+              "restarts": 0,
+              "sourceSha256": "7c865db73dffe46ed9c8d8c3c44dcd6c4770b0ffcb433c0efeabdc553d36fbe1",
+              "leanVersion": "4.24.0",
+              "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+              "cacheHit": true,
+              "importMs": 61,
+              "elaborationMs": 129,
+              "artifactCount": 9532
+            },
+            "elapsedMs": 193,
+            "exitCode": 1,
+            "timedOut": false
+          },
+          {
+            "kind": "state",
+            "backend": "lean-persistent-v1",
+            "backendMetadata": {
+              "requestId": 7,
+              "generation": 1,
+              "restarts": 0,
+              "sourceSha256": "f5d390a0fab51af5a64e2ef77bdb42ccfeac689fc8552263933e1071caf1ffc9",
+              "leanVersion": "4.24.0",
+              "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+              "cacheHit": true,
+              "importMs": 37,
+              "elaborationMs": 58,
+              "artifactCount": 9532
+            },
+            "elapsedMs": 96,
+            "exitCode": 1,
+            "timedOut": false
+          },
+          {
+            "kind": "candidate",
+            "backend": "lean-persistent-v1",
+            "backendMetadata": {
+              "requestId": 8,
+              "generation": 1,
+              "restarts": 0,
+              "sourceSha256": "9b1c2160cfe4cf1273e486cf28270cdc40f61388e842d337e2bf2d9943772cc2",
+              "leanVersion": "4.24.0",
+              "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+              "cacheHit": true,
+              "importMs": 30,
+              "elaborationMs": 48,
+              "artifactCount": 9532
+            },
+            "elapsedMs": 80,
+            "exitCode": 1,
+            "timedOut": false
+          },
+          {
+            "kind": "candidate",
+            "backend": "lean-persistent-v1",
+            "backendMetadata": {
+              "requestId": 9,
+              "generation": 1,
+              "restarts": 0,
+              "sourceSha256": "d9445ff052b2d2d5929d02eb5c79bc391d74b040eef640d757c4e7f29ab88cf2",
+              "leanVersion": "4.24.0",
+              "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+              "cacheHit": true,
+              "importMs": 44,
+              "elaborationMs": 31,
+              "artifactCount": 9532
+            },
+            "elapsedMs": 77,
+            "exitCode": 1,
+            "timedOut": false
+          },
+          {
+            "kind": "candidate",
+            "backend": "lean-persistent-v1",
+            "backendMetadata": {
+              "requestId": 10,
+              "generation": 1,
+              "restarts": 0,
+              "sourceSha256": "bc77101026810ab77efaecbcb29f05c33cde5b4b5edfac9403e5c43fbd9e7533",
+              "leanVersion": "4.24.0",
+              "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+              "cacheHit": true,
+              "importMs": 36,
+              "elaborationMs": 64,
+              "artifactCount": 9532
+            },
+            "elapsedMs": 101,
+            "exitCode": 1,
+            "timedOut": false
+          },
+          {
+            "kind": "final",
+            "backend": "fresh-lean-cli",
+            "elapsedMs": 3717,
+            "exitCode": 0,
+            "timedOut": false
+          },
+          {
+            "kind": "recheck",
+            "backend": "fresh-lean-cli",
+            "elapsedMs": 3268,
+            "exitCode": 0,
+            "timedOut": false
+          }
+        ]
+      }
+    }
+  ]
+}

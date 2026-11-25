@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\ncase right\\na b : ℝ\\nha : 2 * a + 3 = 7\\nhb : 3 * b - 1 = 8\\n⊢ b = 3\",\"endPos\":{\"column\":14,\"line\":13},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0008-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":13},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\ncase right\na b : ℝ\nha : 2 * a + 3 = 7\nhb : 3 * b - 1 = 8\n⊢ b = 3",
+      "file": "formal/performance/worker-2026-11-25/worker/attempts/0008-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 13
+      },
+      "end": {
+        "column": 14,
+        "line": 13
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 8,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "9b1c2160cfe4cf1273e486cf28270cdc40f61388e842d337e2bf2d9943772cc2",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 30,
+    "elaborationMs": 48,
+    "artifactCount": 9532
+  },
+  "elapsedMs": 80,
+  "sequence": 8,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "formal/performance/worker-2026-11-25/worker/attempts/0008-candidate.lean",
+  "sourceHash": "4cb815bd6de5d02a6b176030fbd4fadf6293a5018538e2d91eec57ef9fcb18ac",
+  "evidenceId": "ev_a40c162248bd81826f1b7d1042fcd51e6aea69401681ada13dd637ab95c0499b"
+}

@@ -1,0 +1,2059 @@
+{
+  "id": "worker_measurement",
+  "status": "SOLVED",
+  "proofFile": "formal/performance/worker-2026-11-25/worker/worker_measurement.lean",
+  "engineVersion": "fva-search-v2",
+  "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+  "statementHash": "73de7c9cb75334f06832af498489a9ffd1930a2b4fdf863eb0159143bd7a5d5e",
+  "provenance": null,
+  "metrics": {
+    "compilerCalls": 12,
+    "steps": 7,
+    "maxDepth": 1,
+    "elapsedMs": 16882,
+    "firstCandidateSolved": false,
+    "modelTokens": 0,
+    "modelTokensKnown": 0,
+    "modelUsageComplete": true,
+    "proposerCalls": 3,
+    "finalCandidates": 1
+  },
+  "budget": {
+    "maxCompilerCalls": 16,
+    "maxSteps": 12,
+    "maxProposalRounds": 1,
+    "maxDepth": 2,
+    "callTimeoutMs": 30000,
+    "theoremTimeoutMs": 240000,
+    "heartbeats": 200000,
+    "maxModelTokens": 0
+  },
+  "policy": "custom-proposer",
+  "failure": null,
+  "exploration": {
+    "backend": "lean-persistent-v1",
+    "cleanup": {
+      "ownership": "engine",
+      "status": "closed"
+    }
+  },
+  "verification": {
+    "statementHash": "73de7c9cb75334f06832af498489a9ffd1930a2b4fdf863eb0159143bd7a5d5e",
+    "sourceHash": "9da8d38ffcc4078f4211f470d023b3de213451148a07a5c3ab38e8848eba137c",
+    "zeroPlaceholders": true,
+    "exitCode": 0,
+    "audit": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "worker_measurement",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (a b : Real),\n  Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7 →\n    Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8 → And (Eq.{1} a 2) (Eq.{1} b 3)",
+      "universe_parameters": [],
+      "version": 1
+    },
+    "compileEvidence": [
+      "ev_375e4089d3110ab416597c4b9332afe5e48468755d5e8754e07052bdc5aef4e3",
+      "ev_656e2f612d64d2e4407ee378309593bec0893d0c44fee322f51d41fcb429f743"
+    ],
+    "standaloneRecheck": true,
+    "policy": "lean-kernel-v2-unused-variable-lint",
+    "warnings": []
+  },
+  "tree": {
+    "finalPlan": {
+      "id": "n0",
+      "depth": 0,
+      "kind": "tactic",
+      "children": [
+        {
+          "id": "n1",
+          "depth": 1,
+          "kind": "tactic",
+          "children": [],
+          "tactic": "linarith"
+        },
+        {
+          "id": "n2",
+          "depth": 1,
+          "kind": "tactic",
+          "children": [],
+          "tactic": "linarith"
+        }
+      ],
+      "tactic": "constructor"
+    },
+    "nodes": [
+      {
+        "id": "n0",
+        "visit": 0,
+        "depth": 0,
+        "stateHash": "1c0dedb8dc258a224d0721792b8a5263cd8f6b07563818a7bfa16826a9d4619b",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.430",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "a",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.431",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "b",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.430"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.432",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "ha",
+              "type": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7",
+              "typeHead": "Eq",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.431"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.433",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "hb",
+              "type": "Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8",
+              "typeHead": "Eq",
+              "value": null
+            }
+          ],
+          "id": "_uniq.434",
+          "omitted_implementation_details": 1,
+          "pretty": "a b : Real\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\n⊢ And (Eq.{1} a 2) (Eq.{1} b 3)",
+          "target": "And (Eq.{1} a 2) (Eq.{1} b 3)",
+          "targetArgs": [
+            "Eq.{1} a 2",
+            "Eq.{1} b 3"
+          ],
+          "targetHead": "And",
+          "universe_parameters": []
+        },
+        "status": "VERIFIED_IN_FINAL_PROOF",
+        "evidenceId": "ev_ed60b9a8b11d273bf6bf4b99da04e9563c8de712a0bf8ddc2f347e82ee574f48"
+      },
+      {
+        "id": "n1",
+        "visit": 1,
+        "depth": 1,
+        "stateHash": "2fdbeee60e493dd835d9296b30407001cbf60f6020affb1367385bb0339a0952",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.430",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "a",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.431",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "b",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.430"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.432",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "ha",
+              "type": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7",
+              "typeHead": "Eq",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.431"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.433",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "hb",
+              "type": "Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8",
+              "typeHead": "Eq",
+              "value": null
+            }
+          ],
+          "id": "_uniq.441",
+          "omitted_implementation_details": 1,
+          "pretty": "case left\na b : Real\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\n⊢ Eq.{1} a 2",
+          "target": "Eq.{1} a 2",
+          "targetArgs": [
+            "Real",
+            "a",
+            "2"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        },
+        "status": "VERIFIED_IN_FINAL_PROOF",
+        "evidenceId": "ev_c6a94c22f9edce48f76402ea9d95452096b3a4609eab8d46a9e0698f0f16e72f"
+      },
+      {
+        "id": "n2",
+        "visit": 2,
+        "depth": 1,
+        "stateHash": "4e4bf91f7aca3ce952e45ba5016a180777a90e8495a1fbf934db70d6a7a03a4d",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.430",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "a",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.431",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "b",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.430"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.432",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "ha",
+              "type": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7",
+              "typeHead": "Eq",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.431"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.433",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "hb",
+              "type": "Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8",
+              "typeHead": "Eq",
+              "value": null
+            }
+          ],
+          "id": "_uniq.442",
+          "omitted_implementation_details": 1,
+          "pretty": "case right\na b : Real\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\n⊢ Eq.{1} b 3",
+          "target": "Eq.{1} b 3",
+          "targetArgs": [
+            "Real",
+            "b",
+            "3"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        },
+        "status": "VERIFIED_IN_FINAL_PROOF",
+        "evidenceId": "ev_9af0804740586546d432d2915f88bc26f9564bc8af2fec7ef715c8d1d0c99e5b"
+      }
+    ],
+    "branches": [
+      {
+        "parent": "n0",
+        "visit": 0,
+        "stateHash": "1c0dedb8dc258a224d0721792b8a5263cd8f6b07563818a7bfa16826a9d4619b",
+        "proposal": {
+          "tactic": "constructor"
+        },
+        "beforeHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a",
+        "status": "RETAINED",
+        "children": [
+          "n1",
+          "n2"
+        ],
+        "evidenceId": "ev_1b56864239b21d012c0171982bd76dbe29e84c2fa7c833e9a420922d4272376d"
+      },
+      {
+        "parent": "n1",
+        "visit": 1,
+        "stateHash": "2fdbeee60e493dd835d9296b30407001cbf60f6020affb1367385bb0339a0952",
+        "proposal": {
+          "tactic": "assumption"
+        },
+        "beforeHash": "13993114ab4aeb08d2a3712140fe2cddaabca6d5cdefb64bd0d8b4fb649ea365",
+        "status": "PRUNED",
+        "children": [],
+        "evidenceId": "ev_f2a7fc6423ed8344918cae1da0c87702b187e2799a1f120818790345c03a820b",
+        "failure": "missing_hypothesis_or_instance",
+        "restoredHash": "13993114ab4aeb08d2a3712140fe2cddaabca6d5cdefb64bd0d8b4fb649ea365"
+      },
+      {
+        "parent": "n1",
+        "visit": 1,
+        "stateHash": "2fdbeee60e493dd835d9296b30407001cbf60f6020affb1367385bb0339a0952",
+        "proposal": {
+          "tactic": "rfl"
+        },
+        "beforeHash": "13993114ab4aeb08d2a3712140fe2cddaabca6d5cdefb64bd0d8b4fb649ea365",
+        "status": "PRUNED",
+        "children": [],
+        "evidenceId": "ev_ba1f6d88f7a2a5176b67a99ea24a12ae4e7197f5f783462968b846a84ddf81bd",
+        "failure": "compiler_error",
+        "restoredHash": "13993114ab4aeb08d2a3712140fe2cddaabca6d5cdefb64bd0d8b4fb649ea365"
+      },
+      {
+        "parent": "n1",
+        "visit": 1,
+        "stateHash": "2fdbeee60e493dd835d9296b30407001cbf60f6020affb1367385bb0339a0952",
+        "proposal": {
+          "tactic": "linarith"
+        },
+        "beforeHash": "13993114ab4aeb08d2a3712140fe2cddaabca6d5cdefb64bd0d8b4fb649ea365",
+        "status": "RETAINED",
+        "children": [],
+        "evidenceId": "ev_c4cb0c4b41cb0f4288ffe1aaae8d9435ce0695174a8263dad674cc073f077477"
+      },
+      {
+        "parent": "n2",
+        "visit": 2,
+        "stateHash": "4e4bf91f7aca3ce952e45ba5016a180777a90e8495a1fbf934db70d6a7a03a4d",
+        "proposal": {
+          "tactic": "assumption"
+        },
+        "beforeHash": "829bd1074ac56b76e837dbc7698d3172bfb3bcc8063f9111ef781f35a350db65",
+        "status": "PRUNED",
+        "children": [],
+        "evidenceId": "ev_a40c162248bd81826f1b7d1042fcd51e6aea69401681ada13dd637ab95c0499b",
+        "failure": "missing_hypothesis_or_instance",
+        "restoredHash": "829bd1074ac56b76e837dbc7698d3172bfb3bcc8063f9111ef781f35a350db65"
+      },
+      {
+        "parent": "n2",
+        "visit": 2,
+        "stateHash": "4e4bf91f7aca3ce952e45ba5016a180777a90e8495a1fbf934db70d6a7a03a4d",
+        "proposal": {
+          "tactic": "rfl"
+        },
+        "beforeHash": "829bd1074ac56b76e837dbc7698d3172bfb3bcc8063f9111ef781f35a350db65",
+        "status": "PRUNED",
+        "children": [],
+        "evidenceId": "ev_b6337111c787ba69b3f9fd0ccfe1a4294b2039b31a942072539d31142b83110d",
+        "failure": "compiler_error",
+        "restoredHash": "829bd1074ac56b76e837dbc7698d3172bfb3bcc8063f9111ef781f35a350db65"
+      },
+      {
+        "parent": "n2",
+        "visit": 2,
+        "stateHash": "4e4bf91f7aca3ce952e45ba5016a180777a90e8495a1fbf934db70d6a7a03a4d",
+        "proposal": {
+          "tactic": "linarith"
+        },
+        "beforeHash": "829bd1074ac56b76e837dbc7698d3172bfb3bcc8063f9111ef781f35a350db65",
+        "status": "RETAINED",
+        "children": [],
+        "evidenceId": "ev_cdc178047bf5be5281fea547ccaae3ea28b8f2239155771e88f7bd0f3af3179a"
+      }
+    ]
+  },
+  "finalCandidates": [
+    {
+      "id": "c0",
+      "planHash": "785f38be57782264df8ebe9cd37f07d6d1ea69558bc3ec3f736597dc223757a4",
+      "status": "ACCEPTED",
+      "policy": "lean-kernel-v2-unused-variable-lint",
+      "evidenceIds": [
+        "ev_375e4089d3110ab416597c4b9332afe5e48468755d5e8754e07052bdc5aef4e3",
+        "ev_656e2f612d64d2e4407ee378309593bec0893d0c44fee322f51d41fcb429f743"
+      ],
+      "sourceHash": "9da8d38ffcc4078f4211f470d023b3de213451148a07a5c3ab38e8848eba137c",
+      "explorationSuspension": {
+        "status": "SUSPENDED",
+        "elapsedMs": 74
+      },
+      "checks": [
+        {
+          "kind": "final",
+          "evidenceId": "ev_375e4089d3110ab416597c4b9332afe5e48468755d5e8754e07052bdc5aef4e3",
+          "accepted": true,
+          "reason": null,
+          "audit": {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "worker_measurement",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (a b : Real),\n  Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7 →\n    Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8 → And (Eq.{1} a 2) (Eq.{1} b 3)",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": []
+        },
+        {
+          "kind": "recheck",
+          "evidenceId": "ev_656e2f612d64d2e4407ee378309593bec0893d0c44fee322f51d41fcb429f743",
+          "accepted": true,
+          "reason": null,
+          "audit": {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "worker_measurement",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (a b : Real),\n  Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7 →\n    Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8 → And (Eq.{1} a 2) (Eq.{1} b 3)",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": []
+        }
+      ],
+      "reason": null
+    }
+  ],
+  "proposerCalls": [
+    {
+      "id": "p0",
+      "nodeId": "n0",
+      "stateHash": "1c0dedb8dc258a224d0721792b8a5263cd8f6b07563818a7bfa16826a9d4619b",
+      "round": 0,
+      "requestDigest": "afc51a228c9e7d1c1246cabd6ddee6a87caaa3aef9ef3b6a00d84db3509e2aa0",
+      "contextFile": "formal/performance/worker-2026-11-25/worker/proposals/0001-context.json",
+      "modelTokens": 0,
+      "usageKnown": true,
+      "tokenBudgetExceeded": false,
+      "proposals": [
+        {
+          "tactic": "constructor"
+        }
+      ],
+      "status": "RETURNED",
+      "elapsedMs": 0,
+      "evidenceId": "ev_37a9a7cd452176c7db4e94c469a5241c3a2de1e4c82e8c9f106df90b659b9f0e"
+    },
+    {
+      "id": "p1",
+      "nodeId": "n1",
+      "stateHash": "2fdbeee60e493dd835d9296b30407001cbf60f6020affb1367385bb0339a0952",
+      "round": 0,
+      "requestDigest": "4188389f6b4d10fc1f46732c89b74e033890646d6db4718c5923792afe0e6ab8",
+      "contextFile": "formal/performance/worker-2026-11-25/worker/proposals/0002-context.json",
+      "modelTokens": 0,
+      "usageKnown": true,
+      "tokenBudgetExceeded": false,
+      "proposals": [
+        {
+          "tactic": "assumption"
+        },
+        {
+          "tactic": "rfl"
+        },
+        {
+          "tactic": "linarith"
+        }
+      ],
+      "status": "RETURNED",
+      "elapsedMs": 0,
+      "evidenceId": "ev_e9a4e7a8d0928a8d4a24ddeefd5f2a73da147f21b86a89a9fba24eecc9e51ec4"
+    },
+    {
+      "id": "p2",
+      "nodeId": "n2",
+      "stateHash": "4e4bf91f7aca3ce952e45ba5016a180777a90e8495a1fbf934db70d6a7a03a4d",
+      "round": 0,
+      "requestDigest": "d35837feb69f601497f3329037e0124f30440e3cd5502e9e80cc74340c532cd6",
+      "contextFile": "formal/performance/worker-2026-11-25/worker/proposals/0003-context.json",
+      "modelTokens": 0,
+      "usageKnown": true,
+      "tokenBudgetExceeded": false,
+      "proposals": [
+        {
+          "tactic": "assumption"
+        },
+        {
+          "tactic": "rfl"
+        },
+        {
+          "tactic": "linarith"
+        }
+      ],
+      "status": "RETURNED",
+      "elapsedMs": 0,
+      "evidenceId": "ev_b680e0ae35acfaea7728314668a13b1c12195ef4709e7bb666357b590b7811f9"
+    }
+  ],
+  "attempts": [
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.430\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.431\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"b\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.430\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.432\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"ha\\\",\\\"type\\\":\\\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.431\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.433\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"hb\\\",\\\"type\\\":\\\"Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.434\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"a b : Real\\\\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\\\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\\\n⊢ And (Eq.{1} a 2) (Eq.{1} b 3)\\\",\\\"target\\\":\\\"And (Eq.{1} a 2) (Eq.{1} b 3)\\\",\\\"targetArgs\\\":[\\\"Eq.{1} a 2\\\",\\\"Eq.{1} b 3\\\"],\\\"targetHead\\\":\\\"And\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":9},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":9},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":16,\"line\":9},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":9},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.430\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"a\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.431\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"b\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.430\"],\"has_metavariables\":false,\"id\":\"_uniq.432\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"ha\",\"type\":\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.431\"],\"has_metavariables\":false,\"id\":\"_uniq.433\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"hb\",\"type\":\"Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.434\",\"omitted_implementation_details\":1,\"pretty\":\"a b : Real\\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\n⊢ And (Eq.{1} a 2) (Eq.{1} b 3)\",\"target\":\"And (Eq.{1} a 2) (Eq.{1} b 3)\",\"targetArgs\":[\"Eq.{1} a 2\",\"Eq.{1} b 3\"],\"targetHead\":\"And\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 9
+          },
+          "end": {
+            "column": 16,
+            "line": 9
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 9
+          },
+          "end": {
+            "column": 16,
+            "line": 9
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.430",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "a",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.431",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "b",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.430"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.432",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "ha",
+                  "type": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7",
+                  "typeHead": "Eq",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.431"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.433",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "hb",
+                  "type": "Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8",
+                  "typeHead": "Eq",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.434",
+              "omitted_implementation_details": 1,
+              "pretty": "a b : Real\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\n⊢ And (Eq.{1} a 2) (Eq.{1} b 3)",
+              "target": "And (Eq.{1} a 2) (Eq.{1} b 3)",
+              "targetArgs": [
+                "Eq.{1} a 2",
+                "Eq.{1} b 3"
+              ],
+              "targetHead": "And",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 1,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "76c25a937117e3f8dc428849515da4c9f066aa3a3668d8d9230d10df7d7f2295",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": false,
+        "importMs": 6158,
+        "elaborationMs": 69,
+        "artifactCount": 9532
+      },
+      "elapsedMs": 8959,
+      "sequence": 1,
+      "kind": "state",
+      "nodeId": "n0",
+      "sourceFile": "formal/performance/worker-2026-11-25/worker/attempts/0001-state.lean",
+      "sourceHash": "e50a208b9adbd0c2a8261c371aca99420e9dfb44d62b0d7d85bf230f59bbf96f",
+      "evidenceId": "ev_ed60b9a8b11d273bf6bf4b99da04e9563c8de712a0bf8ddc2f347e82ee574f48"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.430\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.431\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"b\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.430\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.432\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"ha\\\",\\\"type\\\":\\\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.431\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.433\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"hb\\\",\\\"type\\\":\\\"Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.441\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case left\\\\na b : Real\\\\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\\\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\\\n⊢ Eq.{1} a 2\\\",\\\"target\\\":\\\"Eq.{1} a 2\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"a\\\",\\\"2\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]},{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.430\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.431\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"b\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.430\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.432\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"ha\\\",\\\"type\\\":\\\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.431\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.433\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"hb\\\",\\\"type\\\":\\\"Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.442\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case right\\\\na b : Real\\\\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\\\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\\\n⊢ Eq.{1} b 3\\\",\\\"target\\\":\\\"Eq.{1} b 3\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"b\\\",\\\"3\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":15,\"line\":10},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":10},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":15,\"line\":10},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":10},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.430\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"a\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.431\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"b\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.430\"],\"has_metavariables\":false,\"id\":\"_uniq.432\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"ha\",\"type\":\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.431\"],\"has_metavariables\":false,\"id\":\"_uniq.433\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"hb\",\"type\":\"Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.441\",\"omitted_implementation_details\":1,\"pretty\":\"case left\\na b : Real\\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\n⊢ Eq.{1} a 2\",\"target\":\"Eq.{1} a 2\",\"targetArgs\":[\"Real\",\"a\",\"2\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]},{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.430\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"a\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.431\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"b\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.430\"],\"has_metavariables\":false,\"id\":\"_uniq.432\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"ha\",\"type\":\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.431\"],\"has_metavariables\":false,\"id\":\"_uniq.433\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"hb\",\"type\":\"Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.442\",\"omitted_implementation_details\":1,\"pretty\":\"case right\\na b : Real\\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\n⊢ Eq.{1} b 3\",\"target\":\"Eq.{1} b 3\",\"targetArgs\":[\"Real\",\"b\",\"3\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0002-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 10
+          },
+          "end": {
+            "column": 15,
+            "line": 10
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0002-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 10
+          },
+          "end": {
+            "column": 15,
+            "line": 10
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.430",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "a",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.431",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "b",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.430"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.432",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "ha",
+                  "type": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7",
+                  "typeHead": "Eq",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.431"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.433",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "hb",
+                  "type": "Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8",
+                  "typeHead": "Eq",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.441",
+              "omitted_implementation_details": 1,
+              "pretty": "case left\na b : Real\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\n⊢ Eq.{1} a 2",
+              "target": "Eq.{1} a 2",
+              "targetArgs": [
+                "Real",
+                "a",
+                "2"
+              ],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            },
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.430",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "a",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.431",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "b",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.430"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.432",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "ha",
+                  "type": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7",
+                  "typeHead": "Eq",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.431"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.433",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "hb",
+                  "type": "Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8",
+                  "typeHead": "Eq",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.442",
+              "omitted_implementation_details": 1,
+              "pretty": "case right\na b : Real\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\n⊢ Eq.{1} b 3",
+              "target": "Eq.{1} b 3",
+              "targetArgs": [
+                "Real",
+                "b",
+                "3"
+              ],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 2,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "617a1f1573f9e80e6a3a2fe49025dec65f226391f38f05f0a2bac04d47064ae8",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 38,
+        "elaborationMs": 18,
+        "artifactCount": 9532
+      },
+      "elapsedMs": 58,
+      "sequence": 2,
+      "kind": "candidate",
+      "nodeId": "n0",
+      "sourceFile": "formal/performance/worker-2026-11-25/worker/attempts/0002-candidate.lean",
+      "sourceHash": "d29333cb47a714017cb57e0b435754662e08cf36171973ea8c00f641951ff4e2",
+      "evidenceId": "ev_1b56864239b21d012c0171982bd76dbe29e84c2fa7c833e9a420922d4272376d"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.430\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.431\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"b\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.430\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.432\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"ha\\\",\\\"type\\\":\\\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.431\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.433\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"hb\\\",\\\"type\\\":\\\"Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.441\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case left\\\\na b : Real\\\\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\\\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\\\n⊢ Eq.{1} a 2\\\",\\\"target\\\":\\\"Eq.{1} a 2\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"a\\\",\\\"2\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n1\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":18,\"line\":11},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0003-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":11},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n1\",\"endPos\":{\"column\":18,\"line\":11},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0003-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":11},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.430\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.431\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"b\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.430\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.432\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"ha\\\",\\\"type\\\":\\\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.431\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.433\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"hb\\\",\\\"type\\\":\\\"Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.442\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case right\\\\na b : Real\\\\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\\\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\\\n⊢ Eq.{1} b 3\\\",\\\"target\\\":\\\"Eq.{1} b 3\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"b\\\",\\\"3\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":18,\"line\":13},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0003-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":13},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n2\",\"endPos\":{\"column\":18,\"line\":13},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0003-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":13},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.430\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"a\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.431\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"b\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.430\"],\"has_metavariables\":false,\"id\":\"_uniq.432\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"ha\",\"type\":\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.431\"],\"has_metavariables\":false,\"id\":\"_uniq.433\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"hb\",\"type\":\"Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.441\",\"omitted_implementation_details\":1,\"pretty\":\"case left\\na b : Real\\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\n⊢ Eq.{1} a 2\",\"target\":\"Eq.{1} a 2\",\"targetArgs\":[\"Real\",\"a\",\"2\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n1\",\"version\":1}",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0003-state.lean",
+          "start": {
+            "column": 4,
+            "line": 11
+          },
+          "end": {
+            "column": 18,
+            "line": 11
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n1",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0003-state.lean",
+          "start": {
+            "column": 4,
+            "line": 11
+          },
+          "end": {
+            "column": 18,
+            "line": 11
+          },
+          "category": "probe_stop"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.430\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"a\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.431\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"b\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.430\"],\"has_metavariables\":false,\"id\":\"_uniq.432\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"ha\",\"type\":\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.431\"],\"has_metavariables\":false,\"id\":\"_uniq.433\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"hb\",\"type\":\"Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.442\",\"omitted_implementation_details\":1,\"pretty\":\"case right\\na b : Real\\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\n⊢ Eq.{1} b 3\",\"target\":\"Eq.{1} b 3\",\"targetArgs\":[\"Real\",\"b\",\"3\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n2\",\"version\":1}",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0003-state.lean",
+          "start": {
+            "column": 4,
+            "line": 13
+          },
+          "end": {
+            "column": 18,
+            "line": 13
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n2",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0003-state.lean",
+          "start": {
+            "column": 4,
+            "line": 13
+          },
+          "end": {
+            "column": 18,
+            "line": 13
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.430",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "a",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.431",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "b",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.430"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.432",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "ha",
+                  "type": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7",
+                  "typeHead": "Eq",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.431"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.433",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "hb",
+                  "type": "Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8",
+                  "typeHead": "Eq",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.441",
+              "omitted_implementation_details": 1,
+              "pretty": "case left\na b : Real\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\n⊢ Eq.{1} a 2",
+              "target": "Eq.{1} a 2",
+              "targetArgs": [
+                "Real",
+                "a",
+                "2"
+              ],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n1",
+          "version": 1
+        },
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.430",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "a",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.431",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "b",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.430"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.432",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "ha",
+                  "type": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7",
+                  "typeHead": "Eq",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.431"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.433",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "hb",
+                  "type": "Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8",
+                  "typeHead": "Eq",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.442",
+              "omitted_implementation_details": 1,
+              "pretty": "case right\na b : Real\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\n⊢ Eq.{1} b 3",
+              "target": "Eq.{1} b 3",
+              "targetArgs": [
+                "Real",
+                "b",
+                "3"
+              ],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n2",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 3,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "789a111fe8422fb15a100e533cb5a7a361caf88c475697b9eddcdd52330a4a62",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 52,
+        "elaborationMs": 13,
+        "artifactCount": 9532
+      },
+      "elapsedMs": 66,
+      "sequence": 3,
+      "kind": "state",
+      "nodeId": "n1",
+      "sourceFile": "formal/performance/worker-2026-11-25/worker/attempts/0003-state.lean",
+      "sourceHash": "4da7aa5ce398e65d675de03cce30539624fd3eaa4978ff02a65340f661125a8f",
+      "evidenceId": "ev_c6a94c22f9edce48f76402ea9d95452096b3a4609eab8d46a9e0698f0f16e72f"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\ncase left\\na b : ℝ\\nha : 2 * a + 3 = 7\\nhb : 3 * b - 1 = 8\\n⊢ a = 2\",\"endPos\":{\"column\":14,\"line\":11},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0004-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":11},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.430\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.431\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"b\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.430\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.432\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"ha\\\",\\\"type\\\":\\\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.431\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.433\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"hb\\\",\\\"type\\\":\\\"Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.442\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case right\\\\na b : Real\\\\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\\\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\\\n⊢ Eq.{1} b 3\\\",\\\"target\\\":\\\"Eq.{1} b 3\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"b\\\",\\\"3\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":18,\"line\":14},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0004-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":14},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n2\",\"endPos\":{\"column\":18,\"line\":14},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0004-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":14},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "error",
+          "message": "Tactic `assumption` failed\n\ncase left\na b : ℝ\nha : 2 * a + 3 = 7\nhb : 3 * b - 1 = 8\n⊢ a = 2",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0004-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 11
+          },
+          "end": {
+            "column": 14,
+            "line": 11
+          },
+          "category": "missing_hypothesis_or_instance"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.430\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"a\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.431\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"b\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.430\"],\"has_metavariables\":false,\"id\":\"_uniq.432\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"ha\",\"type\":\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.431\"],\"has_metavariables\":false,\"id\":\"_uniq.433\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"hb\",\"type\":\"Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.442\",\"omitted_implementation_details\":1,\"pretty\":\"case right\\na b : Real\\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\n⊢ Eq.{1} b 3\",\"target\":\"Eq.{1} b 3\",\"targetArgs\":[\"Real\",\"b\",\"3\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n2\",\"version\":1}",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0004-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 14
+          },
+          "end": {
+            "column": 18,
+            "line": 14
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n2",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0004-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 14
+          },
+          "end": {
+            "column": 18,
+            "line": 14
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.430",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "a",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.431",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "b",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.430"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.432",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "ha",
+                  "type": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7",
+                  "typeHead": "Eq",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.431"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.433",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "hb",
+                  "type": "Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8",
+                  "typeHead": "Eq",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.442",
+              "omitted_implementation_details": 1,
+              "pretty": "case right\na b : Real\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\n⊢ Eq.{1} b 3",
+              "target": "Eq.{1} b 3",
+              "targetArgs": [
+                "Real",
+                "b",
+                "3"
+              ],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n2",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 4,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "a130defd2207a88823c8a10a7b16a0ed5b0f4ee32e407996aeb34e550f2b87d7",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 75,
+        "elaborationMs": 9,
+        "artifactCount": 9532
+      },
+      "elapsedMs": 86,
+      "sequence": 4,
+      "kind": "candidate",
+      "nodeId": "n1",
+      "sourceFile": "formal/performance/worker-2026-11-25/worker/attempts/0004-candidate.lean",
+      "sourceHash": "9c0cef32b6004396e3c1f74fefb0165e3e7ccd9f1ad55b334a3535383ac3c444",
+      "evidenceId": "ev_f2a7fc6423ed8344918cae1da0c87702b187e2799a1f120818790345c03a820b"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  a\\nis not definitionally equal to the right-hand side\\n  2\\n\\ncase left\\na b : ℝ\\nha : 2 * a + 3 = 7\\nhb : 3 * b - 1 = 8\\n⊢ a = 2\",\"endPos\":{\"column\":7,\"line\":11},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0005-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":11},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.430\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.431\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"b\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.430\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.432\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"ha\\\",\\\"type\\\":\\\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.431\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.433\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"hb\\\",\\\"type\\\":\\\"Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.442\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case right\\\\na b : Real\\\\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\\\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\\\n⊢ Eq.{1} b 3\\\",\\\"target\\\":\\\"Eq.{1} b 3\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"b\\\",\\\"3\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":18,\"line\":14},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0005-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":14},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n2\",\"endPos\":{\"column\":18,\"line\":14},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0005-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":14},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "error",
+          "message": "Tactic `rfl` failed: The left-hand side\n  a\nis not definitionally equal to the right-hand side\n  2\n\ncase left\na b : ℝ\nha : 2 * a + 3 = 7\nhb : 3 * b - 1 = 8\n⊢ a = 2",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0005-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 11
+          },
+          "end": {
+            "column": 7,
+            "line": 11
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.430\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"a\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.431\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"b\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.430\"],\"has_metavariables\":false,\"id\":\"_uniq.432\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"ha\",\"type\":\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.431\"],\"has_metavariables\":false,\"id\":\"_uniq.433\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"hb\",\"type\":\"Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.442\",\"omitted_implementation_details\":1,\"pretty\":\"case right\\na b : Real\\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\n⊢ Eq.{1} b 3\",\"target\":\"Eq.{1} b 3\",\"targetArgs\":[\"Real\",\"b\",\"3\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n2\",\"version\":1}",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0005-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 14
+          },
+          "end": {
+            "column": 18,
+            "line": 14
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n2",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0005-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 14
+          },
+          "end": {
+            "column": 18,
+            "line": 14
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.430",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "a",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.431",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "b",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.430"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.432",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "ha",
+                  "type": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7",
+                  "typeHead": "Eq",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.431"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.433",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "hb",
+                  "type": "Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8",
+                  "typeHead": "Eq",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.442",
+              "omitted_implementation_details": 1,
+              "pretty": "case right\na b : Real\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\n⊢ Eq.{1} b 3",
+              "target": "Eq.{1} b 3",
+              "targetArgs": [
+                "Real",
+                "b",
+                "3"
+              ],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n2",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 5,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "4c303f998313f29e4c00c562807bb0b3f9f8ef3f4eb8e48443e48c34aa42a430",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 59,
+        "elaborationMs": 16,
+        "artifactCount": 9532
+      },
+      "elapsedMs": 77,
+      "sequence": 5,
+      "kind": "candidate",
+      "nodeId": "n1",
+      "sourceFile": "formal/performance/worker-2026-11-25/worker/attempts/0005-candidate.lean",
+      "sourceHash": "2450a0faefce3df1107bbc9879a901c4d655714f726616771a749fc0e346334a",
+      "evidenceId": "ev_ba1f6d88f7a2a5176b67a99ea24a12ae4e7197f5f783462968b846a84ddf81bd"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[],\\\"node_id\\\":\\\"n1\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":17,\"line\":12},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0006-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":12},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_CLOSED:{\\\"node_id\\\":\\\"n1\\\"}\",\"endPos\":{\"column\":17,\"line\":12},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0006-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":12},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n1\",\"endPos\":{\"column\":17,\"line\":12},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0006-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":12},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.430\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.431\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"b\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.430\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.432\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"ha\\\",\\\"type\\\":\\\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.431\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.433\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"hb\\\",\\\"type\\\":\\\"Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.442\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case right\\\\na b : Real\\\\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\\\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\\\n⊢ Eq.{1} b 3\\\",\\\"target\\\":\\\"Eq.{1} b 3\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"b\\\",\\\"3\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":18,\"line\":14},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0006-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":14},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n2\",\"endPos\":{\"column\":18,\"line\":14},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0006-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":14},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[],\"node_id\":\"n1\",\"version\":1}",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0006-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 12
+          },
+          "end": {
+            "column": 17,
+            "line": 12
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_CLOSED:{\"node_id\":\"n1\"}",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0006-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 12
+          },
+          "end": {
+            "column": 17,
+            "line": 12
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n1",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0006-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 12
+          },
+          "end": {
+            "column": 17,
+            "line": 12
+          },
+          "category": "probe_stop"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.430\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"a\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.431\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"b\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.430\"],\"has_metavariables\":false,\"id\":\"_uniq.432\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"ha\",\"type\":\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.431\"],\"has_metavariables\":false,\"id\":\"_uniq.433\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"hb\",\"type\":\"Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.442\",\"omitted_implementation_details\":1,\"pretty\":\"case right\\na b : Real\\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\n⊢ Eq.{1} b 3\",\"target\":\"Eq.{1} b 3\",\"targetArgs\":[\"Real\",\"b\",\"3\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n2\",\"version\":1}",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0006-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 14
+          },
+          "end": {
+            "column": 18,
+            "line": 14
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n2",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0006-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 14
+          },
+          "end": {
+            "column": 18,
+            "line": 14
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [],
+          "node_id": "n1",
+          "version": 1
+        },
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.430",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "a",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.431",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "b",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.430"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.432",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "ha",
+                  "type": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7",
+                  "typeHead": "Eq",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.431"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.433",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "hb",
+                  "type": "Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8",
+                  "typeHead": "Eq",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.442",
+              "omitted_implementation_details": 1,
+              "pretty": "case right\na b : Real\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\n⊢ Eq.{1} b 3",
+              "target": "Eq.{1} b 3",
+              "targetArgs": [
+                "Real",
+                "b",
+                "3"
+              ],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n2",
+          "version": 1
+        }
+      ],
+      "closed": [
+        {
+          "node_id": "n1"
+        }
+      ],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 6,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "7c865db73dffe46ed9c8d8c3c44dcd6c4770b0ffcb433c0efeabdc553d36fbe1",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 61,
+        "elaborationMs": 129,
+        "artifactCount": 9532
+      },
+      "elapsedMs": 193,
+      "sequence": 6,
+      "kind": "candidate",
+      "nodeId": "n1",
+      "sourceFile": "formal/performance/worker-2026-11-25/worker/attempts/0006-candidate.lean",
+      "sourceHash": "1b75077df29e5c529c57724917e58ff456df3723e36eb892cb4298063306a20e",
+      "evidenceId": "ev_c4cb0c4b41cb0f4288ffe1aaae8d9435ce0695174a8263dad674cc073f077477"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.430\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.431\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"b\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.430\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.432\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"ha\\\",\\\"type\\\":\\\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.431\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.433\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"hb\\\",\\\"type\\\":\\\"Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.442\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case right\\\\na b : Real\\\\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\\\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\\\n⊢ Eq.{1} b 3\\\",\\\"target\\\":\\\"Eq.{1} b 3\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"b\\\",\\\"3\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":18,\"line\":13},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0007-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":13},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n2\",\"endPos\":{\"column\":18,\"line\":13},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0007-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":13},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.430\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"a\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.431\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"b\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.430\"],\"has_metavariables\":false,\"id\":\"_uniq.432\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"ha\",\"type\":\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.431\"],\"has_metavariables\":false,\"id\":\"_uniq.433\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"hb\",\"type\":\"Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.442\",\"omitted_implementation_details\":1,\"pretty\":\"case right\\na b : Real\\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\\n⊢ Eq.{1} b 3\",\"target\":\"Eq.{1} b 3\",\"targetArgs\":[\"Real\",\"b\",\"3\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n2\",\"version\":1}",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0007-state.lean",
+          "start": {
+            "column": 4,
+            "line": 13
+          },
+          "end": {
+            "column": 18,
+            "line": 13
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n2",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0007-state.lean",
+          "start": {
+            "column": 4,
+            "line": 13
+          },
+          "end": {
+            "column": 18,
+            "line": 13
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.430",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "a",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.431",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "b",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.430"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.432",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "ha",
+                  "type": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7",
+                  "typeHead": "Eq",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.431"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.433",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "hb",
+                  "type": "Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8",
+                  "typeHead": "Eq",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.442",
+              "omitted_implementation_details": 1,
+              "pretty": "case right\na b : Real\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\n⊢ Eq.{1} b 3",
+              "target": "Eq.{1} b 3",
+              "targetArgs": [
+                "Real",
+                "b",
+                "3"
+              ],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n2",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 7,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "f5d390a0fab51af5a64e2ef77bdb42ccfeac689fc8552263933e1071caf1ffc9",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 37,
+        "elaborationMs": 58,
+        "artifactCount": 9532
+      },
+      "elapsedMs": 96,
+      "sequence": 7,
+      "kind": "state",
+      "nodeId": "n2",
+      "sourceFile": "formal/performance/worker-2026-11-25/worker/attempts/0007-state.lean",
+      "sourceHash": "639cb5d512f48abcba42c598870a1aaf5062b958f62ec05b03c37916da7fa0dd",
+      "evidenceId": "ev_9af0804740586546d432d2915f88bc26f9564bc8af2fec7ef715c8d1d0c99e5b"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\ncase right\\na b : ℝ\\nha : 2 * a + 3 = 7\\nhb : 3 * b - 1 = 8\\n⊢ b = 3\",\"endPos\":{\"column\":14,\"line\":13},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0008-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":13},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "error",
+          "message": "Tactic `assumption` failed\n\ncase right\na b : ℝ\nha : 2 * a + 3 = 7\nhb : 3 * b - 1 = 8\n⊢ b = 3",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0008-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 13
+          },
+          "end": {
+            "column": 14,
+            "line": 13
+          },
+          "category": "missing_hypothesis_or_instance"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 8,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "9b1c2160cfe4cf1273e486cf28270cdc40f61388e842d337e2bf2d9943772cc2",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 30,
+        "elaborationMs": 48,
+        "artifactCount": 9532
+      },
+      "elapsedMs": 80,
+      "sequence": 8,
+      "kind": "candidate",
+      "nodeId": "n2",
+      "sourceFile": "formal/performance/worker-2026-11-25/worker/attempts/0008-candidate.lean",
+      "sourceHash": "4cb815bd6de5d02a6b176030fbd4fadf6293a5018538e2d91eec57ef9fcb18ac",
+      "evidenceId": "ev_a40c162248bd81826f1b7d1042fcd51e6aea69401681ada13dd637ab95c0499b"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  b\\nis not definitionally equal to the right-hand side\\n  3\\n\\ncase right\\na b : ℝ\\nha : 2 * a + 3 = 7\\nhb : 3 * b - 1 = 8\\n⊢ b = 3\",\"endPos\":{\"column\":7,\"line\":13},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0009-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":13},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "error",
+          "message": "Tactic `rfl` failed: The left-hand side\n  b\nis not definitionally equal to the right-hand side\n  3\n\ncase right\na b : ℝ\nha : 2 * a + 3 = 7\nhb : 3 * b - 1 = 8\n⊢ b = 3",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0009-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 13
+          },
+          "end": {
+            "column": 7,
+            "line": 13
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 9,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "d9445ff052b2d2d5929d02eb5c79bc391d74b040eef640d757c4e7f29ab88cf2",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 44,
+        "elaborationMs": 31,
+        "artifactCount": 9532
+      },
+      "elapsedMs": 77,
+      "sequence": 9,
+      "kind": "candidate",
+      "nodeId": "n2",
+      "sourceFile": "formal/performance/worker-2026-11-25/worker/attempts/0009-candidate.lean",
+      "sourceHash": "d1b651de991d20049787175b00dd6d1242ed09ce563d61bc95d4eb5dbb141974",
+      "evidenceId": "ev_b6337111c787ba69b3f9fd0ccfe1a4294b2039b31a942072539d31142b83110d"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[],\\\"node_id\\\":\\\"n2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":17,\"line\":14},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0010-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":14},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_CLOSED:{\\\"node_id\\\":\\\"n2\\\"}\",\"endPos\":{\"column\":17,\"line\":14},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0010-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":14},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n2\",\"endPos\":{\"column\":17,\"line\":14},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0010-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":14},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[],\"node_id\":\"n2\",\"version\":1}",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0010-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 14
+          },
+          "end": {
+            "column": 17,
+            "line": 14
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_CLOSED:{\"node_id\":\"n2\"}",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0010-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 14
+          },
+          "end": {
+            "column": 17,
+            "line": 14
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n2",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0010-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 14
+          },
+          "end": {
+            "column": 17,
+            "line": 14
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [],
+          "node_id": "n2",
+          "version": 1
+        }
+      ],
+      "closed": [
+        {
+          "node_id": "n2"
+        }
+      ],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 10,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "bc77101026810ab77efaecbcb29f05c33cde5b4b5edfac9403e5c43fbd9e7533",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 36,
+        "elaborationMs": 64,
+        "artifactCount": 9532
+      },
+      "elapsedMs": 101,
+      "sequence": 10,
+      "kind": "candidate",
+      "nodeId": "n2",
+      "sourceFile": "formal/performance/worker-2026-11-25/worker/attempts/0010-candidate.lean",
+      "sourceHash": "326edca44fa48bac65193e78e90d91335ec3c84cf506e995e917a7f103587809",
+      "evidenceId": "ev_cdc178047bf5be5281fea547ccaae3ea28b8f2239155771e88f7bd0f3af3179a"
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"worker_measurement\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (a b : Real),\\\\n  Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7 →\\\\n    Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8 → And (Eq.{1} a 2) (Eq.{1} b 3)\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":29,\"line\":15},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0011-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":15},\"severity\":\"information\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 3717,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"worker_measurement\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (a b : Real),\\n  Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7 →\\n    Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8 → And (Eq.{1} a 2) (Eq.{1} b 3)\",\"universe_parameters\":[],\"version\":1}",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0011-final.lean",
+          "start": {
+            "column": 0,
+            "line": 15
+          },
+          "end": {
+            "column": 29,
+            "line": 15
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "worker_measurement",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (a b : Real),\n  Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7 →\n    Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8 → And (Eq.{1} a 2) (Eq.{1} b 3)",
+          "universe_parameters": [],
+          "version": 1
+        }
+      ],
+      "unparsed": [],
+      "sequence": 11,
+      "kind": "final",
+      "nodeId": "n0",
+      "sourceFile": "formal/performance/worker-2026-11-25/worker/attempts/0011-final.lean",
+      "sourceHash": "fafe022c8e1d277bc45b5d4106ba87fbff56e0e84b90d51a484b05d2f9c6ec7f",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_375e4089d3110ab416597c4b9332afe5e48468755d5e8754e07052bdc5aef4e3"
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"worker_measurement\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (a b : Real),\\\\n  Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7 →\\\\n    Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8 → And (Eq.{1} a 2) (Eq.{1} b 3)\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":29,\"line\":15},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0012-recheck.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":15},\"severity\":\"information\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 3268,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"worker_measurement\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (a b : Real),\\n  Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7 →\\n    Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8 → And (Eq.{1} a 2) (Eq.{1} b 3)\",\"universe_parameters\":[],\"version\":1}",
+          "file": "formal/performance/worker-2026-11-25/worker/attempts/0012-recheck.lean",
+          "start": {
+            "column": 0,
+            "line": 15
+          },
+          "end": {
+            "column": 29,
+            "line": 15
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "worker_measurement",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (a b : Real),\n  Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7 →\n    Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8 → And (Eq.{1} a 2) (Eq.{1} b 3)",
+          "universe_parameters": [],
+          "version": 1
+        }
+      ],
+      "unparsed": [],
+      "sequence": 12,
+      "kind": "recheck",
+      "nodeId": "n0",
+      "sourceFile": "formal/performance/worker-2026-11-25/worker/attempts/0012-recheck.lean",
+      "sourceHash": "fafe022c8e1d277bc45b5d4106ba87fbff56e0e84b90d51a484b05d2f9c6ec7f",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_656e2f612d64d2e4407ee378309593bec0893d0c44fee322f51d41fcb429f743"
+    }
+  ]
+}

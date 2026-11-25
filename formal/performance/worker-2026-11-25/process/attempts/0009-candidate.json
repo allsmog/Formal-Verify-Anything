@@ -1,0 +1,37 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  b\\nis not definitionally equal to the right-hand side\\n  3\\n\\ncase right\\na b : ℝ\\nha : 2 * a + 3 = 7\\nhb : 3 * b - 1 = 8\\n⊢ b = 3\",\"endPos\":{\"column\":7,\"line\":13},\"fileName\":\"formal/performance/worker-2026-11-25/process/attempts/0009-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":13},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2838,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  b\nis not definitionally equal to the right-hand side\n  3\n\ncase right\na b : ℝ\nha : 2 * a + 3 = 7\nhb : 3 * b - 1 = 8\n⊢ b = 3",
+      "file": "formal/performance/worker-2026-11-25/process/attempts/0009-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 13
+      },
+      "end": {
+        "column": 7,
+        "line": 13
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 9,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "formal/performance/worker-2026-11-25/process/attempts/0009-candidate.lean",
+  "sourceHash": "d1b651de991d20049787175b00dd6d1242ed09ce563d61bc95d4eb5dbb141974",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_77231f83c008c09b90e74e3e2277ce93f444e71391907523fc3697707ec4582a"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "p1",
+  "nodeId": "n1",
+  "stateHash": "2fdbeee60e493dd835d9296b30407001cbf60f6020affb1367385bb0339a0952",
+  "round": 0,
+  "requestDigest": "a1920ec0be47a5b423e206f11f7b5b1cd2255823c6fb2fd252ed275aff4ab429",
+  "contextFile": "formal/performance/worker-2026-11-25/process/proposals/0002-context.json",
+  "modelTokens": 0,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "proposals": [
+    {
+      "tactic": "assumption"
+    },
+    {
+      "tactic": "rfl"
+    },
+    {
+      "tactic": "linarith"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 0,
+  "evidenceId": "ev_6691e3bf970e8b2cb3c475221035855bb1a59d88550f0620e43cdb1e91cb4de6"
+}

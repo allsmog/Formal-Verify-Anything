@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  b\\nis not definitionally equal to the right-hand side\\n  3\\n\\ncase right\\na b : ℝ\\nha : 2 * a + 3 = 7\\nhb : 3 * b - 1 = 8\\n⊢ b = 3\",\"endPos\":{\"column\":7,\"line\":13},\"fileName\":\"formal/performance/worker-2026-11-25/worker/attempts/0009-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":13},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  b\nis not definitionally equal to the right-hand side\n  3\n\ncase right\na b : ℝ\nha : 2 * a + 3 = 7\nhb : 3 * b - 1 = 8\n⊢ b = 3",
+      "file": "formal/performance/worker-2026-11-25/worker/attempts/0009-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 13
+      },
+      "end": {
+        "column": 7,
+        "line": 13
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 9,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "d9445ff052b2d2d5929d02eb5c79bc391d74b040eef640d757c4e7f29ab88cf2",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 44,
+    "elaborationMs": 31,
+    "artifactCount": 9532
+  },
+  "elapsedMs": 77,
+  "sequence": 9,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "formal/performance/worker-2026-11-25/worker/attempts/0009-candidate.lean",
+  "sourceHash": "d1b651de991d20049787175b00dd6d1242ed09ce563d61bc95d4eb5dbb141974",
+  "evidenceId": "ev_b6337111c787ba69b3f9fd0ccfe1a4294b2039b31a942072539d31142b83110d"
+}

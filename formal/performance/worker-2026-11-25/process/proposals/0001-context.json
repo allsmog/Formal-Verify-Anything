@@ -1,0 +1,83 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.431",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "a",
+        "type": "Real",
+        "typeHead": "Real",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.432",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "b",
+        "type": "Real",
+        "typeHead": "Real",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.431"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.433",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "ha",
+        "type": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7",
+        "typeHead": "Eq",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.432"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.434",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "hb",
+        "type": "Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8",
+        "typeHead": "Eq",
+        "value": null
+      }
+    ],
+    "id": "_uniq.435",
+    "omitted_implementation_details": 1,
+    "pretty": "a b : Real\nha : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 a) 3) 7\nhb : Eq.{1} (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 b) 1) 8\n⊢ And (Eq.{1} a 2) (Eq.{1} b 3)",
+    "target": "And (Eq.{1} a 2) (Eq.{1} b 3)",
+    "targetArgs": [
+      "Eq.{1} a 2",
+      "Eq.{1} b 3"
+    ],
+    "targetHead": "And",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 13,
+    "maxDepth": 2,
+    "depth": 0,
+    "modelTokensRemaining": 0,
+    "remainingMs": 231771
+  },
+  "feedback": []
+}
