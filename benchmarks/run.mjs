@@ -95,7 +95,7 @@ function metricSummary(results) {
 export function renderReport(evaluation, reportDir, projectRoot = PROJECT_ROOT) {
   const results = evaluation.results;
   const lines = [
-    '# Formal Verify Anything — benchmark results',
+    '# Formal Verify Anything: benchmark results',
     '',
     `Run: \`${evaluation.runId}\`  `,
     `Started: ${evaluation.startedAt}; finished: ${evaluation.finishedAt}.  `,
@@ -123,8 +123,8 @@ export function renderReport(evaluation, reportDir, projectRoot = PROJECT_ROOT) 
     '| --- | ---: | ---: | ---: | ---: |',
   ];
   for (const [label, subset] of [
-    ['Tier 1 — foundational', results.filter((result) => result.tier === 1)],
-    ['Tier 2 — miniF2F Test algebra subset', results.filter((result) => result.tier === 2)],
+    ['Tier 1: foundational', results.filter((result) => result.tier === 1)],
+    ['Tier 2: miniF2F Test algebra subset', results.filter((result) => result.tier === 2)],
     ['All selected problems', results],
   ]) {
     const summary = metricSummary(subset);
@@ -171,7 +171,7 @@ export function renderReport(evaluation, reportDir, projectRoot = PROJECT_ROOT) 
     '',
   );
   for (const dataset of evaluation.datasets) {
-    lines.push(`- \`${dataset.file}\` — ${dataset.selectionRule} SHA-256: \`${dataset.sha256}\`.`);
+    lines.push(`- \`${dataset.file}\`: ${dataset.selectionRule} SHA-256: \`${dataset.sha256}\`.`);
     if (dataset.sourceRepository) lines.push(`  Source: [${dataset.sourceRepository}](${dataset.sourceRepository}/tree/${dataset.sourceCommit}), commit \`${dataset.sourceCommit}\`.`);
   }
   lines.push('',

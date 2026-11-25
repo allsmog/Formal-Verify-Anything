@@ -104,7 +104,7 @@ test('unknown model usage remains unknown rather than becoming zero', () => {
 test('the blocked-provider report explicitly omits a model score and describes admission allowance', () => {
   const report = fixture();
   const rendered = renderComparison(report, '/tmp/report', '/tmp');
-  assert.match(rendered, /BLOCKED — 0 theorem attempts; no score/);
+  assert.match(rendered, /BLOCKED: 0 theorem attempts; no score/);
   assert.match(rendered, /not a provider billing cap/);
   assert.doesNotMatch(rendered, /Paired outcomes:/);
 });

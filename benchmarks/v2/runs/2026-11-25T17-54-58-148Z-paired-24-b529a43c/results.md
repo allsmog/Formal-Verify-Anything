@@ -1,4 +1,4 @@
-# Formal Verify Anything v2 — provider comparison
+# Formal Verify Anything v2: provider comparison
 
 Run: `2026-11-25T17-54-58-148Z-paired-24-b529a43c`. Started 2026-11-25T17:54:58.148Z; finished 2026-11-25T18:23:19.293Z.
 

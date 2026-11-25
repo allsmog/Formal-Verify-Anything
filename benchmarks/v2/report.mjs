@@ -32,7 +32,7 @@ export function renderComparison(evaluation, reportDir, projectRoot) {
     return path.relative(reportDir, absolute).split(path.sep).map(encodeURIComponent).join('/');
   };
   const lines = [
-    '# Formal Verify Anything v2 — provider comparison',
+    '# Formal Verify Anything v2: provider comparison',
     '',
     `Run: \`${evaluation.runId}\`. Started ${evaluation.startedAt}; finished ${evaluation.finishedAt ?? 'not completed'}.`,
     '',
@@ -58,12 +58,12 @@ export function renderComparison(evaluation, reportDir, projectRoot) {
     '## Results',
     '',
   ];
-  if (evaluation.halt) lines.push(`Scheduling stopped: **${cell(evaluation.halt.category)}** — ${cell(evaluation.halt.message)}. The run is incomplete and cannot replace the canonical report.`, '');
+  if (evaluation.halt) lines.push(`Scheduling stopped: **${cell(evaluation.halt.category)}**: ${cell(evaluation.halt.message)}. The run is incomplete and cannot replace the canonical report.`, '');
   if (evaluation.providerPreflight) {
     const preflightPath = `benchmarks/v2/runs/${evaluation.runId}/provider-preflight.json`;
     lines.push(`Codex availability: **${cell(evaluation.providerPreflight.status)}**. [Actual preflight evidence](${link(preflightPath)}).`, '');
     if (evaluation.providerPreflight.status === 'BLOCKED') {
-      lines.push(`Recorded blocker: ${cell(evaluation.providerPreflight.error?.code ?? 'provider_error')} — ${cell(evaluation.providerPreflight.error?.message).slice(0, 2000)}.`,
+      lines.push(`Recorded blocker: ${cell(evaluation.providerPreflight.error?.code ?? 'provider_error')}: ${cell(evaluation.providerPreflight.error?.message).slice(0, 2000)}.`,
         '', '**No model holdout score exists for this run.** Deterministic outcomes below remain measured results; they are not evidence of model failure.', '');
     }
   }
@@ -71,7 +71,7 @@ export function renderComparison(evaluation, reportDir, projectRoot) {
     '| --- | ---: | ---: | ---: | ---: | ---: |');
   for (const method of evaluation.methods) {
     if (evaluation.providerAvailability?.[method] === 'BLOCKED') {
-      lines.push(`| ${cell(method)} | **BLOCKED — 0 theorem attempts; no score** | not attempted | not applicable | not applicable | see preflight evidence |`);
+      lines.push(`| ${cell(method)} | **BLOCKED: 0 theorem attempts; no score** | not attempted | not applicable | not applicable | see preflight evidence |`);
       continue;
     }
     const summary = summarize(evaluation.results.filter((row) => row.method === method));
@@ -82,7 +82,7 @@ export function renderComparison(evaluation, reportDir, projectRoot) {
   for (const category of ['algebra', 'number_theory', 'induction']) {
     for (const method of evaluation.methods) {
       if (evaluation.providerAvailability?.[method] === 'BLOCKED') {
-        lines.push(`| ${cell(category)} | ${cell(method)} | BLOCKED — not attempted |`);
+        lines.push(`| ${cell(category)} | ${cell(method)} | BLOCKED: not attempted |`);
         continue;
       }
       const summary = summarize(evaluation.results.filter((row) => row.method === method && row.category === category));

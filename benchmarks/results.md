@@ -1,4 +1,4 @@
-# Formal Verify Anything — benchmark results
+# Formal Verify Anything: benchmark results
 
 Run: `2026-11-25T17-28-02-563Z-canonical`  
 Started: 2026-11-25T17:28:02.563Z; finished: 2026-11-25T17:50:36.737Z.  
@@ -31,8 +31,8 @@ Node: `v26.3.0`; platform: `darwin/arm64`.
 
 | Suite | Solved / attempted (pass@1) | Mean compiler calls per solved theorem | Compiler calls, all attempts | Maximum recursion depth |
 | --- | ---: | ---: | ---: | ---: |
-| Tier 1 — foundational | 5/5 (100.0%) | 11.00 | 55 | 3 |
-| Tier 2 — miniF2F Test algebra subset | 8/12 (66.7%) | 13.88 | 359 | 8 |
+| Tier 1: foundational | 5/5 (100.0%) | 11.00 | 55 | 3 |
+| Tier 2: miniF2F Test algebra subset | 8/12 (66.7%) | 13.88 | 359 | 8 |
 | All selected problems | 13/17 (76.5%) | 12.77 | 414 | 8 |
 
 First-candidate success (separate from pass@1): **0/17 (0.0%)**; measured for 17/17 problems.
@@ -68,8 +68,8 @@ The detailed JSON and each theorem’s `result.json` preserve the proof tree, in
 
 ## Dataset provenance and limits
 
-- `benchmarks/tier1.json` — Five fixed foundational statements established before the benchmark run. SHA-256: `3f8043fd754f303bbe9df5e5711241bc930efb82d19f8e66b4863662231614fc`.
-- `benchmarks/minif2f.json` — First 12 files lexicographically from MiniF2F/Test/mathd_algebra_*.lean at the pinned commit, before any solver runs. SHA-256: `3b86a7e7c0835c7fead0b02bcbfd0c519bc7c3bb32310ac19143717701edc9f4`.
+- `benchmarks/tier1.json`: Five fixed foundational statements established before the benchmark run. SHA-256: `3f8043fd754f303bbe9df5e5711241bc930efb82d19f8e66b4863662231614fc`.
+- `benchmarks/minif2f.json`: First 12 files lexicographically from MiniF2F/Test/mathd_algebra_*.lean at the pinned commit, before any solver runs. SHA-256: `3b86a7e7c0835c7fead0b02bcbfd0c519bc7c3bb32310ac19143717701edc9f4`.
   Source: [https://github.com/yangky11/miniF2F-lean4](https://github.com/yangky11/miniF2F-lean4/tree/5746b7d6c47855ce1294bed87329618ff7f1bc31), commit `5746b7d6c47855ce1294bed87329618ff7f1bc31`.
 
 Tier 1 is a constructed sanity suite. Tier 2 preserves the original theorem declarations from the fixed miniF2F revision. Runtime imports include mathlib, but never the miniF2F theorem modules or their proof bodies. Upstream’s unlimited-heartbeat setting is not copied into the run.
