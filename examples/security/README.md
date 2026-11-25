@@ -80,7 +80,7 @@ execution from `fresh` and derives the bound with `omega`. The runner checks the
 recorded contexts: the lemma child cannot see its own unproved result; its
 continuation can use the proved result.
 
-The [recorded guided run](runs/2026-11-20T07-33-07-844Z-guided-demo/results.md)
+The [recorded guided run](runs/2026-11-25T17-51-49-617Z-guided-demo/results.md)
 completed both tasks:
 
 | Task | Compiler calls | Maximum recursion depth | Runtime model tokens |

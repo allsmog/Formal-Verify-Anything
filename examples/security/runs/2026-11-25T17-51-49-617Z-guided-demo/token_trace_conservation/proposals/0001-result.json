@@ -1,0 +1,26 @@
+{
+  "id": "p0",
+  "nodeId": "n0",
+  "stateHash": "01dfddc49eaa112d5e3fb56193d80028e19ba9d88ada3cfe97e04b1ddd35e114",
+  "round": 0,
+  "requestDigest": "b5494be2893786714c996e29945944624ec5c4dedf8ccc6d5d1ee41a472f0f32",
+  "contextFile": "examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_trace_conservation/proposals/0001-context.json",
+  "modelTokens": 0,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "guided-token-demo-v1",
+  "provider": "static-guided-policy",
+  "metadata": {
+    "manualGuidance": true,
+    "benchmarkEligible": false
+  },
+  "proposals": [
+    {
+      "kind": "tactic",
+      "tactic": "induction execution with\n| nil state =>\n    cases state <;> rfl\n| cons first _rest ih =>\n    cases first <;> simp_all [successes, remaining]"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 0,
+  "evidenceId": "ev_8c992e3fa4ac2e2fc5cc1448ed6440f9898dfacd6c57c88936bb9b758fd2a1ca"
+}

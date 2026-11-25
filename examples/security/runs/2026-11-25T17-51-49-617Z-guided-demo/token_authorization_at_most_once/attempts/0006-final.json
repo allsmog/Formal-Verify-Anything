@@ -1,0 +1,52 @@
+{
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"token_authorization_at_most_once\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (outcomes : List.{0} FormalVerify.Examples.AtomicToken.Outcome)\\\\n  (final : FormalVerify.Examples.AtomicToken.TokenState),\\\\n  FormalVerify.Examples.AtomicToken.Trace FormalVerify.Examples.AtomicToken.TokenState.fresh outcomes final →\\\\n    LE.le.{0} (FormalVerify.Examples.AtomicToken.successes outcomes) 1\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":43,\"line\":25},\"fileName\":\"examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_authorization_at_most_once/attempts/0006-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":25},\"severity\":\"information\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2763,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"token_authorization_at_most_once\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (outcomes : List.{0} FormalVerify.Examples.AtomicToken.Outcome)\\n  (final : FormalVerify.Examples.AtomicToken.TokenState),\\n  FormalVerify.Examples.AtomicToken.Trace FormalVerify.Examples.AtomicToken.TokenState.fresh outcomes final →\\n    LE.le.{0} (FormalVerify.Examples.AtomicToken.successes outcomes) 1\",\"universe_parameters\":[],\"version\":1}",
+      "file": "examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_authorization_at_most_once/attempts/0006-final.lean",
+      "start": {
+        "column": 0,
+        "line": 25
+      },
+      "end": {
+        "column": 43,
+        "line": 25
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "token_authorization_at_most_once",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (outcomes : List.{0} FormalVerify.Examples.AtomicToken.Outcome)\n  (final : FormalVerify.Examples.AtomicToken.TokenState),\n  FormalVerify.Examples.AtomicToken.Trace FormalVerify.Examples.AtomicToken.TokenState.fresh outcomes final →\n    LE.le.{0} (FormalVerify.Examples.AtomicToken.successes outcomes) 1",
+      "universe_parameters": [],
+      "version": 1
+    }
+  ],
+  "unparsed": [],
+  "sequence": 6,
+  "kind": "final",
+  "nodeId": "n0",
+  "sourceFile": "examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_authorization_at_most_once/attempts/0006-final.lean",
+  "sourceHash": "8f27752f3a5e977b7224a5c4fc4e691a5911818aef0d972be2f8cfdb19ffd371",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_5788e042e5a864c4889b30144421427b17a5fd06883e2c1806d29adf39d2bdaa"
+}

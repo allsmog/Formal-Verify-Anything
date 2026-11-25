@@ -1,0 +1,65 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.49",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "outcomes",
+        "type": "List.{0} FormalVerify.Examples.AtomicToken.Outcome",
+        "typeHead": "List",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.50",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "final",
+        "type": "FormalVerify.Examples.AtomicToken.TokenState",
+        "typeHead": "FormalVerify.Examples.AtomicToken.TokenState",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.49",
+          "_uniq.50"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.51",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "execution",
+        "type": "FormalVerify.Examples.AtomicToken.Trace FormalVerify.Examples.AtomicToken.TokenState.fresh outcomes final",
+        "typeHead": "FormalVerify.Examples.AtomicToken.Trace",
+        "value": null
+      }
+    ],
+    "id": "_uniq.104",
+    "omitted_implementation_details": 1,
+    "pretty": "outcomes : List.{0} FormalVerify.Examples.AtomicToken.Outcome\nfinal : FormalVerify.Examples.AtomicToken.TokenState\nexecution : FormalVerify.Examples.AtomicToken.Trace FormalVerify.Examples.AtomicToken.TokenState.fresh outcomes final\n⊢ ∀ (initialState finalState : FormalVerify.Examples.AtomicToken.TokenState)\n    (events : List.{0} FormalVerify.Examples.AtomicToken.Outcome),\n    FormalVerify.Examples.AtomicToken.Trace initialState events finalState →\n      Eq.{1}\n        (HAdd.hAdd.{0, 0, 0} (FormalVerify.Examples.AtomicToken.successes events)\n          (FormalVerify.Examples.AtomicToken.remaining finalState))\n        (FormalVerify.Examples.AtomicToken.remaining initialState)",
+    "target": "∀ (initialState finalState : FormalVerify.Examples.AtomicToken.TokenState)\n  (events : List.{0} FormalVerify.Examples.AtomicToken.Outcome),\n  FormalVerify.Examples.AtomicToken.Trace initialState events finalState →\n    Eq.{1}\n      (HAdd.hAdd.{0, 0, 0} (FormalVerify.Examples.AtomicToken.successes events)\n        (FormalVerify.Examples.AtomicToken.remaining finalState))\n      (FormalVerify.Examples.AtomicToken.remaining initialState)",
+    "targetArgs": [],
+    "targetHead": "forall",
+    "universe_parameters": []
+  },
+  "imports": [
+    "FormalVerify.Examples.TokenModel",
+    "Mathlib.Tactic.NormNum"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 12,
+    "maxDepth": 2,
+    "depth": 1,
+    "modelTokensRemaining": 0,
+    "remainingMs": 174742
+  }
+}

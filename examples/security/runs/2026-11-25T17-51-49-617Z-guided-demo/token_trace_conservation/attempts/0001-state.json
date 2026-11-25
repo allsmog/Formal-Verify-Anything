@@ -1,0 +1,126 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"implicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.53\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"initial\\\",\\\"type\\\":\\\"FormalVerify.Examples.AtomicToken.TokenState\\\",\\\"typeHead\\\":\\\"FormalVerify.Examples.AtomicToken.TokenState\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"implicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.54\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"final\\\",\\\"type\\\":\\\"FormalVerify.Examples.AtomicToken.TokenState\\\",\\\"typeHead\\\":\\\"FormalVerify.Examples.AtomicToken.TokenState\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"implicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.55\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"outcomes\\\",\\\"type\\\":\\\"List.{0} FormalVerify.Examples.AtomicToken.Outcome\\\",\\\"typeHead\\\":\\\"List\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.53\\\",\\\"_uniq.55\\\",\\\"_uniq.54\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.56\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"execution\\\",\\\"type\\\":\\\"FormalVerify.Examples.AtomicToken.Trace initial outcomes final\\\",\\\"typeHead\\\":\\\"FormalVerify.Examples.AtomicToken.Trace\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.57\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"initial final : FormalVerify.Examples.AtomicToken.TokenState\\\\noutcomes : List.{0} FormalVerify.Examples.AtomicToken.Outcome\\\\nexecution : FormalVerify.Examples.AtomicToken.Trace initial outcomes final\\\\n⊢ Eq.{1}\\\\n    (HAdd.hAdd.{0, 0, 0} (FormalVerify.Examples.AtomicToken.successes outcomes)\\\\n      (FormalVerify.Examples.AtomicToken.remaining final))\\\\n    (FormalVerify.Examples.AtomicToken.remaining initial)\\\",\\\"target\\\":\\\"Eq.{1}\\\\n  (HAdd.hAdd.{0, 0, 0} (FormalVerify.Examples.AtomicToken.successes outcomes)\\\\n    (FormalVerify.Examples.AtomicToken.remaining final))\\\\n  (FormalVerify.Examples.AtomicToken.remaining initial)\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"HAdd.hAdd.{0, 0, 0} (FormalVerify.Examples.AtomicToken.successes outcomes)\\\\n  (FormalVerify.Examples.AtomicToken.remaining final)\\\",\\\"FormalVerify.Examples.AtomicToken.remaining initial\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":12},\"fileName\":\"examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_trace_conservation/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":12},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":16,\"line\":12},\"fileName\":\"examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_trace_conservation/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":12},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 6934,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"implicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.53\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"initial\",\"type\":\"FormalVerify.Examples.AtomicToken.TokenState\",\"typeHead\":\"FormalVerify.Examples.AtomicToken.TokenState\",\"value\":null},{\"binder\":\"implicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.54\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"final\",\"type\":\"FormalVerify.Examples.AtomicToken.TokenState\",\"typeHead\":\"FormalVerify.Examples.AtomicToken.TokenState\",\"value\":null},{\"binder\":\"implicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.55\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"outcomes\",\"type\":\"List.{0} FormalVerify.Examples.AtomicToken.Outcome\",\"typeHead\":\"List\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.53\",\"_uniq.55\",\"_uniq.54\"],\"has_metavariables\":false,\"id\":\"_uniq.56\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"execution\",\"type\":\"FormalVerify.Examples.AtomicToken.Trace initial outcomes final\",\"typeHead\":\"FormalVerify.Examples.AtomicToken.Trace\",\"value\":null}],\"id\":\"_uniq.57\",\"omitted_implementation_details\":1,\"pretty\":\"initial final : FormalVerify.Examples.AtomicToken.TokenState\\noutcomes : List.{0} FormalVerify.Examples.AtomicToken.Outcome\\nexecution : FormalVerify.Examples.AtomicToken.Trace initial outcomes final\\n⊢ Eq.{1}\\n    (HAdd.hAdd.{0, 0, 0} (FormalVerify.Examples.AtomicToken.successes outcomes)\\n      (FormalVerify.Examples.AtomicToken.remaining final))\\n    (FormalVerify.Examples.AtomicToken.remaining initial)\",\"target\":\"Eq.{1}\\n  (HAdd.hAdd.{0, 0, 0} (FormalVerify.Examples.AtomicToken.successes outcomes)\\n    (FormalVerify.Examples.AtomicToken.remaining final))\\n  (FormalVerify.Examples.AtomicToken.remaining initial)\",\"targetArgs\":[\"Nat\",\"HAdd.hAdd.{0, 0, 0} (FormalVerify.Examples.AtomicToken.successes outcomes)\\n  (FormalVerify.Examples.AtomicToken.remaining final)\",\"FormalVerify.Examples.AtomicToken.remaining initial\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+      "file": "examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_trace_conservation/attempts/0001-state.lean",
+      "start": {
+        "column": 2,
+        "line": 12
+      },
+      "end": {
+        "column": 16,
+        "line": 12
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n0",
+      "file": "examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_trace_conservation/attempts/0001-state.lean",
+      "start": {
+        "column": 2,
+        "line": 12
+      },
+      "end": {
+        "column": 16,
+        "line": 12
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "implicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.53",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "initial",
+              "type": "FormalVerify.Examples.AtomicToken.TokenState",
+              "typeHead": "FormalVerify.Examples.AtomicToken.TokenState",
+              "value": null
+            },
+            {
+              "binder": "implicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.54",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "final",
+              "type": "FormalVerify.Examples.AtomicToken.TokenState",
+              "typeHead": "FormalVerify.Examples.AtomicToken.TokenState",
+              "value": null
+            },
+            {
+              "binder": "implicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.55",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "outcomes",
+              "type": "List.{0} FormalVerify.Examples.AtomicToken.Outcome",
+              "typeHead": "List",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.53",
+                "_uniq.55",
+                "_uniq.54"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.56",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "execution",
+              "type": "FormalVerify.Examples.AtomicToken.Trace initial outcomes final",
+              "typeHead": "FormalVerify.Examples.AtomicToken.Trace",
+              "value": null
+            }
+          ],
+          "id": "_uniq.57",
+          "omitted_implementation_details": 1,
+          "pretty": "initial final : FormalVerify.Examples.AtomicToken.TokenState\noutcomes : List.{0} FormalVerify.Examples.AtomicToken.Outcome\nexecution : FormalVerify.Examples.AtomicToken.Trace initial outcomes final\n⊢ Eq.{1}\n    (HAdd.hAdd.{0, 0, 0} (FormalVerify.Examples.AtomicToken.successes outcomes)\n      (FormalVerify.Examples.AtomicToken.remaining final))\n    (FormalVerify.Examples.AtomicToken.remaining initial)",
+          "target": "Eq.{1}\n  (HAdd.hAdd.{0, 0, 0} (FormalVerify.Examples.AtomicToken.successes outcomes)\n    (FormalVerify.Examples.AtomicToken.remaining final))\n  (FormalVerify.Examples.AtomicToken.remaining initial)",
+          "targetArgs": [
+            "Nat",
+            "HAdd.hAdd.{0, 0, 0} (FormalVerify.Examples.AtomicToken.successes outcomes)\n  (FormalVerify.Examples.AtomicToken.remaining final)",
+            "FormalVerify.Examples.AtomicToken.remaining initial"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n0",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 1,
+  "kind": "state",
+  "nodeId": "n0",
+  "sourceFile": "examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_trace_conservation/attempts/0001-state.lean",
+  "sourceHash": "d4818b00ed78577a5d563575ced204aac37df4e124310e4286228b7fab0ae114",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_5ef09866a06c526dff42ce2704db08b1b973dab8f69735c383aa0ed69023a747"
+}

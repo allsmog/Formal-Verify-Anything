@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-11-25T17-51-49-617Z-guided-demo",
+  "kind": "guided-demo",
+  "policy": "guided-token-demo-v1",
+  "manualGuidance": true,
+  "benchmarkEligible": false,
+  "modelComparison": false,
+  "startedAt": "2026-11-25T17:51:49.626Z",
+  "scope": "Fixed development-supplied proof strategies for two abstract atomic-token properties. This is not autonomous discovery, a public benchmark score, an LLM evaluation, or implementation verification.",
+  "compilerMode": "process",
+  "budget": {
+    "maxCompilerCalls": 16,
+    "maxSteps": 8,
+    "maxProposalRounds": 1,
+    "maxDepth": 2,
+    "callTimeoutMs": 30000,
+    "theoremTimeoutMs": 180000,
+    "heartbeats": 200000,
+    "maxModelTokens": 0
+  },
+  "sourceAndArtifactHashes": {
+    "examples/security/run.mjs": "fe17f54ee1bf28307e821e398b7fef9aca9d84a4d13ed96b99c5ad6ca3c627fc",
+    "examples/security/token-conservation.json": "842237c930a5f04a4de37a3d1e4681755dafcf7bd70084f831696e455e6dc8b9",
+    "examples/security/token-at-most-once.json": "f5b138b7e1daa3d910ae3aaf6b1a37df8e83e9eeeca7fcc7d2d45421899864f4",
+    "FormalVerify/Examples/TokenModel.lean": "1a22846d6ac7d6e57a3b4f9b43f146821a70d8d4c9f3a0623db1df3f8b18017e",
+    ".lake/build/lib/lean/FormalVerify/Examples/TokenModel.olean": "f8d099ec3a158f21a9ad76bb82dc8cdbc9a239082524850e2866c35a2f6a1597",
+    "FormalVerify/Bridge.lean": "cfaab974a2739bbe0c0f3d37f3fba25e30a543aaaecdd5cb808691dc7e2345a0",
+    ".lake/build/lib/lean/FormalVerify/Bridge.olean": "4d3035b6e1a026b0f2cf7cf079d1e26875e0b6d0914931f4404010c2a80e1c9f",
+    "formal/src/engine.mjs": "80dc47e71f48dc40230dd7edc5d5332acc220acaa4ac30194196ebdcb3eaf2cb",
+    "formal/src/compiler.mjs": "e29119889f06fcb23567662b3c8ecb84b166657fb4f69e0861bfb1c211a3d5c7",
+    "formal/src/guard.mjs": "1a2f823374defa836c8259359e01c6c4819f250cbae3fa74f2d2c1acf4c6feb3",
+    "formal/src/support.mjs": "9ca6b8cb507404b4d7a244a5204e1472d434a2d706870c617ea2a772995b2db7",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "lakefile.toml": "2c0891f0bd9da270904ea8340f3035e796cf01b252e0179bca979ff4a63ac77c",
+    "lake-manifest.json": "7f7c30da83bb8dbbd9915a1c1952c55efdc2326bfd77432a2fa29470c51f7e85"
+  },
+  "results": [
+    {
+      "id": "token_trace_conservation",
+      "status": "SOLVED",
+      "failure": null,
+      "statementHash": "260442f7fcb095c5aeddf57636e1604cf2e6189a12da0f87f611b4cfceb9cb6a",
+      "metrics": {
+        "compilerCalls": 4,
+        "steps": 1,
+        "maxDepth": 0,
+        "elapsedMs": 15807,
+        "firstCandidateSolved": true,
+        "modelTokens": 0,
+        "modelTokensKnown": 0,
+        "modelUsageComplete": true,
+        "proposerCalls": 1,
+        "finalCandidates": 1
+      },
+      "proofFile": "examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_trace_conservation/token_trace_conservation.lean",
+      "detailsFile": "examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_trace_conservation/result.json",
+      "verification": {
+        "statementHash": "260442f7fcb095c5aeddf57636e1604cf2e6189a12da0f87f611b4cfceb9cb6a",
+        "sourceHash": "63d3e34c2ee0e763e44e31a686d98171ba7f6d8c5dd4fa4fafe1c4bf07989c58",
+        "zeroPlaceholders": true,
+        "exitCode": 0,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "token_trace_conservation",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ {initial final : FormalVerify.Examples.AtomicToken.TokenState}\n  {outcomes : List.{0} FormalVerify.Examples.AtomicToken.Outcome},\n  FormalVerify.Examples.AtomicToken.Trace initial outcomes final →\n    Eq.{1}\n      (HAdd.hAdd.{0, 0, 0} (FormalVerify.Examples.AtomicToken.successes outcomes)\n        (FormalVerify.Examples.AtomicToken.remaining final))\n      (FormalVerify.Examples.AtomicToken.remaining initial)",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "compileEvidence": [
+          "ev_949cea483e2f9a1d8e559df6071f8239e72e9171b8de61ead9b7018ef69f7432",
+          "ev_e02d1a30f4595a762f74060c6e2e3ebe65836cc2157ed6dcfd540cf462e7fe54"
+        ],
+        "standaloneRecheck": true,
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "warnings": []
+      },
+      "finalChecks": [
+        {
+          "kind": "final",
+          "exitCode": 0,
+          "backend": "fresh-lean-cli",
+          "evidenceId": "ev_949cea483e2f9a1d8e559df6071f8239e72e9171b8de61ead9b7018ef69f7432",
+          "accepted": true,
+          "reason": null,
+          "audit": {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "token_trace_conservation",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ {initial final : FormalVerify.Examples.AtomicToken.TokenState}\n  {outcomes : List.{0} FormalVerify.Examples.AtomicToken.Outcome},\n  FormalVerify.Examples.AtomicToken.Trace initial outcomes final →\n    Eq.{1}\n      (HAdd.hAdd.{0, 0, 0} (FormalVerify.Examples.AtomicToken.successes outcomes)\n        (FormalVerify.Examples.AtomicToken.remaining final))\n      (FormalVerify.Examples.AtomicToken.remaining initial)",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": []
+        },
+        {
+          "kind": "recheck",
+          "exitCode": 0,
+          "backend": "fresh-lean-cli",
+          "evidenceId": "ev_e02d1a30f4595a762f74060c6e2e3ebe65836cc2157ed6dcfd540cf462e7fe54",
+          "accepted": true,
+          "reason": null,
+          "audit": {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "token_trace_conservation",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ {initial final : FormalVerify.Examples.AtomicToken.TokenState}\n  {outcomes : List.{0} FormalVerify.Examples.AtomicToken.Outcome},\n  FormalVerify.Examples.AtomicToken.Trace initial outcomes final →\n    Eq.{1}\n      (HAdd.hAdd.{0, 0, 0} (FormalVerify.Examples.AtomicToken.successes outcomes)\n        (FormalVerify.Examples.AtomicToken.remaining final))\n      (FormalVerify.Examples.AtomicToken.remaining initial)",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": []
+        }
+      ],
+      "retainedBranches": [
+        {
+          "nodeId": "n0",
+          "proposal": {
+            "kind": "tactic",
+            "tactic": "induction execution with\n| nil state =>\n    cases state <;> rfl\n| cons first _rest ih =>\n    cases first <;> simp_all [successes, remaining]"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "token_authorization_at_most_once",
+      "status": "SOLVED",
+      "failure": null,
+      "statementHash": "169a3e651c9570282e977cb93ee19dcd5475a2bb3ac105d7a3183cbb8431c1ef",
+      "metrics": {
+        "compilerCalls": 7,
+        "steps": 3,
+        "maxDepth": 1,
+        "elapsedMs": 19089,
+        "firstCandidateSolved": false,
+        "modelTokens": 0,
+        "modelTokensKnown": 0,
+        "modelUsageComplete": true,
+        "proposerCalls": 3,
+        "finalCandidates": 1
+      },
+      "proofFile": "examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_authorization_at_most_once/token_authorization_at_most_once.lean",
+      "detailsFile": "examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_authorization_at_most_once/result.json",
+      "verification": {
+        "statementHash": "169a3e651c9570282e977cb93ee19dcd5475a2bb3ac105d7a3183cbb8431c1ef",
+        "sourceHash": "e27fbafda1bfb093480cb0574bac41409317500997d96efc5ffc3461954a03f3",
+        "zeroPlaceholders": true,
+        "exitCode": 0,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "token_authorization_at_most_once",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (outcomes : List.{0} FormalVerify.Examples.AtomicToken.Outcome)\n  (final : FormalVerify.Examples.AtomicToken.TokenState),\n  FormalVerify.Examples.AtomicToken.Trace FormalVerify.Examples.AtomicToken.TokenState.fresh outcomes final →\n    LE.le.{0} (FormalVerify.Examples.AtomicToken.successes outcomes) 1",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "compileEvidence": [
+          "ev_5788e042e5a864c4889b30144421427b17a5fd06883e2c1806d29adf39d2bdaa",
+          "ev_427e3bd537d23be9de173d4b83a8364378e2c9c75def28d3d7e0c1a6f4e821d8"
+        ],
+        "standaloneRecheck": true,
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "warnings": []
+      },
+      "finalChecks": [
+        {
+          "kind": "final",
+          "exitCode": 0,
+          "backend": "fresh-lean-cli",
+          "evidenceId": "ev_5788e042e5a864c4889b30144421427b17a5fd06883e2c1806d29adf39d2bdaa",
+          "accepted": true,
+          "reason": null,
+          "audit": {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "token_authorization_at_most_once",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (outcomes : List.{0} FormalVerify.Examples.AtomicToken.Outcome)\n  (final : FormalVerify.Examples.AtomicToken.TokenState),\n  FormalVerify.Examples.AtomicToken.Trace FormalVerify.Examples.AtomicToken.TokenState.fresh outcomes final →\n    LE.le.{0} (FormalVerify.Examples.AtomicToken.successes outcomes) 1",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": []
+        },
+        {
+          "kind": "recheck",
+          "exitCode": 0,
+          "backend": "fresh-lean-cli",
+          "evidenceId": "ev_427e3bd537d23be9de173d4b83a8364378e2c9c75def28d3d7e0c1a6f4e821d8",
+          "accepted": true,
+          "reason": null,
+          "audit": {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "token_authorization_at_most_once",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (outcomes : List.{0} FormalVerify.Examples.AtomicToken.Outcome)\n  (final : FormalVerify.Examples.AtomicToken.TokenState),\n  FormalVerify.Examples.AtomicToken.Trace FormalVerify.Examples.AtomicToken.TokenState.fresh outcomes final →\n    LE.le.{0} (FormalVerify.Examples.AtomicToken.successes outcomes) 1",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": []
+        }
+      ],
+      "retainedBranches": [
+        {
+          "nodeId": "n0",
+          "proposal": {
+            "kind": "have",
+            "name": "conservation",
+            "type": "∀ (initialState finalState : TokenState) (events : List Outcome),\n  Trace initialState events finalState →\n    successes events + remaining finalState = remaining initialState"
+          },
+          "children": [
+            "n1",
+            "n2"
+          ]
+        },
+        {
+          "nodeId": "n1",
+          "proposal": {
+            "kind": "tactic",
+            "tactic": "intro initialState finalState events executionTrace\ninduction executionTrace with\n| nil state =>\n    cases state <;> rfl\n| cons first _rest ih =>\n    cases first <;> simp_all [successes, remaining]"
+          },
+          "children": []
+        },
+        {
+          "nodeId": "n2",
+          "proposal": {
+            "kind": "tactic",
+            "tactic": "have conserved : successes outcomes + remaining final = 1 :=\n  conservation .fresh final outcomes execution\nomega"
+          },
+          "children": []
+        }
+      ]
+    }
+  ],
+  "finishedAt": "2026-11-25T17:52:24.532Z",
+  "sourceAndArtifactHashesAfter": {
+    "examples/security/run.mjs": "fe17f54ee1bf28307e821e398b7fef9aca9d84a4d13ed96b99c5ad6ca3c627fc",
+    "examples/security/token-conservation.json": "842237c930a5f04a4de37a3d1e4681755dafcf7bd70084f831696e455e6dc8b9",
+    "examples/security/token-at-most-once.json": "f5b138b7e1daa3d910ae3aaf6b1a37df8e83e9eeeca7fcc7d2d45421899864f4",
+    "FormalVerify/Examples/TokenModel.lean": "1a22846d6ac7d6e57a3b4f9b43f146821a70d8d4c9f3a0623db1df3f8b18017e",
+    ".lake/build/lib/lean/FormalVerify/Examples/TokenModel.olean": "f8d099ec3a158f21a9ad76bb82dc8cdbc9a239082524850e2866c35a2f6a1597",
+    "FormalVerify/Bridge.lean": "cfaab974a2739bbe0c0f3d37f3fba25e30a543aaaecdd5cb808691dc7e2345a0",
+    ".lake/build/lib/lean/FormalVerify/Bridge.olean": "4d3035b6e1a026b0f2cf7cf079d1e26875e0b6d0914931f4404010c2a80e1c9f",
+    "formal/src/engine.mjs": "80dc47e71f48dc40230dd7edc5d5332acc220acaa4ac30194196ebdcb3eaf2cb",
+    "formal/src/compiler.mjs": "e29119889f06fcb23567662b3c8ecb84b166657fb4f69e0861bfb1c211a3d5c7",
+    "formal/src/guard.mjs": "1a2f823374defa836c8259359e01c6c4819f250cbae3fa74f2d2c1acf4c6feb3",
+    "formal/src/support.mjs": "9ca6b8cb507404b4d7a244a5204e1472d434a2d706870c617ea2a772995b2db7",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "lakefile.toml": "2c0891f0bd9da270904ea8340f3035e796cf01b252e0179bca979ff4a63ac77c",
+    "lake-manifest.json": "7f7c30da83bb8dbbd9915a1c1952c55efdc2326bfd77432a2fa29470c51f7e85"
+  },
+  "executionBytesUnchanged": true,
+  "status": "VERIFIED_GUIDED_DEMO"
+}

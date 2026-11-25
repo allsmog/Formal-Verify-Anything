@@ -1,0 +1,75 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[],\\\"node_id\\\":\\\"n2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":15,\"line\":24},\"fileName\":\"examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_authorization_at_most_once/attempts/0005-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":24},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_CLOSED:{\\\"node_id\\\":\\\"n2\\\"}\",\"endPos\":{\"column\":15,\"line\":24},\"fileName\":\"examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_authorization_at_most_once/attempts/0005-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":24},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n2\",\"endPos\":{\"column\":15,\"line\":24},\"fileName\":\"examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_authorization_at_most_once/attempts/0005-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":24},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2834,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[],\"node_id\":\"n2\",\"version\":1}",
+      "file": "examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_authorization_at_most_once/attempts/0005-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 24
+      },
+      "end": {
+        "column": 15,
+        "line": 24
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_CLOSED:{\"node_id\":\"n2\"}",
+      "file": "examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_authorization_at_most_once/attempts/0005-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 24
+      },
+      "end": {
+        "column": 15,
+        "line": 24
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n2",
+      "file": "examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_authorization_at_most_once/attempts/0005-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 24
+      },
+      "end": {
+        "column": 15,
+        "line": 24
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [],
+      "node_id": "n2",
+      "version": 1
+    }
+  ],
+  "closed": [
+    {
+      "node_id": "n2"
+    }
+  ],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 5,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_authorization_at_most_once/attempts/0005-candidate.lean",
+  "sourceHash": "bd52cbaa1031b4ce9a73e4ea50d4c5ca01e80c71c1eabf692cb5f6e94d856c7d",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_3fe2312ba7b68045ae13e6cbb24348118caf0d52a9993368a81fcf44f1ef83c9"
+}

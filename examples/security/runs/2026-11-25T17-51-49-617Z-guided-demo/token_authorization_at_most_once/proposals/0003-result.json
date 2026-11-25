@@ -1,0 +1,26 @@
+{
+  "id": "p2",
+  "nodeId": "n2",
+  "stateHash": "3517c7dd1099180877c8733388457dd294fae1b4256c88a3ba5060b2e69b26f8",
+  "round": 0,
+  "requestDigest": "f075e167e24130c812a9409bc802c4414b0ef2631a5d7d2cb984121b715267dc",
+  "contextFile": "examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_authorization_at_most_once/proposals/0003-context.json",
+  "modelTokens": 0,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "guided-token-demo-v1",
+  "provider": "static-guided-policy",
+  "metadata": {
+    "manualGuidance": true,
+    "benchmarkEligible": false
+  },
+  "proposals": [
+    {
+      "kind": "tactic",
+      "tactic": "have conserved : successes outcomes + remaining final = 1 :=\n  conservation .fresh final outcomes execution\nomega"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 0,
+  "evidenceId": "ev_747cba418ee1c5772b1c0e4fe8037cf4c3572e427864745f0606707ec57399ea"
+}

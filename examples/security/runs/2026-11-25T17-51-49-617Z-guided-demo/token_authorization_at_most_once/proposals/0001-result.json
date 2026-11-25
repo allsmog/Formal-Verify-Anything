@@ -1,0 +1,27 @@
+{
+  "id": "p0",
+  "nodeId": "n0",
+  "stateHash": "959841dc399530440fe5101acb009db96d70c877489563652f0db77bedfeabfd",
+  "round": 0,
+  "requestDigest": "705c8c73ac728a8bc3b93da0c9ac808325b173e3524b627c9b4690b6683fc4e4",
+  "contextFile": "examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_authorization_at_most_once/proposals/0001-context.json",
+  "modelTokens": 0,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "guided-token-demo-v1",
+  "provider": "static-guided-policy",
+  "metadata": {
+    "manualGuidance": true,
+    "benchmarkEligible": false
+  },
+  "proposals": [
+    {
+      "kind": "have",
+      "name": "conservation",
+      "type": "∀ (initialState finalState : TokenState) (events : List Outcome),\n  Trace initialState events finalState →\n    successes events + remaining finalState = remaining initialState"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 0,
+  "evidenceId": "ev_c6bc03b73c22459be96ff2986249429461af5aa27b36d91800c8c3d22f2bd2c6"
+}

@@ -1,0 +1,70 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.49",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "outcomes",
+        "type": "List.{0} FormalVerify.Examples.AtomicToken.Outcome",
+        "typeHead": "List",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.50",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "final",
+        "type": "FormalVerify.Examples.AtomicToken.TokenState",
+        "typeHead": "FormalVerify.Examples.AtomicToken.TokenState",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.49",
+          "_uniq.50"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.51",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "execution",
+        "type": "FormalVerify.Examples.AtomicToken.Trace FormalVerify.Examples.AtomicToken.TokenState.fresh outcomes final",
+        "typeHead": "FormalVerify.Examples.AtomicToken.Trace",
+        "value": null
+      }
+    ],
+    "id": "_uniq.52",
+    "omitted_implementation_details": 1,
+    "pretty": "outcomes : List.{0} FormalVerify.Examples.AtomicToken.Outcome\nfinal : FormalVerify.Examples.AtomicToken.TokenState\nexecution : FormalVerify.Examples.AtomicToken.Trace FormalVerify.Examples.AtomicToken.TokenState.fresh outcomes final\n⊢ LE.le.{0} (FormalVerify.Examples.AtomicToken.successes outcomes) 1",
+    "target": "LE.le.{0} (FormalVerify.Examples.AtomicToken.successes outcomes) 1",
+    "targetArgs": [
+      "Nat",
+      "instLENat",
+      "FormalVerify.Examples.AtomicToken.successes outcomes",
+      "1"
+    ],
+    "targetHead": "LE.le",
+    "universe_parameters": []
+  },
+  "imports": [
+    "FormalVerify.Examples.TokenModel",
+    "Mathlib.Tactic.NormNum"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 13,
+    "maxDepth": 2,
+    "depth": 0,
+    "modelTokensRemaining": 0,
+    "remainingMs": 177428
+  }
+}

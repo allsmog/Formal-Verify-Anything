@@ -1,0 +1,75 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":15,\"line\":17},\"fileName\":\"examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_trace_conservation/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":17},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_CLOSED:{\\\"node_id\\\":\\\"n0\\\"}\",\"endPos\":{\"column\":15,\"line\":17},\"fileName\":\"examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_trace_conservation/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":17},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":15,\"line\":17},\"fileName\":\"examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_trace_conservation/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":17},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3323,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[],\"node_id\":\"n0\",\"version\":1}",
+      "file": "examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_trace_conservation/attempts/0002-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 17
+      },
+      "end": {
+        "column": 15,
+        "line": 17
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_CLOSED:{\"node_id\":\"n0\"}",
+      "file": "examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_trace_conservation/attempts/0002-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 17
+      },
+      "end": {
+        "column": 15,
+        "line": 17
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n0",
+      "file": "examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_trace_conservation/attempts/0002-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 17
+      },
+      "end": {
+        "column": 15,
+        "line": 17
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [],
+      "node_id": "n0",
+      "version": 1
+    }
+  ],
+  "closed": [
+    {
+      "node_id": "n0"
+    }
+  ],
+  "audits": [],
+  "unparsed": [],
+  "sequence": 2,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "examples/security/runs/2026-11-25T17-51-49-617Z-guided-demo/token_trace_conservation/attempts/0002-candidate.lean",
+  "sourceHash": "e22613d5d6014c6f65f4e232c07aee5719f70bc7f22da7e7799e1c28662b7ae1",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_1827e8b0e2337bb2c1b1c01497df1ceb22ad3b6e36c4aacd6d3bb1b297e52d87"
+}
