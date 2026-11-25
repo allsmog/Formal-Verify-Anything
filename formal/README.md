@@ -14,7 +14,7 @@ canonical digest used for evidence IDs, and the bounded process-output excerpt.
 
 ## Set up
 
-Use Node.js 24, npm, Git, and an installed Lean toolchain manager such as `elan`.
+Use Node.js 22 or later, npm, Git, and an installed Lean toolchain manager such as `elan`.
 Commands below run from the repository root. The project pins:
 
 | Dependency | Version or revision |

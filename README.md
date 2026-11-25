@@ -10,9 +10,9 @@ model-generated proposals with scoped goal context and compiler feedback; those
 proposals receive the same validation. Deterministic scores and fixture tests
 are never presented as measured model performance.
 
-Version 0.2 adds final-verification-aware repair, an optional persistent Lean
-exploration worker, a frozen 24-problem holdout, and an audited atomic-token
-security model.
+Version 0.2 includes final-verification-aware repair, an optional persistent Lean
+exploration worker, a frozen 24-problem holdout comparison, and an audited
+atomic-token security model.
 
 ## Run it
 
@@ -175,5 +175,6 @@ macOS; Windows process-family cleanup has not been validated.
 - [FormalVerify/Bridge.lean](FormalVerify/Bridge.lean): Lean goal observations and the kernel audit.
 - [benchmarks/](benchmarks/): the v1 and v2 suites, protocols, results and full run traces.
 - [examples/security/](examples/security/): the atomic-token model and its proof tasks.
+- [SECURITY.md](SECURITY.md): how to report a vulnerability and what the runner does not protect against.
 - [LICENSE](LICENSE): MIT. Benchmark statements keep their miniF2F notices in
   [benchmarks/licenses/](benchmarks/licenses/).
