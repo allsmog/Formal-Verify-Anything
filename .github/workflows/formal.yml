@@ -11,16 +11,8 @@ on:
       - 'lean-toolchain'
       - 'lake*'
       - '.github/workflows/formal.yml'
+  # Every pull request runs the full check, because main requires it to pass.
   pull_request:
-    paths:
-      - 'formal/**'
-      - 'FormalVerify*'
-      - 'FormalVerify/**'
-      - 'benchmarks/**'
-      - 'examples/security/**'
-      - 'lean-toolchain'
-      - 'lake*'
-      - '.github/workflows/formal.yml'
 permissions:
   contents: read
 concurrency:
