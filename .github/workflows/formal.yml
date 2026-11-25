@@ -1,5 +1,6 @@
 name: Lean proof integrity
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'formal/**'
