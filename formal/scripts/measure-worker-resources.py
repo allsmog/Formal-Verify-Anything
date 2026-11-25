@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Measure equivalent completed process/worker solves, sequentially, on Linux.
+"""Measure equivalent completed process/worker solves, sequentially, on Linux or macOS.
 
 Uses only Python's standard library. CPU counters cover the Node child and its
 reaped descendants only. Killing Lake and Lean together can omit the Lean
@@ -30,32 +30,50 @@ def source_hashes(root):
     return {name: hashlib.sha256((root / name).read_bytes()).hexdigest() for name in files}
 
 
+def process_table():
+    """Map every visible PID to (parent PID, resident bytes).
+
+    Linux reads /proc. Other systems, including macOS, read one `ps` snapshot,
+    which reports resident size in KiB.
+    """
+    processes = {}
+    proc = Path("/proc")
+    if proc.is_dir():
+        page_size = os.sysconf("SC_PAGE_SIZE")
+        for entry in proc.iterdir():
+            if not entry.name.isdecimal():
+                continue
+            try:
+                fields = (entry / "stat").read_text().rpartition(")")[2].split()
+                processes[int(entry.name)] = (int(fields[1]), int(fields[21]) * page_size)
+            except (FileNotFoundError, ProcessLookupError):
+                pass
+        return processes
+    snapshot = subprocess.run(["ps", "-A", "-o", "pid=,ppid=,rss="],
+                              capture_output=True, text=True, check=True).stdout
+    for line in snapshot.splitlines():
+        pid, parent, rss_kib = (int(field) for field in line.split())
+        processes[pid] = (parent, rss_kib * 1024)
+    return processes
+
+
 def family_rss(pid):
     """Resolve parent IDs, then aggregate only our still-owned process family.
 
     Some container kernels do not expose /proc/PID/task/TID/children. Missing
     that optional interface must never be confused with an empty child list.
     """
-    processes = {}
-    for entry in Path("/proc").iterdir():
-        if not entry.name.isdecimal():
-            continue
-        try:
-            fields = (entry / "stat").read_text().rpartition(")")[2].split()
-            processes[int(entry.name)] = (int(fields[1]), int(fields[21]))
-        except (FileNotFoundError, ProcessLookupError):
-            pass
+    processes = process_table()
     by_parent = {}
     for child, (parent, _) in processes.items():
         by_parent.setdefault(parent, []).append(child)
-    page_size = os.sysconf("SC_PAGE_SIZE")
     pending, seen, rss = [pid], set(), 0
     while pending:
         current = pending.pop()
         if current in seen:
             continue
         seen.add(current)
-        rss += processes.get(current, (0, 0))[1] * page_size
+        rss += processes.get(current, (0, 0))[1]
         pending.extend(by_parent.get(current, []))
     return rss, len(seen)
 
