@@ -183,7 +183,7 @@ adapter uses a separate temporary working directory, disables execution tools,
 apps, plugins, web search and configured MCP servers, and requests structured
 tactic or `have` proposals. Only actual `turn.completed` usage is counted; the
 model cannot invent its own token count. See [Codex proposer](docs/codex-proposer.md)
-for limitations and the measured environment block in this release.
+for limitations and the live validation run.
 
 There is no automatic provider fallback. A failed preflight is an unavailable
 model comparison, not a theorem-proving score. `doctor` checks prerequisites

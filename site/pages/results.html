@@ -1,0 +1,57 @@
+<!--{"title": "Lean 4 proof search results on miniF2F | Formal Verify Anything", "description": "Measured results: a Codex agent solved 17 of 24 miniF2F holdout theorems versus 11 of 24 for deterministic search, with every proof kernel-audited.", "path": "/results/"}-->
+<div class="prose page-head">
+  <h1>Results</h1>
+  <p>Every number here comes from a recorded run in the repository, with complete traces for every theorem, including the failures.</p>
+</div>
+
+<div class="prose">
+  <h2>v2: agent against baseline</h2>
+  <p>Twenty-four public miniF2F statements, eight each from algebra, number theory and induction, were selected and frozen before any v2 search, disjoint from the v1 problems. Each proposer got one bounded search per theorem with identical limits, imports and compiler mode, using the persistent worker for exploration.</p>
+  <div class="table-scroll">
+    <table>
+      <caption>Paired holdout, 25 November 2026</caption>
+      <thead><tr><th>Proposer</th><th class="num">Solved</th><th class="num">Compiler calls</th><th class="num">Model tokens</th></tr></thead>
+      <tbody>
+        <tr><td>Codex agent</td><td class="num">17 / 24</td><td class="num">97</td><td class="num">at least 471,764</td></tr>
+        <tr><td>Deterministic tactic search</td><td class="num">11 / 24</td><td class="num">979</td><td class="num">0</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table-scroll">
+    <table>
+      <caption>By category</caption>
+      <thead><tr><th>Category</th><th class="num">Codex agent</th><th class="num">Deterministic</th></tr></thead>
+      <tbody>
+        <tr><td>Algebra</td><td class="num">6 / 8</td><td class="num">3 / 8</td></tr>
+        <tr><td>Number theory</td><td class="num">8 / 8</td><td class="num">6 / 8</td></tr>
+        <tr><td>Induction</td><td class="num">3 / 8</td><td class="num">2 / 8</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The agent solved every theorem the baseline solved, plus six more. Its seven failures were four provider timeouts and three runs that exceeded the 50,000-token allowance per theorem. The timed-out calls reported no usage, so the token total is a lower bound. The Codex CLI ran with API-key authentication and a configuration that requested <code>gpt-6.2-sol</code> at high reasoning effort; the CLI did not report the resolved model.</p>
+  <p>These are public problems, so the holdout is disjoint from v1 but may appear in model training data. One run per theorem is not a repeated-sampling estimate.</p>
+  <p><a href="https://github.com/allsmog/Formal-Verify-Anything/blob/main/benchmarks/v2/results.md">Open the v2 report</a> for every proof and trace.</p>
+
+  <h2>v1: deterministic baseline</h2>
+  <p>Five constructed sanity theorems and the first twelve miniF2F <code>mathd_algebra</code> test files, selected by filename before any solver run, searched with no model at all.</p>
+  <div class="table-scroll">
+    <table>
+      <caption>Canonical v1 run, 25 November 2026</caption>
+      <thead><tr><th>Suite</th><th class="num">Solved</th><th class="num">Compiler calls</th></tr></thead>
+      <tbody>
+        <tr><td>Foundational</td><td class="num">5 / 5</td><td class="num">55</td></tr>
+        <tr><td>miniF2F algebra</td><td class="num">8 / 12</td><td class="num">359</td></tr>
+        <tr><td>All</td><td class="num">13 / 17</td><td class="num">414</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>All four failures ran out of compiler calls. <a href="https://github.com/allsmog/Formal-Verify-Anything/blob/main/benchmarks/results.md">Open the v1 report</a>.</p>
+
+  <h2>How to read pass@1</h2>
+  <p>Here pass@1 means one complete bounded search per theorem, including all of its internal backtracking. It is not a first-tactic score. Failures stay in the denominator, and a failed search does not show that a theorem is false.</p>
+
+  <h2>Check it yourself</h2>
+  <p>CI recompiles every accepted v1 proof on each change. You can rerun the same checks locally:</p>
+<pre><code>node formal/scripts/recheck.mjs
+node benchmarks/v2/verify-results.mjs</code></pre>
+</div>

@@ -1,0 +1,48 @@
+<!--{"title": "How agent-driven Lean 4 proof search works | Formal Verify Anything", "description": "How Formal Verify Anything runs bounded proof search: scoped goal context for the agent, branch rollback, shared budgets, and a kernel-audited final gate.", "path": "/how-it-works/"}-->
+<div class="prose page-head">
+  <h1>How it works</h1>
+  <p>A proposal policy suggests proof steps. Lean decides whether each one works. Nothing counts until the kernel accepts the finished proof.</p>
+</div>
+
+<div class="prose">
+  <h2>What the agent sees</h2>
+  <p>Before any search, the runner locks the original theorem declaration, its imports and a hash of the statement. Lean then reports the current goal: the target, the hypotheses, dependent lets, universe parameters and the goal structure.</p>
+  <p>The proposer receives only that local context, the allowed imports, the remaining budget, and its own recent failed proposals with Lean's diagnostics. It never sees the parent transcript, sibling branches, or benchmark solutions. Imports of miniF2F answer modules are refused outright.</p>
+
+  <h2>What the agent can propose</h2>
+  <p>A proposal is a tactic, a case or induction split, or a structured <code>have</code> sublemma. A <code>have</code> creates a child goal to prove the lemma, then a continuation that may use it. The child cannot see its own unproved lemma; the continuation can.</p>
+<pre><code>{"proposals": [
+  {"tactic": "constructor"},
+  {"kind": "have", "name": "aux", "type": "P"}
+]}</code></pre>
+
+  <h2>How Lean checks each step</h2>
+  <p>Every branch is replayed in a fresh Lean file that contains the original theorem. When a branch fails, the runner restores the exact parent plan and records the attempt: its source, diagnostics, exit code, elapsed time and an evidence digest. Probes deliberately stop after reporting their goals, so an observed state is never mistaken for a solved theorem, and earlier compiler errors invalidate a probe even if later recovery reports no goals.</p>
+  <p>Search runs under limits shared across the whole tree: compiler calls, proposal steps, recursion depth, Lean heartbeats, model tokens and wall time. Failed work is never refunded, and two compiler calls are always reserved for the final checks.</p>
+  <div class="table-scroll">
+    <table>
+      <caption>Default limits per theorem</caption>
+      <thead><tr><th>Resource</th><th class="num">Default</th></tr></thead>
+      <tbody>
+        <tr><td>Compiler calls, including final verification</td><td class="num">64</td></tr>
+        <tr><td>Proposal steps</td><td class="num">64</td></tr>
+        <tr><td>Proposal rounds per node</td><td class="num">3</td></tr>
+        <tr><td>Recursion depth</td><td class="num">8</td></tr>
+        <tr><td>Time per compiler call</td><td class="num">30 s</td></tr>
+        <tr><td>Time per theorem</td><td class="num">300 s</td></tr>
+        <tr><td>Lean heartbeats</td><td class="num">200,000</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>How the kernel decides</h2>
+  <p>A locally closed proof is only a candidate. It is accepted after two fresh standalone compiler runs succeed, the original declaration is unchanged, and an audit of the theorem in Lean's checked kernel environment follows every transitive dependency. The audit allows only Lean's usual foundational axioms: <code>propext</code>, <code>Classical.choice</code> and <code>Quot.sound</code>.</p>
+  <p>The final gate rejects <code>sorry</code>, <code>admit</code>, new axioms, declaration injection, arbitrary elaborator commands and compiler-trust shortcuts. The only warning it tolerates is Lean's exact unused-variable message, which stays visible in the receipt. If the gate rejects a candidate, search resumes with the remaining budget and the compiler's feedback, and can repair an earlier sibling or change the decomposition.</p>
+
+  <h2>Fresh processes or a persistent worker</h2>
+  <p>By default every exploration call starts a fresh Lean process. With <code>--compiler worker</code>, a persistent Lean process keeps Mathlib loaded and starts a clean elaboration state for each candidate. In one measured workflow it finished the same proof in 17.0 seconds instead of 41.8, using more memory. Both final checks still run in fresh processes.</p>
+
+  <h2>What it does not promise</h2>
+  <p>This is bounded search. Running out of budget does not show that a theorem is false or unprovable. Lean, the pinned Mathlib artifacts, the observation bridge and any proposer command you configure are trusted; the runner is not an operating-system sandbox. Process cleanup is tested on Linux and macOS.</p>
+  <p class="note">The <a href="https://github.com/allsmog/Formal-Verify-Anything/blob/main/formal/docs/search.md">search and repair reference</a> and the <a href="https://github.com/allsmog/Formal-Verify-Anything/blob/main/formal/README.md">runtime README</a> cover every option in detail.</p>
+</div>

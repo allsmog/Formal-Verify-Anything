@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formally verifying a single-use token in Lean 4 | Formal Verify Anything</title>
+  <meta name="description" content="A Lean 4 proof that a single-use authorization token can succeed at most once over any finite trace, built with guided proof search and a kernel audit.">
+  <link rel="canonical" href="https://allsmog.github.io/Formal-Verify-Anything/showcase/atomic-token/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Formal Verify Anything">
+  <meta property="og:title" content="Formally verifying a single-use token in Lean 4 | Formal Verify Anything">
+  <meta property="og:description" content="A Lean 4 proof that a single-use authorization token can succeed at most once over any finite trace, built with guided proof search and a kernel audit.">
+  <meta property="og:url" content="https://allsmog.github.io/Formal-Verify-Anything/showcase/atomic-token/">
+  <meta property="og:image" content="https://allsmog.github.io/Formal-Verify-Anything/assets/social-card.png">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Formal Verify Anything: AI agents propose, Lean checks, the kernel decides">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Formally verifying a single-use token in Lean 4 | Formal Verify Anything">
+  <meta name="twitter:description" content="A Lean 4 proof that a single-use authorization token can succeed at most once over any finite trace, built with guided proof search and a kernel audit.">
+  <meta name="twitter:image" content="https://allsmog.github.io/Formal-Verify-Anything/assets/social-card.png">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&amp;family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&amp;display=swap">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site">
+    <div class="wrap site-bar">
+      <a class="mark" href="../../"><span class="turnstile" aria-hidden="true">⊢</span> Formal Verify Anything</a>
+      <nav aria-label="Site">
+        <a href="../../how-it-works/">How it works</a>
+        <a href="../../results/">Results</a>
+        <a href="../../guides/">Guides</a>
+        <a href="../../showcase/" aria-current="page">Showcase</a>
+        <a href="https://github.com/allsmog/Formal-Verify-Anything">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+<div class="prose page-head">
+  <h1>A single-use token can succeed at most once</h1>
+  <p>A security property stated as a Lean theorem, proved for every finite execution, not a handful of test schedules.</p>
+</div>
+
+<div class="prose">
+  <h2>The model</h2>
+  <p>One already-issued authorization token has two states, fresh and spent. A successful authorization turns fresh into spent in a single atomic step. A denied attempt changes nothing. There is no transition that issues a second token, resets a spent one, or succeeds from spent.</p>
+<pre class="lean"><code>inductive Step : TokenState → Outcome → TokenState → Prop where
+  | authorize : Step .fresh .authorized .spent
+  | denyFresh : Step .fresh .denied .fresh
+  | denySpent : Step .spent .denied .spent</code></pre>
+
+  <h2>The properties</h2>
+  <p>Four theorems are proved over traces of any length and pass the kernel audit:</p>
+  <ul>
+    <li><strong>Conservation.</strong> Successful authorizations plus remaining credit equal the initial credit.</li>
+    <li><strong>At most once.</strong> Any trace that starts fresh contains at most one success.</li>
+    <li><strong>No reuse.</strong> Any trace that starts spent contains no successes.</li>
+    <li><strong>No double success.</strong> The trace of two successful authorizations cannot occur.</li>
+  </ul>
+<pre class="lean"><code>theorem token_authorization_at_most_once
+    (outcomes : List Outcome) (final : TokenState)
+    (execution : Trace .fresh outcomes final) :
+    successes outcomes ≤ 1</code></pre>
+
+  <h2>How the search built it</h2>
+  <p>The proof tasks import only the model definitions, never the finished proofs. In the recorded run, a hand-written strategy guided the search: conservation by induction on the trace in 4 compiler calls, and at-most-once in 7, through a <code>have</code> that generalizes conservation before specializing it. Each final proof passed two fresh compilations and the kernel audit. This demonstrates recursive composition and kernel admission with supplied guidance; it is not autonomous discovery or a model score.</p>
+
+  <h2>What it does not prove</h2>
+  <p>The theorems are about the abstract state machine. They do not show that a real service implements it. In particular, a separate "check fresh" followed by "mark spent" is outside the model, because two callers could both pass the check. An implementation has to make consumption and success one linearizable operation. Token identity, expiry, durability, crashes and network delivery are not modeled.</p>
+  <p><a href="https://github.com/allsmog/Formal-Verify-Anything/tree/main/examples/security">Open the example</a> with its model, proofs and recorded run.</p>
+</div>
+  </main>
+  <footer class="site">
+    <div class="wrap footer-grid">
+      <p>Formal Verify Anything is open source under the MIT license.</p>
+      <ul>
+        <li><a href="https://github.com/allsmog/Formal-Verify-Anything">Source on GitHub</a></li>
+        <li><a href="https://github.com/allsmog/Formal-Verify-Anything/releases">Releases</a></li>
+        <li><a href="https://github.com/allsmog/Formal-Verify-Anything/discussions">Discussions</a></li>
+        <li><a href="https://github.com/allsmog/Formal-Verify-Anything/blob/main/SECURITY.md">Report a vulnerability</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

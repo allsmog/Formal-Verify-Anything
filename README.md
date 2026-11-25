@@ -11,6 +11,11 @@
 [![Lean 4.24.0](https://img.shields.io/badge/Lean-4.24.0-0f4c81?style=flat-square)](lean-toolchain)
 [![Mathlib pinned](https://img.shields.io/badge/Mathlib-pinned-5c4ee5?style=flat-square)](lake-manifest.json)
 [![MIT license](https://img.shields.io/badge/license-MIT-f4c430?style=flat-square)](LICENSE)
+[![GitHub Discussions](https://img.shields.io/github/discussions/allsmog/Formal-Verify-Anything?style=flat-square&label=discussions&color=2aa198)](https://github.com/allsmog/Formal-Verify-Anything/discussions)
+
+**English** · [简体中文](i18n/README.zh-CN.md) · [日本語](i18n/README.ja.md) · [한국어](i18n/README.ko.md) · [Español](i18n/README.es.md) · [Deutsch](i18n/README.de.md)
+
+**[Website](https://allsmog.github.io/Formal-Verify-Anything/) · [Guides](https://allsmog.github.io/Formal-Verify-Anything/guides/) · [Showcase](https://allsmog.github.io/Formal-Verify-Anything/showcase/) · [Discussions](https://github.com/allsmog/Formal-Verify-Anything/discussions)**
 
 [Quick start](#quick-start) · [Use it with your agent](#use-it-with-your-agent) · [How it works](#how-it-works) · [Results](#results) · [Security example](#security-example)
 
@@ -223,6 +228,8 @@ macOS; Windows process-family cleanup has not been validated.
 - [FormalVerify/Bridge.lean](FormalVerify/Bridge.lean): Lean goal observations and the kernel audit.
 - [benchmarks/](benchmarks/): the v1 and v2 suites, protocols, results and full run traces.
 - [examples/security/](examples/security/): the atomic-token model and its proof tasks.
+- [site/](site/): sources for the [website](https://allsmog.github.io/Formal-Verify-Anything/); `node site/build.mjs` writes the published pages to `docs/`.
+- [i18n/](i18n/): translations of this README.
 - [SECURITY.md](SECURITY.md): how to report a vulnerability and what the runner does not protect against.
 - [LICENSE](LICENSE): MIT. Benchmark statements keep their miniF2F notices in
   [benchmarks/licenses/](benchmarks/licenses/).

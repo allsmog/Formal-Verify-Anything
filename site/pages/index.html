@@ -1,0 +1,67 @@
+<!--{"title": "Formal Verify Anything: agent-driven proof search for Lean 4", "description": "AI agents propose Lean 4 proof steps, Lean checks every step, and the kernel decides. Open-source proof search with Mathlib, miniF2F results and full traces.", "path": "/", "structuredData": {"@context": "https://schema.org", "@type": "SoftwareSourceCode", "name": "Formal Verify Anything", "description": "Agent-driven proof search for Lean 4 and Mathlib. AI agents propose proof steps, Lean checks every step, and accepted proofs pass a kernel dependency audit.", "codeRepository": "https://github.com/allsmog/Formal-Verify-Anything", "programmingLanguage": ["JavaScript", "Lean"], "license": "https://opensource.org/licenses/MIT", "version": "0.2.0", "keywords": "Lean 4, Mathlib, automated theorem proving, LLM, AI agents, formal verification, proof search, miniF2F"}}-->
+<section class="hero">
+  <div class="wrap">
+    <h1>Formal Verify Anything: agent-driven proof search for Lean 4 and Mathlib</h1>
+    <div class="rule" role="img" aria-label="Inference rule: from AI agents propose and Lean checks, conclude the kernel decides">
+      <div class="premises"><span>AI agents propose</span><span>Lean checks</span></div>
+      <div class="bar"></div>
+      <div class="name">kernel</div>
+      <div class="conclusion">The kernel decides</div>
+    </div>
+    <p class="lede">State a theorem in Lean. Let an AI agent search for the proof. Keep only what the Lean kernel accepts, with every attempt saved so you can see how the proof was found and check it yourself.</p>
+    <div class="actions">
+      <a class="button" href="guides/prove-your-own-lemma/">Prove your own lemma</a>
+      <a class="button quiet" href="https://github.com/allsmog/Formal-Verify-Anything">View the source on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<section class="prose band">
+  <h2>The loop</h2>
+  <p>Every theorem goes through the same bounded loop. The agent never gets the final word.</p>
+  <ol class="loop">
+    <li><strong>Lean reports the goal.</strong> The runner locks the original statement and asks Lean for the current target, hypotheses and goal structure.</li>
+    <li><strong>An agent proposes a step.</strong> The Codex CLI, your own model command, or a deterministic tactic policy suggests a tactic, a case split, or a <code>have</code> sublemma, seeing only the local goal and its own recent compiler feedback.</li>
+    <li><strong>Lean checks it.</strong> Each branch is replayed in a fresh file with the original theorem. A failed branch rolls back to the exact parent plan and the search tries something else, within shared limits on compiler calls, depth, tokens and time.</li>
+    <li><strong>The kernel decides.</strong> A proof is accepted only after two fresh standalone compilations and an audit of every transitive dependency. <code>sorry</code>, new axioms and trust shortcuts are rejected; only <code>propext</code>, <code>Classical.choice</code> and <code>Quot.sound</code> are allowed.</li>
+  </ol>
+</section>
+
+<section class="prose band">
+  <h2>Quick start</h2>
+  <p>You need Node.js 22 or later, Git and <a href="https://github.com/leanprover/elan">elan</a>. The repository pins Lean 4.24.0 and an exact Mathlib commit, and the runtime has no npm dependencies.</p>
+<pre><code>git clone https://github.com/allsmog/Formal-Verify-Anything.git
+cd Formal-Verify-Anything
+npm ci --prefix formal
+lake exe cache get
+lake build
+node formal/src/cli.mjs doctor
+node formal/src/cli.mjs solve benchmarks/tier1.json --id conjunction_commutation</code></pre>
+  <p>The default solver makes no model calls. Add <code>--proposer codex</code> to let a Codex agent propose the steps; see <a href="guides/use-it-with-your-agent/">using it with your agent</a>.</p>
+</section>
+
+<section class="prose band">
+  <h2>What the agent adds</h2>
+  <p>On a frozen 24-problem miniF2F holdout, each method got one bounded search per theorem under the same limits.</p>
+  <div class="table-scroll">
+    <table>
+      <caption>v2 paired holdout, 25 November 2026</caption>
+      <thead><tr><th>Proposer</th><th class="num">Solved</th><th class="num">Compiler calls</th></tr></thead>
+      <tbody>
+        <tr><td>Codex agent</td><td class="num">17 / 24</td><td class="num">97</td></tr>
+        <tr><td>Deterministic tactic search</td><td class="num">11 / 24</td><td class="num">979</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The agent solved every theorem the baseline solved, plus six more, with a tenth of the compiler calls. Every accepted proof passed the kernel audit and an independent recompile. <a href="results/">Full results</a> include the v1 suite, per-category numbers and token usage.</p>
+</section>
+
+<section class="prose band">
+  <h2>One proof, two searches</h2>
+  <p>Bernoulli's inequality, <em>1&nbsp;+&nbsp;nx&nbsp;≤&nbsp;(1&nbsp;+&nbsp;x)<sup>n</sup></em> for <em>x&nbsp;&gt;&nbsp;−1</em>, from the miniF2F induction set:</p>
+  <div class="versus">
+    <div class="won"><p class="figure">4 compiler calls</p><p>Codex proposed an induction with a <code>calc</code> chain. Accepted.</p></div>
+    <div><p class="figure">62 compiler calls</p><p>Deterministic search reached depth 7 and ran out of budget.</p></div>
+  </div>
+  <p><a href="showcase/bernoulli-inequality/">Read the accepted proof and its trace</a>.</p>
+</section>

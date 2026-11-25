@@ -1,0 +1,40 @@
+<!--{"title": "An AI agent proves Bernoulli's inequality in Lean 4 | Formal Verify Anything", "description": "A Codex agent proved Bernoulli's inequality in Lean 4 in four compiler calls, where deterministic search ran out of budget. The accepted proof and its trace.", "path": "/showcase/bernoulli-inequality/"}-->
+<div class="prose page-head">
+  <h1>Bernoulli's inequality, proved by an agent</h1>
+  <p>From the miniF2F induction set: for real <em>x&nbsp;&gt;&nbsp;−1</em> and natural <em>n&nbsp;&gt;&nbsp;0</em>, <em>1&nbsp;+&nbsp;nx&nbsp;≤&nbsp;(1&nbsp;+&nbsp;x)<sup>n</sup></em>.</p>
+</div>
+
+<div class="prose">
+  <h2>Two searches, same limits</h2>
+  <div class="versus">
+    <div class="won"><p class="figure">Accepted</p><p>Codex agent: one proposal, 4 compiler calls, 18,212 model tokens, 39 seconds.</p></div>
+    <div><p class="figure">Out of budget</p><p>Deterministic search: 52 branches tried and pruned, 62 compiler calls, depth 7.</p></div>
+  </div>
+  <p>Both ran in the v2 holdout under identical limits: 64 compiler calls, depth 8, 300 seconds. The deterministic policy tries generic tactics and splits; none of them closed the inductive step.</p>
+
+  <h2>The accepted proof</h2>
+  <p>The agent's first proposal was the whole proof. It drops the unneeded <code>0 &lt; n</code> hypothesis, inducts on <em>n</em>, and closes the step with a <code>calc</code> chain whose key move is that the difference of the two sides equals <em>k·x²</em>, which is nonnegative.</p>
+<pre class="lean"><code>theorem induction_1pxpownlt1pnx
+  (x : ℝ)
+  (n : ℕ)
+  (h₀ : -1 &lt; x)
+  (h₁ : 0 &lt; n) :
+  (1 + ↑n*x) ≤ (1 + x)^(n:ℕ)  := by
+  clear h₁
+  have hx : 0 ≤ 1 + x := by linarith only [h₀]
+  induction n with
+  | zero =&gt; simp
+  | succ k ih =&gt;
+      rw [Nat.cast_succ, pow_succ]
+      calc
+        1 + ((k : ℝ) + 1) * x ≤ (1 + (k : ℝ) * x) * (1 + x) := by
+          apply sub_nonneg.mp
+          have hdiff : (1 + (k : ℝ) * x) * (1 + x) - (1 + ((k : ℝ) + 1) * x) = (k : ℝ) * x ^ 2 := by ring
+          rw [hdiff]
+          exact mul_nonneg (by positivity) (sq_nonneg x)
+        _ ≤ _ := mul_le_mul_of_nonneg_right ih hx</code></pre>
+
+  <h2>Why it was accepted</h2>
+  <p>The four compiler calls were a goal observation, the candidate, and the two fresh final compilations. Both final runs exited cleanly, the statement was byte-identical to the frozen original, and the kernel audit found only the standard foundational axioms. The same file passed again in the independent v2 recheck.</p>
+  <p><a href="https://github.com/allsmog/Formal-Verify-Anything/tree/main/benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_1pxpownlt1pnx">Open the full Codex trace</a>, or <a href="https://github.com/allsmog/Formal-Verify-Anything/tree/main/benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx">the deterministic attempt</a> with all 52 pruned branches.</p>
+</div>

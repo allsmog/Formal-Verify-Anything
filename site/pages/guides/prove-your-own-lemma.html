@@ -1,0 +1,40 @@
+<!--{"title": "Prove a Lean 4 lemma with automated proof search | Formal Verify Anything", "description": "Write a Lean 4 theorem as a JSON manifest, run bounded proof search against Mathlib, and verify the saved proof with a kernel audit.", "path": "/guides/prove-your-own-lemma/"}-->
+<div class="prose page-head">
+  <h1>Prove your own lemma</h1>
+  <p>From a theorem statement to a kernel-checked proof file, in four steps.</p>
+</div>
+
+<div class="prose">
+  <h2>1. Set up once</h2>
+  <p>Install Node.js 22 or later, Git and <a href="https://github.com/leanprover/elan">elan</a>, then build the pinned Lean project. The Mathlib cache download saves you from compiling Mathlib yourself.</p>
+<pre><code>git clone https://github.com/allsmog/Formal-Verify-Anything.git
+cd Formal-Verify-Anything
+npm ci --prefix formal
+lake exe cache get
+lake build
+node formal/src/cli.mjs doctor</code></pre>
+  <p><code>doctor</code> checks the installed Lean and Lake versions against the pinned toolchain and Mathlib commit.</p>
+
+  <h2>2. Write the theorem as a manifest</h2>
+  <p>Save a JSON file with the complete declaration up to its type, without <code>:= by</code> or a proof. The <code>id</code> must match the theorem name.</p>
+<pre><code>{
+  "id": "my_conjunction",
+  "statement": "theorem my_conjunction (P Q : Prop) (hP : P) (hQ : Q) : P ∧ Q",
+  "imports": ["Mathlib"],
+  "opens": []
+}</code></pre>
+  <p>Imports are limited to the pinned Mathlib, Std and Init. A file can hold one problem, an array of problems, or an object with a <code>problems</code> array. Whitespace in the statement matters if you also supply a <code>statementHash</code>.</p>
+
+  <h2>3. Run the search</h2>
+<pre><code>node formal/src/cli.mjs solve my-lemma.json --out .fva/my-lemma</code></pre>
+  <p>The output directory must be new or empty, so earlier evidence is never overwritten. It receives a JSON summary, the accepted proof if one was found, and <code>result.json</code> with the full proof tree, every attempt and every diagnostic. Progress prints to standard error.</p>
+  <p>The default proposer is deterministic and makes no model calls. To let an agent propose steps, add <code>--proposer codex</code>; see <a href="../use-it-with-your-agent/">using it with your agent</a>. Add <code>--compiler worker</code> to keep Mathlib loaded between exploration calls. Limits such as <code>--max-compiler-calls</code>, <code>--max-depth</code> and <code>--timeout-ms</code> are recorded in every result.</p>
+
+  <h2>4. Verify the proof on its own</h2>
+<pre><code>node formal/src/cli.mjs verify my-lemma.json \
+  .fva/my-lemma/my_conjunction.lean --id my_conjunction</code></pre>
+  <p>Verification needs the original manifest, so it cannot quietly swap in a different statement. It copies the proof to a read-only snapshot, compiles it with the pinned project, and reports <code>VERIFIED</code> only when Lean exits cleanly and the kernel audit of the theorem passes. Exit code 0 means success, 1 a failed proof or check, and 2 malformed input.</p>
+
+  <h2>If the search fails</h2>
+  <p>A failed search is a failure of that bounded attempt, not evidence that the theorem is false. Open <code>result.json</code> to see where branches were pruned and what Lean said, then try a larger budget, the persistent worker, or an agent proposer.</p>
+</div>
