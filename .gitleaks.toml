@@ -1,0 +1,14 @@
+# Recorded runs store SHA-256 digests under keys that contain "Key" or
+# "token" (selection keys, the token model files). Allow only those exact
+# shapes; any other match still fails the scan.
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "SHA-256 digests of benchmark selection keys and token-model files"
+regexTarget = "match"
+regexes = [
+  '''selectionKeySha256"?\s*:\s*"[0-9a-f]{64}"''',
+  '''Token[A-Za-z]*\.o?lean"?\s*:\s*"[0-9a-f]{64}"''',
+  '''token-[a-z-]+\.json"?\s*:\s*"[0-9a-f]{64}"''',
+]
