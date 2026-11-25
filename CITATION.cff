@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Formal Verify Anything: bounded proof search for Lean 4 with kernel-audited acceptance"
+type: software
+authors:
+  - given-names: Shayaun
+    family-names: Nejad
+repository-code: "https://github.com/allsmog/Formal-Verify-Anything"
+url: "https://github.com/allsmog/Formal-Verify-Anything"
+abstract: >-
+  Automated theorem proving for Lean 4 and Mathlib. An LLM proposer (through
+  the Codex CLI) or a deterministic tactic policy suggests proof steps, Lean
+  checks every step, and a proof is accepted only after two fresh
+  compilations and a kernel dependency audit. Includes miniF2F benchmarks
+  with complete search traces and an atomic-token security model.
+keywords:
+  - Lean 4
+  - Mathlib
+  - automated theorem proving
+  - neural theorem proving
+  - formal verification
+  - proof search
+  - large language models
+  - miniF2F
+license: MIT
+version: 0.2.0
+date-released: "2026-11-25"

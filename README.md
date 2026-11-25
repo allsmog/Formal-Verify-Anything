@@ -1,8 +1,15 @@
 # Formal Verify Anything
 
-Bounded, compiler-grounded proof search for Lean 4. A proposal policy suggests
-proof steps, Lean decides whether they work, and a proof is accepted only after
-two fresh compilations and a kernel dependency audit.
+Automated theorem proving for **Lean 4** and **Mathlib**. An LLM proposer (through
+the Codex CLI) or a deterministic tactic policy suggests proof steps, Lean checks
+every step, and a proof is accepted only after two fresh compilations and a
+kernel dependency audit. Use it for LLM-guided proof search, formal verification
+of small state-machine models, and reproducible miniF2F-style benchmarks with
+every attempt saved.
+
+On a frozen 24-problem miniF2F holdout, the Codex proposer solved **17/24** and
+the deterministic baseline **11/24**. Every accepted proof passed a kernel audit
+and an independent recompile. See [Benchmarks and verification](#benchmarks-and-verification).
 
 **The default solver is a deterministic tactic-search baseline.** It makes no
 model calls. An explicit Codex CLI adapter or a trusted local command can supply
