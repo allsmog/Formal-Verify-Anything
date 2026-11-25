@@ -1,0 +1,40 @@
+<!--{"title": "Use an AI agent for Lean 4 proof search | Formal Verify Anything", "description": "Let a Codex agent propose Lean 4 proof steps, connect any model through a local command, or have a coding agent drive the proof-search CLI.", "path": "/guides/use-it-with-your-agent/"}-->
+<div class="prose page-head">
+  <h1>Use it with your agent</h1>
+  <p>Agents can work at two levels: inside the search, proposing each proof step, or outside it, driving the command line for you.</p>
+</div>
+
+<div class="prose">
+  <h2>Let Codex propose the steps</h2>
+  <p>Authenticate the Codex CLI with a ChatGPT login or an API key, check the setup, then search with the Codex proposer.</p>
+<pre><code>codex login
+node formal/src/cli.mjs doctor --proposer codex
+node formal/src/cli.mjs solve benchmarks/tier1.json \
+  --id conjunction_commutation --proposer codex --compiler worker \
+  --model-token-budget 50000</code></pre>
+  <p>Each call runs in a separate temporary directory with execution tools, apps, plugins, web search and configured MCP servers disabled. The agent returns structured tactic or <code>have</code> proposals. Only the token usage the CLI actually reports is counted, and a response that would exceed the allowance is rejected. The allowance is an admission threshold, not a billing cap: a request already in flight can still cost more. Use <code>--model</code> to pick a model explicitly.</p>
+
+  <h2>Plug in any other model</h2>
+  <p>Any program that reads one JSON request on standard input and writes proposals to standard output can be the proposer. It is launched directly from an argument list, without a shell.</p>
+<pre><code>node formal/src/cli.mjs solve my-lemma.json \
+  --proposer-command '["node","/absolute/path/to/my-proposer.mjs"]' \
+  --model-token-budget 8000</code></pre>
+  <p>The request carries the current goal, its hypotheses, the imports, recent feedback and the remaining budget. The response lists proposals and the tokens actually used:</p>
+<pre><code>{
+  "proposals": [
+    {"tactic": "constructor"},
+    {"kind": "have", "name": "aux", "type": "P"}
+  ],
+  "modelTokens": 120
+}</code></pre>
+  <p>The <a href="https://github.com/allsmog/Formal-Verify-Anything/blob/main/formal/README.md#trusted-local-command">runtime README</a> documents the full request and response format.</p>
+
+  <h2>Let a coding agent drive the CLI</h2>
+  <p>The CLI reads a JSON manifest and prints a JSON result, so any coding agent that can run terminal commands can operate it. Point your agent at the repository and ask:</p>
+<pre><code>Write my lemma as a Formal Verify Anything problem manifest, run
+`node formal/src/cli.mjs solve` on it with `--proposer codex`, and show me the
+accepted proof, the attempts it pruned, and the kernel audit.</code></pre>
+
+  <h2>Who has the final word</h2>
+  <p>Whatever proposes the steps, the same gate applies: two fresh compilations and a kernel audit of every dependency. An agent's confidence never turns into an accepted proof by itself.</p>
+</div>

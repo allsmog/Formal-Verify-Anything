@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Use an AI agent for Lean 4 proof search | Formal Verify Anything</title>
+  <meta name="description" content="Let a Codex agent propose Lean 4 proof steps, connect any model through a local command, or have a coding agent drive the proof-search CLI.">
+  <link rel="canonical" href="https://allsmog.github.io/Formal-Verify-Anything/guides/use-it-with-your-agent/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Formal Verify Anything">
+  <meta property="og:title" content="Use an AI agent for Lean 4 proof search | Formal Verify Anything">
+  <meta property="og:description" content="Let a Codex agent propose Lean 4 proof steps, connect any model through a local command, or have a coding agent drive the proof-search CLI.">
+  <meta property="og:url" content="https://allsmog.github.io/Formal-Verify-Anything/guides/use-it-with-your-agent/">
+  <meta property="og:image" content="https://allsmog.github.io/Formal-Verify-Anything/assets/social-card.png">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Formal Verify Anything: AI agents propose, Lean checks, the kernel decides">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Use an AI agent for Lean 4 proof search | Formal Verify Anything">
+  <meta name="twitter:description" content="Let a Codex agent propose Lean 4 proof steps, connect any model through a local command, or have a coding agent drive the proof-search CLI.">
+  <meta name="twitter:image" content="https://allsmog.github.io/Formal-Verify-Anything/assets/social-card.png">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&amp;family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&amp;display=swap">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site">
+    <div class="wrap site-bar">
+      <a class="mark" href="../../"><span class="turnstile" aria-hidden="true">⊢</span> Formal Verify Anything</a>
+      <nav aria-label="Site">
+        <a href="../../how-it-works/">How it works</a>
+        <a href="../../results/">Results</a>
+        <a href="../../guides/" aria-current="page">Guides</a>
+        <a href="../../showcase/">Showcase</a>
+        <a href="https://github.com/allsmog/Formal-Verify-Anything">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+<div class="prose page-head">
+  <h1>Use it with your agent</h1>
+  <p>Agents can work at two levels: inside the search, proposing each proof step, or outside it, driving the command line for you.</p>
+</div>
+
+<div class="prose">
+  <h2>Let Codex propose the steps</h2>
+  <p>Authenticate the Codex CLI with a ChatGPT login or an API key, check the setup, then search with the Codex proposer.</p>
+<pre><code>codex login
+node formal/src/cli.mjs doctor --proposer codex
+node formal/src/cli.mjs solve benchmarks/tier1.json \
+  --id conjunction_commutation --proposer codex --compiler worker \
+  --model-token-budget 50000</code></pre>
+  <p>Each call runs in a separate temporary directory with execution tools, apps, plugins, web search and configured MCP servers disabled. The agent returns structured tactic or <code>have</code> proposals. Only the token usage the CLI actually reports is counted, and a response that would exceed the allowance is rejected. The allowance is an admission threshold, not a billing cap: a request already in flight can still cost more. Use <code>--model</code> to pick a model explicitly.</p>
+
+  <h2>Plug in any other model</h2>
+  <p>Any program that reads one JSON request on standard input and writes proposals to standard output can be the proposer. It is launched directly from an argument list, without a shell.</p>
+<pre><code>node formal/src/cli.mjs solve my-lemma.json \
+  --proposer-command '["node","/absolute/path/to/my-proposer.mjs"]' \
+  --model-token-budget 8000</code></pre>
+  <p>The request carries the current goal, its hypotheses, the imports, recent feedback and the remaining budget. The response lists proposals and the tokens actually used:</p>
+<pre><code>{
+  "proposals": [
+    {"tactic": "constructor"},
+    {"kind": "have", "name": "aux", "type": "P"}
+  ],
+  "modelTokens": 120
+}</code></pre>
+  <p>The <a href="https://github.com/allsmog/Formal-Verify-Anything/blob/main/formal/README.md#trusted-local-command">runtime README</a> documents the full request and response format.</p>
+
+  <h2>Let a coding agent drive the CLI</h2>
+  <p>The CLI reads a JSON manifest and prints a JSON result, so any coding agent that can run terminal commands can operate it. Point your agent at the repository and ask:</p>
+<pre><code>Write my lemma as a Formal Verify Anything problem manifest, run
+`node formal/src/cli.mjs solve` on it with `--proposer codex`, and show me the
+accepted proof, the attempts it pruned, and the kernel audit.</code></pre>
+
+  <h2>Who has the final word</h2>
+  <p>Whatever proposes the steps, the same gate applies: two fresh compilations and a kernel audit of every dependency. An agent's confidence never turns into an accepted proof by itself.</p>
+</div>
+  </main>
+  <footer class="site">
+    <div class="wrap footer-grid">
+      <p>Formal Verify Anything is open source under the MIT license.</p>
+      <ul>
+        <li><a href="https://github.com/allsmog/Formal-Verify-Anything">Source on GitHub</a></li>
+        <li><a href="https://github.com/allsmog/Formal-Verify-Anything/releases">Releases</a></li>
+        <li><a href="https://github.com/allsmog/Formal-Verify-Anything/discussions">Discussions</a></li>
+        <li><a href="https://github.com/allsmog/Formal-Verify-Anything/blob/main/SECURITY.md">Report a vulnerability</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

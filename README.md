@@ -1,15 +1,42 @@
+<div align="center">
+
 # Formal Verify Anything
 
-Automated theorem proving for **Lean 4** and **Mathlib**. An LLM proposer (through
-the Codex CLI) or a deterministic tactic policy suggests proof steps, Lean checks
-every step, and a proof is accepted only after two fresh compilations and a
-kernel dependency audit. Use it for LLM-guided proof search, formal verification
-of small state-machine models, and reproducible miniF2F-style benchmarks with
-every attempt saved.
+### Agent-driven proof search for Lean 4 and Mathlib.
 
-On a frozen 24-problem miniF2F holdout, the Codex proposer solved **17/24** and
-the deterministic baseline **11/24**. Every accepted proof passed a kernel audit
-and an independent recompile. See [Benchmarks and verification](#benchmarks-and-verification).
+**AI agents propose. Lean checks. The kernel decides.**
+
+[![Lean proof integrity](https://github.com/allsmog/Formal-Verify-Anything/actions/workflows/formal.yml/badge.svg)](https://github.com/allsmog/Formal-Verify-Anything/actions/workflows/formal.yml)
+[![Release](https://img.shields.io/github/v/release/allsmog/Formal-Verify-Anything?style=flat-square)](https://github.com/allsmog/Formal-Verify-Anything/releases)
+[![Lean 4.24.0](https://img.shields.io/badge/Lean-4.24.0-0f4c81?style=flat-square)](lean-toolchain)
+[![Mathlib pinned](https://img.shields.io/badge/Mathlib-pinned-5c4ee5?style=flat-square)](lake-manifest.json)
+[![MIT license](https://img.shields.io/badge/license-MIT-f4c430?style=flat-square)](LICENSE)
+[![GitHub Discussions](https://img.shields.io/github/discussions/allsmog/Formal-Verify-Anything?style=flat-square&label=discussions&color=2aa198)](https://github.com/allsmog/Formal-Verify-Anything/discussions)
+
+**English** · [简体中文](i18n/README.zh-CN.md) · [日本語](i18n/README.ja.md) · [한국어](i18n/README.ko.md) · [Español](i18n/README.es.md) · [Deutsch](i18n/README.de.md)
+
+**[Website](https://allsmog.github.io/Formal-Verify-Anything/) · [Guides](https://allsmog.github.io/Formal-Verify-Anything/guides/) · [Showcase](https://allsmog.github.io/Formal-Verify-Anything/showcase/) · [Discussions](https://github.com/allsmog/Formal-Verify-Anything/discussions)**
+
+[Quick start](#quick-start) · [Use it with your agent](#use-it-with-your-agent) · [How it works](#how-it-works) · [Results](#results) · [Security example](#security-example)
+
+<img src="assets/social-preview.png" alt="Formal Verify Anything: an AI agent proposes proof steps into a proof tree, failed branches are pruned, and accepted proofs pass the Lean kernel" width="1000" />
+
+</div>
+
+---
+
+State a theorem in Lean. Let an AI agent search for the proof. Keep only what the
+Lean kernel accepts.
+
+An agent (through the Codex CLI) or a deterministic tactic policy proposes proof
+steps. Lean compiles every step and reports the new goals, failed branches roll
+back to the exact parent plan, and a proof is accepted only after two fresh
+compilations and a kernel dependency audit. Every attempt, goal state and
+receipt is saved, so you can see how each proof was found and check it yourself.
+
+On a frozen 24-problem miniF2F holdout, the Codex agent solved **17/24** and the
+deterministic baseline **11/24**. Every accepted proof passed a kernel audit and
+an independent recompile. See [Results](#results).
 
 **The default solver is a deterministic tactic-search baseline.** It makes no
 model calls. An explicit Codex CLI adapter or a trusted local command can supply
@@ -21,7 +48,7 @@ Version 0.2 includes final-verification-aware repair, an optional persistent Lea
 exploration worker, a frozen 24-problem holdout comparison, and an audited
 atomic-token security model.
 
-## Run it
+## Quick start
 
 Prerequisites: Node.js 22 or later, Git, and [elan](https://github.com/leanprover/elan).
 The repository pins Lean 4.24.0 and an exact Mathlib commit.
@@ -38,7 +65,26 @@ node formal/src/cli.mjs solve benchmarks/tier1.json --id conjunction_commutation
 
 The `formal/` runtime is plain JavaScript with no npm dependencies.
 
-## What the proof runner does
+## Use it with your agent
+
+The CLI takes a JSON problem manifest and prints a JSON result, so any coding
+agent that can run terminal commands can drive it. Point your agent at this
+repository and ask:
+
+```text
+Write my lemma as a Formal Verify Anything problem manifest, run
+`node formal/src/cli.mjs solve` on it with `--proposer codex`, and show me the
+accepted proof, the attempts it pruned, and the kernel audit.
+```
+
+To use an agent as the proposer inside the search loop, authenticate the Codex
+CLI (a ChatGPT login or an API key) and pass `--proposer codex`. Any other model
+can plug in through `--proposer-command`, a local program that reads one JSON
+request on stdin and returns proposals; see [formal/README.md](formal/README.md).
+Whatever proposes the steps, only proofs that pass Lean and the kernel audit are
+accepted.
+
+## How it works
 
 1. Locks the original theorem declaration, imports, and statement hash.
 2. Asks Lean to report the current target, hypotheses, dependent lets, universe
@@ -70,7 +116,7 @@ transitive proof dependencies and permits only Lean's usual foundational axioms:
 Only the exact unused-variable linter warning is permitted under the v2 policy;
 it remains visible in the receipt. Other warnings remain rejections.
 
-## Benchmarks and verification
+## Results
 
 ```sh
 # Meaningful unit and real Lean integration checks
@@ -182,6 +228,8 @@ macOS; Windows process-family cleanup has not been validated.
 - [FormalVerify/Bridge.lean](FormalVerify/Bridge.lean): Lean goal observations and the kernel audit.
 - [benchmarks/](benchmarks/): the v1 and v2 suites, protocols, results and full run traces.
 - [examples/security/](examples/security/): the atomic-token model and its proof tasks.
+- [site/](site/): sources for the [website](https://allsmog.github.io/Formal-Verify-Anything/); `node site/build.mjs` writes the published pages to `docs/`.
+- [i18n/](i18n/): translations of this README.
 - [SECURITY.md](SECURITY.md): how to report a vulnerability and what the runner does not protect against.
 - [LICENSE](LICENSE): MIT. Benchmark statements keep their miniF2F notices in
   [benchmarks/licenses/](benchmarks/licenses/).
