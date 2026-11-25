@@ -223,7 +223,9 @@ export async function verifyResults({ projectRoot = PROJECT_ROOT, reportFile = '
     const { problem: _problem, ...proof } = item;
     if (structuralOnly) checks.push({ ...proof, status: 'RECORDED_EVIDENCE_CHECKED', independentlyCompiled: false });
     else {
-      const result = await compiler.compileLean(projectRoot, path.resolve(projectRoot, item.proofFile), { lake, timeoutMs });
+      // item.proofFile is repository-relative (checked by localArtifact), so the
+      // receipt's compiler output never records where the checkout lives.
+      const result = await compiler.compileLean(projectRoot, item.proofFile, { lake, timeoutMs });
       const assessment = compiler.assessFinal(result, item.id);
       const after = await readFile(path.resolve(projectRoot, item.proofFile), 'utf8');
       const sourceUnchanged = sha256(after) === item.sourceHash;
