@@ -1,0 +1,212 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  n✝\\nis not definitionally equal to the right-hand side\\n  17\\n\\ncase succ.zero\\nn✝ : ℕ\\nh₀ : Even (1 + n✝)\\nh₁ : Even 0\\na✝ : Even n✝ → n✝ - 0 = 2 → n✝ * 0 = 288 → n✝ = 18\\nh₃ : n✝ * 0 + 0 = 288\\nh₂ : 1 + n✝ - 0 = 2\\n⊢ n✝ = 17\",\"endPos\":{\"column\":13,\"line\":33},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0054-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":10,\"line\":33},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.291\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n._@.FVAExploration.861397831._hygCtx._hyg.36\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.291\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.6354\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"Even.{0} (HAdd.hAdd.{0, 0, 0} 1 n✝¹)\\\",\\\"typeHead\\\":\\\"Even\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.7354\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n._@.FVAExploration.861397831._hygCtx._hyg.55\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.7354\\\",\\\"_uniq.291\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.7355\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a._@._internal.0.FVAExploration.861397831._hygCtx._hyg.56\\\",\\\"type\\\":\\\"Even.{0} n✝ →\\\\n  (Even.{0} n✝¹ → Eq.{1} (HSub.hSub.{0, 0, 0} n✝¹ n✝) 2 → Eq.{1} (HMul.hMul.{0, 0, 0} n✝¹ n✝) 288 → Eq.{1} n✝¹ 18) →\\\\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} n✝¹ n✝) n✝) 288 →\\\\n      Eq.{1} (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 n✝¹) n✝) 2 → Eq.{1} n✝¹ 17\\\",\\\"typeHead\\\":\\\"forall\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.7354\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.7362\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₁\\\",\\\"type\\\":\\\"Even.{0} (HAdd.hAdd.{0, 0, 0} n✝ 1)\\\",\\\"typeHead\\\":\\\"Even\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.291\\\",\\\"_uniq.7354\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.7363\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a._@._internal.0.FVAExploration.861397831._hygCtx._hyg.37\\\",\\\"type\\\":\\\"Even.{0} n✝¹ →\\\\n  Eq.{1} (HSub.hSub.{0, 0, 0} n✝¹ (HAdd.hAdd.{0, 0, 0} n✝ 1)) 2 →\\\\n    Eq.{1} (HMul.hMul.{0, 0, 0} n✝¹ (HAdd.hAdd.{0, 0, 0} n✝ 1)) 288 → Eq.{1} n✝¹ 18\\\",\\\"typeHead\\\":\\\"forall\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.291\\\",\\\"_uniq.7354\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.7364\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₃\\\",\\\"type\\\":\\\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} n✝¹ (HAdd.hAdd.{0, 0, 0} n✝ 1)) (HAdd.hAdd.{0, 0, 0} n✝ 1)) 288\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.291\\\",\\\"_uniq.7354\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.7365\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₂\\\",\\\"type\\\":\\\"Eq.{1} (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 n✝¹) (HAdd.hAdd.{0, 0, 0} n✝ 1)) 2\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.7368\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case succ.succ\\\\nn✝¹ : Nat\\\\nh₀ : Even.{0} (HAdd.hAdd.{0, 0, 0} 1 n✝¹)\\\\nn✝ : Nat\\\\na✝¹ :\\\\n  Even.{0} n✝ →\\\\n    (Even.{0} n✝¹ → Eq.{1} (HSub.hSub.{0, 0, 0} n✝¹ n✝) 2 → Eq.{1} (HMul.hMul.{0, 0, 0} n✝¹ n✝) 288 → Eq.{1} n✝¹ 18) →\\\\n      Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} n✝¹ n✝) n✝) 288 →\\\\n        Eq.{1} (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 n✝¹) n✝) 2 → Eq.{1} n✝¹ 17\\\\nh₁ : Even.{0} (HAdd.hAdd.{0, 0, 0} n✝ 1)\\\\na✝ :\\\\n  Even.{0} n✝¹ →\\\\n    Eq.{1} (HSub.hSub.{0, 0, 0} n✝¹ (HAdd.hAdd.{0, 0, 0} n✝ 1)) 2 →\\\\n      Eq.{1} (HMul.hMul.{0, 0, 0} n✝¹ (HAdd.hAdd.{0, 0, 0} n✝ 1)) 288 → Eq.{1} n✝¹ 18\\\\nh₃ : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} n✝¹ (HAdd.hAdd.{0, 0, 0} n✝ 1)) (HAdd.hAdd.{0, 0, 0} n✝ 1)) 288\\\\nh₂ : Eq.{1} (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 n✝¹) (HAdd.hAdd.{0, 0, 0} n✝ 1)) 2\\\\n⊢ Eq.{1} n✝¹ 17\\\",\\\"target\\\":\\\"Eq.{1} n✝¹ 17\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"n✝¹\\\",\\\"17\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n6\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":24,\"line\":36},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0054-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":10,\"line\":36},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n6\",\"endPos\":{\"column\":24,\"line\":36},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0054-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":10,\"line\":36},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  n✝\nis not definitionally equal to the right-hand side\n  17\n\ncase succ.zero\nn✝ : ℕ\nh₀ : Even (1 + n✝)\nh₁ : Even 0\na✝ : Even n✝ → n✝ - 0 = 2 → n✝ * 0 = 288 → n✝ = 18\nh₃ : n✝ * 0 + 0 = 288\nh₂ : 1 + n✝ - 0 = 2\n⊢ n✝ = 17",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0054-candidate.lean",
+      "start": {
+        "column": 10,
+        "line": 33
+      },
+      "end": {
+        "column": 13,
+        "line": 33
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.291\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n._@.FVAExploration.861397831._hygCtx._hyg.36\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.291\"],\"has_metavariables\":false,\"id\":\"_uniq.6354\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"Even.{0} (HAdd.hAdd.{0, 0, 0} 1 n✝¹)\",\"typeHead\":\"Even\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.7354\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n._@.FVAExploration.861397831._hygCtx._hyg.55\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.7354\",\"_uniq.291\"],\"has_metavariables\":false,\"id\":\"_uniq.7355\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"a._@._internal.0.FVAExploration.861397831._hygCtx._hyg.56\",\"type\":\"Even.{0} n✝ →\\n  (Even.{0} n✝¹ → Eq.{1} (HSub.hSub.{0, 0, 0} n✝¹ n✝) 2 → Eq.{1} (HMul.hMul.{0, 0, 0} n✝¹ n✝) 288 → Eq.{1} n✝¹ 18) →\\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} n✝¹ n✝) n✝) 288 →\\n      Eq.{1} (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 n✝¹) n✝) 2 → Eq.{1} n✝¹ 17\",\"typeHead\":\"forall\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.7354\"],\"has_metavariables\":false,\"id\":\"_uniq.7362\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₁\",\"type\":\"Even.{0} (HAdd.hAdd.{0, 0, 0} n✝ 1)\",\"typeHead\":\"Even\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.291\",\"_uniq.7354\"],\"has_metavariables\":false,\"id\":\"_uniq.7363\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"a._@._internal.0.FVAExploration.861397831._hygCtx._hyg.37\",\"type\":\"Even.{0} n✝¹ →\\n  Eq.{1} (HSub.hSub.{0, 0, 0} n✝¹ (HAdd.hAdd.{0, 0, 0} n✝ 1)) 2 →\\n    Eq.{1} (HMul.hMul.{0, 0, 0} n✝¹ (HAdd.hAdd.{0, 0, 0} n✝ 1)) 288 → Eq.{1} n✝¹ 18\",\"typeHead\":\"forall\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.291\",\"_uniq.7354\"],\"has_metavariables\":false,\"id\":\"_uniq.7364\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₃\",\"type\":\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} n✝¹ (HAdd.hAdd.{0, 0, 0} n✝ 1)) (HAdd.hAdd.{0, 0, 0} n✝ 1)) 288\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.291\",\"_uniq.7354\"],\"has_metavariables\":false,\"id\":\"_uniq.7365\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₂\",\"type\":\"Eq.{1} (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 n✝¹) (HAdd.hAdd.{0, 0, 0} n✝ 1)) 2\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.7368\",\"omitted_implementation_details\":1,\"pretty\":\"case succ.succ\\nn✝¹ : Nat\\nh₀ : Even.{0} (HAdd.hAdd.{0, 0, 0} 1 n✝¹)\\nn✝ : Nat\\na✝¹ :\\n  Even.{0} n✝ →\\n    (Even.{0} n✝¹ → Eq.{1} (HSub.hSub.{0, 0, 0} n✝¹ n✝) 2 → Eq.{1} (HMul.hMul.{0, 0, 0} n✝¹ n✝) 288 → Eq.{1} n✝¹ 18) →\\n      Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} n✝¹ n✝) n✝) 288 →\\n        Eq.{1} (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 n✝¹) n✝) 2 → Eq.{1} n✝¹ 17\\nh₁ : Even.{0} (HAdd.hAdd.{0, 0, 0} n✝ 1)\\na✝ :\\n  Even.{0} n✝¹ →\\n    Eq.{1} (HSub.hSub.{0, 0, 0} n✝¹ (HAdd.hAdd.{0, 0, 0} n✝ 1)) 2 →\\n      Eq.{1} (HMul.hMul.{0, 0, 0} n✝¹ (HAdd.hAdd.{0, 0, 0} n✝ 1)) 288 → Eq.{1} n✝¹ 18\\nh₃ : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} n✝¹ (HAdd.hAdd.{0, 0, 0} n✝ 1)) (HAdd.hAdd.{0, 0, 0} n✝ 1)) 288\\nh₂ : Eq.{1} (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 n✝¹) (HAdd.hAdd.{0, 0, 0} n✝ 1)) 2\\n⊢ Eq.{1} n✝¹ 17\",\"target\":\"Eq.{1} n✝¹ 17\",\"targetArgs\":[\"Nat\",\"n✝¹\",\"17\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n6\",\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0054-candidate.lean",
+      "start": {
+        "column": 10,
+        "line": 36
+      },
+      "end": {
+        "column": 24,
+        "line": 36
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n6",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0054-candidate.lean",
+      "start": {
+        "column": 10,
+        "line": 36
+      },
+      "end": {
+        "column": 24,
+        "line": 36
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.291",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n._@.FVAExploration.861397831._hygCtx._hyg.36",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.291"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.6354",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "Even.{0} (HAdd.hAdd.{0, 0, 0} 1 n✝¹)",
+              "typeHead": "Even",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.7354",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n._@.FVAExploration.861397831._hygCtx._hyg.55",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.7354",
+                "_uniq.291"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.7355",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "a._@._internal.0.FVAExploration.861397831._hygCtx._hyg.56",
+              "type": "Even.{0} n✝ →\n  (Even.{0} n✝¹ → Eq.{1} (HSub.hSub.{0, 0, 0} n✝¹ n✝) 2 → Eq.{1} (HMul.hMul.{0, 0, 0} n✝¹ n✝) 288 → Eq.{1} n✝¹ 18) →\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} n✝¹ n✝) n✝) 288 →\n      Eq.{1} (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 n✝¹) n✝) 2 → Eq.{1} n✝¹ 17",
+              "typeHead": "forall",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.7354"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.7362",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₁",
+              "type": "Even.{0} (HAdd.hAdd.{0, 0, 0} n✝ 1)",
+              "typeHead": "Even",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.291",
+                "_uniq.7354"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.7363",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "a._@._internal.0.FVAExploration.861397831._hygCtx._hyg.37",
+              "type": "Even.{0} n✝¹ →\n  Eq.{1} (HSub.hSub.{0, 0, 0} n✝¹ (HAdd.hAdd.{0, 0, 0} n✝ 1)) 2 →\n    Eq.{1} (HMul.hMul.{0, 0, 0} n✝¹ (HAdd.hAdd.{0, 0, 0} n✝ 1)) 288 → Eq.{1} n✝¹ 18",
+              "typeHead": "forall",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.291",
+                "_uniq.7354"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.7364",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₃",
+              "type": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} n✝¹ (HAdd.hAdd.{0, 0, 0} n✝ 1)) (HAdd.hAdd.{0, 0, 0} n✝ 1)) 288",
+              "typeHead": "Eq",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.291",
+                "_uniq.7354"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.7365",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₂",
+              "type": "Eq.{1} (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 n✝¹) (HAdd.hAdd.{0, 0, 0} n✝ 1)) 2",
+              "typeHead": "Eq",
+              "value": null
+            }
+          ],
+          "id": "_uniq.7368",
+          "omitted_implementation_details": 1,
+          "pretty": "case succ.succ\nn✝¹ : Nat\nh₀ : Even.{0} (HAdd.hAdd.{0, 0, 0} 1 n✝¹)\nn✝ : Nat\na✝¹ :\n  Even.{0} n✝ →\n    (Even.{0} n✝¹ → Eq.{1} (HSub.hSub.{0, 0, 0} n✝¹ n✝) 2 → Eq.{1} (HMul.hMul.{0, 0, 0} n✝¹ n✝) 288 → Eq.{1} n✝¹ 18) →\n      Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} n✝¹ n✝) n✝) 288 →\n        Eq.{1} (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 n✝¹) n✝) 2 → Eq.{1} n✝¹ 17\nh₁ : Even.{0} (HAdd.hAdd.{0, 0, 0} n✝ 1)\na✝ :\n  Even.{0} n✝¹ →\n    Eq.{1} (HSub.hSub.{0, 0, 0} n✝¹ (HAdd.hAdd.{0, 0, 0} n✝ 1)) 2 →\n      Eq.{1} (HMul.hMul.{0, 0, 0} n✝¹ (HAdd.hAdd.{0, 0, 0} n✝ 1)) 288 → Eq.{1} n✝¹ 18\nh₃ : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} n✝¹ (HAdd.hAdd.{0, 0, 0} n✝ 1)) (HAdd.hAdd.{0, 0, 0} n✝ 1)) 288\nh₂ : Eq.{1} (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 n✝¹) (HAdd.hAdd.{0, 0, 0} n✝ 1)) 2\n⊢ Eq.{1} n✝¹ 17",
+          "target": "Eq.{1} n✝¹ 17",
+          "targetArgs": [
+            "Nat",
+            "n✝¹",
+            "17"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n6",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 54,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "1e9fed134768bcb9e2140bd0d978a50e2d6b5f348d01e8eea17017b9464cac6c",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 32,
+    "elaborationMs": 95,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 129,
+  "sequence": 54,
+  "kind": "candidate",
+  "nodeId": "n5",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0054-candidate.lean",
+  "sourceHash": "4c2ea17839a814a94b2e28f11be69a912564b01d7e93170e47654772468e21a6",
+  "evidenceId": "ev_f824f77983112eea7a210177047703b5abb0c2889b35047ae140a43d17bc8009"
+}

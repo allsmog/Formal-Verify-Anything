@@ -1,0 +1,161 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"No goals to be solved\",\"endPos\":{\"column\":121,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_293/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":79,\"line\":21},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"No goals to be solved\",\"endPos\":{\"column\":121,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_293/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":79,\"line\":21},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"No goals to be solved\",\"endPos\":{\"column\":121,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_293/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":79,\"line\":21},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"No goals to be solved\",\"endPos\":{\"column\":121,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_293/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":79,\"line\":21},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"No goals to be solved\",\"endPos\":{\"column\":121,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_293/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":79,\"line\":21},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"No goals to be solved\",\"endPos\":{\"column\":121,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_293/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":79,\"line\":21},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"No goals to be solved\",\"endPos\":{\"column\":121,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_293/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":79,\"line\":21},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"No goals to be solved\",\"endPos\":{\"column\":121,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_293/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":79,\"line\":21},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"No goals to be solved\",\"endPos\":{\"column\":121,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_293/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":79,\"line\":21},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "No goals to be solved",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_293/attempts/0002-candidate.lean",
+      "start": {
+        "column": 79,
+        "line": 21
+      },
+      "end": {
+        "column": 121,
+        "line": 21
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "No goals to be solved",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_293/attempts/0002-candidate.lean",
+      "start": {
+        "column": 79,
+        "line": 21
+      },
+      "end": {
+        "column": 121,
+        "line": 21
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "No goals to be solved",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_293/attempts/0002-candidate.lean",
+      "start": {
+        "column": 79,
+        "line": 21
+      },
+      "end": {
+        "column": 121,
+        "line": 21
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "No goals to be solved",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_293/attempts/0002-candidate.lean",
+      "start": {
+        "column": 79,
+        "line": 21
+      },
+      "end": {
+        "column": 121,
+        "line": 21
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "No goals to be solved",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_293/attempts/0002-candidate.lean",
+      "start": {
+        "column": 79,
+        "line": 21
+      },
+      "end": {
+        "column": 121,
+        "line": 21
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "No goals to be solved",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_293/attempts/0002-candidate.lean",
+      "start": {
+        "column": 79,
+        "line": 21
+      },
+      "end": {
+        "column": 121,
+        "line": 21
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "No goals to be solved",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_293/attempts/0002-candidate.lean",
+      "start": {
+        "column": 79,
+        "line": 21
+      },
+      "end": {
+        "column": 121,
+        "line": 21
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "No goals to be solved",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_293/attempts/0002-candidate.lean",
+      "start": {
+        "column": 79,
+        "line": 21
+      },
+      "end": {
+        "column": 121,
+        "line": 21
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "No goals to be solved",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_293/attempts/0002-candidate.lean",
+      "start": {
+        "column": 79,
+        "line": 21
+      },
+      "end": {
+        "column": 121,
+        "line": 21
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 2,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "1f7ef599c843a6782bca758d0773ec9396dfc048c3bbdf6be02c4b05ac87b42a",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 76,
+    "elaborationMs": 367,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 453,
+  "sequence": 2,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_293/attempts/0002-candidate.lean",
+  "sourceHash": "016bcbc1b3f6578dde24f3e9597159b9f8683fbfc0f5bfde918e1db4b5963dc9",
+  "evidenceId": "ev_3868a8e5f01fe8ddf46381c6d471bd512d6122b79c81f6fc31a72a3b75997d1e"
+}

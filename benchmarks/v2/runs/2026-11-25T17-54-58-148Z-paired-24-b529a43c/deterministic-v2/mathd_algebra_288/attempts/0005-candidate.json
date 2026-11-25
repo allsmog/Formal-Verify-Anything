@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"omega could not prove the goal:\\nNo usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.\",\"endPos\":{\"column\":7,\"line\":24},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_288/attempts/0005-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":24},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "omega could not prove the goal:\nNo usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_288/attempts/0005-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 24
+      },
+      "end": {
+        "column": 7,
+        "line": 24
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 5,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "168eee3b8f05dbc7f372a8606849a13b0e44d4a9339cfa6f53fec570b0a5a01f",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 32,
+    "elaborationMs": 25,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 58,
+  "sequence": 5,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_288/attempts/0005-candidate.lean",
+  "sourceHash": "a52670f5b059842273e5fa2ecbf7525c452d75e64ee7f68ba063a0555dda8884",
+  "evidenceId": "ev_74518700ae150da7542da69ebd8c81ac6842157a73e844aa531a552f5bac63e6"
+}

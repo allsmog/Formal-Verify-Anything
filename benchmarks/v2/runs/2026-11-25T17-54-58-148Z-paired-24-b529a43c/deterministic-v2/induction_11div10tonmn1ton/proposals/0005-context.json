@@ -1,0 +1,38 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [],
+    "id": "_uniq.2638",
+    "omitted_implementation_details": 1,
+    "pretty": "case zero\n⊢ Dvd.dvd.{0} 11 (HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) 0)) (HPow.hPow.{0, 0, 0} 10 0))",
+    "target": "Dvd.dvd.{0} 11 (HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) 0)) (HPow.hPow.{0, 0, 0} 10 0))",
+    "targetArgs": [
+      "Int",
+      "Int.instDvd",
+      "11",
+      "HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) 0)) (HPow.hPow.{0, 0, 0} 10 0)"
+    ],
+    "targetHead": "Dvd.dvd",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 18,
+    "maxDepth": 8,
+    "depth": 4,
+    "modelTokensRemaining": 0,
+    "remainingMs": 293747
+  },
+  "feedback": []
+}

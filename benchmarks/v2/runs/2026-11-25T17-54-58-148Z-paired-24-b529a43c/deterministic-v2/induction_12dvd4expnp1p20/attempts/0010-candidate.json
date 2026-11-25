@@ -1,0 +1,99 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.687\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.1068\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"n : Nat\\\\n⊢ Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 8)\\\",\\\"target\\\":\\\"Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 8)\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"Nat.instDvd\\\",\\\"12\\\",\\\"HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 8\\\"],\\\"targetHead\\\":\\\"Dvd.dvd\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n1\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":17,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/attempts/0010-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":21},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n1\",\"endPos\":{\"column\":17,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/attempts/0010-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":21},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.687\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null}],\"id\":\"_uniq.1068\",\"omitted_implementation_details\":1,\"pretty\":\"n : Nat\\n⊢ Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 8)\",\"target\":\"Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 8)\",\"targetArgs\":[\"Nat\",\"Nat.instDvd\",\"12\",\"HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 8\"],\"targetHead\":\"Dvd.dvd\",\"universe_parameters\":[]}],\"node_id\":\"n1\",\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/attempts/0010-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 21
+      },
+      "end": {
+        "column": 17,
+        "line": 21
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n1",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/attempts/0010-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 21
+      },
+      "end": {
+        "column": 17,
+        "line": 21
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.687",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            }
+          ],
+          "id": "_uniq.1068",
+          "omitted_implementation_details": 1,
+          "pretty": "n : Nat\n⊢ Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 8)",
+          "target": "Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 8)",
+          "targetArgs": [
+            "Nat",
+            "Nat.instDvd",
+            "12",
+            "HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 8"
+          ],
+          "targetHead": "Dvd.dvd",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n1",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 10,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "9166f207fdd94618abb0c02936266dccbbce163856751fae6b77a1884771403a",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 24,
+    "elaborationMs": 36,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 61,
+  "sequence": 10,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/attempts/0010-candidate.lean",
+  "sourceHash": "07a87acc3550b7b6f4cf61241605f650198eb96b19908ce6edfa09e329aa705b",
+  "evidenceId": "ev_94e857733cb279fa47bca6390d8b0527a47470ffd720b603cbc41c669be9005d"
+}

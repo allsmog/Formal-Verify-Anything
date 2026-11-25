@@ -1,0 +1,63 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":6,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0014-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"ring_nf made no progress on goal\",\"endPos\":{\"column\":8,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0014-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":21},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0014-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 19
+      },
+      "end": {
+        "column": 6,
+        "line": 19
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "ring_nf made no progress on goal",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0014-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 21
+      },
+      "end": {
+        "column": 8,
+        "line": 21
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 14,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "4db80fc90bc738e3bb088d8e466aac6ba30e370ad6a5f8c09813de96e6d81601",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 47,
+    "elaborationMs": 102,
+    "artifactCount": 10204
+  },
+  "elapsedMs": 150,
+  "sequence": 14,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0014-candidate.lean",
+  "sourceHash": "684d57b06a1755f0fd7131c49ac338d963d910c7543191bc9eeae453340190a1",
+  "evidenceId": "ev_fc5be7495781a8aae91ba177e8e032a3f7279a0d78e7cd6ee5213a7d204608fa"
+}

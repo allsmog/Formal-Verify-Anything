@@ -1,0 +1,60 @@
+{
+  "id": "p1",
+  "nodeId": "n1",
+  "stateHash": "260aa2caccf697869b51f0dd90b1cc5dd3ac79eff2e455538bca89f90abc80eb",
+  "round": 0,
+  "requestDigest": "71e01e568237c5ec84aa137c7033a816442534ba4b73c123bd96726879309044",
+  "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/proposals/0002-context.json",
+  "modelTokens": 17616,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "codex-v1",
+  "provider": "codex-cli",
+  "usage": {
+    "input_tokens": 16379,
+    "output_tokens": 1237,
+    "cached_input_tokens": 0,
+    "reasoning_output_tokens": 967
+  },
+  "metadata": {
+    "provider": "codex-cli",
+    "model": null,
+    "modelSelection": "codex-configured-default",
+    "promptDigest": "92dbdef409381484dc0280132263c130aff9d7ada84065603c30d705cee28122",
+    "promptVersion": 1,
+    "toolPolicy": "disabled",
+    "ephemeral": true,
+    "cliVersion": "codex-cli 0.171.0",
+    "eventTypes": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "responseDigest": "37ea3255e85b720d56ff3166b34560734530bae4b831b5ed033587be20be7543",
+    "providerErrors": [],
+    "elapsedMs": 19689,
+    "exitCode": 0,
+    "signal": null,
+    "stdoutDigest": "37ea3255e85b720d56ff3166b34560734530bae4b831b5ed033587be20be7543",
+    "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrDiagnostic": ""
+  },
+  "proposals": [
+    {
+      "kind": "tactic",
+      "tactic": "intro m\ninduction m with\n| zero => simp\n| succ m ih =>\n  rw [Finset.sum_range_succ]\n  calc\n    2 * ((Finset.range m).sum (fun k => k) + m) + (m + 1) =\n        (2 * (Finset.range m).sum (fun k => k) + m) + (2 * m + 1) := by ring\n    _ = (m + 1) ^ 2 := by rw [ih]; ring"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "intro m\ninduction m with\n| zero => simp\n| succ m ih =>\n  simp only [Finset.sum_range_succ, Nat.succ_eq_add_one]\n  nlinarith only [ih]"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "intro m\ninduction m with\n| zero => simp\n| succ m ih =>\n  rw [Finset.range_succ, Finset.sum_insert (by simp)]\n  simp only [Nat.succ_eq_add_one] at *\n  nlinarith only [ih]"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 19690,
+  "evidenceId": "ev_ab934ff2df67c91a98cd5bed09da9ff473f3b4c7abbda63e519c4423177c8aea"
+}

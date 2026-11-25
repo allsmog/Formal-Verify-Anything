@@ -1,0 +1,47 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.592",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "n",
+        "type": "Nat",
+        "typeHead": "Nat",
+        "value": null
+      }
+    ],
+    "id": "_uniq.973",
+    "omitted_implementation_details": 1,
+    "pretty": "n : Nat\n⊢ ∀ (m : Nat),\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)",
+    "target": "∀ (m : Nat), Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)",
+    "targetArgs": [],
+    "targetHead": "forall",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Algebra.BigOperators.Intervals"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 60,
+    "maxDepth": 8,
+    "depth": 1,
+    "modelTokensRemaining": 31697,
+    "remainingMs": 259748
+  },
+  "feedback": []
+}

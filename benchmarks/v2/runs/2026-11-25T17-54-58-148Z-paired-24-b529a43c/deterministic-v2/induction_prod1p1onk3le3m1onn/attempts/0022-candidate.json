@@ -1,0 +1,63 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":8,\"line\":22},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0022-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":22},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"linarith failed to find a contradiction\\ncase h\\nn : ℕ\\nh₀ : 0 < n\\na✝ : 3 - (↑n)⁻¹ < ∏ x ∈ Finset.Icc 1 n, (1 + (↑x)⁻¹ ^ 3)\\n⊢ False\\nfailed\",\"endPos\":{\"column\":15,\"line\":24},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0022-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":24},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0022-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 22
+      },
+      "end": {
+        "column": 8,
+        "line": 22
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "linarith failed to find a contradiction\ncase h\nn : ℕ\nh₀ : 0 < n\na✝ : 3 - (↑n)⁻¹ < ∏ x ∈ Finset.Icc 1 n, (1 + (↑x)⁻¹ ^ 3)\n⊢ False\nfailed",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0022-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 24
+      },
+      "end": {
+        "column": 15,
+        "line": 24
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 22,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "46cd90d712e5671f660ac6343ef7d2d358a3890f44f3356df671c59df951b0da",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 26,
+    "elaborationMs": 83,
+    "artifactCount": 10204
+  },
+  "elapsedMs": 111,
+  "sequence": 22,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0022-candidate.lean",
+  "sourceHash": "d3b2a5bec4ec7ada07b51d5ebe3444eb836583d9b1aa391ec8b2b5659da9391d",
+  "evidenceId": "ev_572d439b85f9fd7f5e83d81ab9a0059ef0ce52609a6184287cb74aa375efed76"
+}

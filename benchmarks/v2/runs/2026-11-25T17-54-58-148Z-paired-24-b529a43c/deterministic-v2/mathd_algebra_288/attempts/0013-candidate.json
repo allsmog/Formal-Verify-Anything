@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\nx y : ℝ\\nn : NNReal\\nh₁ : |y| = 6\\nh₂ : √((x - 8) ^ 2 + (y - 3) ^ 2) = 15\\nh₃ : √(x ^ 2 + y ^ 2) = √↑n\\nh₀ : x < 0 ∧ y < 0\\n⊢ n = 52\",\"endPos\":{\"column\":14,\"line\":26},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_288/attempts/0013-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":26},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\nx y : ℝ\nn : NNReal\nh₁ : |y| = 6\nh₂ : √((x - 8) ^ 2 + (y - 3) ^ 2) = 15\nh₃ : √(x ^ 2 + y ^ 2) = √↑n\nh₀ : x < 0 ∧ y < 0\n⊢ n = 52",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_288/attempts/0013-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 26
+      },
+      "end": {
+        "column": 14,
+        "line": 26
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 13,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "032cc7fb3840c3b554f476b0e9f707ed5969e02c7a5993256a9d98271406cb4e",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 54,
+    "elaborationMs": 67,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 123,
+  "sequence": 13,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_288/attempts/0013-candidate.lean",
+  "sourceHash": "53c364ce9740ba09310077193a058fa18dbc2dd64c2a31f26685015c4d4f3d14",
+  "evidenceId": "ev_9b0cabe8568af68035182cb88fb887e5ee4d7a2560891859f190ebf1fd999175"
+}

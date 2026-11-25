@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"omega could not prove the goal:\\na possible counterexample may satisfy the constraints\\n  c ≥ 0\\n  b ≥ 0\\n  b - c ≥ 0\\n  a ≥ 3\\nwhere\\n a := ↑n\\n b := ↑n !\\n c := ↑(n ^ (n - 1))\",\"endPos\":{\"column\":7,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_nfactltnexpnm1ngt3/attempts/0005-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":20},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  c ≥ 0\n  b ≥ 0\n  b - c ≥ 0\n  a ≥ 3\nwhere\n a := ↑n\n b := ↑n !\n c := ↑(n ^ (n - 1))",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_nfactltnexpnm1ngt3/attempts/0005-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 20
+      },
+      "end": {
+        "column": 7,
+        "line": 20
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 5,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "de0ed5dfda49d4ea387c753a19b936d7359a8a65456af2e1cc9c7f3b2c14a42d",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 26,
+    "elaborationMs": 5,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 32,
+  "sequence": 5,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_nfactltnexpnm1ngt3/attempts/0005-candidate.lean",
+  "sourceHash": "9764daf728cc304cfc438302a90ba69be5d82f8d018e759aae22649be3945fd9",
+  "evidenceId": "ev_d4df7ad08478d6d6916b0cc08a5c70dc2191e8e52e52a17bbb765aadacd782b9"
+}

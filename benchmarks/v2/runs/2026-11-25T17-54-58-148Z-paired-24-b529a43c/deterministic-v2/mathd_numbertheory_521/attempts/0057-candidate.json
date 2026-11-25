@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\ncase succ.succ\\nn✝¹ : ℕ\\nh₀ : Even (1 + n✝¹)\\nn✝ : ℕ\\na✝¹ :\\n  Even n✝ → (Even n✝¹ → n✝¹ - n✝ = 2 → n✝¹ * n✝ = 288 → n✝¹ = 18) → n✝¹ * n✝ + n✝ = 288 → 1 + n✝¹ - n✝ = 2 → n✝¹ = 17\\nh₁ : Even (n✝ + 1)\\na✝ : Even n✝¹ → n✝¹ - (n✝ + 1) = 2 → n✝¹ * (n✝ + 1) = 288 → n✝¹ = 18\\nh₃ : n✝¹ * (n✝ + 1) + (n✝ + 1) = 288\\nh₂ : 1 + n✝¹ - (n✝ + 1) = 2\\n⊢ n✝¹ = 17\",\"endPos\":{\"column\":20,\"line\":35},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0057-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":10,\"line\":35},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\ncase succ.succ\nn✝¹ : ℕ\nh₀ : Even (1 + n✝¹)\nn✝ : ℕ\na✝¹ :\n  Even n✝ → (Even n✝¹ → n✝¹ - n✝ = 2 → n✝¹ * n✝ = 288 → n✝¹ = 18) → n✝¹ * n✝ + n✝ = 288 → 1 + n✝¹ - n✝ = 2 → n✝¹ = 17\nh₁ : Even (n✝ + 1)\na✝ : Even n✝¹ → n✝¹ - (n✝ + 1) = 2 → n✝¹ * (n✝ + 1) = 288 → n✝¹ = 18\nh₃ : n✝¹ * (n✝ + 1) + (n✝ + 1) = 288\nh₂ : 1 + n✝¹ - (n✝ + 1) = 2\n⊢ n✝¹ = 17",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0057-candidate.lean",
+      "start": {
+        "column": 10,
+        "line": 35
+      },
+      "end": {
+        "column": 20,
+        "line": 35
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 57,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "89a4c0227a3d5da5946f01e25bf9e3b5fc1c20cf29bc0f39cd05e792cd2f0c2a",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 34,
+    "elaborationMs": 138,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 175,
+  "sequence": 57,
+  "kind": "candidate",
+  "nodeId": "n6",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0057-candidate.lean",
+  "sourceHash": "468db4d4fb48db97bf65249fe04b24ace24997984d493ff5930b0cb0db065a7f",
+  "evidenceId": "ev_38e8e53146fe690408e364c219808653ab89758d4f8a5a8dc6df163eea731bbe"
+}

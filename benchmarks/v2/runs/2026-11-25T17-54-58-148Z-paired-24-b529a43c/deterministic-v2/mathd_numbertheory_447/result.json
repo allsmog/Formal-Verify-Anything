@@ -1,0 +1,632 @@
+{
+  "id": "mathd_numbertheory_447",
+  "tier": 2,
+  "status": "SOLVED",
+  "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/mathd_numbertheory_447.lean",
+  "engineVersion": "fva-search-v2",
+  "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+  "statementHash": "9b1c13e3cf10814840e14584ae94bd3ea75a07dd4820631e14857548d50704eb",
+  "provenance": {
+    "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+    "split": "test",
+    "repository": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+    "path": "MiniF2F/Test/mathd_numbertheory_447.lean",
+    "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_numbertheory_447.lean",
+    "sourceFileSha256": "e076866dfbe04384528a5db0157dc818c605053c902234a538769dace2942dca",
+    "statementSha256": "9b1c13e3cf10814840e14584ae94bd3ea75a07dd4820631e14857548d50704eb",
+    "originalImports": [
+      "Mathlib"
+    ],
+    "originalOpens": [
+      "BigOperators Real Nat Topology Rat"
+    ],
+    "selectionRankWithinStratum": 3,
+    "selectionKeySha256": "171b815ac7b22149c8fcb62ee81184b04c0e2566c96684ca7029e89773abf86a",
+    "executionProfileSha256": "5265e241c25e5d1653c558148653058824c93265f8d52d800428481936a2cab1",
+    "executionImportReason": "finite sums/products and the original range or Icc notation"
+  },
+  "metrics": {
+    "compilerCalls": 5,
+    "steps": 2,
+    "maxDepth": 0,
+    "elapsedMs": 10604,
+    "firstCandidateSolved": false,
+    "modelTokens": 0,
+    "modelTokensKnown": 0,
+    "modelUsageComplete": true,
+    "proposerCalls": 1,
+    "finalCandidates": 1
+  },
+  "budget": {
+    "maxCompilerCalls": 64,
+    "maxSteps": 64,
+    "maxProposalRounds": 3,
+    "maxDepth": 8,
+    "callTimeoutMs": 30000,
+    "theoremTimeoutMs": 300000,
+    "heartbeats": 200000,
+    "maxModelTokens": 0
+  },
+  "policy": "deterministic-v2",
+  "failure": null,
+  "exploration": {
+    "backend": "lean-persistent-v1",
+    "cleanup": {
+      "ownership": "engine",
+      "status": "closed"
+    }
+  },
+  "verification": {
+    "statementHash": "9b1c13e3cf10814840e14584ae94bd3ea75a07dd4820631e14857548d50704eb",
+    "sourceHash": "1fe4b8c775cab6b104dcd258c07f4935219461936f93cf5824de2e90d725d576",
+    "zeroPlaceholders": true,
+    "exitCode": 0,
+    "audit": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "mathd_numbertheory_447",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+      "universe_parameters": [],
+      "version": 1
+    },
+    "compileEvidence": [
+      "ev_a5ce2e474a0b97ed44ca10c1af070867907d2b3ca8b58dba24a04775e5cae6e6",
+      "ev_349e1d54ee5364d8b0461a3bb8c2debc00789bb6f5f068ac4ddb5a0a4e577435"
+    ],
+    "standaloneRecheck": true,
+    "policy": "lean-kernel-v2-unused-variable-lint",
+    "warnings": []
+  },
+  "tree": {
+    "finalPlan": {
+      "id": "n0",
+      "depth": 0,
+      "kind": "tactic",
+      "children": [],
+      "tactic": "rfl"
+    },
+    "nodes": [
+      {
+        "id": "n0",
+        "visit": 0,
+        "depth": 0,
+        "stateHash": "54d391f903710bb0d0b0c9b4a1d551038933dd48c2fcb110b746402df00cb76d",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [],
+          "id": "_uniq.1259",
+          "omitted_implementation_details": 1,
+          "pretty": "⊢ Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+          "target": "Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+          "targetArgs": [
+            "Nat",
+            "∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10",
+            "78"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        },
+        "status": "VERIFIED_IN_FINAL_PROOF",
+        "evidenceId": "ev_055a9c20d64121c7ff97ed55bc9eac2e852c24f972158504c6f431853278dd25"
+      }
+    ],
+    "branches": [
+      {
+        "parent": "n0",
+        "visit": 0,
+        "stateHash": "54d391f903710bb0d0b0c9b4a1d551038933dd48c2fcb110b746402df00cb76d",
+        "proposal": {
+          "tactic": "assumption"
+        },
+        "beforeHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a",
+        "status": "PRUNED",
+        "children": [],
+        "evidenceId": "ev_f53a88545c022205cd3e2b9f4229c16a4845096abb91b071351543dba48e5527",
+        "failure": "missing_hypothesis_or_instance",
+        "restoredHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a"
+      },
+      {
+        "parent": "n0",
+        "visit": 0,
+        "stateHash": "54d391f903710bb0d0b0c9b4a1d551038933dd48c2fcb110b746402df00cb76d",
+        "proposal": {
+          "tactic": "rfl"
+        },
+        "beforeHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a",
+        "status": "RETAINED",
+        "children": [],
+        "evidenceId": "ev_adb3b97b4c2f589935db38ead564380f978c248fa13c00d83049bbff43d975bf"
+      }
+    ]
+  },
+  "finalCandidates": [
+    {
+      "id": "c0",
+      "planHash": "b379cefa5700e1ded87082d0eea7024ac9805ba3d5669b4d9133ebaf5ae52428",
+      "status": "ACCEPTED",
+      "policy": "lean-kernel-v2-unused-variable-lint",
+      "evidenceIds": [
+        "ev_a5ce2e474a0b97ed44ca10c1af070867907d2b3ca8b58dba24a04775e5cae6e6",
+        "ev_349e1d54ee5364d8b0461a3bb8c2debc00789bb6f5f068ac4ddb5a0a4e577435"
+      ],
+      "sourceHash": "1fe4b8c775cab6b104dcd258c07f4935219461936f93cf5824de2e90d725d576",
+      "explorationSuspension": {
+        "status": "SUSPENDED",
+        "elapsedMs": 65
+      },
+      "checks": [
+        {
+          "kind": "final",
+          "evidenceId": "ev_a5ce2e474a0b97ed44ca10c1af070867907d2b3ca8b58dba24a04775e5cae6e6",
+          "accepted": true,
+          "reason": null,
+          "audit": {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_numbertheory_447",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": []
+        },
+        {
+          "kind": "recheck",
+          "evidenceId": "ev_349e1d54ee5364d8b0461a3bb8c2debc00789bb6f5f068ac4ddb5a0a4e577435",
+          "accepted": true,
+          "reason": null,
+          "audit": {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_numbertheory_447",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": []
+        }
+      ],
+      "reason": null
+    }
+  ],
+  "proposerCalls": [
+    {
+      "id": "p0",
+      "nodeId": "n0",
+      "stateHash": "54d391f903710bb0d0b0c9b4a1d551038933dd48c2fcb110b746402df00cb76d",
+      "round": 0,
+      "requestDigest": "f205e06c40dc04eb4649410657a38427ee8877c99f0ec1793863c2306763228a",
+      "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/proposals/0001-context.json",
+      "modelTokens": 0,
+      "usageKnown": true,
+      "tokenBudgetExceeded": false,
+      "policy": "deterministic-v2",
+      "proposals": [
+        {
+          "tactic": "assumption"
+        },
+        {
+          "tactic": "rfl"
+        },
+        {
+          "tactic": "simp_all"
+        },
+        {
+          "tactic": "omega"
+        },
+        {
+          "tactic": "norm_num at *"
+        },
+        {
+          "tactic": "ring"
+        },
+        {
+          "tactic": "linarith"
+        },
+        {
+          "tactic": "nlinarith"
+        },
+        {
+          "tactic": "positivity"
+        },
+        {
+          "tactic": "norm_cast at *"
+        },
+        {
+          "tactic": "field_simp at *"
+        },
+        {
+          "tactic": "ring_nf at *"
+        },
+        {
+          "tactic": "aesop"
+        }
+      ],
+      "status": "RETURNED",
+      "elapsedMs": 0,
+      "evidenceId": "ev_bad71b88fb722d93a5b59fd1016e92f3c8d66a7f23844927e7a3f8053cf150a6"
+    }
+  ],
+  "attempts": [
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[],\\\"id\\\":\\\"_uniq.1259\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"⊢ Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\\\",\\\"target\\\":\\\"Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10\\\",\\\"78\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":16,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[],\"id\":\"_uniq.1259\",\"omitted_implementation_details\":1,\"pretty\":\"⊢ Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\",\"target\":\"Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\",\"targetArgs\":[\"Nat\",\"∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10\",\"78\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 18
+          },
+          "end": {
+            "column": 16,
+            "line": 18
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 18
+          },
+          "end": {
+            "column": 16,
+            "line": 18
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [],
+              "id": "_uniq.1259",
+              "omitted_implementation_details": 1,
+              "pretty": "⊢ Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+              "target": "Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+              "targetArgs": [
+                "Nat",
+                "∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10",
+                "78"
+              ],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 1,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "77c20f4102c3c5e97bc11b2b1e72aef103696b957ad76e7a261d9b2b24438b44",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": false,
+        "importMs": 2651,
+        "elaborationMs": 39,
+        "artifactCount": 10204
+      },
+      "elapsedMs": 4944,
+      "sequence": 1,
+      "kind": "state",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0001-state.lean",
+      "sourceHash": "4d2d5f79305d4e7b675842fe4345a8847af9317588df2051948f423ca7558e81",
+      "evidenceId": "ev_055a9c20d64121c7ff97ed55bc9eac2e852c24f972158504c6f431853278dd25"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\n⊢ ∑ k ∈ Finset.Icc 1 49 with 3 ∣ k, k % 10 = 78\",\"endPos\":{\"column\":12,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "error",
+          "message": "Tactic `assumption` failed\n\n⊢ ∑ k ∈ Finset.Icc 1 49 with 3 ∣ k, k % 10 = 78",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0002-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 18
+          },
+          "end": {
+            "column": 12,
+            "line": 18
+          },
+          "category": "missing_hypothesis_or_instance"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 2,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "86466853a6a200939709fef0b951aa4f74b8703e0f2da430e48c1deab100188d",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 36,
+        "elaborationMs": 16,
+        "artifactCount": 10204
+      },
+      "elapsedMs": 54,
+      "sequence": 2,
+      "kind": "candidate",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0002-candidate.lean",
+      "sourceHash": "91c445c1f4efc6fab6ba2ddfa41804ef988e9e7a143f19844d02ab06ea209e94",
+      "evidenceId": "ev_f53a88545c022205cd3e2b9f4229c16a4845096abb91b071351543dba48e5527"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":15,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_CLOSED:{\\\"node_id\\\":\\\"n0\\\"}\",\"endPos\":{\"column\":15,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":15,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[],\"node_id\":\"n0\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0003-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 19
+          },
+          "end": {
+            "column": 15,
+            "line": 19
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_CLOSED:{\"node_id\":\"n0\"}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0003-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 19
+          },
+          "end": {
+            "column": 15,
+            "line": 19
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0003-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 19
+          },
+          "end": {
+            "column": 15,
+            "line": 19
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [
+        {
+          "node_id": "n0"
+        }
+      ],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 3,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "377ec938f1703b8c8ef27915cf3ef230b42694709f39475c055cbc07f87cb841",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 48,
+        "elaborationMs": 28,
+        "artifactCount": 10204
+      },
+      "elapsedMs": 77,
+      "sequence": 3,
+      "kind": "candidate",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0003-candidate.lean",
+      "sourceHash": "aa6b9522ecfe62c346e56cf51e657c34cbcd59b6e68f6daa884a0b203953d963",
+      "evidenceId": "ev_adb3b97b4c2f589935db38ead564380f978c248fa13c00d83049bbff43d975bf"
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_447\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0004-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":20},\"severity\":\"information\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 2793,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_numbertheory_447\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\",\"universe_parameters\":[],\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0004-final.lean",
+          "start": {
+            "column": 0,
+            "line": 20
+          },
+          "end": {
+            "column": 33,
+            "line": 20
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_numbertheory_447",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+          "universe_parameters": [],
+          "version": 1
+        }
+      ],
+      "unparsed": [],
+      "sequence": 4,
+      "kind": "final",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0004-final.lean",
+      "sourceHash": "a5b077deb0ed65cc919d6368a625942e28f809cb8cfd61cebf5746e1b332f53b",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_a5ce2e474a0b97ed44ca10c1af070867907d2b3ca8b58dba24a04775e5cae6e6"
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_447\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0005-recheck.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":20},\"severity\":\"information\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 2662,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_numbertheory_447\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\",\"universe_parameters\":[],\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0005-recheck.lean",
+          "start": {
+            "column": 0,
+            "line": 20
+          },
+          "end": {
+            "column": 33,
+            "line": 20
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_numbertheory_447",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+          "universe_parameters": [],
+          "version": 1
+        }
+      ],
+      "unparsed": [],
+      "sequence": 5,
+      "kind": "recheck",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0005-recheck.lean",
+      "sourceHash": "a5b077deb0ed65cc919d6368a625942e28f809cb8cfd61cebf5746e1b332f53b",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_349e1d54ee5364d8b0461a3bb8c2debc00789bb6f5f068ac4ddb5a0a4e577435"
+    }
+  ],
+  "category": "number_theory",
+  "method": "deterministic-v2",
+  "effectiveImports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Algebra.BigOperators.Intervals"
+  ],
+  "effectiveOpens": [
+    "BigOperators Real Nat Topology Rat"
+  ],
+  "cleanupAssessment": {
+    "status": "closed",
+    "exploration": {
+      "ownership": "engine",
+      "status": "closed",
+      "retryAttempted": false
+    },
+    "provider": {
+      "status": "not_applicable",
+      "retryAttempted": false,
+      "entries": []
+    }
+  },
+  "artifactDir": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447",
+  "invocationElapsedMs": 10605
+}

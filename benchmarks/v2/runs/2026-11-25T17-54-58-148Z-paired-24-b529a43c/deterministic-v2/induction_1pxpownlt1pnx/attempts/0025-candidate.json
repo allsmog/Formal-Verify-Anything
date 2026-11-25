@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"not a positivity goal\",\"endPos\":{\"column\":16,\"line\":25},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0025-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":25},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "not a positivity goal",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0025-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 25
+      },
+      "end": {
+        "column": 16,
+        "line": 25
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 25,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "7004cf224d98b0645f241e509d53b1a60935ed78b9df028b03c299955f4acf64",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 48,
+    "elaborationMs": 38,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 87,
+  "sequence": 25,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0025-candidate.lean",
+  "sourceHash": "7381d04995b2c7852f8a2ac85fd74ceb16eaa851775fe2b2f0c597656db89163",
+  "evidenceId": "ev_bfb81d3c29e877f0a32403a257bfeb20509791f738ee118e4f8cf5503907de88"
+}

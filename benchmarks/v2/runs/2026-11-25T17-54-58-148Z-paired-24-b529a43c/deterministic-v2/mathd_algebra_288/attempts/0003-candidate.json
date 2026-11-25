@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  n\\nis not definitionally equal to the right-hand side\\n  52\\n\\nx y : ℝ\\nn : NNReal\\nh₀ : x < 0 ∧ y < 0\\nh₁ : |y| = 6\\nh₂ : √((x - 8) ^ 2 + (y - 3) ^ 2) = 15\\nh₃ : √(x ^ 2 + y ^ 2) = √↑n\\n⊢ n = 52\",\"endPos\":{\"column\":5,\"line\":24},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_288/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":24},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  n\nis not definitionally equal to the right-hand side\n  52\n\nx y : ℝ\nn : NNReal\nh₀ : x < 0 ∧ y < 0\nh₁ : |y| = 6\nh₂ : √((x - 8) ^ 2 + (y - 3) ^ 2) = 15\nh₃ : √(x ^ 2 + y ^ 2) = √↑n\n⊢ n = 52",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_288/attempts/0003-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 24
+      },
+      "end": {
+        "column": 5,
+        "line": 24
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 3,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "d884e6e15daa855a454c8bf5d34fe0922ba2e504881e368518aa472b6353b95b",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 43,
+    "elaborationMs": 35,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 84,
+  "sequence": 3,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_288/attempts/0003-candidate.lean",
+  "sourceHash": "1eefee0643700cbb52efa97077248e8320628a29f221648e6eb3e9c839e92fef",
+  "evidenceId": "ev_96d8be733968c3281cefbaa75404a4caf31e12d6451d922c26f8b89b8e3c63a9"
+}

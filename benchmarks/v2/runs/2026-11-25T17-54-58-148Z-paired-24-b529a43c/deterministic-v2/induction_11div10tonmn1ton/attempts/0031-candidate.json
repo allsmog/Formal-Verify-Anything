@@ -1,0 +1,63 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":6,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_11div10tonmn1ton/attempts/0031-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"omega could not prove the goal:\\na possible counterexample may satisfy the constraints\\n  -10 ≤ a - b + 11*c ≤ -1\\nwhere\\n a := Int.negSucc 0 ^ n\\n b := 10 ^ n\\n c := (-Int.negSucc 0 ^ n + 10 ^ n) / 11\",\"endPos\":{\"column\":13,\"line\":24},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_11div10tonmn1ton/attempts/0031-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":24},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_11div10tonmn1ton/attempts/0031-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 18
+      },
+      "end": {
+        "column": 6,
+        "line": 18
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  -10 ≤ a - b + 11*c ≤ -1\nwhere\n a := Int.negSucc 0 ^ n\n b := 10 ^ n\n c := (-Int.negSucc 0 ^ n + 10 ^ n) / 11",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_11div10tonmn1ton/attempts/0031-candidate.lean",
+      "start": {
+        "column": 8,
+        "line": 24
+      },
+      "end": {
+        "column": 13,
+        "line": 24
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 31,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "6678148970ae237f04cfb80ed926c227601bbf41f09104a2b87160db821c119b",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 31,
+    "elaborationMs": 56,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 88,
+  "sequence": 31,
+  "kind": "candidate",
+  "nodeId": "n4",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_11div10tonmn1ton/attempts/0031-candidate.lean",
+  "sourceHash": "95d1f531da09f1fcbd5564a165071806e6a3e638456bb9a75501deb2ea26ddd9",
+  "evidenceId": "ev_fd1e99e79eb178ef4c9744431e5496206ab88590150a26280e5110aff549a27a"
+}

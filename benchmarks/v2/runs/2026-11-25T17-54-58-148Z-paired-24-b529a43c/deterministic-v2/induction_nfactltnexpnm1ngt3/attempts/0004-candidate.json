@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"simp_all made no progress\",\"endPos\":{\"column\":10,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_nfactltnexpnm1ngt3/attempts/0004-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":20},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "simp_all made no progress",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_nfactltnexpnm1ngt3/attempts/0004-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 20
+      },
+      "end": {
+        "column": 10,
+        "line": 20
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 4,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "cca07145f022e6de8904f56e330d9756d2de27a2fed9789fd48a0aa8bd9f948a",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 26,
+    "elaborationMs": 9,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 35,
+  "sequence": 4,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_nfactltnexpnm1ngt3/attempts/0004-candidate.lean",
+  "sourceHash": "7a567d0e29939c9d8b5262c65376de46afb7e7498195380ec8ebb8e2c0f79fd6",
+  "evidenceId": "ev_a2fda4861f052beec9ead41129a521c946d7845f8692eab0e495133e33f4ea58"
+}

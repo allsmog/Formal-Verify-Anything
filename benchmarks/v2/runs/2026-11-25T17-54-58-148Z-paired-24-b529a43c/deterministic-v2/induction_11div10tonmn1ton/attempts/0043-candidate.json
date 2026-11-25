@@ -1,0 +1,143 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":6,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_11div10tonmn1ton/attempts/0043-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[],\\\"id\\\":\\\"_uniq.2638\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case zero\\\\n⊢ Dvd.dvd.{0} 11 (HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) 0)) (HPow.hPow.{0, 0, 0} 10 0))\\\",\\\"target\\\":\\\"Dvd.dvd.{0} 11 (HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) 0)) (HPow.hPow.{0, 0, 0} 10 0))\\\",\\\"targetArgs\\\":[\\\"Int\\\",\\\"Int.instDvd\\\",\\\"11\\\",\\\"HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) 0)) (HPow.hPow.{0, 0, 0} 10 0)\\\"],\\\"targetHead\\\":\\\"Dvd.dvd\\\",\\\"universe_parameters\\\":[]},{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.2639\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n._@.FVAExploration.4108572712._hygCtx._hyg.88\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.2639\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.2640\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a._@._internal.0.FVAExploration.4108572712._hygCtx._hyg.89\\\",\\\"type\\\":\\\"Dvd.dvd.{0} 11 (HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) n✝)) (HPow.hPow.{0, 0, 0} 10 n✝))\\\",\\\"typeHead\\\":\\\"Dvd.dvd\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.2643\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case succ\\\\nn✝ : Nat\\\\na✝ :\\\\n  Dvd.dvd.{0} 11\\\\n    (HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) n✝)) (HPow.hPow.{0, 0, 0} 10 n✝))\\\\n⊢ Dvd.dvd.{0} 11\\\\n    (HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) (HAdd.hAdd.{0, 0, 0} n✝ 1)))\\\\n      (HPow.hPow.{0, 0, 0} 10 (HAdd.hAdd.{0, 0, 0} n✝ 1)))\\\",\\\"target\\\":\\\"Dvd.dvd.{0} 11\\\\n  (HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) (HAdd.hAdd.{0, 0, 0} n✝ 1)))\\\\n    (HPow.hPow.{0, 0, 0} 10 (HAdd.hAdd.{0, 0, 0} n✝ 1)))\\\",\\\"targetArgs\\\":[\\\"Int\\\",\\\"Int.instDvd\\\",\\\"11\\\",\\\"HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) (HAdd.hAdd.{0, 0, 0} n✝ 1)))\\\\n  (HPow.hPow.{0, 0, 0} 10 (HAdd.hAdd.{0, 0, 0} n✝ 1))\\\"],\\\"targetHead\\\":\\\"Dvd.dvd\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n4\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":21,\"line\":25},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_11div10tonmn1ton/attempts/0043-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":25},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n4\",\"endPos\":{\"column\":21,\"line\":25},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_11div10tonmn1ton/attempts/0043-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":25},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_11div10tonmn1ton/attempts/0043-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 18
+      },
+      "end": {
+        "column": 6,
+        "line": 18
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[],\"id\":\"_uniq.2638\",\"omitted_implementation_details\":1,\"pretty\":\"case zero\\n⊢ Dvd.dvd.{0} 11 (HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) 0)) (HPow.hPow.{0, 0, 0} 10 0))\",\"target\":\"Dvd.dvd.{0} 11 (HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) 0)) (HPow.hPow.{0, 0, 0} 10 0))\",\"targetArgs\":[\"Int\",\"Int.instDvd\",\"11\",\"HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) 0)) (HPow.hPow.{0, 0, 0} 10 0)\"],\"targetHead\":\"Dvd.dvd\",\"universe_parameters\":[]},{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.2639\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n._@.FVAExploration.4108572712._hygCtx._hyg.88\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.2639\"],\"has_metavariables\":false,\"id\":\"_uniq.2640\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"a._@._internal.0.FVAExploration.4108572712._hygCtx._hyg.89\",\"type\":\"Dvd.dvd.{0} 11 (HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) n✝)) (HPow.hPow.{0, 0, 0} 10 n✝))\",\"typeHead\":\"Dvd.dvd\",\"value\":null}],\"id\":\"_uniq.2643\",\"omitted_implementation_details\":1,\"pretty\":\"case succ\\nn✝ : Nat\\na✝ :\\n  Dvd.dvd.{0} 11\\n    (HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) n✝)) (HPow.hPow.{0, 0, 0} 10 n✝))\\n⊢ Dvd.dvd.{0} 11\\n    (HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) (HAdd.hAdd.{0, 0, 0} n✝ 1)))\\n      (HPow.hPow.{0, 0, 0} 10 (HAdd.hAdd.{0, 0, 0} n✝ 1)))\",\"target\":\"Dvd.dvd.{0} 11\\n  (HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) (HAdd.hAdd.{0, 0, 0} n✝ 1)))\\n    (HPow.hPow.{0, 0, 0} 10 (HAdd.hAdd.{0, 0, 0} n✝ 1)))\",\"targetArgs\":[\"Int\",\"Int.instDvd\",\"11\",\"HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) (HAdd.hAdd.{0, 0, 0} n✝ 1)))\\n  (HPow.hPow.{0, 0, 0} 10 (HAdd.hAdd.{0, 0, 0} n✝ 1))\"],\"targetHead\":\"Dvd.dvd\",\"universe_parameters\":[]}],\"node_id\":\"n4\",\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_11div10tonmn1ton/attempts/0043-candidate.lean",
+      "start": {
+        "column": 8,
+        "line": 25
+      },
+      "end": {
+        "column": 21,
+        "line": 25
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n4",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_11div10tonmn1ton/attempts/0043-candidate.lean",
+      "start": {
+        "column": 8,
+        "line": 25
+      },
+      "end": {
+        "column": 21,
+        "line": 25
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [],
+          "id": "_uniq.2638",
+          "omitted_implementation_details": 1,
+          "pretty": "case zero\n⊢ Dvd.dvd.{0} 11 (HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) 0)) (HPow.hPow.{0, 0, 0} 10 0))",
+          "target": "Dvd.dvd.{0} 11 (HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) 0)) (HPow.hPow.{0, 0, 0} 10 0))",
+          "targetArgs": [
+            "Int",
+            "Int.instDvd",
+            "11",
+            "HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) 0)) (HPow.hPow.{0, 0, 0} 10 0)"
+          ],
+          "targetHead": "Dvd.dvd",
+          "universe_parameters": []
+        },
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.2639",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n._@.FVAExploration.4108572712._hygCtx._hyg.88",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.2639"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.2640",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "a._@._internal.0.FVAExploration.4108572712._hygCtx._hyg.89",
+              "type": "Dvd.dvd.{0} 11 (HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) n✝)) (HPow.hPow.{0, 0, 0} 10 n✝))",
+              "typeHead": "Dvd.dvd",
+              "value": null
+            }
+          ],
+          "id": "_uniq.2643",
+          "omitted_implementation_details": 1,
+          "pretty": "case succ\nn✝ : Nat\na✝ :\n  Dvd.dvd.{0} 11\n    (HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) n✝)) (HPow.hPow.{0, 0, 0} 10 n✝))\n⊢ Dvd.dvd.{0} 11\n    (HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) (HAdd.hAdd.{0, 0, 0} n✝ 1)))\n      (HPow.hPow.{0, 0, 0} 10 (HAdd.hAdd.{0, 0, 0} n✝ 1)))",
+          "target": "Dvd.dvd.{0} 11\n  (HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) (HAdd.hAdd.{0, 0, 0} n✝ 1)))\n    (HPow.hPow.{0, 0, 0} 10 (HAdd.hAdd.{0, 0, 0} n✝ 1)))",
+          "targetArgs": [
+            "Int",
+            "Int.instDvd",
+            "11",
+            "HAdd.hAdd.{0, 0, 0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} (Int.negSucc 0) (HAdd.hAdd.{0, 0, 0} n✝ 1)))\n  (HPow.hPow.{0, 0, 0} 10 (HAdd.hAdd.{0, 0, 0} n✝ 1))"
+          ],
+          "targetHead": "Dvd.dvd",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n4",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 43,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "38c9e1b72e0aeaf38f9d3f3f0846816039c6f778275691a504cfc00f6040a599",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 26,
+    "elaborationMs": 50,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 77,
+  "sequence": 43,
+  "kind": "candidate",
+  "nodeId": "n4",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_11div10tonmn1ton/attempts/0043-candidate.lean",
+  "sourceHash": "ae42863ff14f65493f43279ffea7ca14378d97ab458ae5c2adbbc921ccf18c0f",
+  "evidenceId": "ev_7fff5df2221bb2eed0e3f5c91948c3515eeccb567257eb4ef29354dcffec1505"
+}

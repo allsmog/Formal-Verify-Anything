@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"linarith failed to find a contradiction\\ncase h1.h\\nx : NNReal\\na✝ : √60 * √↑x * (√12 * √↑x) * (√63 * √↑x) < 36 * ↑x * (√35 * √↑x)\\n⊢ False\\nfailed\",\"endPos\":{\"column\":13,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_293/attempts/0027-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":21},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "linarith failed to find a contradiction\ncase h1.h\nx : NNReal\na✝ : √60 * √↑x * (√12 * √↑x) * (√63 * √↑x) < 36 * ↑x * (√35 * √↑x)\n⊢ False\nfailed",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_293/attempts/0027-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 21
+      },
+      "end": {
+        "column": 13,
+        "line": 21
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 27,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "9816af328cabcf294e75bc7075cc663557d4853f13b46a53c3834a29025eada9",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 37,
+    "elaborationMs": 43,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 83,
+  "sequence": 27,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_293/attempts/0027-candidate.lean",
+  "sourceHash": "dc009e9f30e8da87736c062c1310529c397a077a186e2cc9b64fe1dd818826ef",
+  "evidenceId": "ev_0e5c68050b9d235fe1a41c081686f3c7c8fd3012b76c8058ddecec213f2e08b3"
+}

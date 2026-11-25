@@ -1,0 +1,601 @@
+{
+  "id": "mathd_algebra_293",
+  "tier": 2,
+  "status": "SOLVED",
+  "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/mathd_algebra_293.lean",
+  "engineVersion": "fva-search-v2",
+  "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+  "statementHash": "70c0fb9acf0ef73e21fb2bf4092e076db7df6f1583ab59552f95602f51bd8d49",
+  "provenance": {
+    "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+    "split": "test",
+    "repository": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+    "path": "MiniF2F/Test/mathd_algebra_293.lean",
+    "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_293.lean",
+    "sourceFileSha256": "f56ca667f0f0cff071e27c242e82f5566459b1bf0d70d4968fa8b1de9d908456",
+    "statementSha256": "70c0fb9acf0ef73e21fb2bf4092e076db7df6f1583ab59552f95602f51bd8d49",
+    "originalImports": [
+      "Mathlib"
+    ],
+    "originalOpens": [
+      "BigOperators Real Nat Topology Rat"
+    ],
+    "selectionRankWithinStratum": 1,
+    "selectionKeySha256": "00a65b371e11297c34af9afc736768889be3f5e1f9675d2eac07ada277dc115a",
+    "executionProfileSha256": "5265e241c25e5d1653c558148653058824c93265f8d52d800428481936a2cab1",
+    "executionImportReason": "Real.sqrt and the NNReal coercion used in the original declaration"
+  },
+  "metrics": {
+    "compilerCalls": 4,
+    "steps": 1,
+    "maxDepth": 0,
+    "elapsedMs": 47530,
+    "firstCandidateSolved": true,
+    "modelTokens": 18155,
+    "modelTokensKnown": 18155,
+    "modelUsageComplete": true,
+    "proposerCalls": 1,
+    "finalCandidates": 1
+  },
+  "budget": {
+    "maxCompilerCalls": 64,
+    "maxSteps": 64,
+    "maxProposalRounds": 3,
+    "maxDepth": 8,
+    "callTimeoutMs": 30000,
+    "theoremTimeoutMs": 300000,
+    "heartbeats": 200000,
+    "maxModelTokens": 50000
+  },
+  "policy": "codex-v1",
+  "failure": null,
+  "exploration": {
+    "backend": "lean-persistent-v1",
+    "cleanup": {
+      "ownership": "engine",
+      "status": "closed"
+    }
+  },
+  "verification": {
+    "statementHash": "70c0fb9acf0ef73e21fb2bf4092e076db7df6f1583ab59552f95602f51bd8d49",
+    "sourceHash": "62bec4857f089b446eec87baa40e6043dea0c5d4e35cb9ef519814b3dc6da2db",
+    "zeroPlaceholders": true,
+    "exitCode": 0,
+    "audit": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "mathd_algebra_293",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (x : NNReal),\n  Eq.{1}\n    (HMul.hMul.{0, 0, 0}\n      (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\n      (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))",
+      "universe_parameters": [],
+      "version": 1
+    },
+    "compileEvidence": [
+      "ev_d83ffc55a8d5cb04d340b9eafa32f095258725fc83fc1fb675718e06395b8552",
+      "ev_36c0f916675735da0f465b0d9c23ee5a836108090d46b1c882dc0cdfcfdad294"
+    ],
+    "standaloneRecheck": true,
+    "policy": "lean-kernel-v2-unused-variable-lint",
+    "warnings": []
+  },
+  "tree": {
+    "finalPlan": {
+      "id": "n0",
+      "depth": 0,
+      "kind": "tactic",
+      "children": [],
+      "tactic": "rw [← Real.sqrt_mul (show 0 ≤ (60 : ℝ) * (x : ℝ) by positivity), ← Real.sqrt_mul (show 0 ≤ (60 : ℝ) * (x : ℝ) * (12 * (x : ℝ)) by positivity)]\ncalc\n  _ = Real.sqrt ((36 * (x : ℝ)) ^ 2 * (35 * (x : ℝ))) := by\n    congr 1\n    ring\n  _ = _ := by\n    rw [Real.sqrt_mul (show 0 ≤ (36 * (x : ℝ)) ^ 2 by positivity), Real.sqrt_sq (show 0 ≤ 36 * (x : ℝ) by positivity)]"
+    },
+    "nodes": [
+      {
+        "id": "n0",
+        "visit": 0,
+        "depth": 0,
+        "stateHash": "a0b91f7b94a78ae27e64a14c4cc812d2192923c10254410f38782dd7cf44a479",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.782",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "x",
+              "type": "NNReal",
+              "typeHead": "NNReal",
+              "value": null
+            }
+          ],
+          "id": "_uniq.783",
+          "omitted_implementation_details": 1,
+          "pretty": "x : NNReal\n⊢ Eq.{1}\n    (HMul.hMul.{0, 0, 0}\n      (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\n      (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))",
+          "target": "Eq.{1}\n  (HMul.hMul.{0, 0, 0}\n    (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\n    (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\n  (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))",
+          "targetArgs": [
+            "Real",
+            "HMul.hMul.{0, 0, 0}\n  (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\n  (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x))",
+            "HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x))"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        },
+        "status": "VERIFIED_IN_FINAL_PROOF",
+        "evidenceId": "ev_cd932b42dbc2702975f0af3e42302c6f6a4f3e14f57f407337c27e01b587f519"
+      }
+    ],
+    "branches": [
+      {
+        "parent": "n0",
+        "visit": 0,
+        "stateHash": "a0b91f7b94a78ae27e64a14c4cc812d2192923c10254410f38782dd7cf44a479",
+        "proposal": {
+          "kind": "tactic",
+          "tactic": "rw [← Real.sqrt_mul (show 0 ≤ (60 : ℝ) * (x : ℝ) by positivity), ← Real.sqrt_mul (show 0 ≤ (60 : ℝ) * (x : ℝ) * (12 * (x : ℝ)) by positivity)]\ncalc\n  _ = Real.sqrt ((36 * (x : ℝ)) ^ 2 * (35 * (x : ℝ))) := by\n    congr 1\n    ring\n  _ = _ := by\n    rw [Real.sqrt_mul (show 0 ≤ (36 * (x : ℝ)) ^ 2 by positivity), Real.sqrt_sq (show 0 ≤ 36 * (x : ℝ) by positivity)]"
+        },
+        "beforeHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a",
+        "status": "RETAINED",
+        "children": [],
+        "evidenceId": "ev_eac6205daadab094576b98496d08419d996bf4b91ce08d1aabfa2a9a809e89ff"
+      }
+    ]
+  },
+  "finalCandidates": [
+    {
+      "id": "c0",
+      "planHash": "df769bd4f5cb76a7d277914d39c24759315eb71b8ba7a6222a74a69d187ff3fa",
+      "status": "ACCEPTED",
+      "policy": "lean-kernel-v2-unused-variable-lint",
+      "evidenceIds": [
+        "ev_d83ffc55a8d5cb04d340b9eafa32f095258725fc83fc1fb675718e06395b8552",
+        "ev_36c0f916675735da0f465b0d9c23ee5a836108090d46b1c882dc0cdfcfdad294"
+      ],
+      "sourceHash": "62bec4857f089b446eec87baa40e6043dea0c5d4e35cb9ef519814b3dc6da2db",
+      "explorationSuspension": {
+        "status": "SUSPENDED",
+        "elapsedMs": 88
+      },
+      "checks": [
+        {
+          "kind": "final",
+          "evidenceId": "ev_d83ffc55a8d5cb04d340b9eafa32f095258725fc83fc1fb675718e06395b8552",
+          "accepted": true,
+          "reason": null,
+          "audit": {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_algebra_293",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (x : NNReal),\n  Eq.{1}\n    (HMul.hMul.{0, 0, 0}\n      (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\n      (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": []
+        },
+        {
+          "kind": "recheck",
+          "evidenceId": "ev_36c0f916675735da0f465b0d9c23ee5a836108090d46b1c882dc0cdfcfdad294",
+          "accepted": true,
+          "reason": null,
+          "audit": {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_algebra_293",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (x : NNReal),\n  Eq.{1}\n    (HMul.hMul.{0, 0, 0}\n      (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\n      (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": []
+        }
+      ],
+      "reason": null
+    }
+  ],
+  "proposerCalls": [
+    {
+      "id": "p0",
+      "nodeId": "n0",
+      "stateHash": "a0b91f7b94a78ae27e64a14c4cc812d2192923c10254410f38782dd7cf44a479",
+      "round": 0,
+      "requestDigest": "7bb32e9f45c718f012a089a7d0f93e2ec2bd79065a37503524ccca62bfe64aa3",
+      "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/proposals/0001-context.json",
+      "modelTokens": 18155,
+      "usageKnown": true,
+      "tokenBudgetExceeded": false,
+      "policy": "codex-v1",
+      "provider": "codex-cli",
+      "usage": {
+        "input_tokens": 16713,
+        "output_tokens": 1442,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 865
+      },
+      "metadata": {
+        "provider": "codex-cli",
+        "model": null,
+        "modelSelection": "codex-configured-default",
+        "promptDigest": "5d3aefe16b739f119432da7c6b3fd70383d08119345a036a03fec08bdbaeca2d",
+        "promptVersion": 1,
+        "toolPolicy": "disabled",
+        "ephemeral": true,
+        "cliVersion": "codex-cli 0.171.0",
+        "eventTypes": [
+          "thread.started",
+          "turn.started",
+          "item.completed",
+          "turn.completed"
+        ],
+        "responseDigest": "0b7a00bf1b053a3ccb943a15ff6a1d95c90bbc26d28ec54e7918fb52246e15ba",
+        "providerErrors": [],
+        "elapsedMs": 22395,
+        "exitCode": 0,
+        "signal": null,
+        "stdoutDigest": "0b7a00bf1b053a3ccb943a15ff6a1d95c90bbc26d28ec54e7918fb52246e15ba",
+        "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderrDiagnostic": ""
+      },
+      "proposals": [
+        {
+          "kind": "tactic",
+          "tactic": "rw [← Real.sqrt_mul (show 0 ≤ (60 : ℝ) * (x : ℝ) by positivity), ← Real.sqrt_mul (show 0 ≤ (60 : ℝ) * (x : ℝ) * (12 * (x : ℝ)) by positivity)]\ncalc\n  _ = Real.sqrt ((36 * (x : ℝ)) ^ 2 * (35 * (x : ℝ))) := by\n    congr 1\n    ring\n  _ = _ := by\n    rw [Real.sqrt_mul (show 0 ≤ (36 * (x : ℝ)) ^ 2 by positivity), Real.sqrt_sq (show 0 ≤ 36 * (x : ℝ) by positivity)]"
+        },
+        {
+          "kind": "tactic",
+          "tactic": "let a : ℝ := Real.sqrt (60 * (x : ℝ)) * Real.sqrt (12 * (x : ℝ)) * Real.sqrt (63 * (x : ℝ))\nlet b : ℝ := 36 * (x : ℝ) * Real.sqrt (35 * (x : ℝ))\nchange a = b\nhave ha : 0 ≤ a := by dsimp [a]; positivity\nhave hb : 0 ≤ b := by dsimp [b]; positivity\nhave hs : a ^ 2 = b ^ 2 := by\n  dsimp only [a, b]\n  simp only [mul_pow, Real.sq_sqrt (show 0 ≤ 60 * (x : ℝ) by positivity), Real.sq_sqrt (show 0 ≤ 12 * (x : ℝ) by positivity), Real.sq_sqrt (show 0 ≤ 63 * (x : ℝ) by positivity), Real.sq_sqrt (show 0 ≤ 35 * (x : ℝ) by positivity)]\n  ring\nhave hf : (a - b) * (a + b) = 0 := by nlinarith only [hs]\nrcases mul_eq_zero.mp hf with h | h <;> linarith only [ha, hb, h]"
+        },
+        {
+          "kind": "have",
+          "name": "hrad",
+          "type": "(60 * (x : ℝ)) * (12 * (x : ℝ)) * (63 * (x : ℝ)) = (36 * (x : ℝ)) ^ 2 * (35 * (x : ℝ))"
+        }
+      ],
+      "status": "RETURNED",
+      "elapsedMs": 22397,
+      "evidenceId": "ev_f6f3fad4316162e88c22c38a39a43edddf94640ca9f3bb127cf0c274f2e16e4b"
+    }
+  ],
+  "attempts": [
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.782\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"x\\\",\\\"type\\\":\\\"NNReal\\\",\\\"typeHead\\\":\\\"NNReal\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.783\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"x : NNReal\\\\n⊢ Eq.{1}\\\\n    (HMul.hMul.{0, 0, 0}\\\\n      (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\\\\n      (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\\\\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))\\\",\\\"target\\\":\\\"Eq.{1}\\\\n  (HMul.hMul.{0, 0, 0}\\\\n    (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\\\\n    (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\\\\n  (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"HMul.hMul.{0, 0, 0}\\\\n  (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\\\\n  (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x))\\\",\\\"HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x))\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":16,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.782\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"x\",\"type\":\"NNReal\",\"typeHead\":\"NNReal\",\"value\":null}],\"id\":\"_uniq.783\",\"omitted_implementation_details\":1,\"pretty\":\"x : NNReal\\n⊢ Eq.{1}\\n    (HMul.hMul.{0, 0, 0}\\n      (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\\n      (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))\",\"target\":\"Eq.{1}\\n  (HMul.hMul.{0, 0, 0}\\n    (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\\n    (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\\n  (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))\",\"targetArgs\":[\"Real\",\"HMul.hMul.{0, 0, 0}\\n  (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\\n  (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x))\",\"HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x))\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 19
+          },
+          "end": {
+            "column": 16,
+            "line": 19
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 19
+          },
+          "end": {
+            "column": 16,
+            "line": 19
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.782",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "x",
+                  "type": "NNReal",
+                  "typeHead": "NNReal",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.783",
+              "omitted_implementation_details": 1,
+              "pretty": "x : NNReal\n⊢ Eq.{1}\n    (HMul.hMul.{0, 0, 0}\n      (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\n      (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))",
+              "target": "Eq.{1}\n  (HMul.hMul.{0, 0, 0}\n    (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\n    (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\n  (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))",
+              "targetArgs": [
+                "Real",
+                "HMul.hMul.{0, 0, 0}\n  (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\n  (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x))",
+                "HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x))"
+              ],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 1,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "bc10b01ed3ebd128658d36478ab0cac7e72714f112b7deafebe80a03d738ed30",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": false,
+        "importMs": 8287,
+        "elaborationMs": 65,
+        "artifactCount": 11956
+      },
+      "elapsedMs": 13895,
+      "sequence": 1,
+      "kind": "state",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/attempts/0001-state.lean",
+      "sourceHash": "c67b8cd62d33cb189b97841fad8548943f8ae1c1a539490d9c9b4ae12bc0d8f3",
+      "evidenceId": "ev_cd932b42dbc2702975f0af3e42302c6f6a4f3e14f57f407337c27e01b587f519"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":15,\"line\":26},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":26},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_CLOSED:{\\\"node_id\\\":\\\"n0\\\"}\",\"endPos\":{\"column\":15,\"line\":26},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":26},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":15,\"line\":26},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":26},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[],\"node_id\":\"n0\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/attempts/0002-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 26
+          },
+          "end": {
+            "column": 15,
+            "line": 26
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_CLOSED:{\"node_id\":\"n0\"}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/attempts/0002-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 26
+          },
+          "end": {
+            "column": 15,
+            "line": 26
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/attempts/0002-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 26
+          },
+          "end": {
+            "column": 15,
+            "line": 26
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [
+        {
+          "node_id": "n0"
+        }
+      ],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 2,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "cae1de683465e1c56416913459917c0098750c9547a4c0b6aa18ab0c78ced904",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 35,
+        "elaborationMs": 164,
+        "artifactCount": 11956
+      },
+      "elapsedMs": 204,
+      "sequence": 2,
+      "kind": "candidate",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/attempts/0002-candidate.lean",
+      "sourceHash": "397dfc7213d3ec21067d6893a6c9b79881548af229d1c8d35a5b157b45b2106b",
+      "evidenceId": "ev_eac6205daadab094576b98496d08419d996bf4b91ce08d1aabfa2a9a809e89ff"
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_293\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (x : NNReal),\\\\n  Eq.{1}\\\\n    (HMul.hMul.{0, 0, 0}\\\\n      (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\\\\n      (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\\\\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":27},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/attempts/0003-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":27},\"severity\":\"information\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 6921,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_293\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (x : NNReal),\\n  Eq.{1}\\n    (HMul.hMul.{0, 0, 0}\\n      (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\\n      (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))\",\"universe_parameters\":[],\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/attempts/0003-final.lean",
+          "start": {
+            "column": 0,
+            "line": 27
+          },
+          "end": {
+            "column": 28,
+            "line": 27
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_293",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (x : NNReal),\n  Eq.{1}\n    (HMul.hMul.{0, 0, 0}\n      (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\n      (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))",
+          "universe_parameters": [],
+          "version": 1
+        }
+      ],
+      "unparsed": [],
+      "sequence": 3,
+      "kind": "final",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/attempts/0003-final.lean",
+      "sourceHash": "1e55c9795364876c755143a93eb74f28998abe38778a70ce8c8ae539a76d95c7",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_d83ffc55a8d5cb04d340b9eafa32f095258725fc83fc1fb675718e06395b8552"
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_293\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (x : NNReal),\\\\n  Eq.{1}\\\\n    (HMul.hMul.{0, 0, 0}\\\\n      (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\\\\n      (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\\\\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":27},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/attempts/0004-recheck.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":27},\"severity\":\"information\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 4015,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_293\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (x : NNReal),\\n  Eq.{1}\\n    (HMul.hMul.{0, 0, 0}\\n      (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\\n      (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))\",\"universe_parameters\":[],\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/attempts/0004-recheck.lean",
+          "start": {
+            "column": 0,
+            "line": 27
+          },
+          "end": {
+            "column": 28,
+            "line": 27
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_293",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (x : NNReal),\n  Eq.{1}\n    (HMul.hMul.{0, 0, 0}\n      (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\n      (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))",
+          "universe_parameters": [],
+          "version": 1
+        }
+      ],
+      "unparsed": [],
+      "sequence": 4,
+      "kind": "recheck",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/attempts/0004-recheck.lean",
+      "sourceHash": "1e55c9795364876c755143a93eb74f28998abe38778a70ce8c8ae539a76d95c7",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_36c0f916675735da0f465b0d9c23ee5a836108090d46b1c882dc0cdfcfdad294"
+    }
+  ],
+  "category": "algebra",
+  "method": "codex",
+  "effectiveImports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Data.Real.Sqrt"
+  ],
+  "effectiveOpens": [
+    "BigOperators Real Nat Topology Rat"
+  ],
+  "cleanupAssessment": {
+    "status": "closed",
+    "exploration": {
+      "ownership": "engine",
+      "status": "closed",
+      "retryAttempted": false
+    },
+    "provider": {
+      "status": "closed",
+      "retryAttempted": true,
+      "entries": []
+    }
+  },
+  "artifactDir": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293",
+  "invocationElapsedMs": 47531
+}

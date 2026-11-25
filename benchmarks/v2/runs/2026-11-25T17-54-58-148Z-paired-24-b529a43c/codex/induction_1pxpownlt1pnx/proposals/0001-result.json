@@ -1,0 +1,60 @@
+{
+  "id": "p0",
+  "nodeId": "n0",
+  "stateHash": "abd72501da9e667e939266bf5ea7241c6259c7fec8b9d77e5a79f86bf7fdf323",
+  "round": 0,
+  "requestDigest": "bf29ad427cae379f154990a49f45c874c897abd7d1866e9dc2593fcbffeb1926",
+  "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_1pxpownlt1pnx/proposals/0001-context.json",
+  "modelTokens": 18212,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "codex-v1",
+  "provider": "codex-cli",
+  "usage": {
+    "input_tokens": 16661,
+    "output_tokens": 1551,
+    "cached_input_tokens": 0,
+    "reasoning_output_tokens": 1145
+  },
+  "metadata": {
+    "provider": "codex-cli",
+    "model": null,
+    "modelSelection": "codex-configured-default",
+    "promptDigest": "e59a7ed71601c0e0fb304d6f3eab1303b099064f140b5b44c2498aada5f0039b",
+    "promptVersion": 1,
+    "toolPolicy": "disabled",
+    "ephemeral": true,
+    "cliVersion": "codex-cli 0.171.0",
+    "eventTypes": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "responseDigest": "b6f9bebf50cfe25b4895319b9d5edce052188c33c81d616ccb9cc891f36ac45f",
+    "providerErrors": [],
+    "elapsedMs": 23962,
+    "exitCode": 0,
+    "signal": null,
+    "stdoutDigest": "b6f9bebf50cfe25b4895319b9d5edce052188c33c81d616ccb9cc891f36ac45f",
+    "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrDiagnostic": ""
+  },
+  "proposals": [
+    {
+      "kind": "tactic",
+      "tactic": "clear h₁\nhave hx : 0 ≤ 1 + x := by linarith only [h₀]\ninduction n with\n| zero => simp\n| succ k ih =>\n    rw [Nat.cast_succ, pow_succ]\n    calc\n      1 + ((k : ℝ) + 1) * x ≤ (1 + (k : ℝ) * x) * (1 + x) := by\n        apply sub_nonneg.mp\n        have hdiff : (1 + (k : ℝ) * x) * (1 + x) - (1 + ((k : ℝ) + 1) * x) = (k : ℝ) * x ^ 2 := by ring\n        rw [hdiff]\n        exact mul_nonneg (by positivity) (sq_nonneg x)\n      _ ≤ _ := mul_le_mul_of_nonneg_right ih hx"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "clear h₁\nhave hx : 0 ≤ 1 + x := by linarith only [h₀]\ninduction n with\n| zero => simp\n| succ k ih =>\n    rw [Nat.cast_succ, pow_succ]\n    have hmul := mul_le_mul_of_nonneg_right ih hx\n    have hsq : 0 ≤ (k : ℝ) * x ^ 2 := mul_nonneg (by positivity) (sq_nonneg x)\n    nlinarith only [hmul, hsq]"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "apply one_add_mul_le_pow <;> linarith"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 23964,
+  "evidenceId": "ev_c3c104cfa531f26ca4ad4f0e36611f7acb5e7dc8996856205121a9b1d28ff17e"
+}

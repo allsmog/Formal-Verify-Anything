@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\nn : ℕ\\nh₀ : 0 < n\\nh₁ : 3 ∣ n\\n⊢ (n + 4 + (n + 6) + (n + 8)) % 9 = 0\",\"endPos\":{\"column\":12,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_582/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":20},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\nn : ℕ\nh₀ : 0 < n\nh₁ : 3 ∣ n\n⊢ (n + 4 + (n + 6) + (n + 8)) % 9 = 0",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_582/attempts/0002-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 20
+      },
+      "end": {
+        "column": 12,
+        "line": 20
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 2,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "9fac71e544c8f951d9d5aa274eab6166f3d9fb0b106a973a04fb26d5d71107bb",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 42,
+    "elaborationMs": 8,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 51,
+  "sequence": 2,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_582/attempts/0002-candidate.lean",
+  "sourceHash": "f6b82991a8a6ea41aec07dcdf3969bbe2e6469300e037b9ee3f71615e0735c21",
+  "evidenceId": "ev_7151238fec423467264dc96c9af259af5b7719c975e84746fa77e4989263b276"
+}

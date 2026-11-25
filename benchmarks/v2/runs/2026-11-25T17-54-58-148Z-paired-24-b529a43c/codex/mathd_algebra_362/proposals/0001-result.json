@@ -1,0 +1,71 @@
+{
+  "id": "p0",
+  "nodeId": "n0",
+  "stateHash": "3a3ec91e0a7b47d25b1dd1ed8a507f9ee536b054adaa659bea25073fec32483b",
+  "round": 0,
+  "requestDigest": "09c39262aa2bc96fe02c531063e4000fd2ec33743e4b5ee6cd9a93d3f8280e94",
+  "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_362/proposals/0001-context.json",
+  "modelTokens": 19156,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "codex-v1",
+  "provider": "codex-cli",
+  "usage": {
+    "input_tokens": 16697,
+    "output_tokens": 2459,
+    "cached_input_tokens": 0,
+    "reasoning_output_tokens": 1539
+  },
+  "metadata": {
+    "provider": "codex-cli",
+    "model": null,
+    "modelSelection": "codex-configured-default",
+    "promptDigest": "44256851c5e5402667bc5aa9edf0bc0b975bfbda199ae37dc89d4f8da8bbb741",
+    "promptVersion": 1,
+    "toolPolicy": "disabled",
+    "ephemeral": true,
+    "cliVersion": "codex-cli 0.171.0",
+    "eventTypes": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "responseDigest": "778c1406c67e0270ae0b79b3a6938a2f878edeefc39bbf41c3f70c4ab8a296c9",
+    "providerErrors": [],
+    "elapsedMs": 36992,
+    "exitCode": 0,
+    "signal": null,
+    "stdoutDigest": "778c1406c67e0270ae0b79b3a6938a2f878edeefc39bbf41c3f70c4ab8a296c9",
+    "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrDiagnostic": ""
+  },
+  "proposals": [
+    {
+      "kind": "tactic",
+      "tactic": "have hb_ne : b ^ 3 ≠ 0 := by\n  intro hz\n  rw [hz, mul_zero] at h₀\n  norm_num at h₀\nhave hmul : a = (27 / 4 : ℝ) * b ^ 3 := (div_eq_iff hb_ne).mp h₁\nhave ha_cube : a ^ 3 = (8 : ℝ) := by\n  calc\n    a ^ 3 = a ^ 2 * ((27 / 4 : ℝ) * b ^ 3) := by rw [← hmul] <;> ring\n    _ = (27 / 4 : ℝ) * (a ^ 2 * b ^ 3) := by ring\n    _ = 8 := by rw [h₀] <;> norm_num\nhave cube_eight : ∀ x : ℝ, x ^ 3 = 8 → x = 2 := by\n  intro x hx\n  have hprod : (x - 2) * ((x + 1) ^ 2 + 3) = 0 := by\n    calc\n      (x - 2) * ((x + 1) ^ 2 + 3) = x ^ 3 - 8 := by ring\n      _ = 0 := sub_eq_zero.mpr hx\n  have hpos : 0 < (x + 1) ^ 2 + 3 := by positivity\n  exact sub_eq_zero.mp ((mul_eq_zero.mp hprod).resolve_right (ne_of_gt hpos))\nhave ha_eq : a = 2 := cube_eight a ha_cube\nhave hb_cube : (3 * b) ^ 3 = (8 : ℝ) := by\n  calc\n    (3 * b) ^ 3 = 27 * b ^ 3 := by ring\n    _ = 8 := by nlinarith only [hmul, ha_eq]\nhave hb_eq : 3 * b = 2 := cube_eight (3 * b) hb_cube\nlinarith only [ha_eq, hb_eq]"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "have hb_ne : b ^ 3 ≠ 0 := by\n  intro hz\n  norm_num [hz] at h₀\nhave hmul : a = (27 / 4 : ℝ) * b ^ 3 := (div_eq_iff hb_ne).mp h₁\nhave ha_cube : a ^ 3 = (8 : ℝ) := by\n  have h := congrArg (fun x : ℝ => a ^ 2 * x) hmul\n  dsimp at h\n  nlinarith only [h, h₀]\nhave ha_prod : (a - 2) * ((a + 1) ^ 2 + 3) = 0 := by\n  nlinarith only [ha_cube]\nhave ha_eq : a = 2 := by\n  rcases mul_eq_zero.mp ha_prod with hz | hz\n  · exact sub_eq_zero.mp hz\n  · nlinarith only [hz, sq_nonneg (a + 1)]\nhave hb_cube : b ^ 3 = (8 / 27 : ℝ) := by\n  nlinarith only [ha_eq, hmul]\nhave hb_prod : (b - 2 / 3) * ((b + 1 / 3) ^ 2 + 1 / 3) = 0 := by\n  nlinarith only [hb_cube]\nrcases mul_eq_zero.mp hb_prod with hz | hz\n· linarith only [ha_eq, hz]\n· nlinarith only [hz, sq_nonneg (b + 1 / 3)]"
+    },
+    {
+      "kind": "have",
+      "name": "ha_cube",
+      "type": "a ^ 3 = (8 : ℝ)"
+    },
+    {
+      "kind": "have",
+      "name": "hmul",
+      "type": "a = (27 / 4 : ℝ) * b ^ 3"
+    },
+    {
+      "kind": "have",
+      "name": "cube_eight",
+      "type": "∀ x : ℝ, x ^ 3 = 8 → x = 2"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 36994,
+  "evidenceId": "ev_c2fddb2c30b6dfd116bf6223dca92225e0c61d9182f83ad296d02d66ebd70a52"
+}

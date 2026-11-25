@@ -1,0 +1,127 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":8,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/attempts/0030-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":20},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.1747\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n._@.FVAExploration.3201239693._hygCtx._hyg.43\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.1747\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.1748\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a._@._internal.0.FVAExploration.3201239693._hygCtx._hyg.44\\\",\\\"type\\\":\\\"Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} 8 (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 n✝) 4))\\\",\\\"typeHead\\\":\\\"Dvd.dvd\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.1751\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case succ\\\\nn✝ : Nat\\\\na✝ : Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} 8 (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 n✝) 4))\\\\n⊢ Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} 8 (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n✝ 1)) 4))\\\",\\\"target\\\":\\\"Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} 8 (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n✝ 1)) 4))\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"Nat.instDvd\\\",\\\"12\\\",\\\"HAdd.hAdd.{0, 0, 0} 8 (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n✝ 1)) 4)\\\"],\\\"targetHead\\\":\\\"Dvd.dvd\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n4\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":22,\"line\":26},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/attempts/0030-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":26},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n4\",\"endPos\":{\"column\":22,\"line\":26},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/attempts/0030-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":26},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/attempts/0030-state.lean",
+      "start": {
+        "column": 4,
+        "line": 20
+      },
+      "end": {
+        "column": 8,
+        "line": 20
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.1747\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n._@.FVAExploration.3201239693._hygCtx._hyg.43\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.1747\"],\"has_metavariables\":false,\"id\":\"_uniq.1748\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"a._@._internal.0.FVAExploration.3201239693._hygCtx._hyg.44\",\"type\":\"Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} 8 (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 n✝) 4))\",\"typeHead\":\"Dvd.dvd\",\"value\":null}],\"id\":\"_uniq.1751\",\"omitted_implementation_details\":1,\"pretty\":\"case succ\\nn✝ : Nat\\na✝ : Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} 8 (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 n✝) 4))\\n⊢ Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} 8 (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n✝ 1)) 4))\",\"target\":\"Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} 8 (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n✝ 1)) 4))\",\"targetArgs\":[\"Nat\",\"Nat.instDvd\",\"12\",\"HAdd.hAdd.{0, 0, 0} 8 (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n✝ 1)) 4)\"],\"targetHead\":\"Dvd.dvd\",\"universe_parameters\":[]}],\"node_id\":\"n4\",\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/attempts/0030-state.lean",
+      "start": {
+        "column": 8,
+        "line": 26
+      },
+      "end": {
+        "column": 22,
+        "line": 26
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n4",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/attempts/0030-state.lean",
+      "start": {
+        "column": 8,
+        "line": 26
+      },
+      "end": {
+        "column": 22,
+        "line": 26
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.1747",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n._@.FVAExploration.3201239693._hygCtx._hyg.43",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.1747"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.1748",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "a._@._internal.0.FVAExploration.3201239693._hygCtx._hyg.44",
+              "type": "Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} 8 (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 n✝) 4))",
+              "typeHead": "Dvd.dvd",
+              "value": null
+            }
+          ],
+          "id": "_uniq.1751",
+          "omitted_implementation_details": 1,
+          "pretty": "case succ\nn✝ : Nat\na✝ : Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} 8 (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 n✝) 4))\n⊢ Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} 8 (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n✝ 1)) 4))",
+          "target": "Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} 8 (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n✝ 1)) 4))",
+          "targetArgs": [
+            "Nat",
+            "Nat.instDvd",
+            "12",
+            "HAdd.hAdd.{0, 0, 0} 8 (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n✝ 1)) 4)"
+          ],
+          "targetHead": "Dvd.dvd",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n4",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 30,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "510d3eb77d2908eb664a7978d80e27048e702ff5d6473b8dd7c26471a702ff21",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 24,
+    "elaborationMs": 38,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 63,
+  "sequence": 30,
+  "kind": "state",
+  "nodeId": "n4",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/attempts/0030-state.lean",
+  "sourceHash": "7fedce008ef85106253e70787b846312e8d8eb9ea01c15a2ef79785ab9e7630f",
+  "evidenceId": "ev_c370e94e30dab12340991062136c2556318ccfbb38e02b5b19444d5a1439b7a2"
+}

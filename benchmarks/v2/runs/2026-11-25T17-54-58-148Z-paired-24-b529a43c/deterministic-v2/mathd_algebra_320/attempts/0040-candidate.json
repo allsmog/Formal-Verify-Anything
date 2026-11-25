@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  a + b\\nis not definitionally equal to the right-hand side\\n  24\\n\\nx : ℝ\\na b c : ℕ\\nh₃ : c = 2\\nh₀ : 0 < a ∧ 0 < b ∧ 0 ≤ ↑a + √↑b\\nh₂ : 2 * x = ↑a + √↑b\\nh₁ : (↑a + √↑b) ^ 2 = (↑a + √↑b) * 4 + 18\\n⊢ a + b = 24\",\"endPos\":{\"column\":15,\"line\":34},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_320/attempts/0040-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":12,\"line\":34},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  a + b\nis not definitionally equal to the right-hand side\n  24\n\nx : ℝ\na b c : ℕ\nh₃ : c = 2\nh₀ : 0 < a ∧ 0 < b ∧ 0 ≤ ↑a + √↑b\nh₂ : 2 * x = ↑a + √↑b\nh₁ : (↑a + √↑b) ^ 2 = (↑a + √↑b) * 4 + 18\n⊢ a + b = 24",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_320/attempts/0040-candidate.lean",
+      "start": {
+        "column": 12,
+        "line": 34
+      },
+      "end": {
+        "column": 15,
+        "line": 34
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 40,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "40c215ffca781d766ba91eacd53fda831204fa6d6420e22c2798df25156e8a6d",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 35,
+    "elaborationMs": 234,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 274,
+  "sequence": 40,
+  "kind": "candidate",
+  "nodeId": "n5",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_320/attempts/0040-candidate.lean",
+  "sourceHash": "294b2889b27f112d25aea5d50d5e360e48305c782a58d1ce4acc9137eed17cc5",
+  "evidenceId": "ev_e2e6f1038e8a82af1a37792fae6f6c5b0ba5443ee59037c771c24f582e73c5f1"
+}

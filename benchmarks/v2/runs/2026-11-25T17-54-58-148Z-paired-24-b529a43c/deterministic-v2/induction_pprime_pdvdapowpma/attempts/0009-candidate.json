@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"linarith failed to find a contradiction\\np a : ℕ\\nh₀ : 0 < a\\nh₁ : Nat.Prime p\\n⊢ False\\nfailed\",\"endPos\":{\"column\":11,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0009-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":21},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "linarith failed to find a contradiction\np a : ℕ\nh₀ : 0 < a\nh₁ : Nat.Prime p\n⊢ False\nfailed",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0009-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 21
+      },
+      "end": {
+        "column": 11,
+        "line": 21
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 9,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "8bc08b3f432bee56a6189fdcb72be045016a1c518853a66919d7bf32d7ee54e1",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 39,
+    "elaborationMs": 22,
+    "artifactCount": 10116
+  },
+  "elapsedMs": 63,
+  "sequence": 9,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0009-candidate.lean",
+  "sourceHash": "b39d61daef668722b6e433f5399e0971f1c98187dd7e93133dc1db218c3a995e",
+  "evidenceId": "ev_b5f35dbf61158e7dc6928f0898c0187719dd3884d9f2ebaee1889d8899916a2f"
+}

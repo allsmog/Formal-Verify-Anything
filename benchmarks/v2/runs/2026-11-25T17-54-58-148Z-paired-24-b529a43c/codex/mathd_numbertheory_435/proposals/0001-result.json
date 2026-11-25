@@ -1,0 +1,56 @@
+{
+  "id": "p0",
+  "nodeId": "n0",
+  "stateHash": "c49955db27e341c71b6d86b45a60b2deabe26be6214fb8c7293fc934b5a5a569",
+  "round": 0,
+  "requestDigest": "914c2b9bf79cfb33fb39f2ab02928f46796abdb44bb4a0ce8393ef272db54c37",
+  "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_435/proposals/0001-context.json",
+  "modelTokens": 18775,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "codex-v1",
+  "provider": "codex-cli",
+  "usage": {
+    "input_tokens": 17068,
+    "output_tokens": 1707,
+    "cached_input_tokens": 0,
+    "reasoning_output_tokens": 1219
+  },
+  "metadata": {
+    "provider": "codex-cli",
+    "model": null,
+    "modelSelection": "codex-configured-default",
+    "promptDigest": "76eb0f47986726de34ee771fde9d2f03d13f5502f45514cfd9f36b358af1d02c",
+    "promptVersion": 1,
+    "toolPolicy": "disabled",
+    "ephemeral": true,
+    "cliVersion": "codex-cli 0.171.0",
+    "eventTypes": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "responseDigest": "5995cb2606b634e446458b4959b5767e129154944c1dc455a376a1c5e80b2d43",
+    "providerErrors": [],
+    "elapsedMs": 27619,
+    "exitCode": 0,
+    "signal": null,
+    "stdoutDigest": "5995cb2606b634e446458b4959b5767e129154944c1dc455a376a1c5e80b2d43",
+    "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrDiagnostic": ""
+  },
+  "proposals": [
+    {
+      "kind": "tactic",
+      "tactic": "have bad (d a b : Nat) (ha : d ∣ a) (hb : d ∣ b) (hd : ¬ d ∣ 1) : Nat.gcd a b ≠ 1 := by\n  intro hg\n  apply hd\n  rw [← hg]\n  exact Nat.dvd_gcd ha hb\nrcases k with _ | _ | _ | _ | _ | k\n· exact (Nat.lt_irrefl 0 h₀).elim\n· exact (bad 7 7 7 (by decide) (by decide) (by decide) (h₃ 1)).elim\n· exact (bad 2 2 2 (by decide) (by decide) (by decide) (h₂ 0)).elim\n· exact (bad 3 3 3 (by decide) (by decide) (by decide) (h₁ 0)).elim\n· exact (bad 2 4 2 (by decide) (by decide) (by decide) (h₂ 0)).elim\n· exact Nat.succ_le_succ (Nat.succ_le_succ (Nat.succ_le_succ (Nat.succ_le_succ (Nat.succ_le_succ (Nat.zero_le k)))))"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "rcases k with _ | _ | _ | _ | _ | k\n· exact (Nat.lt_irrefl 0 h₀).elim\n· exact ((show Nat.gcd 7 7 ≠ 1 by decide) (h₃ 1)).elim\n· exact ((show Nat.gcd 2 2 ≠ 1 by decide) (h₂ 0)).elim\n· exact ((show Nat.gcd 3 3 ≠ 1 by decide) (h₁ 0)).elim\n· exact ((show Nat.gcd 4 2 ≠ 1 by decide) (h₂ 0)).elim\n· exact Nat.succ_le_succ (Nat.succ_le_succ (Nat.succ_le_succ (Nat.succ_le_succ (Nat.succ_le_succ (Nat.zero_le k)))))"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 27621,
+  "evidenceId": "ev_ab769509395bfae161e153b357fa033df4f0140573cd44e46576461e9ac6d3c0"
+}

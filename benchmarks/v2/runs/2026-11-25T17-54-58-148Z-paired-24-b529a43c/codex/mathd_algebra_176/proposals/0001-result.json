@@ -1,0 +1,56 @@
+{
+  "id": "p0",
+  "nodeId": "n0",
+  "stateHash": "c295516229a47def96873dc7e8c124f969b91df536f937cd438a45928b6cfe70",
+  "round": 0,
+  "requestDigest": "9d68f4ec13a6e8c821d00e9e0633ef4deb20879b371ee7de556a0726bd817257",
+  "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_176/proposals/0001-context.json",
+  "modelTokens": 16750,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "codex-v1",
+  "provider": "codex-cli",
+  "usage": {
+    "input_tokens": 16640,
+    "output_tokens": 110,
+    "cached_input_tokens": 0,
+    "reasoning_output_tokens": 71
+  },
+  "metadata": {
+    "provider": "codex-cli",
+    "model": null,
+    "modelSelection": "codex-configured-default",
+    "promptDigest": "3d2c1492b3b2dd2172ef510eb924174a0a1dca8f064cc90dc0ba59fc4a986023",
+    "promptVersion": 1,
+    "toolPolicy": "disabled",
+    "ephemeral": true,
+    "cliVersion": "codex-cli 0.171.0",
+    "eventTypes": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "responseDigest": "69bbc1c974b7dc0987da91ef79851462e14b9a123d9e05204e86945ba033df67",
+    "providerErrors": [],
+    "elapsedMs": 4134,
+    "exitCode": 0,
+    "signal": null,
+    "stdoutDigest": "69bbc1c974b7dc0987da91ef79851462e14b9a123d9e05204e86945ba033df67",
+    "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrDiagnostic": ""
+  },
+  "proposals": [
+    {
+      "kind": "tactic",
+      "tactic": "ring"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "ring_nf"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 4152,
+  "evidenceId": "ev_fb15da625c8c049b2a8ca04e6f51fd8f3e01b728cc4c002feffd7bfe252d4853"
+}

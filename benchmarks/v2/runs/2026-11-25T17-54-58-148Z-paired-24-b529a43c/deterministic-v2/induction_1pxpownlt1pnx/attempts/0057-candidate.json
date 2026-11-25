@@ -1,0 +1,154 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":14,\"line\":31},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0057-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":10,\"line\":31},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.344\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"x\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.2337\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n._@.FVAExploration.1252590147._hygCtx._hyg.96\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.344\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.7758\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"LT.lt.{0} (↑(Int.negSucc 0)) x\\\",\\\"typeHead\\\":\\\"LT.lt\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.2337\\\",\\\"_uniq.344\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.7868\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a._@._internal.0.FVAExploration.1252590147._hygCtx._hyg.97\\\",\\\"type\\\":\\\"LT.lt.{0} 0 n✝ →\\\\n  LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝)\\\",\\\"typeHead\\\":\\\"forall\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.7870\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case succ\\\\nx : Real\\\\nn✝ : Nat\\\\nh₀ : LT.lt.{0} (↑(Int.negSucc 0)) x\\\\na✝ :\\\\n  LT.lt.{0} 0 n✝ →\\\\n    LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝)\\\\n⊢ LE.le.{0} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) x)\\\\n    (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} x (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝))\\\\n      (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝))\\\",\\\"target\\\":\\\"LE.le.{0} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) x)\\\\n  (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} x (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝))\\\\n    (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝))\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"Real.instLE\\\",\\\"HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) x\\\",\\\"HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} x (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝))\\\\n  (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝)\\\"],\\\"targetHead\\\":\\\"LE.le\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n7\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":25,\"line\":34},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0057-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":12,\"line\":34},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n7\",\"endPos\":{\"column\":25,\"line\":34},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0057-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":12,\"line\":34},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0057-candidate.lean",
+      "start": {
+        "column": 10,
+        "line": 31
+      },
+      "end": {
+        "column": 14,
+        "line": 31
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.344\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"x\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.2337\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n._@.FVAExploration.1252590147._hygCtx._hyg.96\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.344\"],\"has_metavariables\":false,\"id\":\"_uniq.7758\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"LT.lt.{0} (↑(Int.negSucc 0)) x\",\"typeHead\":\"LT.lt\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.2337\",\"_uniq.344\"],\"has_metavariables\":false,\"id\":\"_uniq.7868\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"a._@._internal.0.FVAExploration.1252590147._hygCtx._hyg.97\",\"type\":\"LT.lt.{0} 0 n✝ →\\n  LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝)\",\"typeHead\":\"forall\",\"value\":null}],\"id\":\"_uniq.7870\",\"omitted_implementation_details\":1,\"pretty\":\"case succ\\nx : Real\\nn✝ : Nat\\nh₀ : LT.lt.{0} (↑(Int.negSucc 0)) x\\na✝ :\\n  LT.lt.{0} 0 n✝ →\\n    LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝)\\n⊢ LE.le.{0} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) x)\\n    (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} x (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝))\\n      (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝))\",\"target\":\"LE.le.{0} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) x)\\n  (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} x (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝))\\n    (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝))\",\"targetArgs\":[\"Real\",\"Real.instLE\",\"HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) x\",\"HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} x (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝))\\n  (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝)\"],\"targetHead\":\"LE.le\",\"universe_parameters\":[]}],\"node_id\":\"n7\",\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0057-candidate.lean",
+      "start": {
+        "column": 12,
+        "line": 34
+      },
+      "end": {
+        "column": 25,
+        "line": 34
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n7",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0057-candidate.lean",
+      "start": {
+        "column": 12,
+        "line": 34
+      },
+      "end": {
+        "column": 25,
+        "line": 34
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.344",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "x",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.2337",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n._@.FVAExploration.1252590147._hygCtx._hyg.96",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.344"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.7758",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "LT.lt.{0} (↑(Int.negSucc 0)) x",
+              "typeHead": "LT.lt",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.2337",
+                "_uniq.344"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.7868",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "a._@._internal.0.FVAExploration.1252590147._hygCtx._hyg.97",
+              "type": "LT.lt.{0} 0 n✝ →\n  LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝)",
+              "typeHead": "forall",
+              "value": null
+            }
+          ],
+          "id": "_uniq.7870",
+          "omitted_implementation_details": 1,
+          "pretty": "case succ\nx : Real\nn✝ : Nat\nh₀ : LT.lt.{0} (↑(Int.negSucc 0)) x\na✝ :\n  LT.lt.{0} 0 n✝ →\n    LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝)\n⊢ LE.le.{0} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) x)\n    (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} x (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝))\n      (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝))",
+          "target": "LE.le.{0} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) x)\n  (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} x (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝))\n    (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝))",
+          "targetArgs": [
+            "Real",
+            "Real.instLE",
+            "HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) x",
+            "HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} x (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝))\n  (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝)"
+          ],
+          "targetHead": "LE.le",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n7",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 57,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "4c7d7aa55e8d3dc35aaaf2e8458fea2d234a10377382a13ba00f7d335c45e550",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 36,
+    "elaborationMs": 116,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 153,
+  "sequence": 57,
+  "kind": "candidate",
+  "nodeId": "n7",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0057-candidate.lean",
+  "sourceHash": "6173f18a40cfec55084de7b4baeec8a037df1859c2df23fd739964dfcc43f601",
+  "evidenceId": "ev_c3157c0d32a716282a98afc70ecead46a771539a7a000513d8939a3a36496b47"
+}

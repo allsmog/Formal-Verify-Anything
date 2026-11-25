@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  4\\nis not definitionally equal to the right-hand side\\n  n✝\\n\\ncase succ\\nn✝ : ℕ\\na✝ :\\n  0 < n✝ →\\n    (∀ (n : ℕ), (n✝ + n * 6).gcd (2 + n * 6) = 1) →\\n      (∀ (n : ℕ), (n✝ + n * 6).gcd (3 + n * 6) = 1) → (∀ (n : ℕ), (n✝ + n * 6).gcd (1 + n * 6) = 1) → 5 ≤ n✝\\nh₂ : ∀ (n : ℕ), (n✝ + 1 + n * 6).gcd (2 + n * 6) = 1\\nh₁ : ∀ (n : ℕ), (n✝ + 1 + n * 6).gcd (3 + n * 6) = 1\\nh₃ : ∀ (n : ℕ), (n✝ + 1 + n * 6).gcd (1 + n * 6) = 1\\n⊢ 4 ≤ n✝\",\"endPos\":{\"column\":13,\"line\":33},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_435/attempts/0052-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":10,\"line\":33},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  4\nis not definitionally equal to the right-hand side\n  n✝\n\ncase succ\nn✝ : ℕ\na✝ :\n  0 < n✝ →\n    (∀ (n : ℕ), (n✝ + n * 6).gcd (2 + n * 6) = 1) →\n      (∀ (n : ℕ), (n✝ + n * 6).gcd (3 + n * 6) = 1) → (∀ (n : ℕ), (n✝ + n * 6).gcd (1 + n * 6) = 1) → 5 ≤ n✝\nh₂ : ∀ (n : ℕ), (n✝ + 1 + n * 6).gcd (2 + n * 6) = 1\nh₁ : ∀ (n : ℕ), (n✝ + 1 + n * 6).gcd (3 + n * 6) = 1\nh₃ : ∀ (n : ℕ), (n✝ + 1 + n * 6).gcd (1 + n * 6) = 1\n⊢ 4 ≤ n✝",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_435/attempts/0052-candidate.lean",
+      "start": {
+        "column": 10,
+        "line": 33
+      },
+      "end": {
+        "column": 13,
+        "line": 33
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 52,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "f63ec21a62541cf62541355fa2fc35e82a86da9827562504fc4763af39e92f49",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 49,
+    "elaborationMs": 1719,
+    "artifactCount": 10092
+  },
+  "elapsedMs": 1774,
+  "sequence": 52,
+  "kind": "candidate",
+  "nodeId": "n5",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_435/attempts/0052-candidate.lean",
+  "sourceHash": "007f7fd1db9ec1a8fcd60a257a81106cff288e71efe38eb0b38bb40daa4b2c38",
+  "evidenceId": "ev_b9eef449d16bc0929ff1a7298e94a3583546808e41bf41737bf1310ef2c665ef"
+}

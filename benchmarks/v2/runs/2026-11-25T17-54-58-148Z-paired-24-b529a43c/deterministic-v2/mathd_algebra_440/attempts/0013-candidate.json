@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  x\\nis not definitionally equal to the right-hand side\\n  5\\n\\nx : ℝ\\nh₀ : 2⁻¹ = x / 10\\n⊢ x = 5\",\"endPos\":{\"column\":9,\"line\":23},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_440/attempts/0013-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":23},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  x\nis not definitionally equal to the right-hand side\n  5\n\nx : ℝ\nh₀ : 2⁻¹ = x / 10\n⊢ x = 5",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_440/attempts/0013-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 23
+      },
+      "end": {
+        "column": 9,
+        "line": 23
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 13,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "1f3daba4f0ca5a0e2ef66408957ee33693a56a95cf8d9559f91983b9518cf2ed",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 34,
+    "elaborationMs": 56,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 92,
+  "sequence": 13,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_440/attempts/0013-candidate.lean",
+  "sourceHash": "ebaace1757e0de01a54cd897a5d3800a38abf5f886275de97d142ac0528c3e4f",
+  "evidenceId": "ev_a5b9534fc04f8ccfb635b392bffa2e18ce687fe466c8719db8af8551ea2250f0"
+}

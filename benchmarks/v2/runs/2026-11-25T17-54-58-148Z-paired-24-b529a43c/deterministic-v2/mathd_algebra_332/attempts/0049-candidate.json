@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"linarith failed to find a contradiction\\ncase h1.h\\nx y : ℝ\\nh₁ : √(x * y) = √19\\nh₀ : x + y = 14\\na✝ : x ^ 2 + y ^ 2 < 158\\n⊢ False\\nfailed\",\"endPos\":{\"column\":16,\"line\":27},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0049-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":27},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "linarith failed to find a contradiction\ncase h1.h\nx y : ℝ\nh₁ : √(x * y) = √19\nh₀ : x + y = 14\na✝ : x ^ 2 + y ^ 2 < 158\n⊢ False\nfailed",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0049-candidate.lean",
+      "start": {
+        "column": 8,
+        "line": 27
+      },
+      "end": {
+        "column": 16,
+        "line": 27
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 49,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "8525fb5ccf3a3c29a2f3cdda5e9e2deb34ff7c0e0136c789d58814e3caf2fd5e",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 31,
+    "elaborationMs": 232,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 266,
+  "sequence": 49,
+  "kind": "candidate",
+  "nodeId": "n4",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0049-candidate.lean",
+  "sourceHash": "aba1ec07203ed07d8327c3084bd82fef6f6d2836c7b2a36a127d68400eb18d99",
+  "evidenceId": "ev_79e13c08db0a89f226002e6218f96926c793ad6c46c66adabb90455ef7c4277c"
+}

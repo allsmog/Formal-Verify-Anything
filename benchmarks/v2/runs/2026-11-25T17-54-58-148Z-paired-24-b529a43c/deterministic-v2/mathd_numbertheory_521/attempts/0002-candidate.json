@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\nm n : ℕ\\nh₀ : Even m\\nh₁ : Even n\\nh₂ : m - n = 2\\nh₃ : m * n = 288\\n⊢ m = 18\",\"endPos\":{\"column\":12,\"line\":23},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":23},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\nm n : ℕ\nh₀ : Even m\nh₁ : Even n\nh₂ : m - n = 2\nh₃ : m * n = 288\n⊢ m = 18",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0002-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 23
+      },
+      "end": {
+        "column": 12,
+        "line": 23
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 2,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "3aed4b21da6792d70cc9c26e49f9a65a0e0943da93580196351b61f0c21b6d2c",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 32,
+    "elaborationMs": 12,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 46,
+  "sequence": 2,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0002-candidate.lean",
+  "sourceHash": "3658ab8e05d9832e03f087857b64501b441dfee14994a048f44229c5c886c2dd",
+  "evidenceId": "ev_0c868293eff4f63e34619f05c6723541d848614f1eec0a8053735623d99f3d96"
+}

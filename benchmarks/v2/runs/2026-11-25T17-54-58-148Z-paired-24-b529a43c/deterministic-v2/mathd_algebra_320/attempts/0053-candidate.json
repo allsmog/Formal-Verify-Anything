@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"omega could not prove the goal:\\na possible counterexample may satisfy the constraints\\n  e ≥ 1\\n  d ≥ 1\\n  d + e ≤ 23\\nwhere\\n d := ↑a\\n e := ↑b\",\"endPos\":{\"column\":19,\"line\":36},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_320/attempts/0053-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":14,\"line\":36},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  e ≥ 1\n  d ≥ 1\n  d + e ≤ 23\nwhere\n d := ↑a\n e := ↑b",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_320/attempts/0053-candidate.lean",
+      "start": {
+        "column": 14,
+        "line": 36
+      },
+      "end": {
+        "column": 19,
+        "line": 36
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 53,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "f61cdadb2265ddb743e2a3c939b55be9a989872caf394f8a3a4ebf99104d4b27",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 38,
+    "elaborationMs": 365,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 404,
+  "sequence": 53,
+  "kind": "candidate",
+  "nodeId": "n6",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_320/attempts/0053-candidate.lean",
+  "sourceHash": "239c5e8faa7470191095e951d73812f497aedeb415b751e6e589807f4340c782",
+  "evidenceId": "ev_d056c625e45778b7e4537ebea4489731769fba2e7bef2506995ebcb2a28950ff"
+}

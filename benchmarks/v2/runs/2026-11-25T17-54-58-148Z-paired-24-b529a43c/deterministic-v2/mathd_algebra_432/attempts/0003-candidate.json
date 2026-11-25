@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  (x + 3) * (2 * x - 6)\\nis not definitionally equal to the right-hand side\\n  2 * x ^ 2 - 18\\n\\nx : ℝ\\n⊢ (x + 3) * (2 * x - 6) = 2 * x ^ 2 - 18\",\"endPos\":{\"column\":5,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  (x + 3) * (2 * x - 6)\nis not definitionally equal to the right-hand side\n  2 * x ^ 2 - 18\n\nx : ℝ\n⊢ (x + 3) * (2 * x - 6) = 2 * x ^ 2 - 18",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0003-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 18
+      },
+      "end": {
+        "column": 5,
+        "line": 18
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 3,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "b2e75196eca4dfd9da4c7f3b764b98c61f34b652c3873d521e95aebc6f45cce2",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 36,
+    "elaborationMs": 18,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 56,
+  "sequence": 3,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0003-candidate.lean",
+  "sourceHash": "80da743d239b477bd03405204799bb0345d9da64da792c1c6ab65b7ec2810b5e",
+  "evidenceId": "ev_3dfe039b959da9546b9ae02341a25cc75a852bb2ad3b33300caf82d6037f3c5d"
+}

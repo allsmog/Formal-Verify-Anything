@@ -1,0 +1,65 @@
+{
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"unused variable `h₀`\\n\\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\",\"endPos\":{\"column\":5,\"line\":17},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_582/attempts/0006-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"linter.unusedVariables\",\"pos\":{\"column\":3,\"line\":17},\"severity\":\"warning\"}\n{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_582\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (n : Nat),\\\\n  LT.lt.{0} 0 n →\\\\n    Dvd.dvd.{0} 3 n →\\\\n      Eq.{1}\\\\n        (HMod.hMod.{0, 0, 0}\\\\n          (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n 4) (HAdd.hAdd.{0, 0, 0} n 6))\\\\n            (HAdd.hAdd.{0, 0, 0} n 8))\\\\n          9)\\\\n        0\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":22},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_582/attempts/0006-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":22},\"severity\":\"information\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3088,
+  "diagnostics": [
+    {
+      "severity": "warning",
+      "message": "unused variable `h₀`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_582/attempts/0006-final.lean",
+      "start": {
+        "column": 3,
+        "line": 17
+      },
+      "end": {
+        "column": 5,
+        "line": 17
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Quot.sound\"],\"declaration\":\"mathd_numbertheory_582\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (n : Nat),\\n  LT.lt.{0} 0 n →\\n    Dvd.dvd.{0} 3 n →\\n      Eq.{1}\\n        (HMod.hMod.{0, 0, 0}\\n          (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n 4) (HAdd.hAdd.{0, 0, 0} n 6))\\n            (HAdd.hAdd.{0, 0, 0} n 8))\\n          9)\\n        0\",\"universe_parameters\":[],\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_582/attempts/0006-final.lean",
+      "start": {
+        "column": 0,
+        "line": 22
+      },
+      "end": {
+        "column": 33,
+        "line": 22
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "mathd_numbertheory_582",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (n : Nat),\n  LT.lt.{0} 0 n →\n    Dvd.dvd.{0} 3 n →\n      Eq.{1}\n        (HMod.hMod.{0, 0, 0}\n          (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n 4) (HAdd.hAdd.{0, 0, 0} n 6))\n            (HAdd.hAdd.{0, 0, 0} n 8))\n          9)\n        0",
+      "universe_parameters": [],
+      "version": 1
+    }
+  ],
+  "unparsed": [],
+  "sequence": 6,
+  "kind": "final",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_582/attempts/0006-final.lean",
+  "sourceHash": "a431710bf3a2c9d9711ffba9938313028a30ddc9dd92105d19ceb394affe54fe",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_b234c980b37888c93e2657388155d937dc11e5ede0393ba3fff61499586a0aea"
+}

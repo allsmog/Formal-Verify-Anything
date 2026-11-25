@@ -1,0 +1,541 @@
+{
+  "schemaVersion": 2,
+  "runId": "2026-11-25T17-54-58-148Z-paired-24-b529a43c",
+  "canonicalComparisonRequested": true,
+  "canonicalComparison": true,
+  "startedAt": "2026-11-25T17:54:58.148Z",
+  "finishedAt": null,
+  "methods": [
+    "deterministic-v2",
+    "codex"
+  ],
+  "selectedIds": [
+    "mathd_algebra_293",
+    "mathd_algebra_320",
+    "mathd_algebra_332",
+    "mathd_algebra_176",
+    "mathd_algebra_362",
+    "mathd_algebra_440",
+    "mathd_algebra_432",
+    "mathd_algebra_288",
+    "mathd_numbertheory_435",
+    "mathd_numbertheory_293",
+    "mathd_numbertheory_447",
+    "mathd_numbertheory_247",
+    "mathd_numbertheory_582",
+    "mathd_numbertheory_229",
+    "mathd_numbertheory_212",
+    "mathd_numbertheory_521",
+    "induction_pprime_pdvdapowpma",
+    "induction_1pxpownlt1pnx",
+    "induction_sumkexp3eqsumksq",
+    "induction_nfactltnexpnm1ngt3",
+    "induction_prod1p1onk3le3m1onn",
+    "induction_12dvd4expnp1p20",
+    "induction_pord1p1on2powklt5on2",
+    "induction_11div10tonmn1ton"
+  ],
+  "plannedSchedule": [
+    {
+      "id": "mathd_algebra_293",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_algebra_293",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_algebra_320",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_algebra_320",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_algebra_332",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_algebra_332",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_algebra_176",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_algebra_176",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_algebra_362",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_algebra_362",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_algebra_440",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_algebra_440",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_algebra_432",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_algebra_432",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_algebra_288",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_algebra_288",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_numbertheory_435",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_numbertheory_435",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_numbertheory_293",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_numbertheory_293",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_numbertheory_447",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_numbertheory_447",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_numbertheory_247",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_numbertheory_247",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_numbertheory_582",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_numbertheory_582",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_numbertheory_229",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_numbertheory_229",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_numbertheory_212",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_numbertheory_212",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_numbertheory_521",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_numbertheory_521",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "induction_pprime_pdvdapowpma",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "induction_pprime_pdvdapowpma",
+      "method": "codex"
+    },
+    {
+      "id": "induction_1pxpownlt1pnx",
+      "method": "codex"
+    },
+    {
+      "id": "induction_1pxpownlt1pnx",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "induction_sumkexp3eqsumksq",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "induction_sumkexp3eqsumksq",
+      "method": "codex"
+    },
+    {
+      "id": "induction_nfactltnexpnm1ngt3",
+      "method": "codex"
+    },
+    {
+      "id": "induction_nfactltnexpnm1ngt3",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "induction_prod1p1onk3le3m1onn",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "induction_prod1p1onk3le3m1onn",
+      "method": "codex"
+    },
+    {
+      "id": "induction_12dvd4expnp1p20",
+      "method": "codex"
+    },
+    {
+      "id": "induction_12dvd4expnp1p20",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "induction_pord1p1on2powklt5on2",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "induction_pord1p1on2powklt5on2",
+      "method": "codex"
+    },
+    {
+      "id": "induction_11div10tonmn1ton",
+      "method": "codex"
+    },
+    {
+      "id": "induction_11div10tonmn1ton",
+      "method": "deterministic-v2"
+    }
+  ],
+  "schedule": [
+    {
+      "id": "mathd_algebra_293",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_algebra_293",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_algebra_320",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_algebra_320",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_algebra_332",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_algebra_332",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_algebra_176",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_algebra_176",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_algebra_362",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_algebra_362",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_algebra_440",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_algebra_440",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_algebra_432",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_algebra_432",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_algebra_288",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_algebra_288",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_numbertheory_435",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_numbertheory_435",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_numbertheory_293",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_numbertheory_293",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_numbertheory_447",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_numbertheory_447",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_numbertheory_247",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_numbertheory_247",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_numbertheory_582",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_numbertheory_582",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_numbertheory_229",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_numbertheory_229",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_numbertheory_212",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "mathd_numbertheory_212",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_numbertheory_521",
+      "method": "codex"
+    },
+    {
+      "id": "mathd_numbertheory_521",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "induction_pprime_pdvdapowpma",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "induction_pprime_pdvdapowpma",
+      "method": "codex"
+    },
+    {
+      "id": "induction_1pxpownlt1pnx",
+      "method": "codex"
+    },
+    {
+      "id": "induction_1pxpownlt1pnx",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "induction_sumkexp3eqsumksq",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "induction_sumkexp3eqsumksq",
+      "method": "codex"
+    },
+    {
+      "id": "induction_nfactltnexpnm1ngt3",
+      "method": "codex"
+    },
+    {
+      "id": "induction_nfactltnexpnm1ngt3",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "induction_prod1p1onk3le3m1onn",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "induction_prod1p1onk3le3m1onn",
+      "method": "codex"
+    },
+    {
+      "id": "induction_12dvd4expnp1p20",
+      "method": "codex"
+    },
+    {
+      "id": "induction_12dvd4expnp1p20",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "induction_pord1p1on2powklt5on2",
+      "method": "deterministic-v2"
+    },
+    {
+      "id": "induction_pord1p1on2powklt5on2",
+      "method": "codex"
+    },
+    {
+      "id": "induction_11div10tonmn1ton",
+      "method": "codex"
+    },
+    {
+      "id": "induction_11div10tonmn1ton",
+      "method": "deterministic-v2"
+    }
+  ],
+  "sharedBudget": {
+    "maxCompilerCalls": 64,
+    "maxSteps": 64,
+    "maxProposalRounds": 3,
+    "maxDepth": 8,
+    "callTimeoutMs": 30000,
+    "theoremTimeoutMs": 300000,
+    "heartbeats": 200000
+  },
+  "modelTokenBudget": 50000,
+  "modelRequest": null,
+  "compilerMode": "worker",
+  "sourceCommit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+  "selectionFrozenAt": "2026-11-20T06:58:07.774924Z",
+  "inputHashes": {
+    "benchmarks/v2/holdout.json": "c5180a561a72b0d069ef1bebc80b4163aa472ac076bc4d6128c9555682e821b3",
+    "benchmarks/v2/selection.json": "65f24bc8fb7f18132b8a3afdee3a6c76ef3bf782e58d23d56ee7986b36ecff1c",
+    "benchmarks/v2/execution-profiles.json": "5265e241c25e5d1653c558148653058824c93265f8d52d800428481936a2cab1"
+  },
+  "importPolicy": "Both providers use identical fixed imports for each theorem. Original namespace openings are preserved verbatim. Common tactics and namespace definitions are fixed across all problems; additional modules are selected from syntax/types in the original declaration, never from solver outcomes. Import lists are captured by hash before each run and are never changed during a run.",
+  "environment": {
+    "gitCommit": "e57b80543661f96ae8a1660f693cc2e8e6798a3e",
+    "gitDirty": false,
+    "node": "v26.3.0",
+    "platform": "darwin/arm64",
+    "leanToolchain": "leanprover/lean4:v4.24.0",
+    "sourceAndArtifactHashes": {
+      "formal/src/engine.mjs": "80dc47e71f48dc40230dd7edc5d5332acc220acaa4ac30194196ebdcb3eaf2cb",
+      "formal/src/compiler.mjs": "e29119889f06fcb23567662b3c8ecb84b166657fb4f69e0861bfb1c211a3d5c7",
+      "formal/src/guard.mjs": "1a2f823374defa836c8259359e01c6c4819f250cbae3fa74f2d2c1acf4c6feb3",
+      "formal/src/proposers.mjs": "5f24afd71634780178d07ece9d7d594d6ea37a07b6140a4cc037bbef608922b4",
+      "formal/src/codex-proposer.mjs": "0dd2726e2e39ebaac20a0cfd9edcdf5bc9178c1e605a6b41507191c85384b966",
+      "formal/src/lean-session.mjs": "a13bf85467cf058d2e36309e7889b6025dd2e7bc0e037eab1c3440f1dc2d8df8",
+      "formal/src/support.mjs": "9ca6b8cb507404b4d7a244a5204e1472d434a2d706870c617ea2a772995b2db7",
+      "formal/src/process-group.mjs": "6fe8a181d24077ab5f9af1fa2dfc09e089fb2f5267f99e0dd0a4b8b554fcec81",
+      "FormalVerify/Bridge.lean": "cfaab974a2739bbe0c0f3d37f3fba25e30a543aaaecdd5cb808691dc7e2345a0",
+      "FormalVerify/Worker.lean": "3a9a9afc3fa3b1cc6054e8f771e0a19220f6c3cda4a0f9ebe7f73e5c76a9fd43",
+      ".lake/build/lib/lean/FormalVerify/Bridge.olean": "4d3035b6e1a026b0f2cf7cf079d1e26875e0b6d0914931f4404010c2a80e1c9f",
+      "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+      "lakefile.toml": "2c0891f0bd9da270904ea8340f3035e796cf01b252e0179bca979ff4a63ac77c",
+      "lake-manifest.json": "7f7c30da83bb8dbbd9915a1c1952c55efdc2326bfd77432a2fa29470c51f7e85",
+      "formal/package-lock.json": "fd6936b89cd4d2fd571ec183987c756c5a35377a01de4bd809d501247d508f66",
+      "benchmarks/v2/run.mjs": "48cf91370cce43ac9759ddb72dc64957db474fbc10701c1e997a666c3054871e",
+      "benchmarks/v2/report.mjs": "ce4b80328fb1737d82f5a3aa8032b1901b0b3f30cb5d948a69226c80b8753341",
+      "benchmarks/v2/suite.mjs": "4bba2836fb93ef12535fb62d00c2eb4486616389c95146f8a3458955f8d87bcf",
+      "benchmarks/v2/lifecycle.mjs": "8cfe80e9c9dfe92469a9e8a0fcf75436234872ccfeec3ce5f041ad379d61b56b"
+    }
+  },
+  "results": [],
+  "providerPreflight": {
+    "method": "codex",
+    "status": "AVAILABLE",
+    "startedAt": "2026-11-25T17:54:58.238Z",
+    "finishedAt": "2026-11-25T17:55:02.248Z",
+    "response": {
+      "proposals": [
+        {
+          "kind": "tactic",
+          "tactic": "exact True.intro"
+        }
+      ],
+      "modelTokens": 16082,
+      "usage": {
+        "input_tokens": 16053,
+        "output_tokens": 29,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "metadata": {
+        "provider": "codex-cli",
+        "model": null,
+        "modelSelection": "codex-configured-default",
+        "promptDigest": "b86f088bc76d2eae6eed97d3d6f7f2326861eed3434ea0ddbf8efe0872d98da0",
+        "promptVersion": 1,
+        "toolPolicy": "disabled",
+        "ephemeral": true,
+        "cliVersion": "codex-cli 0.171.0",
+        "eventTypes": [
+          "thread.started",
+          "turn.started",
+          "item.completed",
+          "turn.completed"
+        ],
+        "responseDigest": "c90962c95da3491e511f0957ac8c9ed2a599279be4304a68922de52ec92df7b4",
+        "providerErrors": [],
+        "elapsedMs": 4004,
+        "exitCode": 0,
+        "signal": null,
+        "stdoutDigest": "c90962c95da3491e511f0957ac8c9ed2a599279be4304a68922de52ec92df7b4",
+        "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderrDiagnostic": ""
+      },
+      "provider": "codex-cli",
+      "policy": "codex-v1"
+    },
+    "cleanupAssessment": {
+      "status": "closed",
+      "exploration": {
+        "status": "not_created",
+        "ownership": "none",
+        "retryAttempted": false
+      },
+      "provider": {
+        "status": "closed",
+        "retryAttempted": true,
+        "entries": []
+      }
+    }
+  },
+  "providerAvailability": {
+    "deterministic-v2": "AVAILABLE",
+    "codex": "AVAILABLE"
+  },
+  "blockedProviders": [],
+  "comparisonStatus": "RUNNING"
+}

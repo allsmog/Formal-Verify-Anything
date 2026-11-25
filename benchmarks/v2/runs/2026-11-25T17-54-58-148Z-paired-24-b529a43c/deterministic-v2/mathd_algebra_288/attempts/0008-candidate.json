@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"linarith failed to find a contradiction\\ncase h1.h\\nx y : ℝ\\nn : NNReal\\nh₀ : x < 0 ∧ y < 0\\nh₁ : |y| = 6\\nh₂ : √((x - 8) ^ 2 + (y - 3) ^ 2) = 15\\nh₃ : √(x ^ 2 + y ^ 2) = √↑n\\na✝ : n < 52\\n⊢ False\\nfailed\",\"endPos\":{\"column\":10,\"line\":24},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_288/attempts/0008-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":24},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "linarith failed to find a contradiction\ncase h1.h\nx y : ℝ\nn : NNReal\nh₀ : x < 0 ∧ y < 0\nh₁ : |y| = 6\nh₂ : √((x - 8) ^ 2 + (y - 3) ^ 2) = 15\nh₃ : √(x ^ 2 + y ^ 2) = √↑n\na✝ : n < 52\n⊢ False\nfailed",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_288/attempts/0008-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 24
+      },
+      "end": {
+        "column": 10,
+        "line": 24
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 8,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "48f16ae35fdfab7f1e6d3b0feb7ed096e15e8db33c5904e257ff5efc122670bc",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 40,
+    "elaborationMs": 57,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 105,
+  "sequence": 8,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_288/attempts/0008-candidate.lean",
+  "sourceHash": "f0efa741bbb0a010e39bc308f21e60aaebd2bad9adac2f47d2148a7ff5d73dbd",
+  "evidenceId": "ev_dfd55949aaf9c4b210db6f39b886cdaa30e729a8b58a009e6f4a9e07b4513db5"
+}

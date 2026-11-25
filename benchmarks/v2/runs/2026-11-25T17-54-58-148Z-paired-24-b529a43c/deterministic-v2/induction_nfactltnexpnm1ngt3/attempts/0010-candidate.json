@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"not a positivity goal\",\"endPos\":{\"column\":12,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_nfactltnexpnm1ngt3/attempts/0010-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":20},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "not a positivity goal",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_nfactltnexpnm1ngt3/attempts/0010-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 20
+      },
+      "end": {
+        "column": 12,
+        "line": 20
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 10,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "6bcc4834274077b04054d817f79486237ac6d02cc455a8fadd371218b8acabd1",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 27,
+    "elaborationMs": 12,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 39,
+  "sequence": 10,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_nfactltnexpnm1ngt3/attempts/0010-candidate.lean",
+  "sourceHash": "3227ef7a4e98b2e2a5440a1ae3b991975c1900cd9e2187f823d8823484b900f7",
+  "evidenceId": "ev_4a7b4a38e02294ac1c307f7cef936b2baca3739e13cff1458a0e48e68f349879"
+}

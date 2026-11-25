@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"linarith failed to find a contradiction\\ncase h1.h\\nx y : ℝ\\nh₀ : (x + y) / 2 = 7\\nh₁ : √(x * y) = √19\\na✝ : x ^ 2 + y ^ 2 < 158\\n⊢ False\\nfailed\",\"endPos\":{\"column\":11,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0009-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":21},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "linarith failed to find a contradiction\ncase h1.h\nx y : ℝ\nh₀ : (x + y) / 2 = 7\nh₁ : √(x * y) = √19\na✝ : x ^ 2 + y ^ 2 < 158\n⊢ False\nfailed",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0009-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 21
+      },
+      "end": {
+        "column": 11,
+        "line": 21
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 9,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "1f12ac4dc9076ef8b84b5c09299817a2969228c16c8461636a0f0543dee1e8aa",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 251,
+    "elaborationMs": 281,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 539,
+  "sequence": 9,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0009-candidate.lean",
+  "sourceHash": "0482ba8173c64a92da85f87f081fa9c560e17fbb2767fbaa7624a82bb61dcb66",
+  "evidenceId": "ev_50cdbb654ac43d9e19678dda0dce1d3fc83a780345616cf7b8460621a7ec0cbc"
+}

@@ -1,0 +1,63 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":14,\"line\":31},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0059-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":10,\"line\":31},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\ncase succ\\nx : ℝ\\nn✝ : ℕ\\nh₀ : ↑(Int.negSucc 0) < x\\na✝ : 0 < n✝ → 1 + ↑n✝ * x ≤ (1 + x) ^ n✝\\n⊢ 1 + ↑n✝ * x + x ≤ x * (1 + x) ^ n✝ + (1 + x) ^ n✝\",\"endPos\":{\"column\":24,\"line\":35},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0059-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":14,\"line\":35},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0059-candidate.lean",
+      "start": {
+        "column": 10,
+        "line": 31
+      },
+      "end": {
+        "column": 14,
+        "line": 31
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\ncase succ\nx : ℝ\nn✝ : ℕ\nh₀ : ↑(Int.negSucc 0) < x\na✝ : 0 < n✝ → 1 + ↑n✝ * x ≤ (1 + x) ^ n✝\n⊢ 1 + ↑n✝ * x + x ≤ x * (1 + x) ^ n✝ + (1 + x) ^ n✝",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0059-candidate.lean",
+      "start": {
+        "column": 14,
+        "line": 35
+      },
+      "end": {
+        "column": 24,
+        "line": 35
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 59,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "fadfa20e5c08940947300cd77dc1517a483104befdd24960838bf7844763edd2",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 38,
+    "elaborationMs": 142,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 186,
+  "sequence": 59,
+  "kind": "candidate",
+  "nodeId": "n8",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0059-candidate.lean",
+  "sourceHash": "b6a501a79fa6e9b7dd1ccbf60171f636c2405179ebcacedb1148d4fca6c14482",
+  "evidenceId": "ev_9371d1cacaead50ffbbaa82399a11666cf55b4deb8bff4dbfd06a15a8288218d"
+}

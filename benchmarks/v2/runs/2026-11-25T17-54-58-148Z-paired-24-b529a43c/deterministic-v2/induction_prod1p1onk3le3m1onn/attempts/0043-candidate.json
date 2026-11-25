@@ -1,0 +1,77 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":8,\"line\":22},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0043-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":22},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":14,\"line\":28},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0043-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":10,\"line\":28},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  1 + (∏ x ∈ Finset.Icc 1 n, (1 + (↑x ^ 3)⁻¹)) * ↑n\\nis not definitionally equal to the right-hand side\\n  ↑n * 3\\n\\nn : ℕ\\nh₀ : 0 < n\\n⊢ 1 + (∏ x ∈ Finset.Icc 1 n, (1 + (↑x ^ 3)⁻¹)) * ↑n ≤ ↑n * 3\",\"endPos\":{\"column\":17,\"line\":32},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0043-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":14,\"line\":32},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0043-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 22
+      },
+      "end": {
+        "column": 8,
+        "line": 22
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0043-candidate.lean",
+      "start": {
+        "column": 10,
+        "line": 28
+      },
+      "end": {
+        "column": 14,
+        "line": 28
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  1 + (∏ x ∈ Finset.Icc 1 n, (1 + (↑x ^ 3)⁻¹)) * ↑n\nis not definitionally equal to the right-hand side\n  ↑n * 3\n\nn : ℕ\nh₀ : 0 < n\n⊢ 1 + (∏ x ∈ Finset.Icc 1 n, (1 + (↑x ^ 3)⁻¹)) * ↑n ≤ ↑n * 3",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0043-candidate.lean",
+      "start": {
+        "column": 14,
+        "line": 32
+      },
+      "end": {
+        "column": 17,
+        "line": 32
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 43,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "b80eb0b51799bda82bda26a707219db21dbe7e16b4098a073ad63cd80dfed510",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 25,
+    "elaborationMs": 167,
+    "artifactCount": 10204
+  },
+  "elapsedMs": 195,
+  "sequence": 43,
+  "kind": "candidate",
+  "nodeId": "n8",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0043-candidate.lean",
+  "sourceHash": "9aad57e6d9a0ff284307649026a24061b635cb02b9be6b531806a8d339e9593e",
+  "evidenceId": "ev_42c4995be90bb083e17504b0ebaf839d4d7b33eaf86060fdbf1d997266d0599d"
+}

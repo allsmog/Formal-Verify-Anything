@@ -1,0 +1,958 @@
+{
+  "id": "mathd_algebra_432",
+  "tier": 2,
+  "status": "SOLVED",
+  "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/mathd_algebra_432.lean",
+  "engineVersion": "fva-search-v2",
+  "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+  "statementHash": "42596a59d67be86018acaa2b74d5fde7b35c2d6df77275c20ac0dce8e22287cc",
+  "provenance": {
+    "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+    "split": "test",
+    "repository": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+    "path": "MiniF2F/Test/mathd_algebra_432.lean",
+    "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_432.lean",
+    "sourceFileSha256": "a2498ec8137b692a212deb33bdef2c0ee6c00c6d454fed8323c05ff3c06be7df",
+    "statementSha256": "42596a59d67be86018acaa2b74d5fde7b35c2d6df77275c20ac0dce8e22287cc",
+    "originalImports": [
+      "Mathlib"
+    ],
+    "originalOpens": [
+      "BigOperators Real Nat Topology Rat"
+    ],
+    "selectionRankWithinStratum": 7,
+    "selectionKeySha256": "12b47aec1aea7bfa44874fd1d699a9528e0ab453467f40207d53ad520c6f22ee",
+    "executionProfileSha256": "5265e241c25e5d1653c558148653058824c93265f8d52d800428481936a2cab1",
+    "executionImportReason": "Common arithmetic definitions suffice for the original declaration."
+  },
+  "metrics": {
+    "compilerCalls": 9,
+    "steps": 6,
+    "maxDepth": 0,
+    "elapsedMs": 14453,
+    "firstCandidateSolved": false,
+    "modelTokens": 0,
+    "modelTokensKnown": 0,
+    "modelUsageComplete": true,
+    "proposerCalls": 1,
+    "finalCandidates": 1
+  },
+  "budget": {
+    "maxCompilerCalls": 64,
+    "maxSteps": 64,
+    "maxProposalRounds": 3,
+    "maxDepth": 8,
+    "callTimeoutMs": 30000,
+    "theoremTimeoutMs": 300000,
+    "heartbeats": 200000,
+    "maxModelTokens": 0
+  },
+  "policy": "deterministic-v2",
+  "failure": null,
+  "exploration": {
+    "backend": "lean-persistent-v1",
+    "cleanup": {
+      "ownership": "engine",
+      "status": "closed"
+    }
+  },
+  "verification": {
+    "statementHash": "42596a59d67be86018acaa2b74d5fde7b35c2d6df77275c20ac0dce8e22287cc",
+    "sourceHash": "3b9518040b90982f802f89116d13308b2427a069090c2e424319770328b34e0a",
+    "zeroPlaceholders": true,
+    "exitCode": 0,
+    "audit": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "mathd_algebra_432",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (x : Real),\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)",
+      "universe_parameters": [],
+      "version": 1
+    },
+    "compileEvidence": [
+      "ev_caa6c31d92d5c83346a078134ab5f2d25f259172d600527a3cc0abc033ef643c",
+      "ev_9ffb263187db35c6ebcebc0acdbb7d94b11c635cb3eca7d364385139d1652b85"
+    ],
+    "standaloneRecheck": true,
+    "policy": "lean-kernel-v2-unused-variable-lint",
+    "warnings": []
+  },
+  "tree": {
+    "finalPlan": {
+      "id": "n0",
+      "depth": 0,
+      "kind": "tactic",
+      "children": [],
+      "tactic": "ring"
+    },
+    "nodes": [
+      {
+        "id": "n0",
+        "visit": 0,
+        "depth": 0,
+        "stateHash": "7d9873940a51bbf4ed88619b00fc91b6a6c1568abdb268dec4a14f4bdd3d5b42",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.683",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "x",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            }
+          ],
+          "id": "_uniq.684",
+          "omitted_implementation_details": 1,
+          "pretty": "x : Real\n⊢ Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)",
+          "target": "Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\n  (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)",
+          "targetArgs": [
+            "Real",
+            "HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6)",
+            "HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        },
+        "status": "VERIFIED_IN_FINAL_PROOF",
+        "evidenceId": "ev_bcec2b640233ee3820feb378c77d0cbf4b1882b910e34a40a0899001ae896029"
+      }
+    ],
+    "branches": [
+      {
+        "parent": "n0",
+        "visit": 0,
+        "stateHash": "7d9873940a51bbf4ed88619b00fc91b6a6c1568abdb268dec4a14f4bdd3d5b42",
+        "proposal": {
+          "tactic": "assumption"
+        },
+        "beforeHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a",
+        "status": "PRUNED",
+        "children": [],
+        "evidenceId": "ev_bb26533d5e328b41a1d40e369f5d4dabdd9d7f646b1fa34f8655d11677c81f16",
+        "failure": "missing_hypothesis_or_instance",
+        "restoredHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a"
+      },
+      {
+        "parent": "n0",
+        "visit": 0,
+        "stateHash": "7d9873940a51bbf4ed88619b00fc91b6a6c1568abdb268dec4a14f4bdd3d5b42",
+        "proposal": {
+          "tactic": "rfl"
+        },
+        "beforeHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a",
+        "status": "PRUNED",
+        "children": [],
+        "evidenceId": "ev_3dfe039b959da9546b9ae02341a25cc75a852bb2ad3b33300caf82d6037f3c5d",
+        "failure": "compiler_error",
+        "restoredHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a"
+      },
+      {
+        "parent": "n0",
+        "visit": 0,
+        "stateHash": "7d9873940a51bbf4ed88619b00fc91b6a6c1568abdb268dec4a14f4bdd3d5b42",
+        "proposal": {
+          "tactic": "simp_all"
+        },
+        "beforeHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a",
+        "status": "PRUNED",
+        "children": [],
+        "evidenceId": "ev_a66f14cfacc9a7907ed4d2699850f6bf1e9b874b9866d600385d258da07c976b",
+        "failure": "compiler_error",
+        "restoredHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a"
+      },
+      {
+        "parent": "n0",
+        "visit": 0,
+        "stateHash": "7d9873940a51bbf4ed88619b00fc91b6a6c1568abdb268dec4a14f4bdd3d5b42",
+        "proposal": {
+          "tactic": "omega"
+        },
+        "beforeHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a",
+        "status": "PRUNED",
+        "children": [],
+        "evidenceId": "ev_a8c30eef74c8977e4940d20d6037906312be90d940d879b6a3db1c00b94be52e",
+        "failure": "compiler_error",
+        "restoredHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a"
+      },
+      {
+        "parent": "n0",
+        "visit": 0,
+        "stateHash": "7d9873940a51bbf4ed88619b00fc91b6a6c1568abdb268dec4a14f4bdd3d5b42",
+        "proposal": {
+          "tactic": "norm_num at *"
+        },
+        "beforeHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a",
+        "status": "PRUNED",
+        "children": [],
+        "evidenceId": "ev_0e1c10160fc4f09b18fff6ab39f09cb08ed741fd9dcf9c157efef6e03ab8f532",
+        "failure": "no_progress",
+        "restoredHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a"
+      },
+      {
+        "parent": "n0",
+        "visit": 0,
+        "stateHash": "7d9873940a51bbf4ed88619b00fc91b6a6c1568abdb268dec4a14f4bdd3d5b42",
+        "proposal": {
+          "tactic": "ring"
+        },
+        "beforeHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a",
+        "status": "RETAINED",
+        "children": [],
+        "evidenceId": "ev_8104469d22e4855c765d6da8de791eeeeecdd3eaccf9ee3e37551588cf563ba4"
+      }
+    ]
+  },
+  "finalCandidates": [
+    {
+      "id": "c0",
+      "planHash": "c819bee8ef33370c1c76564f1193665c9a21e79ebc1baa8b249091cfa8b7c14a",
+      "status": "ACCEPTED",
+      "policy": "lean-kernel-v2-unused-variable-lint",
+      "evidenceIds": [
+        "ev_caa6c31d92d5c83346a078134ab5f2d25f259172d600527a3cc0abc033ef643c",
+        "ev_9ffb263187db35c6ebcebc0acdbb7d94b11c635cb3eca7d364385139d1652b85"
+      ],
+      "sourceHash": "3b9518040b90982f802f89116d13308b2427a069090c2e424319770328b34e0a",
+      "explorationSuspension": {
+        "status": "SUSPENDED",
+        "elapsedMs": 67
+      },
+      "checks": [
+        {
+          "kind": "final",
+          "evidenceId": "ev_caa6c31d92d5c83346a078134ab5f2d25f259172d600527a3cc0abc033ef643c",
+          "accepted": true,
+          "reason": null,
+          "audit": {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_algebra_432",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (x : Real),\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": []
+        },
+        {
+          "kind": "recheck",
+          "evidenceId": "ev_9ffb263187db35c6ebcebc0acdbb7d94b11c635cb3eca7d364385139d1652b85",
+          "accepted": true,
+          "reason": null,
+          "audit": {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_algebra_432",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (x : Real),\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": []
+        }
+      ],
+      "reason": null
+    }
+  ],
+  "proposerCalls": [
+    {
+      "id": "p0",
+      "nodeId": "n0",
+      "stateHash": "7d9873940a51bbf4ed88619b00fc91b6a6c1568abdb268dec4a14f4bdd3d5b42",
+      "round": 0,
+      "requestDigest": "55702e26c2c7cbcf92833226bdb19245246b62fd698b8d76fb3e8504949887ef",
+      "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/proposals/0001-context.json",
+      "modelTokens": 0,
+      "usageKnown": true,
+      "tokenBudgetExceeded": false,
+      "policy": "deterministic-v2",
+      "proposals": [
+        {
+          "tactic": "assumption"
+        },
+        {
+          "tactic": "rfl"
+        },
+        {
+          "tactic": "simp_all"
+        },
+        {
+          "tactic": "omega"
+        },
+        {
+          "tactic": "norm_num at *"
+        },
+        {
+          "tactic": "ring"
+        },
+        {
+          "tactic": "linarith"
+        },
+        {
+          "tactic": "nlinarith"
+        },
+        {
+          "tactic": "positivity"
+        },
+        {
+          "tactic": "norm_cast at *"
+        },
+        {
+          "tactic": "field_simp at *"
+        },
+        {
+          "tactic": "ring_nf at *"
+        },
+        {
+          "tactic": "aesop"
+        }
+      ],
+      "status": "RETURNED",
+      "elapsedMs": 0,
+      "evidenceId": "ev_9197e3d7b435c36fcbeedd48db0aac557739777b6e69f7c7acbd7471c5c1e02f"
+    }
+  ],
+  "attempts": [
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.683\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"x\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.684\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"x : Real\\\\n⊢ Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\\\\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)\\\",\\\"target\\\":\\\"Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\\\\n  (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6)\\\",\\\"HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":16,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.683\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"x\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null}],\"id\":\"_uniq.684\",\"omitted_implementation_details\":1,\"pretty\":\"x : Real\\n⊢ Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)\",\"target\":\"Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\\n  (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)\",\"targetArgs\":[\"Real\",\"HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6)\",\"HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 18
+          },
+          "end": {
+            "column": 16,
+            "line": 18
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 18
+          },
+          "end": {
+            "column": 16,
+            "line": 18
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.683",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "x",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.684",
+              "omitted_implementation_details": 1,
+              "pretty": "x : Real\n⊢ Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)",
+              "target": "Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\n  (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)",
+              "targetArgs": [
+                "Real",
+                "HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6)",
+                "HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18"
+              ],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 1,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "0bbcdbe639c5be490a98efc4be406b6d772ae9afd82f7902372ec7fd5c2caa42",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": false,
+        "importMs": 5137,
+        "elaborationMs": 66,
+        "artifactCount": 10088
+      },
+      "elapsedMs": 7722,
+      "sequence": 1,
+      "kind": "state",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0001-state.lean",
+      "sourceHash": "b04bc48231453a43830067fee65fb6468ce0a3a16b80b5c954e8ac41228f53f6",
+      "evidenceId": "ev_bcec2b640233ee3820feb378c77d0cbf4b1882b910e34a40a0899001ae896029"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\nx : ℝ\\n⊢ (x + 3) * (2 * x - 6) = 2 * x ^ 2 - 18\",\"endPos\":{\"column\":12,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "error",
+          "message": "Tactic `assumption` failed\n\nx : ℝ\n⊢ (x + 3) * (2 * x - 6) = 2 * x ^ 2 - 18",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0002-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 18
+          },
+          "end": {
+            "column": 12,
+            "line": 18
+          },
+          "category": "missing_hypothesis_or_instance"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 2,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "80aca2a4798a6466beffdde17c96642a1b1991f2bfa1e7ef7fb7636da8d8b853",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 33,
+        "elaborationMs": 16,
+        "artifactCount": 10088
+      },
+      "elapsedMs": 51,
+      "sequence": 2,
+      "kind": "candidate",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0002-candidate.lean",
+      "sourceHash": "0caac4fdbac9b89fbf84196baed91ae8333c8096f682a3c048ec77c9911833c8",
+      "evidenceId": "ev_bb26533d5e328b41a1d40e369f5d4dabdd9d7f646b1fa34f8655d11677c81f16"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  (x + 3) * (2 * x - 6)\\nis not definitionally equal to the right-hand side\\n  2 * x ^ 2 - 18\\n\\nx : ℝ\\n⊢ (x + 3) * (2 * x - 6) = 2 * x ^ 2 - 18\",\"endPos\":{\"column\":5,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "error",
+          "message": "Tactic `rfl` failed: The left-hand side\n  (x + 3) * (2 * x - 6)\nis not definitionally equal to the right-hand side\n  2 * x ^ 2 - 18\n\nx : ℝ\n⊢ (x + 3) * (2 * x - 6) = 2 * x ^ 2 - 18",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0003-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 18
+          },
+          "end": {
+            "column": 5,
+            "line": 18
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 3,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "b2e75196eca4dfd9da4c7f3b764b98c61f34b652c3873d521e95aebc6f45cce2",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 36,
+        "elaborationMs": 18,
+        "artifactCount": 10088
+      },
+      "elapsedMs": 56,
+      "sequence": 3,
+      "kind": "candidate",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0003-candidate.lean",
+      "sourceHash": "80da743d239b477bd03405204799bb0345d9da64da792c1c6ab65b7ec2810b5e",
+      "evidenceId": "ev_3dfe039b959da9546b9ae02341a25cc75a852bb2ad3b33300caf82d6037f3c5d"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"simp_all made no progress\",\"endPos\":{\"column\":10,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0004-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "error",
+          "message": "simp_all made no progress",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0004-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 18
+          },
+          "end": {
+            "column": 10,
+            "line": 18
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 4,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "20ea471ad08d81b0890cd0f13350e2f4008fa197aa5cd04841f07ecbff9468a3",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 51,
+        "elaborationMs": 12,
+        "artifactCount": 10088
+      },
+      "elapsedMs": 64,
+      "sequence": 4,
+      "kind": "candidate",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0004-candidate.lean",
+      "sourceHash": "6e51f598f8b83e22d9f085a562305e1dddb5e7aa7b12803fb46141451cc2e2e1",
+      "evidenceId": "ev_a66f14cfacc9a7907ed4d2699850f6bf1e9b874b9866d600385d258da07c976b"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"omega could not prove the goal:\\nNo usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.\",\"endPos\":{\"column\":7,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0005-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "error",
+          "message": "omega could not prove the goal:\nNo usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0005-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 18
+          },
+          "end": {
+            "column": 7,
+            "line": 18
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 5,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "9aba7c52311981fe005caf7a9fccd20f9ce3dd8a7b891470ee62e8ca4e117d93",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 60,
+        "elaborationMs": 16,
+        "artifactCount": 10088
+      },
+      "elapsedMs": 76,
+      "sequence": 5,
+      "kind": "candidate",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0005-candidate.lean",
+      "sourceHash": "66b6c10827a36c2f701c2b80dcebfd27bc9a67de5f7c47b8b77ea48a6f3f36c6",
+      "evidenceId": "ev_a8c30eef74c8977e4940d20d6037906312be90d940d879b6a3db1c00b94be52e"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.683\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"x\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.684\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"x : Real\\\\n⊢ Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\\\\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)\\\",\\\"target\\\":\\\"Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\\\\n  (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6)\\\",\\\"HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":15,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0006-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":15,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0006-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.683\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"x\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null}],\"id\":\"_uniq.684\",\"omitted_implementation_details\":1,\"pretty\":\"x : Real\\n⊢ Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)\",\"target\":\"Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\\n  (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)\",\"targetArgs\":[\"Real\",\"HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6)\",\"HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0006-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 19
+          },
+          "end": {
+            "column": 15,
+            "line": 19
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0006-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 19
+          },
+          "end": {
+            "column": 15,
+            "line": 19
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.683",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "x",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.684",
+              "omitted_implementation_details": 1,
+              "pretty": "x : Real\n⊢ Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)",
+              "target": "Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\n  (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)",
+              "targetArgs": [
+                "Real",
+                "HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6)",
+                "HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18"
+              ],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 6,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "9078a49c21590bdea23891f786d6866328b943c1bd116ff8c9738d0134c949f7",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 66,
+        "elaborationMs": 37,
+        "artifactCount": 10088
+      },
+      "elapsedMs": 104,
+      "sequence": 6,
+      "kind": "candidate",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0006-candidate.lean",
+      "sourceHash": "929ef37ead37a7fc5b04b7865227c70f8d55e451bd8269e68922f226d674730b",
+      "evidenceId": "ev_0e1c10160fc4f09b18fff6ab39f09cb08ed741fd9dcf9c157efef6e03ab8f532"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":15,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0007-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_CLOSED:{\\\"node_id\\\":\\\"n0\\\"}\",\"endPos\":{\"column\":15,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0007-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":15,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0007-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[],\"node_id\":\"n0\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0007-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 19
+          },
+          "end": {
+            "column": 15,
+            "line": 19
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_CLOSED:{\"node_id\":\"n0\"}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0007-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 19
+          },
+          "end": {
+            "column": 15,
+            "line": 19
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0007-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 19
+          },
+          "end": {
+            "column": 15,
+            "line": 19
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [
+        {
+          "node_id": "n0"
+        }
+      ],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 7,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "473beddb0907b1644ef00344fd2be02299c31adc95679c7e933f9c27a492c51f",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 38,
+        "elaborationMs": 57,
+        "artifactCount": 10088
+      },
+      "elapsedMs": 96,
+      "sequence": 7,
+      "kind": "candidate",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0007-candidate.lean",
+      "sourceHash": "a08c18746ba69360059ef7a70ab5b5a7ec5939fbac43b9b0d5905f3505a75ac0",
+      "evidenceId": "ev_8104469d22e4855c765d6da8de791eeeeecdd3eaccf9ee3e37551588cf563ba4"
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_432\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (x : Real),\\\\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\\\\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0008-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":20},\"severity\":\"information\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 3570,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_432\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (x : Real),\\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)\",\"universe_parameters\":[],\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0008-final.lean",
+          "start": {
+            "column": 0,
+            "line": 20
+          },
+          "end": {
+            "column": 28,
+            "line": 20
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_432",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (x : Real),\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)",
+          "universe_parameters": [],
+          "version": 1
+        }
+      ],
+      "unparsed": [],
+      "sequence": 8,
+      "kind": "final",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0008-final.lean",
+      "sourceHash": "3692baab9e22c26ebdd0a93459285bdf2f56a2e42c01e0ec2ac962c59bec13e1",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_caa6c31d92d5c83346a078134ab5f2d25f259172d600527a3cc0abc033ef643c"
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_432\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (x : Real),\\\\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\\\\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0009-recheck.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":20},\"severity\":\"information\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 2628,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_432\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (x : Real),\\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)\",\"universe_parameters\":[],\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0009-recheck.lean",
+          "start": {
+            "column": 0,
+            "line": 20
+          },
+          "end": {
+            "column": 28,
+            "line": 20
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_432",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (x : Real),\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)",
+          "universe_parameters": [],
+          "version": 1
+        }
+      ],
+      "unparsed": [],
+      "sequence": 9,
+      "kind": "recheck",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0009-recheck.lean",
+      "sourceHash": "3692baab9e22c26ebdd0a93459285bdf2f56a2e42c01e0ec2ac962c59bec13e1",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_9ffb263187db35c6ebcebc0acdbb7d94b11c635cb3eca7d364385139d1652b85"
+    }
+  ],
+  "category": "algebra",
+  "method": "deterministic-v2",
+  "effectiveImports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+  ],
+  "effectiveOpens": [
+    "BigOperators Real Nat Topology Rat"
+  ],
+  "cleanupAssessment": {
+    "status": "closed",
+    "exploration": {
+      "ownership": "engine",
+      "status": "closed",
+      "retryAttempted": false
+    },
+    "provider": {
+      "status": "not_applicable",
+      "retryAttempted": false,
+      "entries": []
+    }
+  },
+  "artifactDir": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432",
+  "invocationElapsedMs": 14454
+}

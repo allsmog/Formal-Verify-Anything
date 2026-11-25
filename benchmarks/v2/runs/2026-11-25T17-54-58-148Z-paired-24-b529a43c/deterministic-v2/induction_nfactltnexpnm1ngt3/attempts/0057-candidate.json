@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"ring_nf made no progress on goal\",\"endPos\":{\"column\":12,\"line\":28},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_nfactltnexpnm1ngt3/attempts/0057-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":28},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "ring_nf made no progress on goal",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_nfactltnexpnm1ngt3/attempts/0057-candidate.lean",
+      "start": {
+        "column": 8,
+        "line": 28
+      },
+      "end": {
+        "column": 12,
+        "line": 28
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 57,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "dd78e03e7a8b7ff8bc5b1cfab8ef6c73223182f2f07e7bbfb6a7ae6421bb0820",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 27,
+    "elaborationMs": 68,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 95,
+  "sequence": 57,
+  "kind": "candidate",
+  "nodeId": "n5",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_nfactltnexpnm1ngt3/attempts/0057-candidate.lean",
+  "sourceHash": "54174641ca7bfce123dba4c09bd6d10789c985db1845ef12b14bcb74adb705f8",
+  "evidenceId": "ev_bd2852a785dd8ae149177432f328d6f7fa4cb00fa22318fa25b21869dbb6807c"
+}

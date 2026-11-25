@@ -1,0 +1,98 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.683\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"x\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.684\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"x : Real\\\\n⊢ Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\\\\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)\\\",\\\"target\\\":\\\"Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\\\\n  (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6)\\\",\\\"HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":15,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0006-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":15,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0006-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.683\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"x\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null}],\"id\":\"_uniq.684\",\"omitted_implementation_details\":1,\"pretty\":\"x : Real\\n⊢ Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)\",\"target\":\"Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\\n  (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)\",\"targetArgs\":[\"Real\",\"HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6)\",\"HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0006-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 19
+      },
+      "end": {
+        "column": 15,
+        "line": 19
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n0",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0006-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 19
+      },
+      "end": {
+        "column": 15,
+        "line": 19
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.683",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "x",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            }
+          ],
+          "id": "_uniq.684",
+          "omitted_implementation_details": 1,
+          "pretty": "x : Real\n⊢ Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)",
+          "target": "Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\n  (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)",
+          "targetArgs": [
+            "Real",
+            "HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6)",
+            "HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n0",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 6,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "9078a49c21590bdea23891f786d6866328b943c1bd116ff8c9738d0134c949f7",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 66,
+    "elaborationMs": 37,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 104,
+  "sequence": 6,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/attempts/0006-candidate.lean",
+  "sourceHash": "929ef37ead37a7fc5b04b7865227c70f8d55e451bd8269e68922f226d674730b",
+  "evidenceId": "ev_0e1c10160fc4f09b18fff6ab39f09cb08ed741fd9dcf9c157efef6e03ab8f532"
+}

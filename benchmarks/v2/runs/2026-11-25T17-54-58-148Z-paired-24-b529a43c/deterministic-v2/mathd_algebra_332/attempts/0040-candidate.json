@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  x ^ 2 + y ^ 2\\nis not definitionally equal to the right-hand side\\n  158\\n\\nx y : ℝ\\nh₁ : √(x * y) = √19\\nh₀ : x + y = ↑(2 * 7)\\n⊢ x ^ 2 + y ^ 2 = 158\",\"endPos\":{\"column\":9,\"line\":25},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0040-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":25},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  x ^ 2 + y ^ 2\nis not definitionally equal to the right-hand side\n  158\n\nx y : ℝ\nh₁ : √(x * y) = √19\nh₀ : x + y = ↑(2 * 7)\n⊢ x ^ 2 + y ^ 2 = 158",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0040-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 25
+      },
+      "end": {
+        "column": 9,
+        "line": 25
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 40,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "cd7f232479f1426f6f9900993a98f1d44b1a2142e7a0479c490f806f10cb4e2d",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 66,
+    "elaborationMs": 78,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 145,
+  "sequence": 40,
+  "kind": "candidate",
+  "nodeId": "n3",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0040-candidate.lean",
+  "sourceHash": "7f03e7fc91e1d26a0b0b68523961b65daad298cef886c264f67afd553bf21df3",
+  "evidenceId": "ev_652881fdb6e861238b25558e6f7a14350c8cb2fe75904d72fc47fee3b8704be0"
+}

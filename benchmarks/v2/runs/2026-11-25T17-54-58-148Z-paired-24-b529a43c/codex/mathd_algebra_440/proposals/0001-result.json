@@ -1,0 +1,65 @@
+{
+  "id": "p0",
+  "nodeId": "n0",
+  "stateHash": "dbac5d368e7093f7d5472ec02d29f11df3f875e85963b01942979718e0cbc4aa",
+  "round": 0,
+  "requestDigest": "e65690e3eaab2c62e44383c41c7169504e05d305a207a0d113d0e2c7dfe24cd8",
+  "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_440/proposals/0001-context.json",
+  "modelTokens": 17092,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "codex-v1",
+  "provider": "codex-cli",
+  "usage": {
+    "input_tokens": 16390,
+    "output_tokens": 702,
+    "cached_input_tokens": 0,
+    "reasoning_output_tokens": 504
+  },
+  "metadata": {
+    "provider": "codex-cli",
+    "model": null,
+    "modelSelection": "codex-configured-default",
+    "promptDigest": "1492cf2544b1d04bd964b8de713cff33b40697f5fbe38aa49423cd568a8f1c05",
+    "promptVersion": 1,
+    "toolPolicy": "disabled",
+    "ephemeral": true,
+    "cliVersion": "codex-cli 0.171.0",
+    "eventTypes": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "responseDigest": "b22f554dd383a2c19e18152a8913ef9f7d564c747005bac8e54c05f1234695dc",
+    "providerErrors": [],
+    "elapsedMs": 12644,
+    "exitCode": 0,
+    "signal": null,
+    "stdoutDigest": "b22f554dd383a2c19e18152a8913ef9f7d564c747005bac8e54c05f1234695dc",
+    "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrDiagnostic": ""
+  },
+  "proposals": [
+    {
+      "kind": "tactic",
+      "tactic": "calc\n  x = ((3 / 2 : ℝ) / 3) * 10 := (div_eq_iff (by norm_num : (10 : ℝ) ≠ 0)).mp h₀.symm\n  _ = 5 := by norm_num"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "linarith only [h₀]"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "field_simp at h₀\nlinarith only [h₀]"
+    },
+    {
+      "kind": "have",
+      "name": "hx_half",
+      "type": "x / 10 = (1 / 2 : ℝ)"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 12646,
+  "evidenceId": "ev_79d95c92f23c948c17c8a34c9d6b9add1aaba611aedbd86489f09dbd8b0af5ec"
+}

@@ -1,0 +1,77 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.344",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "x",
+        "type": "Real",
+        "typeHead": "Real",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.344"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.2313",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "LT.lt.{0} (-1) x",
+        "typeHead": "LT.lt",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.2333",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₁",
+        "type": "LT.lt.{0} 0 0",
+        "typeHead": "LT.lt",
+        "value": null
+      }
+    ],
+    "id": "_uniq.2336",
+    "omitted_implementation_details": 1,
+    "pretty": "case zero\nx : Real\nh₀ : LT.lt.{0} (-1) x\nh₁ : LT.lt.{0} 0 0\n⊢ LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑0) x)) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) 0)",
+    "target": "LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑0) x)) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) 0)",
+    "targetArgs": [
+      "Real",
+      "Real.instLE",
+      "HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑0) x)",
+      "HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) 0"
+    ],
+    "targetHead": "LE.le",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 30,
+    "maxDepth": 8,
+    "depth": 3,
+    "modelTokensRemaining": 0,
+    "remainingMs": 289696
+  },
+  "feedback": []
+}

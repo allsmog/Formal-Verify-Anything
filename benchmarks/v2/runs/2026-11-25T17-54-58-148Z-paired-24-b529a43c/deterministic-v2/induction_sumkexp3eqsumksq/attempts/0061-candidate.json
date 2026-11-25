@@ -1,0 +1,63 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":6,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0061-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"linarith failed to find a contradiction\\ncase succ.h1.h\\nn✝ : ℕ\\na✝¹ : ∑ x ∈ Finset.range n✝, x ^ 3 = (∑ k ∈ Finset.range n✝, k) ^ 2\\na✝ : ∑ x ∈ Finset.range (1 + n✝), x ^ 3 < (∑ x ∈ Finset.range (1 + n✝), x) ^ 2\\n⊢ False\\nfailed\",\"endPos\":{\"column\":17,\"line\":27},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0061-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":27},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0061-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 19
+      },
+      "end": {
+        "column": 6,
+        "line": 19
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "linarith failed to find a contradiction\ncase succ.h1.h\nn✝ : ℕ\na✝¹ : ∑ x ∈ Finset.range n✝, x ^ 3 = (∑ k ∈ Finset.range n✝, k) ^ 2\na✝ : ∑ x ∈ Finset.range (1 + n✝), x ^ 3 < (∑ x ∈ Finset.range (1 + n✝), x) ^ 2\n⊢ False\nfailed",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0061-candidate.lean",
+      "start": {
+        "column": 8,
+        "line": 27
+      },
+      "end": {
+        "column": 17,
+        "line": 27
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 61,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "267b662c02a0b2785ba425369c928500728e4a34f8668bb3a273d753e437e17d",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 46,
+    "elaborationMs": 221,
+    "artifactCount": 10204
+  },
+  "elapsedMs": 271,
+  "sequence": 61,
+  "kind": "candidate",
+  "nodeId": "n5",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0061-candidate.lean",
+  "sourceHash": "3b3a7951abdd8b920f2653b4129165d90b8bed6cdb9975f5d394e4ea2d17186d",
+  "evidenceId": "ev_d528743281ff6c28dd4d123b676bab584225536520a1fa33461e8ba9b89d3e44"
+}

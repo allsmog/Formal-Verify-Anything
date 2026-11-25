@@ -1,0 +1,69 @@
+{
+  "id": "p0",
+  "nodeId": "n0",
+  "stateHash": "4b52a4298455295187b8b6f21daa74f469b88b55bf2181d4a9b7c84dc9bd7d67",
+  "round": 0,
+  "requestDigest": "cda8f5dd5d7899ad92e33f79e37470b6d19e6fd282d3a28513af3d329080a71c",
+  "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_prod1p1onk3le3m1onn/proposals/0001-context.json",
+  "status": "FAILED",
+  "error": {
+    "name": "ProposerError",
+    "message": "Codex did not complete a bounded proof-proposal request.",
+    "code": "provider_timeout",
+    "retryable": false,
+    "provider": "codex-cli",
+    "usage": null,
+    "modelTokens": null,
+    "metadata": {
+      "provider": "codex-cli",
+      "model": null,
+      "modelSelection": "codex-configured-default",
+      "promptDigest": "d001632b85aa9177e0e4ea09a81da06159543536473e09f8bedb1f1536212f73",
+      "promptVersion": 1,
+      "toolPolicy": "disabled",
+      "ephemeral": true,
+      "cliVersion": "codex-cli 0.171.0",
+      "eventTypes": [
+        "thread.started",
+        "turn.started"
+      ],
+      "responseDigest": "a49ee7b6d6deb56676208ef15cbbf0a82bb2ea485e31585e2dc0e75bba9beb9e",
+      "providerErrors": [],
+      "elapsedMs": 60012,
+      "exitCode": null,
+      "signal": "SIGKILL",
+      "stdoutDigest": "a49ee7b6d6deb56676208ef15cbbf0a82bb2ea485e31585e2dc0e75bba9beb9e",
+      "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrDiagnostic": ""
+    }
+  },
+  "failure": "provider_timeout",
+  "provider": "codex-cli",
+  "usage": null,
+  "metadata": {
+    "provider": "codex-cli",
+    "model": null,
+    "modelSelection": "codex-configured-default",
+    "promptDigest": "d001632b85aa9177e0e4ea09a81da06159543536473e09f8bedb1f1536212f73",
+    "promptVersion": 1,
+    "toolPolicy": "disabled",
+    "ephemeral": true,
+    "cliVersion": "codex-cli 0.171.0",
+    "eventTypes": [
+      "thread.started",
+      "turn.started"
+    ],
+    "responseDigest": "a49ee7b6d6deb56676208ef15cbbf0a82bb2ea485e31585e2dc0e75bba9beb9e",
+    "providerErrors": [],
+    "elapsedMs": 60012,
+    "exitCode": null,
+    "signal": "SIGKILL",
+    "stdoutDigest": "a49ee7b6d6deb56676208ef15cbbf0a82bb2ea485e31585e2dc0e75bba9beb9e",
+    "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrDiagnostic": ""
+  },
+  "modelTokens": null,
+  "usageKnown": false,
+  "elapsedMs": 60015,
+  "evidenceId": "ev_449232524690e8d000ec803f6fedca26909f212141b0a7945c3acd60eece5a04"
+}

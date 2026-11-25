@@ -1,0 +1,52 @@
+{
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_176\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (x : Real),\\\\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 1) 2) x)\\\\n    (HAdd.hAdd.{0, 0, 0}\\\\n      (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 3) (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2))) x)\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_176/attempts/0004-recheck.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":20},\"severity\":\"information\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2840,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_176\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (x : Real),\\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 1) 2) x)\\n    (HAdd.hAdd.{0, 0, 0}\\n      (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 3) (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2))) x)\",\"universe_parameters\":[],\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_176/attempts/0004-recheck.lean",
+      "start": {
+        "column": 0,
+        "line": 20
+      },
+      "end": {
+        "column": 28,
+        "line": 20
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "mathd_algebra_176",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (x : Real),\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 1) 2) x)\n    (HAdd.hAdd.{0, 0, 0}\n      (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 3) (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2))) x)",
+      "universe_parameters": [],
+      "version": 1
+    }
+  ],
+  "unparsed": [],
+  "sequence": 4,
+  "kind": "recheck",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_176/attempts/0004-recheck.lean",
+  "sourceHash": "a9b53c998e2c1bcb8bdd4e8fbf46ec3a6787cc93b0e6c5df49c054f94f7cd779",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_f592f814670c6a70ba57b25cc1a573888cdc1808726af059eeba8d47895745be"
+}

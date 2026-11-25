@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"linarith failed to find a contradiction\\ncase h1.h\\nx y : ℝ\\nn : NNReal\\nh₁ : |y| = 6\\nh₃ : √(x ^ 2 + y ^ 2) = √↑n\\nh₀ : x < 0 ∧ y < 0\\nh₂ : √(73 - x * 16 + (x ^ 2 - y * 6) + y ^ 2) = 15\\na✝ : n < 52\\n⊢ False\\nfailed\",\"endPos\":{\"column\":14,\"line\":28},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_288/attempts/0032-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":28},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "linarith failed to find a contradiction\ncase h1.h\nx y : ℝ\nn : NNReal\nh₁ : |y| = 6\nh₃ : √(x ^ 2 + y ^ 2) = √↑n\nh₀ : x < 0 ∧ y < 0\nh₂ : √(73 - x * 16 + (x ^ 2 - y * 6) + y ^ 2) = 15\na✝ : n < 52\n⊢ False\nfailed",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_288/attempts/0032-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 28
+      },
+      "end": {
+        "column": 14,
+        "line": 28
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 32,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "1603f9954573fae9ac4121e7be40a4c5149ac46ac30b977aefb59fd6fb945ae4",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 38,
+    "elaborationMs": 76,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 117,
+  "sequence": 32,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_288/attempts/0032-candidate.lean",
+  "sourceHash": "8eaa4593d7920258ea934aed61614a9ced757ebaa0f87073b633faa039fb6d8f",
+  "evidenceId": "ev_232c2cf61a6233aeaa1bd55eeeea53b98fa2b7a41969570e603a6fb88d0993c5"
+}

@@ -1,0 +1,49 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.1425",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "x",
+        "type": "Real",
+        "typeHead": "Real",
+        "value": null
+      }
+    ],
+    "id": "_uniq.1426",
+    "omitted_implementation_details": 1,
+    "pretty": "x : Real\n⊢ Eq.{1} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 1) 2) x)\n    (HAdd.hAdd.{0, 0, 0}\n      (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 3) (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2))) x)",
+    "target": "Eq.{1} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 1) 2) x)\n  (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 3) (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)))\n    x)",
+    "targetArgs": [
+      "Real",
+      "HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 1) 2) x",
+      "HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 3) (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2))) x"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 61,
+    "maxDepth": 8,
+    "depth": 0,
+    "modelTokensRemaining": 0,
+    "remainingMs": 292252
+  }
+}

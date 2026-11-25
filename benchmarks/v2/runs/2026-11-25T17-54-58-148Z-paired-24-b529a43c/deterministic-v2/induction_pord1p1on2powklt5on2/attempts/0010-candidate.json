@@ -1,0 +1,113 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.446\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.446\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.447\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"LT.lt.{0} 0 n\\\",\\\"typeHead\\\":\\\"LT.lt\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.3811\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"n : Nat\\\\nh₀ : LT.lt.{0} 0 n\\\\n⊢ LT.lt.{0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} 2 x))) (5 / 2)\\\",\\\"target\\\":\\\"LT.lt.{0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} 2 x))) (5 / 2)\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"Real.instLT\\\",\\\"∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} 2 x))\\\",\\\"5 / 2\\\"],\\\"targetHead\\\":\\\"LT.lt\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n1\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":17,\"line\":23},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pord1p1on2powklt5on2/attempts/0010-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":23},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n1\",\"endPos\":{\"column\":17,\"line\":23},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pord1p1on2powklt5on2/attempts/0010-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":23},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.446\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.446\"],\"has_metavariables\":false,\"id\":\"_uniq.447\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"LT.lt.{0} 0 n\",\"typeHead\":\"LT.lt\",\"value\":null}],\"id\":\"_uniq.3811\",\"omitted_implementation_details\":1,\"pretty\":\"n : Nat\\nh₀ : LT.lt.{0} 0 n\\n⊢ LT.lt.{0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} 2 x))) (5 / 2)\",\"target\":\"LT.lt.{0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} 2 x))) (5 / 2)\",\"targetArgs\":[\"Real\",\"Real.instLT\",\"∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} 2 x))\",\"5 / 2\"],\"targetHead\":\"LT.lt\",\"universe_parameters\":[]}],\"node_id\":\"n1\",\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pord1p1on2powklt5on2/attempts/0010-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 23
+      },
+      "end": {
+        "column": 17,
+        "line": 23
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n1",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pord1p1on2powklt5on2/attempts/0010-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 23
+      },
+      "end": {
+        "column": 17,
+        "line": 23
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.446",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.446"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.447",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "LT.lt.{0} 0 n",
+              "typeHead": "LT.lt",
+              "value": null
+            }
+          ],
+          "id": "_uniq.3811",
+          "omitted_implementation_details": 1,
+          "pretty": "n : Nat\nh₀ : LT.lt.{0} 0 n\n⊢ LT.lt.{0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} 2 x))) (5 / 2)",
+          "target": "LT.lt.{0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} 2 x))) (5 / 2)",
+          "targetArgs": [
+            "Real",
+            "Real.instLT",
+            "∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} 2 x))",
+            "5 / 2"
+          ],
+          "targetHead": "LT.lt",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n1",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 10,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "16ab8c90c2560db932e942b5df65162847383b1e1839a0c8222dc0b075d56124",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 25,
+    "elaborationMs": 34,
+    "artifactCount": 10204
+  },
+  "elapsedMs": 60,
+  "sequence": 10,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pord1p1on2powklt5on2/attempts/0010-candidate.lean",
+  "sourceHash": "6db8c19295ff99218383509ab6b276c610370fc028620e857218e35f87103904",
+  "evidenceId": "ev_bea27df1ccf92bb902b5c32dc58e1c0c05e2b043726052b8e46ed7802bb3c894"
+}

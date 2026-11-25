@@ -1,0 +1,104 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.261",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "n",
+        "type": "Nat",
+        "typeHead": "Nat",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.261"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.263",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₁",
+        "type": "Even.{0} n",
+        "typeHead": "Even",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.285",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "Even.{0} 0",
+        "typeHead": "Even",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.261"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.286",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₂",
+        "type": "Eq.{1} (HSub.hSub.{0, 0, 0} 0 n) 2",
+        "typeHead": "Eq",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.261"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.287",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₃",
+        "type": "Eq.{1} (HMul.hMul.{0, 0, 0} 0 n) 288",
+        "typeHead": "Eq",
+        "value": null
+      }
+    ],
+    "id": "_uniq.290",
+    "omitted_implementation_details": 1,
+    "pretty": "case zero\nn : Nat\nh₁ : Even.{0} n\nh₀ : Even.{0} 0\nh₂ : Eq.{1} (HSub.hSub.{0, 0, 0} 0 n) 2\nh₃ : Eq.{1} (HMul.hMul.{0, 0, 0} 0 n) 288\n⊢ Eq.{1} 0 18",
+    "target": "Eq.{1} 0 18",
+    "targetArgs": [
+      "Nat",
+      "0",
+      "18"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Algebra.Ring.Parity"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 46,
+    "maxDepth": 8,
+    "depth": 1,
+    "modelTokensRemaining": 0,
+    "remainingMs": 292834
+  }
+}

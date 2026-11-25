@@ -1,0 +1,63 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":8,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/attempts/0032-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":20},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  12\\nis not definitionally equal to the right-hand side\\n  8 + 4 ^ (n✝ + 1) * 4\\n\\ncase succ\\nn✝ : ℕ\\na✝ : 12 ∣ 8 + 4 ^ n✝ * 4\\n⊢ 12 ∣ 8 + 4 ^ (n✝ + 1) * 4\",\"endPos\":{\"column\":11,\"line\":26},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/attempts/0032-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":26},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/attempts/0032-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 20
+      },
+      "end": {
+        "column": 8,
+        "line": 20
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  12\nis not definitionally equal to the right-hand side\n  8 + 4 ^ (n✝ + 1) * 4\n\ncase succ\nn✝ : ℕ\na✝ : 12 ∣ 8 + 4 ^ n✝ * 4\n⊢ 12 ∣ 8 + 4 ^ (n✝ + 1) * 4",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/attempts/0032-candidate.lean",
+      "start": {
+        "column": 8,
+        "line": 26
+      },
+      "end": {
+        "column": 11,
+        "line": 26
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 32,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "c4129bbed00a00c25bff0c1e24303b1d855840516ed437ca7baa4fc0789c3e2d",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 25,
+    "elaborationMs": 39,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 65,
+  "sequence": 32,
+  "kind": "candidate",
+  "nodeId": "n4",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/attempts/0032-candidate.lean",
+  "sourceHash": "a4624e9c1d82ddc5fd1914b89bc74705e3cd234bc19d1c69bdad1e954ee73bb8",
+  "evidenceId": "ev_cc7ff773243b7ca1147f3092d5893bdd059ec9f747d390f5ac57c47c3ed0b863"
+}

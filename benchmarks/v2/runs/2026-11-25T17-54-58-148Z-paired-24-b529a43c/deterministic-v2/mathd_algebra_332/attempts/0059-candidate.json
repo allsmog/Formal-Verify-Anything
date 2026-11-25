@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\nx y : ℝ\\nh₁ : √(x * y) = √19\\nh₀ : x + y = 14\\n⊢ x ^ 2 + y ^ 2 = 158\",\"endPos\":{\"column\":18,\"line\":27},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0059-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":27},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\nx y : ℝ\nh₁ : √(x * y) = √19\nh₀ : x + y = 14\n⊢ x ^ 2 + y ^ 2 = 158",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0059-candidate.lean",
+      "start": {
+        "column": 8,
+        "line": 27
+      },
+      "end": {
+        "column": 18,
+        "line": 27
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 59,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "5636dfbc52a3479ce287553631f7849a4093a051e96a77877281c26b78f22cf2",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 35,
+    "elaborationMs": 81,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 118,
+  "sequence": 59,
+  "kind": "candidate",
+  "nodeId": "n5",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0059-candidate.lean",
+  "sourceHash": "436a98433b78fffa0cd46d2c6cee27d7bd30834335407a998096128a298a396a",
+  "evidenceId": "ev_e491799befe73bbecb4e946c4cc34dfbe9c50abc1a2c65d52795066e2071e493"
+}

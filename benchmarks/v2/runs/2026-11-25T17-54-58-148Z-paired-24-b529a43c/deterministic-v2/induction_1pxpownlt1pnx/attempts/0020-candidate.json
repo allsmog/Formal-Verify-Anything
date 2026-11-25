@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"omega could not prove the goal:\\na possible counterexample may satisfy the constraints\\n  a ≥ 1\\nwhere\\n a := ↑n\",\"endPos\":{\"column\":11,\"line\":25},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0020-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":25},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  a ≥ 1\nwhere\n a := ↑n",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0020-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 25
+      },
+      "end": {
+        "column": 11,
+        "line": 25
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 20,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "78e4aa8880fb90901d269f9be5367ab64f12e338d0c8cd9de3d022b45e222590",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 37,
+    "elaborationMs": 28,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 68,
+  "sequence": 20,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0020-candidate.lean",
+  "sourceHash": "b59dc1d9778a742281b41dd083fc6a1b7dab3e629bf7dd7096b441807f7861f7",
+  "evidenceId": "ev_65d32b304f630a68b9de4719aa92156a3b24a83d923f5554ecd371bc2430e860"
+}

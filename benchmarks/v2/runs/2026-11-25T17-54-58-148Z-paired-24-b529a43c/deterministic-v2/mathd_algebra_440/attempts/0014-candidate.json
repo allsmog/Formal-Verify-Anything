@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"simp_all made no progress\",\"endPos\":{\"column\":14,\"line\":23},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_440/attempts/0014-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":23},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "simp_all made no progress",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_440/attempts/0014-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 23
+      },
+      "end": {
+        "column": 14,
+        "line": 23
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 14,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "6e5c77f7bb77d85929db1164164e57cc470134bea94be75ec7c490700a7eb143",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 31,
+    "elaborationMs": 36,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 68,
+  "sequence": 14,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_440/attempts/0014-candidate.lean",
+  "sourceHash": "ac102ddc2741ae4a8e294a9049615b95e64aa3fce39f4ee8d1f78498507ad476",
+  "evidenceId": "ev_8eb1587865369541ae9fa92097a0d2ef539f9b13a1fda07d371491009da7deec"
+}

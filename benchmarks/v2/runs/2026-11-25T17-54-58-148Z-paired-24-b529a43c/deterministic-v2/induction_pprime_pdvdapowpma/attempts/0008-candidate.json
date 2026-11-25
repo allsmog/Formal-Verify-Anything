@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"linarith failed to find a contradiction\\np a : ℕ\\nh₀ : 0 < a\\nh₁ : Nat.Prime p\\n⊢ False\\nfailed\",\"endPos\":{\"column\":10,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0008-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":21},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "linarith failed to find a contradiction\np a : ℕ\nh₀ : 0 < a\nh₁ : Nat.Prime p\n⊢ False\nfailed",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0008-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 21
+      },
+      "end": {
+        "column": 10,
+        "line": 21
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 8,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "c4e44016826cbb55053d759035d3d0425d46e5572f9eecb159f073cff4a6f9ea",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 34,
+    "elaborationMs": 29,
+    "artifactCount": 10116
+  },
+  "elapsedMs": 65,
+  "sequence": 8,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0008-candidate.lean",
+  "sourceHash": "d4a9f2597c953183d81e8cd3a0005a533981f2dbdebde69a74535637374a2086",
+  "evidenceId": "ev_b2a7c11689b65e1bd5ff807e271feb2e262922a8ac1dc8d48fe131cce89d6e89"
+}

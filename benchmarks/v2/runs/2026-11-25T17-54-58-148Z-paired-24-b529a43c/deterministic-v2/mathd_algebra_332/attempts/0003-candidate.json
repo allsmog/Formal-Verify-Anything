@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  x ^ 2 + y ^ 2\\nis not definitionally equal to the right-hand side\\n  158\\n\\nx y : ℝ\\nh₀ : (x + y) / 2 = 7\\nh₁ : √(x * y) = √19\\n⊢ x ^ 2 + y ^ 2 = 158\",\"endPos\":{\"column\":5,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":21},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  x ^ 2 + y ^ 2\nis not definitionally equal to the right-hand side\n  158\n\nx y : ℝ\nh₀ : (x + y) / 2 = 7\nh₁ : √(x * y) = √19\n⊢ x ^ 2 + y ^ 2 = 158",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0003-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 21
+      },
+      "end": {
+        "column": 5,
+        "line": 21
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 3,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "d72c415a6fc1f6a6cc15b7146120059bddbe8ab3420ad7f7183f2e58fb3dbff9",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 36,
+    "elaborationMs": 15,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 53,
+  "sequence": 3,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0003-candidate.lean",
+  "sourceHash": "7277d8e801e1fa2c7104cd0f05e43ac90a34026ce6745cf604d242b1887730b9",
+  "evidenceId": "ev_dcef42d460447d236809fb06d43b28dacc2055e2054547e81854ada795fa5848"
+}

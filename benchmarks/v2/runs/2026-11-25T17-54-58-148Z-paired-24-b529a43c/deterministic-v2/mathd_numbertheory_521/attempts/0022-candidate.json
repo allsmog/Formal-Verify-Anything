@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  n✝ + 1\\nis not definitionally equal to the right-hand side\\n  18\\n\\ncase succ\\nn : ℕ\\nh₁ : Even n\\nn✝ : ℕ\\na✝ : Even n✝ → n✝ - n = 2 → n✝ * n = 288 → n✝ = 18\\nh₀ : Even (n✝ + 1)\\nh₂ : n✝ + 1 - n = 2\\nh₃ : (n✝ + 1) * n = 288\\n⊢ n✝ + 1 = 18\",\"endPos\":{\"column\":7,\"line\":27},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0022-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":27},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  n✝ + 1\nis not definitionally equal to the right-hand side\n  18\n\ncase succ\nn : ℕ\nh₁ : Even n\nn✝ : ℕ\na✝ : Even n✝ → n✝ - n = 2 → n✝ * n = 288 → n✝ = 18\nh₀ : Even (n✝ + 1)\nh₂ : n✝ + 1 - n = 2\nh₃ : (n✝ + 1) * n = 288\n⊢ n✝ + 1 = 18",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0022-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 27
+      },
+      "end": {
+        "column": 7,
+        "line": 27
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 22,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "483935c4947f255391d6b717f62967c8852f8707b24327fb61b9e427d4409fcd",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 55,
+    "elaborationMs": 18,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 75,
+  "sequence": 22,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0022-candidate.lean",
+  "sourceHash": "9740a25bd2868b447c163c96103560009353bd71449e104995c92655ccd5ec31",
+  "evidenceId": "ev_cbb2d31105cffa77ce2e2719893d5a7a4219bee34eb2458e0911e4cae53b1ec0"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "p0",
+  "nodeId": "n0",
+  "stateHash": "90e69fc64a75e9d82a5611289343e9e27224217f94d45cd704b851461ec17e68",
+  "round": 0,
+  "requestDigest": "e5e1ed26fc27753b66748428ff79462ba5e9459d02992cb5fa40ccb51965996f",
+  "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_293/proposals/0001-context.json",
+  "modelTokens": 19225,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "codex-v1",
+  "provider": "codex-cli",
+  "usage": {
+    "input_tokens": 16545,
+    "output_tokens": 2680,
+    "cached_input_tokens": 0,
+    "reasoning_output_tokens": 2123
+  },
+  "metadata": {
+    "provider": "codex-cli",
+    "model": null,
+    "modelSelection": "codex-configured-default",
+    "promptDigest": "aceb3085a0058b94c3c1156e837746671abb2bd24eb32881c61bf4ace1f8121e",
+    "promptVersion": 1,
+    "toolPolicy": "disabled",
+    "ephemeral": true,
+    "cliVersion": "codex-cli 0.171.0",
+    "eventTypes": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "responseDigest": "e9cf551bd7ada01b8dcf8a3b8d0249e238268244ec409e5499d980a8a3769f21",
+    "providerErrors": [],
+    "elapsedMs": 44598,
+    "exitCode": 0,
+    "signal": null,
+    "stdoutDigest": "e9cf551bd7ada01b8dcf8a3b8d0249e238268244ec409e5499d980a8a3769f21",
+    "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrDiagnostic": ""
+  },
+  "proposals": [
+    {
+      "kind": "tactic",
+      "tactic": "have hn : n = 0 ∨ n = 1 ∨ n = 2 ∨ n = 3 ∨ n = 4 ∨ n = 5 ∨ n = 6 ∨ n = 7 ∨ n = 8 ∨ n = 9 := by omega\nrcases hn with rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl <;> norm_num [Nat.dvd_iff_mod_eq_zero] at h₁ ⊢"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "have h : ∀ k : Fin 10, 11 ∣ (20 * 100 + 10 * (k : Nat) + 7) → (k : Nat) = 5 := by decide\nexact h ⟨n, Nat.lt_succ_of_le h₀⟩ h₁"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "have hn : n < 11 := by omega\nhave hm := Nat.mod_eq_zero_of_dvd h₁\nhave he : (20 * 100 + 10 * n + 7) + n = 11 * (182 + n) + 5 := by omega\nhave ha : ((20 * 100 + 10 * n + 7) + n) % 11 = (11 * (182 + n) + 5) % 11 := congrArg (fun x : Nat => x % 11) he\nhave hz : (11 * (182 + n)) % 11 = 0 := Nat.mod_eq_zero_of_dvd ⟨182 + n, rfl⟩\nrw [Nat.add_mod (20 * 100 + 10 * n + 7) n 11, Nat.add_mod (11 * (182 + n)) 5 11, hm, hz] at ha\nsimpa [Nat.mod_eq_of_lt hn] using ha"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "have hm := Nat.mod_eq_zero_of_dvd h₁\nomega"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "interval_cases n <;> norm_num [Nat.dvd_iff_mod_eq_zero] at h₁ ⊢"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 44601,
+  "evidenceId": "ev_66fd45748813c79fd76ef14111e5ebd6f49584d95e43bff1b97ae87419cbab62"
+}

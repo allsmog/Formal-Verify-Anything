@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  1 + ↑n * x\\nis not definitionally equal to the right-hand side\\n  (1 + x) ^ n\\n\\nx : ℝ\\nn : ℕ\\nh₁ : 0 < n\\nh₀ : -1 < x\\n⊢ 1 + ↑n * x ≤ (1 + x) ^ n\",\"endPos\":{\"column\":9,\"line\":25},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0018-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":25},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  1 + ↑n * x\nis not definitionally equal to the right-hand side\n  (1 + x) ^ n\n\nx : ℝ\nn : ℕ\nh₁ : 0 < n\nh₀ : -1 < x\n⊢ 1 + ↑n * x ≤ (1 + x) ^ n",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0018-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 25
+      },
+      "end": {
+        "column": 9,
+        "line": 25
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 18,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "99d6e5974df21371357da4b3d952a7b354222d741c8b26228a53b593a4d60036",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 55,
+    "elaborationMs": 37,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 93,
+  "sequence": 18,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0018-candidate.lean",
+  "sourceHash": "b2eb242092f81b19ffe916c72d0bed607e566574e5f34c6cdfc451f344923c35",
+  "evidenceId": "ev_6c9520eb9371c237a695ae2a47dc9ec8f84a31313a4acc14e016ebd3ab1dba68"
+}

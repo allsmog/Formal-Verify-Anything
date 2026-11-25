@@ -1,0 +1,2313 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-11-25T18:24:43.079Z",
+  "completedAt": "2026-11-25T18:25:25.003Z",
+  "reportFile": "benchmarks/v2/results.json",
+  "reportSha256": "cf4ee9e3704cbe6ddc687a7b4e3a185e1d0bf84cd65a4ecfff7f0d70b9a54a20",
+  "runId": "2026-11-25T17-54-58-148Z-paired-24-b529a43c",
+  "status": "VERIFIED",
+  "scope": "Complete accounting and artifact integrity plus one new standalone Lean process for every recorded SOLVED proof. Failed theorems are neither retried nor rescored.",
+  "accounting": {
+    "selected": 24,
+    "deterministicAttempts": 24,
+    "codexAttempts": 24,
+    "codexStatus": "EVALUATED",
+    "solved": 28,
+    "compilerCalls": 1076,
+    "prunedBranches": 809
+  },
+  "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+  "inputHashes": {
+    "benchmarks/v2/holdout.json": "c5180a561a72b0d069ef1bebc80b4163aa472ac076bc4d6128c9555682e821b3",
+    "benchmarks/v2/selection.json": "65f24bc8fb7f18132b8a3afdee3a6c76ef3bf782e58d23d56ee7986b36ecff1c",
+    "benchmarks/v2/execution-profiles.json": "5265e241c25e5d1653c558148653058824c93265f8d52d800428481936a2cab1"
+  },
+  "currentExecutionHashes": {
+    "formal/src/engine.mjs": "80dc47e71f48dc40230dd7edc5d5332acc220acaa4ac30194196ebdcb3eaf2cb",
+    "formal/src/compiler.mjs": "e29119889f06fcb23567662b3c8ecb84b166657fb4f69e0861bfb1c211a3d5c7",
+    "formal/src/guard.mjs": "1a2f823374defa836c8259359e01c6c4819f250cbae3fa74f2d2c1acf4c6feb3",
+    "formal/src/proposers.mjs": "5f24afd71634780178d07ece9d7d594d6ea37a07b6140a4cc037bbef608922b4",
+    "formal/src/codex-proposer.mjs": "0dd2726e2e39ebaac20a0cfd9edcdf5bc9178c1e605a6b41507191c85384b966",
+    "formal/src/lean-session.mjs": "a13bf85467cf058d2e36309e7889b6025dd2e7bc0e037eab1c3440f1dc2d8df8",
+    "formal/src/support.mjs": "9ca6b8cb507404b4d7a244a5204e1472d434a2d706870c617ea2a772995b2db7",
+    "formal/src/process-group.mjs": "6fe8a181d24077ab5f9af1fa2dfc09e089fb2f5267f99e0dd0a4b8b554fcec81",
+    "FormalVerify/Bridge.lean": "cfaab974a2739bbe0c0f3d37f3fba25e30a543aaaecdd5cb808691dc7e2345a0",
+    "FormalVerify/Worker.lean": "3a9a9afc3fa3b1cc6054e8f771e0a19220f6c3cda4a0f9ebe7f73e5c76a9fd43",
+    ".lake/build/lib/lean/FormalVerify/Bridge.olean": "4d3035b6e1a026b0f2cf7cf079d1e26875e0b6d0914931f4404010c2a80e1c9f",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "lakefile.toml": "2c0891f0bd9da270904ea8340f3035e796cf01b252e0179bca979ff4a63ac77c",
+    "lake-manifest.json": "7f7c30da83bb8dbbd9915a1c1952c55efdc2326bfd77432a2fa29470c51f7e85",
+    "formal/package-lock.json": "fd6936b89cd4d2fd571ec183987c756c5a35377a01de4bd809d501247d508f66",
+    "benchmarks/v2/run.mjs": "48cf91370cce43ac9759ddb72dc64957db474fbc10701c1e997a666c3054871e",
+    "benchmarks/v2/report.mjs": "ce4b80328fb1737d82f5a3aa8032b1901b0b3f30cb5d948a69226c80b8753341",
+    "benchmarks/v2/suite.mjs": "4bba2836fb93ef12535fb62d00c2eb4486616389c95146f8a3458955f8d87bcf",
+    "benchmarks/v2/lifecycle.mjs": "8cfe80e9c9dfe92469a9e8a0fcf75436234872ccfeec3ce5f041ad379d61b56b"
+  },
+  "executionByteDifferences": [],
+  "provenanceLimit": "Current hashes identify the recheck environment. Differences, including rebuilt binaries, are disclosed rather than represented as original execution equivalence. This is not a signed attestation.",
+  "checks": [
+    {
+      "id": "mathd_algebra_293",
+      "method": "codex",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/mathd_algebra_293.lean",
+      "statementHash": "70c0fb9acf0ef73e21fb2bf4092e076db7df6f1583ab59552f95602f51bd8d49",
+      "sourceHash": "62bec4857f089b446eec87baa40e6043dea0c5d4e35cb9ef519814b3dc6da2db",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_293",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (x : NNReal),\n  Eq.{1}\n    (HMul.hMul.{0, 0, 0}\n      (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\n      (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_293\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (x : NNReal),\\\\n  Eq.{1}\\\\n    (HMul.hMul.{0, 0, 0}\\\\n      (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\\\\n      (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\\\\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":27},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/mathd_algebra_293.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":27},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1746,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_293\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (x : NNReal),\\n  Eq.{1}\\n    (HMul.hMul.{0, 0, 0}\\n      (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\\n      (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/mathd_algebra_293.lean",
+            "start": {
+              "column": 0,
+              "line": 27
+            },
+            "end": {
+              "column": 28,
+              "line": 27
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_algebra_293",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (x : NNReal),\n  Eq.{1}\n    (HMul.hMul.{0, 0, 0}\n      (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\n      (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "mathd_algebra_176",
+      "method": "codex",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_176/mathd_algebra_176.lean",
+      "statementHash": "c31cb060ba4b963977cf54de1aaaec07da794bdc5eb6b26d43087cfa18a8dcc7",
+      "sourceHash": "209f9eed3b98e5234dae124faf1d634993a67d302b343ec950b06407a4219686",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_176",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (x : Real),\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 1) 2) x)\n    (HAdd.hAdd.{0, 0, 0}\n      (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 3) (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2))) x)",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_176\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (x : Real),\\\\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 1) 2) x)\\\\n    (HAdd.hAdd.{0, 0, 0}\\\\n      (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 3) (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2))) x)\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_176/mathd_algebra_176.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":20},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1452,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_176\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (x : Real),\\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 1) 2) x)\\n    (HAdd.hAdd.{0, 0, 0}\\n      (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 3) (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2))) x)\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_176/mathd_algebra_176.lean",
+            "start": {
+              "column": 0,
+              "line": 20
+            },
+            "end": {
+              "column": 28,
+              "line": 20
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_algebra_176",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (x : Real),\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 1) 2) x)\n    (HAdd.hAdd.{0, 0, 0}\n      (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 3) (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2))) x)",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "mathd_algebra_176",
+      "method": "deterministic-v2",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_176/mathd_algebra_176.lean",
+      "statementHash": "c31cb060ba4b963977cf54de1aaaec07da794bdc5eb6b26d43087cfa18a8dcc7",
+      "sourceHash": "209f9eed3b98e5234dae124faf1d634993a67d302b343ec950b06407a4219686",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_176",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (x : Real),\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 1) 2) x)\n    (HAdd.hAdd.{0, 0, 0}\n      (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 3) (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2))) x)",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_176\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (x : Real),\\\\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 1) 2) x)\\\\n    (HAdd.hAdd.{0, 0, 0}\\\\n      (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 3) (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2))) x)\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_176/mathd_algebra_176.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":20},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1445,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_176\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (x : Real),\\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 1) 2) x)\\n    (HAdd.hAdd.{0, 0, 0}\\n      (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 3) (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2))) x)\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_176/mathd_algebra_176.lean",
+            "start": {
+              "column": 0,
+              "line": 20
+            },
+            "end": {
+              "column": 28,
+              "line": 20
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_algebra_176",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (x : Real),\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 1) 2) x)\n    (HAdd.hAdd.{0, 0, 0}\n      (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 3) (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2))) x)",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "mathd_algebra_362",
+      "method": "codex",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_362/mathd_algebra_362.lean",
+      "statementHash": "ffaebcc2b473c95c35696b6f02305969429409abef90bf822bef36ceea77f86f",
+      "sourceHash": "b213980b8ccfe0e0628f1362cba41785eaab9462c80989cbe32521231dd857f2",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_362",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (a b : Real),\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 3)) (32 / 27) →\n    Eq.{1} (HDiv.hDiv.{0, 0, 0} a (HPow.hPow.{0, 0, 0} b 3)) (27 / 4) → Eq.{1} (HAdd.hAdd.{0, 0, 0} a b) (8 / 3)",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_362\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (a b : Real),\\\\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 3)) (32 / 27) →\\\\n    Eq.{1} (HDiv.hDiv.{0, 0, 0} a (HPow.hPow.{0, 0, 0} b 3)) (27 / 4) → Eq.{1} (HAdd.hAdd.{0, 0, 0} a b) (8 / 3)\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":42},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_362/mathd_algebra_362.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":42},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 2151,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_362\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (a b : Real),\\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 3)) (32 / 27) →\\n    Eq.{1} (HDiv.hDiv.{0, 0, 0} a (HPow.hPow.{0, 0, 0} b 3)) (27 / 4) → Eq.{1} (HAdd.hAdd.{0, 0, 0} a b) (8 / 3)\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_362/mathd_algebra_362.lean",
+            "start": {
+              "column": 0,
+              "line": 42
+            },
+            "end": {
+              "column": 28,
+              "line": 42
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_algebra_362",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (a b : Real),\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 3)) (32 / 27) →\n    Eq.{1} (HDiv.hDiv.{0, 0, 0} a (HPow.hPow.{0, 0, 0} b 3)) (27 / 4) → Eq.{1} (HAdd.hAdd.{0, 0, 0} a b) (8 / 3)",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "mathd_algebra_440",
+      "method": "codex",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_440/mathd_algebra_440.lean",
+      "statementHash": "f552e35b4d709227034752041d8ad5326edca651a46bc2ff25cc2bc3424464c8",
+      "sourceHash": "433d3e2d12f81dadd6c9025570a0d9871c2413d6d81a810b721d36ee6a46f666",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_440",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (x : Real), Eq.{1} (HDiv.hDiv.{0, 0, 0} (3 / 2) 3) (HDiv.hDiv.{0, 0, 0} x 10) → Eq.{1} x 5",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_440\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (x : Real), Eq.{1} (HDiv.hDiv.{0, 0, 0} (3 / 2) 3) (HDiv.hDiv.{0, 0, 0} x 10) → Eq.{1} x 5\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":23},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_440/mathd_algebra_440.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":23},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1483,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_440\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (x : Real), Eq.{1} (HDiv.hDiv.{0, 0, 0} (3 / 2) 3) (HDiv.hDiv.{0, 0, 0} x 10) → Eq.{1} x 5\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_440/mathd_algebra_440.lean",
+            "start": {
+              "column": 0,
+              "line": 23
+            },
+            "end": {
+              "column": 28,
+              "line": 23
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_algebra_440",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (x : Real), Eq.{1} (HDiv.hDiv.{0, 0, 0} (3 / 2) 3) (HDiv.hDiv.{0, 0, 0} x 10) → Eq.{1} x 5",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "mathd_algebra_440",
+      "method": "deterministic-v2",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_440/mathd_algebra_440.lean",
+      "statementHash": "f552e35b4d709227034752041d8ad5326edca651a46bc2ff25cc2bc3424464c8",
+      "sourceHash": "60f6d6a1c362dbdf5c9aceb19d309be85003c8ec8a4e97157bbc6d7578fdaad0",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_440",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (x : Real), Eq.{1} (HDiv.hDiv.{0, 0, 0} (3 / 2) 3) (HDiv.hDiv.{0, 0, 0} x 10) → Eq.{1} x 5",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_440\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (x : Real), Eq.{1} (HDiv.hDiv.{0, 0, 0} (3 / 2) 3) (HDiv.hDiv.{0, 0, 0} x 10) → Eq.{1} x 5\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":25},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_440/mathd_algebra_440.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":25},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1543,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_440\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (x : Real), Eq.{1} (HDiv.hDiv.{0, 0, 0} (3 / 2) 3) (HDiv.hDiv.{0, 0, 0} x 10) → Eq.{1} x 5\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_440/mathd_algebra_440.lean",
+            "start": {
+              "column": 0,
+              "line": 25
+            },
+            "end": {
+              "column": 28,
+              "line": 25
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_algebra_440",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (x : Real), Eq.{1} (HDiv.hDiv.{0, 0, 0} (3 / 2) 3) (HDiv.hDiv.{0, 0, 0} x 10) → Eq.{1} x 5",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "mathd_algebra_432",
+      "method": "deterministic-v2",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/mathd_algebra_432.lean",
+      "statementHash": "42596a59d67be86018acaa2b74d5fde7b35c2d6df77275c20ac0dce8e22287cc",
+      "sourceHash": "3b9518040b90982f802f89116d13308b2427a069090c2e424319770328b34e0a",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_432",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (x : Real),\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_432\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (x : Real),\\\\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\\\\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/mathd_algebra_432.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":20},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1456,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_432\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (x : Real),\\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_432/mathd_algebra_432.lean",
+            "start": {
+              "column": 0,
+              "line": 20
+            },
+            "end": {
+              "column": 28,
+              "line": 20
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_algebra_432",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (x : Real),\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "mathd_algebra_432",
+      "method": "codex",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_432/mathd_algebra_432.lean",
+      "statementHash": "42596a59d67be86018acaa2b74d5fde7b35c2d6df77275c20ac0dce8e22287cc",
+      "sourceHash": "3b9518040b90982f802f89116d13308b2427a069090c2e424319770328b34e0a",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_432",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (x : Real),\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_432\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (x : Real),\\\\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\\\\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_432/mathd_algebra_432.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":20},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1457,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_432\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (x : Real),\\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_432/mathd_algebra_432.lean",
+            "start": {
+              "column": 0,
+              "line": 20
+            },
+            "end": {
+              "column": 28,
+              "line": 20
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_algebra_432",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (x : Real),\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x 3) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 x) 6))\n    (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} x 2)) 18)",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "mathd_algebra_288",
+      "method": "codex",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_288/mathd_algebra_288.lean",
+      "statementHash": "9b09ed492f0853c45514d3bbf45a99558c919e419a779b9be7aa5a7c7da2f4fc",
+      "sourceHash": "e0411f1ffa682f211f4b66438458990cd2717c6ce121b6037b3d0ee5cff79a5f",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_288",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (x y : Real) (n : NNReal),\n  And (LT.lt.{0} x 0) (LT.lt.{0} y 0) →\n    Eq.{1} (abs.{0} y) 6 →\n      Eq.{1}\n          (Real.sqrt\n            (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} x 8) 2)\n              (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} y 3) 2)))\n          15 →\n        Eq.{1} (Real.sqrt (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2))) (Real.sqrt ↑n) →\n          Eq.{1} n 52",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_288\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (x y : Real) (n : NNReal),\\\\n  And (LT.lt.{0} x 0) (LT.lt.{0} y 0) →\\\\n    Eq.{1} (abs.{0} y) 6 →\\\\n      Eq.{1}\\\\n          (Real.sqrt\\\\n            (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} x 8) 2)\\\\n              (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} y 3) 2)))\\\\n          15 →\\\\n        Eq.{1} (Real.sqrt (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2))) (Real.sqrt ↑n) →\\\\n          Eq.{1} n 52\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":41},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_288/mathd_algebra_288.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":41},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1778,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_288\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (x y : Real) (n : NNReal),\\n  And (LT.lt.{0} x 0) (LT.lt.{0} y 0) →\\n    Eq.{1} (abs.{0} y) 6 →\\n      Eq.{1}\\n          (Real.sqrt\\n            (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} x 8) 2)\\n              (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} y 3) 2)))\\n          15 →\\n        Eq.{1} (Real.sqrt (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2))) (Real.sqrt ↑n) →\\n          Eq.{1} n 52\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_288/mathd_algebra_288.lean",
+            "start": {
+              "column": 0,
+              "line": 41
+            },
+            "end": {
+              "column": 28,
+              "line": 41
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_algebra_288",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (x y : Real) (n : NNReal),\n  And (LT.lt.{0} x 0) (LT.lt.{0} y 0) →\n    Eq.{1} (abs.{0} y) 6 →\n      Eq.{1}\n          (Real.sqrt\n            (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} x 8) 2)\n              (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} y 3) 2)))\n          15 →\n        Eq.{1} (Real.sqrt (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2))) (Real.sqrt ↑n) →\n          Eq.{1} n 52",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "mathd_numbertheory_435",
+      "method": "codex",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_435/mathd_numbertheory_435.lean",
+      "statementHash": "3c6eebed1dea091b88a6a29916a3344564c439ac339e16b0de554c4f7fd63304",
+      "sourceHash": "4b20b03d37f426dbd8e865eb4a6850f35c914e3fb2e886d48dbfb49f689a73fb",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext"
+          ],
+          "declaration": "mathd_numbertheory_435",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (k : Nat),\n  LT.lt.{0} 0 k →\n    (∀ (n : Nat),\n        Eq.{1}\n          (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k) (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 3))\n          1) →\n      (∀ (n : Nat),\n          Eq.{1}\n            (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k)\n              (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 2))\n            1) →\n        (∀ (n : Nat),\n            Eq.{1}\n              (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k)\n                (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 1))\n              1) →\n          LE.le.{0} 5 k",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_435\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (k : Nat),\\\\n  LT.lt.{0} 0 k →\\\\n    (∀ (n : Nat),\\\\n        Eq.{1}\\\\n          (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k) (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 3))\\\\n          1) →\\\\n      (∀ (n : Nat),\\\\n          Eq.{1}\\\\n            (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k)\\\\n              (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 2))\\\\n            1) →\\\\n        (∀ (n : Nat),\\\\n            Eq.{1}\\\\n              (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k)\\\\n                (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 1))\\\\n              1) →\\\\n          LE.le.{0} 5 k\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":36},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_435/mathd_numbertheory_435.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":36},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1423,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\"],\"declaration\":\"mathd_numbertheory_435\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (k : Nat),\\n  LT.lt.{0} 0 k →\\n    (∀ (n : Nat),\\n        Eq.{1}\\n          (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k) (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 3))\\n          1) →\\n      (∀ (n : Nat),\\n          Eq.{1}\\n            (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k)\\n              (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 2))\\n            1) →\\n        (∀ (n : Nat),\\n            Eq.{1}\\n              (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k)\\n                (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 1))\\n              1) →\\n          LE.le.{0} 5 k\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_435/mathd_numbertheory_435.lean",
+            "start": {
+              "column": 0,
+              "line": 36
+            },
+            "end": {
+              "column": 33,
+              "line": 36
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "declaration": "mathd_numbertheory_435",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (k : Nat),\n  LT.lt.{0} 0 k →\n    (∀ (n : Nat),\n        Eq.{1}\n          (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k) (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 3))\n          1) →\n      (∀ (n : Nat),\n          Eq.{1}\n            (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k)\n              (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 2))\n            1) →\n        (∀ (n : Nat),\n            Eq.{1}\n              (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k)\n                (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 1))\n              1) →\n          LE.le.{0} 5 k",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "mathd_numbertheory_293",
+      "method": "codex",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_293/mathd_numbertheory_293.lean",
+      "statementHash": "2dd4b7d91927d5c02ea8291eaa4c2abba4d9c4a869e4672ed051b7a6ae3ce71b",
+      "sourceHash": "e57956c2b6ca648fac0234f395173fc4a82049908142515b1e855fa663fcb259",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext"
+          ],
+          "declaration": "mathd_numbertheory_293",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (n : Nat),\n  LE.le.{0} n 9 →\n    Dvd.dvd.{0} 11\n        (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 20 100) (HMul.hMul.{0, 0, 0} 10 n)) 7) →\n      Eq.{1} n 5",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_293\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (n : Nat),\\\\n  LE.le.{0} n 9 →\\\\n    Dvd.dvd.{0} 11\\\\n        (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 20 100) (HMul.hMul.{0, 0, 0} 10 n)) 7) →\\\\n      Eq.{1} n 5\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":23},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_293/mathd_numbertheory_293.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":23},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1407,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\"],\"declaration\":\"mathd_numbertheory_293\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (n : Nat),\\n  LE.le.{0} n 9 →\\n    Dvd.dvd.{0} 11\\n        (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 20 100) (HMul.hMul.{0, 0, 0} 10 n)) 7) →\\n      Eq.{1} n 5\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_293/mathd_numbertheory_293.lean",
+            "start": {
+              "column": 0,
+              "line": 23
+            },
+            "end": {
+              "column": 33,
+              "line": 23
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "declaration": "mathd_numbertheory_293",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (n : Nat),\n  LE.le.{0} n 9 →\n    Dvd.dvd.{0} 11\n        (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 20 100) (HMul.hMul.{0, 0, 0} 10 n)) 7) →\n      Eq.{1} n 5",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "mathd_numbertheory_293",
+      "method": "deterministic-v2",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_293/mathd_numbertheory_293.lean",
+      "statementHash": "2dd4b7d91927d5c02ea8291eaa4c2abba4d9c4a869e4672ed051b7a6ae3ce71b",
+      "sourceHash": "b26b72ddb636a660883383929dcad341118d2975876a0f2582e0ba8b7a383868",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_numbertheory_293",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (n : Nat),\n  LE.le.{0} n 9 →\n    Dvd.dvd.{0} 11\n        (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 20 100) (HMul.hMul.{0, 0, 0} 10 n)) 7) →\n      Eq.{1} n 5",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_293\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (n : Nat),\\\\n  LE.le.{0} n 9 →\\\\n    Dvd.dvd.{0} 11\\\\n        (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 20 100) (HMul.hMul.{0, 0, 0} 10 n)) 7) →\\\\n      Eq.{1} n 5\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":24},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_293/mathd_numbertheory_293.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":24},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1449,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Quot.sound\"],\"declaration\":\"mathd_numbertheory_293\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (n : Nat),\\n  LE.le.{0} n 9 →\\n    Dvd.dvd.{0} 11\\n        (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 20 100) (HMul.hMul.{0, 0, 0} 10 n)) 7) →\\n      Eq.{1} n 5\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_293/mathd_numbertheory_293.lean",
+            "start": {
+              "column": 0,
+              "line": 24
+            },
+            "end": {
+              "column": 33,
+              "line": 24
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_numbertheory_293",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (n : Nat),\n  LE.le.{0} n 9 →\n    Dvd.dvd.{0} 11\n        (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 20 100) (HMul.hMul.{0, 0, 0} 10 n)) 7) →\n      Eq.{1} n 5",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "mathd_numbertheory_447",
+      "method": "deterministic-v2",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/mathd_numbertheory_447.lean",
+      "statementHash": "9b1c13e3cf10814840e14584ae94bd3ea75a07dd4820631e14857548d50704eb",
+      "sourceHash": "1fe4b8c775cab6b104dcd258c07f4935219461936f93cf5824de2e90d725d576",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_numbertheory_447",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_447\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/mathd_numbertheory_447.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":20},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1442,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_numbertheory_447\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/mathd_numbertheory_447.lean",
+            "start": {
+              "column": 0,
+              "line": 20
+            },
+            "end": {
+              "column": 33,
+              "line": 20
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_numbertheory_447",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "mathd_numbertheory_447",
+      "method": "codex",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/mathd_numbertheory_447.lean",
+      "statementHash": "9b1c13e3cf10814840e14584ae94bd3ea75a07dd4820631e14857548d50704eb",
+      "sourceHash": "bb132a5dc2278a4eece1f5d3cfe6e233bed4562c7c6829b84a514302b114c035",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_numbertheory_447",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_447\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/mathd_numbertheory_447.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":20},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1442,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_numbertheory_447\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/mathd_numbertheory_447.lean",
+            "start": {
+              "column": 0,
+              "line": 20
+            },
+            "end": {
+              "column": 33,
+              "line": 20
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_numbertheory_447",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "mathd_numbertheory_247",
+      "method": "codex",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_247/mathd_numbertheory_247.lean",
+      "statementHash": "6ec427c8953c0f89a5254cbe6a5bd428aaea2226797390e30890b7ca01c9ba5c",
+      "sourceHash": "bde0fd7a4b5b50e5be63d5d5a75f9a8ca47e90b1491651d57394a7523b10d85d",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext"
+          ],
+          "declaration": "mathd_numbertheory_247",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (n : Nat), Eq.{1} (HMod.hMod.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 n) 11) 2 → Eq.{1} (HMod.hMod.{0, 0, 0} n 11) 8",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_247\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (n : Nat), Eq.{1} (HMod.hMod.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 n) 11) 2 → Eq.{1} (HMod.hMod.{0, 0, 0} n 11) 8\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":25},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_247/mathd_numbertheory_247.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":25},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1399,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\"],\"declaration\":\"mathd_numbertheory_247\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (n : Nat), Eq.{1} (HMod.hMod.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 n) 11) 2 → Eq.{1} (HMod.hMod.{0, 0, 0} n 11) 8\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_247/mathd_numbertheory_247.lean",
+            "start": {
+              "column": 0,
+              "line": 25
+            },
+            "end": {
+              "column": 33,
+              "line": 25
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "declaration": "mathd_numbertheory_247",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (n : Nat), Eq.{1} (HMod.hMod.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 n) 11) 2 → Eq.{1} (HMod.hMod.{0, 0, 0} n 11) 8",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "mathd_numbertheory_247",
+      "method": "deterministic-v2",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_247/mathd_numbertheory_247.lean",
+      "statementHash": "6ec427c8953c0f89a5254cbe6a5bd428aaea2226797390e30890b7ca01c9ba5c",
+      "sourceHash": "71878cf98f465ce636de737371a0ba22273aa7eedd2197b376a8e0ecb6cffc97",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_numbertheory_247",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (n : Nat), Eq.{1} (HMod.hMod.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 n) 11) 2 → Eq.{1} (HMod.hMod.{0, 0, 0} n 11) 8",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_247\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (n : Nat), Eq.{1} (HMod.hMod.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 n) 11) 2 → Eq.{1} (HMod.hMod.{0, 0, 0} n 11) 8\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_247/mathd_numbertheory_247.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":21},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1448,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Quot.sound\"],\"declaration\":\"mathd_numbertheory_247\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (n : Nat), Eq.{1} (HMod.hMod.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 n) 11) 2 → Eq.{1} (HMod.hMod.{0, 0, 0} n 11) 8\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_247/mathd_numbertheory_247.lean",
+            "start": {
+              "column": 0,
+              "line": 21
+            },
+            "end": {
+              "column": 33,
+              "line": 21
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_numbertheory_247",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (n : Nat), Eq.{1} (HMod.hMod.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 n) 11) 2 → Eq.{1} (HMod.hMod.{0, 0, 0} n 11) 8",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "mathd_numbertheory_582",
+      "method": "deterministic-v2",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_582/mathd_numbertheory_582.lean",
+      "statementHash": "4e86813c3a35e315777ed76ae641148ef2979772c78c87e88ca20d9335199130",
+      "sourceHash": "8e9c4b93259866012681fa0897e93b0bb29c5fe52ccec51d8a8bb798dbc3371b",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_numbertheory_582",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (n : Nat),\n  LT.lt.{0} 0 n →\n    Dvd.dvd.{0} 3 n →\n      Eq.{1}\n        (HMod.hMod.{0, 0, 0}\n          (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n 4) (HAdd.hAdd.{0, 0, 0} n 6))\n            (HAdd.hAdd.{0, 0, 0} n 8))\n          9)\n        0",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [
+          {
+            "severity": "warning",
+            "message": "unused variable `h₀`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_582/mathd_numbertheory_582.lean",
+            "start": {
+              "column": 3,
+              "line": 17
+            },
+            "end": {
+              "column": 5,
+              "line": 17
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"unused variable `h₀`\\n\\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\",\"endPos\":{\"column\":5,\"line\":17},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_582/mathd_numbertheory_582.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"linter.unusedVariables\",\"pos\":{\"column\":3,\"line\":17},\"severity\":\"warning\"}\n{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_582\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (n : Nat),\\\\n  LT.lt.{0} 0 n →\\\\n    Dvd.dvd.{0} 3 n →\\\\n      Eq.{1}\\\\n        (HMod.hMod.{0, 0, 0}\\\\n          (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n 4) (HAdd.hAdd.{0, 0, 0} n 6))\\\\n            (HAdd.hAdd.{0, 0, 0} n 8))\\\\n          9)\\\\n        0\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":22},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_582/mathd_numbertheory_582.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":22},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1422,
+        "diagnostics": [
+          {
+            "severity": "warning",
+            "message": "unused variable `h₀`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_582/mathd_numbertheory_582.lean",
+            "start": {
+              "column": 3,
+              "line": 17
+            },
+            "end": {
+              "column": 5,
+              "line": 17
+            },
+            "category": "compiler_error"
+          },
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Quot.sound\"],\"declaration\":\"mathd_numbertheory_582\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (n : Nat),\\n  LT.lt.{0} 0 n →\\n    Dvd.dvd.{0} 3 n →\\n      Eq.{1}\\n        (HMod.hMod.{0, 0, 0}\\n          (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n 4) (HAdd.hAdd.{0, 0, 0} n 6))\\n            (HAdd.hAdd.{0, 0, 0} n 8))\\n          9)\\n        0\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_582/mathd_numbertheory_582.lean",
+            "start": {
+              "column": 0,
+              "line": 22
+            },
+            "end": {
+              "column": 33,
+              "line": 22
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_numbertheory_582",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (n : Nat),\n  LT.lt.{0} 0 n →\n    Dvd.dvd.{0} 3 n →\n      Eq.{1}\n        (HMod.hMod.{0, 0, 0}\n          (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n 4) (HAdd.hAdd.{0, 0, 0} n 6))\n            (HAdd.hAdd.{0, 0, 0} n 8))\n          9)\n        0",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "mathd_numbertheory_582",
+      "method": "codex",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_582/mathd_numbertheory_582.lean",
+      "statementHash": "4e86813c3a35e315777ed76ae641148ef2979772c78c87e88ca20d9335199130",
+      "sourceHash": "430af80da0ab86006c2b4cf9fbbf181c34e23882747e8cded971c8fcd8ef8427",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext"
+          ],
+          "declaration": "mathd_numbertheory_582",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (n : Nat),\n  LT.lt.{0} 0 n →\n    Dvd.dvd.{0} 3 n →\n      Eq.{1}\n        (HMod.hMod.{0, 0, 0}\n          (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n 4) (HAdd.hAdd.{0, 0, 0} n 6))\n            (HAdd.hAdd.{0, 0, 0} n 8))\n          9)\n        0",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_582\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (n : Nat),\\\\n  LT.lt.{0} 0 n →\\\\n    Dvd.dvd.{0} 3 n →\\\\n      Eq.{1}\\\\n        (HMod.hMod.{0, 0, 0}\\\\n          (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n 4) (HAdd.hAdd.{0, 0, 0} n 6))\\\\n            (HAdd.hAdd.{0, 0, 0} n 8))\\\\n          9)\\\\n        0\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":25},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_582/mathd_numbertheory_582.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":25},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1405,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\"],\"declaration\":\"mathd_numbertheory_582\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (n : Nat),\\n  LT.lt.{0} 0 n →\\n    Dvd.dvd.{0} 3 n →\\n      Eq.{1}\\n        (HMod.hMod.{0, 0, 0}\\n          (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n 4) (HAdd.hAdd.{0, 0, 0} n 6))\\n            (HAdd.hAdd.{0, 0, 0} n 8))\\n          9)\\n        0\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_582/mathd_numbertheory_582.lean",
+            "start": {
+              "column": 0,
+              "line": 25
+            },
+            "end": {
+              "column": 33,
+              "line": 25
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "declaration": "mathd_numbertheory_582",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (n : Nat),\n  LT.lt.{0} 0 n →\n    Dvd.dvd.{0} 3 n →\n      Eq.{1}\n        (HMod.hMod.{0, 0, 0}\n          (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n 4) (HAdd.hAdd.{0, 0, 0} n 6))\n            (HAdd.hAdd.{0, 0, 0} n 8))\n          9)\n        0",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "mathd_numbertheory_229",
+      "method": "codex",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_229/mathd_numbertheory_229.lean",
+      "statementHash": "e65b1b2e78ea0c55713b61c4585006966c4ef12a82ae2207a9de89c1e0a24aaa",
+      "sourceHash": "d6c2d680ca6798b0f88298a6f263d9bef31c20d84f105e8473dfcf837a5b33fd",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_numbertheory_229",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "Eq.{1} (HMod.hMod.{0, 0, 0} (HPow.hPow.{0, 0, 0} 5 30) 7) 1",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_229\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"Eq.{1} (HMod.hMod.{0, 0, 0} (HPow.hPow.{0, 0, 0} 5 30) 7) 1\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_229/mathd_numbertheory_229.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":19},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1398,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_numbertheory_229\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"Eq.{1} (HMod.hMod.{0, 0, 0} (HPow.hPow.{0, 0, 0} 5 30) 7) 1\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_229/mathd_numbertheory_229.lean",
+            "start": {
+              "column": 0,
+              "line": 19
+            },
+            "end": {
+              "column": 33,
+              "line": 19
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_numbertheory_229",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "Eq.{1} (HMod.hMod.{0, 0, 0} (HPow.hPow.{0, 0, 0} 5 30) 7) 1",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "mathd_numbertheory_229",
+      "method": "deterministic-v2",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_229/mathd_numbertheory_229.lean",
+      "statementHash": "e65b1b2e78ea0c55713b61c4585006966c4ef12a82ae2207a9de89c1e0a24aaa",
+      "sourceHash": "183a1499d70247b445fa805aa85312f2cab382ebb6f376fafce2cf7e6f3f80c3",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext"
+          ],
+          "declaration": "mathd_numbertheory_229",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "Eq.{1} (HMod.hMod.{0, 0, 0} (HPow.hPow.{0, 0, 0} 5 30) 7) 1",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_229\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"Eq.{1} (HMod.hMod.{0, 0, 0} (HPow.hPow.{0, 0, 0} 5 30) 7) 1\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_229/mathd_numbertheory_229.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":19},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1398,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\"],\"declaration\":\"mathd_numbertheory_229\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"Eq.{1} (HMod.hMod.{0, 0, 0} (HPow.hPow.{0, 0, 0} 5 30) 7) 1\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_229/mathd_numbertheory_229.lean",
+            "start": {
+              "column": 0,
+              "line": 19
+            },
+            "end": {
+              "column": 33,
+              "line": 19
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "declaration": "mathd_numbertheory_229",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "Eq.{1} (HMod.hMod.{0, 0, 0} (HPow.hPow.{0, 0, 0} 5 30) 7) 1",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "mathd_numbertheory_212",
+      "method": "deterministic-v2",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_212/mathd_numbertheory_212.lean",
+      "statementHash": "86416300c5c7532c9fbbd9eb67704eb072dee3e7c667b8ee7a89698f70e62167",
+      "sourceHash": "b750cd9509c85f37a2fbdb04085e500de4a0c04800ba40560f5e567670958fd1",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext"
+          ],
+          "declaration": "mathd_numbertheory_212",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "Eq.{1}\n  (HMod.hMod.{0, 0, 0}\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 16 17) (HPow.hPow.{0, 0, 0} 17 18))\n      (HPow.hPow.{0, 0, 0} 18 19))\n    10)\n  8",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_212\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"Eq.{1}\\\\n  (HMod.hMod.{0, 0, 0}\\\\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 16 17) (HPow.hPow.{0, 0, 0} 17 18))\\\\n      (HPow.hPow.{0, 0, 0} 18 19))\\\\n    10)\\\\n  8\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_212/mathd_numbertheory_212.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":19},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1462,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\"],\"declaration\":\"mathd_numbertheory_212\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"Eq.{1}\\n  (HMod.hMod.{0, 0, 0}\\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 16 17) (HPow.hPow.{0, 0, 0} 17 18))\\n      (HPow.hPow.{0, 0, 0} 18 19))\\n    10)\\n  8\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_212/mathd_numbertheory_212.lean",
+            "start": {
+              "column": 0,
+              "line": 19
+            },
+            "end": {
+              "column": 33,
+              "line": 19
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "declaration": "mathd_numbertheory_212",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "Eq.{1}\n  (HMod.hMod.{0, 0, 0}\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 16 17) (HPow.hPow.{0, 0, 0} 17 18))\n      (HPow.hPow.{0, 0, 0} 18 19))\n    10)\n  8",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "mathd_numbertheory_212",
+      "method": "codex",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_212/mathd_numbertheory_212.lean",
+      "statementHash": "86416300c5c7532c9fbbd9eb67704eb072dee3e7c667b8ee7a89698f70e62167",
+      "sourceHash": "2d5a8999763b790a7115b594a0caec846ca3a1e4fcd658bac9a102df3b59a46f",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_numbertheory_212",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "Eq.{1}\n  (HMod.hMod.{0, 0, 0}\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 16 17) (HPow.hPow.{0, 0, 0} 17 18))\n      (HPow.hPow.{0, 0, 0} 18 19))\n    10)\n  8",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_212\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"Eq.{1}\\\\n  (HMod.hMod.{0, 0, 0}\\\\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 16 17) (HPow.hPow.{0, 0, 0} 17 18))\\\\n      (HPow.hPow.{0, 0, 0} 18 19))\\\\n    10)\\\\n  8\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_212/mathd_numbertheory_212.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":19},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1404,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_numbertheory_212\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"Eq.{1}\\n  (HMod.hMod.{0, 0, 0}\\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 16 17) (HPow.hPow.{0, 0, 0} 17 18))\\n      (HPow.hPow.{0, 0, 0} 18 19))\\n    10)\\n  8\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_212/mathd_numbertheory_212.lean",
+            "start": {
+              "column": 0,
+              "line": 19
+            },
+            "end": {
+              "column": 33,
+              "line": 19
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_numbertheory_212",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "Eq.{1}\n  (HMod.hMod.{0, 0, 0}\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 16 17) (HPow.hPow.{0, 0, 0} 17 18))\n      (HPow.hPow.{0, 0, 0} 18 19))\n    10)\n  8",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "mathd_numbertheory_521",
+      "method": "codex",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_521/mathd_numbertheory_521.lean",
+      "statementHash": "c4ddd5c788d9e1fbf7f890fb7f156434cc9d5e5eefdcd4f306bd4cf28789fc1b",
+      "sourceHash": "045a190893d1b22a7359ea0aa5b63b5bf8e6feb34cda11af3950823f0176c5cb",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_numbertheory_521",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (m n : Nat),\n  Even.{0} m → Even.{0} n → Eq.{1} (HSub.hSub.{0, 0, 0} m n) 2 → Eq.{1} (HMul.hMul.{0, 0, 0} m n) 288 → Eq.{1} m 18",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [
+          {
+            "severity": "warning",
+            "message": "unused variable `h₀`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_521/mathd_numbertheory_521.lean",
+            "start": {
+              "column": 3,
+              "line": 18
+            },
+            "end": {
+              "column": 5,
+              "line": 18
+            },
+            "category": "compiler_error"
+          },
+          {
+            "severity": "warning",
+            "message": "unused variable `h₁`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_521/mathd_numbertheory_521.lean",
+            "start": {
+              "column": 3,
+              "line": 19
+            },
+            "end": {
+              "column": 5,
+              "line": 19
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"unused variable `h₀`\\n\\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\",\"endPos\":{\"column\":5,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_521/mathd_numbertheory_521.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"linter.unusedVariables\",\"pos\":{\"column\":3,\"line\":18},\"severity\":\"warning\"}\n{\"caption\":\"\",\"data\":\"unused variable `h₁`\\n\\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\",\"endPos\":{\"column\":5,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_521/mathd_numbertheory_521.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"linter.unusedVariables\",\"pos\":{\"column\":3,\"line\":19},\"severity\":\"warning\"}\n{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_521\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (m n : Nat),\\\\n  Even.{0} m → Even.{0} n → Eq.{1} (HSub.hSub.{0, 0, 0} m n) 2 → Eq.{1} (HMul.hMul.{0, 0, 0} m n) 288 → Eq.{1} m 18\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":32},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_521/mathd_numbertheory_521.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":32},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1452,
+        "diagnostics": [
+          {
+            "severity": "warning",
+            "message": "unused variable `h₀`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_521/mathd_numbertheory_521.lean",
+            "start": {
+              "column": 3,
+              "line": 18
+            },
+            "end": {
+              "column": 5,
+              "line": 18
+            },
+            "category": "compiler_error"
+          },
+          {
+            "severity": "warning",
+            "message": "unused variable `h₁`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_521/mathd_numbertheory_521.lean",
+            "start": {
+              "column": 3,
+              "line": 19
+            },
+            "end": {
+              "column": 5,
+              "line": 19
+            },
+            "category": "compiler_error"
+          },
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_numbertheory_521\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (m n : Nat),\\n  Even.{0} m → Even.{0} n → Eq.{1} (HSub.hSub.{0, 0, 0} m n) 2 → Eq.{1} (HMul.hMul.{0, 0, 0} m n) 288 → Eq.{1} m 18\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_521/mathd_numbertheory_521.lean",
+            "start": {
+              "column": 0,
+              "line": 32
+            },
+            "end": {
+              "column": 33,
+              "line": 32
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_numbertheory_521",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (m n : Nat),\n  Even.{0} m → Even.{0} n → Eq.{1} (HSub.hSub.{0, 0, 0} m n) 2 → Eq.{1} (HMul.hMul.{0, 0, 0} m n) 288 → Eq.{1} m 18",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "induction_1pxpownlt1pnx",
+      "method": "codex",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_1pxpownlt1pnx/induction_1pxpownlt1pnx.lean",
+      "statementHash": "b11adcd9b7722ad60515f6259d3aec22ebede2952086b52ed1c597bc1e3a4aa0",
+      "sourceHash": "5f14cb07c1e8390cde08c74a6489f78055702ea57a924106888d483fa6c3d76a",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "induction_1pxpownlt1pnx",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (x : Real) (n : Nat),\n  LT.lt.{0} (-1) x →\n    LT.lt.{0} 0 n →\n      LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n) x)) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n)",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [
+          {
+            "severity": "warning",
+            "message": "unused variable `h₁`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_1pxpownlt1pnx/induction_1pxpownlt1pnx.lean",
+            "start": {
+              "column": 3,
+              "line": 19
+            },
+            "end": {
+              "column": 5,
+              "line": 19
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"unused variable `h₁`\\n\\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\",\"endPos\":{\"column\":5,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_1pxpownlt1pnx/induction_1pxpownlt1pnx.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"linter.unusedVariables\",\"pos\":{\"column\":3,\"line\":19},\"severity\":\"warning\"}\n{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"induction_1pxpownlt1pnx\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (x : Real) (n : Nat),\\\\n  LT.lt.{0} (-1) x →\\\\n    LT.lt.{0} 0 n →\\\\n      LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n) x)) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n)\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":34,\"line\":35},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_1pxpownlt1pnx/induction_1pxpownlt1pnx.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":35},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1535,
+        "diagnostics": [
+          {
+            "severity": "warning",
+            "message": "unused variable `h₁`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_1pxpownlt1pnx/induction_1pxpownlt1pnx.lean",
+            "start": {
+              "column": 3,
+              "line": 19
+            },
+            "end": {
+              "column": 5,
+              "line": 19
+            },
+            "category": "compiler_error"
+          },
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"induction_1pxpownlt1pnx\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (x : Real) (n : Nat),\\n  LT.lt.{0} (-1) x →\\n    LT.lt.{0} 0 n →\\n      LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n) x)) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n)\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_1pxpownlt1pnx/induction_1pxpownlt1pnx.lean",
+            "start": {
+              "column": 0,
+              "line": 35
+            },
+            "end": {
+              "column": 34,
+              "line": 35
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "induction_1pxpownlt1pnx",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (x : Real) (n : Nat),\n  LT.lt.{0} (-1) x →\n    LT.lt.{0} 0 n →\n      LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n) x)) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n)",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "induction_12dvd4expnp1p20",
+      "method": "codex",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/induction_12dvd4expnp1p20.lean",
+      "statementHash": "22f695628ea61707de275e862f712170ee3a766bf28fa38dfcb6a1ad74f03dee",
+      "sourceHash": "e9732163e24d74e447d936a4c1d961f8e56fb6833c5b1b54ea713b1e96f60f9f",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext"
+          ],
+          "declaration": "induction_12dvd4expnp1p20",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (n : Nat), Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\"],\\\"declaration\\\":\\\"induction_12dvd4expnp1p20\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (n : Nat), Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":36,\"line\":32},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/induction_12dvd4expnp1p20.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":32},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1429,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\"],\"declaration\":\"induction_12dvd4expnp1p20\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (n : Nat), Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/induction_12dvd4expnp1p20.lean",
+            "start": {
+              "column": 0,
+              "line": 32
+            },
+            "end": {
+              "column": 36,
+              "line": 32
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "declaration": "induction_12dvd4expnp1p20",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (n : Nat), Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "induction_12dvd4expnp1p20",
+      "method": "deterministic-v2",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/induction_12dvd4expnp1p20.lean",
+      "statementHash": "22f695628ea61707de275e862f712170ee3a766bf28fa38dfcb6a1ad74f03dee",
+      "sourceHash": "e92611bc75080858c25c2d2dc38d72d3fa017097dd19726a2d498e1911c97973",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "induction_12dvd4expnp1p20",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (n : Nat), Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":8,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/induction_12dvd4expnp1p20.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":20},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"induction_12dvd4expnp1p20\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (n : Nat), Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":36,\"line\":28},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/induction_12dvd4expnp1p20.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":28},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1475,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/induction_12dvd4expnp1p20.lean",
+            "start": {
+              "column": 4,
+              "line": 20
+            },
+            "end": {
+              "column": 8,
+              "line": 20
+            },
+            "category": "compiler_error"
+          },
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"induction_12dvd4expnp1p20\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (n : Nat), Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/induction_12dvd4expnp1p20.lean",
+            "start": {
+              "column": 0,
+              "line": 28
+            },
+            "end": {
+              "column": 36,
+              "line": 28
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "induction_12dvd4expnp1p20",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (n : Nat), Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "induction_11div10tonmn1ton",
+      "method": "codex",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/induction_11div10tonmn1ton.lean",
+      "statementHash": "0acf47acc53d68423cae774f58e03263b982baf3afa7e7eef50c182854542b51",
+      "sourceHash": "d415fe5c410adf06a55bcabee7d8973997162facc8e0d433a44d8a11ca71af86",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "declaration": "induction_11div10tonmn1ton",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (n : Nat), Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"induction_11div10tonmn1ton\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (n : Nat), Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":37,\"line\":30},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/induction_11div10tonmn1ton.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":30},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1464,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Quot.sound\"],\"declaration\":\"induction_11div10tonmn1ton\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (n : Nat), Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/induction_11div10tonmn1ton.lean",
+            "start": {
+              "column": 0,
+              "line": 30
+            },
+            "end": {
+              "column": 37,
+              "line": 30
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "declaration": "induction_11div10tonmn1ton",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (n : Nat), Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    },
+    {
+      "id": "induction_11div10tonmn1ton",
+      "method": "deterministic-v2",
+      "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_11div10tonmn1ton/induction_11div10tonmn1ton.lean",
+      "statementHash": "0acf47acc53d68423cae774f58e03263b982baf3afa7e7eef50c182854542b51",
+      "sourceHash": "7a2860bbcade1a0f8cfdbb8ecb22d9bda98d576be50475e20055fc5bd5ad91ad",
+      "zeroPlaceholders": true,
+      "status": "VERIFIED",
+      "independentlyCompiled": true,
+      "sourceUnchanged": true,
+      "assessment": {
+        "accepted": true,
+        "reason": null,
+        "audit": {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "induction_11div10tonmn1ton",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (n : Nat), Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))",
+          "universe_parameters": [],
+          "version": 1
+        },
+        "policy": "lean-kernel-v2-unused-variable-lint",
+        "permittedWarnings": [],
+        "rejectedWarnings": []
+      },
+      "compiler": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "launchError": null,
+        "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":6,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_11div10tonmn1ton/induction_11div10tonmn1ton.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"induction_11div10tonmn1ton\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (n : Nat), Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":37,\"line\":32},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_11div10tonmn1ton/induction_11div10tonmn1ton.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":32},\"severity\":\"information\"}\n",
+        "stderr": "",
+        "truncated": false,
+        "elapsedMs": 1548,
+        "diagnostics": [
+          {
+            "severity": "information",
+            "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_11div10tonmn1ton/induction_11div10tonmn1ton.lean",
+            "start": {
+              "column": 2,
+              "line": 18
+            },
+            "end": {
+              "column": 6,
+              "line": 18
+            },
+            "category": "compiler_error"
+          },
+          {
+            "severity": "information",
+            "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"induction_11div10tonmn1ton\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (n : Nat), Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))\",\"universe_parameters\":[],\"version\":1}",
+            "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_11div10tonmn1ton/induction_11div10tonmn1ton.lean",
+            "start": {
+              "column": 0,
+              "line": 32
+            },
+            "end": {
+              "column": 37,
+              "line": 32
+            },
+            "category": "compiler_error"
+          }
+        ],
+        "states": [],
+        "closed": [],
+        "audits": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "induction_11div10tonmn1ton",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (n : Nat), Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))",
+            "universe_parameters": [],
+            "version": 1
+          }
+        ],
+        "unparsed": []
+      }
+    }
+  ]
+}

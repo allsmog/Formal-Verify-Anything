@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"linarith failed to find a contradiction\\ncase h\\nx : ℝ\\nn : ℕ\\nh₀ : -1 < x\\nh₁ : 0 < n\\na✝ : (1 + x) ^ n < 1 + ↑n * x\\n⊢ False\\nfailed\",\"endPos\":{\"column\":11,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0009-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":21},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "linarith failed to find a contradiction\ncase h\nx : ℝ\nn : ℕ\nh₀ : -1 < x\nh₁ : 0 < n\na✝ : (1 + x) ^ n < 1 + ↑n * x\n⊢ False\nfailed",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0009-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 21
+      },
+      "end": {
+        "column": 11,
+        "line": 21
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 9,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "8c1b1ad32517c3a5bb17b59ce8c03a5b19a1e555dc08c8c335c7d21c102c0eb2",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 40,
+    "elaborationMs": 61,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 103,
+  "sequence": 9,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0009-candidate.lean",
+  "sourceHash": "cecc942b86fee85dd92ca3af18e594ce0d3395e307ee1e32c849044832ad8bea",
+  "evidenceId": "ev_42824b265509e7a7cf6d446329b234942064747962ddfb06b30e583a39c434e5"
+}

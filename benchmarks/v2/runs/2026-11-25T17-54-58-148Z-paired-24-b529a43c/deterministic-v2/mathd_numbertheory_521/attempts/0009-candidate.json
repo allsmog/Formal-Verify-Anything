@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"linarith failed to find a contradiction\\ncase h1.h\\nm n : ℕ\\nh₀ : Even m\\nh₁ : Even n\\nh₂ : m - n = 2\\nh₃ : m * n = 288\\na✝ : m < 18\\n⊢ False\\nfailed\",\"endPos\":{\"column\":11,\"line\":23},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0009-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":23},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "linarith failed to find a contradiction\ncase h1.h\nm n : ℕ\nh₀ : Even m\nh₁ : Even n\nh₂ : m - n = 2\nh₃ : m * n = 288\na✝ : m < 18\n⊢ False\nfailed",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0009-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 23
+      },
+      "end": {
+        "column": 11,
+        "line": 23
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 9,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "4f99d4fca1fe2249fb3da695bfda59912ecd6aa595df3395135b5cb5742adf08",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 38,
+    "elaborationMs": 68,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 107,
+  "sequence": 9,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0009-candidate.lean",
+  "sourceHash": "94cab612d8238ddbca05c3834d035649d701e0afd1a2a477c1cededba3e22cd4",
+  "evidenceId": "ev_39c35e6fdc23d4f397834db037b0d444a8bd9f9762393a11c5dc298e735102db"
+}

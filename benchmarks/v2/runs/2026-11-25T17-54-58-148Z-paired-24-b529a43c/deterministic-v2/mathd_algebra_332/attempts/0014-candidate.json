@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\nx y : ℝ\\nh₁ : √(x * y) = √19\\nh₀ : x + y = 2 * 7\\n⊢ x ^ 2 + y ^ 2 = 158\",\"endPos\":{\"column\":14,\"line\":23},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0014-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":23},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\nx y : ℝ\nh₁ : √(x * y) = √19\nh₀ : x + y = 2 * 7\n⊢ x ^ 2 + y ^ 2 = 158",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0014-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 23
+      },
+      "end": {
+        "column": 14,
+        "line": 23
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 14,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "261b66e12338d790dfc4c2cbe3347e43c18653db090f5c233703881622f88e39",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 67,
+    "elaborationMs": 32,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 101,
+  "sequence": 14,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0014-candidate.lean",
+  "sourceHash": "7dbb3cebcda68ae4c5f06553e266074ee56e176fb5bc06f28c5552e98e4255ac",
+  "evidenceId": "ev_737445eb1d4142c3882cee133d1d3d1b2252ebef7d80b54a16d9cb112487086e"
+}

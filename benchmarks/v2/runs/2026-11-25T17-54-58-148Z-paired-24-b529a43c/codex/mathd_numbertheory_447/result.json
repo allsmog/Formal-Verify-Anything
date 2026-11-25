@@ -1,0 +1,582 @@
+{
+  "id": "mathd_numbertheory_447",
+  "tier": 2,
+  "status": "SOLVED",
+  "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/mathd_numbertheory_447.lean",
+  "engineVersion": "fva-search-v2",
+  "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+  "statementHash": "9b1c13e3cf10814840e14584ae94bd3ea75a07dd4820631e14857548d50704eb",
+  "provenance": {
+    "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+    "split": "test",
+    "repository": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+    "path": "MiniF2F/Test/mathd_numbertheory_447.lean",
+    "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_numbertheory_447.lean",
+    "sourceFileSha256": "e076866dfbe04384528a5db0157dc818c605053c902234a538769dace2942dca",
+    "statementSha256": "9b1c13e3cf10814840e14584ae94bd3ea75a07dd4820631e14857548d50704eb",
+    "originalImports": [
+      "Mathlib"
+    ],
+    "originalOpens": [
+      "BigOperators Real Nat Topology Rat"
+    ],
+    "selectionRankWithinStratum": 3,
+    "selectionKeySha256": "171b815ac7b22149c8fcb62ee81184b04c0e2566c96684ca7029e89773abf86a",
+    "executionProfileSha256": "5265e241c25e5d1653c558148653058824c93265f8d52d800428481936a2cab1",
+    "executionImportReason": "finite sums/products and the original range or Icc notation"
+  },
+  "metrics": {
+    "compilerCalls": 4,
+    "steps": 1,
+    "maxDepth": 0,
+    "elapsedMs": 49304,
+    "firstCandidateSolved": true,
+    "modelTokens": 18460,
+    "modelTokensKnown": 18460,
+    "modelUsageComplete": true,
+    "proposerCalls": 1,
+    "finalCandidates": 1
+  },
+  "budget": {
+    "maxCompilerCalls": 64,
+    "maxSteps": 64,
+    "maxProposalRounds": 3,
+    "maxDepth": 8,
+    "callTimeoutMs": 30000,
+    "theoremTimeoutMs": 300000,
+    "heartbeats": 200000,
+    "maxModelTokens": 50000
+  },
+  "policy": "codex-v1",
+  "failure": null,
+  "exploration": {
+    "backend": "lean-persistent-v1",
+    "cleanup": {
+      "ownership": "engine",
+      "status": "closed"
+    }
+  },
+  "verification": {
+    "statementHash": "9b1c13e3cf10814840e14584ae94bd3ea75a07dd4820631e14857548d50704eb",
+    "sourceHash": "bb132a5dc2278a4eece1f5d3cfe6e233bed4562c7c6829b84a514302b114c035",
+    "zeroPlaceholders": true,
+    "exitCode": 0,
+    "audit": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "mathd_numbertheory_447",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+      "universe_parameters": [],
+      "version": 1
+    },
+    "compileEvidence": [
+      "ev_36f49eca869cc714957d3b90ea94c50c5dbe5ba0c048b0a400da5fe050089710",
+      "ev_b5fe4fd842b39a2c915e8e7fd9c218ebb5f5b3e147fb624c558e49977a34174d"
+    ],
+    "standaloneRecheck": true,
+    "policy": "lean-kernel-v2-unused-variable-lint",
+    "warnings": []
+  },
+  "tree": {
+    "finalPlan": {
+      "id": "n0",
+      "depth": 0,
+      "kind": "tactic",
+      "children": [],
+      "tactic": "decide"
+    },
+    "nodes": [
+      {
+        "id": "n0",
+        "visit": 0,
+        "depth": 0,
+        "stateHash": "54d391f903710bb0d0b0c9b4a1d551038933dd48c2fcb110b746402df00cb76d",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [],
+          "id": "_uniq.1259",
+          "omitted_implementation_details": 1,
+          "pretty": "⊢ Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+          "target": "Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+          "targetArgs": [
+            "Nat",
+            "∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10",
+            "78"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        },
+        "status": "VERIFIED_IN_FINAL_PROOF",
+        "evidenceId": "ev_6550be23c6e2b1322b531203de8a98a52ba535db72c62d0234d758b76438ec48"
+      }
+    ],
+    "branches": [
+      {
+        "parent": "n0",
+        "visit": 0,
+        "stateHash": "54d391f903710bb0d0b0c9b4a1d551038933dd48c2fcb110b746402df00cb76d",
+        "proposal": {
+          "kind": "tactic",
+          "tactic": "decide"
+        },
+        "beforeHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a",
+        "status": "RETAINED",
+        "children": [],
+        "evidenceId": "ev_a10d55782db400417496d65cb5c71152bd1040ec969882ba243dc37084795f14"
+      }
+    ]
+  },
+  "finalCandidates": [
+    {
+      "id": "c0",
+      "planHash": "e407066c43067eb017660dfdd656f609d9e0c0c70ff763bb733a7f7393b326f1",
+      "status": "ACCEPTED",
+      "policy": "lean-kernel-v2-unused-variable-lint",
+      "evidenceIds": [
+        "ev_36f49eca869cc714957d3b90ea94c50c5dbe5ba0c048b0a400da5fe050089710",
+        "ev_b5fe4fd842b39a2c915e8e7fd9c218ebb5f5b3e147fb624c558e49977a34174d"
+      ],
+      "sourceHash": "bb132a5dc2278a4eece1f5d3cfe6e233bed4562c7c6829b84a514302b114c035",
+      "explorationSuspension": {
+        "status": "SUSPENDED",
+        "elapsedMs": 86
+      },
+      "checks": [
+        {
+          "kind": "final",
+          "evidenceId": "ev_36f49eca869cc714957d3b90ea94c50c5dbe5ba0c048b0a400da5fe050089710",
+          "accepted": true,
+          "reason": null,
+          "audit": {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_numbertheory_447",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": []
+        },
+        {
+          "kind": "recheck",
+          "evidenceId": "ev_b5fe4fd842b39a2c915e8e7fd9c218ebb5f5b3e147fb624c558e49977a34174d",
+          "accepted": true,
+          "reason": null,
+          "audit": {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declaration": "mathd_numbertheory_447",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": []
+        }
+      ],
+      "reason": null
+    }
+  ],
+  "proposerCalls": [
+    {
+      "id": "p0",
+      "nodeId": "n0",
+      "stateHash": "54d391f903710bb0d0b0c9b4a1d551038933dd48c2fcb110b746402df00cb76d",
+      "round": 0,
+      "requestDigest": "d8c34f747b2ab8c2e09c7f3475c1daa0d1970ae43850e574c1a1888a4012db64",
+      "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/proposals/0001-context.json",
+      "modelTokens": 18460,
+      "usageKnown": true,
+      "tokenBudgetExceeded": false,
+      "policy": "codex-v1",
+      "provider": "codex-cli",
+      "usage": {
+        "input_tokens": 16327,
+        "output_tokens": 2133,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 1807
+      },
+      "metadata": {
+        "provider": "codex-cli",
+        "model": null,
+        "modelSelection": "codex-configured-default",
+        "promptDigest": "02c90810b26fab77c62c13edfbd4a037b80179877b5d375ffca7c675c0485b58",
+        "promptVersion": 1,
+        "toolPolicy": "disabled",
+        "ephemeral": true,
+        "cliVersion": "codex-cli 0.171.0",
+        "eventTypes": [
+          "thread.started",
+          "turn.started",
+          "item.completed",
+          "turn.completed"
+        ],
+        "responseDigest": "98d86adfe02db3d39754b582ba4130f3a19eab644b01c8c37469d4d483728d97",
+        "providerErrors": [],
+        "elapsedMs": 38022,
+        "exitCode": 0,
+        "signal": null,
+        "stdoutDigest": "98d86adfe02db3d39754b582ba4130f3a19eab644b01c8c37469d4d483728d97",
+        "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderrDiagnostic": ""
+      },
+      "proposals": [
+        {
+          "kind": "tactic",
+          "tactic": "decide"
+        },
+        {
+          "kind": "tactic",
+          "tactic": "decide +kernel"
+        },
+        {
+          "kind": "tactic",
+          "tactic": "rfl"
+        },
+        {
+          "kind": "tactic",
+          "tactic": "have h : (Finset.Icc 1 49).filter (fun k : ℕ => 3 ∣ k) = (Finset.range 50).filter (fun k : ℕ => 1 ≤ k ∧ 3 ∣ k) := by\n  ext k\n  simp only [Finset.mem_filter, Finset.mem_Icc, Finset.mem_range]\n  omega\nrw [h, Finset.sum_filter]\nnorm_num [Finset.sum_range_succ]"
+        },
+        {
+          "kind": "tactic",
+          "tactic": "have h : (Finset.Icc 1 49).filter (fun k : ℕ => 3 ∣ k) = ({3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48} : Finset ℕ) := by\n  ext k\n  simp only [Finset.mem_filter, Finset.mem_Icc, Finset.mem_insert, Finset.mem_singleton, Nat.dvd_iff_mod_eq_zero]\n  omega\nrw [h]\ndecide"
+        }
+      ],
+      "status": "RETURNED",
+      "elapsedMs": 38024,
+      "evidenceId": "ev_67537bd622b8ea3f10782b119cb886e51ac3ed693f363eef1a23a4ea2e62d3cc"
+    }
+  ],
+  "attempts": [
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[],\\\"id\\\":\\\"_uniq.1259\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"⊢ Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\\\",\\\"target\\\":\\\"Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10\\\",\\\"78\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":16,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[],\"id\":\"_uniq.1259\",\"omitted_implementation_details\":1,\"pretty\":\"⊢ Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\",\"target\":\"Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\",\"targetArgs\":[\"Nat\",\"∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10\",\"78\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 18
+          },
+          "end": {
+            "column": 16,
+            "line": 18
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 18
+          },
+          "end": {
+            "column": 16,
+            "line": 18
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [],
+              "id": "_uniq.1259",
+              "omitted_implementation_details": 1,
+              "pretty": "⊢ Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+              "target": "Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+              "targetArgs": [
+                "Nat",
+                "∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10",
+                "78"
+              ],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 1,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "77c20f4102c3c5e97bc11b2b1e72aef103696b957ad76e7a261d9b2b24438b44",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": false,
+        "importMs": 2642,
+        "elaborationMs": 103,
+        "artifactCount": 10204
+      },
+      "elapsedMs": 4934,
+      "sequence": 1,
+      "kind": "state",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/attempts/0001-state.lean",
+      "sourceHash": "4d2d5f79305d4e7b675842fe4345a8847af9317588df2051948f423ca7558e81",
+      "evidenceId": "ev_6550be23c6e2b1322b531203de8a98a52ba535db72c62d0234d758b76438ec48"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":15,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_CLOSED:{\\\"node_id\\\":\\\"n0\\\"}\",\"endPos\":{\"column\":15,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":15,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[],\"node_id\":\"n0\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/attempts/0002-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 19
+          },
+          "end": {
+            "column": 15,
+            "line": 19
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_CLOSED:{\"node_id\":\"n0\"}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/attempts/0002-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 19
+          },
+          "end": {
+            "column": 15,
+            "line": 19
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/attempts/0002-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 19
+          },
+          "end": {
+            "column": 15,
+            "line": 19
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [
+        {
+          "node_id": "n0"
+        }
+      ],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 2,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "9a5e2cde4694a9685ac1d72ffe086402a422dbe7cde62efc0a021486b5560d58",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 34,
+        "elaborationMs": 34,
+        "artifactCount": 10204
+      },
+      "elapsedMs": 70,
+      "sequence": 2,
+      "kind": "candidate",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/attempts/0002-candidate.lean",
+      "sourceHash": "724f1ba1192ec968fa9ddefdf779bc20e5e44b06fc888b69789f7c10fc964f7b",
+      "evidenceId": "ev_a10d55782db400417496d65cb5c71152bd1040ec969882ba243dc37084795f14"
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_447\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/attempts/0003-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":20},\"severity\":\"information\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 3437,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_numbertheory_447\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\",\"universe_parameters\":[],\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/attempts/0003-final.lean",
+          "start": {
+            "column": 0,
+            "line": 20
+          },
+          "end": {
+            "column": 33,
+            "line": 20
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_numbertheory_447",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+          "universe_parameters": [],
+          "version": 1
+        }
+      ],
+      "unparsed": [],
+      "sequence": 3,
+      "kind": "final",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/attempts/0003-final.lean",
+      "sourceHash": "a664490bea0fa4a20ab5ffcf618dc1d58b1f893352e3391880e0e666270651ec",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_36f49eca869cc714957d3b90ea94c50c5dbe5ba0c048b0a400da5fe050089710"
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_447\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/attempts/0004-recheck.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":20},\"severity\":\"information\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 2743,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_numbertheory_447\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\",\"universe_parameters\":[],\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/attempts/0004-recheck.lean",
+          "start": {
+            "column": 0,
+            "line": 20
+          },
+          "end": {
+            "column": 33,
+            "line": 20
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_numbertheory_447",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+          "universe_parameters": [],
+          "version": 1
+        }
+      ],
+      "unparsed": [],
+      "sequence": 4,
+      "kind": "recheck",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/attempts/0004-recheck.lean",
+      "sourceHash": "a664490bea0fa4a20ab5ffcf618dc1d58b1f893352e3391880e0e666270651ec",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_b5fe4fd842b39a2c915e8e7fd9c218ebb5f5b3e147fb624c558e49977a34174d"
+    }
+  ],
+  "category": "number_theory",
+  "method": "codex",
+  "effectiveImports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Algebra.BigOperators.Intervals"
+  ],
+  "effectiveOpens": [
+    "BigOperators Real Nat Topology Rat"
+  ],
+  "cleanupAssessment": {
+    "status": "closed",
+    "exploration": {
+      "ownership": "engine",
+      "status": "closed",
+      "retryAttempted": false
+    },
+    "provider": {
+      "status": "closed",
+      "retryAttempted": true,
+      "entries": []
+    }
+  },
+  "artifactDir": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447",
+  "invocationElapsedMs": 49306
+}

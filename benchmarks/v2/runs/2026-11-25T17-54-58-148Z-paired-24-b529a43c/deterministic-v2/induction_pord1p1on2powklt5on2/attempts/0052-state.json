@@ -1,0 +1,127 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":8,\"line\":22},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pord1p1on2powklt5on2/attempts/0052-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":22},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.446\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.446\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.447\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"LT.lt.{0} 0 n\\\",\\\"typeHead\\\":\\\"LT.lt\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.11411\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"n : Nat\\\\nh₀ : LT.lt.{0} 0 n\\\\n⊢ LT.lt.{0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} 2 x)))\\\\n    (HDiv.hDiv.{0, 0, 0} 5 2)\\\",\\\"target\\\":\\\"LT.lt.{0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} 2 x)))\\\\n  (HDiv.hDiv.{0, 0, 0} 5 2)\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"Real.instLT\\\",\\\"∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} 2 x))\\\",\\\"HDiv.hDiv.{0, 0, 0} 5 2\\\"],\\\"targetHead\\\":\\\"LT.lt\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n11\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":31,\"line\":34},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pord1p1on2powklt5on2/attempts/0052-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":16,\"line\":34},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n11\",\"endPos\":{\"column\":31,\"line\":34},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pord1p1on2powklt5on2/attempts/0052-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":16,\"line\":34},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pord1p1on2powklt5on2/attempts/0052-state.lean",
+      "start": {
+        "column": 4,
+        "line": 22
+      },
+      "end": {
+        "column": 8,
+        "line": 22
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.446\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.446\"],\"has_metavariables\":false,\"id\":\"_uniq.447\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"LT.lt.{0} 0 n\",\"typeHead\":\"LT.lt\",\"value\":null}],\"id\":\"_uniq.11411\",\"omitted_implementation_details\":1,\"pretty\":\"n : Nat\\nh₀ : LT.lt.{0} 0 n\\n⊢ LT.lt.{0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} 2 x)))\\n    (HDiv.hDiv.{0, 0, 0} 5 2)\",\"target\":\"LT.lt.{0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} 2 x)))\\n  (HDiv.hDiv.{0, 0, 0} 5 2)\",\"targetArgs\":[\"Real\",\"Real.instLT\",\"∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} 2 x))\",\"HDiv.hDiv.{0, 0, 0} 5 2\"],\"targetHead\":\"LT.lt\",\"universe_parameters\":[]}],\"node_id\":\"n11\",\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pord1p1on2powklt5on2/attempts/0052-state.lean",
+      "start": {
+        "column": 16,
+        "line": 34
+      },
+      "end": {
+        "column": 31,
+        "line": 34
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n11",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pord1p1on2powklt5on2/attempts/0052-state.lean",
+      "start": {
+        "column": 16,
+        "line": 34
+      },
+      "end": {
+        "column": 31,
+        "line": 34
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.446",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.446"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.447",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "LT.lt.{0} 0 n",
+              "typeHead": "LT.lt",
+              "value": null
+            }
+          ],
+          "id": "_uniq.11411",
+          "omitted_implementation_details": 1,
+          "pretty": "n : Nat\nh₀ : LT.lt.{0} 0 n\n⊢ LT.lt.{0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} 2 x)))\n    (HDiv.hDiv.{0, 0, 0} 5 2)",
+          "target": "LT.lt.{0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} 2 x)))\n  (HDiv.hDiv.{0, 0, 0} 5 2)",
+          "targetArgs": [
+            "Real",
+            "Real.instLT",
+            "∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} 2 x))",
+            "HDiv.hDiv.{0, 0, 0} 5 2"
+          ],
+          "targetHead": "LT.lt",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n11",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 52,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "d17fb74dbee3ccfc49c679e05d716bf3a529e6ceb4b86888953fed443c89eeea",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 25,
+    "elaborationMs": 112,
+    "artifactCount": 10204
+  },
+  "elapsedMs": 138,
+  "sequence": 52,
+  "kind": "state",
+  "nodeId": "n11",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pord1p1on2powklt5on2/attempts/0052-state.lean",
+  "sourceHash": "bb8da92f91e430924ec49b57e35b035cd5de83e36d8a2e271db2cc7bc7b81d79",
+  "evidenceId": "ev_f59bf6dcf4f15fa664483e183ac55ca9e17816a521c6b5a9219c96f78a5f8b33"
+}

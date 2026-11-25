@@ -1,0 +1,85 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[],\\\"id\\\":\\\"_uniq.1259\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"⊢ Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\\\",\\\"target\\\":\\\"Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10\\\",\\\"78\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":16,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[],\"id\":\"_uniq.1259\",\"omitted_implementation_details\":1,\"pretty\":\"⊢ Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\",\"target\":\"Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78\",\"targetArgs\":[\"Nat\",\"∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10\",\"78\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0001-state.lean",
+      "start": {
+        "column": 2,
+        "line": 18
+      },
+      "end": {
+        "column": 16,
+        "line": 18
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n0",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0001-state.lean",
+      "start": {
+        "column": 2,
+        "line": 18
+      },
+      "end": {
+        "column": 16,
+        "line": 18
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [],
+          "id": "_uniq.1259",
+          "omitted_implementation_details": 1,
+          "pretty": "⊢ Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+          "target": "Eq.{1} (∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10) 78",
+          "targetArgs": [
+            "Nat",
+            "∑ k ∈ Finset.Icc.{0} 1 49 with Dvd.dvd.{0} 3 k, HMod.hMod.{0, 0, 0} k 10",
+            "78"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n0",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 1,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "77c20f4102c3c5e97bc11b2b1e72aef103696b957ad76e7a261d9b2b24438b44",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": false,
+    "importMs": 2651,
+    "elaborationMs": 39,
+    "artifactCount": 10204
+  },
+  "elapsedMs": 4944,
+  "sequence": 1,
+  "kind": "state",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_447/attempts/0001-state.lean",
+  "sourceHash": "4d2d5f79305d4e7b675842fe4345a8847af9317588df2051948f423ca7558e81",
+  "evidenceId": "ev_055a9c20d64121c7ff97ed55bc9eac2e852c24f972158504c6f431853278dd25"
+}

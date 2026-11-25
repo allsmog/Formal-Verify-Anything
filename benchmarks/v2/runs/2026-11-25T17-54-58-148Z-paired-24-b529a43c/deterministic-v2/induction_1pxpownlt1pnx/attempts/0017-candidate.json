@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\nx : ℝ\\nn : ℕ\\nh₁ : 0 < n\\nh₀ : -1 < x\\n⊢ 1 + ↑n * x ≤ (1 + x) ^ n\",\"endPos\":{\"column\":16,\"line\":25},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0017-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":25},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\nx : ℝ\nn : ℕ\nh₁ : 0 < n\nh₀ : -1 < x\n⊢ 1 + ↑n * x ≤ (1 + x) ^ n",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0017-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 25
+      },
+      "end": {
+        "column": 16,
+        "line": 25
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 17,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "ce81737add8030401ea9215463eb773f92169a1a3016a818bea08ba489b37823",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 38,
+    "elaborationMs": 35,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 75,
+  "sequence": 17,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0017-candidate.lean",
+  "sourceHash": "f94289044da18d6fa1c277a8b16b10151edc03084c61a81a33e36b91ec084731",
+  "evidenceId": "ev_4aa18e05573223dea47d14d402802479abefb5328c3a3323ed3cbb196a30e98e"
+}

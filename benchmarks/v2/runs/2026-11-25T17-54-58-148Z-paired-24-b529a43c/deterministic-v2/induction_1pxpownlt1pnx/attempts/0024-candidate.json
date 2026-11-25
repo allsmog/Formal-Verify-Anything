@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"linarith failed to find a contradiction\\ncase h\\nx : ℝ\\nn : ℕ\\nh₁ : 0 < n\\nh₀ : -1 < x\\na✝ : (1 + x) ^ n < 1 + ↑n * x\\n⊢ False\\nfailed\",\"endPos\":{\"column\":15,\"line\":25},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0024-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":25},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "linarith failed to find a contradiction\ncase h\nx : ℝ\nn : ℕ\nh₁ : 0 < n\nh₀ : -1 < x\na✝ : (1 + x) ^ n < 1 + ↑n * x\n⊢ False\nfailed",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0024-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 25
+      },
+      "end": {
+        "column": 15,
+        "line": 25
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 24,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "5c843ffc2f65c9b9358994b5867e1a74833e4a5fc99eccdfcc2b2e475169fa7c",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 41,
+    "elaborationMs": 116,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 160,
+  "sequence": 24,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0024-candidate.lean",
+  "sourceHash": "42054c7a0dbb893fe64121906a1fe35b289dacd50861b171af50562ad43e0803",
+  "evidenceId": "ev_80a55c6a279311c7c886ab71e2339630adddba9a5edb852c9b6268487fe7e0ea"
+}

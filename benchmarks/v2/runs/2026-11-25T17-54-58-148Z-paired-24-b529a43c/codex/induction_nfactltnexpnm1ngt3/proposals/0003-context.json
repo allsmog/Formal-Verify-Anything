@@ -1,0 +1,73 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.147",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "n",
+        "type": "Nat",
+        "typeHead": "Nat",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.147"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.148",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "LE.le.{0} 3 n",
+        "typeHead": "LE.le",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.381",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "factorial_bound",
+        "type": "∀ (k m : Nat),\n  LE.le.{0} (HAdd.hAdd.{0, 0, 0} k 2) m →\n    LE.le.{0} (Nat.factorial (HAdd.hAdd.{0, 0, 0} k 2)) (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} m k))",
+        "typeHead": "forall",
+        "value": null
+      }
+    ],
+    "id": "_uniq.385",
+    "omitted_implementation_details": 1,
+    "pretty": "n : Nat\nh₀ : LE.le.{0} 3 n\nfactorial_bound :\n  ∀ (k m : Nat),\n    LE.le.{0} (HAdd.hAdd.{0, 0, 0} k 2) m →\n      LE.le.{0} (Nat.factorial (HAdd.hAdd.{0, 0, 0} k 2)) (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} m k))\n⊢ LT.lt.{0} (Nat.factorial n) (HPow.hPow.{0, 0, 0} n (HSub.hSub.{0, 0, 0} n 1))",
+    "target": "LT.lt.{0} (Nat.factorial n) (HPow.hPow.{0, 0, 0} n (HSub.hSub.{0, 0, 0} n 1))",
+    "targetArgs": [],
+    "targetHead": "LT.lt",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Data.Nat.Factorial.Basic"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 56,
+    "maxDepth": 8,
+    "depth": 1,
+    "modelTokensRemaining": 10469,
+    "remainingMs": 198129
+  },
+  "feedback": []
+}

@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\nn : ℕ\\nh₀ : 0 < n\\n⊢ ∏ k ∈ Finset.Icc 1 n, (1 + 1 / ↑k ^ 3) ≤ 3 - 1 / ↑n\",\"endPos\":{\"column\":12,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":20},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\nn : ℕ\nh₀ : 0 < n\n⊢ ∏ k ∈ Finset.Icc 1 n, (1 + 1 / ↑k ^ 3) ≤ 3 - 1 / ↑n",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0002-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 20
+      },
+      "end": {
+        "column": 12,
+        "line": 20
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 2,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "ac481bcb4c0809938ab5e50a02e1dae6feb8c6bda82202567bfaf65b030cf0ac",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 27,
+    "elaborationMs": 11,
+    "artifactCount": 10204
+  },
+  "elapsedMs": 40,
+  "sequence": 2,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0002-candidate.lean",
+  "sourceHash": "48c559f03814ef7f8d8de53ff10d204d372db3fc626e402f77a1121507598955",
+  "evidenceId": "ev_4b48530846cc1c8b886d57798102e7ef65b220ad3ce55a4249e6f9ff95a79921"
+}

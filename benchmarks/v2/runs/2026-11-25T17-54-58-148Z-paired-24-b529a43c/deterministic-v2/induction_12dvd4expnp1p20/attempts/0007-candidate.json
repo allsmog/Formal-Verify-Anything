@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  12\\nis not definitionally equal to the right-hand side\\n  4 ^ (n + 1) + 8\\n\\nn : ℕ\\n⊢ 12 ∣ 4 ^ (n + 1) + 8\",\"endPos\":{\"column\":7,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/attempts/0007-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":20},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  12\nis not definitionally equal to the right-hand side\n  4 ^ (n + 1) + 8\n\nn : ℕ\n⊢ 12 ∣ 4 ^ (n + 1) + 8",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/attempts/0007-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 20
+      },
+      "end": {
+        "column": 7,
+        "line": 20
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 7,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "3934526b12a5a71c2e895dfd8dc2e74478fa8eeae8d0d4f918fc0cf320292db6",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 24,
+    "elaborationMs": 25,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 50,
+  "sequence": 7,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/attempts/0007-candidate.lean",
+  "sourceHash": "87fd8e59ecfcfefa22e711c3326e5e39533fa8f25f0af27aa026f071ecad339e",
+  "evidenceId": "ev_1971b3e7036ce3680ec115c07bed924e9f07ebdbad7b429180e53dcaba7da99f"
+}

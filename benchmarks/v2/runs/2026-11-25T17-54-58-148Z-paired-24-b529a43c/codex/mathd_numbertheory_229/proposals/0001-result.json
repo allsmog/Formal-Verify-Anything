@@ -1,0 +1,64 @@
+{
+  "id": "p0",
+  "nodeId": "n0",
+  "stateHash": "343a8913c6743edbe22f66e929064550ac9a80260d11dc78d4ec75500a149860",
+  "round": 0,
+  "requestDigest": "871c0d7a450839c877b4a44bdc239c267ba4f74f5e0b5aa295493f7512ffb6e0",
+  "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_229/proposals/0001-context.json",
+  "modelTokens": 16744,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "codex-v1",
+  "provider": "codex-cli",
+  "usage": {
+    "input_tokens": 16289,
+    "output_tokens": 455,
+    "cached_input_tokens": 0,
+    "reasoning_output_tokens": 361
+  },
+  "metadata": {
+    "provider": "codex-cli",
+    "model": null,
+    "modelSelection": "codex-configured-default",
+    "promptDigest": "7fd857036debeff165c79f2f8b59ef3de2e47ae6ff9ebf60152925fd6223ea1c",
+    "promptVersion": 1,
+    "toolPolicy": "disabled",
+    "ephemeral": true,
+    "cliVersion": "codex-cli 0.171.0",
+    "eventTypes": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "responseDigest": "d152b775bcd151a3cc681e8138051b368476b68c083194a5b67f065bb1c01731",
+    "providerErrors": [],
+    "elapsedMs": 10824,
+    "exitCode": 0,
+    "signal": null,
+    "stdoutDigest": "d152b775bcd151a3cc681e8138051b368476b68c083194a5b67f065bb1c01731",
+    "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrDiagnostic": ""
+  },
+  "proposals": [
+    {
+      "kind": "tactic",
+      "tactic": "norm_num"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "decide"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "change (5 : Nat) ^ (6 * 5) % 7 = 1\nrw [pow_mul, Nat.pow_mod] <;> norm_num"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "rfl"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 10826,
+  "evidenceId": "ev_2fcf19420b5e5214ec1b73eb3a4f3cf73619173105190595d426430d4a0e75b4"
+}

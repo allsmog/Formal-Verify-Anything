@@ -1,0 +1,59 @@
+{
+  "id": "p3",
+  "nodeId": "n5",
+  "stateHash": "5b3009b3dffe82155fb615a97ab1041d208d08e2e3634f658c4ed1d71abfdda3",
+  "round": 0,
+  "requestDigest": "6eed0ce492383eaa8c911363ac586061c4a9ca3ede83a9a13ebc8bc1132b3fff",
+  "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/proposals/0004-context.json",
+  "modelTokens": 0,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "deterministic-v2",
+  "proposals": [
+    {
+      "tactic": "assumption"
+    },
+    {
+      "tactic": "rfl"
+    },
+    {
+      "tactic": "simp_all"
+    },
+    {
+      "tactic": "omega"
+    },
+    {
+      "tactic": "norm_num at *"
+    },
+    {
+      "tactic": "ring"
+    },
+    {
+      "tactic": "linarith"
+    },
+    {
+      "tactic": "nlinarith"
+    },
+    {
+      "tactic": "positivity"
+    },
+    {
+      "tactic": "norm_cast at *"
+    },
+    {
+      "tactic": "field_simp at *"
+    },
+    {
+      "tactic": "ring_nf at *"
+    },
+    {
+      "tactic": "aesop"
+    },
+    {
+      "tactic": "induction n"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 0,
+  "evidenceId": "ev_954a765bb3bfe53d4cc7fb3d471a2f0fd7d018ce28461619818d6b453fc06d2e"
+}

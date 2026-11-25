@@ -1,0 +1,108 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.804",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "k",
+        "type": "Nat",
+        "typeHead": "Nat",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.804"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.805",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "LT.lt.{0} 0 k",
+        "typeHead": "LT.lt",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.804"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.806",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₁",
+        "type": "∀ (n : Nat),\n  Eq.{1} (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k) (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 3)) 1",
+        "typeHead": "forall",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.804"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.807",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₂",
+        "type": "∀ (n : Nat),\n  Eq.{1} (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k) (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 2)) 1",
+        "typeHead": "forall",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.804"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.808",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₃",
+        "type": "∀ (n : Nat),\n  Eq.{1} (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k) (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 1)) 1",
+        "typeHead": "forall",
+        "value": null
+      }
+    ],
+    "id": "_uniq.809",
+    "omitted_implementation_details": 1,
+    "pretty": "k : Nat\nh₀ : LT.lt.{0} 0 k\nh₁ :\n  ∀ (n : Nat),\n    Eq.{1} (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k) (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 3))\n      1\nh₂ :\n  ∀ (n : Nat),\n    Eq.{1} (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k) (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 2))\n      1\nh₃ :\n  ∀ (n : Nat),\n    Eq.{1} (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k) (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 1))\n      1\n⊢ LE.le.{0} 5 k",
+    "target": "LE.le.{0} 5 k",
+    "targetArgs": [
+      "Nat",
+      "instLENat",
+      "5",
+      "k"
+    ],
+    "targetHead": "LE.le",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Data.Nat.GCD.Basic"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 61,
+    "maxDepth": 8,
+    "depth": 0,
+    "modelTokensRemaining": 50000,
+    "remainingMs": 290194
+  },
+  "feedback": []
+}

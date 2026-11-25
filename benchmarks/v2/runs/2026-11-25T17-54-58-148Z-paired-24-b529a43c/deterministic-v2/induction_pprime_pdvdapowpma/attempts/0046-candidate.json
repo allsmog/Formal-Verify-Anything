@@ -1,0 +1,63 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":8,\"line\":27},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0046-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":27},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\ncase succ\\na : ℕ\\nh₀ : 0 < a\\nn✝ : ℕ\\na✝ : Nat.Prime n✝ → n✝ ∣ a ^ n✝ - a\\nh₁ : Nat.Prime (1 + n✝)\\n⊢ 1 + n✝ ∣ a * a ^ n✝ - a\",\"endPos\":{\"column\":18,\"line\":31},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0046-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":31},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0046-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 27
+      },
+      "end": {
+        "column": 8,
+        "line": 27
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\ncase succ\na : ℕ\nh₀ : 0 < a\nn✝ : ℕ\na✝ : Nat.Prime n✝ → n✝ ∣ a ^ n✝ - a\nh₁ : Nat.Prime (1 + n✝)\n⊢ 1 + n✝ ∣ a * a ^ n✝ - a",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0046-candidate.lean",
+      "start": {
+        "column": 8,
+        "line": 31
+      },
+      "end": {
+        "column": 18,
+        "line": 31
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 46,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "39e13d68f7d43c6e9dcd7b6e0066b3688162b7ee1ab8c5f2af77423ff7c37dc3",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 33,
+    "elaborationMs": 76,
+    "artifactCount": 10116
+  },
+  "elapsedMs": 111,
+  "sequence": 46,
+  "kind": "candidate",
+  "nodeId": "n5",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0046-candidate.lean",
+  "sourceHash": "1220248c6a6cc7437169c57a41e755ea59aaaba1a4330fc7fe34f0ecd6359ab8",
+  "evidenceId": "ev_ea8e7f74f2aa3a29273ae42720cd55ee6d23e453715a784bacc2c0cabc511183"
+}

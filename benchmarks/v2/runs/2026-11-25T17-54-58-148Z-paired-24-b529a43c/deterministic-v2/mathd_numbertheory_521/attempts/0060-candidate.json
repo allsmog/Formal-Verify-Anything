@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"omega could not prove the goal:\\na possible counterexample may satisfy the constraints\\n  2 ≤ a ≤ 16\\nwhere\\n a := ↑n✝¹\",\"endPos\":{\"column\":15,\"line\":35},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0060-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":10,\"line\":35},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  2 ≤ a ≤ 16\nwhere\n a := ↑n✝¹",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0060-candidate.lean",
+      "start": {
+        "column": 10,
+        "line": 35
+      },
+      "end": {
+        "column": 15,
+        "line": 35
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 60,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "46867979413592523096089a86e71f0b8e683c60c9577a2e11b0aa306c9e3088",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 47,
+    "elaborationMs": 108,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 156,
+  "sequence": 60,
+  "kind": "candidate",
+  "nodeId": "n6",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0060-candidate.lean",
+  "sourceHash": "52adb6c9f225e33a46c30c9532479f022f036709b3f1883cc850e090895c5d4c",
+  "evidenceId": "ev_5644a862d4f2bb62aa9b18854dfdf21a0cf956f21e9083744628b99ca4fe6bde"
+}

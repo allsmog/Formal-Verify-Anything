@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\nx : ℝ\\na b c : ℕ\\nh₃ : c = 2\\nh₀ : 0 < a ∧ 0 < b ∧ 0 * 2 ≤ ↑a + √↑b\\nh₂ : 2 * x = ↑a + √↑b\\nh₁ : (↑a + √↑b) ^ 2 = (↑a + √↑b) * 4 + 2 * 9\\n⊢ a + b = 24\",\"endPos\":{\"column\":18,\"line\":30},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_320/attempts/0029-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":30},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\nx : ℝ\na b c : ℕ\nh₃ : c = 2\nh₀ : 0 < a ∧ 0 < b ∧ 0 * 2 ≤ ↑a + √↑b\nh₂ : 2 * x = ↑a + √↑b\nh₁ : (↑a + √↑b) ^ 2 = (↑a + √↑b) * 4 + 2 * 9\n⊢ a + b = 24",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_320/attempts/0029-candidate.lean",
+      "start": {
+        "column": 8,
+        "line": 30
+      },
+      "end": {
+        "column": 18,
+        "line": 30
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 29,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "6ae7970790ff79804a1c36cc2d86fcabc7b920e006200d66b87011626cd88bf6",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 41,
+    "elaborationMs": 179,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 225,
+  "sequence": 29,
+  "kind": "candidate",
+  "nodeId": "n3",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_320/attempts/0029-candidate.lean",
+  "sourceHash": "aba1abc20497b00cb91b72e33e863769195bd5aff1ed809090190425165ed29e",
+  "evidenceId": "ev_de63a11bad9bc679351bf2308c1b5b69172630676f9c0b31002ad3f77a8d1216"
+}

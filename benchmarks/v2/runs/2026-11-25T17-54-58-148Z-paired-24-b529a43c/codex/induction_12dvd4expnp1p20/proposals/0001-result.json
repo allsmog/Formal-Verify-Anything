@@ -1,0 +1,65 @@
+{
+  "id": "p0",
+  "nodeId": "n0",
+  "stateHash": "759fb0c276446185e132ff48d5805fe4d649dd9d7a047c5cbed6c777dec4e68f",
+  "round": 0,
+  "requestDigest": "80aae828c4612f7ed79f2d35c583773d80e2190831284ffb81fe12ddcb94260d",
+  "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/proposals/0001-context.json",
+  "modelTokens": 18112,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "codex-v1",
+  "provider": "codex-cli",
+  "usage": {
+    "input_tokens": 16404,
+    "output_tokens": 1708,
+    "cached_input_tokens": 0,
+    "reasoning_output_tokens": 1189
+  },
+  "metadata": {
+    "provider": "codex-cli",
+    "model": null,
+    "modelSelection": "codex-configured-default",
+    "promptDigest": "ec8be2fead45032fde192e05156389ac098886bf7e460986b4f44dedb9e6b3c6",
+    "promptVersion": 1,
+    "toolPolicy": "disabled",
+    "ephemeral": true,
+    "cliVersion": "codex-cli 0.171.0",
+    "eventTypes": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "responseDigest": "ea68aa8e11c3477ae44d967587fa4db52a7644f16a5833abf981d4c246a5b135",
+    "providerErrors": [],
+    "elapsedMs": 24649,
+    "exitCode": 0,
+    "signal": null,
+    "stdoutDigest": "ea68aa8e11c3477ae44d967587fa4db52a7644f16a5833abf981d4c246a5b135",
+    "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrDiagnostic": ""
+  },
+  "proposals": [
+    {
+      "kind": "tactic",
+      "tactic": "induction n with\n| zero => exact ⟨2, by decide⟩\n| succ n ih =>\n  rcases ih with ⟨k, hk⟩\n  refine ⟨k + 4 ^ n, ?_⟩\n  change 4 ^ (n + 1 + 1) + 20 = 12 * (k + 4 ^ n)\n  calc\n    4 ^ (n + 1 + 1) + 20 = (4 ^ (n + 1) + 20) + 12 * 4 ^ n := by\n      simp only [pow_succ]\n      ring\n    _ = 12 * (k + 4 ^ n) := by\n      rw [hk]\n      ring"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "induction n with\n| zero => exact ⟨2, by decide⟩\n| succ n ih =>\n  change 12 ∣ 4 ^ (n + 1 + 1) + 20\n  rw [show (4 ^ (n + 1 + 1) + 20 : Nat) = (4 ^ (n + 1) + 20) + 12 * 4 ^ n by\n    simp only [pow_succ]\n    ring]\n  exact dvd_add ih ⟨4 ^ n, rfl⟩"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "have hp : ∀ m : Nat, (4 ^ (m + 1) : Nat) % 12 = 4 := by\n  intro m\n  induction m with\n  | zero => decide\n  | succ m ih =>\n    change (4 ^ (m + 1 + 1) : Nat) % 12 = 4\n    rw [pow_succ, Nat.mul_mod, ih] <;> decide\napply Nat.dvd_of_mod_eq_zero\nrw [Nat.add_mod, hp n] <;> decide"
+    },
+    {
+      "kind": "have",
+      "name": "hstep",
+      "type": "∀ m : Nat, (4 ^ (m + 1 + 1) + 20 : Nat) = (4 ^ (m + 1) + 20) + 12 * 4 ^ m"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 24651,
+  "evidenceId": "ev_b2b94db81b9269d2bdde5cd3ac46af899ed7f9e0980f1303e993881ab4607933"
+}

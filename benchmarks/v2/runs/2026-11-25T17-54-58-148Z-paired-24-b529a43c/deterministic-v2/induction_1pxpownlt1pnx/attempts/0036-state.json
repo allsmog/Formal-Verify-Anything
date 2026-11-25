@@ -1,0 +1,154 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.344\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"x\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.344\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.2313\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"LT.lt.{0} (-1) x\\\",\\\"typeHead\\\":\\\"LT.lt\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.2337\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n._@.FVAExploration.1252590147._hygCtx._hyg.96\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.2337\\\",\\\"_uniq.344\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.2338\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a._@._internal.0.FVAExploration.1252590147._hygCtx._hyg.97\\\",\\\"type\\\":\\\"LT.lt.{0} 0 n✝ →\\\\n  LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝)\\\",\\\"typeHead\\\":\\\"forall\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.2337\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.2342\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₁\\\",\\\"type\\\":\\\"LT.lt.{0} 0 (HAdd.hAdd.{0, 0, 0} n✝ 1)\\\",\\\"typeHead\\\":\\\"LT.lt\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.2345\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case succ\\\\nx : Real\\\\nh₀ : LT.lt.{0} (-1) x\\\\nn✝ : Nat\\\\na✝ :\\\\n  LT.lt.{0} 0 n✝ →\\\\n    LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝)\\\\nh₁ : LT.lt.{0} 0 (HAdd.hAdd.{0, 0, 0} n✝ 1)\\\\n⊢ LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑(HAdd.hAdd.{0, 0, 0} n✝ 1)) x))\\\\n    (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) (HAdd.hAdd.{0, 0, 0} n✝ 1))\\\",\\\"target\\\":\\\"LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑(HAdd.hAdd.{0, 0, 0} n✝ 1)) x))\\\\n  (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) (HAdd.hAdd.{0, 0, 0} n✝ 1))\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"Real.instLE\\\",\\\"HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑(HAdd.hAdd.{0, 0, 0} n✝ 1)) x)\\\",\\\"HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) (HAdd.hAdd.{0, 0, 0} n✝ 1)\\\"],\\\"targetHead\\\":\\\"LE.le\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n5\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":22,\"line\":29},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0036-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":29},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n5\",\"endPos\":{\"column\":22,\"line\":29},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0036-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":29},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.344\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"x\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.344\"],\"has_metavariables\":false,\"id\":\"_uniq.2313\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"LT.lt.{0} (-1) x\",\"typeHead\":\"LT.lt\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.2337\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n._@.FVAExploration.1252590147._hygCtx._hyg.96\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.2337\",\"_uniq.344\"],\"has_metavariables\":false,\"id\":\"_uniq.2338\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"a._@._internal.0.FVAExploration.1252590147._hygCtx._hyg.97\",\"type\":\"LT.lt.{0} 0 n✝ →\\n  LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝)\",\"typeHead\":\"forall\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.2337\"],\"has_metavariables\":false,\"id\":\"_uniq.2342\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₁\",\"type\":\"LT.lt.{0} 0 (HAdd.hAdd.{0, 0, 0} n✝ 1)\",\"typeHead\":\"LT.lt\",\"value\":null}],\"id\":\"_uniq.2345\",\"omitted_implementation_details\":1,\"pretty\":\"case succ\\nx : Real\\nh₀ : LT.lt.{0} (-1) x\\nn✝ : Nat\\na✝ :\\n  LT.lt.{0} 0 n✝ →\\n    LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝)\\nh₁ : LT.lt.{0} 0 (HAdd.hAdd.{0, 0, 0} n✝ 1)\\n⊢ LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑(HAdd.hAdd.{0, 0, 0} n✝ 1)) x))\\n    (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) (HAdd.hAdd.{0, 0, 0} n✝ 1))\",\"target\":\"LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑(HAdd.hAdd.{0, 0, 0} n✝ 1)) x))\\n  (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) (HAdd.hAdd.{0, 0, 0} n✝ 1))\",\"targetArgs\":[\"Real\",\"Real.instLE\",\"HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑(HAdd.hAdd.{0, 0, 0} n✝ 1)) x)\",\"HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) (HAdd.hAdd.{0, 0, 0} n✝ 1)\"],\"targetHead\":\"LE.le\",\"universe_parameters\":[]}],\"node_id\":\"n5\",\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0036-state.lean",
+      "start": {
+        "column": 8,
+        "line": 29
+      },
+      "end": {
+        "column": 22,
+        "line": 29
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n5",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0036-state.lean",
+      "start": {
+        "column": 8,
+        "line": 29
+      },
+      "end": {
+        "column": 22,
+        "line": 29
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.344",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "x",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.344"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.2313",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "LT.lt.{0} (-1) x",
+              "typeHead": "LT.lt",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.2337",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n._@.FVAExploration.1252590147._hygCtx._hyg.96",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.2337",
+                "_uniq.344"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.2338",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "a._@._internal.0.FVAExploration.1252590147._hygCtx._hyg.97",
+              "type": "LT.lt.{0} 0 n✝ →\n  LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝)",
+              "typeHead": "forall",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.2337"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.2342",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₁",
+              "type": "LT.lt.{0} 0 (HAdd.hAdd.{0, 0, 0} n✝ 1)",
+              "typeHead": "LT.lt",
+              "value": null
+            }
+          ],
+          "id": "_uniq.2345",
+          "omitted_implementation_details": 1,
+          "pretty": "case succ\nx : Real\nh₀ : LT.lt.{0} (-1) x\nn✝ : Nat\na✝ :\n  LT.lt.{0} 0 n✝ →\n    LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝)\nh₁ : LT.lt.{0} 0 (HAdd.hAdd.{0, 0, 0} n✝ 1)\n⊢ LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑(HAdd.hAdd.{0, 0, 0} n✝ 1)) x))\n    (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) (HAdd.hAdd.{0, 0, 0} n✝ 1))",
+          "target": "LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑(HAdd.hAdd.{0, 0, 0} n✝ 1)) x))\n  (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) (HAdd.hAdd.{0, 0, 0} n✝ 1))",
+          "targetArgs": [
+            "Real",
+            "Real.instLE",
+            "HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑(HAdd.hAdd.{0, 0, 0} n✝ 1)) x)",
+            "HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) (HAdd.hAdd.{0, 0, 0} n✝ 1)"
+          ],
+          "targetHead": "LE.le",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n5",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 36,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "1a071f7e259fa567e923e820f5953509edc8ec8a0ea8f985bfeb20bc517092d7",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 42,
+    "elaborationMs": 36,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 80,
+  "sequence": 36,
+  "kind": "state",
+  "nodeId": "n5",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0036-state.lean",
+  "sourceHash": "273b82d3490670290de93d586e77362818d3311d9a201d5c997bbac6b15b0449",
+  "evidenceId": "ev_914a2ea8d21d806681b507d206bac3dfac3267ef5874b711f299dde7eac9be36"
+}

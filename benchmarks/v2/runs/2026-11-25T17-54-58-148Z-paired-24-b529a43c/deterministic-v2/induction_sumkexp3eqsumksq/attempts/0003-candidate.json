@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  ∑ k ∈ Finset.range n, k ^ 3\\nis not definitionally equal to the right-hand side\\n  (∑ k ∈ Finset.range n, k) ^ 2\\n\\nn : ℕ\\n⊢ ∑ k ∈ Finset.range n, k ^ 3 = (∑ k ∈ Finset.range n, k) ^ 2\",\"endPos\":{\"column\":5,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  ∑ k ∈ Finset.range n, k ^ 3\nis not definitionally equal to the right-hand side\n  (∑ k ∈ Finset.range n, k) ^ 2\n\nn : ℕ\n⊢ ∑ k ∈ Finset.range n, k ^ 3 = (∑ k ∈ Finset.range n, k) ^ 2",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0003-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 19
+      },
+      "end": {
+        "column": 5,
+        "line": 19
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 3,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "f0e1b6bafab3d9210f522e7671a9a6553a37115fd1b95cc7d507eff5e26bc6ca",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 39,
+    "elaborationMs": 16,
+    "artifactCount": 10204
+  },
+  "elapsedMs": 58,
+  "sequence": 3,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0003-candidate.lean",
+  "sourceHash": "328e8e58ee61a3851b1ef11cd9e74e53c011ecfed173d2cc5e5cdbfecd8b6bcc",
+  "evidenceId": "ev_6be72f9d59feb738b94313044e5b2dd2e727467dbe2c4f166e899b3f8b8d0e1e"
+}

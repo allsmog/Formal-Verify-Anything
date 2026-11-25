@@ -1,0 +1,51 @@
+{
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"induction_11div10tonmn1ton\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (n : Nat), Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":37,\"line\":30},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/attempts/0004-recheck.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":30},\"severity\":\"information\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 1706,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Quot.sound\"],\"declaration\":\"induction_11div10tonmn1ton\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (n : Nat), Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))\",\"universe_parameters\":[],\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/attempts/0004-recheck.lean",
+      "start": {
+        "column": 0,
+        "line": 30
+      },
+      "end": {
+        "column": 37,
+        "line": 30
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "induction_11div10tonmn1ton",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (n : Nat), Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))",
+      "universe_parameters": [],
+      "version": 1
+    }
+  ],
+  "unparsed": [],
+  "sequence": 4,
+  "kind": "recheck",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/attempts/0004-recheck.lean",
+  "sourceHash": "32f26557b88a7659af161f2f57c8554398a45b4481695359b6b1d8da4099c6fe",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_502e32b2dd04ffe7030a9a02487d44360089a9dd2b01652e748300215b879306"
+}

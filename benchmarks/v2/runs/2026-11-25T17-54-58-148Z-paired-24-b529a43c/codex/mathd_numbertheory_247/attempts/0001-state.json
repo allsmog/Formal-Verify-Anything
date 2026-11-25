@@ -1,0 +1,112 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.246\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.246\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.247\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"Eq.{1} (HMod.hMod.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 n) 11) 2\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.248\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"n : Nat\\\\nh₀ : Eq.{1} (HMod.hMod.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 n) 11) 2\\\\n⊢ Eq.{1} (HMod.hMod.{0, 0, 0} n 11) 8\\\",\\\"target\\\":\\\"Eq.{1} (HMod.hMod.{0, 0, 0} n 11) 8\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"HMod.hMod.{0, 0, 0} n 11\\\",\\\"8\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_247/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":16,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_247/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.246\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.246\"],\"has_metavariables\":false,\"id\":\"_uniq.247\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"Eq.{1} (HMod.hMod.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 n) 11) 2\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.248\",\"omitted_implementation_details\":1,\"pretty\":\"n : Nat\\nh₀ : Eq.{1} (HMod.hMod.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 n) 11) 2\\n⊢ Eq.{1} (HMod.hMod.{0, 0, 0} n 11) 8\",\"target\":\"Eq.{1} (HMod.hMod.{0, 0, 0} n 11) 8\",\"targetArgs\":[\"Nat\",\"HMod.hMod.{0, 0, 0} n 11\",\"8\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_247/attempts/0001-state.lean",
+      "start": {
+        "column": 2,
+        "line": 19
+      },
+      "end": {
+        "column": 16,
+        "line": 19
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n0",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_247/attempts/0001-state.lean",
+      "start": {
+        "column": 2,
+        "line": 19
+      },
+      "end": {
+        "column": 16,
+        "line": 19
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.246",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.246"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.247",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "Eq.{1} (HMod.hMod.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 n) 11) 2",
+              "typeHead": "Eq",
+              "value": null
+            }
+          ],
+          "id": "_uniq.248",
+          "omitted_implementation_details": 1,
+          "pretty": "n : Nat\nh₀ : Eq.{1} (HMod.hMod.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 n) 11) 2\n⊢ Eq.{1} (HMod.hMod.{0, 0, 0} n 11) 8",
+          "target": "Eq.{1} (HMod.hMod.{0, 0, 0} n 11) 8",
+          "targetArgs": [
+            "Nat",
+            "HMod.hMod.{0, 0, 0} n 11",
+            "8"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n0",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 1,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "ac3426b182e3d9d735ba86be09cff84d558bdb926f158a80547f034f37744e2a",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": false,
+    "importMs": 7444,
+    "elaborationMs": 80,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 11700,
+  "sequence": 1,
+  "kind": "state",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_247/attempts/0001-state.lean",
+  "sourceHash": "3867171e763cdc28e097403b489dfc6ce959fd4fe346a762217f15060edb77e4",
+  "evidenceId": "ev_4eb1e2c97d3a4c83e6d707544978a8081ad34a43b042adcec48cfc26ca1d1fad"
+}

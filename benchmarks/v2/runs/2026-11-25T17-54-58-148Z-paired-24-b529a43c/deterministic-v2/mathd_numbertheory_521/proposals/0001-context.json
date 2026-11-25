@@ -1,0 +1,121 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.260",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "m",
+        "type": "Nat",
+        "typeHead": "Nat",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.261",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "n",
+        "type": "Nat",
+        "typeHead": "Nat",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.260"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.262",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "Even.{0} m",
+        "typeHead": "Even",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.261"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.263",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₁",
+        "type": "Even.{0} n",
+        "typeHead": "Even",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.260",
+          "_uniq.261"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.264",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₂",
+        "type": "Eq.{1} (HSub.hSub.{0, 0, 0} m n) 2",
+        "typeHead": "Eq",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.260",
+          "_uniq.261"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.265",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₃",
+        "type": "Eq.{1} (HMul.hMul.{0, 0, 0} m n) 288",
+        "typeHead": "Eq",
+        "value": null
+      }
+    ],
+    "id": "_uniq.266",
+    "omitted_implementation_details": 1,
+    "pretty": "m n : Nat\nh₀ : Even.{0} m\nh₁ : Even.{0} n\nh₂ : Eq.{1} (HSub.hSub.{0, 0, 0} m n) 2\nh₃ : Eq.{1} (HMul.hMul.{0, 0, 0} m n) 288\n⊢ Eq.{1} m 18",
+    "target": "Eq.{1} m 18",
+    "targetArgs": [
+      "Nat",
+      "m",
+      "18"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Algebra.Ring.Parity"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 61,
+    "maxDepth": 8,
+    "depth": 0,
+    "modelTokensRemaining": 0,
+    "remainingMs": 294151
+  },
+  "feedback": []
+}

@@ -1,0 +1,85 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[],\\\"id\\\":\\\"_uniq.2381\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"⊢ Eq.{1}\\\\n    (HMod.hMod.{0, 0, 0}\\\\n      (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 16 17) (HPow.hPow.{0, 0, 0} 17 18))\\\\n        (HPow.hPow.{0, 0, 0} 18 19))\\\\n      10)\\\\n    8\\\",\\\"target\\\":\\\"Eq.{1}\\\\n  (HMod.hMod.{0, 0, 0}\\\\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 16 17) (HPow.hPow.{0, 0, 0} 17 18))\\\\n      (HPow.hPow.{0, 0, 0} 18 19))\\\\n    10)\\\\n  8\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"HMod.hMod.{0, 0, 0}\\\\n  (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 16 17) (HPow.hPow.{0, 0, 0} 17 18))\\\\n    (HPow.hPow.{0, 0, 0} 18 19))\\\\n  10\\\",\\\"8\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":17},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_212/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":17},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":16,\"line\":17},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_212/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":17},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[],\"id\":\"_uniq.2381\",\"omitted_implementation_details\":1,\"pretty\":\"⊢ Eq.{1}\\n    (HMod.hMod.{0, 0, 0}\\n      (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 16 17) (HPow.hPow.{0, 0, 0} 17 18))\\n        (HPow.hPow.{0, 0, 0} 18 19))\\n      10)\\n    8\",\"target\":\"Eq.{1}\\n  (HMod.hMod.{0, 0, 0}\\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 16 17) (HPow.hPow.{0, 0, 0} 17 18))\\n      (HPow.hPow.{0, 0, 0} 18 19))\\n    10)\\n  8\",\"targetArgs\":[\"Nat\",\"HMod.hMod.{0, 0, 0}\\n  (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 16 17) (HPow.hPow.{0, 0, 0} 17 18))\\n    (HPow.hPow.{0, 0, 0} 18 19))\\n  10\",\"8\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_212/attempts/0001-state.lean",
+      "start": {
+        "column": 2,
+        "line": 17
+      },
+      "end": {
+        "column": 16,
+        "line": 17
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n0",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_212/attempts/0001-state.lean",
+      "start": {
+        "column": 2,
+        "line": 17
+      },
+      "end": {
+        "column": 16,
+        "line": 17
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [],
+          "id": "_uniq.2381",
+          "omitted_implementation_details": 1,
+          "pretty": "⊢ Eq.{1}\n    (HMod.hMod.{0, 0, 0}\n      (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 16 17) (HPow.hPow.{0, 0, 0} 17 18))\n        (HPow.hPow.{0, 0, 0} 18 19))\n      10)\n    8",
+          "target": "Eq.{1}\n  (HMod.hMod.{0, 0, 0}\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 16 17) (HPow.hPow.{0, 0, 0} 17 18))\n      (HPow.hPow.{0, 0, 0} 18 19))\n    10)\n  8",
+          "targetArgs": [
+            "Nat",
+            "HMod.hMod.{0, 0, 0}\n  (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 16 17) (HPow.hPow.{0, 0, 0} 17 18))\n    (HPow.hPow.{0, 0, 0} 18 19))\n  10",
+            "8"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n0",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 1,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "b646aacca7c29a4f02cd7c1ff380aad92f345b871eeed2468f0731e8acdd7ff2",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": false,
+    "importMs": 2560,
+    "elaborationMs": 77,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 4836,
+  "sequence": 1,
+  "kind": "state",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_212/attempts/0001-state.lean",
+  "sourceHash": "07acd6dc07f18b4a05a98e04225469c07bab856572f96bab91952a45686da27a",
+  "evidenceId": "ev_3c1313b6b2bd59ccf22bb0f66344032baaeef9f44afac545d7b182e58bfb1f69"
+}

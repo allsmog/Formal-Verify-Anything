@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  12\\nis not definitionally equal to the right-hand side\\n  4 ^ (n + 1) + 20\\n\\nn : ℕ\\n⊢ 12 ∣ 4 ^ (n + 1) + 20\",\"endPos\":{\"column\":5,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  12\nis not definitionally equal to the right-hand side\n  4 ^ (n + 1) + 20\n\nn : ℕ\n⊢ 12 ∣ 4 ^ (n + 1) + 20",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/attempts/0003-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 18
+      },
+      "end": {
+        "column": 5,
+        "line": 18
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 3,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "3e4fabff29ee968fb2bdb6be37fa791f28951279303d33833eb2d670f9ad602c",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 23,
+    "elaborationMs": 7,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 31,
+  "sequence": 3,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_12dvd4expnp1p20/attempts/0003-candidate.lean",
+  "sourceHash": "bc528229cd2bb1fe3a218d7c3436ad27c65a8d4571fdd023775e41ba517aee2f",
+  "evidenceId": "ev_728ac0b26e97542e5e444ec66d44ec4bef86107edd8f5a2c7ad59faed30c22b9"
+}

@@ -1,0 +1,209 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.131\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.131\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.132\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"LT.lt.{0} 0 a\\\",\\\"typeHead\\\":\\\"LT.lt\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.151\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₁\\\",\\\"type\\\":\\\"Nat.Prime 0\\\",\\\"typeHead\\\":\\\"Nat.Prime\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.154\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case zero\\\\na : Nat\\\\nh₀ : LT.lt.{0} 0 a\\\\nh₁ : Nat.Prime 0\\\\n⊢ Dvd.dvd.{0} 0 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 0) a)\\\",\\\"target\\\":\\\"Dvd.dvd.{0} 0 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 0) a)\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"Nat.instDvd\\\",\\\"0\\\",\\\"HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 0) a\\\"],\\\"targetHead\\\":\\\"Dvd.dvd\\\",\\\"universe_parameters\\\":[]},{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.131\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.131\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.132\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"LT.lt.{0} 0 a\\\",\\\"typeHead\\\":\\\"LT.lt\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.155\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n._@.FVAExploration.2703781435._hygCtx._hyg.33\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.155\\\",\\\"_uniq.131\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.156\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a._@._internal.0.FVAExploration.2703781435._hygCtx._hyg.34\\\",\\\"type\\\":\\\"Nat.Prime n✝ → Dvd.dvd.{0} n✝ (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a n✝) a)\\\",\\\"typeHead\\\":\\\"forall\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.155\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.160\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₁\\\",\\\"type\\\":\\\"Nat.Prime (HAdd.hAdd.{0, 0, 0} n✝ 1)\\\",\\\"typeHead\\\":\\\"Nat.Prime\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.163\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case succ\\\\na : Nat\\\\nh₀ : LT.lt.{0} 0 a\\\\nn✝ : Nat\\\\na✝ : Nat.Prime n✝ → Dvd.dvd.{0} n✝ (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a n✝) a)\\\\nh₁ : Nat.Prime (HAdd.hAdd.{0, 0, 0} n✝ 1)\\\\n⊢ Dvd.dvd.{0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a (HAdd.hAdd.{0, 0, 0} n✝ 1)) a)\\\",\\\"target\\\":\\\"Dvd.dvd.{0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a (HAdd.hAdd.{0, 0, 0} n✝ 1)) a)\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"Nat.instDvd\\\",\\\"HAdd.hAdd.{0, 0, 0} n✝ 1\\\",\\\"HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a (HAdd.hAdd.{0, 0, 0} n✝ 1)) a\\\"],\\\"targetHead\\\":\\\"Dvd.dvd\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":15,\"line\":22},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0015-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":22},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":15,\"line\":22},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0015-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":22},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.131\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"a\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.131\"],\"has_metavariables\":false,\"id\":\"_uniq.132\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"LT.lt.{0} 0 a\",\"typeHead\":\"LT.lt\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.151\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₁\",\"type\":\"Nat.Prime 0\",\"typeHead\":\"Nat.Prime\",\"value\":null}],\"id\":\"_uniq.154\",\"omitted_implementation_details\":1,\"pretty\":\"case zero\\na : Nat\\nh₀ : LT.lt.{0} 0 a\\nh₁ : Nat.Prime 0\\n⊢ Dvd.dvd.{0} 0 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 0) a)\",\"target\":\"Dvd.dvd.{0} 0 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 0) a)\",\"targetArgs\":[\"Nat\",\"Nat.instDvd\",\"0\",\"HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 0) a\"],\"targetHead\":\"Dvd.dvd\",\"universe_parameters\":[]},{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.131\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"a\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.131\"],\"has_metavariables\":false,\"id\":\"_uniq.132\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"LT.lt.{0} 0 a\",\"typeHead\":\"LT.lt\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.155\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n._@.FVAExploration.2703781435._hygCtx._hyg.33\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.155\",\"_uniq.131\"],\"has_metavariables\":false,\"id\":\"_uniq.156\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"a._@._internal.0.FVAExploration.2703781435._hygCtx._hyg.34\",\"type\":\"Nat.Prime n✝ → Dvd.dvd.{0} n✝ (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a n✝) a)\",\"typeHead\":\"forall\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.155\"],\"has_metavariables\":false,\"id\":\"_uniq.160\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₁\",\"type\":\"Nat.Prime (HAdd.hAdd.{0, 0, 0} n✝ 1)\",\"typeHead\":\"Nat.Prime\",\"value\":null}],\"id\":\"_uniq.163\",\"omitted_implementation_details\":1,\"pretty\":\"case succ\\na : Nat\\nh₀ : LT.lt.{0} 0 a\\nn✝ : Nat\\na✝ : Nat.Prime n✝ → Dvd.dvd.{0} n✝ (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a n✝) a)\\nh₁ : Nat.Prime (HAdd.hAdd.{0, 0, 0} n✝ 1)\\n⊢ Dvd.dvd.{0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a (HAdd.hAdd.{0, 0, 0} n✝ 1)) a)\",\"target\":\"Dvd.dvd.{0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a (HAdd.hAdd.{0, 0, 0} n✝ 1)) a)\",\"targetArgs\":[\"Nat\",\"Nat.instDvd\",\"HAdd.hAdd.{0, 0, 0} n✝ 1\",\"HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a (HAdd.hAdd.{0, 0, 0} n✝ 1)) a\"],\"targetHead\":\"Dvd.dvd\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0015-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 22
+      },
+      "end": {
+        "column": 15,
+        "line": 22
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n0",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0015-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 22
+      },
+      "end": {
+        "column": 15,
+        "line": 22
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.131",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "a",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.131"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.132",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "LT.lt.{0} 0 a",
+              "typeHead": "LT.lt",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.151",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₁",
+              "type": "Nat.Prime 0",
+              "typeHead": "Nat.Prime",
+              "value": null
+            }
+          ],
+          "id": "_uniq.154",
+          "omitted_implementation_details": 1,
+          "pretty": "case zero\na : Nat\nh₀ : LT.lt.{0} 0 a\nh₁ : Nat.Prime 0\n⊢ Dvd.dvd.{0} 0 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 0) a)",
+          "target": "Dvd.dvd.{0} 0 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 0) a)",
+          "targetArgs": [
+            "Nat",
+            "Nat.instDvd",
+            "0",
+            "HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 0) a"
+          ],
+          "targetHead": "Dvd.dvd",
+          "universe_parameters": []
+        },
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.131",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "a",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.131"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.132",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "LT.lt.{0} 0 a",
+              "typeHead": "LT.lt",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.155",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n._@.FVAExploration.2703781435._hygCtx._hyg.33",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.155",
+                "_uniq.131"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.156",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "a._@._internal.0.FVAExploration.2703781435._hygCtx._hyg.34",
+              "type": "Nat.Prime n✝ → Dvd.dvd.{0} n✝ (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a n✝) a)",
+              "typeHead": "forall",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.155"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.160",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₁",
+              "type": "Nat.Prime (HAdd.hAdd.{0, 0, 0} n✝ 1)",
+              "typeHead": "Nat.Prime",
+              "value": null
+            }
+          ],
+          "id": "_uniq.163",
+          "omitted_implementation_details": 1,
+          "pretty": "case succ\na : Nat\nh₀ : LT.lt.{0} 0 a\nn✝ : Nat\na✝ : Nat.Prime n✝ → Dvd.dvd.{0} n✝ (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a n✝) a)\nh₁ : Nat.Prime (HAdd.hAdd.{0, 0, 0} n✝ 1)\n⊢ Dvd.dvd.{0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a (HAdd.hAdd.{0, 0, 0} n✝ 1)) a)",
+          "target": "Dvd.dvd.{0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a (HAdd.hAdd.{0, 0, 0} n✝ 1)) a)",
+          "targetArgs": [
+            "Nat",
+            "Nat.instDvd",
+            "HAdd.hAdd.{0, 0, 0} n✝ 1",
+            "HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a (HAdd.hAdd.{0, 0, 0} n✝ 1)) a"
+          ],
+          "targetHead": "Dvd.dvd",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n0",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 15,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "9155b1f0fa524666c236dc31b752ee2d81de1825bb00dc935bc6836103d1956c",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 48,
+    "elaborationMs": 15,
+    "artifactCount": 10116
+  },
+  "elapsedMs": 64,
+  "sequence": 15,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0015-candidate.lean",
+  "sourceHash": "a03669e066cffbc19e641d70a936b9d984fd28d29f414de288ff81a1d25d6fb6",
+  "evidenceId": "ev_dc0636eb5c82d095b3f91f2c73bb0712d08f410466ed4f17708a16b7ea662afc"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "p1",
+  "nodeId": "n1",
+  "stateHash": "690989e8e28c3ffdb78d202dcd5cf62f8cccc636e769c6f964a58defd116eead",
+  "round": 0,
+  "requestDigest": "069098f4f889e33d4901db39c3e5767445d016fc48beb415e82373af346c0049",
+  "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_nfactltnexpnm1ngt3/proposals/0002-context.json",
+  "modelTokens": 19328,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "codex-v1",
+  "provider": "codex-cli",
+  "usage": {
+    "input_tokens": 16508,
+    "output_tokens": 2820,
+    "cached_input_tokens": 0,
+    "reasoning_output_tokens": 2378
+  },
+  "metadata": {
+    "provider": "codex-cli",
+    "model": null,
+    "modelSelection": "codex-configured-default",
+    "promptDigest": "0c655fe20f220d35ca0c4099eff7f03e33847e819a6d9f3000eae46ffc8503d2",
+    "promptVersion": 1,
+    "toolPolicy": "disabled",
+    "ephemeral": true,
+    "cliVersion": "codex-cli 0.171.0",
+    "eventTypes": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "responseDigest": "c400efa884df3962445fa7f50e41d015780768646bb55f8828a2ab3147fc1ab2",
+    "providerErrors": [],
+    "elapsedMs": 38754,
+    "exitCode": 0,
+    "signal": null,
+    "stdoutDigest": "c400efa884df3962445fa7f50e41d015780768646bb55f8828a2ab3147fc1ab2",
+    "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrDiagnostic": ""
+  },
+  "proposals": [
+    {
+      "kind": "tactic",
+      "tactic": "intro k\ninduction k with\n| zero =>\n    intro m hm\n    change Nat.factorial 2 ≤ 2 * m ^ 0\n    rw [pow_zero, Nat.mul_one] <;> decide\n| succ k ih =>\n    intro m hm\n    have hsmall : k + 2 ≤ m := Nat.le_trans (Nat.le_succ (k + 2)) hm\n    change Nat.factorial (k + 2 + 1) ≤ 2 * m ^ (k + 1)\n    rw [Nat.factorial_succ, pow_succ]\n    calc\n      (k + 2 + 1) * Nat.factorial (k + 2) ≤ m * (2 * m ^ k) :=\n        Nat.mul_le_mul hm (ih m hsmall)\n      _ = 2 * (m ^ k * m) := by ac_rfl"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "intro k m\ninduction k with\n| zero =>\n    intro hm\n    simpa only [pow_zero, Nat.mul_one] using (show Nat.factorial 2 ≤ (2 : Nat) by decide)\n| succ k ih =>\n    intro hm\n    have hstep : Nat.factorial (k + 2) ≤ 2 * m ^ k :=\n      ih (Nat.le_trans (Nat.le_succ (k + 2)) hm)\n    calc\n      Nat.factorial (k.succ + 2) = (k + 2 + 1) * Nat.factorial (k + 2) :=\n        Nat.factorial_succ (k + 2)\n      _ ≤ m * (2 * m ^ k) := Nat.mul_le_mul hm hstep\n      _ = 2 * m ^ k.succ := by\n        rw [Nat.succ_eq_add_one, pow_succ] <;> ac_rfl"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 38755,
+  "evidenceId": "ev_c35ee350a4765d6da2e6a95c240f04434ed49f2cc529558a463ee4f5ab5352b9"
+}

@@ -1,0 +1,91 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.344",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "x",
+        "type": "Real",
+        "typeHead": "Real",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.344"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.2313",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "LT.lt.{0} (-1) x",
+        "typeHead": "LT.lt",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.2337",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "n._@.FVAExploration.1252590147._hygCtx._hyg.96",
+        "type": "Nat",
+        "typeHead": "Nat",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.2337",
+          "_uniq.344"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.2338",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "a._@._internal.0.FVAExploration.1252590147._hygCtx._hyg.97",
+        "type": "LT.lt.{0} 0 n✝ →\n  LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝)",
+        "typeHead": "forall",
+        "value": null
+      }
+    ],
+    "id": "_uniq.7561",
+    "omitted_implementation_details": 1,
+    "pretty": "case succ\nx : Real\nh₀ : LT.lt.{0} (-1) x\nn✝ : Nat\na✝ :\n  LT.lt.{0} 0 n✝ →\n    LE.le.{0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝)\n⊢ LE.le.{0} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) x)\n    (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} x (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝))\n      (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝))",
+    "target": "LE.le.{0} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) x)\n  (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} x (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝))\n    (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝))",
+    "targetArgs": [
+      "Real",
+      "Real.instLE",
+      "HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} (↑n✝) x)) x",
+      "HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} x (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝))\n  (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 x) n✝)"
+    ],
+    "targetHead": "LE.le",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 15,
+    "maxDepth": 8,
+    "depth": 5,
+    "modelTokensRemaining": 0,
+    "remainingMs": 287825
+  }
+}

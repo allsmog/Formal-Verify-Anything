@@ -1,0 +1,63 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":6,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_11div10tonmn1ton/attempts/0053-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\ncase succ\\nn✝ : ℕ\\na✝ : 11 ∣ -(-1) ^ n✝ + 10 ^ n✝\\n⊢ 11 ∣ -(-1) ^ (n✝ + 1) + 10 ^ (n✝ + 1)\",\"endPos\":{\"column\":22,\"line\":30},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_11div10tonmn1ton/attempts/0053-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":12,\"line\":30},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_11div10tonmn1ton/attempts/0053-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 18
+      },
+      "end": {
+        "column": 6,
+        "line": 18
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\ncase succ\nn✝ : ℕ\na✝ : 11 ∣ -(-1) ^ n✝ + 10 ^ n✝\n⊢ 11 ∣ -(-1) ^ (n✝ + 1) + 10 ^ (n✝ + 1)",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_11div10tonmn1ton/attempts/0053-candidate.lean",
+      "start": {
+        "column": 12,
+        "line": 30
+      },
+      "end": {
+        "column": 22,
+        "line": 30
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 53,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "3c6998557ec5de8c56a9e739e90f2d0d4f30816bb185d7fd2d91550a66603d1a",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 26,
+    "elaborationMs": 90,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 116,
+  "sequence": 53,
+  "kind": "candidate",
+  "nodeId": "n10",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_11div10tonmn1ton/attempts/0053-candidate.lean",
+  "sourceHash": "d36d64f547c7090aaca3d36f398f71e8ceffe198f58df406e2dd56acad2a07a6",
+  "evidenceId": "ev_079be1f37276c3b8177e5dfa893af7d535def7c6d3720aa61c0d49f33cfcfd25"
+}

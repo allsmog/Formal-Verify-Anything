@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\ncase succ\\nn : ℕ\\nh₁ : Even n\\nn✝ : ℕ\\na✝ : Even n✝ → n✝ - n = 2 → n✝ * n = 288 → n✝ = 18\\nh₃ : n✝ * n + n = 288\\nh₂ : 1 + n✝ - n = 2\\nh₀ : Even (1 + n✝)\\n⊢ n✝ = 17\",\"endPos\":{\"column\":18,\"line\":31},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0038-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":31},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\ncase succ\nn : ℕ\nh₁ : Even n\nn✝ : ℕ\na✝ : Even n✝ → n✝ - n = 2 → n✝ * n = 288 → n✝ = 18\nh₃ : n✝ * n + n = 288\nh₂ : 1 + n✝ - n = 2\nh₀ : Even (1 + n✝)\n⊢ n✝ = 17",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0038-candidate.lean",
+      "start": {
+        "column": 8,
+        "line": 31
+      },
+      "end": {
+        "column": 18,
+        "line": 31
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 38,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "d0f955827604d40389ddf6036ca0fe52c1a5b63bb8a3ece469144af544bf2d92",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 35,
+    "elaborationMs": 115,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 153,
+  "sequence": 38,
+  "kind": "candidate",
+  "nodeId": "n4",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0038-candidate.lean",
+  "sourceHash": "5b673695962973e80470059250cc6feb2e0d8eda44e2d6a08557d8ec3043dde8",
+  "evidenceId": "ev_004009ba6d3d7120a8fab1907ba2ea6a7ee173819d8f4c6f6f47ec96c980b9e2"
+}

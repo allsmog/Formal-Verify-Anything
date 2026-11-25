@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  (n✝ + 1)!\\nis not definitionally equal to the right-hand side\\n  (n✝ + 1) ^ n✝\\n\\ncase succ\\nn✝ : ℕ\\na✝ : 3 ≤ n✝ → n✝! < n✝ ^ (n✝ - 1)\\nh₀ : 2 ≤ n✝\\n⊢ (n✝ + 1)! < (n✝ + 1) ^ n✝\",\"endPos\":{\"column\":9,\"line\":26},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_nfactltnexpnm1ngt3/attempts/0026-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":26},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  (n✝ + 1)!\nis not definitionally equal to the right-hand side\n  (n✝ + 1) ^ n✝\n\ncase succ\nn✝ : ℕ\na✝ : 3 ≤ n✝ → n✝! < n✝ ^ (n✝ - 1)\nh₀ : 2 ≤ n✝\n⊢ (n✝ + 1)! < (n✝ + 1) ^ n✝",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_nfactltnexpnm1ngt3/attempts/0026-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 26
+      },
+      "end": {
+        "column": 9,
+        "line": 26
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 26,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "2ecd795f5ec5dfdee579c62c3abb6767b665223ef0ec8b92f334408ad09c8bf5",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 26,
+    "elaborationMs": 33,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 60,
+  "sequence": 26,
+  "kind": "candidate",
+  "nodeId": "n3",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_nfactltnexpnm1ngt3/attempts/0026-candidate.lean",
+  "sourceHash": "66fb6e38631beef9b86d2284324f54f7924086584ffd6f3f3ede788a7952e4f1",
+  "evidenceId": "ev_9f6d34cc6b2064a2d6fa411dea383cbb9c8c5910c643f551071f8b0957782f39"
+}

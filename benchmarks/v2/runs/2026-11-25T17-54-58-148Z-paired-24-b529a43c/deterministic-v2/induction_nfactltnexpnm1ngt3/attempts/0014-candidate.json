@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"tactic 'aesop' failed, made no progress\\nInitial goal:\\n  n : ℕ\\n  h₀ : 3 ≤ n\\n  ⊢ n ! < n ^ (n - 1)\",\"endPos\":{\"column\":7,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_nfactltnexpnm1ngt3/attempts/0014-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":20},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "tactic 'aesop' failed, made no progress\nInitial goal:\n  n : ℕ\n  h₀ : 3 ≤ n\n  ⊢ n ! < n ^ (n - 1)",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_nfactltnexpnm1ngt3/attempts/0014-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 20
+      },
+      "end": {
+        "column": 7,
+        "line": 20
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 14,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "977abfcd015d2b143f873bed9e56f8aa07868bda3e53234cae7820b4ddeb567e",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 26,
+    "elaborationMs": 121,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 148,
+  "sequence": 14,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_nfactltnexpnm1ngt3/attempts/0014-candidate.lean",
+  "sourceHash": "154940686935b33b707b92b4f2e5a6695af5b9b9a4a6910c320a53b7b5d0c904",
+  "evidenceId": "ev_e87c84f15d505dc21ee1c9c8efa51977b2c71d8569546c1a5a2e4ea8ca21baff"
+}

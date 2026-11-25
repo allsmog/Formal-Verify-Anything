@@ -1,0 +1,63 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"aesop: failed to prove the goal after exhaustive search.\",\"endPos\":{\"column\":13,\"line\":30},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_288/attempts/0057-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":30},\"severity\":\"warning\"}\n{\"caption\":\"\",\"data\":\"linarith failed to find a contradiction\\ncase h1.h\\nx y : ℝ\\nn : NNReal\\nh₁ : |y| = 6\\nh₃ : √(x ^ 2 + y ^ 2) = √↑n\\nh₂ : √(73 - x * 16 + (x ^ 2 - y * 6) + y ^ 2) = 15\\nleft : x < 0\\nright : y < 0\\na✝ : n < 52\\n⊢ False\\nfailed\",\"endPos\":{\"column\":18,\"line\":32},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_288/attempts/0057-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":10,\"line\":32},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "warning",
+      "message": "aesop: failed to prove the goal after exhaustive search.",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_288/attempts/0057-candidate.lean",
+      "start": {
+        "column": 8,
+        "line": 30
+      },
+      "end": {
+        "column": 13,
+        "line": 30
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "linarith failed to find a contradiction\ncase h1.h\nx y : ℝ\nn : NNReal\nh₁ : |y| = 6\nh₃ : √(x ^ 2 + y ^ 2) = √↑n\nh₂ : √(73 - x * 16 + (x ^ 2 - y * 6) + y ^ 2) = 15\nleft : x < 0\nright : y < 0\na✝ : n < 52\n⊢ False\nfailed",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_288/attempts/0057-candidate.lean",
+      "start": {
+        "column": 10,
+        "line": 32
+      },
+      "end": {
+        "column": 18,
+        "line": 32
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 57,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "5dca1f5dea1ae88b85a1b36953e96d157954c0c858cc6d9aa283b0ac36fe8d0c",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 35,
+    "elaborationMs": 429,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 469,
+  "sequence": 57,
+  "kind": "candidate",
+  "nodeId": "n4",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_288/attempts/0057-candidate.lean",
+  "sourceHash": "2e2b17dd8e41a18b6d519100f18d342413d2e98043918fa73eaf4156eb9897b7",
+  "evidenceId": "ev_65d1489534a267f63b8bf11f49b4cc03532e4dac59fa67881cd229fd15836b68"
+}

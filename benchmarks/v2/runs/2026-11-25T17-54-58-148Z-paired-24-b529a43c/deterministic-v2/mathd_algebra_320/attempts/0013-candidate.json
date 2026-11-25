@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"linarith failed to find a contradiction\\ncase h1.h\\nx : ℝ\\na b c : ℕ\\nh₀ : 0 < a ∧ 0 < b ∧ 0 ≤ (↑a + √↑b) / 2\\nh₁ : 2 * ((↑a + √↑b) / 2) ^ 2 = 4 * ((↑a + √↑b) / 2) + 9\\nh₂ : x = (↑a + √↑b) / 2\\nh₃ : c = 2\\na✝ : a + b < 24\\n⊢ False\\nfailed\",\"endPos\":{\"column\":13,\"line\":26},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_320/attempts/0013-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":26},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "linarith failed to find a contradiction\ncase h1.h\nx : ℝ\na b c : ℕ\nh₀ : 0 < a ∧ 0 < b ∧ 0 ≤ (↑a + √↑b) / 2\nh₁ : 2 * ((↑a + √↑b) / 2) ^ 2 = 4 * ((↑a + √↑b) / 2) + 9\nh₂ : x = (↑a + √↑b) / 2\nh₃ : c = 2\na✝ : a + b < 24\n⊢ False\nfailed",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_320/attempts/0013-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 26
+      },
+      "end": {
+        "column": 13,
+        "line": 26
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 13,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "f14280a2e174d47eaed27a7e4572d341fe7b01f75d051f015b0e089f1ebba59c",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 51,
+    "elaborationMs": 494,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 549,
+  "sequence": 13,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_320/attempts/0013-candidate.lean",
+  "sourceHash": "91dad3e46b894cfbee72f4eec1a5108f4189fee2a27d38ecac88cb9f46eee7eb",
+  "evidenceId": "ev_be0cdbaa30cd910a3abbea9d6482608982b2a68b911ce946a46733681f87cda7"
+}

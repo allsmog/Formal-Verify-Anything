@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"omega could not prove the goal:\\na possible counterexample may satisfy the constraints\\n  b ≥ 0\\n  a ≥ 0\\n  a - b ≥ 1\\nwhere\\n a := ↑((∑ k ∈ Finset.range n, k) ^ 2)\\n b := ↑(∑ k ∈ Finset.range n, k ^ 3)\",\"endPos\":{\"column\":7,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0005-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  b ≥ 0\n  a ≥ 0\n  a - b ≥ 1\nwhere\n a := ↑((∑ k ∈ Finset.range n, k) ^ 2)\n b := ↑(∑ k ∈ Finset.range n, k ^ 3)",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0005-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 19
+      },
+      "end": {
+        "column": 7,
+        "line": 19
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 5,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "e8473b0371e6d94df4f9296359ddebeace27c48ba0df0c1710bbd019f7259b24",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 40,
+    "elaborationMs": 12,
+    "artifactCount": 10204
+  },
+  "elapsedMs": 54,
+  "sequence": 5,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0005-candidate.lean",
+  "sourceHash": "787b086f01494e9777c31fc287942737c09297a95447bce74b285e806553acba",
+  "evidenceId": "ev_20f9ac896ed7a9983ee3f79c6ed1c9d218959a1ab932da1c49d34940220a4ef5"
+}

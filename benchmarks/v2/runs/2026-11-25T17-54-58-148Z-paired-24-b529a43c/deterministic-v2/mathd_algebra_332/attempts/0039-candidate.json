@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\nx y : ℝ\\nh₁ : √(x * y) = √19\\nh₀ : x + y = ↑(2 * 7)\\n⊢ x ^ 2 + y ^ 2 = 158\",\"endPos\":{\"column\":16,\"line\":25},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0039-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":25},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\nx y : ℝ\nh₁ : √(x * y) = √19\nh₀ : x + y = ↑(2 * 7)\n⊢ x ^ 2 + y ^ 2 = 158",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0039-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 25
+      },
+      "end": {
+        "column": 16,
+        "line": 25
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 39,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "a2933871b4b8d35ec4d1e6c6908a625493f29156b41e6ffdf06dd2e75342d6ee",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 130,
+    "elaborationMs": 67,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 201,
+  "sequence": 39,
+  "kind": "candidate",
+  "nodeId": "n3",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0039-candidate.lean",
+  "sourceHash": "a129a91d5c7ef4347b7e5e869ee2ef41162e3a1faf3ea9e25d6ebbd663114ed3",
+  "evidenceId": "ev_1aed5b68d1f960cf9c658fcd603aa2bf109181fb4c0d79c3338f8fdb191c4ec5"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "p0",
+  "nodeId": "n0",
+  "stateHash": "e514c42ba93f0dc626c02cf78489526f7f087c5397db66b9cd0e0ed6cd6722f1",
+  "round": 0,
+  "requestDigest": "61c06578ceda4c43e8aa651c8b2879b6cf817bcf26216477c963dbce37c6dcdb",
+  "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_521/proposals/0001-context.json",
+  "modelTokens": 19054,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "codex-v1",
+  "provider": "codex-cli",
+  "usage": {
+    "input_tokens": 16669,
+    "output_tokens": 2385,
+    "cached_input_tokens": 0,
+    "reasoning_output_tokens": 1712
+  },
+  "metadata": {
+    "provider": "codex-cli",
+    "model": null,
+    "modelSelection": "codex-configured-default",
+    "promptDigest": "881fe9cc0ddb978f16a5ab31522770782e72156cbd8a4f171d51d581631e7732",
+    "promptVersion": 1,
+    "toolPolicy": "disabled",
+    "ephemeral": true,
+    "cliVersion": "codex-cli 0.171.0",
+    "eventTypes": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "responseDigest": "dc62c67717f82847ed38b30a83d6e77582ed45f4ee35accea5be61c16dc25a93",
+    "providerErrors": [],
+    "elapsedMs": 37023,
+    "exitCode": 0,
+    "signal": null,
+    "stdoutDigest": "dc62c67717f82847ed38b30a83d6e77582ed45f4ee35accea5be61c16dc25a93",
+    "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrDiagnostic": ""
+  },
+  "proposals": [
+    {
+      "kind": "tactic",
+      "tactic": "rcases lt_trichotomy m 18 with hm | hm | hm\n· have hp : m * n ≤ 17 * 16 := Nat.mul_le_mul (by omega) (by omega)\n  rw [h₃] at hp\n  norm_num at hp\n· exact hm\n· have hp : 19 * 16 ≤ m * n := Nat.mul_le_mul (by omega) (by omega)\n  rw [h₃] at hp\n  norm_num at hp"
+    },
+    {
+      "kind": "have",
+      "name": "hsum",
+      "type": "m = n + 2"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "have hsum : m = n + 2 := by omega\nhave hp : (n + 2) * n = 288 := hsum ▸ h₃\nrcases lt_trichotomy n 16 with hn | hn | hn\n· have hbound : (n + 2) * n ≤ 17 * 15 := by\n    have hn' : n ≤ 15 := by omega\n    have hn'' : n + 2 ≤ 17 := by omega\n    gcongr\n  rw [hp] at hbound\n  norm_num at hbound\n· omega\n· have hbound : 19 * 17 ≤ (n + 2) * n := by\n    have hn' : 17 ≤ n := by omega\n    have hn'' : 19 ≤ n + 2 := by omega\n    gcongr\n  rw [hp] at hbound\n  norm_num at hbound"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "have hpos : 0 < m - n := by simpa [h₂]\nhave hnm : n ≤ m := le_of_lt (Nat.sub_pos_iff_lt.mp hpos)\nhave hsum : m = n + 2 := by\n  simpa [h₂, Nat.add_comm] using (Nat.sub_add_cancel hnm).symm\nrcases lt_trichotomy n 16 with hn | hn | hn\n· have hn' : n ≤ 15 := Nat.le_of_lt_succ hn\n  have hm' : m ≤ 17 := by\n    rw [hsum]\n    exact Nat.add_le_add_right hn' 2\n  have hp := Nat.mul_le_mul hm' hn'\n  rw [h₃] at hp\n  norm_num at hp\n· norm_num [hsum, hn]\n· have hn' : 17 ≤ n := Nat.succ_le_of_lt hn\n  have hm' : 19 ≤ m := by\n    rw [hsum]\n    exact Nat.add_le_add_right hn' 2\n  have hp := Nat.mul_le_mul hm' hn'\n  rw [h₃] at hp\n  norm_num at hp"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 37025,
+  "evidenceId": "ev_1b602bf00238c3aaa894a4fe3512151f98018822165f5fef360ad0f5b286a527"
+}

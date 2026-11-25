@@ -1,0 +1,139 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.130\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"p\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.131\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.131\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.132\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"LT.lt.{0} 0 a\\\",\\\"typeHead\\\":\\\"LT.lt\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.130\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.133\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₁\\\",\\\"type\\\":\\\"Nat.Prime p\\\",\\\"typeHead\\\":\\\"Nat.Prime\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.636\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"p a : Nat\\\\nh₀ : LT.lt.{0} 0 a\\\\nh₁ : Nat.Prime p\\\\n⊢ Dvd.dvd.{0} p (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a)\\\",\\\"target\\\":\\\"Dvd.dvd.{0} p (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a)\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"Nat.instDvd\\\",\\\"p\\\",\\\"HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a\\\"],\\\"targetHead\\\":\\\"Dvd.dvd\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":15,\"line\":22},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0013-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":22},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":15,\"line\":22},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0013-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":22},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.130\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"p\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.131\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"a\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.131\"],\"has_metavariables\":false,\"id\":\"_uniq.132\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"LT.lt.{0} 0 a\",\"typeHead\":\"LT.lt\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.130\"],\"has_metavariables\":false,\"id\":\"_uniq.133\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₁\",\"type\":\"Nat.Prime p\",\"typeHead\":\"Nat.Prime\",\"value\":null}],\"id\":\"_uniq.636\",\"omitted_implementation_details\":1,\"pretty\":\"p a : Nat\\nh₀ : LT.lt.{0} 0 a\\nh₁ : Nat.Prime p\\n⊢ Dvd.dvd.{0} p (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a)\",\"target\":\"Dvd.dvd.{0} p (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a)\",\"targetArgs\":[\"Nat\",\"Nat.instDvd\",\"p\",\"HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a\"],\"targetHead\":\"Dvd.dvd\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0013-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 22
+      },
+      "end": {
+        "column": 15,
+        "line": 22
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n0",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0013-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 22
+      },
+      "end": {
+        "column": 15,
+        "line": 22
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.130",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "p",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.131",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "a",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.131"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.132",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "LT.lt.{0} 0 a",
+              "typeHead": "LT.lt",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.130"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.133",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₁",
+              "type": "Nat.Prime p",
+              "typeHead": "Nat.Prime",
+              "value": null
+            }
+          ],
+          "id": "_uniq.636",
+          "omitted_implementation_details": 1,
+          "pretty": "p a : Nat\nh₀ : LT.lt.{0} 0 a\nh₁ : Nat.Prime p\n⊢ Dvd.dvd.{0} p (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a)",
+          "target": "Dvd.dvd.{0} p (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a)",
+          "targetArgs": [
+            "Nat",
+            "Nat.instDvd",
+            "p",
+            "HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a"
+          ],
+          "targetHead": "Dvd.dvd",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n0",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 13,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "fc8830ee0a02c899adeb326319c16cb9d46f939e23ac2fcb21c51918a36e3e01",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 58,
+    "elaborationMs": 22,
+    "artifactCount": 10116
+  },
+  "elapsedMs": 81,
+  "sequence": 13,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0013-candidate.lean",
+  "sourceHash": "4811316de17e2a2bbdc6f56a307c29903ee167caf1f7180c9f0f502bdf82110b",
+  "evidenceId": "ev_3e2231e33e5218e2297005ab184cf03c71247ca6af6fc07879eff67808fc34ab"
+}

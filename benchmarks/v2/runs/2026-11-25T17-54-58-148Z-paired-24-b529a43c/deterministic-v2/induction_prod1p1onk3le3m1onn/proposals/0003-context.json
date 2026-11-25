@@ -1,0 +1,66 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.1006",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "n",
+        "type": "Nat",
+        "typeHead": "Nat",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.1006"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.1007",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "LT.lt.{0} 0 n",
+        "typeHead": "LT.lt",
+        "value": null
+      }
+    ],
+    "id": "_uniq.5227",
+    "omitted_implementation_details": 1,
+    "pretty": "n : Nat\nh₀ : LT.lt.{0} 0 n\n⊢ LE.le.{0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} (Inv.inv.{0} ↑x) 3))\n    (HSub.hSub.{0, 0, 0} 3 (Inv.inv.{0} ↑n))",
+    "target": "LE.le.{0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} (Inv.inv.{0} ↑x) 3))\n  (HSub.hSub.{0, 0, 0} 3 (Inv.inv.{0} ↑n))",
+    "targetArgs": [
+      "Real",
+      "Real.instLE",
+      "∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} (Inv.inv.{0} ↑x) 3)",
+      "HSub.hSub.{0, 0, 0} 3 (Inv.inv.{0} ↑n)"
+    ],
+    "targetHead": "LE.le",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Algebra.BigOperators.Intervals"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 50,
+    "maxDepth": 8,
+    "depth": 2,
+    "modelTokensRemaining": 0,
+    "remainingMs": 296726
+  },
+  "feedback": []
+}

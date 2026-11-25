@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  n✝ + 1\\nis not definitionally equal to the right-hand side\\n  a ^ (n✝ + 1) - a\\n\\ncase succ\\na : ℕ\\nh₀ : 0 < a\\nn✝ : ℕ\\na✝ : Nat.Prime n✝ → n✝ ∣ a ^ n✝ - a\\nh₁ : Nat.Prime (n✝ + 1)\\n⊢ n✝ + 1 ∣ a ^ (n✝ + 1) - a\",\"endPos\":{\"column\":7,\"line\":27},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0027-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":27},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  n✝ + 1\nis not definitionally equal to the right-hand side\n  a ^ (n✝ + 1) - a\n\ncase succ\na : ℕ\nh₀ : 0 < a\nn✝ : ℕ\na✝ : Nat.Prime n✝ → n✝ ∣ a ^ n✝ - a\nh₁ : Nat.Prime (n✝ + 1)\n⊢ n✝ + 1 ∣ a ^ (n✝ + 1) - a",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0027-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 27
+      },
+      "end": {
+        "column": 7,
+        "line": 27
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 27,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "dfddc5a906ec47c63289413cbadc5e2f6ea542e9aee18db2b7d808da30b6a458",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 37,
+    "elaborationMs": 30,
+    "artifactCount": 10116
+  },
+  "elapsedMs": 70,
+  "sequence": 27,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0027-candidate.lean",
+  "sourceHash": "a5a605b6851afcabc95705837d1defeb59436b63409c9e13d582abea0ea192c2",
+  "evidenceId": "ev_9edeb65404d3098f90b0e2968e0e9f0cd0e011ceb0f49db6bb8e1a5bc38cfa36"
+}

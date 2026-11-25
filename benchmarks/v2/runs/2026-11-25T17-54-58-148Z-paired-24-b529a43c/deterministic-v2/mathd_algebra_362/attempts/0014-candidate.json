@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  a + b\\nis not definitionally equal to the right-hand side\\n  8 / 3\\n\\na b : ℝ\\nh₀ : a ^ 2 * b ^ 3 = 32 / 27\\nh₁ : a / b ^ 3 = 27 / 4\\n⊢ a + b = 8 / 3\",\"endPos\":{\"column\":7,\"line\":22},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_362/attempts/0014-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":22},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  a + b\nis not definitionally equal to the right-hand side\n  8 / 3\n\na b : ℝ\nh₀ : a ^ 2 * b ^ 3 = 32 / 27\nh₁ : a / b ^ 3 = 27 / 4\n⊢ a + b = 8 / 3",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_362/attempts/0014-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 22
+      },
+      "end": {
+        "column": 7,
+        "line": 22
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 14,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "78cfd09ebbb19a1fb3730916aa42df9a9f3c5c863d7cbbe2a0ff5ca8c9056f88",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 30,
+    "elaborationMs": 27,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 60,
+  "sequence": 14,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_362/attempts/0014-candidate.lean",
+  "sourceHash": "ccf7add7ed48998bf893567b928ca1b168d51fa3d47e3fb187765f1f914b215a",
+  "evidenceId": "ev_47726f1d8143f0e55444ab9192042bcf359a1fb77480562a1a9e7a3addfe48ba"
+}

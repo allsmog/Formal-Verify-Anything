@@ -1,0 +1,91 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.155",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "n._@.FVAExploration.2703781435._hygCtx._hyg.33",
+        "type": "Nat",
+        "typeHead": "Nat",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.155"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.4156",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₁",
+        "type": "Nat.Prime (HAdd.hAdd.{0, 0, 0} 1 n✝)",
+        "typeHead": "Nat.Prime",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.4674",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "LT.lt.{0} 0 0",
+        "typeHead": "LT.lt",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.155"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.4675",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "a._@._internal.0.FVAExploration.2703781435._hygCtx._hyg.34",
+        "type": "Nat.Prime n✝ → Dvd.dvd.{0} n✝ (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 0 n✝) 0)",
+        "typeHead": "forall",
+        "value": null
+      }
+    ],
+    "id": "_uniq.4679",
+    "omitted_implementation_details": 1,
+    "pretty": "case succ.zero\nn✝ : Nat\nh₁ : Nat.Prime (HAdd.hAdd.{0, 0, 0} 1 n✝)\nh₀ : LT.lt.{0} 0 0\na✝ : Nat.Prime n✝ → Dvd.dvd.{0} n✝ (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 0 n✝) 0)\n⊢ Dvd.dvd.{0} (HAdd.hAdd.{0, 0, 0} 1 n✝) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 0 (HPow.hPow.{0, 0, 0} 0 n✝)) 0)",
+    "target": "Dvd.dvd.{0} (HAdd.hAdd.{0, 0, 0} 1 n✝) (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 0 (HPow.hPow.{0, 0, 0} 0 n✝)) 0)",
+    "targetArgs": [
+      "Nat",
+      "Nat.instDvd",
+      "HAdd.hAdd.{0, 0, 0} 1 n✝",
+      "HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 0 (HPow.hPow.{0, 0, 0} 0 n✝)) 0"
+    ],
+    "targetHead": "Dvd.dvd",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Data.Nat.Prime.Basic"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 2,
+    "maxDepth": 8,
+    "depth": 4,
+    "modelTokensRemaining": 0,
+    "remainingMs": 288310
+  }
+}

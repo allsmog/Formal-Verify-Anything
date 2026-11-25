@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"omega could not prove the goal:\\na possible counterexample may satisfy the constraints\\n  1 ≤ a ≤ 4\\nwhere\\n a := ↑k\",\"endPos\":{\"column\":7,\"line\":23},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_435/attempts/0005-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":23},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  1 ≤ a ≤ 4\nwhere\n a := ↑k",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_435/attempts/0005-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 23
+      },
+      "end": {
+        "column": 7,
+        "line": 23
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 5,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "b2c8531af34e779c1f961f3f8c4e475e92969ce1ff9c348ef2f96c8a1f641286",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 35,
+    "elaborationMs": 14,
+    "artifactCount": 10092
+  },
+  "elapsedMs": 51,
+  "sequence": 5,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_435/attempts/0005-candidate.lean",
+  "sourceHash": "3bac869262258ef4bd5cf457777d7d3d3a155278debce7b1a8c08397a89a8a2e",
+  "evidenceId": "ev_894119bcd5f2414d0bc7890653c133e5a1387113b7f4be51df42720eade2b9ae"
+}

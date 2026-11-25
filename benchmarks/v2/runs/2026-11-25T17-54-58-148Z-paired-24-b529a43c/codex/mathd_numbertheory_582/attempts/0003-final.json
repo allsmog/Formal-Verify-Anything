@@ -1,0 +1,50 @@
+{
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_582\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (n : Nat),\\\\n  LT.lt.{0} 0 n →\\\\n    Dvd.dvd.{0} 3 n →\\\\n      Eq.{1}\\\\n        (HMod.hMod.{0, 0, 0}\\\\n          (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n 4) (HAdd.hAdd.{0, 0, 0} n 6))\\\\n            (HAdd.hAdd.{0, 0, 0} n 8))\\\\n          9)\\\\n        0\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":25},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_582/attempts/0003-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":25},\"severity\":\"information\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3275,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_AUDIT:{\"axioms\":[\"propext\"],\"declaration\":\"mathd_numbertheory_582\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (n : Nat),\\n  LT.lt.{0} 0 n →\\n    Dvd.dvd.{0} 3 n →\\n      Eq.{1}\\n        (HMod.hMod.{0, 0, 0}\\n          (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n 4) (HAdd.hAdd.{0, 0, 0} n 6))\\n            (HAdd.hAdd.{0, 0, 0} n 8))\\n          9)\\n        0\",\"universe_parameters\":[],\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_582/attempts/0003-final.lean",
+      "start": {
+        "column": 0,
+        "line": 25
+      },
+      "end": {
+        "column": 33,
+        "line": 25
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "mathd_numbertheory_582",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (n : Nat),\n  LT.lt.{0} 0 n →\n    Dvd.dvd.{0} 3 n →\n      Eq.{1}\n        (HMod.hMod.{0, 0, 0}\n          (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n 4) (HAdd.hAdd.{0, 0, 0} n 6))\n            (HAdd.hAdd.{0, 0, 0} n 8))\n          9)\n        0",
+      "universe_parameters": [],
+      "version": 1
+    }
+  ],
+  "unparsed": [],
+  "sequence": 3,
+  "kind": "final",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_582/attempts/0003-final.lean",
+  "sourceHash": "7f96975950ae831db89fea592ab3a8d32ddd5b5c593c5eb95f66f462efea9ea3",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_38c259262cd0940d16738bc394a7a66514d8de9717cc87c403a4b7e3e75feab6"
+}

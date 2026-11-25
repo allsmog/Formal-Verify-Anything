@@ -1,0 +1,92 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.1469",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "a",
+        "type": "Real",
+        "typeHead": "Real",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.1470",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "b",
+        "type": "Real",
+        "typeHead": "Real",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.1469",
+          "_uniq.1470"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.1471",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "Eq.{1} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 3)) (HDiv.hDiv.{0, 0, 0} 32 27)",
+        "typeHead": "Eq",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.1469",
+          "_uniq.1470"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.1472",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₁",
+        "type": "Eq.{1} (HDiv.hDiv.{0, 0, 0} a (HPow.hPow.{0, 0, 0} b 3)) (HDiv.hDiv.{0, 0, 0} 27 4)",
+        "typeHead": "Eq",
+        "value": null
+      }
+    ],
+    "id": "_uniq.2937",
+    "omitted_implementation_details": 1,
+    "pretty": "a b : Real\nh₀ : Eq.{1} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 3)) (HDiv.hDiv.{0, 0, 0} 32 27)\nh₁ : Eq.{1} (HDiv.hDiv.{0, 0, 0} a (HPow.hPow.{0, 0, 0} b 3)) (HDiv.hDiv.{0, 0, 0} 27 4)\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} a b) (8 / 3)",
+    "target": "Eq.{1} (HAdd.hAdd.{0, 0, 0} a b) (8 / 3)",
+    "targetArgs": [
+      "Real",
+      "HAdd.hAdd.{0, 0, 0} a b",
+      "8 / 3"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 42,
+    "maxDepth": 8,
+    "depth": 2,
+    "modelTokensRemaining": 0,
+    "remainingMs": 290093
+  },
+  "feedback": []
+}

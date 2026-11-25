@@ -1,0 +1,52 @@
+{
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_293\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (x : NNReal),\\\\n  Eq.{1}\\\\n    (HMul.hMul.{0, 0, 0}\\\\n      (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\\\\n      (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\\\\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":27},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/attempts/0004-recheck.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":27},\"severity\":\"information\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 4015,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_293\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (x : NNReal),\\n  Eq.{1}\\n    (HMul.hMul.{0, 0, 0}\\n      (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\\n      (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))\",\"universe_parameters\":[],\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/attempts/0004-recheck.lean",
+      "start": {
+        "column": 0,
+        "line": 27
+      },
+      "end": {
+        "column": 28,
+        "line": 27
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "mathd_algebra_293",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (x : NNReal),\n  Eq.{1}\n    (HMul.hMul.{0, 0, 0}\n      (HMul.hMul.{0, 0, 0} (Real.sqrt (HMul.hMul.{0, 0, 0} 60 ↑x)) (Real.sqrt (HMul.hMul.{0, 0, 0} 12 ↑x)))\n      (Real.sqrt (HMul.hMul.{0, 0, 0} 63 ↑x)))\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 36 ↑x) (Real.sqrt (HMul.hMul.{0, 0, 0} 35 ↑x)))",
+      "universe_parameters": [],
+      "version": 1
+    }
+  ],
+  "unparsed": [],
+  "sequence": 4,
+  "kind": "recheck",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_293/attempts/0004-recheck.lean",
+  "sourceHash": "1e55c9795364876c755143a93eb74f28998abe38778a70ce8c8ae539a76d95c7",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_36c0f916675735da0f465b0d9c23ee5a836108090d46b1c882dc0cdfcfdad294"
+}

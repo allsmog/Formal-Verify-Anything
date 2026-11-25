@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\ncase succ\\na : ℕ\\nh₀ : 0 < a\\nn✝ : ℕ\\na✝ : Nat.Prime n✝ → n✝ ∣ a ^ n✝ - a\\nh₁ : Nat.Prime (n✝ + 1)\\n⊢ n✝ + 1 ∣ a ^ (n✝ + 1) - a\",\"endPos\":{\"column\":14,\"line\":27},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0026-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":27},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\ncase succ\na : ℕ\nh₀ : 0 < a\nn✝ : ℕ\na✝ : Nat.Prime n✝ → n✝ ∣ a ^ n✝ - a\nh₁ : Nat.Prime (n✝ + 1)\n⊢ n✝ + 1 ∣ a ^ (n✝ + 1) - a",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0026-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 27
+      },
+      "end": {
+        "column": 14,
+        "line": 27
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 26,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "076143dd53217cf1300538a4de5a32e9395def68de7e51a26cee1479788738ab",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 32,
+    "elaborationMs": 35,
+    "artifactCount": 10116
+  },
+  "elapsedMs": 69,
+  "sequence": 26,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0026-candidate.lean",
+  "sourceHash": "50b28394346ff48f238f7ccbef5b5adf9c79453c7f45b3c248eeaeb5eaba83de",
+  "evidenceId": "ev_5ccd8339d0e32a97c29fbb78cb73a2097dfa5a18074601c45c3873d79b979019"
+}

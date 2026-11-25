@@ -1,0 +1,37 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [],
+    "id": "_uniq.1712",
+    "omitted_implementation_details": 1,
+    "pretty": "case zero\n⊢ Eq.{1} (∑ x ∈ Finset.range 0, HPow.hPow.{0, 0, 0} x 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range 0, k) 2)",
+    "target": "Eq.{1} (∑ x ∈ Finset.range 0, HPow.hPow.{0, 0, 0} x 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range 0, k) 2)",
+    "targetArgs": [
+      "Nat",
+      "∑ x ∈ Finset.range 0, HPow.hPow.{0, 0, 0} x 3",
+      "HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range 0, k) 2"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Algebra.BigOperators.Intervals"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 39,
+    "maxDepth": 8,
+    "depth": 2,
+    "modelTokensRemaining": 0,
+    "remainingMs": 288084
+  }
+}

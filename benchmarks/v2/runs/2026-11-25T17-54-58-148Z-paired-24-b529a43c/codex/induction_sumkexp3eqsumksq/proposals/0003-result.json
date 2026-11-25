@@ -1,0 +1,57 @@
+{
+  "id": "p2",
+  "nodeId": "n2",
+  "stateHash": "e3ea1bdefd3cc976e37eadbca54f4f97261b625acfb79c311d53dfebc96d4f6b",
+  "round": 0,
+  "requestDigest": "82e5450fce2f60ae527308126bc2b819ad301afc50d801a342c34aa6db16d545",
+  "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/proposals/0003-context.json",
+  "modelTokens": 18558,
+  "usageKnown": true,
+  "tokenBudgetExceeded": true,
+  "policy": "codex-v1",
+  "provider": "codex-cli",
+  "usage": {
+    "input_tokens": 16561,
+    "output_tokens": 1997,
+    "cached_input_tokens": 0,
+    "reasoning_output_tokens": 1722
+  },
+  "metadata": {
+    "provider": "codex-cli",
+    "model": null,
+    "modelSelection": "codex-configured-default",
+    "promptDigest": "2b399e98de977ce9a472dcd669cf1a290d165cf33f9461d3ed6eab39e62e161e",
+    "promptVersion": 1,
+    "toolPolicy": "disabled",
+    "ephemeral": true,
+    "cliVersion": "codex-cli 0.171.0",
+    "eventTypes": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "responseDigest": "627f6faadacaa26b9faecb5fac4dd91cb3a38ef6521c4560e8391a2ae843ead1",
+    "providerErrors": [],
+    "elapsedMs": 32167,
+    "exitCode": 0,
+    "signal": null,
+    "stdoutDigest": "627f6faadacaa26b9faecb5fac4dd91cb3a38ef6521c4560e8391a2ae843ead1",
+    "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrDiagnostic": ""
+  },
+  "proposals": [
+    {
+      "kind": "tactic",
+      "tactic": "induction n with\n| zero => simp\n| succ n ih =>\n  simp only [Finset.sum_range_succ, ih]\n  let s : Nat := Finset.sum (Finset.range n) (fun k => k)\n  change s ^ 2 + n ^ 3 = (s + n) ^ 2\n  have hs : 2 * s + n = n ^ 2 := hsum n\n  calc\n    s ^ 2 + n ^ 3 = s ^ 2 + n * (2 * s + n) := by\n      rw [hs] <;> ring\n    _ = (s + n) ^ 2 := by ring"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "induction n with\n| zero => simp\n| succ n ih =>\n  rw [Finset.sum_range_succ, Finset.sum_range_succ, ih]\n  have h := congrArg (fun t : Nat => n * t) (hsum n)\n  nlinarith only [h]"
+    }
+  ],
+  "status": "REJECTED",
+  "failure": "model_token_budget",
+  "elapsedMs": 32168,
+  "evidenceId": "ev_62b998a2e3b3731528c5c08e54722930ee43fe740a63b9aeace3ff83d54d1b94"
+}

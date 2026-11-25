@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  ∏ x ∈ Finset.Icc 1 n, (1 + (↑x ^ 3)⁻¹)\\nis not definitionally equal to the right-hand side\\n  3 - (↑n)⁻¹\\n\\nn : ℕ\\nh₀ : 0 < n\\n⊢ ∏ x ∈ Finset.Icc 1 n, (1 + (↑x ^ 3)⁻¹) ≤ 3 - (↑n)⁻¹\",\"endPos\":{\"column\":7,\"line\":22},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0007-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":22},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  ∏ x ∈ Finset.Icc 1 n, (1 + (↑x ^ 3)⁻¹)\nis not definitionally equal to the right-hand side\n  3 - (↑n)⁻¹\n\nn : ℕ\nh₀ : 0 < n\n⊢ ∏ x ∈ Finset.Icc 1 n, (1 + (↑x ^ 3)⁻¹) ≤ 3 - (↑n)⁻¹",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0007-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 22
+      },
+      "end": {
+        "column": 7,
+        "line": 22
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 7,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "e5f204f1c84821aa836bbbcb6598c67112d862955f896bf8a9f5b62c761508d5",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 26,
+    "elaborationMs": 27,
+    "artifactCount": 10204
+  },
+  "elapsedMs": 56,
+  "sequence": 7,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0007-candidate.lean",
+  "sourceHash": "a556db80ad94ed1d20bf68cac1e6a6fe7f3551629a752cde4ce3f62964c58142",
+  "evidenceId": "ev_b2830f5e52dd3701c7fa1764747e6ec34b955889ce8e386e21d0e615033f63dc"
+}

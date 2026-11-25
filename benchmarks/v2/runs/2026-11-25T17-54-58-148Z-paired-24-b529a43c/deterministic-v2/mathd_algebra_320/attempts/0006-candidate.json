@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\nx : ℝ\\na b c : ℕ\\nh₀ : 0 < a ∧ 0 < b ∧ 0 ≤ (↑a + √↑b) / 2\\nh₁ : 2 * ((↑a + √↑b) / 2) ^ 2 = 4 * ((↑a + √↑b) / 2) + 9\\nh₂ : x = (↑a + √↑b) / 2\\nh₃ : c = 2\\n⊢ a + b = 24\",\"endPos\":{\"column\":14,\"line\":26},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_320/attempts/0006-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":26},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\nx : ℝ\na b c : ℕ\nh₀ : 0 < a ∧ 0 < b ∧ 0 ≤ (↑a + √↑b) / 2\nh₁ : 2 * ((↑a + √↑b) / 2) ^ 2 = 4 * ((↑a + √↑b) / 2) + 9\nh₂ : x = (↑a + √↑b) / 2\nh₃ : c = 2\n⊢ a + b = 24",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_320/attempts/0006-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 26
+      },
+      "end": {
+        "column": 14,
+        "line": 26
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 6,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "8093f785dd7b71ef4f4160a3f7abe617be1c5dd4c9499c105b223127a6386d26",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 53,
+    "elaborationMs": 83,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 138,
+  "sequence": 6,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_320/attempts/0006-candidate.lean",
+  "sourceHash": "6e2c3c233be017b194044e2d4fa240859273ef425bf2ea40b52f41359c4700a1",
+  "evidenceId": "ev_a0d437fb5d77b860c2431208412f070204e957419a914aa06461a9f1d9f2667b"
+}

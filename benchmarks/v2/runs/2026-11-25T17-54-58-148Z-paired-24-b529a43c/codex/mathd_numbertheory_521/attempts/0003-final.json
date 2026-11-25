@@ -1,0 +1,80 @@
+{
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"unused variable `h₀`\\n\\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\",\"endPos\":{\"column\":5,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_521/attempts/0003-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"linter.unusedVariables\",\"pos\":{\"column\":3,\"line\":18},\"severity\":\"warning\"}\n{\"caption\":\"\",\"data\":\"unused variable `h₁`\\n\\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\",\"endPos\":{\"column\":5,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_521/attempts/0003-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"linter.unusedVariables\",\"pos\":{\"column\":3,\"line\":19},\"severity\":\"warning\"}\n{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_521\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (m n : Nat),\\\\n  Even.{0} m → Even.{0} n → Eq.{1} (HSub.hSub.{0, 0, 0} m n) 2 → Eq.{1} (HMul.hMul.{0, 0, 0} m n) 288 → Eq.{1} m 18\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":32},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_521/attempts/0003-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":32},\"severity\":\"information\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3526,
+  "diagnostics": [
+    {
+      "severity": "warning",
+      "message": "unused variable `h₀`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_521/attempts/0003-final.lean",
+      "start": {
+        "column": 3,
+        "line": 18
+      },
+      "end": {
+        "column": 5,
+        "line": 18
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "warning",
+      "message": "unused variable `h₁`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_521/attempts/0003-final.lean",
+      "start": {
+        "column": 3,
+        "line": 19
+      },
+      "end": {
+        "column": 5,
+        "line": 19
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_numbertheory_521\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (m n : Nat),\\n  Even.{0} m → Even.{0} n → Eq.{1} (HSub.hSub.{0, 0, 0} m n) 2 → Eq.{1} (HMul.hMul.{0, 0, 0} m n) 288 → Eq.{1} m 18\",\"universe_parameters\":[],\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_521/attempts/0003-final.lean",
+      "start": {
+        "column": 0,
+        "line": 32
+      },
+      "end": {
+        "column": 33,
+        "line": 32
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "mathd_numbertheory_521",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (m n : Nat),\n  Even.{0} m → Even.{0} n → Eq.{1} (HSub.hSub.{0, 0, 0} m n) 2 → Eq.{1} (HMul.hMul.{0, 0, 0} m n) 288 → Eq.{1} m 18",
+      "universe_parameters": [],
+      "version": 1
+    }
+  ],
+  "unparsed": [],
+  "sequence": 3,
+  "kind": "final",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_521/attempts/0003-final.lean",
+  "sourceHash": "ec865688aa345368b2364132b6ea535f0bdfa7506542adcf880a913b26addc76",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_1b404d5da2c7dd6feec4f685bbc1675f2210415e8f420dfea0388ad3808a31d6"
+}

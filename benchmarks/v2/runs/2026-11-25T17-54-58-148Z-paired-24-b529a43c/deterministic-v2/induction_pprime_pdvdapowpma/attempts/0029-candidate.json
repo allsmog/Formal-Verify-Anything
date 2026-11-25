@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"omega could not prove the goal:\\na possible counterexample may satisfy the constraints\\n  c ≥ 1\\n  b ≥ 1\\nwhere\\n b := ↑a\\n c := ↑(a ^ (n✝ + 1) - a) % ↑(n✝ + 1)\",\"endPos\":{\"column\":9,\"line\":27},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0029-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":27},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  c ≥ 1\n  b ≥ 1\nwhere\n b := ↑a\n c := ↑(a ^ (n✝ + 1) - a) % ↑(n✝ + 1)",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0029-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 27
+      },
+      "end": {
+        "column": 9,
+        "line": 27
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 29,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "c48ca2294b4f122e5709dc6fad9e5387774f46730ba7f96e3343cf8600e65638",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 34,
+    "elaborationMs": 37,
+    "artifactCount": 10116
+  },
+  "elapsedMs": 74,
+  "sequence": 29,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0029-candidate.lean",
+  "sourceHash": "dce79392907378d6d568a3bba7f3c294b024442488157d611ec33a42ba481af6",
+  "evidenceId": "ev_56459b4c811bbfec2a2f4c06a3c4ae7fe2049ed524568f41b16fac1f5e0873ed"
+}

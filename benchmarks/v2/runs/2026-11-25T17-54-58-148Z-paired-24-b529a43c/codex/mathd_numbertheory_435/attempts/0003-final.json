@@ -1,0 +1,50 @@
+{
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_435\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (k : Nat),\\\\n  LT.lt.{0} 0 k →\\\\n    (∀ (n : Nat),\\\\n        Eq.{1}\\\\n          (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k) (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 3))\\\\n          1) →\\\\n      (∀ (n : Nat),\\\\n          Eq.{1}\\\\n            (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k)\\\\n              (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 2))\\\\n            1) →\\\\n        (∀ (n : Nat),\\\\n            Eq.{1}\\\\n              (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k)\\\\n                (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 1))\\\\n              1) →\\\\n          LE.le.{0} 5 k\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":36},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_435/attempts/0003-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":36},\"severity\":\"information\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 5561,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_AUDIT:{\"axioms\":[\"propext\"],\"declaration\":\"mathd_numbertheory_435\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (k : Nat),\\n  LT.lt.{0} 0 k →\\n    (∀ (n : Nat),\\n        Eq.{1}\\n          (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k) (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 3))\\n          1) →\\n      (∀ (n : Nat),\\n          Eq.{1}\\n            (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k)\\n              (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 2))\\n            1) →\\n        (∀ (n : Nat),\\n            Eq.{1}\\n              (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k)\\n                (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 1))\\n              1) →\\n          LE.le.{0} 5 k\",\"universe_parameters\":[],\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_435/attempts/0003-final.lean",
+      "start": {
+        "column": 0,
+        "line": 36
+      },
+      "end": {
+        "column": 33,
+        "line": 36
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "mathd_numbertheory_435",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (k : Nat),\n  LT.lt.{0} 0 k →\n    (∀ (n : Nat),\n        Eq.{1}\n          (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k) (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 3))\n          1) →\n      (∀ (n : Nat),\n          Eq.{1}\n            (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k)\n              (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 2))\n            1) →\n        (∀ (n : Nat),\n            Eq.{1}\n              (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) k)\n                (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 1))\n              1) →\n          LE.le.{0} 5 k",
+      "universe_parameters": [],
+      "version": 1
+    }
+  ],
+  "unparsed": [],
+  "sequence": 3,
+  "kind": "final",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_435/attempts/0003-final.lean",
+  "sourceHash": "62aa91d54b8f08e7628b94475abd04cc463faf62b5a5700ca87948cd54da76fc",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_0db15fcc8999c3a9516b08d8c1612ff47ce9eab6951e6d99ab52def26cf63cf5"
+}

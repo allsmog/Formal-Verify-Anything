@@ -1,0 +1,52 @@
+{
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_229\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"Eq.{1} (HMod.hMod.{0, 0, 0} (HPow.hPow.{0, 0, 0} 5 30) 7) 1\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_229/attempts/0003-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":19},\"severity\":\"information\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 3232,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_numbertheory_229\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"Eq.{1} (HMod.hMod.{0, 0, 0} (HPow.hPow.{0, 0, 0} 5 30) 7) 1\",\"universe_parameters\":[],\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_229/attempts/0003-final.lean",
+      "start": {
+        "column": 0,
+        "line": 19
+      },
+      "end": {
+        "column": 33,
+        "line": 19
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "mathd_numbertheory_229",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "Eq.{1} (HMod.hMod.{0, 0, 0} (HPow.hPow.{0, 0, 0} 5 30) 7) 1",
+      "universe_parameters": [],
+      "version": 1
+    }
+  ],
+  "unparsed": [],
+  "sequence": 3,
+  "kind": "final",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_229/attempts/0003-final.lean",
+  "sourceHash": "e71188d8e9d767cd102316b3ed7d66fcdbd8cabdbd65e81e27795c38aa231a8f",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_8495d2bd6c867ed13598c0456b6302f5e560e63457e2fad638b58f0fb6d06aaf"
+}

@@ -1,0 +1,1751 @@
+{
+  "id": "mathd_algebra_332",
+  "tier": 2,
+  "status": "FAILED",
+  "proofFile": null,
+  "engineVersion": "fva-search-v2",
+  "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+  "statementHash": "3aeb13b77023210c23a33d104e9e8af54e7dfb1ef71627560ce5f82b44721bf5",
+  "provenance": {
+    "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+    "split": "test",
+    "repository": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+    "path": "MiniF2F/Test/mathd_algebra_332.lean",
+    "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/mathd_algebra_332.lean",
+    "sourceFileSha256": "f2fdbda303b209f55a3f151224e5caf830dde5d94124307fe3cbb4174e4e576b",
+    "statementSha256": "3aeb13b77023210c23a33d104e9e8af54e7dfb1ef71627560ce5f82b44721bf5",
+    "originalImports": [
+      "Mathlib"
+    ],
+    "originalOpens": [
+      "BigOperators Real Nat Topology Rat"
+    ],
+    "selectionRankWithinStratum": 3,
+    "selectionKeySha256": "05db2a64a51a5437b324c9d6382ca7335c3f83488f39122113237095e3715c5a",
+    "executionProfileSha256": "5265e241c25e5d1653c558148653058824c93265f8d52d800428481936a2cab1",
+    "executionImportReason": "Real.sqrt and the NNReal coercion used in the original declaration"
+  },
+  "metrics": {
+    "compilerCalls": 8,
+    "steps": 4,
+    "maxDepth": 1,
+    "elapsedMs": 118891,
+    "firstCandidateSolved": false,
+    "modelTokens": 53298,
+    "modelTokensKnown": 53298,
+    "modelUsageComplete": true,
+    "proposerCalls": 3,
+    "finalCandidates": 2
+  },
+  "budget": {
+    "maxCompilerCalls": 64,
+    "maxSteps": 64,
+    "maxProposalRounds": 3,
+    "maxDepth": 8,
+    "callTimeoutMs": 30000,
+    "theoremTimeoutMs": 300000,
+    "heartbeats": 200000,
+    "maxModelTokens": 50000
+  },
+  "policy": "codex-v1",
+  "failure": "model_token_budget",
+  "exploration": {
+    "backend": "lean-persistent-v1",
+    "cleanup": {
+      "ownership": "engine",
+      "status": "closed"
+    }
+  },
+  "verification": null,
+  "tree": {
+    "finalPlan": {
+      "id": "n0",
+      "depth": 0,
+      "kind": "hole",
+      "children": []
+    },
+    "nodes": [
+      {
+        "id": "n0",
+        "visit": 0,
+        "depth": 0,
+        "stateHash": "b1d6aab07e3fd046f15dea207e9af67f45e40c3add8387a85a29905ae3f9b8e9",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.859",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "x",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.860",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "y",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.859",
+                "_uniq.860"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.861",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7",
+              "typeHead": "Eq",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.859",
+                "_uniq.860"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.862",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₁",
+              "type": "Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)",
+              "typeHead": "Eq",
+              "value": null
+            }
+          ],
+          "id": "_uniq.863",
+          "omitted_implementation_details": 1,
+          "pretty": "x y : Real\nh₀ : Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\nh₁ : Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158",
+          "target": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158",
+          "targetArgs": [
+            "Real",
+            "HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)",
+            "158"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        },
+        "status": "EXHAUSTED",
+        "evidenceId": "ev_e267dfeef503aa6de1055fd4bca8b3999de0c33ad7b4258f8a57400b4ba890e9"
+      },
+      {
+        "id": "n1",
+        "visit": 1,
+        "depth": 1,
+        "stateHash": "437928c5d9d9c8a330e7c8781cdcaccff296b3b971a72e60d6a075cdc202bab6",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.859",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "x",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.860",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "y",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.859",
+                "_uniq.860"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.861",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7",
+              "typeHead": "Eq",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.859",
+                "_uniq.860"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.862",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₁",
+              "type": "Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)",
+              "typeHead": "Eq",
+              "value": null
+            }
+          ],
+          "id": "_uniq.922",
+          "omitted_implementation_details": 1,
+          "pretty": "x y : Real\nh₀ : Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\nh₁ : Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\n⊢ Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19",
+          "target": "Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19",
+          "targetArgs": [
+            "Real",
+            "HMul.hMul.{0, 0, 0} x y",
+            "19"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        },
+        "status": "CLOSED_LOCAL",
+        "evidenceId": "ev_f88c838ade73f1a39a88e48055fc13c02749ae4b7cf8220e3abc8cc29b93091a"
+      },
+      {
+        "id": "n2",
+        "visit": 2,
+        "depth": 1,
+        "stateHash": "6c67da369f9cd0906d25d8c6227ddadd6b85853c4c4a60b9f34d402f9173241a",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.859",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "x",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.860",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "y",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.859",
+                "_uniq.860"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.861",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7",
+              "typeHead": "Eq",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.859",
+                "_uniq.860"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.862",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₁",
+              "type": "Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)",
+              "typeHead": "Eq",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.859",
+                "_uniq.860"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.923",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "hprod",
+              "type": "Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19",
+              "typeHead": "Eq",
+              "value": null
+            }
+          ],
+          "id": "_uniq.924",
+          "omitted_implementation_details": 1,
+          "pretty": "x y : Real\nh₀ : Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\nh₁ : Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\nhprod : Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158",
+          "target": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158",
+          "targetArgs": [],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        },
+        "status": "EXHAUSTED",
+        "evidenceId": "ev_eb68ff5039e9dab277a8b511103d2db7aaf3cfc9a0c3761274c70de805a34b1a"
+      }
+    ],
+    "branches": [
+      {
+        "parent": "n0",
+        "visit": 0,
+        "stateHash": "b1d6aab07e3fd046f15dea207e9af67f45e40c3add8387a85a29905ae3f9b8e9",
+        "proposal": {
+          "kind": "tactic",
+          "tactic": "have hs : x + y = 14 := by linarith\nhave hx : 0 ≤ x * y := by\n  apply le_of_lt\n  apply Real.sqrt_pos.mp\n  rw [h₁]\n  positivity\nhave hp : x * y = 19 := by\n  calc\n    x * y = (Real.sqrt (x * y)) ^ 2 := (Real.sq_sqrt hx).symm\n    _ = (Real.sqrt 19) ^ 2 := by rw [h₁]\n    _ = 19 := Real.sq_sqrt (by norm_num)\ncalc\n  x ^ 2 + y ^ 2 = (x + y) ^ 2 - 2 * (x * y) := by ring\n  _ = 158 := by rw [hs, hp] <;> norm_num"
+        },
+        "beforeHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a",
+        "status": "PRUNED",
+        "children": [],
+        "evidenceId": "ev_0495cb0b7085fe0fb082ab839508b241813d10e01a76313132a7c9dae75a8223",
+        "failure": "final_rejected_warning",
+        "rejectedCandidates": [
+          "c0"
+        ],
+        "rejectedEvidenceId": "ev_04d6ed9c3c96f9774c98c61cd9713809b97cc74e24462780a721bc8d3a8bc67f",
+        "restoredHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a"
+      },
+      {
+        "parent": "n0",
+        "visit": 0,
+        "stateHash": "b1d6aab07e3fd046f15dea207e9af67f45e40c3add8387a85a29905ae3f9b8e9",
+        "proposal": {
+          "kind": "tactic",
+          "tactic": "have hs : x + y = 14 := by linarith\nhave hpos : 0 < Real.sqrt (19 : ℝ) := by positivity\nhave hx : 0 ≤ x * y := by\n  apply le_of_not_gt\n  intro hn\n  have hz := Real.sqrt_eq_zero_of_nonpos (le_of_lt hn)\n  linarith [h₁, hz]\nhave hp : x * y = 19 := by\n  have hsq : (Real.sqrt (x * y)) ^ 2 = (Real.sqrt 19) ^ 2 := congrArg (fun t : ℝ => t ^ 2) h₁\n  simpa only [Real.sq_sqrt hx, Real.sq_sqrt (show (0 : ℝ) ≤ 19 by norm_num)] using hsq\nhave hsumSq : (x + y) ^ 2 = 196 := by rw [hs] <;> norm_num\nnlinarith [hsumSq, hp]"
+        },
+        "beforeHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a",
+        "status": "PRUNED",
+        "children": [],
+        "evidenceId": "ev_d03df485ebfddcbe4e81233491f92ef9d736c5db817aa855159f4494c7e43039",
+        "failure": "final_rejected_warning",
+        "rejectedCandidates": [
+          "c1"
+        ],
+        "rejectedEvidenceId": "ev_59c12b13fc88ba480beffe5a032a6688dba1a9634e00d51ed7159e8a5e6860b4",
+        "restoredHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a"
+      },
+      {
+        "parent": "n0",
+        "visit": 0,
+        "stateHash": "b1d6aab07e3fd046f15dea207e9af67f45e40c3add8387a85a29905ae3f9b8e9",
+        "proposal": {
+          "kind": "have",
+          "name": "hprod",
+          "type": "x * y = (19 : ℝ)"
+        },
+        "beforeHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a",
+        "status": "PRUNED",
+        "children": [
+          "n1",
+          "n2"
+        ],
+        "failure": "model_token_budget",
+        "restoredHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a"
+      },
+      {
+        "parent": "n1",
+        "visit": 1,
+        "stateHash": "437928c5d9d9c8a330e7c8781cdcaccff296b3b971a72e60d6a075cdc202bab6",
+        "proposal": {
+          "kind": "tactic",
+          "tactic": "have h19 : 0 < Real.sqrt (19 : ℝ) := Real.sqrt_pos.mpr (by norm_num)\nhave hxy : 0 ≤ x * y := (Real.sqrt_pos.mp (h₁.symm ▸ h19)).le\ncalc\n  x * y = (Real.sqrt (x * y)) ^ 2 := (Real.sq_sqrt hxy).symm\n  _ = (Real.sqrt 19) ^ 2 := congrArg (fun t : ℝ => t ^ 2) h₁\n  _ = 19 := Real.sq_sqrt (by norm_num)"
+        },
+        "beforeHash": "c1ce0225bd36a75d847f89d78a828bd31b3eee2df204ad9000819498fe9b3533",
+        "status": "PRUNED",
+        "children": [],
+        "evidenceId": "ev_0af03a59af393042b4e652a1aea6c173a7960279cc25322743aa81eb78896da8",
+        "failure": "model_token_budget",
+        "restoredHash": "c1ce0225bd36a75d847f89d78a828bd31b3eee2df204ad9000819498fe9b3533"
+      }
+    ]
+  },
+  "finalCandidates": [
+    {
+      "id": "c0",
+      "planHash": "37d89146f51e789e562ced22d64a54e2649b0106c73dff380e186d04ebd0c5b4",
+      "status": "REJECTED",
+      "policy": "lean-kernel-v2-unused-variable-lint",
+      "evidenceIds": [
+        "ev_04d6ed9c3c96f9774c98c61cd9713809b97cc74e24462780a721bc8d3a8bc67f"
+      ],
+      "sourceHash": "5f85292f93a65b5ead2ade0c761e124e59b9756f63ee1e5d70b3fd6cbd5ce8de",
+      "explorationSuspension": {
+        "status": "SUSPENDED",
+        "elapsedMs": 92
+      },
+      "checks": [
+        {
+          "kind": "final",
+          "evidenceId": "ev_04d6ed9c3c96f9774c98c61cd9713809b97cc74e24462780a721bc8d3a8bc67f",
+          "accepted": false,
+          "reason": "rejected_warning",
+          "audit": null,
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": [
+            {
+              "severity": "warning",
+              "message": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+              "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0003-final.lean",
+              "start": {
+                "column": 30,
+                "line": 34
+              },
+              "end": {
+                "column": 33,
+                "line": 34
+              },
+              "category": "compiler_error"
+            }
+          ]
+        }
+      ],
+      "reason": "rejected_warning",
+      "rejectedEvidenceId": "ev_04d6ed9c3c96f9774c98c61cd9713809b97cc74e24462780a721bc8d3a8bc67f"
+    },
+    {
+      "id": "c1",
+      "planHash": "5761962347bd0fbfc9f32c2bbb833bbb37eb46cd34e6f8c01a4b100c376f05c7",
+      "status": "REJECTED",
+      "policy": "lean-kernel-v2-unused-variable-lint",
+      "evidenceIds": [
+        "ev_59c12b13fc88ba480beffe5a032a6688dba1a9634e00d51ed7159e8a5e6860b4"
+      ],
+      "sourceHash": "e373a9e56befd2b9bf8c2fd3e28b1bad15fe08b1feaae5602c5b8ee910e336ba",
+      "explorationSuspension": {
+        "status": "SUSPENDED",
+        "elapsedMs": 129
+      },
+      "checks": [
+        {
+          "kind": "final",
+          "evidenceId": "ev_59c12b13fc88ba480beffe5a032a6688dba1a9634e00d51ed7159e8a5e6860b4",
+          "accepted": false,
+          "reason": "rejected_warning",
+          "audit": null,
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": [
+            {
+              "severity": "warning",
+              "message": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+              "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0005-final.lean",
+              "start": {
+                "column": 48,
+                "line": 31
+              },
+              "end": {
+                "column": 51,
+                "line": 31
+              },
+              "category": "compiler_error"
+            }
+          ]
+        }
+      ],
+      "reason": "rejected_warning",
+      "rejectedEvidenceId": "ev_59c12b13fc88ba480beffe5a032a6688dba1a9634e00d51ed7159e8a5e6860b4"
+    }
+  ],
+  "proposerCalls": [
+    {
+      "id": "p0",
+      "nodeId": "n0",
+      "stateHash": "b1d6aab07e3fd046f15dea207e9af67f45e40c3add8387a85a29905ae3f9b8e9",
+      "round": 0,
+      "requestDigest": "9e041b289cde703a3e9959bf988ebe1bbc4f001558a3bb7d2056e88937fb8087",
+      "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/proposals/0001-context.json",
+      "modelTokens": 17960,
+      "usageKnown": true,
+      "tokenBudgetExceeded": false,
+      "policy": "codex-v1",
+      "provider": "codex-cli",
+      "usage": {
+        "input_tokens": 16718,
+        "output_tokens": 1242,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 747
+      },
+      "metadata": {
+        "provider": "codex-cli",
+        "model": null,
+        "modelSelection": "codex-configured-default",
+        "promptDigest": "0a99861a36b38d525bc21cae7e04cfce7db246720f9a917d96a6ac14d77ee11c",
+        "promptVersion": 1,
+        "toolPolicy": "disabled",
+        "ephemeral": true,
+        "cliVersion": "codex-cli 0.171.0",
+        "eventTypes": [
+          "thread.started",
+          "turn.started",
+          "item.completed",
+          "turn.completed"
+        ],
+        "responseDigest": "66a553494680d2cd5a3519287b46ea7946709a773cdb512f24a3608a4f9328f0",
+        "providerErrors": [],
+        "elapsedMs": 20813,
+        "exitCode": 0,
+        "signal": null,
+        "stdoutDigest": "66a553494680d2cd5a3519287b46ea7946709a773cdb512f24a3608a4f9328f0",
+        "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderrDiagnostic": ""
+      },
+      "proposals": [
+        {
+          "kind": "tactic",
+          "tactic": "have hs : x + y = 14 := by linarith\nhave hx : 0 ≤ x * y := by\n  apply le_of_lt\n  apply Real.sqrt_pos.mp\n  rw [h₁]\n  positivity\nhave hp : x * y = 19 := by\n  calc\n    x * y = (Real.sqrt (x * y)) ^ 2 := (Real.sq_sqrt hx).symm\n    _ = (Real.sqrt 19) ^ 2 := by rw [h₁]\n    _ = 19 := Real.sq_sqrt (by norm_num)\ncalc\n  x ^ 2 + y ^ 2 = (x + y) ^ 2 - 2 * (x * y) := by ring\n  _ = 158 := by rw [hs, hp] <;> norm_num"
+        },
+        {
+          "kind": "tactic",
+          "tactic": "have hs : x + y = 14 := by linarith\nhave hpos : 0 < Real.sqrt (19 : ℝ) := by positivity\nhave hx : 0 ≤ x * y := by\n  apply le_of_not_gt\n  intro hn\n  have hz := Real.sqrt_eq_zero_of_nonpos (le_of_lt hn)\n  linarith [h₁, hz]\nhave hp : x * y = 19 := by\n  have hsq : (Real.sqrt (x * y)) ^ 2 = (Real.sqrt 19) ^ 2 := congrArg (fun t : ℝ => t ^ 2) h₁\n  simpa only [Real.sq_sqrt hx, Real.sq_sqrt (show (0 : ℝ) ≤ 19 by norm_num)] using hsq\nhave hsumSq : (x + y) ^ 2 = 196 := by rw [hs] <;> norm_num\nnlinarith [hsumSq, hp]"
+        },
+        {
+          "kind": "have",
+          "name": "hprod",
+          "type": "x * y = (19 : ℝ)"
+        }
+      ],
+      "status": "RETURNED",
+      "elapsedMs": 20815,
+      "evidenceId": "ev_6553de3afbceb58bfca68f686f7554d1c8a0f2522fa5216dd02e0017141f7406"
+    },
+    {
+      "id": "p1",
+      "nodeId": "n1",
+      "stateHash": "437928c5d9d9c8a330e7c8781cdcaccff296b3b971a72e60d6a075cdc202bab6",
+      "round": 0,
+      "requestDigest": "39392778f4346624ab30726646b6a2fea411a5c4c69ca201d12024635197e00f",
+      "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/proposals/0002-context.json",
+      "modelTokens": 17732,
+      "usageKnown": true,
+      "tokenBudgetExceeded": false,
+      "policy": "codex-v1",
+      "provider": "codex-cli",
+      "usage": {
+        "input_tokens": 16620,
+        "output_tokens": 1112,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 753
+      },
+      "metadata": {
+        "provider": "codex-cli",
+        "model": null,
+        "modelSelection": "codex-configured-default",
+        "promptDigest": "f1adcc92de5068f87b508c38b2a7237d903c730f61c14fd1fc5113084a59eb0f",
+        "promptVersion": 1,
+        "toolPolicy": "disabled",
+        "ephemeral": true,
+        "cliVersion": "codex-cli 0.171.0",
+        "eventTypes": [
+          "thread.started",
+          "turn.started",
+          "item.completed",
+          "turn.completed"
+        ],
+        "responseDigest": "55b4f53d777a6fb0932543825ebe84386482ddd7ce8925825422d67818b0019c",
+        "providerErrors": [],
+        "elapsedMs": 17131,
+        "exitCode": 0,
+        "signal": null,
+        "stdoutDigest": "55b4f53d777a6fb0932543825ebe84386482ddd7ce8925825422d67818b0019c",
+        "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderrDiagnostic": ""
+      },
+      "proposals": [
+        {
+          "kind": "tactic",
+          "tactic": "have h19 : 0 < Real.sqrt (19 : ℝ) := Real.sqrt_pos.mpr (by norm_num)\nhave hxy : 0 ≤ x * y := (Real.sqrt_pos.mp (h₁.symm ▸ h19)).le\ncalc\n  x * y = (Real.sqrt (x * y)) ^ 2 := (Real.sq_sqrt hxy).symm\n  _ = (Real.sqrt 19) ^ 2 := congrArg (fun t : ℝ => t ^ 2) h₁\n  _ = 19 := Real.sq_sqrt (by norm_num)"
+        },
+        {
+          "kind": "tactic",
+          "tactic": "have hxy : 0 ≤ x * y := by\n  by_contra! hn\n  have hz := Real.sqrt_eq_zero_of_nonpos hn.le\n  have hp : 0 < Real.sqrt (19 : ℝ) := by positivity\n  rw [← h₁, hz] at hp\n  exact (lt_irrefl 0) hp\nhave h19 : (0 : ℝ) ≤ 19 := by norm_num\nsimpa only [Real.sq_sqrt hxy, Real.sq_sqrt h19] using congrArg (fun t : ℝ => t ^ 2) h₁"
+        },
+        {
+          "kind": "have",
+          "name": "hxy_nonneg",
+          "type": "0 ≤ x * y"
+        }
+      ],
+      "status": "RETURNED",
+      "elapsedMs": 17133,
+      "evidenceId": "ev_98fc71029a92ea7baf245c0d3cb1ee0b9376bca018950cb7625e63684d16a25e"
+    },
+    {
+      "id": "p2",
+      "nodeId": "n2",
+      "stateHash": "6c67da369f9cd0906d25d8c6227ddadd6b85853c4c4a60b9f34d402f9173241a",
+      "round": 0,
+      "requestDigest": "91fe57564045c31ed16750a77b9db21922ffadc925450b2286289f1e3d75b01e",
+      "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/proposals/0003-context.json",
+      "modelTokens": 17606,
+      "usageKnown": true,
+      "tokenBudgetExceeded": true,
+      "policy": "codex-v1",
+      "provider": "codex-cli",
+      "usage": {
+        "input_tokens": 16776,
+        "output_tokens": 830,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 629
+      },
+      "metadata": {
+        "provider": "codex-cli",
+        "model": null,
+        "modelSelection": "codex-configured-default",
+        "promptDigest": "76c0f873b03e60bafa5e1ac559253d96177554878ae215699a99e80c5afa83b7",
+        "promptVersion": 1,
+        "toolPolicy": "disabled",
+        "ephemeral": true,
+        "cliVersion": "codex-cli 0.171.0",
+        "eventTypes": [
+          "thread.started",
+          "turn.started",
+          "item.completed",
+          "turn.completed"
+        ],
+        "responseDigest": "d4dc4b871d98b9dacc8f6aaf9cef94092d6404c9a703e83f0380602451dc41a0",
+        "providerErrors": [],
+        "elapsedMs": 14642,
+        "exitCode": 0,
+        "signal": null,
+        "stdoutDigest": "d4dc4b871d98b9dacc8f6aaf9cef94092d6404c9a703e83f0380602451dc41a0",
+        "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderrDiagnostic": ""
+      },
+      "proposals": [
+        {
+          "kind": "tactic",
+          "tactic": "calc\n  x ^ 2 + y ^ 2 = 4 * ((x + y) / 2) ^ 2 - 2 * (x * y) := by ring\n  _ = 158 := by norm_num [h₀, hprod]"
+        },
+        {
+          "kind": "have",
+          "name": "hsum",
+          "type": "x + y = 14"
+        },
+        {
+          "kind": "tactic",
+          "tactic": "have hsum : x + y = 14 := by linarith only [h₀]\nhave hsq := congrArg (fun t : ℝ => t ^ 2) hsum\nnlinarith only [hsq, hprod]"
+        }
+      ],
+      "status": "REJECTED",
+      "failure": "model_token_budget",
+      "elapsedMs": 14645,
+      "evidenceId": "ev_9716a03ce9c117cdf25724da480a740e841468130b35bd91e18ff08526e2d394"
+    }
+  ],
+  "attempts": [
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.859\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"x\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.860\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"y\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.859\\\",\\\"_uniq.860\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.861\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.859\\\",\\\"_uniq.860\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.862\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₁\\\",\\\"type\\\":\\\"Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.863\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"x y : Real\\\\nh₀ : Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\\\\nh₁ : Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\\\\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158\\\",\\\"target\\\":\\\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)\\\",\\\"158\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":21},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":16,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":21},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.859\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"x\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.860\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"y\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.859\",\"_uniq.860\"],\"has_metavariables\":false,\"id\":\"_uniq.861\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.859\",\"_uniq.860\"],\"has_metavariables\":false,\"id\":\"_uniq.862\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₁\",\"type\":\"Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.863\",\"omitted_implementation_details\":1,\"pretty\":\"x y : Real\\nh₀ : Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\\nh₁ : Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158\",\"target\":\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158\",\"targetArgs\":[\"Real\",\"HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)\",\"158\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 21
+          },
+          "end": {
+            "column": 16,
+            "line": 21
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 21
+          },
+          "end": {
+            "column": 16,
+            "line": 21
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.859",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "x",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.860",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "y",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.859",
+                    "_uniq.860"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.861",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h₀",
+                  "type": "Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7",
+                  "typeHead": "Eq",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.859",
+                    "_uniq.860"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.862",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h₁",
+                  "type": "Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)",
+                  "typeHead": "Eq",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.863",
+              "omitted_implementation_details": 1,
+              "pretty": "x y : Real\nh₀ : Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\nh₁ : Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158",
+              "target": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158",
+              "targetArgs": [
+                "Real",
+                "HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)",
+                "158"
+              ],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 1,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "49029286be27fbdd69fa35eb60e114d4177308f58b813591b2d55e4ecce6c1a7",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": false,
+        "importMs": 8562,
+        "elaborationMs": 80,
+        "artifactCount": 11956
+      },
+      "elapsedMs": 17208,
+      "sequence": 1,
+      "kind": "state",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0001-state.lean",
+      "sourceHash": "778c0a8275d8be5b94687b4bc478b6238903161a3ec474412d74b5f0089a0751",
+      "evidenceId": "ev_e267dfeef503aa6de1055fd4bca8b3999de0c33ad7b4258f8a57400b4ba890e9"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":15,\"line\":35},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":35},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_CLOSED:{\\\"node_id\\\":\\\"n0\\\"}\",\"endPos\":{\"column\":15,\"line\":35},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":35},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":15,\"line\":35},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":35},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[],\"node_id\":\"n0\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0002-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 35
+          },
+          "end": {
+            "column": 15,
+            "line": 35
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_CLOSED:{\"node_id\":\"n0\"}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0002-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 35
+          },
+          "end": {
+            "column": 15,
+            "line": 35
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0002-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 35
+          },
+          "end": {
+            "column": 15,
+            "line": 35
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [
+        {
+          "node_id": "n0"
+        }
+      ],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 2,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "03e8cf0a5766b6f75d72e168956ecee4bf666a5e1af9b20fe7c27493ac3aeac7",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 39,
+        "elaborationMs": 421,
+        "artifactCount": 11956
+      },
+      "elapsedMs": 464,
+      "sequence": 2,
+      "kind": "candidate",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0002-candidate.lean",
+      "sourceHash": "6c8ed6c2b1f05ddaa41d54f24190fefff30fa2a606a3273ec4e97813f72a6da4",
+      "evidenceId": "ev_0495cb0b7085fe0fb082ab839508b241813d10e01a76313132a7c9dae75a8223"
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\\n\\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\",\"endPos\":{\"column\":33,\"line\":34},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0003-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"linter.unnecessarySeqFocus\",\"pos\":{\"column\":30,\"line\":34},\"severity\":\"warning\"}\n{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_332\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (x y : Real),\\\\n  Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7 →\\\\n    Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19) →\\\\n      Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":36},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0003-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":36},\"severity\":\"information\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 13355,
+      "diagnostics": [
+        {
+          "severity": "warning",
+          "message": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0003-final.lean",
+          "start": {
+            "column": 30,
+            "line": 34
+          },
+          "end": {
+            "column": 33,
+            "line": 34
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_332\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (x y : Real),\\n  Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7 →\\n    Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19) →\\n      Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158\",\"universe_parameters\":[],\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0003-final.lean",
+          "start": {
+            "column": 0,
+            "line": 36
+          },
+          "end": {
+            "column": 28,
+            "line": 36
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_332",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (x y : Real),\n  Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7 →\n    Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19) →\n      Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158",
+          "universe_parameters": [],
+          "version": 1
+        }
+      ],
+      "unparsed": [],
+      "sequence": 3,
+      "kind": "final",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0003-final.lean",
+      "sourceHash": "52b04857c2035392f1be6f921a87d58e7c86ee0d6633e86f7a41b91daf1d78b3",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_04d6ed9c3c96f9774c98c61cd9713809b97cc74e24462780a721bc8d3a8bc67f"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":15,\"line\":33},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0004-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":33},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_CLOSED:{\\\"node_id\\\":\\\"n0\\\"}\",\"endPos\":{\"column\":15,\"line\":33},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0004-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":33},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":15,\"line\":33},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0004-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":33},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[],\"node_id\":\"n0\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0004-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 33
+          },
+          "end": {
+            "column": 15,
+            "line": 33
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_CLOSED:{\"node_id\":\"n0\"}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0004-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 33
+          },
+          "end": {
+            "column": 15,
+            "line": 33
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0004-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 33
+          },
+          "end": {
+            "column": 15,
+            "line": 33
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [
+        {
+          "node_id": "n0"
+        }
+      ],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 3,
+        "generation": 2,
+        "restarts": 1,
+        "sourceSha256": "d77ebac80d30c5f7ea6e16a0e25372d16c7a9b435deea38fab33aa7615b56ad2",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": false,
+        "importMs": 9688,
+        "elaborationMs": 1075,
+        "artifactCount": 11956
+      },
+      "elapsedMs": 13801,
+      "sequence": 4,
+      "kind": "candidate",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0004-candidate.lean",
+      "sourceHash": "c7b1e0da0eb8541d2136e05b5f0e1f6be2c0dd5d79e34a2522d74494a48f51a7",
+      "evidenceId": "ev_d03df485ebfddcbe4e81233491f92ef9d736c5db817aa855159f4494c7e43039"
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\\n\\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\",\"endPos\":{\"column\":51,\"line\":31},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0005-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"linter.unnecessarySeqFocus\",\"pos\":{\"column\":48,\"line\":31},\"severity\":\"warning\"}\n{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_332\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (x y : Real),\\\\n  Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7 →\\\\n    Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19) →\\\\n      Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":34},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0005-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":34},\"severity\":\"information\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 7865,
+      "diagnostics": [
+        {
+          "severity": "warning",
+          "message": "Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0005-final.lean",
+          "start": {
+            "column": 48,
+            "line": 31
+          },
+          "end": {
+            "column": 51,
+            "line": 31
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_332\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (x y : Real),\\n  Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7 →\\n    Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19) →\\n      Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158\",\"universe_parameters\":[],\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0005-final.lean",
+          "start": {
+            "column": 0,
+            "line": 34
+          },
+          "end": {
+            "column": 28,
+            "line": 34
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "mathd_algebra_332",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (x y : Real),\n  Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7 →\n    Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19) →\n      Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158",
+          "universe_parameters": [],
+          "version": 1
+        }
+      ],
+      "unparsed": [],
+      "sequence": 5,
+      "kind": "final",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0005-final.lean",
+      "sourceHash": "053002907931de6f47d8d459855d51e738a0e7a2258bebb734afd9441b48c8a9",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_59c12b13fc88ba480beffe5a032a6688dba1a9634e00d51ed7159e8a5e6860b4"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.859\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"x\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.860\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"y\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.859\\\",\\\"_uniq.860\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.861\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.859\\\",\\\"_uniq.860\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.862\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₁\\\",\\\"type\\\":\\\"Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.922\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"x y : Real\\\\nh₀ : Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\\\\nh₁ : Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\\\\n⊢ Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19\\\",\\\"target\\\":\\\"Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"HMul.hMul.{0, 0, 0} x y\\\",\\\"19\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n1\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":18,\"line\":22},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0006-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":22},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n1\",\"endPos\":{\"column\":18,\"line\":22},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0006-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":22},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.859\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"x\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.860\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"y\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.859\\\",\\\"_uniq.860\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.861\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.859\\\",\\\"_uniq.860\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.862\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₁\\\",\\\"type\\\":\\\"Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.859\\\",\\\"_uniq.860\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.923\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"hprod\\\",\\\"type\\\":\\\"Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.924\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"x y : Real\\\\nh₀ : Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\\\\nh₁ : Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\\\\nhprod : Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19\\\\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158\\\",\\\"target\\\":\\\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":23},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0006-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":23},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n2\",\"endPos\":{\"column\":16,\"line\":23},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0006-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":23},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.859\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"x\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.860\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"y\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.859\",\"_uniq.860\"],\"has_metavariables\":false,\"id\":\"_uniq.861\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.859\",\"_uniq.860\"],\"has_metavariables\":false,\"id\":\"_uniq.862\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₁\",\"type\":\"Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.922\",\"omitted_implementation_details\":1,\"pretty\":\"x y : Real\\nh₀ : Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\\nh₁ : Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\\n⊢ Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19\",\"target\":\"Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19\",\"targetArgs\":[\"Real\",\"HMul.hMul.{0, 0, 0} x y\",\"19\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n1\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0006-state.lean",
+          "start": {
+            "column": 4,
+            "line": 22
+          },
+          "end": {
+            "column": 18,
+            "line": 22
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n1",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0006-state.lean",
+          "start": {
+            "column": 4,
+            "line": 22
+          },
+          "end": {
+            "column": 18,
+            "line": 22
+          },
+          "category": "probe_stop"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.859\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"x\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.860\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"y\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.859\",\"_uniq.860\"],\"has_metavariables\":false,\"id\":\"_uniq.861\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.859\",\"_uniq.860\"],\"has_metavariables\":false,\"id\":\"_uniq.862\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₁\",\"type\":\"Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.859\",\"_uniq.860\"],\"has_metavariables\":false,\"id\":\"_uniq.923\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"hprod\",\"type\":\"Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.924\",\"omitted_implementation_details\":1,\"pretty\":\"x y : Real\\nh₀ : Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\\nh₁ : Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\\nhprod : Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19\\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158\",\"target\":\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158\",\"targetArgs\":[],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n2\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0006-state.lean",
+          "start": {
+            "column": 2,
+            "line": 23
+          },
+          "end": {
+            "column": 16,
+            "line": 23
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n2",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0006-state.lean",
+          "start": {
+            "column": 2,
+            "line": 23
+          },
+          "end": {
+            "column": 16,
+            "line": 23
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.859",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "x",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.860",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "y",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.859",
+                    "_uniq.860"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.861",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h₀",
+                  "type": "Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7",
+                  "typeHead": "Eq",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.859",
+                    "_uniq.860"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.862",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h₁",
+                  "type": "Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)",
+                  "typeHead": "Eq",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.922",
+              "omitted_implementation_details": 1,
+              "pretty": "x y : Real\nh₀ : Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\nh₁ : Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\n⊢ Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19",
+              "target": "Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19",
+              "targetArgs": [
+                "Real",
+                "HMul.hMul.{0, 0, 0} x y",
+                "19"
+              ],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n1",
+          "version": 1
+        },
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.859",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "x",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.860",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "y",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.859",
+                    "_uniq.860"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.861",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h₀",
+                  "type": "Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7",
+                  "typeHead": "Eq",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.859",
+                    "_uniq.860"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.862",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h₁",
+                  "type": "Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)",
+                  "typeHead": "Eq",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.859",
+                    "_uniq.860"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.923",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "hprod",
+                  "type": "Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19",
+                  "typeHead": "Eq",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.924",
+              "omitted_implementation_details": 1,
+              "pretty": "x y : Real\nh₀ : Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\nh₁ : Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\nhprod : Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158",
+              "target": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158",
+              "targetArgs": [],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n2",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 4,
+        "generation": 3,
+        "restarts": 2,
+        "sourceSha256": "577b6411985f5db9272f903fa6a171b44df7b466d52c6deb21ad5e0de8b38359",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": false,
+        "importMs": 10011,
+        "elaborationMs": 134,
+        "artifactCount": 11956
+      },
+      "elapsedMs": 13026,
+      "sequence": 6,
+      "kind": "state",
+      "nodeId": "n1",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0006-state.lean",
+      "sourceHash": "cccf593b8eaf12d1957d0bc073c658ead2cffffa45974fdbaaf273ea9d0b12c2",
+      "evidenceId": "ev_f88c838ade73f1a39a88e48055fc13c02749ae4b7cf8220e3abc8cc29b93091a"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[],\\\"node_id\\\":\\\"n1\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":17,\"line\":28},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0007-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":28},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_CLOSED:{\\\"node_id\\\":\\\"n1\\\"}\",\"endPos\":{\"column\":17,\"line\":28},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0007-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":28},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n1\",\"endPos\":{\"column\":17,\"line\":28},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0007-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":28},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.859\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"x\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.860\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"y\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.859\\\",\\\"_uniq.860\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.861\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.859\\\",\\\"_uniq.860\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.862\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₁\\\",\\\"type\\\":\\\"Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.859\\\",\\\"_uniq.860\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.923\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"hprod\\\",\\\"type\\\":\\\"Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.924\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"x y : Real\\\\nh₀ : Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\\\\nh₁ : Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\\\\nhprod : Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19\\\\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158\\\",\\\"target\\\":\\\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":29},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0007-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":29},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n2\",\"endPos\":{\"column\":16,\"line\":29},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0007-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":29},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[],\"node_id\":\"n1\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0007-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 28
+          },
+          "end": {
+            "column": 17,
+            "line": 28
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_CLOSED:{\"node_id\":\"n1\"}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0007-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 28
+          },
+          "end": {
+            "column": 17,
+            "line": 28
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n1",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0007-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 28
+          },
+          "end": {
+            "column": 17,
+            "line": 28
+          },
+          "category": "probe_stop"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.859\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"x\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.860\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"y\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.859\",\"_uniq.860\"],\"has_metavariables\":false,\"id\":\"_uniq.861\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.859\",\"_uniq.860\"],\"has_metavariables\":false,\"id\":\"_uniq.862\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₁\",\"type\":\"Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.859\",\"_uniq.860\"],\"has_metavariables\":false,\"id\":\"_uniq.923\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"hprod\",\"type\":\"Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.924\",\"omitted_implementation_details\":1,\"pretty\":\"x y : Real\\nh₀ : Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\\nh₁ : Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\\nhprod : Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19\\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158\",\"target\":\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158\",\"targetArgs\":[],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n2\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0007-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 29
+          },
+          "end": {
+            "column": 16,
+            "line": 29
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n2",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0007-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 29
+          },
+          "end": {
+            "column": 16,
+            "line": 29
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [],
+          "node_id": "n1",
+          "version": 1
+        },
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.859",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "x",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.860",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "y",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.859",
+                    "_uniq.860"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.861",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h₀",
+                  "type": "Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7",
+                  "typeHead": "Eq",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.859",
+                    "_uniq.860"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.862",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h₁",
+                  "type": "Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)",
+                  "typeHead": "Eq",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.859",
+                    "_uniq.860"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.923",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "hprod",
+                  "type": "Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19",
+                  "typeHead": "Eq",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.924",
+              "omitted_implementation_details": 1,
+              "pretty": "x y : Real\nh₀ : Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\nh₁ : Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\nhprod : Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158",
+              "target": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158",
+              "targetArgs": [],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n2",
+          "version": 1
+        }
+      ],
+      "closed": [
+        {
+          "node_id": "n1"
+        }
+      ],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 5,
+        "generation": 3,
+        "restarts": 2,
+        "sourceSha256": "185a79165df188458aad2478c888926a04dbe9829e8c85b129bb546493ca136c",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 52,
+        "elaborationMs": 78,
+        "artifactCount": 11956
+      },
+      "elapsedMs": 135,
+      "sequence": 7,
+      "kind": "candidate",
+      "nodeId": "n1",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0007-candidate.lean",
+      "sourceHash": "f7f83a20ce20a6555adbab22b1539bb316313a7bcf1b802afb00bd083335a219",
+      "evidenceId": "ev_0af03a59af393042b4e652a1aea6c173a7960279cc25322743aa81eb78896da8"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.859\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"x\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.860\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"y\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.859\\\",\\\"_uniq.860\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.861\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.859\\\",\\\"_uniq.860\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.862\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₁\\\",\\\"type\\\":\\\"Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.859\\\",\\\"_uniq.860\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.923\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"hprod\\\",\\\"type\\\":\\\"Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.924\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"x y : Real\\\\nh₀ : Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\\\\nh₁ : Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\\\\nhprod : Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19\\\\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158\\\",\\\"target\\\":\\\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":28},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0008-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":28},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n2\",\"endPos\":{\"column\":16,\"line\":28},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0008-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":28},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.859\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"x\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.860\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"y\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.859\",\"_uniq.860\"],\"has_metavariables\":false,\"id\":\"_uniq.861\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.859\",\"_uniq.860\"],\"has_metavariables\":false,\"id\":\"_uniq.862\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₁\",\"type\":\"Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.859\",\"_uniq.860\"],\"has_metavariables\":false,\"id\":\"_uniq.923\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"hprod\",\"type\":\"Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.924\",\"omitted_implementation_details\":1,\"pretty\":\"x y : Real\\nh₀ : Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\\nh₁ : Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\\nhprod : Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19\\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158\",\"target\":\"Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158\",\"targetArgs\":[],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n2\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0008-state.lean",
+          "start": {
+            "column": 2,
+            "line": 28
+          },
+          "end": {
+            "column": 16,
+            "line": 28
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n2",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0008-state.lean",
+          "start": {
+            "column": 2,
+            "line": 28
+          },
+          "end": {
+            "column": 16,
+            "line": 28
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.859",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "x",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.860",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "y",
+                  "type": "Real",
+                  "typeHead": "Real",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.859",
+                    "_uniq.860"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.861",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h₀",
+                  "type": "Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7",
+                  "typeHead": "Eq",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.859",
+                    "_uniq.860"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.862",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h₁",
+                  "type": "Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)",
+                  "typeHead": "Eq",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.859",
+                    "_uniq.860"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.923",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "hprod",
+                  "type": "Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19",
+                  "typeHead": "Eq",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.924",
+              "omitted_implementation_details": 1,
+              "pretty": "x y : Real\nh₀ : Eq.{1} (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} x y) 2) 7\nh₁ : Eq.{1} (Real.sqrt (HMul.hMul.{0, 0, 0} x y)) (Real.sqrt 19)\nhprod : Eq.{1} (HMul.hMul.{0, 0, 0} x y) 19\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158",
+              "target": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2)) 158",
+              "targetArgs": [],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n2",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 6,
+        "generation": 3,
+        "restarts": 2,
+        "sourceSha256": "2484795f4ffbc82943e821427c08fd15cf74bbdb97d9d15bffd449efc425bebc",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 42,
+        "elaborationMs": 37,
+        "artifactCount": 11956
+      },
+      "elapsedMs": 81,
+      "sequence": 8,
+      "kind": "state",
+      "nodeId": "n2",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/attempts/0008-state.lean",
+      "sourceHash": "d76c1dcf71cf3e65443691b5f8a0d18ad7406bf6161a3aeaf48adb43618bf9a8",
+      "evidenceId": "ev_eb68ff5039e9dab277a8b511103d2db7aaf3cfc9a0c3761274c70de805a34b1a"
+    }
+  ],
+  "category": "algebra",
+  "method": "codex",
+  "effectiveImports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Data.Real.Sqrt"
+  ],
+  "effectiveOpens": [
+    "BigOperators Real Nat Topology Rat"
+  ],
+  "cleanupAssessment": {
+    "status": "closed",
+    "exploration": {
+      "ownership": "engine",
+      "status": "closed",
+      "retryAttempted": false
+    },
+    "provider": {
+      "status": "closed",
+      "retryAttempted": true,
+      "entries": []
+    }
+  },
+  "artifactDir": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332",
+  "invocationElapsedMs": 118892
+}

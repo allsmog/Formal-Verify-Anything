@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"omega could not prove the goal:\\na possible counterexample may satisfy the constraints\\n  e ≥ 1\\n  d ≥ 1\\n  d + e ≤ 23\\nwhere\\n d := ↑a\\n e := ↑b\",\"endPos\":{\"column\":11,\"line\":28},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_320/attempts/0020-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":28},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  e ≥ 1\n  d ≥ 1\n  d + e ≤ 23\nwhere\n d := ↑a\n e := ↑b",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_320/attempts/0020-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 28
+      },
+      "end": {
+        "column": 11,
+        "line": 28
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 20,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "20a5a0f9f3ea5e4bf8928a0ba66a055dbf3167c89e35a6569cbadc0375ea42fb",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 45,
+    "elaborationMs": 64,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 110,
+  "sequence": 20,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_320/attempts/0020-candidate.lean",
+  "sourceHash": "231ba6f4477091aba7a9b518708db19acafbbe20f69671a09f4086333652eb09",
+  "evidenceId": "ev_39addf2baaf8e45fae92988f9bb151594e0a2caa83d977d77682c723a4a943c6"
+}

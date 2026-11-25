@@ -1,0 +1,425 @@
+{
+  "id": "induction_pprime_pdvdapowpma",
+  "tier": 2,
+  "status": "FAILED",
+  "proofFile": null,
+  "engineVersion": "fva-search-v2",
+  "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+  "statementHash": "a1c324f7cf6b2d5d1d6fb3deb787005784d0d9f1b8b1145e7b0307291758e342",
+  "provenance": {
+    "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+    "split": "test",
+    "repository": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+    "path": "MiniF2F/Test/induction_pprime_pdvdapowpma.lean",
+    "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/induction_pprime_pdvdapowpma.lean",
+    "sourceFileSha256": "8d3da29556a6c79205b68540ee08f4792710065e922c46af543877e48f434c98",
+    "statementSha256": "a1c324f7cf6b2d5d1d6fb3deb787005784d0d9f1b8b1145e7b0307291758e342",
+    "originalImports": [
+      "Mathlib"
+    ],
+    "originalOpens": [
+      "BigOperators Real Nat Topology Rat"
+    ],
+    "selectionRankWithinStratum": 1,
+    "selectionKeySha256": "08597f0e832331c792be8a7339a2e15dfdb7127e39d8d46be726639bf93eeba0",
+    "executionProfileSha256": "5265e241c25e5d1653c558148653058824c93265f8d52d800428481936a2cab1",
+    "executionImportReason": "natural-number primality"
+  },
+  "metrics": {
+    "compilerCalls": 1,
+    "steps": 0,
+    "maxDepth": 0,
+    "elapsedMs": 65512,
+    "firstCandidateSolved": false,
+    "modelTokens": null,
+    "modelTokensKnown": 0,
+    "modelUsageComplete": false,
+    "proposerCalls": 1,
+    "finalCandidates": 0
+  },
+  "budget": {
+    "maxCompilerCalls": 64,
+    "maxSteps": 64,
+    "maxProposalRounds": 3,
+    "maxDepth": 8,
+    "callTimeoutMs": 30000,
+    "theoremTimeoutMs": 300000,
+    "heartbeats": 200000,
+    "maxModelTokens": 50000
+  },
+  "policy": "codex-v1",
+  "failure": "provider_timeout",
+  "exploration": {
+    "backend": "lean-persistent-v1",
+    "cleanup": {
+      "ownership": "engine",
+      "status": "closed"
+    }
+  },
+  "verification": null,
+  "tree": {
+    "finalPlan": {
+      "id": "n0",
+      "depth": 0,
+      "kind": "hole",
+      "children": []
+    },
+    "nodes": [
+      {
+        "id": "n0",
+        "visit": 0,
+        "depth": 0,
+        "stateHash": "713dc1a73d0dd4a224f2c68e193c77b5f84b9b7723cd6118dfc4dd73b02ecb18",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.130",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "p",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.131",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "a",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.131"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.132",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "LT.lt.{0} 0 a",
+              "typeHead": "LT.lt",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.130"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.133",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₁",
+              "type": "Nat.Prime p",
+              "typeHead": "Nat.Prime",
+              "value": null
+            }
+          ],
+          "id": "_uniq.134",
+          "omitted_implementation_details": 1,
+          "pretty": "p a : Nat\nh₀ : LT.lt.{0} 0 a\nh₁ : Nat.Prime p\n⊢ Dvd.dvd.{0} p (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a)",
+          "target": "Dvd.dvd.{0} p (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a)",
+          "targetArgs": [
+            "Nat",
+            "Nat.instDvd",
+            "p",
+            "HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a"
+          ],
+          "targetHead": "Dvd.dvd",
+          "universe_parameters": []
+        },
+        "status": "EXHAUSTED",
+        "evidenceId": "ev_a5c53746723aeee7f1dd05f0ac2b15836fc27b9f9545dc5d99d6e5841eb1a278",
+        "proposerError": {
+          "name": "ProposerError",
+          "message": "Codex did not complete a bounded proof-proposal request.",
+          "code": "provider_timeout",
+          "retryable": false,
+          "provider": "codex-cli",
+          "usage": null,
+          "modelTokens": null,
+          "metadata": {
+            "provider": "codex-cli",
+            "model": null,
+            "modelSelection": "codex-configured-default",
+            "promptDigest": "ff777111c8dadfe6e4e307ccd3f0b944e86a61cfffd99ddacbab81b15f953a91",
+            "promptVersion": 1,
+            "toolPolicy": "disabled",
+            "ephemeral": true,
+            "cliVersion": "codex-cli 0.171.0",
+            "eventTypes": [
+              "thread.started",
+              "turn.started"
+            ],
+            "responseDigest": "70f01333c6c3e4f228f717b69d4de6b2005da56a39d4c17384804608b3e999e6",
+            "providerErrors": [],
+            "elapsedMs": 60021,
+            "exitCode": null,
+            "signal": "SIGKILL",
+            "stdoutDigest": "70f01333c6c3e4f228f717b69d4de6b2005da56a39d4c17384804608b3e999e6",
+            "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderrDiagnostic": ""
+          }
+        }
+      }
+    ],
+    "branches": []
+  },
+  "finalCandidates": [],
+  "proposerCalls": [
+    {
+      "id": "p0",
+      "nodeId": "n0",
+      "stateHash": "713dc1a73d0dd4a224f2c68e193c77b5f84b9b7723cd6118dfc4dd73b02ecb18",
+      "round": 0,
+      "requestDigest": "ffcce573b5c656517af343e70392cadd184d908dd807380ed7cc7fcc5cab330b",
+      "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_pprime_pdvdapowpma/proposals/0001-context.json",
+      "status": "FAILED",
+      "error": {
+        "name": "ProposerError",
+        "message": "Codex did not complete a bounded proof-proposal request.",
+        "code": "provider_timeout",
+        "retryable": false,
+        "provider": "codex-cli",
+        "usage": null,
+        "modelTokens": null,
+        "metadata": {
+          "provider": "codex-cli",
+          "model": null,
+          "modelSelection": "codex-configured-default",
+          "promptDigest": "ff777111c8dadfe6e4e307ccd3f0b944e86a61cfffd99ddacbab81b15f953a91",
+          "promptVersion": 1,
+          "toolPolicy": "disabled",
+          "ephemeral": true,
+          "cliVersion": "codex-cli 0.171.0",
+          "eventTypes": [
+            "thread.started",
+            "turn.started"
+          ],
+          "responseDigest": "70f01333c6c3e4f228f717b69d4de6b2005da56a39d4c17384804608b3e999e6",
+          "providerErrors": [],
+          "elapsedMs": 60021,
+          "exitCode": null,
+          "signal": "SIGKILL",
+          "stdoutDigest": "70f01333c6c3e4f228f717b69d4de6b2005da56a39d4c17384804608b3e999e6",
+          "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderrDiagnostic": ""
+        }
+      },
+      "failure": "provider_timeout",
+      "provider": "codex-cli",
+      "usage": null,
+      "metadata": {
+        "provider": "codex-cli",
+        "model": null,
+        "modelSelection": "codex-configured-default",
+        "promptDigest": "ff777111c8dadfe6e4e307ccd3f0b944e86a61cfffd99ddacbab81b15f953a91",
+        "promptVersion": 1,
+        "toolPolicy": "disabled",
+        "ephemeral": true,
+        "cliVersion": "codex-cli 0.171.0",
+        "eventTypes": [
+          "thread.started",
+          "turn.started"
+        ],
+        "responseDigest": "70f01333c6c3e4f228f717b69d4de6b2005da56a39d4c17384804608b3e999e6",
+        "providerErrors": [],
+        "elapsedMs": 60021,
+        "exitCode": null,
+        "signal": "SIGKILL",
+        "stdoutDigest": "70f01333c6c3e4f228f717b69d4de6b2005da56a39d4c17384804608b3e999e6",
+        "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderrDiagnostic": ""
+      },
+      "modelTokens": null,
+      "usageKnown": false,
+      "elapsedMs": 60024,
+      "evidenceId": "ev_ea343798d4b1ba2b0070e0cf8afc6f6896cd7b06f57ad1c195cb9492b0837f77"
+    }
+  ],
+  "attempts": [
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.130\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"p\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.131\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.131\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.132\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"LT.lt.{0} 0 a\\\",\\\"typeHead\\\":\\\"LT.lt\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.130\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.133\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₁\\\",\\\"type\\\":\\\"Nat.Prime p\\\",\\\"typeHead\\\":\\\"Nat.Prime\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.134\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"p a : Nat\\\\nh₀ : LT.lt.{0} 0 a\\\\nh₁ : Nat.Prime p\\\\n⊢ Dvd.dvd.{0} p (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a)\\\",\\\"target\\\":\\\"Dvd.dvd.{0} p (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a)\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"Nat.instDvd\\\",\\\"p\\\",\\\"HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a\\\"],\\\"targetHead\\\":\\\"Dvd.dvd\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_pprime_pdvdapowpma/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":21},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":16,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_pprime_pdvdapowpma/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":21},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.130\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"p\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.131\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"a\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.131\"],\"has_metavariables\":false,\"id\":\"_uniq.132\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"LT.lt.{0} 0 a\",\"typeHead\":\"LT.lt\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.130\"],\"has_metavariables\":false,\"id\":\"_uniq.133\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₁\",\"type\":\"Nat.Prime p\",\"typeHead\":\"Nat.Prime\",\"value\":null}],\"id\":\"_uniq.134\",\"omitted_implementation_details\":1,\"pretty\":\"p a : Nat\\nh₀ : LT.lt.{0} 0 a\\nh₁ : Nat.Prime p\\n⊢ Dvd.dvd.{0} p (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a)\",\"target\":\"Dvd.dvd.{0} p (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a)\",\"targetArgs\":[\"Nat\",\"Nat.instDvd\",\"p\",\"HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a\"],\"targetHead\":\"Dvd.dvd\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_pprime_pdvdapowpma/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 21
+          },
+          "end": {
+            "column": 16,
+            "line": 21
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_pprime_pdvdapowpma/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 21
+          },
+          "end": {
+            "column": 16,
+            "line": 21
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.130",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "p",
+                  "type": "Nat",
+                  "typeHead": "Nat",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.131",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "a",
+                  "type": "Nat",
+                  "typeHead": "Nat",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.131"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.132",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h₀",
+                  "type": "LT.lt.{0} 0 a",
+                  "typeHead": "LT.lt",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.130"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.133",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h₁",
+                  "type": "Nat.Prime p",
+                  "typeHead": "Nat.Prime",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.134",
+              "omitted_implementation_details": 1,
+              "pretty": "p a : Nat\nh₀ : LT.lt.{0} 0 a\nh₁ : Nat.Prime p\n⊢ Dvd.dvd.{0} p (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a)",
+              "target": "Dvd.dvd.{0} p (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a)",
+              "targetArgs": [
+                "Nat",
+                "Nat.instDvd",
+                "p",
+                "HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a"
+              ],
+              "targetHead": "Dvd.dvd",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 1,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "48a7a4d24e604d1f30cc126f86dbb81f30e30c121bf00e4ef3921439e90ab317",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": false,
+        "importMs": 2373,
+        "elaborationMs": 42,
+        "artifactCount": 10116
+      },
+      "elapsedMs": 5377,
+      "sequence": 1,
+      "kind": "state",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_pprime_pdvdapowpma/attempts/0001-state.lean",
+      "sourceHash": "023ca8679bb18262c7f926d903052f8945f61e21ec7cfc713c7faf27bf24d8c9",
+      "evidenceId": "ev_a5c53746723aeee7f1dd05f0ac2b15836fc27b9f9545dc5d99d6e5841eb1a278"
+    }
+  ],
+  "category": "induction",
+  "method": "codex",
+  "effectiveImports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Data.Nat.Prime.Basic"
+  ],
+  "effectiveOpens": [
+    "BigOperators Real Nat Topology Rat"
+  ],
+  "cleanupAssessment": {
+    "status": "closed",
+    "exploration": {
+      "ownership": "engine",
+      "status": "closed",
+      "retryAttempted": false
+    },
+    "provider": {
+      "status": "closed",
+      "retryAttempted": true,
+      "entries": []
+    }
+  },
+  "artifactDir": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_pprime_pdvdapowpma",
+  "invocationElapsedMs": 65513
+}

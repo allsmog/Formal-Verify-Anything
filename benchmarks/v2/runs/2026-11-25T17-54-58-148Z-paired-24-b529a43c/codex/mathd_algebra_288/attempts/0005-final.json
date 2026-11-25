@@ -1,0 +1,52 @@
+{
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_288\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (x y : Real) (n : NNReal),\\\\n  And (LT.lt.{0} x 0) (LT.lt.{0} y 0) →\\\\n    Eq.{1} (abs.{0} y) 6 →\\\\n      Eq.{1}\\\\n          (Real.sqrt\\\\n            (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} x 8) 2)\\\\n              (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} y 3) 2)))\\\\n          15 →\\\\n        Eq.{1} (Real.sqrt (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2))) (Real.sqrt ↑n) →\\\\n          Eq.{1} n 52\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":41},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_288/attempts/0005-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":41},\"severity\":\"information\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 4176,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_288\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (x y : Real) (n : NNReal),\\n  And (LT.lt.{0} x 0) (LT.lt.{0} y 0) →\\n    Eq.{1} (abs.{0} y) 6 →\\n      Eq.{1}\\n          (Real.sqrt\\n            (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} x 8) 2)\\n              (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} y 3) 2)))\\n          15 →\\n        Eq.{1} (Real.sqrt (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2))) (Real.sqrt ↑n) →\\n          Eq.{1} n 52\",\"universe_parameters\":[],\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_288/attempts/0005-final.lean",
+      "start": {
+        "column": 0,
+        "line": 41
+      },
+      "end": {
+        "column": 28,
+        "line": 41
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "mathd_algebra_288",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (x y : Real) (n : NNReal),\n  And (LT.lt.{0} x 0) (LT.lt.{0} y 0) →\n    Eq.{1} (abs.{0} y) 6 →\n      Eq.{1}\n          (Real.sqrt\n            (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} x 8) 2)\n              (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} y 3) 2)))\n          15 →\n        Eq.{1} (Real.sqrt (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2))) (Real.sqrt ↑n) →\n          Eq.{1} n 52",
+      "universe_parameters": [],
+      "version": 1
+    }
+  ],
+  "unparsed": [],
+  "sequence": 5,
+  "kind": "final",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_288/attempts/0005-final.lean",
+  "sourceHash": "1e413b4504642fbeee1e4967b7ec925076eb28c6fb362769d9cc0b1d154ddb08",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_c88affcd178b95fac0c246422134278408fc9f4bb9bbac2ab65c8e6e23cd925c"
+}

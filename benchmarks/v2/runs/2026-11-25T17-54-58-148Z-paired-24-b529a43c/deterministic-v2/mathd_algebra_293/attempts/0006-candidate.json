@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\nx : NNReal\\n⊢ √60 * √↑x * (√12 * √↑x) * (√63 * √↑x) = 36 * ↑x * (√35 * √↑x)\",\"endPos\":{\"column\":14,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_293/attempts/0006-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":21},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\nx : NNReal\n⊢ √60 * √↑x * (√12 * √↑x) * (√63 * √↑x) = 36 * ↑x * (√35 * √↑x)",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_293/attempts/0006-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 21
+      },
+      "end": {
+        "column": 14,
+        "line": 21
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 6,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "401ddd9d04070795a4df20ead328708c274a714992c560af13e40a7f51a4e84a",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 43,
+    "elaborationMs": 29,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 74,
+  "sequence": 6,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_293/attempts/0006-candidate.lean",
+  "sourceHash": "3dbdd336a29b5cd8edf09eca7211fa371e65d7ff6b197edd06caac7b21af5322",
+  "evidenceId": "ev_df9229f09527c77c79b553a24e14d8538b3434e8657f68c4924cf7769cf25e34"
+}

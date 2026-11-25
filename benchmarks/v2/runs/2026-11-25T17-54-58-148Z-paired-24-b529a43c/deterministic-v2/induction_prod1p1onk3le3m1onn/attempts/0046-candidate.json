@@ -1,0 +1,141 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":8,\"line\":22},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0046-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":22},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":14,\"line\":28},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0046-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":10,\"line\":28},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.1006\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.1006\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.1007\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"LT.lt.{0} 0 n\\\",\\\"typeHead\\\":\\\"LT.lt\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.16264\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"n : Nat\\\\nh₀ : LT.lt.{0} 0 n\\\\n⊢ LE.le.{0}\\\\n    (HAdd.hAdd.{0, 0, 0} 1\\\\n      (HMul.hMul.{0, 0, 0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} (↑x) 3)))\\\\n        ↑n))\\\\n    (HMul.hMul.{0, 0, 0} (↑n) 3)\\\",\\\"target\\\":\\\"LE.le.{0}\\\\n  (HAdd.hAdd.{0, 0, 0} 1\\\\n    (HMul.hMul.{0, 0, 0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} (↑x) 3)))\\\\n      ↑n))\\\\n  (HMul.hMul.{0, 0, 0} (↑n) 3)\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"Real.instLE\\\",\\\"HAdd.hAdd.{0, 0, 0} 1\\\\n  (HMul.hMul.{0, 0, 0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} (↑x) 3))) ↑n)\\\",\\\"HMul.hMul.{0, 0, 0} (↑n) 3\\\"],\\\"targetHead\\\":\\\"LE.le\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n8\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":27,\"line\":33},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0046-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":14,\"line\":33},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n8\",\"endPos\":{\"column\":27,\"line\":33},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0046-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":14,\"line\":33},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0046-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 22
+      },
+      "end": {
+        "column": 8,
+        "line": 22
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0046-candidate.lean",
+      "start": {
+        "column": 10,
+        "line": 28
+      },
+      "end": {
+        "column": 14,
+        "line": 28
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.1006\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.1006\"],\"has_metavariables\":false,\"id\":\"_uniq.1007\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"LT.lt.{0} 0 n\",\"typeHead\":\"LT.lt\",\"value\":null}],\"id\":\"_uniq.16264\",\"omitted_implementation_details\":1,\"pretty\":\"n : Nat\\nh₀ : LT.lt.{0} 0 n\\n⊢ LE.le.{0}\\n    (HAdd.hAdd.{0, 0, 0} 1\\n      (HMul.hMul.{0, 0, 0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} (↑x) 3)))\\n        ↑n))\\n    (HMul.hMul.{0, 0, 0} (↑n) 3)\",\"target\":\"LE.le.{0}\\n  (HAdd.hAdd.{0, 0, 0} 1\\n    (HMul.hMul.{0, 0, 0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} (↑x) 3)))\\n      ↑n))\\n  (HMul.hMul.{0, 0, 0} (↑n) 3)\",\"targetArgs\":[\"Real\",\"Real.instLE\",\"HAdd.hAdd.{0, 0, 0} 1\\n  (HMul.hMul.{0, 0, 0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} (↑x) 3))) ↑n)\",\"HMul.hMul.{0, 0, 0} (↑n) 3\"],\"targetHead\":\"LE.le\",\"universe_parameters\":[]}],\"node_id\":\"n8\",\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0046-candidate.lean",
+      "start": {
+        "column": 14,
+        "line": 33
+      },
+      "end": {
+        "column": 27,
+        "line": 33
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n8",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0046-candidate.lean",
+      "start": {
+        "column": 14,
+        "line": 33
+      },
+      "end": {
+        "column": 27,
+        "line": 33
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.1006",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.1006"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.1007",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "LT.lt.{0} 0 n",
+              "typeHead": "LT.lt",
+              "value": null
+            }
+          ],
+          "id": "_uniq.16264",
+          "omitted_implementation_details": 1,
+          "pretty": "n : Nat\nh₀ : LT.lt.{0} 0 n\n⊢ LE.le.{0}\n    (HAdd.hAdd.{0, 0, 0} 1\n      (HMul.hMul.{0, 0, 0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} (↑x) 3)))\n        ↑n))\n    (HMul.hMul.{0, 0, 0} (↑n) 3)",
+          "target": "LE.le.{0}\n  (HAdd.hAdd.{0, 0, 0} 1\n    (HMul.hMul.{0, 0, 0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} (↑x) 3)))\n      ↑n))\n  (HMul.hMul.{0, 0, 0} (↑n) 3)",
+          "targetArgs": [
+            "Real",
+            "Real.instLE",
+            "HAdd.hAdd.{0, 0, 0} 1\n  (HMul.hMul.{0, 0, 0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (Inv.inv.{0} (HPow.hPow.{0, 0, 0} (↑x) 3))) ↑n)",
+            "HMul.hMul.{0, 0, 0} (↑n) 3"
+          ],
+          "targetHead": "LE.le",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n8",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 46,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "b4f319c18187c9c2992fae73dd04c477e7a100463c833789539fdf3d9630a086",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 25,
+    "elaborationMs": 186,
+    "artifactCount": 10204
+  },
+  "elapsedMs": 212,
+  "sequence": 46,
+  "kind": "candidate",
+  "nodeId": "n8",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_prod1p1onk3le3m1onn/attempts/0046-candidate.lean",
+  "sourceHash": "04dcf733eef643c305fe53498ee88ce29e306987564a192fb4f33c116324545b",
+  "evidenceId": "ev_8985147b97710744f8e5fb050bfa46f8e0cea4c2ac78027e045f9812e6d5593e"
+}

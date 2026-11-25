@@ -1,0 +1,118 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.291",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "n._@.FVAExploration.861397831._hygCtx._hyg.36",
+        "type": "Nat",
+        "typeHead": "Nat",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.291"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.6354",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "Even.{0} (HAdd.hAdd.{0, 0, 0} 1 n✝)",
+        "typeHead": "Even",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.7347",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₁",
+        "type": "Even.{0} 0",
+        "typeHead": "Even",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.291"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.7348",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "a._@._internal.0.FVAExploration.861397831._hygCtx._hyg.37",
+        "type": "Even.{0} n✝ → Eq.{1} (HSub.hSub.{0, 0, 0} n✝ 0) 2 → Eq.{1} (HMul.hMul.{0, 0, 0} n✝ 0) 288 → Eq.{1} n✝ 18",
+        "typeHead": "forall",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.291"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.7349",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₃",
+        "type": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} n✝ 0) 0) 288",
+        "typeHead": "Eq",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.291"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.7350",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₂",
+        "type": "Eq.{1} (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 n✝) 0) 2",
+        "typeHead": "Eq",
+        "value": null
+      }
+    ],
+    "id": "_uniq.7353",
+    "omitted_implementation_details": 1,
+    "pretty": "case succ.zero\nn✝ : Nat\nh₀ : Even.{0} (HAdd.hAdd.{0, 0, 0} 1 n✝)\nh₁ : Even.{0} 0\na✝ : Even.{0} n✝ → Eq.{1} (HSub.hSub.{0, 0, 0} n✝ 0) 2 → Eq.{1} (HMul.hMul.{0, 0, 0} n✝ 0) 288 → Eq.{1} n✝ 18\nh₃ : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} n✝ 0) 0) 288\nh₂ : Eq.{1} (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 n✝) 0) 2\n⊢ Eq.{1} n✝ 17",
+    "target": "Eq.{1} n✝ 17",
+    "targetArgs": [
+      "Nat",
+      "n✝",
+      "17"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Algebra.Ring.Parity"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 10,
+    "maxDepth": 8,
+    "depth": 4,
+    "modelTokensRemaining": 0,
+    "remainingMs": 286819
+  }
+}

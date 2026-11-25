@@ -1,0 +1,596 @@
+{
+  "id": "induction_12dvd4expnp1p20",
+  "tier": 2,
+  "status": "SOLVED",
+  "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/induction_12dvd4expnp1p20.lean",
+  "engineVersion": "fva-search-v2",
+  "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+  "statementHash": "22f695628ea61707de275e862f712170ee3a766bf28fa38dfcb6a1ad74f03dee",
+  "provenance": {
+    "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+    "split": "test",
+    "repository": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+    "path": "MiniF2F/Test/induction_12dvd4expnp1p20.lean",
+    "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/induction_12dvd4expnp1p20.lean",
+    "sourceFileSha256": "8f998077a8e2020ef9e3c28e0b40a7cb8a7cdb86101034c48baf4d5aad5e6394",
+    "statementSha256": "22f695628ea61707de275e862f712170ee3a766bf28fa38dfcb6a1ad74f03dee",
+    "originalImports": [
+      "Mathlib"
+    ],
+    "originalOpens": [
+      "BigOperators Real Nat Topology Rat"
+    ],
+    "selectionRankWithinStratum": 6,
+    "selectionKeySha256": "8500f74e475a683a989b4af41217cebbebd8595d6a1b5a73c06f59960bb87b31",
+    "executionProfileSha256": "5265e241c25e5d1653c558148653058824c93265f8d52d800428481936a2cab1",
+    "executionImportReason": "Common arithmetic definitions suffice for the original declaration."
+  },
+  "metrics": {
+    "compilerCalls": 4,
+    "steps": 1,
+    "maxDepth": 0,
+    "elapsedMs": 30377,
+    "firstCandidateSolved": true,
+    "modelTokens": 18112,
+    "modelTokensKnown": 18112,
+    "modelUsageComplete": true,
+    "proposerCalls": 1,
+    "finalCandidates": 1
+  },
+  "budget": {
+    "maxCompilerCalls": 64,
+    "maxSteps": 64,
+    "maxProposalRounds": 3,
+    "maxDepth": 8,
+    "callTimeoutMs": 30000,
+    "theoremTimeoutMs": 300000,
+    "heartbeats": 200000,
+    "maxModelTokens": 50000
+  },
+  "policy": "codex-v1",
+  "failure": null,
+  "exploration": {
+    "backend": "lean-persistent-v1",
+    "cleanup": {
+      "ownership": "engine",
+      "status": "closed"
+    }
+  },
+  "verification": {
+    "statementHash": "22f695628ea61707de275e862f712170ee3a766bf28fa38dfcb6a1ad74f03dee",
+    "sourceHash": "e9732163e24d74e447d936a4c1d961f8e56fb6833c5b1b54ea713b1e96f60f9f",
+    "zeroPlaceholders": true,
+    "exitCode": 0,
+    "audit": {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "induction_12dvd4expnp1p20",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (n : Nat), Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)",
+      "universe_parameters": [],
+      "version": 1
+    },
+    "compileEvidence": [
+      "ev_704f6d254a8cdfa4b07cde0dda268baf418a5529f1ba4bf76e803e2d032ed6f5",
+      "ev_8c509e88f1fd92fa31d96e4f32f30f4511dc381a0c2e5622198b1490cc35dcb5"
+    ],
+    "standaloneRecheck": true,
+    "policy": "lean-kernel-v2-unused-variable-lint",
+    "warnings": []
+  },
+  "tree": {
+    "finalPlan": {
+      "id": "n0",
+      "depth": 0,
+      "kind": "tactic",
+      "children": [],
+      "tactic": "induction n with\n| zero => exact ⟨2, by decide⟩\n| succ n ih =>\n  rcases ih with ⟨k, hk⟩\n  refine ⟨k + 4 ^ n, ?_⟩\n  change 4 ^ (n + 1 + 1) + 20 = 12 * (k + 4 ^ n)\n  calc\n    4 ^ (n + 1 + 1) + 20 = (4 ^ (n + 1) + 20) + 12 * 4 ^ n := by\n      simp only [pow_succ]\n      ring\n    _ = 12 * (k + 4 ^ n) := by\n      rw [hk]\n      ring"
+    },
+    "nodes": [
+      {
+        "id": "n0",
+        "visit": 0,
+        "depth": 0,
+        "stateHash": "759fb0c276446185e132ff48d5805fe4d649dd9d7a047c5cbed6c777dec4e68f",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.687",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            }
+          ],
+          "id": "_uniq.688",
+          "omitted_implementation_details": 1,
+          "pretty": "n : Nat\n⊢ Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)",
+          "target": "Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)",
+          "targetArgs": [
+            "Nat",
+            "Nat.instDvd",
+            "12",
+            "HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20"
+          ],
+          "targetHead": "Dvd.dvd",
+          "universe_parameters": []
+        },
+        "status": "VERIFIED_IN_FINAL_PROOF",
+        "evidenceId": "ev_5af54190f7eeca05bddb85d7fb111b608cae2826aaaa9ee082df5432fbb025de"
+      }
+    ],
+    "branches": [
+      {
+        "parent": "n0",
+        "visit": 0,
+        "stateHash": "759fb0c276446185e132ff48d5805fe4d649dd9d7a047c5cbed6c777dec4e68f",
+        "proposal": {
+          "kind": "tactic",
+          "tactic": "induction n with\n| zero => exact ⟨2, by decide⟩\n| succ n ih =>\n  rcases ih with ⟨k, hk⟩\n  refine ⟨k + 4 ^ n, ?_⟩\n  change 4 ^ (n + 1 + 1) + 20 = 12 * (k + 4 ^ n)\n  calc\n    4 ^ (n + 1 + 1) + 20 = (4 ^ (n + 1) + 20) + 12 * 4 ^ n := by\n      simp only [pow_succ]\n      ring\n    _ = 12 * (k + 4 ^ n) := by\n      rw [hk]\n      ring"
+        },
+        "beforeHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a",
+        "status": "RETAINED",
+        "children": [],
+        "evidenceId": "ev_acc77430606c1871de4a2bb6338f8675784c20635926a1c5a70ec32724cd2f44"
+      }
+    ]
+  },
+  "finalCandidates": [
+    {
+      "id": "c0",
+      "planHash": "1d9c5a990112abf541a463c8d8016520baf24e08277d4c760753219a16a65dc7",
+      "status": "ACCEPTED",
+      "policy": "lean-kernel-v2-unused-variable-lint",
+      "evidenceIds": [
+        "ev_704f6d254a8cdfa4b07cde0dda268baf418a5529f1ba4bf76e803e2d032ed6f5",
+        "ev_8c509e88f1fd92fa31d96e4f32f30f4511dc381a0c2e5622198b1490cc35dcb5"
+      ],
+      "sourceHash": "e9732163e24d74e447d936a4c1d961f8e56fb6833c5b1b54ea713b1e96f60f9f",
+      "explorationSuspension": {
+        "status": "SUSPENDED",
+        "elapsedMs": 38
+      },
+      "checks": [
+        {
+          "kind": "final",
+          "evidenceId": "ev_704f6d254a8cdfa4b07cde0dda268baf418a5529f1ba4bf76e803e2d032ed6f5",
+          "accepted": true,
+          "reason": null,
+          "audit": {
+            "axioms": [
+              "propext"
+            ],
+            "declaration": "induction_12dvd4expnp1p20",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (n : Nat), Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": []
+        },
+        {
+          "kind": "recheck",
+          "evidenceId": "ev_8c509e88f1fd92fa31d96e4f32f30f4511dc381a0c2e5622198b1490cc35dcb5",
+          "accepted": true,
+          "reason": null,
+          "audit": {
+            "axioms": [
+              "propext"
+            ],
+            "declaration": "induction_12dvd4expnp1p20",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (n : Nat), Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": []
+        }
+      ],
+      "reason": null
+    }
+  ],
+  "proposerCalls": [
+    {
+      "id": "p0",
+      "nodeId": "n0",
+      "stateHash": "759fb0c276446185e132ff48d5805fe4d649dd9d7a047c5cbed6c777dec4e68f",
+      "round": 0,
+      "requestDigest": "80aae828c4612f7ed79f2d35c583773d80e2190831284ffb81fe12ddcb94260d",
+      "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/proposals/0001-context.json",
+      "modelTokens": 18112,
+      "usageKnown": true,
+      "tokenBudgetExceeded": false,
+      "policy": "codex-v1",
+      "provider": "codex-cli",
+      "usage": {
+        "input_tokens": 16404,
+        "output_tokens": 1708,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 1189
+      },
+      "metadata": {
+        "provider": "codex-cli",
+        "model": null,
+        "modelSelection": "codex-configured-default",
+        "promptDigest": "ec8be2fead45032fde192e05156389ac098886bf7e460986b4f44dedb9e6b3c6",
+        "promptVersion": 1,
+        "toolPolicy": "disabled",
+        "ephemeral": true,
+        "cliVersion": "codex-cli 0.171.0",
+        "eventTypes": [
+          "thread.started",
+          "turn.started",
+          "item.completed",
+          "turn.completed"
+        ],
+        "responseDigest": "ea68aa8e11c3477ae44d967587fa4db52a7644f16a5833abf981d4c246a5b135",
+        "providerErrors": [],
+        "elapsedMs": 24649,
+        "exitCode": 0,
+        "signal": null,
+        "stdoutDigest": "ea68aa8e11c3477ae44d967587fa4db52a7644f16a5833abf981d4c246a5b135",
+        "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderrDiagnostic": ""
+      },
+      "proposals": [
+        {
+          "kind": "tactic",
+          "tactic": "induction n with\n| zero => exact ⟨2, by decide⟩\n| succ n ih =>\n  rcases ih with ⟨k, hk⟩\n  refine ⟨k + 4 ^ n, ?_⟩\n  change 4 ^ (n + 1 + 1) + 20 = 12 * (k + 4 ^ n)\n  calc\n    4 ^ (n + 1 + 1) + 20 = (4 ^ (n + 1) + 20) + 12 * 4 ^ n := by\n      simp only [pow_succ]\n      ring\n    _ = 12 * (k + 4 ^ n) := by\n      rw [hk]\n      ring"
+        },
+        {
+          "kind": "tactic",
+          "tactic": "induction n with\n| zero => exact ⟨2, by decide⟩\n| succ n ih =>\n  change 12 ∣ 4 ^ (n + 1 + 1) + 20\n  rw [show (4 ^ (n + 1 + 1) + 20 : Nat) = (4 ^ (n + 1) + 20) + 12 * 4 ^ n by\n    simp only [pow_succ]\n    ring]\n  exact dvd_add ih ⟨4 ^ n, rfl⟩"
+        },
+        {
+          "kind": "tactic",
+          "tactic": "have hp : ∀ m : Nat, (4 ^ (m + 1) : Nat) % 12 = 4 := by\n  intro m\n  induction m with\n  | zero => decide\n  | succ m ih =>\n    change (4 ^ (m + 1 + 1) : Nat) % 12 = 4\n    rw [pow_succ, Nat.mul_mod, ih] <;> decide\napply Nat.dvd_of_mod_eq_zero\nrw [Nat.add_mod, hp n] <;> decide"
+        },
+        {
+          "kind": "have",
+          "name": "hstep",
+          "type": "∀ m : Nat, (4 ^ (m + 1 + 1) + 20 : Nat) = (4 ^ (m + 1) + 20) + 12 * 4 ^ m"
+        }
+      ],
+      "status": "RETURNED",
+      "elapsedMs": 24651,
+      "evidenceId": "ev_b2b94db81b9269d2bdde5cd3ac46af899ed7f9e0980f1303e993881ab4607933"
+    }
+  ],
+  "attempts": [
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.687\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.688\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"n : Nat\\\\n⊢ Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)\\\",\\\"target\\\":\\\"Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"Nat.instDvd\\\",\\\"12\\\",\\\"HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20\\\"],\\\"targetHead\\\":\\\"Dvd.dvd\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":16,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.687\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null}],\"id\":\"_uniq.688\",\"omitted_implementation_details\":1,\"pretty\":\"n : Nat\\n⊢ Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)\",\"target\":\"Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)\",\"targetArgs\":[\"Nat\",\"Nat.instDvd\",\"12\",\"HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20\"],\"targetHead\":\"Dvd.dvd\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 18
+          },
+          "end": {
+            "column": 16,
+            "line": 18
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 18
+          },
+          "end": {
+            "column": 16,
+            "line": 18
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.687",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "n",
+                  "type": "Nat",
+                  "typeHead": "Nat",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.688",
+              "omitted_implementation_details": 1,
+              "pretty": "n : Nat\n⊢ Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)",
+              "target": "Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)",
+              "targetArgs": [
+                "Nat",
+                "Nat.instDvd",
+                "12",
+                "HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20"
+              ],
+              "targetHead": "Dvd.dvd",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 1,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "ae1d1f4dd885822b139ccc50005f8f051f5ee920b16f4d687dda4b1eea4e8abd",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": false,
+        "importMs": 1191,
+        "elaborationMs": 23,
+        "artifactCount": 10088
+      },
+      "elapsedMs": 2387,
+      "sequence": 1,
+      "kind": "state",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/attempts/0001-state.lean",
+      "sourceHash": "715a658fc30f24c7e6671af7a7cd1c15e9aa8ec6ef7de804e9a9dfdc98200682",
+      "evidenceId": "ev_5af54190f7eeca05bddb85d7fb111b608cae2826aaaa9ee082df5432fbb025de"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":15,\"line\":31},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":31},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_CLOSED:{\\\"node_id\\\":\\\"n0\\\"}\",\"endPos\":{\"column\":15,\"line\":31},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":31},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":15,\"line\":31},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":31},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[],\"node_id\":\"n0\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/attempts/0002-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 31
+          },
+          "end": {
+            "column": 15,
+            "line": 31
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_CLOSED:{\"node_id\":\"n0\"}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/attempts/0002-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 31
+          },
+          "end": {
+            "column": 15,
+            "line": 31
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/attempts/0002-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 31
+          },
+          "end": {
+            "column": 15,
+            "line": 31
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [
+        {
+          "node_id": "n0"
+        }
+      ],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 2,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "fbbf3efb2651aa5356832e5358bc85eb96fc59daeacb203ade2cdcbdd5a37b54",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 53,
+        "elaborationMs": 41,
+        "artifactCount": 10088
+      },
+      "elapsedMs": 96,
+      "sequence": 2,
+      "kind": "candidate",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/attempts/0002-candidate.lean",
+      "sourceHash": "469fc40fc3068afb8d7212304f84bdd0627c3f2ae16f459ea61711b186f92fe8",
+      "evidenceId": "ev_acc77430606c1871de4a2bb6338f8675784c20635926a1c5a70ec32724cd2f44"
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\"],\\\"declaration\\\":\\\"induction_12dvd4expnp1p20\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (n : Nat), Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":36,\"line\":32},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/attempts/0003-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":32},\"severity\":\"information\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 1823,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_AUDIT:{\"axioms\":[\"propext\"],\"declaration\":\"induction_12dvd4expnp1p20\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (n : Nat), Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)\",\"universe_parameters\":[],\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/attempts/0003-final.lean",
+          "start": {
+            "column": 0,
+            "line": 32
+          },
+          "end": {
+            "column": 36,
+            "line": 32
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "declaration": "induction_12dvd4expnp1p20",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (n : Nat), Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)",
+          "universe_parameters": [],
+          "version": 1
+        }
+      ],
+      "unparsed": [],
+      "sequence": 3,
+      "kind": "final",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/attempts/0003-final.lean",
+      "sourceHash": "38ef64af42f0e0758f409c6657462f9dfad424cc81aad3bfef13f4b8c477e1d4",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_704f6d254a8cdfa4b07cde0dda268baf418a5529f1ba4bf76e803e2d032ed6f5"
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\"],\\\"declaration\\\":\\\"induction_12dvd4expnp1p20\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (n : Nat), Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":36,\"line\":32},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/attempts/0004-recheck.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":32},\"severity\":\"information\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 1377,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_AUDIT:{\"axioms\":[\"propext\"],\"declaration\":\"induction_12dvd4expnp1p20\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (n : Nat), Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)\",\"universe_parameters\":[],\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/attempts/0004-recheck.lean",
+          "start": {
+            "column": 0,
+            "line": 32
+          },
+          "end": {
+            "column": 36,
+            "line": 32
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "declaration": "induction_12dvd4expnp1p20",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (n : Nat), Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n 1)) 20)",
+          "universe_parameters": [],
+          "version": 1
+        }
+      ],
+      "unparsed": [],
+      "sequence": 4,
+      "kind": "recheck",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20/attempts/0004-recheck.lean",
+      "sourceHash": "38ef64af42f0e0758f409c6657462f9dfad424cc81aad3bfef13f4b8c477e1d4",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_8c509e88f1fd92fa31d96e4f32f30f4511dc381a0c2e5622198b1490cc35dcb5"
+    }
+  ],
+  "category": "induction",
+  "method": "codex",
+  "effectiveImports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+  ],
+  "effectiveOpens": [
+    "BigOperators Real Nat Topology Rat"
+  ],
+  "cleanupAssessment": {
+    "status": "closed",
+    "exploration": {
+      "ownership": "engine",
+      "status": "closed",
+      "retryAttempted": false
+    },
+    "provider": {
+      "status": "closed",
+      "retryAttempted": true,
+      "entries": []
+    }
+  },
+  "artifactDir": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_12dvd4expnp1p20",
+  "invocationElapsedMs": 30377
+}

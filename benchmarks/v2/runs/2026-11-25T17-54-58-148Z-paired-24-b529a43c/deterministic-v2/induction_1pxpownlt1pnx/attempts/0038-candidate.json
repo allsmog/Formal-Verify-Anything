@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  1 + ↑(n✝ + 1) * x\\nis not definitionally equal to the right-hand side\\n  (1 + x) ^ (n✝ + 1)\\n\\ncase succ\\nx : ℝ\\nh₀ : -1 < x\\nn✝ : ℕ\\na✝ : 0 < n✝ → 1 + ↑n✝ * x ≤ (1 + x) ^ n✝\\nh₁ : 0 < n✝ + 1\\n⊢ 1 + ↑(n✝ + 1) * x ≤ (1 + x) ^ (n✝ + 1)\",\"endPos\":{\"column\":11,\"line\":29},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0038-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":29},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  1 + ↑(n✝ + 1) * x\nis not definitionally equal to the right-hand side\n  (1 + x) ^ (n✝ + 1)\n\ncase succ\nx : ℝ\nh₀ : -1 < x\nn✝ : ℕ\na✝ : 0 < n✝ → 1 + ↑n✝ * x ≤ (1 + x) ^ n✝\nh₁ : 0 < n✝ + 1\n⊢ 1 + ↑(n✝ + 1) * x ≤ (1 + x) ^ (n✝ + 1)",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0038-candidate.lean",
+      "start": {
+        "column": 8,
+        "line": 29
+      },
+      "end": {
+        "column": 11,
+        "line": 29
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 38,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "c54251b7de96664e8f484b1182fe065a2a9b32fd93d0f1845c443cb069b119b1",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 29,
+    "elaborationMs": 42,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 74,
+  "sequence": 38,
+  "kind": "candidate",
+  "nodeId": "n5",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0038-candidate.lean",
+  "sourceHash": "2f8ae49415cd2c14b749826ba76d630f6544db9448405c47be9cf35df92d126a",
+  "evidenceId": "ev_6991d0a86080ac64cf31fa42eb0bbdbe5a38cf77ee0c638eae7cd3375873a1f8"
+}

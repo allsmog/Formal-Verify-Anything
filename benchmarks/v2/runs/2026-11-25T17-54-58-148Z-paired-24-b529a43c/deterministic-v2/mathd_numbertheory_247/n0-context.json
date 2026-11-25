@@ -1,0 +1,63 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.246",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "n",
+        "type": "Nat",
+        "typeHead": "Nat",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.246"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.247",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "Eq.{1} (HMod.hMod.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 n) 11) 2",
+        "typeHead": "Eq",
+        "value": null
+      }
+    ],
+    "id": "_uniq.248",
+    "omitted_implementation_details": 1,
+    "pretty": "n : Nat\nh₀ : Eq.{1} (HMod.hMod.{0, 0, 0} (HMul.hMul.{0, 0, 0} 3 n) 11) 2\n⊢ Eq.{1} (HMod.hMod.{0, 0, 0} n 11) 8",
+    "target": "Eq.{1} (HMod.hMod.{0, 0, 0} n 11) 8",
+    "targetArgs": [
+      "Nat",
+      "HMod.hMod.{0, 0, 0} n 11",
+      "8"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 61,
+    "maxDepth": 8,
+    "depth": 0,
+    "modelTokensRemaining": 0,
+    "remainingMs": 295092
+  }
+}

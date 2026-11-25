@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\ncase succ\\nn✝ : ℕ\\na✝ :\\n  0 < n✝ →\\n    (∀ (n : ℕ), (n✝ + n * 6).gcd (2 + n * 6) = 1) →\\n      (∀ (n : ℕ), (n✝ + n * 6).gcd (3 + n * 6) = 1) → (∀ (n : ℕ), (n✝ + n * 6).gcd (1 + n * 6) = 1) → 5 ≤ n✝\\nh₀ : 0 < n✝ + 1\\nh₂ : ∀ (n : ℕ), (n✝ + 1 + n * 6).gcd (2 + n * 6) = 1\\nh₁ : ∀ (n : ℕ), (n✝ + 1 + n * 6).gcd (3 + n * 6) = 1\\nh₃ : ∀ (n : ℕ), (n✝ + 1 + n * 6).gcd (1 + n * 6) = 1\\n⊢ 5 ≤ n✝ + 1\",\"endPos\":{\"column\":18,\"line\":31},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_435/attempts/0047-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":8,\"line\":31},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\ncase succ\nn✝ : ℕ\na✝ :\n  0 < n✝ →\n    (∀ (n : ℕ), (n✝ + n * 6).gcd (2 + n * 6) = 1) →\n      (∀ (n : ℕ), (n✝ + n * 6).gcd (3 + n * 6) = 1) → (∀ (n : ℕ), (n✝ + n * 6).gcd (1 + n * 6) = 1) → 5 ≤ n✝\nh₀ : 0 < n✝ + 1\nh₂ : ∀ (n : ℕ), (n✝ + 1 + n * 6).gcd (2 + n * 6) = 1\nh₁ : ∀ (n : ℕ), (n✝ + 1 + n * 6).gcd (3 + n * 6) = 1\nh₃ : ∀ (n : ℕ), (n✝ + 1 + n * 6).gcd (1 + n * 6) = 1\n⊢ 5 ≤ n✝ + 1",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_435/attempts/0047-candidate.lean",
+      "start": {
+        "column": 8,
+        "line": 31
+      },
+      "end": {
+        "column": 18,
+        "line": 31
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 47,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "fbb3c07bf4453300316d059ec2790faed1850c844dae24513d9ccc11a50278f8",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 31,
+    "elaborationMs": 211,
+    "artifactCount": 10092
+  },
+  "elapsedMs": 246,
+  "sequence": 47,
+  "kind": "candidate",
+  "nodeId": "n4",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_435/attempts/0047-candidate.lean",
+  "sourceHash": "0d2695f20f4838c3c9d05df4976539da9775468cd7cf0619b07250d01d16f997",
+  "evidenceId": "ev_24e73161016de8515f7493f54065eb6bcbabb76b89199c03fd01a7dc20678769"
+}

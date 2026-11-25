@@ -1,0 +1,61 @@
+{
+  "id": "p1",
+  "nodeId": "n1",
+  "stateHash": "437928c5d9d9c8a330e7c8781cdcaccff296b3b971a72e60d6a075cdc202bab6",
+  "round": 0,
+  "requestDigest": "39392778f4346624ab30726646b6a2fea411a5c4c69ca201d12024635197e00f",
+  "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/proposals/0002-context.json",
+  "modelTokens": 17732,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "codex-v1",
+  "provider": "codex-cli",
+  "usage": {
+    "input_tokens": 16620,
+    "output_tokens": 1112,
+    "cached_input_tokens": 0,
+    "reasoning_output_tokens": 753
+  },
+  "metadata": {
+    "provider": "codex-cli",
+    "model": null,
+    "modelSelection": "codex-configured-default",
+    "promptDigest": "f1adcc92de5068f87b508c38b2a7237d903c730f61c14fd1fc5113084a59eb0f",
+    "promptVersion": 1,
+    "toolPolicy": "disabled",
+    "ephemeral": true,
+    "cliVersion": "codex-cli 0.171.0",
+    "eventTypes": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "responseDigest": "55b4f53d777a6fb0932543825ebe84386482ddd7ce8925825422d67818b0019c",
+    "providerErrors": [],
+    "elapsedMs": 17131,
+    "exitCode": 0,
+    "signal": null,
+    "stdoutDigest": "55b4f53d777a6fb0932543825ebe84386482ddd7ce8925825422d67818b0019c",
+    "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrDiagnostic": ""
+  },
+  "proposals": [
+    {
+      "kind": "tactic",
+      "tactic": "have h19 : 0 < Real.sqrt (19 : ℝ) := Real.sqrt_pos.mpr (by norm_num)\nhave hxy : 0 ≤ x * y := (Real.sqrt_pos.mp (h₁.symm ▸ h19)).le\ncalc\n  x * y = (Real.sqrt (x * y)) ^ 2 := (Real.sq_sqrt hxy).symm\n  _ = (Real.sqrt 19) ^ 2 := congrArg (fun t : ℝ => t ^ 2) h₁\n  _ = 19 := Real.sq_sqrt (by norm_num)"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "have hxy : 0 ≤ x * y := by\n  by_contra! hn\n  have hz := Real.sqrt_eq_zero_of_nonpos hn.le\n  have hp : 0 < Real.sqrt (19 : ℝ) := by positivity\n  rw [← h₁, hz] at hp\n  exact (lt_irrefl 0) hp\nhave h19 : (0 : ℝ) ≤ 19 := by norm_num\nsimpa only [Real.sq_sqrt hxy, Real.sq_sqrt h19] using congrArg (fun t : ℝ => t ^ 2) h₁"
+    },
+    {
+      "kind": "have",
+      "name": "hxy_nonneg",
+      "type": "0 ≤ x * y"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 17133,
+  "evidenceId": "ev_98fc71029a92ea7baf245c0d3cb1ee0b9376bca018950cb7625e63684d16a25e"
+}

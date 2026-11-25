@@ -1,0 +1,155 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.6824\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n._@.FVAExploration.97970392._hygCtx._hyg.106\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.6824\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.6825\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a._@._internal.0.FVAExploration.97970392._hygCtx._hyg.107\\\",\\\"type\\\":\\\"LT.lt.{0} 0 n✝ →\\\\n  (∀ (n : Nat),\\\\n      Eq.{1}\\\\n        (Nat.gcd (HAdd.hAdd.{0, 0, 0} n✝ (HMul.hMul.{0, 0, 0} n 6)) (HAdd.hAdd.{0, 0, 0} 2 (HMul.hMul.{0, 0, 0} n 6)))\\\\n        1) →\\\\n    (∀ (n : Nat),\\\\n        Eq.{1}\\\\n          (Nat.gcd (HAdd.hAdd.{0, 0, 0} n✝ (HMul.hMul.{0, 0, 0} n 6)) (HAdd.hAdd.{0, 0, 0} 3 (HMul.hMul.{0, 0, 0} n 6)))\\\\n          1) →\\\\n      (∀ (n : Nat),\\\\n          Eq.{1}\\\\n            (Nat.gcd (HAdd.hAdd.{0, 0, 0} n✝ (HMul.hMul.{0, 0, 0} n 6))\\\\n              (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} n 6)))\\\\n            1) →\\\\n        LE.le.{0} 5 n✝\\\",\\\"typeHead\\\":\\\"forall\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.6824\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.6833\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₂\\\",\\\"type\\\":\\\"∀ (n : Nat),\\\\n  Eq.{1}\\\\n    (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HMul.hMul.{0, 0, 0} n 6))\\\\n      (HAdd.hAdd.{0, 0, 0} 2 (HMul.hMul.{0, 0, 0} n 6)))\\\\n    1\\\",\\\"typeHead\\\":\\\"forall\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.6824\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.6834\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₁\\\",\\\"type\\\":\\\"∀ (n : Nat),\\\\n  Eq.{1}\\\\n    (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HMul.hMul.{0, 0, 0} n 6))\\\\n      (HAdd.hAdd.{0, 0, 0} 3 (HMul.hMul.{0, 0, 0} n 6)))\\\\n    1\\\",\\\"typeHead\\\":\\\"forall\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.6824\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.6835\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₃\\\",\\\"type\\\":\\\"∀ (n : Nat),\\\\n  Eq.{1}\\\\n    (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HMul.hMul.{0, 0, 0} n 6))\\\\n      (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} n 6)))\\\\n    1\\\",\\\"typeHead\\\":\\\"forall\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.65080\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case succ\\\\nn✝ : Nat\\\\na✝ :\\\\n  LT.lt.{0} 0 n✝ →\\\\n    (∀ (n : Nat),\\\\n        Eq.{1}\\\\n          (Nat.gcd (HAdd.hAdd.{0, 0, 0} n✝ (HMul.hMul.{0, 0, 0} n 6)) (HAdd.hAdd.{0, 0, 0} 2 (HMul.hMul.{0, 0, 0} n 6)))\\\\n          1) →\\\\n      (∀ (n : Nat),\\\\n          Eq.{1}\\\\n            (Nat.gcd (HAdd.hAdd.{0, 0, 0} n✝ (HMul.hMul.{0, 0, 0} n 6))\\\\n              (HAdd.hAdd.{0, 0, 0} 3 (HMul.hMul.{0, 0, 0} n 6)))\\\\n            1) →\\\\n        (∀ (n : Nat),\\\\n            Eq.{1}\\\\n              (Nat.gcd (HAdd.hAdd.{0, 0, 0} n✝ (HMul.hMul.{0, 0, 0} n 6))\\\\n                (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} n 6)))\\\\n              1) →\\\\n          LE.le.{0} 5 n✝\\\\nh₂ :\\\\n  ∀ (n : Nat),\\\\n    Eq.{1}\\\\n      (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HMul.hMul.{0, 0, 0} n 6))\\\\n        (HAdd.hAdd.{0, 0, 0} 2 (HMul.hMul.{0, 0, 0} n 6)))\\\\n      1\\\\nh₁ :\\\\n  ∀ (n : Nat),\\\\n    Eq.{1}\\\\n      (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HMul.hMul.{0, 0, 0} n 6))\\\\n        (HAdd.hAdd.{0, 0, 0} 3 (HMul.hMul.{0, 0, 0} n 6)))\\\\n      1\\\\nh₃ :\\\\n  ∀ (n : Nat),\\\\n    Eq.{1}\\\\n      (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HMul.hMul.{0, 0, 0} n 6))\\\\n        (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} n 6)))\\\\n      1\\\\n⊢ LE.le.{0} 4 n✝\\\",\\\"target\\\":\\\"LE.le.{0} 4 n✝\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"instLENat\\\",\\\"4\\\",\\\"n✝\\\"],\\\"targetHead\\\":\\\"LE.le\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n5\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":23,\"line\":34},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_435/attempts/0055-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":10,\"line\":34},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n5\",\"endPos\":{\"column\":23,\"line\":34},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_435/attempts/0055-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":10,\"line\":34},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.6824\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n._@.FVAExploration.97970392._hygCtx._hyg.106\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.6824\"],\"has_metavariables\":false,\"id\":\"_uniq.6825\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"a._@._internal.0.FVAExploration.97970392._hygCtx._hyg.107\",\"type\":\"LT.lt.{0} 0 n✝ →\\n  (∀ (n : Nat),\\n      Eq.{1}\\n        (Nat.gcd (HAdd.hAdd.{0, 0, 0} n✝ (HMul.hMul.{0, 0, 0} n 6)) (HAdd.hAdd.{0, 0, 0} 2 (HMul.hMul.{0, 0, 0} n 6)))\\n        1) →\\n    (∀ (n : Nat),\\n        Eq.{1}\\n          (Nat.gcd (HAdd.hAdd.{0, 0, 0} n✝ (HMul.hMul.{0, 0, 0} n 6)) (HAdd.hAdd.{0, 0, 0} 3 (HMul.hMul.{0, 0, 0} n 6)))\\n          1) →\\n      (∀ (n : Nat),\\n          Eq.{1}\\n            (Nat.gcd (HAdd.hAdd.{0, 0, 0} n✝ (HMul.hMul.{0, 0, 0} n 6))\\n              (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} n 6)))\\n            1) →\\n        LE.le.{0} 5 n✝\",\"typeHead\":\"forall\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.6824\"],\"has_metavariables\":false,\"id\":\"_uniq.6833\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₂\",\"type\":\"∀ (n : Nat),\\n  Eq.{1}\\n    (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HMul.hMul.{0, 0, 0} n 6))\\n      (HAdd.hAdd.{0, 0, 0} 2 (HMul.hMul.{0, 0, 0} n 6)))\\n    1\",\"typeHead\":\"forall\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.6824\"],\"has_metavariables\":false,\"id\":\"_uniq.6834\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₁\",\"type\":\"∀ (n : Nat),\\n  Eq.{1}\\n    (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HMul.hMul.{0, 0, 0} n 6))\\n      (HAdd.hAdd.{0, 0, 0} 3 (HMul.hMul.{0, 0, 0} n 6)))\\n    1\",\"typeHead\":\"forall\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.6824\"],\"has_metavariables\":false,\"id\":\"_uniq.6835\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₃\",\"type\":\"∀ (n : Nat),\\n  Eq.{1}\\n    (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HMul.hMul.{0, 0, 0} n 6))\\n      (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} n 6)))\\n    1\",\"typeHead\":\"forall\",\"value\":null}],\"id\":\"_uniq.65080\",\"omitted_implementation_details\":1,\"pretty\":\"case succ\\nn✝ : Nat\\na✝ :\\n  LT.lt.{0} 0 n✝ →\\n    (∀ (n : Nat),\\n        Eq.{1}\\n          (Nat.gcd (HAdd.hAdd.{0, 0, 0} n✝ (HMul.hMul.{0, 0, 0} n 6)) (HAdd.hAdd.{0, 0, 0} 2 (HMul.hMul.{0, 0, 0} n 6)))\\n          1) →\\n      (∀ (n : Nat),\\n          Eq.{1}\\n            (Nat.gcd (HAdd.hAdd.{0, 0, 0} n✝ (HMul.hMul.{0, 0, 0} n 6))\\n              (HAdd.hAdd.{0, 0, 0} 3 (HMul.hMul.{0, 0, 0} n 6)))\\n            1) →\\n        (∀ (n : Nat),\\n            Eq.{1}\\n              (Nat.gcd (HAdd.hAdd.{0, 0, 0} n✝ (HMul.hMul.{0, 0, 0} n 6))\\n                (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} n 6)))\\n              1) →\\n          LE.le.{0} 5 n✝\\nh₂ :\\n  ∀ (n : Nat),\\n    Eq.{1}\\n      (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HMul.hMul.{0, 0, 0} n 6))\\n        (HAdd.hAdd.{0, 0, 0} 2 (HMul.hMul.{0, 0, 0} n 6)))\\n      1\\nh₁ :\\n  ∀ (n : Nat),\\n    Eq.{1}\\n      (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HMul.hMul.{0, 0, 0} n 6))\\n        (HAdd.hAdd.{0, 0, 0} 3 (HMul.hMul.{0, 0, 0} n 6)))\\n      1\\nh₃ :\\n  ∀ (n : Nat),\\n    Eq.{1}\\n      (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HMul.hMul.{0, 0, 0} n 6))\\n        (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} n 6)))\\n      1\\n⊢ LE.le.{0} 4 n✝\",\"target\":\"LE.le.{0} 4 n✝\",\"targetArgs\":[\"Nat\",\"instLENat\",\"4\",\"n✝\"],\"targetHead\":\"LE.le\",\"universe_parameters\":[]}],\"node_id\":\"n5\",\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_435/attempts/0055-candidate.lean",
+      "start": {
+        "column": 10,
+        "line": 34
+      },
+      "end": {
+        "column": 23,
+        "line": 34
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n5",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_435/attempts/0055-candidate.lean",
+      "start": {
+        "column": 10,
+        "line": 34
+      },
+      "end": {
+        "column": 23,
+        "line": 34
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.6824",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n._@.FVAExploration.97970392._hygCtx._hyg.106",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.6824"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.6825",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "a._@._internal.0.FVAExploration.97970392._hygCtx._hyg.107",
+              "type": "LT.lt.{0} 0 n✝ →\n  (∀ (n : Nat),\n      Eq.{1}\n        (Nat.gcd (HAdd.hAdd.{0, 0, 0} n✝ (HMul.hMul.{0, 0, 0} n 6)) (HAdd.hAdd.{0, 0, 0} 2 (HMul.hMul.{0, 0, 0} n 6)))\n        1) →\n    (∀ (n : Nat),\n        Eq.{1}\n          (Nat.gcd (HAdd.hAdd.{0, 0, 0} n✝ (HMul.hMul.{0, 0, 0} n 6)) (HAdd.hAdd.{0, 0, 0} 3 (HMul.hMul.{0, 0, 0} n 6)))\n          1) →\n      (∀ (n : Nat),\n          Eq.{1}\n            (Nat.gcd (HAdd.hAdd.{0, 0, 0} n✝ (HMul.hMul.{0, 0, 0} n 6))\n              (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} n 6)))\n            1) →\n        LE.le.{0} 5 n✝",
+              "typeHead": "forall",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.6824"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.6833",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₂",
+              "type": "∀ (n : Nat),\n  Eq.{1}\n    (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HMul.hMul.{0, 0, 0} n 6))\n      (HAdd.hAdd.{0, 0, 0} 2 (HMul.hMul.{0, 0, 0} n 6)))\n    1",
+              "typeHead": "forall",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.6824"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.6834",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₁",
+              "type": "∀ (n : Nat),\n  Eq.{1}\n    (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HMul.hMul.{0, 0, 0} n 6))\n      (HAdd.hAdd.{0, 0, 0} 3 (HMul.hMul.{0, 0, 0} n 6)))\n    1",
+              "typeHead": "forall",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.6824"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.6835",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₃",
+              "type": "∀ (n : Nat),\n  Eq.{1}\n    (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HMul.hMul.{0, 0, 0} n 6))\n      (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} n 6)))\n    1",
+              "typeHead": "forall",
+              "value": null
+            }
+          ],
+          "id": "_uniq.65080",
+          "omitted_implementation_details": 1,
+          "pretty": "case succ\nn✝ : Nat\na✝ :\n  LT.lt.{0} 0 n✝ →\n    (∀ (n : Nat),\n        Eq.{1}\n          (Nat.gcd (HAdd.hAdd.{0, 0, 0} n✝ (HMul.hMul.{0, 0, 0} n 6)) (HAdd.hAdd.{0, 0, 0} 2 (HMul.hMul.{0, 0, 0} n 6)))\n          1) →\n      (∀ (n : Nat),\n          Eq.{1}\n            (Nat.gcd (HAdd.hAdd.{0, 0, 0} n✝ (HMul.hMul.{0, 0, 0} n 6))\n              (HAdd.hAdd.{0, 0, 0} 3 (HMul.hMul.{0, 0, 0} n 6)))\n            1) →\n        (∀ (n : Nat),\n            Eq.{1}\n              (Nat.gcd (HAdd.hAdd.{0, 0, 0} n✝ (HMul.hMul.{0, 0, 0} n 6))\n                (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} n 6)))\n              1) →\n          LE.le.{0} 5 n✝\nh₂ :\n  ∀ (n : Nat),\n    Eq.{1}\n      (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HMul.hMul.{0, 0, 0} n 6))\n        (HAdd.hAdd.{0, 0, 0} 2 (HMul.hMul.{0, 0, 0} n 6)))\n      1\nh₁ :\n  ∀ (n : Nat),\n    Eq.{1}\n      (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HMul.hMul.{0, 0, 0} n 6))\n        (HAdd.hAdd.{0, 0, 0} 3 (HMul.hMul.{0, 0, 0} n 6)))\n      1\nh₃ :\n  ∀ (n : Nat),\n    Eq.{1}\n      (Nat.gcd (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n✝ 1) (HMul.hMul.{0, 0, 0} n 6))\n        (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} n 6)))\n      1\n⊢ LE.le.{0} 4 n✝",
+          "target": "LE.le.{0} 4 n✝",
+          "targetArgs": [
+            "Nat",
+            "instLENat",
+            "4",
+            "n✝"
+          ],
+          "targetHead": "LE.le",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n5",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 55,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "7a9cbe337ed5d33f196b8432e33e758da30469ae3c93a31b420040472436c1cd",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 35,
+    "elaborationMs": 3397,
+    "artifactCount": 10092
+  },
+  "elapsedMs": 3433,
+  "sequence": 55,
+  "kind": "candidate",
+  "nodeId": "n5",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_435/attempts/0055-candidate.lean",
+  "sourceHash": "aea39a37c37649c2dd7573320883df01958e028b6fedda93779da7480d6254da",
+  "evidenceId": "ev_66505b764b536e8b8733c26206b061ce043ffa4218132198ce47802028edaa49"
+}

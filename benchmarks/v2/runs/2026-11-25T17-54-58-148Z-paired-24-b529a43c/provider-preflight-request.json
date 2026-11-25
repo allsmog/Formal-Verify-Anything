@@ -1,0 +1,26 @@
+{
+  "purpose": "One actual provider availability check on a non-holdout True goal; not a benchmark theorem attempt.",
+  "startedAt": "2026-11-25T17:54:58.238Z",
+  "options": {
+    "command": "codex",
+    "timeoutMs": 60000,
+    "maxProposals": 6
+  },
+  "context": {
+    "protocol": 1,
+    "goal": {
+      "target": "True",
+      "targetHead": "True",
+      "hypotheses": []
+    },
+    "imports": [],
+    "feedback": [],
+    "budget": {
+      "compilerCallsRemaining": 64,
+      "maxDepth": 8,
+      "depth": 0,
+      "modelTokensRemaining": 50000,
+      "remainingMs": 60000
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.170",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "n._@.FVAExploration.1274817193._hygCtx._hyg.32",
+        "type": "Nat",
+        "typeHead": "Nat",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.170"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.171",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "a._@._internal.0.FVAExploration.1274817193._hygCtx._hyg.33",
+        "type": "LE.le.{0} 3 n✝ → LT.lt.{0} (Nat.factorial n✝) (HPow.hPow.{0, 0, 0} n✝ (HSub.hSub.{0, 0, 0} n✝ 1))",
+        "typeHead": "forall",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.170"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.3513",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "LE.le.{0} 2 n✝",
+        "typeHead": "LE.le",
+        "value": null
+      }
+    ],
+    "id": "_uniq.3516",
+    "omitted_implementation_details": 1,
+    "pretty": "case succ\nn✝ : Nat\na✝ : LE.le.{0} 3 n✝ → LT.lt.{0} (Nat.factorial n✝) (HPow.hPow.{0, 0, 0} n✝ (HSub.hSub.{0, 0, 0} n✝ 1))\nh₀ : LE.le.{0} 2 n✝\n⊢ LT.lt.{0} (Nat.factorial (HAdd.hAdd.{0, 0, 0} n✝ 1)) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n✝ 1) n✝)",
+    "target": "LT.lt.{0} (Nat.factorial (HAdd.hAdd.{0, 0, 0} n✝ 1)) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n✝ 1) n✝)",
+    "targetArgs": [
+      "Nat",
+      "instLTNat",
+      "Nat.factorial (HAdd.hAdd.{0, 0, 0} n✝ 1)",
+      "HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} n✝ 1) n✝"
+    ],
+    "targetHead": "LT.lt",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Data.Nat.Factorial.Basic"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 38,
+    "maxDepth": 8,
+    "depth": 2,
+    "modelTokensRemaining": 0,
+    "remainingMs": 296354
+  },
+  "feedback": []
+}

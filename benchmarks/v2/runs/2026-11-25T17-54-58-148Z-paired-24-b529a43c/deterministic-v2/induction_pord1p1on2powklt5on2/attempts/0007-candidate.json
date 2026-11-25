@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  ∏ x ∈ Finset.Icc 1 n, (1 + (2 ^ x)⁻¹)\\nis not definitionally equal to the right-hand side\\n  5 / 2\\n\\nn : ℕ\\nh₀ : 0 < n\\n⊢ ∏ x ∈ Finset.Icc 1 n, (1 + (2 ^ x)⁻¹) < 5 / 2\",\"endPos\":{\"column\":7,\"line\":22},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pord1p1on2powklt5on2/attempts/0007-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":22},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  ∏ x ∈ Finset.Icc 1 n, (1 + (2 ^ x)⁻¹)\nis not definitionally equal to the right-hand side\n  5 / 2\n\nn : ℕ\nh₀ : 0 < n\n⊢ ∏ x ∈ Finset.Icc 1 n, (1 + (2 ^ x)⁻¹) < 5 / 2",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pord1p1on2powklt5on2/attempts/0007-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 22
+      },
+      "end": {
+        "column": 7,
+        "line": 22
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 7,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "5ae1411d708f7cca111d48fcc118b755bf9fd7a89b293c20c738efb108656e0c",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 24,
+    "elaborationMs": 23,
+    "artifactCount": 10204
+  },
+  "elapsedMs": 48,
+  "sequence": 7,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pord1p1on2powklt5on2/attempts/0007-candidate.lean",
+  "sourceHash": "b78d8518dd8a89f240547030dd580af3516b440eb6d4553fe6aebf889ed3c98c",
+  "evidenceId": "ev_83e566f502e8054be920652e51aee873d6c30165edf80ba8285cb6a0106f2e4b"
+}

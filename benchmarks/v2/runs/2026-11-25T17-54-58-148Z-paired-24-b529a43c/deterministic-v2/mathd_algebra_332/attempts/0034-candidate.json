@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"linarith failed to find a contradiction\\ncase h1.h\\nx y : ℝ\\nh₁ : √(x * y) = √19\\nh₀ : x + y = 2 * 7\\na✝ : x ^ 2 + y ^ 2 < 158\\n⊢ False\\nfailed\",\"endPos\":{\"column\":12,\"line\":23},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0034-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":23},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "linarith failed to find a contradiction\ncase h1.h\nx y : ℝ\nh₁ : √(x * y) = √19\nh₀ : x + y = 2 * 7\na✝ : x ^ 2 + y ^ 2 < 158\n⊢ False\nfailed",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0034-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 23
+      },
+      "end": {
+        "column": 12,
+        "line": 23
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 34,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "484ae34f150b7943d503eec93ac6474deefc081360f3b3700f42cdd5defdde07",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 36,
+    "elaborationMs": 34,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 72,
+  "sequence": 34,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_332/attempts/0034-candidate.lean",
+  "sourceHash": "cf402ebdc0a136d9f5e22095b7e3ff14732d76d25b0f0e92d7e63670c96105e5",
+  "evidenceId": "ev_9cc6d42a33ad29f857ea16face0d964d3443664d5505452e56dbbf78f5ef8595"
+}

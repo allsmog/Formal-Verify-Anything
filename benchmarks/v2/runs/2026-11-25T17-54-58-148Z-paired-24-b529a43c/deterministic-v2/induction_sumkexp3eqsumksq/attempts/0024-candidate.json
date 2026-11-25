@@ -1,0 +1,140 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":6,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0024-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\ncase zero\\n⊢ ∑ x ∈ Finset.range 0, x ^ 3 = (∑ k ∈ Finset.range 0, k) ^ 2\",\"endPos\":{\"column\":16,\"line\":23},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0024-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":23},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.1713\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n._@.FVAExploration.2717581968._hygCtx._hyg.53\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.1713\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.1714\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a._@._internal.0.FVAExploration.2717581968._hygCtx._hyg.54\\\",\\\"type\\\":\\\"Eq.{1} (∑ x ∈ Finset.range n✝, HPow.hPow.{0, 0, 0} x 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n✝, k) 2)\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.1717\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"case succ\\\\nn✝ : Nat\\\\na✝ : Eq.{1} (∑ x ∈ Finset.range n✝, HPow.hPow.{0, 0, 0} x 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n✝, k) 2)\\\\n⊢ Eq.{1} (∑ x ∈ Finset.range (HAdd.hAdd.{0, 0, 0} n✝ 1), HPow.hPow.{0, 0, 0} x 3)\\\\n    (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range (HAdd.hAdd.{0, 0, 0} n✝ 1), k) 2)\\\",\\\"target\\\":\\\"Eq.{1} (∑ x ∈ Finset.range (HAdd.hAdd.{0, 0, 0} n✝ 1), HPow.hPow.{0, 0, 0} x 3)\\\\n  (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range (HAdd.hAdd.{0, 0, 0} n✝ 1), k) 2)\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"∑ x ∈ Finset.range (HAdd.hAdd.{0, 0, 0} n✝ 1), HPow.hPow.{0, 0, 0} x 3\\\",\\\"HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range (HAdd.hAdd.{0, 0, 0} n✝ 1), k) 2\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n3\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":20,\"line\":26},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0024-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":26},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n3\",\"endPos\":{\"column\":20,\"line\":26},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0024-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":26},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0024-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 19
+      },
+      "end": {
+        "column": 6,
+        "line": 19
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\ncase zero\n⊢ ∑ x ∈ Finset.range 0, x ^ 3 = (∑ k ∈ Finset.range 0, k) ^ 2",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0024-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 23
+      },
+      "end": {
+        "column": 16,
+        "line": 23
+      },
+      "category": "missing_hypothesis_or_instance"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.1713\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n._@.FVAExploration.2717581968._hygCtx._hyg.53\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.1713\"],\"has_metavariables\":false,\"id\":\"_uniq.1714\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"a._@._internal.0.FVAExploration.2717581968._hygCtx._hyg.54\",\"type\":\"Eq.{1} (∑ x ∈ Finset.range n✝, HPow.hPow.{0, 0, 0} x 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n✝, k) 2)\",\"typeHead\":\"Eq\",\"value\":null}],\"id\":\"_uniq.1717\",\"omitted_implementation_details\":1,\"pretty\":\"case succ\\nn✝ : Nat\\na✝ : Eq.{1} (∑ x ∈ Finset.range n✝, HPow.hPow.{0, 0, 0} x 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n✝, k) 2)\\n⊢ Eq.{1} (∑ x ∈ Finset.range (HAdd.hAdd.{0, 0, 0} n✝ 1), HPow.hPow.{0, 0, 0} x 3)\\n    (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range (HAdd.hAdd.{0, 0, 0} n✝ 1), k) 2)\",\"target\":\"Eq.{1} (∑ x ∈ Finset.range (HAdd.hAdd.{0, 0, 0} n✝ 1), HPow.hPow.{0, 0, 0} x 3)\\n  (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range (HAdd.hAdd.{0, 0, 0} n✝ 1), k) 2)\",\"targetArgs\":[\"Nat\",\"∑ x ∈ Finset.range (HAdd.hAdd.{0, 0, 0} n✝ 1), HPow.hPow.{0, 0, 0} x 3\",\"HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range (HAdd.hAdd.{0, 0, 0} n✝ 1), k) 2\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n3\",\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0024-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 26
+      },
+      "end": {
+        "column": 20,
+        "line": 26
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n3",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0024-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 26
+      },
+      "end": {
+        "column": 20,
+        "line": 26
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.1713",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n._@.FVAExploration.2717581968._hygCtx._hyg.53",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.1713"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.1714",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "a._@._internal.0.FVAExploration.2717581968._hygCtx._hyg.54",
+              "type": "Eq.{1} (∑ x ∈ Finset.range n✝, HPow.hPow.{0, 0, 0} x 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n✝, k) 2)",
+              "typeHead": "Eq",
+              "value": null
+            }
+          ],
+          "id": "_uniq.1717",
+          "omitted_implementation_details": 1,
+          "pretty": "case succ\nn✝ : Nat\na✝ : Eq.{1} (∑ x ∈ Finset.range n✝, HPow.hPow.{0, 0, 0} x 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n✝, k) 2)\n⊢ Eq.{1} (∑ x ∈ Finset.range (HAdd.hAdd.{0, 0, 0} n✝ 1), HPow.hPow.{0, 0, 0} x 3)\n    (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range (HAdd.hAdd.{0, 0, 0} n✝ 1), k) 2)",
+          "target": "Eq.{1} (∑ x ∈ Finset.range (HAdd.hAdd.{0, 0, 0} n✝ 1), HPow.hPow.{0, 0, 0} x 3)\n  (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range (HAdd.hAdd.{0, 0, 0} n✝ 1), k) 2)",
+          "targetArgs": [
+            "Nat",
+            "∑ x ∈ Finset.range (HAdd.hAdd.{0, 0, 0} n✝ 1), HPow.hPow.{0, 0, 0} x 3",
+            "HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range (HAdd.hAdd.{0, 0, 0} n✝ 1), k) 2"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n3",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 24,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "846d8d342e03e4f6c3fd64a35a678e357961d177fe12049de4b014ff2aaec8c9",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 41,
+    "elaborationMs": 43,
+    "artifactCount": 10204
+  },
+  "elapsedMs": 88,
+  "sequence": 24,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0024-candidate.lean",
+  "sourceHash": "7b531484892599f24da151c3e558b90bb08c44b1056364dde4569bfdd874d194",
+  "evidenceId": "ev_191ffb0984960bbf20eb8fb8f2878c13191652df49d64a533a4420e3c232f6a5"
+}

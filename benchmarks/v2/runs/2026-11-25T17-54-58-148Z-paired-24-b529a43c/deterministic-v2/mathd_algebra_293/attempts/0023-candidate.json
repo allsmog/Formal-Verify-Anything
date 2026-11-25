@@ -1,0 +1,112 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":8,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_293/attempts/0023-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":21},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.782\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"x\\\",\\\"type\\\":\\\"NNReal\\\",\\\"typeHead\\\":\\\"NNReal\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.5517\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"x : NNReal\\\\n⊢ Eq.{1}\\\\n    (HMul.hMul.{0, 0, 0}\\\\n      (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt 60) (HPow.hPow.{0, 0, 0} (Real.sqrt ↑x) 3)) (Real.sqrt 12))\\\\n      (Real.sqrt 63))\\\\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt ↑x) ↑x) (Real.sqrt 35)) 36)\\\",\\\"target\\\":\\\"Eq.{1}\\\\n  (HMul.hMul.{0, 0, 0}\\\\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt 60) (HPow.hPow.{0, 0, 0} (Real.sqrt ↑x) 3)) (Real.sqrt 12))\\\\n    (Real.sqrt 63))\\\\n  (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt ↑x) ↑x) (Real.sqrt 35)) 36)\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"HMul.hMul.{0, 0, 0}\\\\n  (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt 60) (HPow.hPow.{0, 0, 0} (Real.sqrt ↑x) 3)) (Real.sqrt 12))\\\\n  (Real.sqrt 63)\\\",\\\"HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt ↑x) ↑x) (Real.sqrt 35)) 36\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":19,\"line\":24},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_293/attempts/0023-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":24},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n2\",\"endPos\":{\"column\":19,\"line\":24},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_293/attempts/0023-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":24},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_293/attempts/0023-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 21
+      },
+      "end": {
+        "column": 8,
+        "line": 21
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.782\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"x\",\"type\":\"NNReal\",\"typeHead\":\"NNReal\",\"value\":null}],\"id\":\"_uniq.5517\",\"omitted_implementation_details\":1,\"pretty\":\"x : NNReal\\n⊢ Eq.{1}\\n    (HMul.hMul.{0, 0, 0}\\n      (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt 60) (HPow.hPow.{0, 0, 0} (Real.sqrt ↑x) 3)) (Real.sqrt 12))\\n      (Real.sqrt 63))\\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt ↑x) ↑x) (Real.sqrt 35)) 36)\",\"target\":\"Eq.{1}\\n  (HMul.hMul.{0, 0, 0}\\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt 60) (HPow.hPow.{0, 0, 0} (Real.sqrt ↑x) 3)) (Real.sqrt 12))\\n    (Real.sqrt 63))\\n  (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt ↑x) ↑x) (Real.sqrt 35)) 36)\",\"targetArgs\":[\"Real\",\"HMul.hMul.{0, 0, 0}\\n  (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt 60) (HPow.hPow.{0, 0, 0} (Real.sqrt ↑x) 3)) (Real.sqrt 12))\\n  (Real.sqrt 63)\",\"HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt ↑x) ↑x) (Real.sqrt 35)) 36\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n2\",\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_293/attempts/0023-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 24
+      },
+      "end": {
+        "column": 19,
+        "line": 24
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n2",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_293/attempts/0023-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 24
+      },
+      "end": {
+        "column": 19,
+        "line": 24
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.782",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "x",
+              "type": "NNReal",
+              "typeHead": "NNReal",
+              "value": null
+            }
+          ],
+          "id": "_uniq.5517",
+          "omitted_implementation_details": 1,
+          "pretty": "x : NNReal\n⊢ Eq.{1}\n    (HMul.hMul.{0, 0, 0}\n      (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt 60) (HPow.hPow.{0, 0, 0} (Real.sqrt ↑x) 3)) (Real.sqrt 12))\n      (Real.sqrt 63))\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt ↑x) ↑x) (Real.sqrt 35)) 36)",
+          "target": "Eq.{1}\n  (HMul.hMul.{0, 0, 0}\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt 60) (HPow.hPow.{0, 0, 0} (Real.sqrt ↑x) 3)) (Real.sqrt 12))\n    (Real.sqrt 63))\n  (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt ↑x) ↑x) (Real.sqrt 35)) 36)",
+          "targetArgs": [
+            "Real",
+            "HMul.hMul.{0, 0, 0}\n  (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt 60) (HPow.hPow.{0, 0, 0} (Real.sqrt ↑x) 3)) (Real.sqrt 12))\n  (Real.sqrt 63)",
+            "HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt ↑x) ↑x) (Real.sqrt 35)) 36"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n2",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 23,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "e3d21b7a7f7c5aaa36105c8603560f46424fbf9ceaa6bb74dd66716ca3149be0",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 37,
+    "elaborationMs": 125,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 163,
+  "sequence": 23,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_293/attempts/0023-candidate.lean",
+  "sourceHash": "6e02315fc9a7abd4912567f00d423054626e830ea34f9ae8f0cf613b0d75fd97",
+  "evidenceId": "ev_c0103ffae8406e7251cd0106af731d4a38790bd2e67234692157ac1430498520"
+}

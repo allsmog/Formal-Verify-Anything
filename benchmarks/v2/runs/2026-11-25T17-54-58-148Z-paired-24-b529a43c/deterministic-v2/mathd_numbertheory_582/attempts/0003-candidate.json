@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  (n + 4 + (n + 6) + (n + 8)) % 9\\nis not definitionally equal to the right-hand side\\n  0\\n\\nn : ℕ\\nh₀ : 0 < n\\nh₁ : 3 ∣ n\\n⊢ (n + 4 + (n + 6) + (n + 8)) % 9 = 0\",\"endPos\":{\"column\":5,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_582/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":20},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  (n + 4 + (n + 6) + (n + 8)) % 9\nis not definitionally equal to the right-hand side\n  0\n\nn : ℕ\nh₀ : 0 < n\nh₁ : 3 ∣ n\n⊢ (n + 4 + (n + 6) + (n + 8)) % 9 = 0",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_582/attempts/0003-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 20
+      },
+      "end": {
+        "column": 5,
+        "line": 20
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 3,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "dcbfd532da2b23cdba86455cda6e1b429c4076c4c65f8ce2700c057035ca908a",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 71,
+    "elaborationMs": 12,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 85,
+  "sequence": 3,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_582/attempts/0003-candidate.lean",
+  "sourceHash": "fcf65c5b59ac89233a6c80b356b305a6dcd81019137711490986063272f7472e",
+  "evidenceId": "ev_96e148829631aaf7fb5b12c917eaea0e46f4aa7b7959d7fcdbb8347ac46ea5d3"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "p0",
+  "nodeId": "n0",
+  "stateHash": "e778b6e319a6cfd592f45fa0349b9e85a81587016bd7c44274412fc8ceb61d97",
+  "round": 0,
+  "requestDigest": "ff7e7a727fca3f9279c1ce8e07772df185f9b944930d7f4c38bcffb6aa43812c",
+  "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/proposals/0001-context.json",
+  "modelTokens": 17614,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "codex-v1",
+  "provider": "codex-cli",
+  "usage": {
+    "input_tokens": 16405,
+    "output_tokens": 1209,
+    "cached_input_tokens": 0,
+    "reasoning_output_tokens": 951
+  },
+  "metadata": {
+    "provider": "codex-cli",
+    "model": null,
+    "modelSelection": "codex-configured-default",
+    "promptDigest": "3542e34e6c9136641f5920fa8e8e5770a7c59d8fd461d58986c7fad10a1b5c16",
+    "promptVersion": 1,
+    "toolPolicy": "disabled",
+    "ephemeral": true,
+    "cliVersion": "codex-cli 0.171.0",
+    "eventTypes": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "responseDigest": "7e972f5bd7e989b6c114b9d45e81b2256e3fe352909656da47d9e1694f87fb14",
+    "providerErrors": [],
+    "elapsedMs": 20109,
+    "exitCode": 0,
+    "signal": null,
+    "stdoutDigest": "7e972f5bd7e989b6c114b9d45e81b2256e3fe352909656da47d9e1694f87fb14",
+    "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrDiagnostic": ""
+  },
+  "proposals": [
+    {
+      "kind": "tactic",
+      "tactic": "induction n with\n| zero =>\n    simpa only [pow_zero, sub_self] using (dvd_zero (11 : ℤ))\n| succ n ih =>\n    obtain ⟨k, hk⟩ := ih\n    refine ⟨10 * k + (-1 : ℤ) ^ n, ?_⟩\n    simp only [pow_succ]\n    calc\n      (10 : ℤ) ^ n * 10 - (-1 : ℤ) ^ n * (-1) =\n          10 * ((10 : ℤ) ^ n - (-1 : ℤ) ^ n) + 11 * (-1 : ℤ) ^ n := by ring\n      _ = _ := by rw [hk]; ring"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "convert (sub_dvd_pow_sub_pow (10 : ℤ) (-1 : ℤ) n) using 1 <;> norm_num"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 20110,
+  "evidenceId": "ev_b4eef72c90367502a4159fb9b07e84dffe4c5275d95f9da0b222481f8109427b"
+}

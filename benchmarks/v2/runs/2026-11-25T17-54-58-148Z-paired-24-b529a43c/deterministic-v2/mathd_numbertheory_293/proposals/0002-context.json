@@ -1,0 +1,78 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.336",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "n",
+        "type": "Nat",
+        "typeHead": "Nat",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.336"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.337",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "LE.le.{0} n 9",
+        "typeHead": "LE.le",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.336"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.1204",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₁",
+        "type": "Dvd.dvd.{0} 11 (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 2000 (HMul.hMul.{0, 0, 0} 10 n)) 7)",
+        "typeHead": "Dvd.dvd",
+        "value": null
+      }
+    ],
+    "id": "_uniq.1207",
+    "omitted_implementation_details": 1,
+    "pretty": "n : Nat\nh₀ : LE.le.{0} n 9\nh₁ : Dvd.dvd.{0} 11 (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 2000 (HMul.hMul.{0, 0, 0} 10 n)) 7)\n⊢ Eq.{1} n 5",
+    "target": "Eq.{1} n 5",
+    "targetArgs": [
+      "Nat",
+      "n",
+      "5"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 57,
+    "maxDepth": 8,
+    "depth": 1,
+    "modelTokensRemaining": 0,
+    "remainingMs": 292361
+  },
+  "feedback": []
+}

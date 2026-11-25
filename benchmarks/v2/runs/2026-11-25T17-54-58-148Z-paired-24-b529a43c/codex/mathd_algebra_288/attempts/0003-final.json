@@ -1,0 +1,80 @@
+{
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"'norm_num at hn ⊢ <;> assumption' tactic does nothing\\n\\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\",\"endPos\":{\"column\":108,\"line\":39},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_288/attempts/0003-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"linter.unusedTactic\",\"pos\":{\"column\":77,\"line\":39},\"severity\":\"warning\"}\n{\"caption\":\"\",\"data\":\"this tactic is never executed\\n\\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`\",\"endPos\":{\"column\":108,\"line\":39},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_288/attempts/0003-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"linter.unreachableTactic\",\"pos\":{\"column\":77,\"line\":39},\"severity\":\"warning\"}\n{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_288\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (x y : Real) (n : NNReal),\\\\n  And (LT.lt.{0} x 0) (LT.lt.{0} y 0) →\\\\n    Eq.{1} (abs.{0} y) 6 →\\\\n      Eq.{1}\\\\n          (Real.sqrt\\\\n            (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} x 8) 2)\\\\n              (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} y 3) 2)))\\\\n          15 →\\\\n        Eq.{1} (Real.sqrt (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2))) (Real.sqrt ↑n) →\\\\n          Eq.{1} n 52\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":41},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_288/attempts/0003-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":41},\"severity\":\"information\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 4362,
+  "diagnostics": [
+    {
+      "severity": "warning",
+      "message": "'norm_num at hn ⊢ <;> assumption' tactic does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_288/attempts/0003-final.lean",
+      "start": {
+        "column": 77,
+        "line": 39
+      },
+      "end": {
+        "column": 108,
+        "line": 39
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "warning",
+      "message": "this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_288/attempts/0003-final.lean",
+      "start": {
+        "column": 77,
+        "line": 39
+      },
+      "end": {
+        "column": 108,
+        "line": 39
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "information",
+      "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_288\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (x y : Real) (n : NNReal),\\n  And (LT.lt.{0} x 0) (LT.lt.{0} y 0) →\\n    Eq.{1} (abs.{0} y) 6 →\\n      Eq.{1}\\n          (Real.sqrt\\n            (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} x 8) 2)\\n              (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} y 3) 2)))\\n          15 →\\n        Eq.{1} (Real.sqrt (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2))) (Real.sqrt ↑n) →\\n          Eq.{1} n 52\",\"universe_parameters\":[],\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_288/attempts/0003-final.lean",
+      "start": {
+        "column": 0,
+        "line": 41
+      },
+      "end": {
+        "column": 28,
+        "line": 41
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "mathd_algebra_288",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (x y : Real) (n : NNReal),\n  And (LT.lt.{0} x 0) (LT.lt.{0} y 0) →\n    Eq.{1} (abs.{0} y) 6 →\n      Eq.{1}\n          (Real.sqrt\n            (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} x 8) 2)\n              (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} y 3) 2)))\n          15 →\n        Eq.{1} (Real.sqrt (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2))) (Real.sqrt ↑n) →\n          Eq.{1} n 52",
+      "universe_parameters": [],
+      "version": 1
+    }
+  ],
+  "unparsed": [],
+  "sequence": 3,
+  "kind": "final",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_288/attempts/0003-final.lean",
+  "sourceHash": "55803d74cf84588e4291faa6ab051af8592a1cfec10bfc2233039d467ad0646c",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_c1fa6c2df24b1019475f88f3de95d289b1609857ee3303d1b7281fccd9d210d2"
+}

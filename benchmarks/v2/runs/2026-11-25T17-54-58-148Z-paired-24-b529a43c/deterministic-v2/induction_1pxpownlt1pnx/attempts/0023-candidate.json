@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"linarith failed to find a contradiction\\ncase h\\nx : ℝ\\nn : ℕ\\nh₁ : 0 < n\\nh₀ : -1 < x\\na✝ : (1 + x) ^ n < 1 + ↑n * x\\n⊢ False\\nfailed\",\"endPos\":{\"column\":14,\"line\":25},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0023-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":25},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "linarith failed to find a contradiction\ncase h\nx : ℝ\nn : ℕ\nh₁ : 0 < n\nh₀ : -1 < x\na✝ : (1 + x) ^ n < 1 + ↑n * x\n⊢ False\nfailed",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0023-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 25
+      },
+      "end": {
+        "column": 14,
+        "line": 25
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 23,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "6859e85f48b9c2ae4773b8b24658675c6f2ac7381c451d752d4e1afca694ba9b",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 43,
+    "elaborationMs": 54,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 98,
+  "sequence": 23,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0023-candidate.lean",
+  "sourceHash": "45ef484ef6753d70fb7c85ffd3c49d08fd3285db6c2968d97d62136256bca841",
+  "evidenceId": "ev_1a07ff5a05d87068cfe79923de263bf1417292a2b8607f8e553540db8cc0993e"
+}

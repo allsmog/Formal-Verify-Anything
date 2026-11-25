@@ -1,0 +1,60 @@
+{
+  "method": "codex",
+  "status": "AVAILABLE",
+  "startedAt": "2026-11-25T17:54:58.238Z",
+  "finishedAt": "2026-11-25T17:55:02.248Z",
+  "response": {
+    "proposals": [
+      {
+        "kind": "tactic",
+        "tactic": "exact True.intro"
+      }
+    ],
+    "modelTokens": 16082,
+    "usage": {
+      "input_tokens": 16053,
+      "output_tokens": 29,
+      "cached_input_tokens": 0,
+      "reasoning_output_tokens": 0
+    },
+    "metadata": {
+      "provider": "codex-cli",
+      "model": null,
+      "modelSelection": "codex-configured-default",
+      "promptDigest": "b86f088bc76d2eae6eed97d3d6f7f2326861eed3434ea0ddbf8efe0872d98da0",
+      "promptVersion": 1,
+      "toolPolicy": "disabled",
+      "ephemeral": true,
+      "cliVersion": "codex-cli 0.171.0",
+      "eventTypes": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "responseDigest": "c90962c95da3491e511f0957ac8c9ed2a599279be4304a68922de52ec92df7b4",
+      "providerErrors": [],
+      "elapsedMs": 4004,
+      "exitCode": 0,
+      "signal": null,
+      "stdoutDigest": "c90962c95da3491e511f0957ac8c9ed2a599279be4304a68922de52ec92df7b4",
+      "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrDiagnostic": ""
+    },
+    "provider": "codex-cli",
+    "policy": "codex-v1"
+  },
+  "cleanupAssessment": {
+    "status": "closed",
+    "exploration": {
+      "status": "not_created",
+      "ownership": "none",
+      "retryAttempted": false
+    },
+    "provider": {
+      "status": "closed",
+      "retryAttempted": true,
+      "entries": []
+    }
+  }
+}

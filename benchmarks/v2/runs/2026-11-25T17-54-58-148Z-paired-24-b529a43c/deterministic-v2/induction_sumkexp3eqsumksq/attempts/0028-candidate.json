@@ -1,0 +1,63 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Try this:\\n  ring_nf\\n  \\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\\n    \\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\",\"endPos\":{\"column\":6,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0028-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  ∑ x ∈ Finset.range (n✝ + 1), x ^ 3\\nis not definitionally equal to the right-hand side\\n  (∑ k ∈ Finset.range (n✝ + 1), k) ^ 2\\n\\ncase succ\\nn✝ : ℕ\\na✝ : ∑ x ∈ Finset.range n✝, x ^ 3 = (∑ k ∈ Finset.range n✝, k) ^ 2\\n⊢ ∑ x ∈ Finset.range (n✝ + 1), x ^ 3 = (∑ k ∈ Finset.range (n✝ + 1), k) ^ 2\",\"endPos\":{\"column\":9,\"line\":25},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0028-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":25},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "Try this:\n  ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0028-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 19
+      },
+      "end": {
+        "column": 6,
+        "line": 19
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  ∑ x ∈ Finset.range (n✝ + 1), x ^ 3\nis not definitionally equal to the right-hand side\n  (∑ k ∈ Finset.range (n✝ + 1), k) ^ 2\n\ncase succ\nn✝ : ℕ\na✝ : ∑ x ∈ Finset.range n✝, x ^ 3 = (∑ k ∈ Finset.range n✝, k) ^ 2\n⊢ ∑ x ∈ Finset.range (n✝ + 1), x ^ 3 = (∑ k ∈ Finset.range (n✝ + 1), k) ^ 2",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0028-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 25
+      },
+      "end": {
+        "column": 9,
+        "line": 25
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 28,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "57f8bbcfb9674073f63ad6728e60b0cb72aef8927d5dbdaee5931dfc2cf2c13e",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 33,
+    "elaborationMs": 60,
+    "artifactCount": 10204
+  },
+  "elapsedMs": 98,
+  "sequence": 28,
+  "kind": "candidate",
+  "nodeId": "n3",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_sumkexp3eqsumksq/attempts/0028-candidate.lean",
+  "sourceHash": "c1ae24770545d466e5b6f2e262d69d5a2a4ee014589677aff8ff68f542f0b98e",
+  "evidenceId": "ev_81862a1d410ce8e68426fee70910a731ca75a3560ac611327ae7a3e14cd0d288"
+}

@@ -1,0 +1,92 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.1469",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "a",
+        "type": "Real",
+        "typeHead": "Real",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.1470",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "b",
+        "type": "Real",
+        "typeHead": "Real",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.1469",
+          "_uniq.1470"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.4246",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₁",
+        "type": "Eq.{1} (HDiv.hDiv.{0, 0, 0} (HMul.hMul.{0, 0, 0} a 4) (HPow.hPow.{0, 0, 0} b 3)) 27",
+        "typeHead": "Eq",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.1469",
+          "_uniq.1470"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.4513",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "Eq.{1} (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 3)) 27) 32",
+        "typeHead": "Eq",
+        "value": null
+      }
+    ],
+    "id": "_uniq.5409",
+    "omitted_implementation_details": 1,
+    "pretty": "a b : Real\nh₁ : Eq.{1} (HDiv.hDiv.{0, 0, 0} (HMul.hMul.{0, 0, 0} a 4) (HPow.hPow.{0, 0, 0} b 3)) 27\nh₀ : Eq.{1} (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 3)) 27) 32\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} a 3) (HMul.hMul.{0, 0, 0} b 3)) 8",
+    "target": "Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} a 3) (HMul.hMul.{0, 0, 0} b 3)) 8",
+    "targetArgs": [
+      "Real",
+      "HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} a 3) (HMul.hMul.{0, 0, 0} b 3)",
+      "8"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 21,
+    "maxDepth": 8,
+    "depth": 4,
+    "modelTokensRemaining": 0,
+    "remainingMs": 286776
+  },
+  "feedback": []
+}

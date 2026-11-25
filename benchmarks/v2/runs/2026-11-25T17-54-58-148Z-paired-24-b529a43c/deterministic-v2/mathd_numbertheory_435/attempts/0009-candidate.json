@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"linarith failed to find a contradiction\\ncase h\\nk : ℕ\\nh₀ : 0 < k\\nh₁ : ∀ (n : ℕ), (6 * n + k).gcd (6 * n + 3) = 1\\nh₂ : ∀ (n : ℕ), (6 * n + k).gcd (6 * n + 2) = 1\\nh₃ : ∀ (n : ℕ), (6 * n + k).gcd (6 * n + 1) = 1\\na✝ : k < 5\\n⊢ False\\nfailed\",\"endPos\":{\"column\":11,\"line\":23},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_435/attempts/0009-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":23},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "linarith failed to find a contradiction\ncase h\nk : ℕ\nh₀ : 0 < k\nh₁ : ∀ (n : ℕ), (6 * n + k).gcd (6 * n + 3) = 1\nh₂ : ∀ (n : ℕ), (6 * n + k).gcd (6 * n + 2) = 1\nh₃ : ∀ (n : ℕ), (6 * n + k).gcd (6 * n + 1) = 1\na✝ : k < 5\n⊢ False\nfailed",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_435/attempts/0009-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 23
+      },
+      "end": {
+        "column": 11,
+        "line": 23
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 9,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "17e10574513d7d52a3a57c80ac48a63a128f8a497eda682f6b0372117b7e4cbe",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 32,
+    "elaborationMs": 66,
+    "artifactCount": 10092
+  },
+  "elapsedMs": 101,
+  "sequence": 9,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_435/attempts/0009-candidate.lean",
+  "sourceHash": "633a4af00cb62d202a00576b303dae2ce3645c9fc64ca475ed5cb27af4742662",
+  "evidenceId": "ev_1bb39c89e1eae9d529007f9e76ff6817cfa9a0ae75a5aa953872d9174f4f2687"
+}

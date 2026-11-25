@@ -1,0 +1,91 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.130",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "p",
+        "type": "Nat",
+        "typeHead": "Nat",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.131",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "a",
+        "type": "Nat",
+        "typeHead": "Nat",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.131"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.132",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "LT.lt.{0} 0 a",
+        "typeHead": "LT.lt",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.130"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.133",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₁",
+        "type": "Nat.Prime p",
+        "typeHead": "Nat.Prime",
+        "value": null
+      }
+    ],
+    "id": "_uniq.134",
+    "omitted_implementation_details": 1,
+    "pretty": "p a : Nat\nh₀ : LT.lt.{0} 0 a\nh₁ : Nat.Prime p\n⊢ Dvd.dvd.{0} p (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a)",
+    "target": "Dvd.dvd.{0} p (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a)",
+    "targetArgs": [
+      "Nat",
+      "Nat.instDvd",
+      "p",
+      "HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} a p) a"
+    ],
+    "targetHead": "Dvd.dvd",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Data.Nat.Prime.Basic"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 61,
+    "maxDepth": 8,
+    "depth": 0,
+    "modelTokensRemaining": 50000,
+    "remainingMs": 294620
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.1006",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "n",
+        "type": "Nat",
+        "typeHead": "Nat",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.1006"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.1007",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "LT.lt.{0} 0 n",
+        "typeHead": "LT.lt",
+        "value": null
+      }
+    ],
+    "id": "_uniq.19314",
+    "omitted_implementation_details": 1,
+    "pretty": "n : Nat\nh₀ : LT.lt.{0} 0 n\n⊢ LE.le.{0}\n    (HAdd.hAdd.{0, 0, 0} 1\n      (HMul.hMul.{0, 0, 0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} (Inv.inv.{0} ↑x) 3))\n        ↑n))\n    (HMul.hMul.{0, 0, 0} (↑n) 3)",
+    "target": "LE.le.{0}\n  (HAdd.hAdd.{0, 0, 0} 1\n    (HMul.hMul.{0, 0, 0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} (Inv.inv.{0} ↑x) 3)) ↑n))\n  (HMul.hMul.{0, 0, 0} (↑n) 3)",
+    "targetArgs": [
+      "Real",
+      "Real.instLE",
+      "HAdd.hAdd.{0, 0, 0} 1\n  (HMul.hMul.{0, 0, 0} (∏ x ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} (Inv.inv.{0} ↑x) 3)) ↑n)",
+      "HMul.hMul.{0, 0, 0} (↑n) 3"
+    ],
+    "targetHead": "LE.le",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Algebra.BigOperators.Intervals"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 14,
+    "maxDepth": 8,
+    "depth": 7,
+    "modelTokensRemaining": 0,
+    "remainingMs": 291490
+  },
+  "feedback": []
+}

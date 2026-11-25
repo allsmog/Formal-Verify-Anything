@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\na b : ℝ\\nh₀ : a ^ 2 * b ^ 3 = 32 / 27\\nh₁ : a / b ^ 3 = 27 / 4\\n⊢ a + b = 8 / 3\",\"endPos\":{\"column\":14,\"line\":22},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_362/attempts/0013-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":22},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\na b : ℝ\nh₀ : a ^ 2 * b ^ 3 = 32 / 27\nh₁ : a / b ^ 3 = 27 / 4\n⊢ a + b = 8 / 3",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_362/attempts/0013-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 22
+      },
+      "end": {
+        "column": 14,
+        "line": 22
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 13,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "02830c20ae0f26e8e3660cf13ae4389d19ef566c96ebca5f60dd7d1417b3b7ca",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 47,
+    "elaborationMs": 39,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 90,
+  "sequence": 13,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_362/attempts/0013-candidate.lean",
+  "sourceHash": "ad91cddb13cf348a1e5fd7b365a5cfceafd9ce76dbd23603fa4350e749efb49d",
+  "evidenceId": "ev_9dd93c24717dbd4d65387ea3effa2c1ddb166a3c8084b9dd6da3d73aa302fca4"
+}

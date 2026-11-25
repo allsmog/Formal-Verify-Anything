@@ -1,0 +1,135 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.2223",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "x",
+        "type": "Real",
+        "typeHead": "Real",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.2224",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "y",
+        "type": "Real",
+        "typeHead": "Real",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.2225",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "n",
+        "type": "NNReal",
+        "typeHead": "NNReal",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.2223",
+          "_uniq.2224"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.2226",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "And (LT.lt.{0} x 0) (LT.lt.{0} y 0)",
+        "typeHead": "And",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.2224"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.2227",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₁",
+        "type": "Eq.{1} (abs.{0} y) 6",
+        "typeHead": "Eq",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.2223",
+          "_uniq.2224"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.2228",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₂",
+        "type": "Eq.{1}\n  (Real.sqrt\n    (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} x 8) 2)\n      (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} y 3) 2)))\n  15",
+        "typeHead": "Eq",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.2223",
+          "_uniq.2224",
+          "_uniq.2225"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.2229",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₃",
+        "type": "Eq.{1} (Real.sqrt (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2))) (Real.sqrt ↑n)",
+        "typeHead": "Eq",
+        "value": null
+      }
+    ],
+    "id": "_uniq.2230",
+    "omitted_implementation_details": 1,
+    "pretty": "x y : Real\nn : NNReal\nh₀ : And (LT.lt.{0} x 0) (LT.lt.{0} y 0)\nh₁ : Eq.{1} (abs.{0} y) 6\nh₂ :\n  Eq.{1}\n    (Real.sqrt\n      (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} x 8) 2)\n        (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} y 3) 2)))\n    15\nh₃ : Eq.{1} (Real.sqrt (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} x 2) (HPow.hPow.{0, 0, 0} y 2))) (Real.sqrt ↑n)\n⊢ Eq.{1} n 52",
+    "target": "Eq.{1} n 52",
+    "targetArgs": [
+      "NNReal",
+      "n",
+      "52"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Data.Real.Sqrt"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 61,
+    "maxDepth": 8,
+    "depth": 0,
+    "modelTokensRemaining": 0,
+    "remainingMs": 289811
+  },
+  "feedback": []
+}

@@ -1,0 +1,52 @@
+{
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Classical.choice\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"mathd_algebra_362\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (a b : Real),\\\\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 3)) (32 / 27) →\\\\n    Eq.{1} (HDiv.hDiv.{0, 0, 0} a (HPow.hPow.{0, 0, 0} b 3)) (27 / 4) → Eq.{1} (HAdd.hAdd.{0, 0, 0} a b) (8 / 3)\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":42},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_362/attempts/0005-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":42},\"severity\":\"information\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 5487,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"declaration\":\"mathd_algebra_362\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (a b : Real),\\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 3)) (32 / 27) →\\n    Eq.{1} (HDiv.hDiv.{0, 0, 0} a (HPow.hPow.{0, 0, 0} b 3)) (27 / 4) → Eq.{1} (HAdd.hAdd.{0, 0, 0} a b) (8 / 3)\",\"universe_parameters\":[],\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_362/attempts/0005-final.lean",
+      "start": {
+        "column": 0,
+        "line": 42
+      },
+      "end": {
+        "column": 28,
+        "line": 42
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "mathd_algebra_362",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (a b : Real),\n  Eq.{1} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} b 3)) (32 / 27) →\n    Eq.{1} (HDiv.hDiv.{0, 0, 0} a (HPow.hPow.{0, 0, 0} b 3)) (27 / 4) → Eq.{1} (HAdd.hAdd.{0, 0, 0} a b) (8 / 3)",
+      "universe_parameters": [],
+      "version": 1
+    }
+  ],
+  "unparsed": [],
+  "sequence": 5,
+  "kind": "final",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_362/attempts/0005-final.lean",
+  "sourceHash": "8fde0c891ba00ca1b95bb14aa6bab81b31327ad4f4fd51e36124a1134d4c5578",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_68721bf8aab3ecdd4d790728bc0bcc58cba2593e19a4f81df9d98ca9adc1bd4e"
+}

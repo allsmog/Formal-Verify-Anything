@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\nx : NNReal\\n⊢ √60 * √↑x * (√12 * √↑x) * (√63 * √↑x) = ↑(36 * x) * (√35 * √↑x)\",\"endPos\":{\"column\":16,\"line\":23},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_293/attempts/0031-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":23},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\nx : NNReal\n⊢ √60 * √↑x * (√12 * √↑x) * (√63 * √↑x) = ↑(36 * x) * (√35 * √↑x)",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_293/attempts/0031-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 23
+      },
+      "end": {
+        "column": 16,
+        "line": 23
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 31,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "12dd13a202e10b4e0c6cdbc3661b5576cc2dc9b6f4591dcd62b938639fbe35bf",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 38,
+    "elaborationMs": 42,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 83,
+  "sequence": 31,
+  "kind": "candidate",
+  "nodeId": "n3",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_293/attempts/0031-candidate.lean",
+  "sourceHash": "48c870163263df4cdfd53c52b1fcb02907fbdb11a85f0c431b780cc059dd7d16",
+  "evidenceId": "ev_0f27fe5585f1e26750d075318d4f21a07204414da95b4ec263f66af68050acb0"
+}

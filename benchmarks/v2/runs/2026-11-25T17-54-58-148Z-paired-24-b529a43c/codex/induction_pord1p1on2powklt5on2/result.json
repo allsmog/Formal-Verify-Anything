@@ -1,0 +1,373 @@
+{
+  "id": "induction_pord1p1on2powklt5on2",
+  "tier": 2,
+  "status": "FAILED",
+  "proofFile": null,
+  "engineVersion": "fva-search-v2",
+  "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+  "statementHash": "58f5efe729a4fd59755ea0e4434b403e7781e14107b58f0b54a214623a8dfce6",
+  "provenance": {
+    "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+    "split": "test",
+    "repository": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+    "path": "MiniF2F/Test/induction_pord1p1on2powklt5on2.lean",
+    "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/induction_pord1p1on2powklt5on2.lean",
+    "sourceFileSha256": "7e30f7d628764314ef356afc9e9bb0c5edd1bfdfc127d93f5eaec79d8424f63a",
+    "statementSha256": "58f5efe729a4fd59755ea0e4434b403e7781e14107b58f0b54a214623a8dfce6",
+    "originalImports": [
+      "Mathlib"
+    ],
+    "originalOpens": [
+      "BigOperators Real Nat Topology Rat"
+    ],
+    "selectionRankWithinStratum": 7,
+    "selectionKeySha256": "a845a1657f64df887446c0694c3c10e1bba752d2e0d70fa11a6375bec005f395",
+    "executionProfileSha256": "5265e241c25e5d1653c558148653058824c93265f8d52d800428481936a2cab1",
+    "executionImportReason": "finite sums/products and the original range or Icc notation"
+  },
+  "metrics": {
+    "compilerCalls": 1,
+    "steps": 0,
+    "maxDepth": 0,
+    "elapsedMs": 62420,
+    "firstCandidateSolved": false,
+    "modelTokens": null,
+    "modelTokensKnown": 0,
+    "modelUsageComplete": false,
+    "proposerCalls": 1,
+    "finalCandidates": 0
+  },
+  "budget": {
+    "maxCompilerCalls": 64,
+    "maxSteps": 64,
+    "maxProposalRounds": 3,
+    "maxDepth": 8,
+    "callTimeoutMs": 30000,
+    "theoremTimeoutMs": 300000,
+    "heartbeats": 200000,
+    "maxModelTokens": 50000
+  },
+  "policy": "codex-v1",
+  "failure": "provider_timeout",
+  "exploration": {
+    "backend": "lean-persistent-v1",
+    "cleanup": {
+      "ownership": "engine",
+      "status": "closed"
+    }
+  },
+  "verification": null,
+  "tree": {
+    "finalPlan": {
+      "id": "n0",
+      "depth": 0,
+      "kind": "hole",
+      "children": []
+    },
+    "nodes": [
+      {
+        "id": "n0",
+        "visit": 0,
+        "depth": 0,
+        "stateHash": "06c0e824dac293836932f465eb2d8a7a9bee82e19ccae24002098414b127bfe7",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.446",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.446"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.447",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "LT.lt.{0} 0 n",
+              "typeHead": "LT.lt",
+              "value": null
+            }
+          ],
+          "id": "_uniq.448",
+          "omitted_implementation_details": 1,
+          "pretty": "n : Nat\nh₀ : LT.lt.{0} 0 n\n⊢ LT.lt.{0} (∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} 2 k))) (5 / 2)",
+          "target": "LT.lt.{0} (∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} 2 k))) (5 / 2)",
+          "targetArgs": [
+            "Real",
+            "Real.instLT",
+            "∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} 2 k))",
+            "5 / 2"
+          ],
+          "targetHead": "LT.lt",
+          "universe_parameters": []
+        },
+        "status": "EXHAUSTED",
+        "evidenceId": "ev_ba2e750c6f2427dc942a2c68f207d30a3ddce4cdd7a1fdce879433c059089818",
+        "proposerError": {
+          "name": "ProposerError",
+          "message": "Codex did not complete a bounded proof-proposal request.",
+          "code": "provider_timeout",
+          "retryable": false,
+          "provider": "codex-cli",
+          "usage": null,
+          "modelTokens": null,
+          "metadata": {
+            "provider": "codex-cli",
+            "model": null,
+            "modelSelection": "codex-configured-default",
+            "promptDigest": "4eae0a4c6470d3ebc82fbc8ec5f0c0b77637e850e5f8bbcdc31919efc8e91cb1",
+            "promptVersion": 1,
+            "toolPolicy": "disabled",
+            "ephemeral": true,
+            "cliVersion": "codex-cli 0.171.0",
+            "eventTypes": [
+              "thread.started",
+              "turn.started"
+            ],
+            "responseDigest": "8de8909f608ccb11e5cf64875c150aa313d402e0df302953ab4e658150f8de0c",
+            "providerErrors": [],
+            "elapsedMs": 60004,
+            "exitCode": null,
+            "signal": "SIGKILL",
+            "stdoutDigest": "8de8909f608ccb11e5cf64875c150aa313d402e0df302953ab4e658150f8de0c",
+            "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderrDiagnostic": ""
+          }
+        }
+      }
+    ],
+    "branches": []
+  },
+  "finalCandidates": [],
+  "proposerCalls": [
+    {
+      "id": "p0",
+      "nodeId": "n0",
+      "stateHash": "06c0e824dac293836932f465eb2d8a7a9bee82e19ccae24002098414b127bfe7",
+      "round": 0,
+      "requestDigest": "e1b4bf7e77750b9b832b4a882c9398014c23b50f8cefcff4b32f7d49bed41189",
+      "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_pord1p1on2powklt5on2/proposals/0001-context.json",
+      "status": "FAILED",
+      "error": {
+        "name": "ProposerError",
+        "message": "Codex did not complete a bounded proof-proposal request.",
+        "code": "provider_timeout",
+        "retryable": false,
+        "provider": "codex-cli",
+        "usage": null,
+        "modelTokens": null,
+        "metadata": {
+          "provider": "codex-cli",
+          "model": null,
+          "modelSelection": "codex-configured-default",
+          "promptDigest": "4eae0a4c6470d3ebc82fbc8ec5f0c0b77637e850e5f8bbcdc31919efc8e91cb1",
+          "promptVersion": 1,
+          "toolPolicy": "disabled",
+          "ephemeral": true,
+          "cliVersion": "codex-cli 0.171.0",
+          "eventTypes": [
+            "thread.started",
+            "turn.started"
+          ],
+          "responseDigest": "8de8909f608ccb11e5cf64875c150aa313d402e0df302953ab4e658150f8de0c",
+          "providerErrors": [],
+          "elapsedMs": 60004,
+          "exitCode": null,
+          "signal": "SIGKILL",
+          "stdoutDigest": "8de8909f608ccb11e5cf64875c150aa313d402e0df302953ab4e658150f8de0c",
+          "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderrDiagnostic": ""
+        }
+      },
+      "failure": "provider_timeout",
+      "provider": "codex-cli",
+      "usage": null,
+      "metadata": {
+        "provider": "codex-cli",
+        "model": null,
+        "modelSelection": "codex-configured-default",
+        "promptDigest": "4eae0a4c6470d3ebc82fbc8ec5f0c0b77637e850e5f8bbcdc31919efc8e91cb1",
+        "promptVersion": 1,
+        "toolPolicy": "disabled",
+        "ephemeral": true,
+        "cliVersion": "codex-cli 0.171.0",
+        "eventTypes": [
+          "thread.started",
+          "turn.started"
+        ],
+        "responseDigest": "8de8909f608ccb11e5cf64875c150aa313d402e0df302953ab4e658150f8de0c",
+        "providerErrors": [],
+        "elapsedMs": 60004,
+        "exitCode": null,
+        "signal": "SIGKILL",
+        "stdoutDigest": "8de8909f608ccb11e5cf64875c150aa313d402e0df302953ab4e658150f8de0c",
+        "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderrDiagnostic": ""
+      },
+      "modelTokens": null,
+      "usageKnown": false,
+      "elapsedMs": 60006,
+      "evidenceId": "ev_4ad7ca1c9f6073e4bf350f67f09686d2ed433fdb0546dc4f3ab26820f865e629"
+    }
+  ],
+  "attempts": [
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.446\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.446\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.447\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"LT.lt.{0} 0 n\\\",\\\"typeHead\\\":\\\"LT.lt\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.448\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"n : Nat\\\\nh₀ : LT.lt.{0} 0 n\\\\n⊢ LT.lt.{0} (∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} 2 k))) (5 / 2)\\\",\\\"target\\\":\\\"LT.lt.{0} (∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} 2 k))) (5 / 2)\\\",\\\"targetArgs\\\":[\\\"Real\\\",\\\"Real.instLT\\\",\\\"∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} 2 k))\\\",\\\"5 / 2\\\"],\\\"targetHead\\\":\\\"LT.lt\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_pord1p1on2powklt5on2/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":20},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":16,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_pord1p1on2powklt5on2/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":20},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.446\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.446\"],\"has_metavariables\":false,\"id\":\"_uniq.447\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"LT.lt.{0} 0 n\",\"typeHead\":\"LT.lt\",\"value\":null}],\"id\":\"_uniq.448\",\"omitted_implementation_details\":1,\"pretty\":\"n : Nat\\nh₀ : LT.lt.{0} 0 n\\n⊢ LT.lt.{0} (∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} 2 k))) (5 / 2)\",\"target\":\"LT.lt.{0} (∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} 2 k))) (5 / 2)\",\"targetArgs\":[\"Real\",\"Real.instLT\",\"∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} 2 k))\",\"5 / 2\"],\"targetHead\":\"LT.lt\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_pord1p1on2powklt5on2/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 20
+          },
+          "end": {
+            "column": 16,
+            "line": 20
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_pord1p1on2powklt5on2/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 20
+          },
+          "end": {
+            "column": 16,
+            "line": 20
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.446",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "n",
+                  "type": "Nat",
+                  "typeHead": "Nat",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [
+                    "_uniq.446"
+                  ],
+                  "has_metavariables": false,
+                  "id": "_uniq.447",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "h₀",
+                  "type": "LT.lt.{0} 0 n",
+                  "typeHead": "LT.lt",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.448",
+              "omitted_implementation_details": 1,
+              "pretty": "n : Nat\nh₀ : LT.lt.{0} 0 n\n⊢ LT.lt.{0} (∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} 2 k))) (5 / 2)",
+              "target": "LT.lt.{0} (∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} 2 k))) (5 / 2)",
+              "targetArgs": [
+                "Real",
+                "Real.instLT",
+                "∏ k ∈ Finset.Icc.{0} 1 n, HAdd.hAdd.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} 2 k))",
+                "5 / 2"
+              ],
+              "targetHead": "LT.lt",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 1,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "01a613cb6b8ab51c21c7f514c6dcba86cc3e6389db9bb51ebbbf04612bf8e79e",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": false,
+        "importMs": 1178,
+        "elaborationMs": 26,
+        "artifactCount": 10204
+      },
+      "elapsedMs": 2370,
+      "sequence": 1,
+      "kind": "state",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_pord1p1on2powklt5on2/attempts/0001-state.lean",
+      "sourceHash": "992e23537c2dc565b55bed7c1f8e17f9610fdb7ac62efde8b8b8684c8ccf54b2",
+      "evidenceId": "ev_ba2e750c6f2427dc942a2c68f207d30a3ddce4cdd7a1fdce879433c059089818"
+    }
+  ],
+  "category": "induction",
+  "method": "codex",
+  "effectiveImports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Algebra.BigOperators.Intervals"
+  ],
+  "effectiveOpens": [
+    "BigOperators Real Nat Topology Rat"
+  ],
+  "cleanupAssessment": {
+    "status": "closed",
+    "exploration": {
+      "ownership": "engine",
+      "status": "closed",
+      "retryAttempted": false
+    },
+    "provider": {
+      "status": "closed",
+      "retryAttempted": true,
+      "entries": []
+    }
+  },
+  "artifactDir": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_pord1p1on2powklt5on2",
+  "invocationElapsedMs": 62420
+}

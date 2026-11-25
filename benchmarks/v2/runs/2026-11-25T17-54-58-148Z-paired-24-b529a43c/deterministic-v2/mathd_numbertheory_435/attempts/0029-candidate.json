@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  5\\nis not definitionally equal to the right-hand side\\n  k\\n\\nk : ℕ\\nh₀ : 0 < k\\nh₂ : ∀ (n : ℕ), (k + n * 6).gcd (2 + n * 6) = 1\\nh₁ : ∀ (n : ℕ), (k + n * 6).gcd (3 + n * 6) = 1\\nh₃ : ∀ (n : ℕ), (k + n * 6).gcd (1 + n * 6) = 1\\n⊢ 5 ≤ k\",\"endPos\":{\"column\":9,\"line\":27},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_435/attempts/0029-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":6,\"line\":27},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  5\nis not definitionally equal to the right-hand side\n  k\n\nk : ℕ\nh₀ : 0 < k\nh₂ : ∀ (n : ℕ), (k + n * 6).gcd (2 + n * 6) = 1\nh₁ : ∀ (n : ℕ), (k + n * 6).gcd (3 + n * 6) = 1\nh₃ : ∀ (n : ℕ), (k + n * 6).gcd (1 + n * 6) = 1\n⊢ 5 ≤ k",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_435/attempts/0029-candidate.lean",
+      "start": {
+        "column": 6,
+        "line": 27
+      },
+      "end": {
+        "column": 9,
+        "line": 27
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 29,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "852bd5179ad93cc1f476437cfeae66ce1d890d36d54d01243e78d6ae4096663d",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 31,
+    "elaborationMs": 189,
+    "artifactCount": 10092
+  },
+  "elapsedMs": 223,
+  "sequence": 29,
+  "kind": "candidate",
+  "nodeId": "n2",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_435/attempts/0029-candidate.lean",
+  "sourceHash": "7166be059a93fa25b6b542e7813b51bf4ddce17b2b29230c7dbecf8f64b9ec30",
+  "evidenceId": "ev_a9bd15be8e1d0dd381801d7d0afbdf2118e0131ce02f953f7daa77f3e21bdcc0"
+}

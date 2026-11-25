@@ -1,0 +1,68 @@
+{
+  "id": "p0",
+  "nodeId": "n0",
+  "stateHash": "54d391f903710bb0d0b0c9b4a1d551038933dd48c2fcb110b746402df00cb76d",
+  "round": 0,
+  "requestDigest": "d8c34f747b2ab8c2e09c7f3475c1daa0d1970ae43850e574c1a1888a4012db64",
+  "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_447/proposals/0001-context.json",
+  "modelTokens": 18460,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "codex-v1",
+  "provider": "codex-cli",
+  "usage": {
+    "input_tokens": 16327,
+    "output_tokens": 2133,
+    "cached_input_tokens": 0,
+    "reasoning_output_tokens": 1807
+  },
+  "metadata": {
+    "provider": "codex-cli",
+    "model": null,
+    "modelSelection": "codex-configured-default",
+    "promptDigest": "02c90810b26fab77c62c13edfbd4a037b80179877b5d375ffca7c675c0485b58",
+    "promptVersion": 1,
+    "toolPolicy": "disabled",
+    "ephemeral": true,
+    "cliVersion": "codex-cli 0.171.0",
+    "eventTypes": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "responseDigest": "98d86adfe02db3d39754b582ba4130f3a19eab644b01c8c37469d4d483728d97",
+    "providerErrors": [],
+    "elapsedMs": 38022,
+    "exitCode": 0,
+    "signal": null,
+    "stdoutDigest": "98d86adfe02db3d39754b582ba4130f3a19eab644b01c8c37469d4d483728d97",
+    "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrDiagnostic": ""
+  },
+  "proposals": [
+    {
+      "kind": "tactic",
+      "tactic": "decide"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "decide +kernel"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "rfl"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "have h : (Finset.Icc 1 49).filter (fun k : ℕ => 3 ∣ k) = (Finset.range 50).filter (fun k : ℕ => 1 ≤ k ∧ 3 ∣ k) := by\n  ext k\n  simp only [Finset.mem_filter, Finset.mem_Icc, Finset.mem_range]\n  omega\nrw [h, Finset.sum_filter]\nnorm_num [Finset.sum_range_succ]"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "have h : (Finset.Icc 1 49).filter (fun k : ℕ => 3 ∣ k) = ({3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48} : Finset ℕ) := by\n  ext k\n  simp only [Finset.mem_filter, Finset.mem_Icc, Finset.mem_insert, Finset.mem_singleton, Nat.dvd_iff_mod_eq_zero]\n  omega\nrw [h]\ndecide"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 38024,
+  "evidenceId": "ev_67537bd622b8ea3f10782b119cb886e51ac3ed693f363eef1a23a4ea2e62d3cc"
+}

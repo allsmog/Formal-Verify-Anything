@@ -1,0 +1,194 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.1003\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"x\\\",\\\"type\\\":\\\"Real\\\",\\\"typeHead\\\":\\\"Real\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.1004\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"a\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.1005\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"b\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.1006\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"c\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.1006\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.6270\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₃\\\",\\\"type\\\":\\\"Eq.{1} c 2\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.1003\\\",\\\"_uniq.1004\\\",\\\"_uniq.1005\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.13363\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₂\\\",\\\"type\\\":\\\"Eq.{1} (HMul.hMul.{0, 0, 0} 2 x) (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b))\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.1004\\\",\\\"_uniq.1005\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.15505\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₁\\\",\\\"type\\\":\\\"Eq.{1} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b)) 2)\\\\n  (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b)) 4) 18)\\\",\\\"typeHead\\\":\\\"Eq\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[\\\"_uniq.1004\\\",\\\"_uniq.1005\\\"],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.15687\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"h₀\\\",\\\"type\\\":\\\"And (LT.lt.{0} 0 a) (And (LT.lt.{0} 0 b) (LE.le.{0} 0 (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b))))\\\",\\\"typeHead\\\":\\\"And\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.15958\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"x : Real\\\\na b c : Nat\\\\nh₃ : Eq.{1} c 2\\\\nh₂ : Eq.{1} (HMul.hMul.{0, 0, 0} 2 x) (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b))\\\\nh₁ :\\\\n  Eq.{1} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b)) 2)\\\\n    (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b)) 4) 18)\\\\nh₀ : And (LT.lt.{0} 0 a) (And (LT.lt.{0} 0 b) (LE.le.{0} 0 (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b))))\\\\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} a b) 24\\\",\\\"target\\\":\\\"Eq.{1} (HAdd.hAdd.{0, 0, 0} a b) 24\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"HAdd.hAdd.{0, 0, 0} a b\\\",\\\"24\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n6\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":28,\"line\":36},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_320/attempts/0049-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":14,\"line\":36},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n6\",\"endPos\":{\"column\":28,\"line\":36},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_320/attempts/0049-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":14,\"line\":36},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.1003\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"x\",\"type\":\"Real\",\"typeHead\":\"Real\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.1004\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"a\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.1005\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"b\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.1006\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"c\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.1006\"],\"has_metavariables\":false,\"id\":\"_uniq.6270\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₃\",\"type\":\"Eq.{1} c 2\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.1003\",\"_uniq.1004\",\"_uniq.1005\"],\"has_metavariables\":false,\"id\":\"_uniq.13363\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₂\",\"type\":\"Eq.{1} (HMul.hMul.{0, 0, 0} 2 x) (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b))\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.1004\",\"_uniq.1005\"],\"has_metavariables\":false,\"id\":\"_uniq.15505\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₁\",\"type\":\"Eq.{1} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b)) 2)\\n  (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b)) 4) 18)\",\"typeHead\":\"Eq\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[\"_uniq.1004\",\"_uniq.1005\"],\"has_metavariables\":false,\"id\":\"_uniq.15687\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"h₀\",\"type\":\"And (LT.lt.{0} 0 a) (And (LT.lt.{0} 0 b) (LE.le.{0} 0 (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b))))\",\"typeHead\":\"And\",\"value\":null}],\"id\":\"_uniq.15958\",\"omitted_implementation_details\":1,\"pretty\":\"x : Real\\na b c : Nat\\nh₃ : Eq.{1} c 2\\nh₂ : Eq.{1} (HMul.hMul.{0, 0, 0} 2 x) (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b))\\nh₁ :\\n  Eq.{1} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b)) 2)\\n    (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b)) 4) 18)\\nh₀ : And (LT.lt.{0} 0 a) (And (LT.lt.{0} 0 b) (LE.le.{0} 0 (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b))))\\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} a b) 24\",\"target\":\"Eq.{1} (HAdd.hAdd.{0, 0, 0} a b) 24\",\"targetArgs\":[\"Nat\",\"HAdd.hAdd.{0, 0, 0} a b\",\"24\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n6\",\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_320/attempts/0049-state.lean",
+      "start": {
+        "column": 14,
+        "line": 36
+      },
+      "end": {
+        "column": 28,
+        "line": 36
+      },
+      "category": "compiler_error"
+    },
+    {
+      "severity": "error",
+      "message": "FVA_PROBE_STOP:n6",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_320/attempts/0049-state.lean",
+      "start": {
+        "column": 14,
+        "line": 36
+      },
+      "end": {
+        "column": 28,
+        "line": 36
+      },
+      "category": "probe_stop"
+    }
+  ],
+  "states": [
+    {
+      "goals": [
+        {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.1003",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "x",
+              "type": "Real",
+              "typeHead": "Real",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.1004",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "a",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.1005",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "b",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.1006",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "c",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.1006"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.6270",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₃",
+              "type": "Eq.{1} c 2",
+              "typeHead": "Eq",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.1003",
+                "_uniq.1004",
+                "_uniq.1005"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.13363",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₂",
+              "type": "Eq.{1} (HMul.hMul.{0, 0, 0} 2 x) (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b))",
+              "typeHead": "Eq",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.1004",
+                "_uniq.1005"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.15505",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₁",
+              "type": "Eq.{1} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b)) 2)\n  (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b)) 4) 18)",
+              "typeHead": "Eq",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [
+                "_uniq.1004",
+                "_uniq.1005"
+              ],
+              "has_metavariables": false,
+              "id": "_uniq.15687",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "h₀",
+              "type": "And (LT.lt.{0} 0 a) (And (LT.lt.{0} 0 b) (LE.le.{0} 0 (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b))))",
+              "typeHead": "And",
+              "value": null
+            }
+          ],
+          "id": "_uniq.15958",
+          "omitted_implementation_details": 1,
+          "pretty": "x : Real\na b c : Nat\nh₃ : Eq.{1} c 2\nh₂ : Eq.{1} (HMul.hMul.{0, 0, 0} 2 x) (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b))\nh₁ :\n  Eq.{1} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b)) 2)\n    (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b)) 4) 18)\nh₀ : And (LT.lt.{0} 0 a) (And (LT.lt.{0} 0 b) (LE.le.{0} 0 (HAdd.hAdd.{0, 0, 0} (↑a) (Real.sqrt ↑b))))\n⊢ Eq.{1} (HAdd.hAdd.{0, 0, 0} a b) 24",
+          "target": "Eq.{1} (HAdd.hAdd.{0, 0, 0} a b) 24",
+          "targetArgs": [
+            "Nat",
+            "HAdd.hAdd.{0, 0, 0} a b",
+            "24"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        }
+      ],
+      "node_id": "n6",
+      "version": 1
+    }
+  ],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 49,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "e754ea2861e2f9b3c6b5f68fbad68d71b7f1a9bf69f03ad5e308dc9f6fcf5bd2",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 59,
+    "elaborationMs": 485,
+    "artifactCount": 11956
+  },
+  "elapsedMs": 546,
+  "sequence": 49,
+  "kind": "state",
+  "nodeId": "n6",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_algebra_320/attempts/0049-state.lean",
+  "sourceHash": "9085d725fe9ed3e18ad68170c7a6670ee39f0cd2fc95341e8e37351bb84cb82d",
+  "evidenceId": "ev_09fc1441f8bec539807547745fdf66f3c559ae8c335df92848a42f881618e018"
+}

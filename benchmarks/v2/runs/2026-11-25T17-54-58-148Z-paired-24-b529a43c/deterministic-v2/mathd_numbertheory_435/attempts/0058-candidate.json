@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"linarith failed to find a contradiction\\ncase succ.h\\nn✝ : ℕ\\na✝¹ :\\n  0 < n✝ →\\n    (∀ (n : ℕ), (n✝ + n * 6).gcd (2 + n * 6) = 1) →\\n      (∀ (n : ℕ), (n✝ + n * 6).gcd (3 + n * 6) = 1) → (∀ (n : ℕ), (n✝ + n * 6).gcd (1 + n * 6) = 1) → 5 ≤ n✝\\nh₂ : ∀ (n : ℕ), (n✝ + 1 + n * 6).gcd (2 + n * 6) = 1\\nh₁ : ∀ (n : ℕ), (n✝ + 1 + n * 6).gcd (3 + n * 6) = 1\\nh₃ : ∀ (n : ℕ), (n✝ + 1 + n * 6).gcd (1 + n * 6) = 1\\na✝ : n✝ < 4\\n⊢ False\\nfailed\",\"endPos\":{\"column\":19,\"line\":33},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_435/attempts/0058-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":10,\"line\":33},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "linarith failed to find a contradiction\ncase succ.h\nn✝ : ℕ\na✝¹ :\n  0 < n✝ →\n    (∀ (n : ℕ), (n✝ + n * 6).gcd (2 + n * 6) = 1) →\n      (∀ (n : ℕ), (n✝ + n * 6).gcd (3 + n * 6) = 1) → (∀ (n : ℕ), (n✝ + n * 6).gcd (1 + n * 6) = 1) → 5 ≤ n✝\nh₂ : ∀ (n : ℕ), (n✝ + 1 + n * 6).gcd (2 + n * 6) = 1\nh₁ : ∀ (n : ℕ), (n✝ + 1 + n * 6).gcd (3 + n * 6) = 1\nh₃ : ∀ (n : ℕ), (n✝ + 1 + n * 6).gcd (1 + n * 6) = 1\na✝ : n✝ < 4\n⊢ False\nfailed",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_435/attempts/0058-candidate.lean",
+      "start": {
+        "column": 10,
+        "line": 33
+      },
+      "end": {
+        "column": 19,
+        "line": 33
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 58,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "4d8da9fb4465f4bf0fe8368d054a00b6a0c02e457be066af976bae23119f8da9",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 33,
+    "elaborationMs": 1670,
+    "artifactCount": 10092
+  },
+  "elapsedMs": 1711,
+  "sequence": 58,
+  "kind": "candidate",
+  "nodeId": "n5",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_435/attempts/0058-candidate.lean",
+  "sourceHash": "7edacec9a7be261ef63b42ceed6af66cbefac906abe3e62a404c15d8f2c92c80",
+  "evidenceId": "ev_f79ba4913df1eb6e28ac2a761505926cfc4809acb96fe4a49b70b8d8023e0111"
+}

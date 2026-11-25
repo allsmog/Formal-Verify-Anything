@@ -1,0 +1,62 @@
+{
+  "id": "p2",
+  "nodeId": "n2",
+  "stateHash": "90aa19286f126b7b604e9635be41033d670d92679da74812de0475b3799133e2",
+  "round": 0,
+  "requestDigest": "e84c8a7fff7e507d79a090040b6418d7a3be9ad29eff417cfbffa6d3e6c3045a",
+  "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_nfactltnexpnm1ngt3/proposals/0003-context.json",
+  "modelTokens": 18194,
+  "usageKnown": true,
+  "tokenBudgetExceeded": true,
+  "policy": "codex-v1",
+  "provider": "codex-cli",
+  "usage": {
+    "input_tokens": 16658,
+    "output_tokens": 1536,
+    "cached_input_tokens": 0,
+    "reasoning_output_tokens": 1071
+  },
+  "metadata": {
+    "provider": "codex-cli",
+    "model": null,
+    "modelSelection": "codex-configured-default",
+    "promptDigest": "f3a1991f8f6458e77ae0498ec9c7370359fc33e67c0609d56fa1687e7adfb131",
+    "promptVersion": 1,
+    "toolPolicy": "disabled",
+    "ephemeral": true,
+    "cliVersion": "codex-cli 0.171.0",
+    "eventTypes": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "responseDigest": "77e22b8939efaa10da401d9d06c228469eb534f6446e272ccdbcff61d3e062ac",
+    "providerErrors": [],
+    "elapsedMs": 23112,
+    "exitCode": 0,
+    "signal": null,
+    "stdoutDigest": "77e22b8939efaa10da401d9d06c228469eb534f6446e272ccdbcff61d3e062ac",
+    "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrDiagnostic": ""
+  },
+  "proposals": [
+    {
+      "kind": "tactic",
+      "tactic": "have hn : n - 2 + 2 = n := Nat.sub_add_cancel (by omega)\nhave he : n - 1 = n - 2 + 1 := by omega\nhave hb := factorial_bound (n - 2) n (le_of_eq hn)\nrw [hn] at hb\nrefine lt_of_le_of_lt hb ?_\nrw [he, pow_succ, Nat.mul_comm (n ^ (n - 2)) n]\nhave hn_pos : 0 < n := by omega\nexact mul_lt_mul_of_pos_right (show 2 < n by omega) (pow_pos hn_pos _)"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "have htwo : 2 < n := lt_of_lt_of_le (by decide : 2 < 3) h₀\nhave hn : n - 2 + 2 = n := Nat.sub_add_cancel (le_of_lt htwo)\nhave hb := factorial_bound (n - 2) n (le_of_eq hn)\nrw [hn] at hb\nhave hpos : 0 < n := lt_trans (by decide : 0 < 2) htwo\ncalc\n  n.factorial ≤ 2 * n ^ (n - 2) := hb\n  _ < n * n ^ (n - 2) := mul_lt_mul_of_pos_right htwo (pow_pos hpos _)\n  _ = n ^ (n - 2) * n := Nat.mul_comm _ _\n  _ = n ^ (n - 1) := by\n    have he : n - 1 = n - 2 + 1 := congrArg (fun a : Nat => a - 1) hn.symm\n    rw [he, pow_succ]"
+    },
+    {
+      "kind": "have",
+      "name": "hfact",
+      "type": "n.factorial ≤ 2 * n ^ (n - 2)"
+    }
+  ],
+  "status": "REJECTED",
+  "failure": "model_token_budget",
+  "elapsedMs": 23113,
+  "evidenceId": "ev_d9dde9ddb5bbbcc092f8d4a88e36aa25ac3c8b4e9e55f5336f26d110e5864098"
+}

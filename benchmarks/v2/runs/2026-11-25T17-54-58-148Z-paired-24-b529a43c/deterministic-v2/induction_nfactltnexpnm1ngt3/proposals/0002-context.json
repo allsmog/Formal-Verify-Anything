@@ -1,0 +1,52 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.166",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "h₀",
+        "type": "LE.le.{0} 3 0",
+        "typeHead": "LE.le",
+        "value": null
+      }
+    ],
+    "id": "_uniq.169",
+    "omitted_implementation_details": 1,
+    "pretty": "case zero\nh₀ : LE.le.{0} 3 0\n⊢ LT.lt.{0} (Nat.factorial 0) (HPow.hPow.{0, 0, 0} 0 (HSub.hSub.{0, 0, 0} 0 1))",
+    "target": "LT.lt.{0} (Nat.factorial 0) (HPow.hPow.{0, 0, 0} 0 (HSub.hSub.{0, 0, 0} 0 1))",
+    "targetArgs": [
+      "Nat",
+      "instLTNat",
+      "Nat.factorial 0",
+      "HPow.hPow.{0, 0, 0} 0 (HSub.hSub.{0, 0, 0} 0 1)"
+    ],
+    "targetHead": "LT.lt",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Data.Nat.Factorial.Basic"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 46,
+    "maxDepth": 8,
+    "depth": 1,
+    "modelTokensRemaining": 0,
+    "remainingMs": 296698
+  },
+  "feedback": []
+}

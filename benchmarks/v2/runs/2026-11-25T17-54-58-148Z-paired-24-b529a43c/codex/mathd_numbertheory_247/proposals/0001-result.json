@@ -1,0 +1,69 @@
+{
+  "id": "p0",
+  "nodeId": "n0",
+  "stateHash": "405a97cb8b139e69f643362d29e4a0d9c2006aff2fe71a4d96589073ef238356",
+  "round": 0,
+  "requestDigest": "f65ac3e2dbfc3931807111eaef759e47e57173a1b1846a04fa22c5483e5fd22f",
+  "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_numbertheory_247/proposals/0001-context.json",
+  "modelTokens": 19053,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "codex-v1",
+  "provider": "codex-cli",
+  "usage": {
+    "input_tokens": 16435,
+    "output_tokens": 2618,
+    "cached_input_tokens": 0,
+    "reasoning_output_tokens": 2114
+  },
+  "metadata": {
+    "provider": "codex-cli",
+    "model": null,
+    "modelSelection": "codex-configured-default",
+    "promptDigest": "d47fc3af897f6f89e0e87048e5ce9b19cb78d969da48eed4cc67aab9be5bfa16",
+    "promptVersion": 1,
+    "toolPolicy": "disabled",
+    "ephemeral": true,
+    "cliVersion": "codex-cli 0.171.0",
+    "eventTypes": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "responseDigest": "8a160e1a3cdd34fc303f4fd7283f7daf4be8c6f381a637e00a3817fcc5bc2248",
+    "providerErrors": [],
+    "elapsedMs": 41552,
+    "exitCode": 0,
+    "signal": null,
+    "stdoutDigest": "8a160e1a3cdd34fc303f4fd7283f7daf4be8c6f381a637e00a3817fcc5bc2248",
+    "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrDiagnostic": ""
+  },
+  "proposals": [
+    {
+      "kind": "tactic",
+      "tactic": "calc\n  n % 11 = (12 * n) % 11 := by\n    rw [Nat.mul_mod]\n    change n % 11 = (1 * (n % 11)) % 11\n    rw [one_mul, Nat.mod_mod]\n  _ = 8 := by\n    change (4 * 3 * n) % 11 = 8\n    rw [Nat.mul_assoc, Nat.mul_mod, h₀] <;> decide"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "have check : ∀ r : Fin 11, (3 * r.val) % 11 = 2 → r.val = 8 := by decide\napply check ⟨n % 11, Nat.mod_lt n (by decide)⟩\nchange (3 * (n % 11)) % 11 = 2\nrw [Nat.mul_mod] at h₀\nexact h₀"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "rw [Nat.mul_mod] at h₀\nchange (3 * (n % 11)) % 11 = 2 at h₀\nhave hlt : n % 11 < 11 := Nat.mod_lt n (by decide)\nomega"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "rw [Nat.mul_mod] at h₀\nchange (3 * (n % 11)) % 11 = 2 at h₀\nhave hlt : n % 11 < 11 := Nat.mod_lt n (by decide)\ngeneralize n % 11 = r at hlt h₀ ⊢\nhave hc : r = 0 ∨ r = 1 ∨ r = 2 ∨ r = 3 ∨ r = 4 ∨ r = 5 ∨ r = 6 ∨ r = 7 ∨ r = 8 ∨ r = 9 ∨ r = 10 := by omega\nrcases hc with h | h | h | h | h | h | h | h | h | h | h <;> norm_num [h] at h₀ ⊢"
+    },
+    {
+      "kind": "have",
+      "name": "h12",
+      "type": "(12 * n) % 11 = 8"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 41554,
+  "evidenceId": "ev_32ee24c9b8ce1e07263b6d09fb704dd13475b99819cd7ec8b3a2bd7335d3d70b"
+}

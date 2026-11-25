@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  1 + ↑n * x\\nis not definitionally equal to the right-hand side\\n  (1 + x) ^ n\\n\\nx : ℝ\\nn : ℕ\\nh₁ : 0 < n\\nh₀ : ↑(Int.negSucc 0) < x\\n⊢ 1 + ↑n * x ≤ (1 + x) ^ n\",\"endPos\":{\"column\":7,\"line\":23},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0014-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":23},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  1 + ↑n * x\nis not definitionally equal to the right-hand side\n  (1 + x) ^ n\n\nx : ℝ\nn : ℕ\nh₁ : 0 < n\nh₀ : ↑(Int.negSucc 0) < x\n⊢ 1 + ↑n * x ≤ (1 + x) ^ n",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0014-candidate.lean",
+      "start": {
+        "column": 4,
+        "line": 23
+      },
+      "end": {
+        "column": 7,
+        "line": 23
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 14,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "7138ca9ed967cef25fd13790209af5d554672cb907dccb965c2c66b89ed59094",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 30,
+    "elaborationMs": 14,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 46,
+  "sequence": 14,
+  "kind": "candidate",
+  "nodeId": "n1",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_1pxpownlt1pnx/attempts/0014-candidate.lean",
+  "sourceHash": "2070891cdff1c002d69b46887116e16f469949cfb0555f0a8f544b6e000643bf",
+  "evidenceId": "ev_d36e2522695b25aab703a75801c9f67103957f1faf9063f1a8cbc12f29ed023c"
+}

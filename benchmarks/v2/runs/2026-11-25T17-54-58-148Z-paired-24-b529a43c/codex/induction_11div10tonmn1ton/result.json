@@ -1,0 +1,592 @@
+{
+  "id": "induction_11div10tonmn1ton",
+  "tier": 2,
+  "status": "SOLVED",
+  "proofFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/induction_11div10tonmn1ton.lean",
+  "engineVersion": "fva-search-v2",
+  "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+  "statementHash": "0acf47acc53d68423cae774f58e03263b982baf3afa7e7eef50c182854542b51",
+  "provenance": {
+    "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+    "split": "test",
+    "repository": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+    "path": "MiniF2F/Test/induction_11div10tonmn1ton.lean",
+    "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/induction_11div10tonmn1ton.lean",
+    "sourceFileSha256": "a2b2a7cb72154fa297bb224d8e54a81a157579834dda9838dac8d2d4f5c79f59",
+    "statementSha256": "0acf47acc53d68423cae774f58e03263b982baf3afa7e7eef50c182854542b51",
+    "originalImports": [
+      "Mathlib"
+    ],
+    "originalOpens": [
+      "BigOperators Real Nat Topology Rat"
+    ],
+    "selectionRankWithinStratum": 8,
+    "selectionKeySha256": "dd12de365c59b9a54b5e39736587bc02f0ee969adf1c0bc18b9fe05336df8a34",
+    "executionProfileSha256": "5265e241c25e5d1653c558148653058824c93265f8d52d800428481936a2cab1",
+    "executionImportReason": "Common arithmetic definitions suffice for the original declaration."
+  },
+  "metrics": {
+    "compilerCalls": 4,
+    "steps": 1,
+    "maxDepth": 0,
+    "elapsedMs": 26637,
+    "firstCandidateSolved": true,
+    "modelTokens": 17614,
+    "modelTokensKnown": 17614,
+    "modelUsageComplete": true,
+    "proposerCalls": 1,
+    "finalCandidates": 1
+  },
+  "budget": {
+    "maxCompilerCalls": 64,
+    "maxSteps": 64,
+    "maxProposalRounds": 3,
+    "maxDepth": 8,
+    "callTimeoutMs": 30000,
+    "theoremTimeoutMs": 300000,
+    "heartbeats": 200000,
+    "maxModelTokens": 50000
+  },
+  "policy": "codex-v1",
+  "failure": null,
+  "exploration": {
+    "backend": "lean-persistent-v1",
+    "cleanup": {
+      "ownership": "engine",
+      "status": "closed"
+    }
+  },
+  "verification": {
+    "statementHash": "0acf47acc53d68423cae774f58e03263b982baf3afa7e7eef50c182854542b51",
+    "sourceHash": "d415fe5c410adf06a55bcabee7d8973997162facc8e0d433a44d8a11ca71af86",
+    "zeroPlaceholders": true,
+    "exitCode": 0,
+    "audit": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "induction_11div10tonmn1ton",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "∀ (n : Nat), Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))",
+      "universe_parameters": [],
+      "version": 1
+    },
+    "compileEvidence": [
+      "ev_e5eae8529c504aaa972ef84edc62a53a79964fbbbf58cd6100a282880d97b49f",
+      "ev_502e32b2dd04ffe7030a9a02487d44360089a9dd2b01652e748300215b879306"
+    ],
+    "standaloneRecheck": true,
+    "policy": "lean-kernel-v2-unused-variable-lint",
+    "warnings": []
+  },
+  "tree": {
+    "finalPlan": {
+      "id": "n0",
+      "depth": 0,
+      "kind": "tactic",
+      "children": [],
+      "tactic": "induction n with\n| zero =>\n    simpa only [pow_zero, sub_self] using (dvd_zero (11 : ℤ))\n| succ n ih =>\n    obtain ⟨k, hk⟩ := ih\n    refine ⟨10 * k + (-1 : ℤ) ^ n, ?_⟩\n    simp only [pow_succ]\n    calc\n      (10 : ℤ) ^ n * 10 - (-1 : ℤ) ^ n * (-1) =\n          10 * ((10 : ℤ) ^ n - (-1 : ℤ) ^ n) + 11 * (-1 : ℤ) ^ n := by ring\n      _ = _ := by rw [hk]; ring"
+    },
+    "nodes": [
+      {
+        "id": "n0",
+        "visit": 0,
+        "depth": 0,
+        "stateHash": "e778b6e319a6cfd592f45fa0349b9e85a81587016bd7c44274412fc8ceb61d97",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.230",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            }
+          ],
+          "id": "_uniq.231",
+          "omitted_implementation_details": 1,
+          "pretty": "n : Nat\n⊢ Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))",
+          "target": "Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))",
+          "targetArgs": [
+            "Int",
+            "Int.instDvd",
+            "11",
+            "HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n)"
+          ],
+          "targetHead": "Dvd.dvd",
+          "universe_parameters": []
+        },
+        "status": "VERIFIED_IN_FINAL_PROOF",
+        "evidenceId": "ev_c5af5e2d1176913d102a5d1fb365844d769177199df0b3c35797217e570de68c"
+      }
+    ],
+    "branches": [
+      {
+        "parent": "n0",
+        "visit": 0,
+        "stateHash": "e778b6e319a6cfd592f45fa0349b9e85a81587016bd7c44274412fc8ceb61d97",
+        "proposal": {
+          "kind": "tactic",
+          "tactic": "induction n with\n| zero =>\n    simpa only [pow_zero, sub_self] using (dvd_zero (11 : ℤ))\n| succ n ih =>\n    obtain ⟨k, hk⟩ := ih\n    refine ⟨10 * k + (-1 : ℤ) ^ n, ?_⟩\n    simp only [pow_succ]\n    calc\n      (10 : ℤ) ^ n * 10 - (-1 : ℤ) ^ n * (-1) =\n          10 * ((10 : ℤ) ^ n - (-1 : ℤ) ^ n) + 11 * (-1 : ℤ) ^ n := by ring\n      _ = _ := by rw [hk]; ring"
+        },
+        "beforeHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a",
+        "status": "RETAINED",
+        "children": [],
+        "evidenceId": "ev_ef36b4bcd31dfc9b61a412f1739275dda7dd8ccb77c3a48a9168eac287518ce8"
+      }
+    ]
+  },
+  "finalCandidates": [
+    {
+      "id": "c0",
+      "planHash": "9c42953b680e015a5db047188554dce92413fb899c5e387f270dcc1335026daf",
+      "status": "ACCEPTED",
+      "policy": "lean-kernel-v2-unused-variable-lint",
+      "evidenceIds": [
+        "ev_e5eae8529c504aaa972ef84edc62a53a79964fbbbf58cd6100a282880d97b49f",
+        "ev_502e32b2dd04ffe7030a9a02487d44360089a9dd2b01652e748300215b879306"
+      ],
+      "sourceHash": "d415fe5c410adf06a55bcabee7d8973997162facc8e0d433a44d8a11ca71af86",
+      "explorationSuspension": {
+        "status": "SUSPENDED",
+        "elapsedMs": 42
+      },
+      "checks": [
+        {
+          "kind": "final",
+          "evidenceId": "ev_e5eae8529c504aaa972ef84edc62a53a79964fbbbf58cd6100a282880d97b49f",
+          "accepted": true,
+          "reason": null,
+          "audit": {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "declaration": "induction_11div10tonmn1ton",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (n : Nat), Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": []
+        },
+        {
+          "kind": "recheck",
+          "evidenceId": "ev_502e32b2dd04ffe7030a9a02487d44360089a9dd2b01652e748300215b879306",
+          "accepted": true,
+          "reason": null,
+          "audit": {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "declaration": "induction_11div10tonmn1ton",
+            "kernel_checked": true,
+            "kind": "theorem",
+            "passed": true,
+            "type": "∀ (n : Nat), Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))",
+            "universe_parameters": [],
+            "version": 1
+          },
+          "policy": "lean-kernel-v2-unused-variable-lint",
+          "permittedWarnings": [],
+          "rejectedWarnings": []
+        }
+      ],
+      "reason": null
+    }
+  ],
+  "proposerCalls": [
+    {
+      "id": "p0",
+      "nodeId": "n0",
+      "stateHash": "e778b6e319a6cfd592f45fa0349b9e85a81587016bd7c44274412fc8ceb61d97",
+      "round": 0,
+      "requestDigest": "ff7e7a727fca3f9279c1ce8e07772df185f9b944930d7f4c38bcffb6aa43812c",
+      "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/proposals/0001-context.json",
+      "modelTokens": 17614,
+      "usageKnown": true,
+      "tokenBudgetExceeded": false,
+      "policy": "codex-v1",
+      "provider": "codex-cli",
+      "usage": {
+        "input_tokens": 16405,
+        "output_tokens": 1209,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 951
+      },
+      "metadata": {
+        "provider": "codex-cli",
+        "model": null,
+        "modelSelection": "codex-configured-default",
+        "promptDigest": "3542e34e6c9136641f5920fa8e8e5770a7c59d8fd461d58986c7fad10a1b5c16",
+        "promptVersion": 1,
+        "toolPolicy": "disabled",
+        "ephemeral": true,
+        "cliVersion": "codex-cli 0.171.0",
+        "eventTypes": [
+          "thread.started",
+          "turn.started",
+          "item.completed",
+          "turn.completed"
+        ],
+        "responseDigest": "7e972f5bd7e989b6c114b9d45e81b2256e3fe352909656da47d9e1694f87fb14",
+        "providerErrors": [],
+        "elapsedMs": 20109,
+        "exitCode": 0,
+        "signal": null,
+        "stdoutDigest": "7e972f5bd7e989b6c114b9d45e81b2256e3fe352909656da47d9e1694f87fb14",
+        "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderrDiagnostic": ""
+      },
+      "proposals": [
+        {
+          "kind": "tactic",
+          "tactic": "induction n with\n| zero =>\n    simpa only [pow_zero, sub_self] using (dvd_zero (11 : ℤ))\n| succ n ih =>\n    obtain ⟨k, hk⟩ := ih\n    refine ⟨10 * k + (-1 : ℤ) ^ n, ?_⟩\n    simp only [pow_succ]\n    calc\n      (10 : ℤ) ^ n * 10 - (-1 : ℤ) ^ n * (-1) =\n          10 * ((10 : ℤ) ^ n - (-1 : ℤ) ^ n) + 11 * (-1 : ℤ) ^ n := by ring\n      _ = _ := by rw [hk]; ring"
+        },
+        {
+          "kind": "tactic",
+          "tactic": "convert (sub_dvd_pow_sub_pow (10 : ℤ) (-1 : ℤ) n) using 1 <;> norm_num"
+        }
+      ],
+      "status": "RETURNED",
+      "elapsedMs": 20110,
+      "evidenceId": "ev_b4eef72c90367502a4159fb9b07e84dffe4c5275d95f9da0b222481f8109427b"
+    }
+  ],
+  "attempts": [
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.230\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.231\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"n : Nat\\\\n⊢ Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))\\\",\\\"target\\\":\\\"Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))\\\",\\\"targetArgs\\\":[\\\"Int\\\",\\\"Int.instDvd\\\",\\\"11\\\",\\\"HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n)\\\"],\\\"targetHead\\\":\\\"Dvd.dvd\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":16,\"line\":18},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":18},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.230\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null}],\"id\":\"_uniq.231\",\"omitted_implementation_details\":1,\"pretty\":\"n : Nat\\n⊢ Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))\",\"target\":\"Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))\",\"targetArgs\":[\"Int\",\"Int.instDvd\",\"11\",\"HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n)\"],\"targetHead\":\"Dvd.dvd\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 18
+          },
+          "end": {
+            "column": 16,
+            "line": 18
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 18
+          },
+          "end": {
+            "column": 16,
+            "line": 18
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.230",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "n",
+                  "type": "Nat",
+                  "typeHead": "Nat",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.231",
+              "omitted_implementation_details": 1,
+              "pretty": "n : Nat\n⊢ Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))",
+              "target": "Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))",
+              "targetArgs": [
+                "Int",
+                "Int.instDvd",
+                "11",
+                "HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n)"
+              ],
+              "targetHead": "Dvd.dvd",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 1,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "4c5f8c8e442a1915b1ec1757c2e0c6c0fb0675a5a62bd70f968024fb356c6ef8",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": false,
+        "importMs": 1491,
+        "elaborationMs": 27,
+        "artifactCount": 10088
+      },
+      "elapsedMs": 2951,
+      "sequence": 1,
+      "kind": "state",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/attempts/0001-state.lean",
+      "sourceHash": "ba0102f6e94857188033464cab7763683b4ca15285b623b9fa5dbd73ba703c03",
+      "evidenceId": "ev_c5af5e2d1176913d102a5d1fb365844d769177199df0b3c35797217e570de68c"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":15,\"line\":29},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":29},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_CLOSED:{\\\"node_id\\\":\\\"n0\\\"}\",\"endPos\":{\"column\":15,\"line\":29},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":29},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":15,\"line\":29},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":29},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[],\"node_id\":\"n0\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/attempts/0002-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 29
+          },
+          "end": {
+            "column": 15,
+            "line": 29
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_CLOSED:{\"node_id\":\"n0\"}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/attempts/0002-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 29
+          },
+          "end": {
+            "column": 15,
+            "line": 29
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/attempts/0002-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 29
+          },
+          "end": {
+            "column": 15,
+            "line": 29
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [
+        {
+          "node_id": "n0"
+        }
+      ],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 2,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "b0f0b805289dcfa563881c8c6e106520a1e37a4cdf201c7fbe12c691da9391e7",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 30,
+        "elaborationMs": 45,
+        "artifactCount": 10088
+      },
+      "elapsedMs": 75,
+      "sequence": 2,
+      "kind": "candidate",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/attempts/0002-candidate.lean",
+      "sourceHash": "adacc4904c0e75fe3cdc6188b1ccca64fcd44697d9481641f581d62eb81761e6",
+      "evidenceId": "ev_ef36b4bcd31dfc9b61a412f1739275dda7dd8ccb77c3a48a9168eac287518ce8"
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"induction_11div10tonmn1ton\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (n : Nat), Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":37,\"line\":30},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/attempts/0003-final.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":30},\"severity\":\"information\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 1748,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Quot.sound\"],\"declaration\":\"induction_11div10tonmn1ton\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (n : Nat), Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))\",\"universe_parameters\":[],\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/attempts/0003-final.lean",
+          "start": {
+            "column": 0,
+            "line": 30
+          },
+          "end": {
+            "column": 37,
+            "line": 30
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "declaration": "induction_11div10tonmn1ton",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (n : Nat), Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))",
+          "universe_parameters": [],
+          "version": 1
+        }
+      ],
+      "unparsed": [],
+      "sequence": 3,
+      "kind": "final",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/attempts/0003-final.lean",
+      "sourceHash": "32f26557b88a7659af161f2f57c8554398a45b4481695359b6b1d8da4099c6fe",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_e5eae8529c504aaa972ef84edc62a53a79964fbbbf58cd6100a282880d97b49f"
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\",\\\"Quot.sound\\\"],\\\"declaration\\\":\\\"induction_11div10tonmn1ton\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"∀ (n : Nat), Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":37,\"line\":30},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/attempts/0004-recheck.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":30},\"severity\":\"information\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "elapsedMs": 1706,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_AUDIT:{\"axioms\":[\"propext\",\"Quot.sound\"],\"declaration\":\"induction_11div10tonmn1ton\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"∀ (n : Nat), Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))\",\"universe_parameters\":[],\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/attempts/0004-recheck.lean",
+          "start": {
+            "column": 0,
+            "line": 30
+          },
+          "end": {
+            "column": 37,
+            "line": 30
+          },
+          "category": "compiler_error"
+        }
+      ],
+      "states": [],
+      "closed": [],
+      "audits": [
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "declaration": "induction_11div10tonmn1ton",
+          "kernel_checked": true,
+          "kind": "theorem",
+          "passed": true,
+          "type": "∀ (n : Nat), Dvd.dvd.{0} 11 (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} 10 n) (HPow.hPow.{0, 0, 0} (-1) n))",
+          "universe_parameters": [],
+          "version": 1
+        }
+      ],
+      "unparsed": [],
+      "sequence": 4,
+      "kind": "recheck",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton/attempts/0004-recheck.lean",
+      "sourceHash": "32f26557b88a7659af161f2f57c8554398a45b4481695359b6b1d8da4099c6fe",
+      "backend": "fresh-lean-cli",
+      "evidenceId": "ev_502e32b2dd04ffe7030a9a02487d44360089a9dd2b01652e748300215b879306"
+    }
+  ],
+  "category": "induction",
+  "method": "codex",
+  "effectiveImports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+  ],
+  "effectiveOpens": [
+    "BigOperators Real Nat Topology Rat"
+  ],
+  "cleanupAssessment": {
+    "status": "closed",
+    "exploration": {
+      "ownership": "engine",
+      "status": "closed",
+      "retryAttempted": false
+    },
+    "provider": {
+      "status": "closed",
+      "retryAttempted": true,
+      "entries": []
+    }
+  },
+  "artifactDir": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_11div10tonmn1ton",
+  "invocationElapsedMs": 26638
+}

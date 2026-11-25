@@ -1,0 +1,61 @@
+{
+  "id": "p0",
+  "nodeId": "n0",
+  "stateHash": "83b6cfb44c322c3ed6d0bd8b8e1a239315e949bc939ffaad2c3d1985e2b4dc37",
+  "round": 0,
+  "requestDigest": "579d92d8867ea6c29d8d036ee906962a518c26d70e66d1d444551f26647f733d",
+  "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_nfactltnexpnm1ngt3/proposals/0001-context.json",
+  "modelTokens": 20203,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "codex-v1",
+  "provider": "codex-cli",
+  "usage": {
+    "input_tokens": 16444,
+    "output_tokens": 3759,
+    "cached_input_tokens": 0,
+    "reasoning_output_tokens": 3000
+  },
+  "metadata": {
+    "provider": "codex-cli",
+    "model": null,
+    "modelSelection": "codex-configured-default",
+    "promptDigest": "b57bc8285edc00089f142f35491661df23b555fb65fb0c9802c232d2de3c4ceb",
+    "promptVersion": 1,
+    "toolPolicy": "disabled",
+    "ephemeral": true,
+    "cliVersion": "codex-cli 0.171.0",
+    "eventTypes": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "responseDigest": "0d163d4057ef6a2f10746897224da070a98fc6290079dcdc7ce9e1ba4ca710c0",
+    "providerErrors": [],
+    "elapsedMs": 52319,
+    "exitCode": 0,
+    "signal": null,
+    "stdoutDigest": "0d163d4057ef6a2f10746897224da070a98fc6290079dcdc7ce9e1ba4ca710c0",
+    "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrDiagnostic": ""
+  },
+  "proposals": [
+    {
+      "kind": "tactic",
+      "tactic": "revert h₀\ninduction n with\n| zero =>\n  intro hn\n  omega\n| succ k ih =>\n  intro hn\n  by_cases hk : 3 ≤ k\n  · have hPow : k ^ (k - 1) ≤ k.succ ^ (k - 1) := by\n      first\n      | exact Nat.pow_le_pow_left (Nat.le_succ k) _\n      | gcongr <;> exact Nat.le_succ k\n    calc\n      k.succ.factorial = k.succ * k.factorial := Nat.factorial_succ k\n      _ < k.succ * k.succ ^ (k - 1) :=\n        mul_lt_mul_of_pos_left (lt_of_lt_of_le (ih hk) hPow) (Nat.zero_lt_succ k)\n      _ = k.succ ^ (k - 1 + 1) := (pow_succ' _ _).symm\n      _ = k.succ ^ (k.succ - 1) := congrArg (fun e : Nat => k.succ ^ e) (by omega)\n  · have he : k = 2 := by omega\n    subst k\n    decide"
+    },
+    {
+      "kind": "have",
+      "name": "factorial_bound",
+      "type": "∀ k m : Nat, k + 2 ≤ m → (k + 2).factorial ≤ 2 * m ^ k"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "have factorial_bound : ∀ k m : Nat, k + 2 ≤ m → (k + 2).factorial ≤ 2 * m ^ k := by\n  intro k\n  induction k with\n  | zero =>\n    intro m hm\n    change (2 : Nat).factorial ≤ 2 * m ^ 0\n    simpa only [pow_zero, mul_one] using (show (2 : Nat).factorial ≤ 2 by decide)\n  | succ k ih =>\n    intro m hm\n    have hk : k + 2 ≤ m := by omega\n    calc\n      (k.succ + 2).factorial = (k.succ + 2) * (k + 2).factorial := Nat.factorial_succ (k + 2)\n      _ ≤ m * (2 * m ^ k) := Nat.mul_le_mul hm (ih m hk)\n      _ = 2 * m ^ k.succ := by\n        rw [pow_succ]\n        ac_rfl\nhave hn : n - 2 + 2 = n := by omega\nhave hb := factorial_bound (n - 2) n (by omega)\nrw [hn] at hb\nhave hp : 0 < n := by omega\ncalc\n  n.factorial ≤ 2 * n ^ (n - 2) := hb\n  _ < n * n ^ (n - 2) := mul_lt_mul_of_pos_right (by omega) (pow_pos hp _)\n  _ = n ^ (n - 2 + 1) := (pow_succ' _ _).symm\n  _ = n ^ (n - 1) := congrArg (fun e : Nat => n ^ e) (by omega)"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 52321,
+  "evidenceId": "ev_1e10876d6473b0d9aaa2a5786940332843f65148b037cfd18856b27a4e017ecf"
+}

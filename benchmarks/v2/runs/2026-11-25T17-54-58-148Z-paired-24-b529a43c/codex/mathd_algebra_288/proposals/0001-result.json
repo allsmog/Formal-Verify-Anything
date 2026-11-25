@@ -1,0 +1,66 @@
+{
+  "id": "p0",
+  "nodeId": "n0",
+  "stateHash": "4648784a701dfa6eaa248904b4aac81c2ef98feed08ec16e92b181c50a29354a",
+  "round": 0,
+  "requestDigest": "4e706ae9e30e71d7298ab98b946b178336220d79a03e8ada8e561ba23a7f92e6",
+  "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_288/proposals/0001-context.json",
+  "modelTokens": 18721,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "codex-v1",
+  "provider": "codex-cli",
+  "usage": {
+    "input_tokens": 17039,
+    "output_tokens": 1682,
+    "cached_input_tokens": 0,
+    "reasoning_output_tokens": 960
+  },
+  "metadata": {
+    "provider": "codex-cli",
+    "model": null,
+    "modelSelection": "codex-configured-default",
+    "promptDigest": "53db6bb94c292fbc4a30ab55c3f661634d6630b3a55e81e4068b0f725630bae4",
+    "promptVersion": 1,
+    "toolPolicy": "disabled",
+    "ephemeral": true,
+    "cliVersion": "codex-cli 0.171.0",
+    "eventTypes": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "responseDigest": "5abdbcacc48335c785c7b5350fd2e4b27b24e0dbadccf5f6ed339605fce00048",
+    "providerErrors": [],
+    "elapsedMs": 23844,
+    "exitCode": 0,
+    "signal": null,
+    "stdoutDigest": "5abdbcacc48335c785c7b5350fd2e4b27b24e0dbadccf5f6ed339605fce00048",
+    "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrDiagnostic": ""
+  },
+  "proposals": [
+    {
+      "kind": "tactic",
+      "tactic": "have hy : y = -6 := by\n  rw [abs_of_neg h₀.2] at h₁\n  linarith only [h₁]\nhave hd := Real.sq_sqrt (add_nonneg (sq_nonneg (x - 8)) (sq_nonneg (y - 3)))\nrw [h₂, hy] at hd\nhave hf : (x + 4) * (x - 20) = 0 := by\n  nlinarith only [hd]\nhave hx : x = -4 := by\n  rcases mul_eq_zero.mp hf with h | h\n  · linarith only [h]\n  · linarith only [h, h₀.1]\nhave hn := Real.sq_sqrt (add_nonneg (sq_nonneg x) (sq_nonneg y))\nrw [h₃, Real.sq_sqrt (show 0 ≤ (n : ℝ) from n.property), hx, hy] at hn\napply Subtype.ext\nchange (n : ℝ) = ((52 : NNReal) : ℝ)\nfirst | exact_mod_cast (show (n : ℝ) = 52 by norm_num at hn ⊢; exact hn) | norm_num at hn ⊢ <;> assumption"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "have hy : y = -6 := by\n  simpa only [abs_of_neg h₀.2, neg_eq_iff_eq_neg] using h₁\nhave hd := Real.sq_sqrt (add_nonneg (sq_nonneg (x - 8)) (sq_nonneg (y - 3)))\nrw [h₂, hy] at hd\nhave hx : x = -4 := by\n  have hf : (x + 4) * (x - 20) = 0 := by nlinarith only [hd]\n  have hne : x - 20 ≠ 0 := by linarith only [h₀.1]\n  have hz := (mul_eq_zero.mp hf).resolve_right hne\n  linarith only [hz]\nhave hr : (n : ℝ) = 52 := by\n  have hn := congrArg (fun z : ℝ => z ^ 2) h₃\n  change (Real.sqrt (x ^ 2 + y ^ 2)) ^ 2 = (Real.sqrt (n : ℝ)) ^ 2 at hn\n  rw [Real.sq_sqrt (add_nonneg (sq_nonneg x) (sq_nonneg y)), Real.sq_sqrt (show 0 ≤ (n : ℝ) by positivity)] at hn\n  rw [← hn, hx, hy]\n  norm_num\nexact_mod_cast hr"
+    },
+    {
+      "kind": "have",
+      "name": "hcoords",
+      "type": "x = -4 ∧ y = -6"
+    },
+    {
+      "kind": "have",
+      "name": "hn_real",
+      "type": "(n : ℝ) = 52"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 23846,
+  "evidenceId": "ev_11e66e39a409ca38ab66256a6fa800c33deb5dfb9a3ec0ebbed3d560c34526c6"
+}

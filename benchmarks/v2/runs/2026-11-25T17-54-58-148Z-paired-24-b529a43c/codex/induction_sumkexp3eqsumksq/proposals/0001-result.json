@@ -1,0 +1,57 @@
+{
+  "id": "p0",
+  "nodeId": "n0",
+  "stateHash": "e80122dd12da8d383fb39cc1e222635c2f89b5627d10cfa4be0ba10448993971",
+  "round": 0,
+  "requestDigest": "e9706a5d4f292ea6251c651ce3aee342eba56243459dbfb0b0f2e4e5e5f5c71f",
+  "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/proposals/0001-context.json",
+  "modelTokens": 18303,
+  "usageKnown": true,
+  "tokenBudgetExceeded": false,
+  "policy": "codex-v1",
+  "provider": "codex-cli",
+  "usage": {
+    "input_tokens": 16411,
+    "output_tokens": 1892,
+    "cached_input_tokens": 0,
+    "reasoning_output_tokens": 1478
+  },
+  "metadata": {
+    "provider": "codex-cli",
+    "model": null,
+    "modelSelection": "codex-configured-default",
+    "promptDigest": "9fd1ac483fb2c78d347bc35cab15bad37ee3a74559d79536f09e48226328556f",
+    "promptVersion": 1,
+    "toolPolicy": "disabled",
+    "ephemeral": true,
+    "cliVersion": "codex-cli 0.171.0",
+    "eventTypes": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "responseDigest": "27574ebb6b1afdf7f3d01063321e436e637160f711f1d4bad62835c99902c011",
+    "providerErrors": [],
+    "elapsedMs": 31238,
+    "exitCode": 0,
+    "signal": null,
+    "stdoutDigest": "27574ebb6b1afdf7f3d01063321e436e637160f711f1d4bad62835c99902c011",
+    "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrDiagnostic": ""
+  },
+  "proposals": [
+    {
+      "kind": "have",
+      "name": "hsum",
+      "type": "∀ m : Nat, 2 * (Finset.range m).sum (fun k => k) + m = m ^ 2"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "have hsum : ∀ m : Nat, 2 * (Finset.range m).sum (fun k => k) + m = m ^ 2 := by\n  intro m\n  induction m with\n  | zero => norm_num [Finset.range_zero]\n  | succ m ih =>\n      rw [Finset.sum_range_succ]\n      calc\n        2 * ((Finset.range m).sum (fun k => k) + m) + (m + 1) =\n            (2 * (Finset.range m).sum (fun k => k) + m) + (2 * m + 1) := by ring\n        _ = (m + 1) ^ 2 := by rw [ih] <;> ring\ninduction n with\n| zero => norm_num [Finset.range_zero]\n| succ m ih =>\n    rw [Finset.sum_range_succ, Finset.sum_range_succ, ih]\n    calc\n      ((Finset.range m).sum (fun k => k)) ^ 2 + m ^ 3 =\n          ((Finset.range m).sum (fun k => k)) ^ 2 +\n            m * (2 * (Finset.range m).sum (fun k => k) + m) := by\n        rw [hsum m] <;> ring\n      _ = ((Finset.range m).sum (fun k => k) + m) ^ 2 := by ring"
+    }
+  ],
+  "status": "RETURNED",
+  "elapsedMs": 31239,
+  "evidenceId": "ev_27d1cc3d6d3bc2ea5dd79a01344cdd8f09f1fbc78cf4e27b1e6a69ab8356d047"
+}

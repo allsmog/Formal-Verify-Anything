@@ -1,0 +1,38 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [],
+    "id": "_uniq.1746",
+    "omitted_implementation_details": 1,
+    "pretty": "case zero\n⊢ Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} 8 (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 0) 4))",
+    "target": "Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} 8 (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 0) 4))",
+    "targetArgs": [
+      "Nat",
+      "Nat.instDvd",
+      "12",
+      "HAdd.hAdd.{0, 0, 0} 8 (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 0) 4)"
+    ],
+    "targetHead": "Dvd.dvd",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 35,
+    "maxDepth": 8,
+    "depth": 3,
+    "modelTokensRemaining": 0,
+    "remainingMs": 296122
+  },
+  "feedback": []
+}

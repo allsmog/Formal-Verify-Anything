@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"tactic 'aesop' failed, made no progress\\nInitial goal:\\n  m n : ℕ\\n  h₀ : Even m\\n  h₁ : Even n\\n  h₂ : m - n = 2\\n  h₃ : m * n = 288\\n  ⊢ m = 18\",\"endPos\":{\"column\":7,\"line\":23},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0014-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":23},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "tactic 'aesop' failed, made no progress\nInitial goal:\n  m n : ℕ\n  h₀ : Even m\n  h₁ : Even n\n  h₂ : m - n = 2\n  h₃ : m * n = 288\n  ⊢ m = 18",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0014-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 23
+      },
+      "end": {
+        "column": 7,
+        "line": 23
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 14,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "1dd993f1adb1f7af0c2449757548aa8662c0ccfd5c308c10370008829b4ea667",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 35,
+    "elaborationMs": 259,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 296,
+  "sequence": 14,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_521/attempts/0014-candidate.lean",
+  "sourceHash": "27824e79c58597766b630b539f00d6ff78dff910057af429ad5a8447f62391ab",
+  "evidenceId": "ev_2ad696e9e4114342d4a31783db8ab1cfe3e3c125007304e6ea128fdffe5324d4"
+}

@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `rfl` failed: The left-hand side\\n  p\\nis not definitionally equal to the right-hand side\\n  a ^ p - a\\n\\np a : ℕ\\nh₀ : 0 < a\\nh₁ : Nat.Prime p\\n⊢ p ∣ a ^ p - a\",\"endPos\":{\"column\":5,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":21},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `rfl` failed: The left-hand side\n  p\nis not definitionally equal to the right-hand side\n  a ^ p - a\n\np a : ℕ\nh₀ : 0 < a\nh₁ : Nat.Prime p\n⊢ p ∣ a ^ p - a",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0003-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 21
+      },
+      "end": {
+        "column": 5,
+        "line": 21
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 3,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "b70b88fa4d8ec73ee2552eb46e3edd675733970b58bcbab8b634312df90a9cb7",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 74,
+    "elaborationMs": 12,
+    "artifactCount": 10116
+  },
+  "elapsedMs": 87,
+  "sequence": 3,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/induction_pprime_pdvdapowpma/attempts/0003-candidate.lean",
+  "sourceHash": "48291d7beb229059b635b95acdd22ee06c1bf1e7cde00155f287ad4892429f3c",
+  "evidenceId": "ev_2a33b1af631fe958783e8b23c22b464b7d34280ce14348cca4fc742905dd2924"
+}

@@ -1,0 +1,49 @@
+{
+  "exitCode": 1,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"Tactic `assumption` failed\\n\\n⊢ 5 ^ 30 % 7 = 1\",\"endPos\":{\"column\":12,\"line\":17},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_229/attempts/0002-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":17},\"severity\":\"error\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Tactic `assumption` failed\n\n⊢ 5 ^ 30 % 7 = 1",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_229/attempts/0002-candidate.lean",
+      "start": {
+        "column": 2,
+        "line": 17
+      },
+      "end": {
+        "column": 12,
+        "line": 17
+      },
+      "category": "missing_hypothesis_or_instance"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [],
+  "unparsed": [],
+  "backend": "lean-persistent-v1",
+  "backendMetadata": {
+    "requestId": 2,
+    "generation": 1,
+    "restarts": 0,
+    "sourceSha256": "4d107cb2033bf60b184b8b4508973a8cb9fb1b7f9f056131f2d132c681bbafd4",
+    "leanVersion": "4.24.0",
+    "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+    "cacheHit": true,
+    "importMs": 46,
+    "elaborationMs": 13,
+    "artifactCount": 10088
+  },
+  "elapsedMs": 61,
+  "sequence": 2,
+  "kind": "candidate",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_229/attempts/0002-candidate.lean",
+  "sourceHash": "6f246b041eeb48b2f951e3ab81ac4753cd4ccd80243c8d3a5a1968d9c8e466f1",
+  "evidenceId": "ev_e29fd4d7cd02aed33ba919e8f9cde6b5dca6d78874aa2b271979429d3f8e6361"
+}

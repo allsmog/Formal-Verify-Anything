@@ -1,0 +1,62 @@
+{
+  "id": "p2",
+  "nodeId": "n2",
+  "stateHash": "6c67da369f9cd0906d25d8c6227ddadd6b85853c4c4a60b9f34d402f9173241a",
+  "round": 0,
+  "requestDigest": "91fe57564045c31ed16750a77b9db21922ffadc925450b2286289f1e3d75b01e",
+  "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/mathd_algebra_332/proposals/0003-context.json",
+  "modelTokens": 17606,
+  "usageKnown": true,
+  "tokenBudgetExceeded": true,
+  "policy": "codex-v1",
+  "provider": "codex-cli",
+  "usage": {
+    "input_tokens": 16776,
+    "output_tokens": 830,
+    "cached_input_tokens": 0,
+    "reasoning_output_tokens": 629
+  },
+  "metadata": {
+    "provider": "codex-cli",
+    "model": null,
+    "modelSelection": "codex-configured-default",
+    "promptDigest": "76c0f873b03e60bafa5e1ac559253d96177554878ae215699a99e80c5afa83b7",
+    "promptVersion": 1,
+    "toolPolicy": "disabled",
+    "ephemeral": true,
+    "cliVersion": "codex-cli 0.171.0",
+    "eventTypes": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "responseDigest": "d4dc4b871d98b9dacc8f6aaf9cef94092d6404c9a703e83f0380602451dc41a0",
+    "providerErrors": [],
+    "elapsedMs": 14642,
+    "exitCode": 0,
+    "signal": null,
+    "stdoutDigest": "d4dc4b871d98b9dacc8f6aaf9cef94092d6404c9a703e83f0380602451dc41a0",
+    "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrDiagnostic": ""
+  },
+  "proposals": [
+    {
+      "kind": "tactic",
+      "tactic": "calc\n  x ^ 2 + y ^ 2 = 4 * ((x + y) / 2) ^ 2 - 2 * (x * y) := by ring\n  _ = 158 := by norm_num [h₀, hprod]"
+    },
+    {
+      "kind": "have",
+      "name": "hsum",
+      "type": "x + y = 14"
+    },
+    {
+      "kind": "tactic",
+      "tactic": "have hsum : x + y = 14 := by linarith only [h₀]\nhave hsq := congrArg (fun t : ℝ => t ^ 2) hsum\nnlinarith only [hsq, hprod]"
+    }
+  ],
+  "status": "REJECTED",
+  "failure": "model_token_budget",
+  "elapsedMs": 14645,
+  "evidenceId": "ev_9716a03ce9c117cdf25724da480a740e841468130b35bd91e18ff08526e2d394"
+}

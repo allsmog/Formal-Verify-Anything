@@ -1,0 +1,954 @@
+{
+  "id": "induction_sumkexp3eqsumksq",
+  "tier": 2,
+  "status": "FAILED",
+  "proofFile": null,
+  "engineVersion": "fva-search-v2",
+  "validationPolicy": "lean-kernel-v2-unused-variable-lint",
+  "statementHash": "8c66b1e79dde1026d0f5fb1cf1e47f5f0e792f1607ae914ff39c4a9ae65ef825",
+  "provenance": {
+    "dataset": "miniF2F Lean 4 v2 disjoint holdout",
+    "split": "test",
+    "repository": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "5746b7d6c47855ce1294bed87329618ff7f1bc31",
+    "path": "MiniF2F/Test/induction_sumkexp3eqsumksq.lean",
+    "url": "https://github.com/yangky11/miniF2F-lean4/blob/5746b7d6c47855ce1294bed87329618ff7f1bc31/MiniF2F/Test/induction_sumkexp3eqsumksq.lean",
+    "sourceFileSha256": "d5d2869282c2d4cf0452e68d1630244d822f81434d2858dfb432a3472301d712",
+    "statementSha256": "8c66b1e79dde1026d0f5fb1cf1e47f5f0e792f1607ae914ff39c4a9ae65ef825",
+    "originalImports": [
+      "Mathlib"
+    ],
+    "originalOpens": [
+      "BigOperators Real Nat Topology Rat"
+    ],
+    "selectionRankWithinStratum": 3,
+    "selectionKeySha256": "27d2e8f337e12286009ca055625430cb0c59f49f18ba5f9eb20c45802c0f2a6b",
+    "executionProfileSha256": "5265e241c25e5d1653c558148653058824c93265f8d52d800428481936a2cab1",
+    "executionImportReason": "finite sums/products and the original range or Icc notation"
+  },
+  "metrics": {
+    "compilerCalls": 4,
+    "steps": 2,
+    "maxDepth": 1,
+    "elapsedMs": 92400,
+    "firstCandidateSolved": false,
+    "modelTokens": 54477,
+    "modelTokensKnown": 54477,
+    "modelUsageComplete": true,
+    "proposerCalls": 3,
+    "finalCandidates": 0
+  },
+  "budget": {
+    "maxCompilerCalls": 64,
+    "maxSteps": 64,
+    "maxProposalRounds": 3,
+    "maxDepth": 8,
+    "callTimeoutMs": 30000,
+    "theoremTimeoutMs": 300000,
+    "heartbeats": 200000,
+    "maxModelTokens": 50000
+  },
+  "policy": "codex-v1",
+  "failure": "model_token_budget",
+  "exploration": {
+    "backend": "lean-persistent-v1",
+    "cleanup": {
+      "ownership": "engine",
+      "status": "closed"
+    }
+  },
+  "verification": null,
+  "tree": {
+    "finalPlan": {
+      "id": "n0",
+      "depth": 0,
+      "kind": "hole",
+      "children": []
+    },
+    "nodes": [
+      {
+        "id": "n0",
+        "visit": 0,
+        "depth": 0,
+        "stateHash": "e80122dd12da8d383fb39cc1e222635c2f89b5627d10cfa4be0ba10448993971",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.592",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            }
+          ],
+          "id": "_uniq.593",
+          "omitted_implementation_details": 1,
+          "pretty": "n : Nat\n⊢ Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)",
+          "target": "Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)",
+          "targetArgs": [
+            "Nat",
+            "∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3",
+            "HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2"
+          ],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        },
+        "status": "ELABORATOR_OBSERVED",
+        "evidenceId": "ev_f40abc14df7fb57212420fd7548ccb96aaceb568ea40b7770c6249e4af7e0de9"
+      },
+      {
+        "id": "n1",
+        "visit": 1,
+        "depth": 1,
+        "stateHash": "260aa2caccf697869b51f0dd90b1cc5dd3ac79eff2e455538bca89f90abc80eb",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.592",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            }
+          ],
+          "id": "_uniq.973",
+          "omitted_implementation_details": 1,
+          "pretty": "n : Nat\n⊢ ∀ (m : Nat),\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)",
+          "target": "∀ (m : Nat), Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)",
+          "targetArgs": [],
+          "targetHead": "forall",
+          "universe_parameters": []
+        },
+        "status": "CLOSED_LOCAL",
+        "evidenceId": "ev_bcd4abfb70e941bfbbcda0c251abc40f6dc37340763161aa9d7b268e06aa6bf9"
+      },
+      {
+        "id": "n2",
+        "visit": 2,
+        "depth": 1,
+        "stateHash": "e3ea1bdefd3cc976e37eadbca54f4f97261b625acfb79c311d53dfebc96d4f6b",
+        "goal": {
+          "has_metavariables": false,
+          "hypotheses": [
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.592",
+              "isProp": false,
+              "is_implementation_detail": false,
+              "name": "n",
+              "type": "Nat",
+              "typeHead": "Nat",
+              "value": null
+            },
+            {
+              "binder": "explicit",
+              "dependencies": [],
+              "has_metavariables": false,
+              "id": "_uniq.974",
+              "isProp": true,
+              "is_implementation_detail": false,
+              "name": "hsum",
+              "type": "∀ (m : Nat), Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)",
+              "typeHead": "forall",
+              "value": null
+            }
+          ],
+          "id": "_uniq.975",
+          "omitted_implementation_details": 1,
+          "pretty": "n : Nat\nhsum :\n  ∀ (m : Nat),\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)\n⊢ Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)",
+          "target": "Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)",
+          "targetArgs": [],
+          "targetHead": "Eq",
+          "universe_parameters": []
+        },
+        "status": "EXHAUSTED",
+        "evidenceId": "ev_506373d45fb1c62dcd48b5ccc5a24cd4715c8da4118c802f5937a8223bef960e"
+      }
+    ],
+    "branches": [
+      {
+        "parent": "n0",
+        "visit": 0,
+        "stateHash": "e80122dd12da8d383fb39cc1e222635c2f89b5627d10cfa4be0ba10448993971",
+        "proposal": {
+          "kind": "have",
+          "name": "hsum",
+          "type": "∀ m : Nat, 2 * (Finset.range m).sum (fun k => k) + m = m ^ 2"
+        },
+        "beforeHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a",
+        "status": "PRUNED",
+        "children": [
+          "n1",
+          "n2"
+        ],
+        "failure": "model_token_budget",
+        "restoredHash": "effb21bedbb01e118e12b154e97a40009553ee79603d0603d82bbbcecadf336a"
+      },
+      {
+        "parent": "n1",
+        "visit": 1,
+        "stateHash": "260aa2caccf697869b51f0dd90b1cc5dd3ac79eff2e455538bca89f90abc80eb",
+        "proposal": {
+          "kind": "tactic",
+          "tactic": "intro m\ninduction m with\n| zero => simp\n| succ m ih =>\n  rw [Finset.sum_range_succ]\n  calc\n    2 * ((Finset.range m).sum (fun k => k) + m) + (m + 1) =\n        (2 * (Finset.range m).sum (fun k => k) + m) + (2 * m + 1) := by ring\n    _ = (m + 1) ^ 2 := by rw [ih]; ring"
+        },
+        "beforeHash": "cd9ecc442a416292467cac97cc9847339a9448d83d5f5bd71ab4ee356dbbec7d",
+        "status": "PRUNED",
+        "children": [],
+        "evidenceId": "ev_a191ff9fb0d3640964ebcb560bde30ed26ecebd3fe1798ecd9b9018eb2d976ec",
+        "failure": "model_token_budget",
+        "restoredHash": "cd9ecc442a416292467cac97cc9847339a9448d83d5f5bd71ab4ee356dbbec7d"
+      }
+    ]
+  },
+  "finalCandidates": [],
+  "proposerCalls": [
+    {
+      "id": "p0",
+      "nodeId": "n0",
+      "stateHash": "e80122dd12da8d383fb39cc1e222635c2f89b5627d10cfa4be0ba10448993971",
+      "round": 0,
+      "requestDigest": "e9706a5d4f292ea6251c651ce3aee342eba56243459dbfb0b0f2e4e5e5f5c71f",
+      "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/proposals/0001-context.json",
+      "modelTokens": 18303,
+      "usageKnown": true,
+      "tokenBudgetExceeded": false,
+      "policy": "codex-v1",
+      "provider": "codex-cli",
+      "usage": {
+        "input_tokens": 16411,
+        "output_tokens": 1892,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 1478
+      },
+      "metadata": {
+        "provider": "codex-cli",
+        "model": null,
+        "modelSelection": "codex-configured-default",
+        "promptDigest": "9fd1ac483fb2c78d347bc35cab15bad37ee3a74559d79536f09e48226328556f",
+        "promptVersion": 1,
+        "toolPolicy": "disabled",
+        "ephemeral": true,
+        "cliVersion": "codex-cli 0.171.0",
+        "eventTypes": [
+          "thread.started",
+          "turn.started",
+          "item.completed",
+          "turn.completed"
+        ],
+        "responseDigest": "27574ebb6b1afdf7f3d01063321e436e637160f711f1d4bad62835c99902c011",
+        "providerErrors": [],
+        "elapsedMs": 31238,
+        "exitCode": 0,
+        "signal": null,
+        "stdoutDigest": "27574ebb6b1afdf7f3d01063321e436e637160f711f1d4bad62835c99902c011",
+        "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderrDiagnostic": ""
+      },
+      "proposals": [
+        {
+          "kind": "have",
+          "name": "hsum",
+          "type": "∀ m : Nat, 2 * (Finset.range m).sum (fun k => k) + m = m ^ 2"
+        },
+        {
+          "kind": "tactic",
+          "tactic": "have hsum : ∀ m : Nat, 2 * (Finset.range m).sum (fun k => k) + m = m ^ 2 := by\n  intro m\n  induction m with\n  | zero => norm_num [Finset.range_zero]\n  | succ m ih =>\n      rw [Finset.sum_range_succ]\n      calc\n        2 * ((Finset.range m).sum (fun k => k) + m) + (m + 1) =\n            (2 * (Finset.range m).sum (fun k => k) + m) + (2 * m + 1) := by ring\n        _ = (m + 1) ^ 2 := by rw [ih] <;> ring\ninduction n with\n| zero => norm_num [Finset.range_zero]\n| succ m ih =>\n    rw [Finset.sum_range_succ, Finset.sum_range_succ, ih]\n    calc\n      ((Finset.range m).sum (fun k => k)) ^ 2 + m ^ 3 =\n          ((Finset.range m).sum (fun k => k)) ^ 2 +\n            m * (2 * (Finset.range m).sum (fun k => k) + m) := by\n        rw [hsum m] <;> ring\n      _ = ((Finset.range m).sum (fun k => k) + m) ^ 2 := by ring"
+        }
+      ],
+      "status": "RETURNED",
+      "elapsedMs": 31239,
+      "evidenceId": "ev_27d1cc3d6d3bc2ea5dd79a01344cdd8f09f1fbc78cf4e27b1e6a69ab8356d047"
+    },
+    {
+      "id": "p1",
+      "nodeId": "n1",
+      "stateHash": "260aa2caccf697869b51f0dd90b1cc5dd3ac79eff2e455538bca89f90abc80eb",
+      "round": 0,
+      "requestDigest": "71e01e568237c5ec84aa137c7033a816442534ba4b73c123bd96726879309044",
+      "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/proposals/0002-context.json",
+      "modelTokens": 17616,
+      "usageKnown": true,
+      "tokenBudgetExceeded": false,
+      "policy": "codex-v1",
+      "provider": "codex-cli",
+      "usage": {
+        "input_tokens": 16379,
+        "output_tokens": 1237,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 967
+      },
+      "metadata": {
+        "provider": "codex-cli",
+        "model": null,
+        "modelSelection": "codex-configured-default",
+        "promptDigest": "92dbdef409381484dc0280132263c130aff9d7ada84065603c30d705cee28122",
+        "promptVersion": 1,
+        "toolPolicy": "disabled",
+        "ephemeral": true,
+        "cliVersion": "codex-cli 0.171.0",
+        "eventTypes": [
+          "thread.started",
+          "turn.started",
+          "item.completed",
+          "turn.completed"
+        ],
+        "responseDigest": "37ea3255e85b720d56ff3166b34560734530bae4b831b5ed033587be20be7543",
+        "providerErrors": [],
+        "elapsedMs": 19689,
+        "exitCode": 0,
+        "signal": null,
+        "stdoutDigest": "37ea3255e85b720d56ff3166b34560734530bae4b831b5ed033587be20be7543",
+        "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderrDiagnostic": ""
+      },
+      "proposals": [
+        {
+          "kind": "tactic",
+          "tactic": "intro m\ninduction m with\n| zero => simp\n| succ m ih =>\n  rw [Finset.sum_range_succ]\n  calc\n    2 * ((Finset.range m).sum (fun k => k) + m) + (m + 1) =\n        (2 * (Finset.range m).sum (fun k => k) + m) + (2 * m + 1) := by ring\n    _ = (m + 1) ^ 2 := by rw [ih]; ring"
+        },
+        {
+          "kind": "tactic",
+          "tactic": "intro m\ninduction m with\n| zero => simp\n| succ m ih =>\n  simp only [Finset.sum_range_succ, Nat.succ_eq_add_one]\n  nlinarith only [ih]"
+        },
+        {
+          "kind": "tactic",
+          "tactic": "intro m\ninduction m with\n| zero => simp\n| succ m ih =>\n  rw [Finset.range_succ, Finset.sum_insert (by simp)]\n  simp only [Nat.succ_eq_add_one] at *\n  nlinarith only [ih]"
+        }
+      ],
+      "status": "RETURNED",
+      "elapsedMs": 19690,
+      "evidenceId": "ev_ab934ff2df67c91a98cd5bed09da9ff473f3b4c7abbda63e519c4423177c8aea"
+    },
+    {
+      "id": "p2",
+      "nodeId": "n2",
+      "stateHash": "e3ea1bdefd3cc976e37eadbca54f4f97261b625acfb79c311d53dfebc96d4f6b",
+      "round": 0,
+      "requestDigest": "82e5450fce2f60ae527308126bc2b819ad301afc50d801a342c34aa6db16d545",
+      "contextFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/proposals/0003-context.json",
+      "modelTokens": 18558,
+      "usageKnown": true,
+      "tokenBudgetExceeded": true,
+      "policy": "codex-v1",
+      "provider": "codex-cli",
+      "usage": {
+        "input_tokens": 16561,
+        "output_tokens": 1997,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 1722
+      },
+      "metadata": {
+        "provider": "codex-cli",
+        "model": null,
+        "modelSelection": "codex-configured-default",
+        "promptDigest": "2b399e98de977ce9a472dcd669cf1a290d165cf33f9461d3ed6eab39e62e161e",
+        "promptVersion": 1,
+        "toolPolicy": "disabled",
+        "ephemeral": true,
+        "cliVersion": "codex-cli 0.171.0",
+        "eventTypes": [
+          "thread.started",
+          "turn.started",
+          "item.completed",
+          "turn.completed"
+        ],
+        "responseDigest": "627f6faadacaa26b9faecb5fac4dd91cb3a38ef6521c4560e8391a2ae843ead1",
+        "providerErrors": [],
+        "elapsedMs": 32167,
+        "exitCode": 0,
+        "signal": null,
+        "stdoutDigest": "627f6faadacaa26b9faecb5fac4dd91cb3a38ef6521c4560e8391a2ae843ead1",
+        "stderrDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderrDiagnostic": ""
+      },
+      "proposals": [
+        {
+          "kind": "tactic",
+          "tactic": "induction n with\n| zero => simp\n| succ n ih =>\n  simp only [Finset.sum_range_succ, ih]\n  let s : Nat := Finset.sum (Finset.range n) (fun k => k)\n  change s ^ 2 + n ^ 3 = (s + n) ^ 2\n  have hs : 2 * s + n = n ^ 2 := hsum n\n  calc\n    s ^ 2 + n ^ 3 = s ^ 2 + n * (2 * s + n) := by\n      rw [hs] <;> ring\n    _ = (s + n) ^ 2 := by ring"
+        },
+        {
+          "kind": "tactic",
+          "tactic": "induction n with\n| zero => simp\n| succ n ih =>\n  rw [Finset.sum_range_succ, Finset.sum_range_succ, ih]\n  have h := congrArg (fun t : Nat => n * t) (hsum n)\n  nlinarith only [h]"
+        }
+      ],
+      "status": "REJECTED",
+      "failure": "model_token_budget",
+      "elapsedMs": 32168,
+      "evidenceId": "ev_62b998a2e3b3731528c5c08e54722930ee43fe740a63b9aeace3ff83d54d1b94"
+    }
+  ],
+  "attempts": [
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.592\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.593\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"n : Nat\\\\n⊢ Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)\\\",\\\"target\\\":\\\"Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)\\\",\\\"targetArgs\\\":[\\\"Nat\\\",\\\"∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3\\\",\\\"HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2\\\"],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n0\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n0\",\"endPos\":{\"column\":16,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0001-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":19},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.592\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null}],\"id\":\"_uniq.593\",\"omitted_implementation_details\":1,\"pretty\":\"n : Nat\\n⊢ Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)\",\"target\":\"Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)\",\"targetArgs\":[\"Nat\",\"∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3\",\"HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2\"],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n0\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 19
+          },
+          "end": {
+            "column": 16,
+            "line": 19
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n0",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0001-state.lean",
+          "start": {
+            "column": 2,
+            "line": 19
+          },
+          "end": {
+            "column": 16,
+            "line": 19
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.592",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "n",
+                  "type": "Nat",
+                  "typeHead": "Nat",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.593",
+              "omitted_implementation_details": 1,
+              "pretty": "n : Nat\n⊢ Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)",
+              "target": "Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)",
+              "targetArgs": [
+                "Nat",
+                "∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3",
+                "HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2"
+              ],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n0",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 1,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "c1d92cccccca7c31ed09b7648d279ffe00d429273cc509c46cc7f62440c32601",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": false,
+        "importMs": 6262,
+        "elaborationMs": 54,
+        "artifactCount": 10204
+      },
+      "elapsedMs": 8939,
+      "sequence": 1,
+      "kind": "state",
+      "nodeId": "n0",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0001-state.lean",
+      "sourceHash": "22873fcd3411887ec145d187175ad723beee7bb9330879d88b206ccb74aba3e6",
+      "evidenceId": "ev_f40abc14df7fb57212420fd7548ccb96aaceb568ea40b7770c6249e4af7e0de9"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.592\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.973\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"n : Nat\\\\n⊢ ∀ (m : Nat),\\\\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)\\\",\\\"target\\\":\\\"∀ (m : Nat), Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"forall\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n1\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":18,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0002-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":20},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n1\",\"endPos\":{\"column\":18,\"line\":20},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0002-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":20},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.592\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.974\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"hsum\\\",\\\"type\\\":\\\"∀ (m : Nat), Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)\\\",\\\"typeHead\\\":\\\"forall\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.975\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"n : Nat\\\\nhsum :\\\\n  ∀ (m : Nat),\\\\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)\\\\n⊢ Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)\\\",\\\"target\\\":\\\"Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0002-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":21},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n2\",\"endPos\":{\"column\":16,\"line\":21},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0002-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":21},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.592\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null}],\"id\":\"_uniq.973\",\"omitted_implementation_details\":1,\"pretty\":\"n : Nat\\n⊢ ∀ (m : Nat),\\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)\",\"target\":\"∀ (m : Nat), Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)\",\"targetArgs\":[],\"targetHead\":\"forall\",\"universe_parameters\":[]}],\"node_id\":\"n1\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0002-state.lean",
+          "start": {
+            "column": 4,
+            "line": 20
+          },
+          "end": {
+            "column": 18,
+            "line": 20
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n1",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0002-state.lean",
+          "start": {
+            "column": 4,
+            "line": 20
+          },
+          "end": {
+            "column": 18,
+            "line": 20
+          },
+          "category": "probe_stop"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.592\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.974\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"hsum\",\"type\":\"∀ (m : Nat), Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)\",\"typeHead\":\"forall\",\"value\":null}],\"id\":\"_uniq.975\",\"omitted_implementation_details\":1,\"pretty\":\"n : Nat\\nhsum :\\n  ∀ (m : Nat),\\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)\\n⊢ Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)\",\"target\":\"Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)\",\"targetArgs\":[],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n2\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0002-state.lean",
+          "start": {
+            "column": 2,
+            "line": 21
+          },
+          "end": {
+            "column": 16,
+            "line": 21
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n2",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0002-state.lean",
+          "start": {
+            "column": 2,
+            "line": 21
+          },
+          "end": {
+            "column": 16,
+            "line": 21
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.592",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "n",
+                  "type": "Nat",
+                  "typeHead": "Nat",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.973",
+              "omitted_implementation_details": 1,
+              "pretty": "n : Nat\n⊢ ∀ (m : Nat),\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)",
+              "target": "∀ (m : Nat), Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)",
+              "targetArgs": [],
+              "targetHead": "forall",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n1",
+          "version": 1
+        },
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.592",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "n",
+                  "type": "Nat",
+                  "typeHead": "Nat",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.974",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "hsum",
+                  "type": "∀ (m : Nat), Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)",
+                  "typeHead": "forall",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.975",
+              "omitted_implementation_details": 1,
+              "pretty": "n : Nat\nhsum :\n  ∀ (m : Nat),\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)\n⊢ Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)",
+              "target": "Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)",
+              "targetArgs": [],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n2",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 2,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "52fbeec87cec06f33be798ac63505d4d13b22f900c40c2a2faf37c81a4719140",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 33,
+        "elaborationMs": 31,
+        "artifactCount": 10204
+      },
+      "elapsedMs": 68,
+      "sequence": 2,
+      "kind": "state",
+      "nodeId": "n1",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0002-state.lean",
+      "sourceHash": "2085f2be1b4beabbfd3245f2fa329e29c61769bc24b78be070a4a5a90836f2d7",
+      "evidenceId": "ev_bcd4abfb70e941bfbbcda0c251abc40f6dc37340763161aa9d7b268e06aa6bf9"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[],\\\"node_id\\\":\\\"n1\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":17,\"line\":29},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":29},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_CLOSED:{\\\"node_id\\\":\\\"n1\\\"}\",\"endPos\":{\"column\":17,\"line\":29},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":29},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n1\",\"endPos\":{\"column\":17,\"line\":29},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":4,\"line\":29},\"severity\":\"error\"}\n{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.592\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.974\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"hsum\\\",\\\"type\\\":\\\"∀ (m : Nat), Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)\\\",\\\"typeHead\\\":\\\"forall\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.975\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"n : Nat\\\\nhsum :\\\\n  ∀ (m : Nat),\\\\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)\\\\n⊢ Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)\\\",\\\"target\\\":\\\"Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":30},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":30},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n2\",\"endPos\":{\"column\":16,\"line\":30},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0003-candidate.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":30},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[],\"node_id\":\"n1\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0003-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 29
+          },
+          "end": {
+            "column": 17,
+            "line": 29
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_CLOSED:{\"node_id\":\"n1\"}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0003-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 29
+          },
+          "end": {
+            "column": 17,
+            "line": 29
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n1",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0003-candidate.lean",
+          "start": {
+            "column": 4,
+            "line": 29
+          },
+          "end": {
+            "column": 17,
+            "line": 29
+          },
+          "category": "probe_stop"
+        },
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.592\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.974\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"hsum\",\"type\":\"∀ (m : Nat), Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)\",\"typeHead\":\"forall\",\"value\":null}],\"id\":\"_uniq.975\",\"omitted_implementation_details\":1,\"pretty\":\"n : Nat\\nhsum :\\n  ∀ (m : Nat),\\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)\\n⊢ Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)\",\"target\":\"Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)\",\"targetArgs\":[],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n2\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0003-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 30
+          },
+          "end": {
+            "column": 16,
+            "line": 30
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n2",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0003-candidate.lean",
+          "start": {
+            "column": 2,
+            "line": 30
+          },
+          "end": {
+            "column": 16,
+            "line": 30
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [],
+          "node_id": "n1",
+          "version": 1
+        },
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.592",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "n",
+                  "type": "Nat",
+                  "typeHead": "Nat",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.974",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "hsum",
+                  "type": "∀ (m : Nat), Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)",
+                  "typeHead": "forall",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.975",
+              "omitted_implementation_details": 1,
+              "pretty": "n : Nat\nhsum :\n  ∀ (m : Nat),\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)\n⊢ Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)",
+              "target": "Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)",
+              "targetArgs": [],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n2",
+          "version": 1
+        }
+      ],
+      "closed": [
+        {
+          "node_id": "n1"
+        }
+      ],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 3,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "1372377c33fefa8c103b702f16c20f241f82b1bef1e00ebba44c801003e133c4",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 35,
+        "elaborationMs": 72,
+        "artifactCount": 10204
+      },
+      "elapsedMs": 109,
+      "sequence": 3,
+      "kind": "candidate",
+      "nodeId": "n1",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0003-candidate.lean",
+      "sourceHash": "49257527432f5170c1fe0b7ae51b398f51a018cc38634d1a415e4b0a8c386753",
+      "evidenceId": "ev_a191ff9fb0d3640964ebcb560bde30ed26ecebd3fe1798ecd9b9018eb2d976ec"
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "launchError": null,
+      "stdout": "{\"caption\":\"\",\"data\":\"FVA_STATE:{\\\"goals\\\":[{\\\"has_metavariables\\\":false,\\\"hypotheses\\\":[{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.592\\\",\\\"isProp\\\":false,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"n\\\",\\\"type\\\":\\\"Nat\\\",\\\"typeHead\\\":\\\"Nat\\\",\\\"value\\\":null},{\\\"binder\\\":\\\"explicit\\\",\\\"dependencies\\\":[],\\\"has_metavariables\\\":false,\\\"id\\\":\\\"_uniq.974\\\",\\\"isProp\\\":true,\\\"is_implementation_detail\\\":false,\\\"name\\\":\\\"hsum\\\",\\\"type\\\":\\\"∀ (m : Nat), Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)\\\",\\\"typeHead\\\":\\\"forall\\\",\\\"value\\\":null}],\\\"id\\\":\\\"_uniq.975\\\",\\\"omitted_implementation_details\\\":1,\\\"pretty\\\":\\\"n : Nat\\\\nhsum :\\\\n  ∀ (m : Nat),\\\\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)\\\\n⊢ Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)\\\",\\\"target\\\":\\\"Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)\\\",\\\"targetArgs\\\":[],\\\"targetHead\\\":\\\"Eq\\\",\\\"universe_parameters\\\":[]}],\\\"node_id\\\":\\\"n2\\\",\\\"version\\\":1}\",\"endPos\":{\"column\":16,\"line\":29},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0004-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":29},\"severity\":\"information\"}\n{\"caption\":\"\",\"data\":\"FVA_PROBE_STOP:n2\",\"endPos\":{\"column\":16,\"line\":29},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0004-state.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":2,\"line\":29},\"severity\":\"error\"}\n",
+      "stderr": "",
+      "truncated": false,
+      "diagnostics": [
+        {
+          "severity": "information",
+          "message": "FVA_STATE:{\"goals\":[{\"has_metavariables\":false,\"hypotheses\":[{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.592\",\"isProp\":false,\"is_implementation_detail\":false,\"name\":\"n\",\"type\":\"Nat\",\"typeHead\":\"Nat\",\"value\":null},{\"binder\":\"explicit\",\"dependencies\":[],\"has_metavariables\":false,\"id\":\"_uniq.974\",\"isProp\":true,\"is_implementation_detail\":false,\"name\":\"hsum\",\"type\":\"∀ (m : Nat), Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)\",\"typeHead\":\"forall\",\"value\":null}],\"id\":\"_uniq.975\",\"omitted_implementation_details\":1,\"pretty\":\"n : Nat\\nhsum :\\n  ∀ (m : Nat),\\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)\\n⊢ Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)\",\"target\":\"Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)\",\"targetArgs\":[],\"targetHead\":\"Eq\",\"universe_parameters\":[]}],\"node_id\":\"n2\",\"version\":1}",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0004-state.lean",
+          "start": {
+            "column": 2,
+            "line": 29
+          },
+          "end": {
+            "column": 16,
+            "line": 29
+          },
+          "category": "compiler_error"
+        },
+        {
+          "severity": "error",
+          "message": "FVA_PROBE_STOP:n2",
+          "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0004-state.lean",
+          "start": {
+            "column": 2,
+            "line": 29
+          },
+          "end": {
+            "column": 16,
+            "line": 29
+          },
+          "category": "probe_stop"
+        }
+      ],
+      "states": [
+        {
+          "goals": [
+            {
+              "has_metavariables": false,
+              "hypotheses": [
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.592",
+                  "isProp": false,
+                  "is_implementation_detail": false,
+                  "name": "n",
+                  "type": "Nat",
+                  "typeHead": "Nat",
+                  "value": null
+                },
+                {
+                  "binder": "explicit",
+                  "dependencies": [],
+                  "has_metavariables": false,
+                  "id": "_uniq.974",
+                  "isProp": true,
+                  "is_implementation_detail": false,
+                  "name": "hsum",
+                  "type": "∀ (m : Nat), Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)",
+                  "typeHead": "forall",
+                  "value": null
+                }
+              ],
+              "id": "_uniq.975",
+              "omitted_implementation_details": 1,
+              "pretty": "n : Nat\nhsum :\n  ∀ (m : Nat),\n    Eq.{1} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (∑ k ∈ Finset.range m, k)) m) (HPow.hPow.{0, 0, 0} m 2)\n⊢ Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)",
+              "target": "Eq.{1} (∑ k ∈ Finset.range n, HPow.hPow.{0, 0, 0} k 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n, k) 2)",
+              "targetArgs": [],
+              "targetHead": "Eq",
+              "universe_parameters": []
+            }
+          ],
+          "node_id": "n2",
+          "version": 1
+        }
+      ],
+      "closed": [],
+      "audits": [],
+      "unparsed": [],
+      "backend": "lean-persistent-v1",
+      "backendMetadata": {
+        "requestId": 4,
+        "generation": 1,
+        "restarts": 0,
+        "sourceSha256": "c28df7d0cd7cec6220b9f7afc4f9081ad122b9f7a07ab4a2d6e52f956f543c21",
+        "leanVersion": "4.24.0",
+        "environmentFingerprint": "8b89578414a1e9115792b559cbca1f3bee7a328f887d1727b4cfb07ac66cf721",
+        "cacheHit": true,
+        "importMs": 32,
+        "elaborationMs": 45,
+        "artifactCount": 10204
+      },
+      "elapsedMs": 78,
+      "sequence": 4,
+      "kind": "state",
+      "nodeId": "n2",
+      "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq/attempts/0004-state.lean",
+      "sourceHash": "e0d86b4118a1aeabf876c1bec48f09a1ee011119dcdd611270f383acb55ceba6",
+      "evidenceId": "ev_506373d45fb1c62dcd48b5ccc5a24cd4715c8da4118c802f5937a8223bef960e"
+    }
+  ],
+  "category": "induction",
+  "method": "codex",
+  "effectiveImports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Algebra.BigOperators.Intervals"
+  ],
+  "effectiveOpens": [
+    "BigOperators Real Nat Topology Rat"
+  ],
+  "cleanupAssessment": {
+    "status": "closed",
+    "exploration": {
+      "ownership": "engine",
+      "status": "closed",
+      "retryAttempted": false
+    },
+    "provider": {
+      "status": "closed",
+      "retryAttempted": true,
+      "entries": []
+    }
+  },
+  "artifactDir": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/codex/induction_sumkexp3eqsumksq",
+  "invocationElapsedMs": 92401
+}

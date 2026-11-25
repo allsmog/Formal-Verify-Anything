@@ -1,0 +1,51 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.782",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "x",
+        "type": "NNReal",
+        "typeHead": "NNReal",
+        "value": null
+      }
+    ],
+    "id": "_uniq.7212",
+    "omitted_implementation_details": 1,
+    "pretty": "x : NNReal\n⊢ Eq.{1}\n    (HMul.hMul.{0, 0, 0}\n      (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt 60) (HPow.hPow.{0, 0, 0} (Real.sqrt ↑x) 3)) (Real.sqrt 12))\n      (Real.sqrt 63))\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt ↑x) ↑x) (Real.sqrt 35)) 36)",
+    "target": "Eq.{1}\n  (HMul.hMul.{0, 0, 0}\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt 60) (HPow.hPow.{0, 0, 0} (Real.sqrt ↑x) 3)) (Real.sqrt 12))\n    (Real.sqrt 63))\n  (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt ↑x) ↑x) (Real.sqrt 35)) 36)",
+    "targetArgs": [
+      "Real",
+      "HMul.hMul.{0, 0, 0}\n  (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt 60) (HPow.hPow.{0, 0, 0} (Real.sqrt ↑x) 3)) (Real.sqrt 12))\n  (Real.sqrt 63)",
+      "HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.sqrt ↑x) ↑x) (Real.sqrt 35)) 36"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Data.Real.Sqrt"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 12,
+    "maxDepth": 8,
+    "depth": 5,
+    "modelTokensRemaining": 0,
+    "remainingMs": 274129
+  },
+  "feedback": []
+}

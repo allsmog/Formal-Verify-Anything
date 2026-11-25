@@ -1,0 +1,50 @@
+{
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "launchError": null,
+  "stdout": "{\"caption\":\"\",\"data\":\"FVA_AUDIT:{\\\"axioms\\\":[\\\"propext\\\"],\\\"declaration\\\":\\\"mathd_numbertheory_229\\\",\\\"kernel_checked\\\":true,\\\"kind\\\":\\\"theorem\\\",\\\"passed\\\":true,\\\"type\\\":\\\"Eq.{1} (HMod.hMod.{0, 0, 0} (HPow.hPow.{0, 0, 0} 5 30) 7) 1\\\",\\\"universe_parameters\\\":[],\\\"version\\\":1}\",\"endPos\":{\"column\":33,\"line\":19},\"fileName\":\"benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_229/attempts/0005-recheck.lean\",\"isSilent\":false,\"keepFullRange\":false,\"kind\":\"[anonymous]\",\"pos\":{\"column\":0,\"line\":19},\"severity\":\"information\"}\n",
+  "stderr": "",
+  "truncated": false,
+  "elapsedMs": 2941,
+  "diagnostics": [
+    {
+      "severity": "information",
+      "message": "FVA_AUDIT:{\"axioms\":[\"propext\"],\"declaration\":\"mathd_numbertheory_229\",\"kernel_checked\":true,\"kind\":\"theorem\",\"passed\":true,\"type\":\"Eq.{1} (HMod.hMod.{0, 0, 0} (HPow.hPow.{0, 0, 0} 5 30) 7) 1\",\"universe_parameters\":[],\"version\":1}",
+      "file": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_229/attempts/0005-recheck.lean",
+      "start": {
+        "column": 0,
+        "line": 19
+      },
+      "end": {
+        "column": 33,
+        "line": 19
+      },
+      "category": "compiler_error"
+    }
+  ],
+  "states": [],
+  "closed": [],
+  "audits": [
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "mathd_numbertheory_229",
+      "kernel_checked": true,
+      "kind": "theorem",
+      "passed": true,
+      "type": "Eq.{1} (HMod.hMod.{0, 0, 0} (HPow.hPow.{0, 0, 0} 5 30) 7) 1",
+      "universe_parameters": [],
+      "version": 1
+    }
+  ],
+  "unparsed": [],
+  "sequence": 5,
+  "kind": "recheck",
+  "nodeId": "n0",
+  "sourceFile": "benchmarks/v2/runs/2026-11-25T17-54-58-148Z-paired-24-b529a43c/deterministic-v2/mathd_numbertheory_229/attempts/0005-recheck.lean",
+  "sourceHash": "9ce1b9b1de8a3c5be00ecf187ce20594ab6baa35ed51ea949dd2f45d59bb7d68",
+  "backend": "fresh-lean-cli",
+  "evidenceId": "ev_79d93f128d655f3981f1a353a63e16c64ba1eb0bd1ef1378a3851d74077b414b"
+}

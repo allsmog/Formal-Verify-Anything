@@ -1,0 +1,64 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.1713",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "n._@.FVAExploration.2717581968._hygCtx._hyg.53",
+        "type": "Nat",
+        "typeHead": "Nat",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.1713"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.1714",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "a._@._internal.0.FVAExploration.2717581968._hygCtx._hyg.54",
+        "type": "Eq.{1} (∑ x ∈ Finset.range n✝, HPow.hPow.{0, 0, 0} x 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n✝, k) 2)",
+        "typeHead": "Eq",
+        "value": null
+      }
+    ],
+    "id": "_uniq.2961",
+    "omitted_implementation_details": 1,
+    "pretty": "case succ\nn✝ : Nat\na✝ : Eq.{1} (∑ x ∈ Finset.range n✝, HPow.hPow.{0, 0, 0} x 3) (HPow.hPow.{0, 0, 0} (∑ k ∈ Finset.range n✝, k) 2)\n⊢ Eq.{1} (∑ x ∈ Finset.range (HAdd.hAdd.{0, 0, 0} 1 n✝), HPow.hPow.{0, 0, 0} x 3)\n    (HPow.hPow.{0, 0, 0} (∑ x ∈ Finset.range (HAdd.hAdd.{0, 0, 0} 1 n✝), x) 2)",
+    "target": "Eq.{1} (∑ x ∈ Finset.range (HAdd.hAdd.{0, 0, 0} 1 n✝), HPow.hPow.{0, 0, 0} x 3)\n  (HPow.hPow.{0, 0, 0} (∑ x ∈ Finset.range (HAdd.hAdd.{0, 0, 0} 1 n✝), x) 2)",
+    "targetArgs": [
+      "Nat",
+      "∑ x ∈ Finset.range (HAdd.hAdd.{0, 0, 0} 1 n✝), HPow.hPow.{0, 0, 0} x 3",
+      "HPow.hPow.{0, 0, 0} (∑ x ∈ Finset.range (HAdd.hAdd.{0, 0, 0} 1 n✝), x) 2"
+    ],
+    "targetHead": "Eq",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Algebra.BigOperators.Intervals"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 9,
+    "maxDepth": 8,
+    "depth": 3,
+    "modelTokensRemaining": 0,
+    "remainingMs": 284531
+  }
+}

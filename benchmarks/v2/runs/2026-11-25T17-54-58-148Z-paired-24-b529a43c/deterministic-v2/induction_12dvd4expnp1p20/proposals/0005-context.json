@@ -1,0 +1,65 @@
+{
+  "protocol": 1,
+  "goal": {
+    "has_metavariables": false,
+    "hypotheses": [
+      {
+        "binder": "explicit",
+        "dependencies": [],
+        "has_metavariables": false,
+        "id": "_uniq.1747",
+        "isProp": false,
+        "is_implementation_detail": false,
+        "name": "n._@.FVAExploration.3201239693._hygCtx._hyg.43",
+        "type": "Nat",
+        "typeHead": "Nat",
+        "value": null
+      },
+      {
+        "binder": "explicit",
+        "dependencies": [
+          "_uniq.1747"
+        ],
+        "has_metavariables": false,
+        "id": "_uniq.1748",
+        "isProp": true,
+        "is_implementation_detail": false,
+        "name": "a._@._internal.0.FVAExploration.3201239693._hygCtx._hyg.44",
+        "type": "Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} 8 (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 n✝) 4))",
+        "typeHead": "Dvd.dvd",
+        "value": null
+      }
+    ],
+    "id": "_uniq.1751",
+    "omitted_implementation_details": 1,
+    "pretty": "case succ\nn✝ : Nat\na✝ : Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} 8 (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 n✝) 4))\n⊢ Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} 8 (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n✝ 1)) 4))",
+    "target": "Dvd.dvd.{0} 12 (HAdd.hAdd.{0, 0, 0} 8 (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n✝ 1)) 4))",
+    "targetArgs": [
+      "Nat",
+      "Nat.instDvd",
+      "12",
+      "HAdd.hAdd.{0, 0, 0} 8 (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} 4 (HAdd.hAdd.{0, 0, 0} n✝ 1)) 4)"
+    ],
+    "targetHead": "Dvd.dvd",
+    "universe_parameters": []
+  },
+  "imports": [
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Linarith.Frontend",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Topology.Defs.Induced",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+  ],
+  "budget": {
+    "compilerCallsRemaining": 32,
+    "maxDepth": 8,
+    "depth": 3,
+    "modelTokensRemaining": 0,
+    "remainingMs": 295928
+  },
+  "feedback": []
+}
